@@ -1,4 +1,5 @@
 body{background-color:#000000; color:#AAAAAA; font-family: arial, helvetica, sans-serif;}
 
-div#banner {width:80%}
+div#banner {width:60%}
+div#banner img {width:500px}
 
