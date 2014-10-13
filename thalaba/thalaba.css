@@ -1,14 +1,16 @@
-body{background-color:#000000; color:#E6E68A; font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif}
+body{background-color:#000000; color:#FFB587;
+ font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif}
 
 div#top {width:100% }
-div#banner {width:60%}
+div#banner {width:60%; float:left}
 div#banner img {width:500px}
-div#topRight {width:40%; padding:10px}
+div#topRight {width:40%; padding:10px; float:left}
 
-h1 {font-size:1.7em; padding:3px}
-h2 {font-size:1.5em; padding:3px}
-h3 {font-size:1.3em; padding:2px}
-h4 {font-size:1.1em; padding:2px}
+h1 {font-size:1.7em; padding:3px; color:#FFCC66}
+h2 {font-size:1.5em; padding:3px; color:#FFCCB2}
+h3 {font-size:1.3em; padding:2px; color:#8270E8}
+h4 {font-size:1.1em; padding:2px; color:#F2D9E6 
+}
 
 p {padding:5px}
 
