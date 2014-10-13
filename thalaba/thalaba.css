@@ -3,13 +3,13 @@ body{background-color:#000000; color:#FFB587;
 
 
 div#banner {width:100%; float:right}
-div#banner img {width:500px; padding:30px}
+div#banner img {width:500px; padding:10px; margin-left:auto; margin-right:auto}
 div#container {width:80%; float:left}
 
-h1 {font-size:1.7em; padding:2px; color:#FFCC66; text-align:center}
-h2 {font-size:1.5em; padding:1px; color:#FFCCB2; text-align:center}
-h3 {font-size:1.3em; padding:1px; color:#8270E8}
-h4 {font-size:1.1em; padding:1px; color:#F2D9E6 
+h1 {font-size:1.7em; padding:2px; color:#FFCC66; display:block; text-align:center}
+h2 {font-size:1.5em; padding:1px; color:#FFCCB2; text-align:center; display:inline}
+h3 {font-size:1.3em; padding:1px; color:#8270E8; display:inline}
+h4 {font-size:1.1em; padding:1px; color:#F2D9E6; display:inline
 }
 
 p {padding:5px}
