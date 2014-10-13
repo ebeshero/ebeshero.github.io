@@ -1,5 +1,19 @@
-body{background-color:#000000; color:#AAAAAA; font-family: arial, helvetica, sans-serif;}
+body{background-color:#000000; color:#E6E68A; font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif}
 
+div#top {width:100% }
 div#banner {width:60%}
 div#banner img {width:500px}
+div#topRight {width:40%; padding:10px}
 
+h1 {font-size:2em; padding:3px}
+h2 {font-size:1.7em; padding:3px}
+h3 {font-size:1.5em; padding:2px}
+h4 {font-size:1.2em; padding:2px}
+
+p {padding:5px}
+
+a:link {color:#00056B;}      /* unvisited link */
+a:visited {color:#333399
+;}  /* visited link */
+a:hover {color:#003197;}  /* mouse over link */
+a:active {color:#003197;}  /* selected link */
