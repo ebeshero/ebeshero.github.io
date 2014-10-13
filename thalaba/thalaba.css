@@ -21,7 +21,7 @@ h3 {font-size:1.2em; padding:1px; color:#FFCC66;
 h4 {font-size:1.1em; padding:1px; color:#8270E8;  display:inline-block;
 }
 
-p {padding:5px}
+p {padding:5px; margin-left:auto; margin-right:auto}
 
 a:link {color:#FFFF99 }      /* unvisited link */
 a:visited {color:#CCCCFF
