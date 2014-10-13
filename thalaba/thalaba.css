@@ -4,8 +4,8 @@ body{background-color:#000000; color:#FFEBB9;
 div#top {width:100%}
 div#banner {width:90%; float:right;  margin-left:auto; margin-right:auto}
 div#banner img {width:1000px; padding:10px; margin-left:auto; margin-right:auto}
-div#menu {width:60%; margin-left:auto; margin-right:auto; float:left}
-div.boilerplate {display:inline; width:40%; float:left}
+div#menu {width:50%; margin-left:auto; margin-right:auto; float:left}
+div.boilerplate {display:inline; width:50%; float:left}
 div.boilerplate span {text-indent:-1em;
     margin-left:1em;
     display:block;
