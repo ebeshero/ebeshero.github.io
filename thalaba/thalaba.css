@@ -1,11 +1,11 @@
 body{background-color:#000000; color:#FFEBB9;
  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif; line-height:1.2em}
 
-div#top {width:100%}
-div#banner {width:90%; float:right;  margin-left:auto; margin-right:auto}
+div#top {width:100%; padding:5px}
+div#banner {width:100%; float:right;  margin-left:auto; margin-right:auto}
 div#banner img {width:1000px; padding:10px; margin-left:auto; margin-right:auto}
 div#menu {width:80%; margin-left:auto; margin-right:auto; float:left}
-div.boilerplate {display:inline; width:20%; float:left}
+div.boilerplate {display:inline; width:20%; float:left; text-align:left}
 div.boilerplate span {text-indent:-1em;
     margin-left:1em;
     display:block;
