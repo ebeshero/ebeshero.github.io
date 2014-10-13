@@ -1,9 +1,9 @@
 body{background-color:#000000; color:#FFB587;
  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif}
 
-div#top {width:100% }
+
 div#banner {width:100%; float:right}
-div#banner img {width:800px}
+div#banner img {width:500px; padding:30px}
 div#container {width:80%; float:left}
 
 h1 {font-size:1.7em; padding:2px; color:#FFCC66; text-align:center}
