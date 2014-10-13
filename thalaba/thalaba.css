@@ -1,4 +1,4 @@
-body{background-color:#000000; color:#FFB587;
+body{background-color:#000000; color:#FFEBB9;
  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif}
 
 div#top {width:100%}
@@ -7,7 +7,7 @@ div#banner img {width:1000px; padding:10px; margin-left:auto; margin-right:auto}
 div#menu {width:90%; margin-left:auto; margin-right:auto;}
 
 
-div#container {width:80%; float:left}
+div#container {width:80%; float:left; margin-left:auto; margin-right:auto}
 
 h1 {font-size:1.5em; padding:2px; color:#FFCC66; display:block; text-align:center}
 h2 {font-size:1.3em; padding:1px; color:#FFCCB2; text-align:center; color:#F2D9E6; display:inline-block;}
@@ -23,4 +23,4 @@ a:visited {color:#CCCCFF
 ;}  /* visited link */
 a:hover {color:#FF5442;
 ;}  /* mouse over link */
-a:active {color:#FFFF66;}  /* selected link */
+a:active {color:#CC99FF;}  /* selected link */
