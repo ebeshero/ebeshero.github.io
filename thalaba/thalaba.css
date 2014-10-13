@@ -1,5 +1,5 @@
 body{background-color:#000000; color:#FFEBB9;
- font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif}
+ font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif; line-height:1.2em}
 
 div#top {width:100%}
 div#banner {width:90%; float:right;  margin-left:auto; margin-right:auto}
@@ -12,7 +12,7 @@ div.boilerplate span {text-indent:-1em;
     font-size:smaller;
     line-height:1.4em;}
 
-div#container {width:80%; float:left; margin-left:auto; margin-right:auto}
+div#container {width:80%; float:right; margin-left:auto; margin-right:auto}
 
 h1 {font-size:1.5em; padding:2px; color:#FFCC66; display:block; text-align:center}
 h2 {font-size:1.3em; padding:1px; color:#FFCCB2; text-align:center; color:#F2D9E6; display:inline-block;}
