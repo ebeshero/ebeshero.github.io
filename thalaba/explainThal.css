@@ -1,0 +1,82 @@
+head {background-color:#DFBD79
+;}
+
+body {background-color:#CC9966; color: #70003D; font-family: arial, helvetica, sans-serif}
+div#space {background-color:#EDE3B8; width:80%; margin:auto; padding: 20px; line-height:1.2em; }
+
+div.image {background-color:#EDE3B8; float:left; width:40%}
+div.wideImage {float:left; width:100%; padding:25px}
+div.explan{background-color:#EDE3B8;float:right; width:60%}
+
+
+div.imageAlt {background-color:#EDE3B8; float:right; width:35%; margin-left: auto;
+    margin-right: auto;}
+div.explanAlt{background-color:#EDE3B8;float:left; width:65%}
+div.container {background-color:#EDE3B8; width:100%; }
+
+h1 {color:#0F046A; letter-spacing:1.1px; display:inline; font-size: 2em; text-align:center; padding: 20px}
+h2 {color:#00056B; font-family:arial, helvetica, sans-serif; font-size: 1.3em; text-align:left; 
+}
+h3 {color:#990033;
+ font-family:arial, helvetica, sans-serif; font-size: 1.1em; text-align:left; padding:3px
+}
+h4{color:#990033; font-family:arial, helvetica, sans-serif;  font-size: 1em; text-align:left; padding:0
+    
+}
+title {color:#FEE0D2}
+
+p.boilerplate span {text-indent:-1em;
+    margin-left:1em;
+    display:block;
+    font-size:smaller;
+    line-height:1.4em;}
+    
+p.boilerplate img {position: relative; top:3px; right: -2px }
+
+img
+{padding:5px;}
+
+p {display:block; padding:2px 2px 2px 2px}
+
+span.smaller {display:inline-block;; font-size:0.8em; line-height:1.2em; padding:2px}
+
+span.red {color: #FF0000; font-weight:bold;}
+span.green {color: #009933; font-weight:bold;}
+span.purple {color:#6600FF; font-weight:bold;}
+
+span.code {color:#B20000; font-weight:bold;
+}
+
+div.code {background-color: #ECFFE6; border:1px navy dashed; padding:10px; line-height:1.5em;}
+span.badCode {color:#B20000; background-color:  #FFFF66 }
+
+div.badCode {background-color:  #FFFF66; border:1px navy dashed; padding:10px; line-height:1.5em;  }
+
+span.indent {margin-left: 2em;}
+
+span.indentMore {margin-left:5em;}
+
+span.indentEvMore {margin-left:7em}
+
+
+ul {list-style-type: circle;}
+
+ul li { padding: 0px}
+
+
+ol li { padding: 3px}
+
+ol.d {list-style-type: lower-alpha; display: block; padding: 10px 10px 20px 20px}
+
+a:link {color:#00056B;}      /* unvisited link */
+a:visited {color:#333399
+;}  /* visited link */
+a:hover {color:#003197;}  /* mouse over link */
+a:active {color:#003197;}  /* selected link */
+
+table, th, td
+{
+border: 1px solid #000066;    
+padding: 15px;
+vertical-align:top;
+}
