@@ -138,7 +138,9 @@ document.write(document.lastModified);
             <img src="cytoscImport5.PNG" alt="first view of network on immport"/>
             <p>Notice the <strong>Table Panel</strong> at the bottom of the screen. You can toggle it to view Node data, Edge data, or (less usefully) Network data. I've toggled the Edge data view here because it displays information about my nodes and edges together. Try clicking on any line in the Node table or Edge table view, and see if you can highlight its corresponding node or edge in the view of the network in the bottom left of the screen. This feature in Cytoscape allows you to read and navigate your network by sorting and selecting your nodes in the table, and is a useful reminder that your network is something more than its graphical visualization.</p>
             <img src="cytoscSelect.PNG" alt="selecting nodes and edges from the Table Panel"/>
-            <p></p>
+            <p>Okay, let's try to make a more legible graph. To begin, we might just look at Cytoscape's "Preferred Layout" feature, by clicking on the left-most icon that looks like a tiny network:</p>
+            <img src="prefLayout.PNG" alt="Cytoscape's Preferred Layout feature"/> 
+            <p>For all kinds of reasons, the layout that Cytoscape selected for me (a Prefuse Force-Directed Layout) is not really appropriate for my data. (You can read about Force Directed Layouts here: they're designed to be aesthetically pleasing by designing edges to behave like physical springs, obeying laws of attraction and repulsion, based on a node's degree of connectedness: less connected nodes are pushed to the peripheries, and highly connected nodes "spring" to the center. I am not a fan of this layout because my nodes seem buried inside each other: this does not seem very legible or useful to me. Let's explore some other options.</p>
             
             
         </li>
