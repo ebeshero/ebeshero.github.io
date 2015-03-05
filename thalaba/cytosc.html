@@ -33,8 +33,8 @@ document.write(document.lastModified);
             </li>
                
                <li> <h3><a href="#howto">Next, the How-To:</a></h3>
-                   <ul><li><a href="#dataImport">How to Prepare Data for Import into Cytoscape (3.1)</a></li>
-                <li>How to Import</li>
+                   <ul><li><a href="#dataImport">How to Prepare Data for Import into Cytoscape (3.2.1)</a></li>
+                <li><a href="#imPort">How to Import</a></li>
                 <li>What to Do and See with Cytoscape's Network Analyzer</li>
                 <li>Filtering Data and Preparing Multiple Visualizations</li></ul>
                </li>
@@ -115,16 +115,23 @@ document.write(document.lastModified);
                        </li>
                        <li>In XSLT, work with <span class="code">xsl:for-each</span> to loop through each reference to a place and to output its connecting information and other nodes. Read about XSLT for "pull" scenarios (when you want to use it extract specific data as you are here rather than output an edition of a text). My favorite resource on this is <a href="http://dh.obdurodon.org/xslt-basics-2.xhtml">Obdurodon's XSLT tutorial: part 2</a>, or Michael Kay's book, <a href="http://www.amazon.com/XSLT-2-0-XPath-Programmers-Reference/dp/0470192747">XSLT 2.0 and XPath 2.0, 4th Edition</a>.</li>
                        <li>In XQuery, write your output statement using string-join() and/or concat(), using the tab character <span class="code">&amp;#x9;</span> as your separator. You may need a new line character as well to be sure that lines are not run together in your output. Use a linefeed character: <span class="code">&amp;#10;</span> to generate a new line where you need it at the end of a string you've joined together.</li>
+                       <li>Save your output file with the extension <span class="code">.tsv</span> or <span class="code">.csv</span> (for tab-separated values, comma-separated values). You'll use this file to import your data into Cytoscape.</li>
                    </ul>
                
-                    
-                  
-                    
-            
-        
+   
         </li>
         
-        <li>[To be continued: How to import: with screen captures.]</li>
+        <li><h3 id="imPort">How to Import your <span class="code">.csv </span>or <span class="code">.tsv</span> file into Cytoscape</h3>
+            <p>First, do you have Cytoscape installed? The software is free and is available for all platforms from here: <a href="http://cytoscape.org/">http://cytoscape.org/</a>. The Cytoscape developers will indicate that you need a particular version of Java installed: check to be sure that you have it. This tutorial provides instruction using Cytoscape 3.2.1 (current as of March 2015), and my screen captures come from my installation for Windows 8.</p>
+            <p>When you first launch Cytoscape, you will see the following screen inviting you to Start a New Session, and on it you should select "From Network File...". (If you accidentally close this, just go to the File menu and select Import→Network→File. </p>
+            <img src="cytoscImport1.PNG" alt="launching Cytoscape"/>
+        
+        <p>Browse for your .tsv or .csv file and open it. You will see the following import screen:</p>
+            <img src="cytoscImport2.PNG" alt="first import screen"/>
+            <p>Click on "Show Text File Import Options" under "Advanced", and open the choose the appropriate delimiter (or the kind of characters you used to separate your values (tab, comma, space, etc.)</p>
+        <img src="cytoscImport3.PNG" alt="text delimiter options"/>
+            <p></p>
+        </li>
     </ul>
             
                  
