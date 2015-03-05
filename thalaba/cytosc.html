@@ -40,6 +40,8 @@ document.write(document.lastModified);
                </li>
             </ul>
             <hr/>
+            <h2>First, Some Background:</h2>
+            <hr/>
             <ul>
                 <li>
                     <h3 id="whatNet">What is Network Analysis? Some Key Concepts: Graph Theory, Nodes, Edges, Degrees</h3>
@@ -77,7 +79,11 @@ document.write(document.lastModified);
             
             <p>Most users of Cytoscape work with flat, simple hierarchical databases of information, and import graph data from spreadsheets or simple tables with columns and rows. We who code in XML with its deep nesting apply our markup to generate usually a more complicated kind of database in the branching of our tree structures. We need to prepare our data for view in Cytoscape by performing an extraction of the data we wish to plot from our markup. Since network graphs can plot any kind of relationship involving a shared context of some kind, XML markup may be ideally suited for network plotting, since nested structures provide a basis for understanding shared contexts that form the edges in a network plot.</p>
                 </li>
-
+            </ul>
+                <hr/>
+            <h2>Next, the How-To:</h2>
+                <hr/>
+<ul>
                 <li><h3 id="dataImport">How to Prepare Data for Import into Cytoscape (3.1)</h3>
             <p>Consider, first of all, what phenomena in your text you want to network together as your nodes, and what produces a connection between them as your edges. In a social network analysis, that might involve a study of all the individuals in a text who are shown in conversation with each other at a given moment (or structural unit) of your text. In my “anti-social” network plot of <i>Thalaba</i>, I am studying how the places named and marked in my TEI text are networked together inside line-groups, whether in the lines of poetry or in prose annotations marked within the line-group. So my <strong>nodes</strong> are the places in the line-groups, and my <strong>edges</strong> are determined by the unit line-group, because position in a line-group marks a shared space or context for linkage.</p>
                     <p>Different network analysis tools (Gephi, Pajek, Cytoscape) require different ways to import data. (This is why, I think, most people tend to use a specific network analysis software package, or work within “R” which produces its own network plots). For example, while Pajek requires its initial import data in two columns of nodes, Cytoscape requires data to be imported first in <strong>three main columns: Node Edge Node</strong>. That means that you’ll need to write a transformation in XQuery or XSLT to output in plain text a list of nodes, connecting points, and the node to which each is connected, with a separator of some kind. While Cytoscape (like other network software) accepts a range of import formats, the simplest and most reliable format I have found is a plain text file made of columns separated by tabs or commas, saved as .tsv (tab-separated format), or .csv (comma separated format). You could import this text into a spreadsheet program like Microsoft Excel, or any number of programs designed to recognize column layouts.</p>
