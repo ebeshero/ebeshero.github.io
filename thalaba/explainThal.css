@@ -25,13 +25,13 @@ h4{color:#990033; font-family:arial, helvetica, sans-serif;  font-size: 1em; tex
 }
 title {color:#FEE0D2}
 
-p.boilerplate span {text-indent:-1em;
+div.boilerplate span {text-indent:-1em;
     margin-left:1em;
     display:block;
     font-size:smaller;
     line-height:1.4em;}
     
-p.boilerplate img {position: relative; top:3px; right: -2px }
+div.boilerplate img {position: relative; top:3px; right: -2px }
 
 img
 {padding:5px;}
