@@ -35,7 +35,7 @@ document.write(document.lastModified);
                <li> <h3><a href="#howto">Next, the How-To:</a></h3>
                    <ul><li><a href="#dataImport">How to Prepare Data for Import into Cytoscape (3.2.1)</a></li>
                 <li><a href="#imPort">How to Import</a></li>
-                <li><a href="#NetAnalyzer">What to Do and See with Cytoscape's Network Analyzer</a></li>
+                <li><a href="#NetAnalyzer">What to Do and See with Cytoscape's Network Analyzer, with a List of Network Analysis Concepts</a></li>
                   <li><a href="#Styling">Styling Nodes, Edges, and Labels</a></li>     
                 <li><a href="#Filtering">Filtering Data and Preparing Multiple Visualizations</a></li></ul>
                </li>
@@ -125,7 +125,7 @@ document.write(document.lastModified);
         
         <li><h3 id="imPort">How to Import your <span class="code">.csv </span>or <span class="code">.tsv</span> file into Cytoscape</h3>
             <p>First, do you have Cytoscape installed? The software is free and is available for all platforms from here: <a href="http://cytoscape.org/">http://cytoscape.org/</a>. The Cytoscape developers will indicate that you need a particular version of Java installed: check to be sure that you have it. This tutorial provides instruction using Cytoscape 3.2.1 (current as of March 2015), and my screen captures come from my installation for Windows 8.</p>
-            <p>When you first launch Cytoscape, you will see the following screen inviting you to Start a New Session, and on it you should select "From Network File...". (If you accidentally close this, just go to the File menu and select Import→Network→File. </p>
+            <p>When you first launch Cytoscape, you will see the following screen inviting you to Start a New Session, and on it you should select "From Network File...". (If you accidentally close this, just go to the <span class="code">File</span> menu and select <span class="code">Import→Network→File</span>. </p>
             <img src="cytoscImport1.PNG" alt="launching Cytoscape"/>
         
         <p>Browse for your .tsv or .csv file and open it. You will see the following import screen:</p>
@@ -142,14 +142,23 @@ document.write(document.lastModified);
             <p>Okay, let's try to make a more legible graph. To begin, we might just look at Cytoscape's "Preferred Layout" feature, by clicking on the left-most icon that looks like a tiny network:</p>
             <img src="prefLayout.PNG" alt="Cytoscape's Preferred Layout feature"/> 
             <p>For all kinds of reasons, the layout that Cytoscape selected for me (a Prefuse Force-Directed Layout) is not really appropriate for my data. (You can read about Force Directed Layouts <a href="http://en.wikipedia.org/wiki/Force-directed_graph_drawing">here</a>:  they are designed to be aesthetically pleasing by designing edges to behave like physical springs, obeying laws of attraction and repulsion, based on a node's degree of connectedness: less connected nodes are pushed to the peripheries, and highly connected nodes "spring" to the center. I am not a fan of this layout because my nodes seem buried inside each other: this does not seem very legible or useful to me. Let's explore some other options.</p>
-            <p>First of all, there may be some housekeeping duties we can perform to tidy up the network and make it easier to read and process. I extracted all of my place names from my poem, regardless of how many times the same place name was mentioned in a particular line group, so that I have many nodes that simply point to themselves. These are called "self-loops" and they generate much "noise" (lots of extra edges) in Cytoscape. Since I am not really interested in the number of times a name is repeated in a stanza, and I want to prioritize its connections with other names in that stanza, I am going not remove the self-loops. I do that by using the Edit menu: Edit→Remove Self-Loops. That brings up a small screen on which I must select my .tsv file, and verify that I want to remove the self-loops: </p>
+            <p>First of all, there may be some housekeeping duties we can perform to tidy up the network and make it easier to read and process. I extracted all of my place names from my poem, regardless of how many times the same place name was mentioned in a particular line group, so that I have many nodes that simply point to themselves. These are called "self-loops" and they generate much "noise" (lots of extra edges) in Cytoscape. Since I am not really interested in the number of times a name is repeated in a stanza, and I want to prioritize its connections with other names in that stanza, I am going not remove the self-loops. I do that by using the Edit menu: <span class="code">Edit→Remove Self-Loops</span>. That brings up a small screen on which I must select my .tsv file, and verify that I want to remove the self-loops: </p>
            <img src="selfLoops.PNG"  alt="Remove self-loops"/>
             
             <p>If you just want to explore Cytoscape's various built-in layouts for picturing my network, you can simply go from here to experimenting with the various options in the Layout menu. Many people are content to do this, and to begin work styling nodes and edges on a reasonably legible plot. I recommeend that you do something more, to use Cytoscape's Network Analyzer the better to read your network analysis, because this is where Cytoscape distinguishes itself in providing very useful readings combined with layouts.</p>
         </li>
     
-    <li><h3 id="NetAnalyzer">What to Do and See with Cytoscape's Network Analyzer</h3>
-        
+    <li><h3 id="NetAnalyzer">What to Do and See with Cytoscape's Network Analyzer, with a List of Network Analysis Concepts</h3>
+        <p>Go to <span class="code">Tools→Network Analyzer→Network Analysis</span>, and notice the options on the submenu. If I click on "About Network Analyzer" this screen appears telling me something of its capacities:</p>
+        <img src="AboutNetworkAnalyz.PNG" alt="About the Network Analyzer"/>
+        <p>This is Cytoscape's "network calculator," which applies programmed algorithms to the data set you imported to work out readings for various mathematical properties of networks. These include the forms of centrality we mentioned <a href="#whyCyt">earlier in this tutorial</a>, as well as other network measures to do with calculating and ranking nodes by how much they cluster together and form "cliques" or "small worlds" that prefer only to connect with each other and not widely across the network.</p>
+        <p>Run the Network Analyzer by choosing the first option on the submenu: <span class="code">Tools→Network Analyzer→Network Analysis→Analyze Network</span>. You'll see a screen that looks something like this, and you'll need to make a very important decision here:</p>
+        <img src="NetworkAnalyzer1.PNG" alt="Network Analyzer's options"/>
+        <p>You need to mark here whether your network is directed or undirected. Do you remember the difference between two? A directed network marks clear initiators and recipients: this is the kind of network you could draw with arrows pointing in a particular direction from a node to another node. An undirected network involves relationships that are based on mutually shared properties, so it can't be said that one party is an active agent and the other a passive recipient. (Perhaps both are equally active or equally passive). Because my <i>Thalaba</i> data makes a co-occurrence network, that means I don't have active and passive nodes, but rather my node relationships are based on mutual presence in the same part of a text at the same time. So I choose the option to <span class="code">"Treat the network as undirected"</span> here, and wait for a few minutes while the Network Analyzer performs its calculations.</p>
+       <p>When the Network Analyzer is finished, it produces a new screen, and it adds several new columns to my Table Panel!</p> 
+        <img src="NetworkAnalyzer2.PNG" alt="View of the Network Analyzer's new data added to the network"/>
+        <p>I encourage you to explore these new properties. Once you have run the Network Analyzer, Cytoscape makes several new kinds of layouts available (in the Layout menu) that were not present before. You should do a combination of things here: Read about the various centrality, path-length, and clustering measures of networks, and illustrate their principles as you're learning by making Cytoscape plots that prioritize a particular network property. An excellent resource to dive into for studying these network properties is <a href="http://faculty.ucr.edu/~hanneman/nettext/">Introduction to Social Network Methods by Robert A. Hanneman and Mark Riddle (2005, online book)</a>. </p>
+       
         
     </li>
     
