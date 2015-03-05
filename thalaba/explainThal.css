@@ -14,7 +14,7 @@ div.imageAlt {background-color:#EDE3B8; float:right; width:35%; margin-left: aut
 div.explanAlt{background-color:#EDE3B8;float:left; width:65%}
 div.container {background-color:#EDE3B8; width:100%; }
 
-h1 {color:#0F046A; letter-spacing:1.1px; display:inline; font-size: 2em; text-align:center; padding: 20px}
+h1 {color:#0F046A; letter-spacing:1.1px; display:inline; font-size: 2em; text-align:center; line-height: 1.2em}
 h2 {color:#00056B; font-family:arial, helvetica, sans-serif; font-size: 1.3em; text-align:left; 
 }
 h3 {color:#990033;
