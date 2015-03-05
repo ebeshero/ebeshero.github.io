@@ -35,8 +35,9 @@ document.write(document.lastModified);
                <li> <h3><a href="#howto">Next, the How-To:</a></h3>
                    <ul><li><a href="#dataImport">How to Prepare Data for Import into Cytoscape (3.2.1)</a></li>
                 <li><a href="#imPort">How to Import</a></li>
-                <li>What to Do and See with Cytoscape's Network Analyzer</li>
-                <li>Filtering Data and Preparing Multiple Visualizations</li></ul>
+                <li><a href="#NetAnalyzer">What to Do and See with Cytoscape's Network Analyzer</a></li>
+                  <li><a href="#Styling">Styling Nodes, Edges, and Labels</a></li>     
+                <li><a href="#Filtering">Filtering Data and Preparing Multiple Visualizations</a></li></ul>
                </li>
             </ul>
             <hr/>
@@ -140,10 +141,25 @@ document.write(document.lastModified);
             <img src="cytoscSelect.PNG" alt="selecting nodes and edges from the Table Panel"/>
             <p>Okay, let's try to make a more legible graph. To begin, we might just look at Cytoscape's "Preferred Layout" feature, by clicking on the left-most icon that looks like a tiny network:</p>
             <img src="prefLayout.PNG" alt="Cytoscape's Preferred Layout feature"/> 
-            <p>For all kinds of reasons, the layout that Cytoscape selected for me (a Prefuse Force-Directed Layout) is not really appropriate for my data. (You can read about Force Directed Layouts here: they're designed to be aesthetically pleasing by designing edges to behave like physical springs, obeying laws of attraction and repulsion, based on a node's degree of connectedness: less connected nodes are pushed to the peripheries, and highly connected nodes "spring" to the center. I am not a fan of this layout because my nodes seem buried inside each other: this does not seem very legible or useful to me. Let's explore some other options.</p>
+            <p>For all kinds of reasons, the layout that Cytoscape selected for me (a Prefuse Force-Directed Layout) is not really appropriate for my data. (You can read about Force Directed Layouts <a href="http://en.wikipedia.org/wiki/Force-directed_graph_drawing">here</a>:  they are designed to be aesthetically pleasing by designing edges to behave like physical springs, obeying laws of attraction and repulsion, based on a node's degree of connectedness: less connected nodes are pushed to the peripheries, and highly connected nodes "spring" to the center. I am not a fan of this layout because my nodes seem buried inside each other: this does not seem very legible or useful to me. Let's explore some other options.</p>
+            <p>First of all, there may be some housekeeping duties we can perform to tidy up the network and make it easier to read and process. I extracted all of my place names from my poem, regardless of how many times the same place name was mentioned in a particular line group, so that I have many nodes that simply point to themselves. These are called "self-loops" and they generate much "noise" (lots of extra edges) in Cytoscape. Since I am not really interested in the number of times a name is repeated in a stanza, and I want to prioritize its connections with other names in that stanza, I am going not remove the self-loops. I do that by using the Edit menu: Edit→Remove Self-Loops. That brings up a small screen on which I must select my .tsv file, and verify that I want to remove the self-loops: </p>
+           <img src="selfLoops.PNG"  alt="Remove self-loops"/>
             
-            
+            <p>If you just want to explore Cytoscape's various built-in layouts for picturing my network, you can simply go from here to experimenting with the various options in the Layout menu. Many people are content to do this, and to begin work styling nodes and edges on a reasonably legible plot. I recommeend that you do something more, to use Cytoscape's Network Analyzer the better to read your network analysis, because this is where Cytoscape distinguishes itself in providing very useful readings combined with layouts.</p>
         </li>
+    
+    <li><h3 id="NetAnalyzer">What to Do and See with Cytoscape's Network Analyzer</h3>
+        
+        
+    </li>
+    
+    <li><h3 id="Styling">Styling Nodes, Edges, and Labels</h3>
+        
+    </li>
+    
+    <li><h3 id="Filtering">Filtering Data and Preparing Multiple Visualizations</h3>
+    
+    </li>
     </ul>
             
                  
