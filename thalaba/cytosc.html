@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="explainThal.css"/> 
     </head>
     <body>
-        <div id="space">  
+      
             <div id="title"><h1>An Introduction to Network Analysis and Cytoscape for XML Coders</h1>
         
             </div>
@@ -22,7 +22,7 @@ document.write(document.lastModified);
 </script></span></div>
             </div>
           
-         <h2>Topics Covered in this Tutorial</h2>  
+    <div id="top"> <div id="contents">  <h2>Topics Covered in this Tutorial</h2>  
             <ul><li><h3><a href="#background">First, Some Background:</a></h3>
                 <ul>
                     <li><a href="#whatNet">What is Network Analysis? Some Key Concepts: Graph Theory, Nodes, Edges, Degrees</a></li>
@@ -35,11 +35,18 @@ document.write(document.lastModified);
                <li> <h3><a href="#howto">Next, the How-To:</a></h3>
                    <ul><li><a href="#dataImport">How to Prepare Data for Import into Cytoscape (3.2.1)</a></li>
                 <li><a href="#imPort">How to Import</a></li>
-                <li><a href="#NetAnalyzer">What to Do and See with Cytoscape's Network Analyzer, with a List of Network Analysis Concepts</a></li>
+                <li><a href="#NetAnalyzer">What to Do and See with Cytoscape's Network Analyzer</a></li>
                   <li><a href="#Styling">Styling Nodes, Edges, and Labels</a></li>     
                 <li><a href="#Filtering">Filtering Data and Preparing Multiple Visualizations</a></li></ul>
                </li>
             </ul>
+     </div>
+        <div id="image">
+            <img src="ThalabaAna-TwoStepsVampire.png" alt="Two Steps from the Vampire Metaplace in Robert Southey's Thalaba the Destroyer"/>
+            
+        </div></div>
+    
+        <div id="main">
             <hr/>
             <h2 id="background">First, Some Background:</h2>
             <hr/>
@@ -154,7 +161,7 @@ document.write(document.lastModified);
             <p>If you just want to explore Cytoscape's various built-in layouts for picturing my network, you can simply go from here to experimenting with the various options in the Layout menu. Many people are content to do this, and to begin work styling nodes and edges on a reasonably legible plot. I recommeend that you do something more, to use Cytoscape's Network Analyzer the better to read your network analysis, because this is where Cytoscape distinguishes itself in providing very useful readings combined with layouts.</p>
         </li>
     
-    <li><h3 id="NetAnalyzer">What to Do and See with Cytoscape's Network Analyzer, with a List of Network Analysis Concepts</h3>
+    <li><h3 id="NetAnalyzer">What to Do and See with Cytoscape's Network Analyzer</h3>
         <p>Go to <span class="code">Tools→Network Analyzer→Network Analysis</span>, and notice the options on the submenu. If I click on "About Network Analyzer" this screen appears telling me something of its capacities:</p>
         <img src="AboutNetworkAnalyz.PNG" alt="About the Network Analyzer"/>
         <p>This is Cytoscape's "network calculator," which applies programmed algorithms to the data set you imported to work out readings for various mathematical properties of networks. These include the forms of centrality we mentioned <a href="#whyCyt">earlier in this tutorial</a>, as well as other network measures to do with calculating and ranking nodes by how much they cluster together and form "cliques" or "small worlds" that prefer only to connect with each other and not widely across the network.</p>
@@ -194,15 +201,18 @@ document.write(document.lastModified);
     <img src="firstNeighb.PNG" alt="extracting first neighbors of selected nodes"/>
         <p>The network view above is an example of such an extraction from one of the more highly connected nodes in the Thalaba project.</p>
     <p>Viewing and manipulating your graph from within Cytoscape gives you dynamic options for pulling and dragging nodes, highlighting them, selecting them to highlight their position on the node table. You can also add text to your network graph to create a title and a legend, simply by clicking on the background--which brings up a menu offering various kinds of annotations. You can draw arrows to label portions of your graph. Sooner or later, though, you will need to consider your options for exporting your graph(s) to view outside of Cytoscape.  </p>
-        <p>The simplest export is one that loses the dynamic features present in the Cytoscape software, but exports your graphics cleanly with the detail you applied: Go to <span class="code">File→Export→Export Network as Graphics</span>, and export your file as either an SVG or a PNG file. Exporting as SVG means you can open the coded file to explore how to manipulate it and make it dynamic with JavaScript on a web page with a some effort. </p>
+        <p>The simplest export is one that loses the dynamic features present in the Cytoscape software, but exports your graphics cleanly with the detail you applied: Go to <span class="code">File→Export→Export Network as Graphics</span>, and export your file as either an SVG or a PNG file. Exporting as SVG means you can open the coded file to explore how to manipulate it and make it dynamic with JavaScript on a web page with some effort. </p>
         <p>The Cytoscape developers have also been working on making dynamic web views of the graphs produced within the Cytoscape software. To produce this, try Export Network View(s) as Web Page, which will output a zip folder. Extract the files to mount on a web server. The result is a dynamic graph in which users can click and drag nodes, and some of your style parameters have been preserved. Here is an example <a href="http://www.obdurodon.org/thalaba/#/">dynamic view of the Thalaba network</a> posted live, plotted according to closeness centrality of the nodes. To view my formatting, you need to change the background to "default-black". </p>
+        <p>And here is a filtered view of the Thalaba network, in which I started with the "Vampire cluster" (a group of place names embedded in the same footnote with the Southey's reference to the space of Vampires, of great interest because this is thought to be the first reference to vampires in English literature). I began with the places in the Vampire cluster, and then selected their "first neighbors" in the network. Instead of ranking these by closeness or distance, I simply divided the network by node type to produce a circle of metaplaces (which can only be reached by supernatural means in the poem), and places (which can reached physically and can be mapped geographically). </p>
+        <img src="ThalabaAna-TwoStepsVampire.png" alt="Filtered Export of the Thalaba Place Network featuring two steps from the Vampire metaplace"/>
+        <p>This filtered view serves a way of studying a specific set of places and metaplaces positioned near each other in <i>Thalaba</i>. The edges here are color coded according to their position in main text (purple) vs. notes (gold), and I have added edge-weighting to highlight the edges that link locations that the main character, Thalaba, actually visits in the main text of the poem. (Other places not linked by these weighted edges are referenced in some way less literal to Thalaba, and might be comparative or metaphorical. Within my markup I have differentiated five or six different kinds of place references--places referenced by analogy, by characters' invocation, from memory of the past, etc. I may in the future output network plots that attempt to differentiate among these kinds of references, but I will likely need to produce these as filtered views, featuring specific areas of my network in order to make the plots legible. My network now might be considered "bimodal" in two ways: in featuring linkages of places and metaplaces, and in featuring two kinds of linkages: across main text and notes. Adding more differentiation to the plots (adding more modes!) is very tempting to us humanities researchers, but may not produce especially legible plots!</p>
         <p>Over time, the Cytoscape developers and the independent developers of the Cytoscape.js JavaScript library seem to be improving the capacities to visualize dynamic plots that preserve the fine-tuned styles and plots we are able to design within the software. That said, multiple static views taken from different kinds of plots and different filtrations of data may help to illuminate patterns in your network more effectively than a single dynamic plot. Happy experimenting!  </p>
     </li>
     </ul>
             
                  
-        </div>
         
+        </div>      
         
         
     </body>
