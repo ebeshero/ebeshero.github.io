@@ -115,6 +115,7 @@ document.write(document.lastModified);
                        </li>
                        <li>In XSLT, work with <span class="code">xsl:for-each</span> to loop through each reference to a place and to output its connecting information and other nodes. Read about XSLT for "pull" scenarios (when you want to use it extract specific data as you are here rather than output an edition of a text). My favorite resource on this is <a href="http://dh.obdurodon.org/xslt-basics-2.xhtml">Obdurodon's XSLT tutorial: part 2</a>, or Michael Kay's book, <a href="http://www.amazon.com/XSLT-2-0-XPath-Programmers-Reference/dp/0470192747">XSLT 2.0 and XPath 2.0, 4th Edition</a>.</li>
                        <li>In XQuery, write your output statement using string-join() and/or concat(), using the tab character <span class="code">&amp;#x9;</span> as your separator. You may need a new line character as well to be sure that lines are not run together in your output. Use a linefeed character: <span class="code">&amp;#10;</span> to generate a new line where you need it at the end of a string you've joined together.</li>
+                       <li><strong>Do you need to "de-dupe" your node names?</strong> "De-dupe" means to de-duplicate or try to correct for spurious alternate spellings. In the course of extracting your data or in visualizing it, you may notice you need to work on this, perhaps by coding attribute values with a canonical spelling, or by keeping a central list of standard names and values to which each variant of a name refers. It's a common markup problem, and the process of data visualization can actually help you catch problems with this.</li>
                        <li>Save your output file with the extension <span class="code">.tsv</span> or <span class="code">.csv</span> (for tab-separated values, comma-separated values). You'll use this file to import your data into Cytoscape.</li>
                    </ul>
                
@@ -130,7 +131,14 @@ document.write(document.lastModified);
             <img src="cytoscImport2.PNG" alt="first import screen"/>
             <p>Click on "Show Text File Import Options" under "Advanced", and open the choose the appropriate delimiter (or the kind of characters you used to separate your values (tab, comma, space, etc.)</p>
         <img src="cytoscImport3.PNG" alt="text delimiter options"/>
-            <p></p>
+            <p>If there have been no problems with your data extraction, your data should appear neatly arrayed in columns, which you can now select for your first immport. The first immport involves selecting the first Node column (as "Source Interaction"), the Edge column (as "Interaction Type", and the connected Node ("Target Interaction") columns. You can also designate one column in blue as Edge Attribute data. I leave the other columns (node attribute data) unselected for now. (I'll come back later and import node attribute data in a second import round--that's how Cytoscape handles this.) Here's how my screen looks when I've selected these first columns for import. (Note: I selected the columns for Node Edge node at the top of the screen, and then I clicked on Column 4 to turn it blue so it would be designated the Edge Attribute column.)</p>
+            
+            <img src="cytoscImport4.PNG" alt="importing node, edge, node, and edge attribute columns"/>
+            <p>When you have selected your columns for import, click "OK" at the bottom...wait a bit, and voila! But this will look like a gargantuan tangle of square grids at first:</p>
+            <img src="cytoscImport5.PNG" alt="first view of network on immport"/>
+            <p>Notice the table at the bottom of the screen. You can toggle it to view Node data, Edge data, or (less usefully) Network data. I've toggled the Edge data view here because it displays information about my nodes and edges together. Try clicking on any line in the Node table or Edge table view, and see if you can highlight its corresponding node in your tangled-up network! We will now work on making that network legible.</p>
+            
+            
         </li>
     </ul>
             
