@@ -123,7 +123,7 @@ document.write(document.lastModified);
                        <li>Write your data extraction code so that you produce plain text output, separated by a tab character, or by a comma and a white-space. (I recommend using a tab character in case your data contains commas in its nodes or edge data.) Use the special entity notation for a tab character: <span class="code">&amp;#x9;</span>.</li>
                     
                     <li>(Assuming that you use the tab character as your delimiter) output a text file that contains, line-by-line, a tab-separated set of values: <span class="code">node, node attribute, edge, edge attribute, connected-node, connected node-attribute.</span> Remember: You don&#8217;t need all of these for your first import to Cytoscape, but you can reuse the same table to import data more than once.</li> 
-                       <li>In XSLT, set your xsl:output statement (one of the required top-level elements in the xsl:stylesheet, usually found directly after the root node) to output text. Here&#8217;s how to set it: <div class="code"><span class="code">&lt;xsl:output method=&#8220;text&#8221;/&gt;</span> 
+                       <li>In XSLT, set your xsl:output statement (one of the required top-level elements in the xsl:stylesheet, usually found directly after the root node) to output text. Here&#8217;s how to set it: <div class="code"><span class="code">&lt;xsl:output method="text"/&gt;</span> 
   
                        </div>
                        </li>
