@@ -7,7 +7,7 @@ body {background-color:#EDE3B8; color: #70003D; font-family: arial, helvetica, s
 div#top {width:100%; height:100%; display:block}
 div#contents {float:left; width:50%}
 div#image {float:left; width:50%; height:100%; display:block; }
-div#image img {width: 100%; padding-bottom:150px; padding-top:50px;}
+div#image img {width: 100%; padding-bottom:200px; padding-top:50px;}
 
 div#main {width:100%}
 /*
