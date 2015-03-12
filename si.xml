@@ -26,8 +26,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition> Site Index for the Digital Mitford project. Date: 2014-11-01T23:00:52.66-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 827. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition> Site Index for the Digital Mitford project. Date: 2015-03-11T18:24:24.859-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 844. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -215,6 +215,19 @@
                      <p/>
                   </note>
                </person>
+               <person xml:id="ejb">
+                  <persName>
+                     <surname>Beckman</surname>
+                     <forename>Ella</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>UCLA
+                     </affiliation>
+                  </occupation>
+                  <note type="bio">Ella Beckman is an undergraduate at UCLA and hopes to graduate in 2017. She is a native of Sacramento and is double majoring in Political Science and Spanish. After she graduates she plans to attend law school to one day become a public defender.
+                  </note>
+               </person>
                <person xml:id="err">
                   <persName>
                      <surname>Raisanen</surname>
@@ -258,6 +271,20 @@
                   </occupation>
                   <note type="bio">
                      <p/>
+                  </note>
+               </person>
+               <person xml:id="ga">
+                  <persName>
+                     <surname>Amos</surname>
+                     <forename>Gracia</forename>
+                     <roleName>Research Assistant</roleName>
+                  </persName>
+                  <occupation>
+                     <affiliation>UCLA</affiliation>
+                  </occupation>
+                  <note type="bio">Gracia Amos is a fourth year undergraduate at UCLA, finishing a degree in English with a concentration in poetry. Her areas of interest include mythology, intermedia, critical theory, and postmodern poetry. She has been a poetry editor for <bibl>
+                        <title>Westwind</title>, UCLA's journal of the literary arts</bibl>, and currently publishes a <bibl>zine with an LA-based artists' collective which she co-founded, <title>Nothing New Publications</title>
+                     </bibl>.<p/>
                   </note>
                </person>
                <person xml:id="ghb">
@@ -2194,14 +2221,44 @@
                         wrote children's novels and educational treatises.</p>
                   </note>
                </person>
+               <person xml:id="Elford_Elizabeth" sex="2">
+                  <persName>
+                     <surname/>
+                     <surname>Elford</surname>
+                     <forename>Elizabeth</forename>
+                  </persName>
+                  <birth when="1782-03-11">
+                     <placeName>Plympton Erle</placeName>
+                  </birth>
+                  <death when="1837"/>
+                  <note resp="#ebb">Second daughter of <persName ref="#Elford_SirWm">Sir William Elford</persName> by his first wife, <persName ref="#Elford_MrsM">Mary Davies Elford</persName>. <rs type="event">Elizabeth married <persName>George Pownoll Adams</persName> (1779-1856) on <date when="1821-07-21">23 July 1821</date>.</rs>
+                     
+                  
+                     Source: ODNB and Ancestry.com</note>
+               </person>
+               <person xml:id="Elford_Grace" sex="2">
+                  <persName>Grace Chard Elford</persName>
+                  <persName>
+                     <surname>Elford</surname>
+                     <forename>Grace</forename>
+                     <forename>Chard</forename>
+                  </persName>
+                  <birth when="1781"/>
+                  <death when="1856-02-24"/>
+                  <note resp="#ebb">Eldest daughter of <persName ref="#Elford_SirWm">Sir William Elford</persName> and his first wife, <persName ref="#Elford_MrsM">Mary Davies Elford</persName>. Source: ODNB</note>
+               </person>
                <person xml:id="Elford_J" sex="1">
                   <persName>
                      <surname>Elford</surname>
                      <forename>Jonathan</forename>
                   </persName>
-                  <birth/>
-                  <death when="1823"/>
-                  <note resp="#kab">Son of <persName ref="#Elford_SirWm">Sir William Elford</persName> and his first wife <persName ref="#Elford_MrsM">Mary</persName>.</note>
+                  <birth when="1776-11-28">
+                     <placeName>Plympton Erle</placeName>
+                  </birth>
+                  <death when="1823-03-11">
+                     <placeName>Uplands, Tamerton Foliott</placeName>
+                  </death>
+                  <note resp="#kab #ebb">Son of <persName ref="#Elford_SirWm">Sir William Elford</persName> and his first wife <persName ref="#Elford_MrsM">Mary</persName>. His death at the age of 46 left Sir William without an heir. Source: ODNB and Ancestry.com</note>
                </person>
                <person xml:id="Elford_MrsE" sex="2">
                   <persName>
@@ -2209,7 +2266,7 @@
                      <surname>Waldron</surname>
                      <forename>Elizabeth</forename>
                   </persName>
-                  <persName>Mrs. Elford2</persName>
+                  <persName>Mrs. Elford 2</persName>
                   <note resp="#ebb #ajc">Elizabeth is the second wife of <persName ref="#Elford_SirWm">Sir William Elford</persName>; they married four years after the death of <persName ref="#Elford_MrsM">Mrs. Mary Elford</persName> on <date when="1821-07-05">July 5, 1821</date>. The ODNB's entry on Sir William Elford incorrectly gives her name as  <persName>Elizabeth Walrond (née Hall)</persName>, as parish records of 1822 accord with the spelling in Mitford's letters, and describe Elizabeth Hall Waldron as the heiress of an estate in Devonshire, formerly married to a Colonel Waldron. See <ref target="http://www.british-history.ac.uk/report.aspx?compid=50587">'Parishes: Pancras Week - Plymouth', Magna Britannia: volume 6: Devonshire (1822), pp. 381-408.</ref>
                   </note>
                </person>
@@ -2238,7 +2295,7 @@
                   <death when="1837-11-30">
                      <placeName>Totnes</placeName>
                   </death>
-                  <note type="bio" resp="#ebb">According to <persName>L'Estrange</persName>, Elford
+                  <note type="bio" resp="#ebb">A longtime correspondent of <persName ref="#MRM">Mary Russell Mitford</persName> who received some of her longest and most whimsical letters over multiple decades. According to <persName>L'Estrange</persName>, Elford
                      was a friend of <persName ref="#Mitford_Geo">Mitford's father</persName>, and
                         <persName ref="#MRM">Mitford</persName> met him for the first time in the
                      spring of 1810 when he was nearing the age of 64. "He was a fellow of the Royal
@@ -2662,6 +2719,40 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>William Godwin</persName>
                   <!--ebb: stub entry-->
                </person>
+               <person xml:id="Graham_Maria" sex="2">
+                  <persName>
+                     <roleName>
+                        <date from="1837" to="1842-11-21">Maria, Lady Callcott</date>
+                     </roleName>
+                     <surname type="married">
+                        <date from="1827-02-20" to="1842-11-21">Callcott</date>
+                     </surname>
+                     <surname type="married">
+                        <date from="1809-12-09" to="1827-02-19">Graham</date>
+                     </surname>
+                     <surname type="maiden">Dundas</surname>
+                     <forename>Maria</forename>
+                  </persName>
+                  <birth when="1785-07-19">
+                     <placeName>Cockermouth, Cumberland</placeName>
+                  </birth>
+                  <death when="1842-11-21">
+                     <placeName>Kensington Gravel Pits, London</placeName>
+                  </death>
+                  <note resp="#ebb">
+                     <persName ref="#MRM">Mitford</persName> writes of this adventurous woman as <persName>Mrs. Graham</persName> and references her travel publications, <bibl corresp="#India_JournalResidence_Graham">
+                        <title>Journal of a Residence in India</title> of <date when="1812">1812</date>
+                     </bibl> and <bibl corresp="#Rome_ThreeMonths_Graham">her journal, <title>Three months passed in the mountains east of Rome : during the year 1819</title>
+                     </bibl>. She was known for her multiple publications on her travels in India, Chile, and Brazil, and as <bibl>
+                        <author>Maria Graham</author>, she published the first English biography of the artist <persName>Nicholas Poussin</persName>: <title>Memoirs of the Life of Nicholas Poussin</title> (<date when="1820">1820</date>).</bibl>. A polymathic enthusiast, she traveled widely in her life, and <rs type="event">met her first husband, <persName>Lieutenant Thomas Graham</persName>, on board the HMS Cornelia bound to <placeName>Bombay</placeName> on a trip with her father and siblings in <date when="1809">1809</date>
+                     </rs>. During an extended trip to South America, <rs type="event">
+                        <persName>Thomas Graham</persName> died on a voyage from Brazil to <placeName>Valparaíso, Chile</placeName> on <date when="1822-04-09">9 April 1822</date>
+                     </rs>, after which Maria resided in <placeName>Chile</placeName> and Brazil, where she served as governess to the Brazilian emperor's daughter, <persName>Donna Maria</persName>. Her description of an earthquake in <placeName>Quintero, Brazil</placeName> influenced <bibl>
+                        <author>Charles Lyell</author>'s explanations in <title>Principles of Geology</title> (<date when="1830">1830</date>) of land mass formation by what we would now call tectonic activity</bibl>. After her return to <placeName ref="#England">England</placeName> in 1826, she met and married the landscape artist <persName>Augustus Wall Callcott</persName> (1779-1844), who was knighted in <date when="1837">1837</date>, making her <persName>Lady Callcott</persName> for the last years of her life. Source: ODNB. <ref target="http://viaf.org/viaf/41970133/">
+                        <idno>VIAF record: 41970133</idno>
+                     </ref>. 
+                     <!--ebb: 2015-02-01: a first stab at a systematic way to enter VIAF ids--></note>
+               </person>
                <person xml:id="Groby" sex="1">
                   <persName>Lord Grey of Groby</persName>
                   <occupation>warrior</occupation>
@@ -2895,6 +2986,21 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </death>
                   <occupation>artist</occupation>
                   <note resp="#ebb">Landscape painter, and second husband of the author <persName ref="#Hofland_B">Barbara Hofland</persName>.</note>
+               </person>
+               <person xml:id="Hogg_J" sex="1">
+                  <persName>
+                     <surname>Hogg</surname>
+                     <forename>James</forename>
+                  </persName>
+                  <persName>the Ettrick Shepherd</persName>
+                  <birth when="1770">
+                     <placeName>near Ettrick, Scotland</placeName>
+                  </birth>
+                  <death when="1835-11-21"/>
+                  <note resp="#ebb">Scottish ballad collector, poet, and novelist who wrote in Scottish and English and was encouraged by his life-long friend Walter Scott to take up a writing career. Hogg authored <bibl corresp="#QueensWake">a long poem, <title>The Queen's Wake</title> on <persName ref="#MaryQoS">Mary Queen of Scots</persName> in <date when="1813">1813</date>
+                     </bibl>, and <bibl>
+                        <title>The Private Memoirs and Confessions of a Justified Sinner</title>, anonymously published in <date when="1824">1824</date>
+                     </bibl>.</note>
                </person>
                <person xml:id="Holcroft" sex="1">
                   <persName>
@@ -3716,9 +3822,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note type="bio" resp="#lmw #ebb">MP for <placeName ref="#Reading_city">Reading
                         area</placeName>
                      <date from="1820" to="1830">1820-1830</date>, who frequently franked <persName ref="#MRM">Mary Russell Mitford</persName>'s
-                     letters.<!-- expand.    LMW --></note>
-                  <note resp="#ebb">
-                     <persName ref="#MRM">MRM</persName>'s letter to <persName ref="#Elford_SirWm">Sir William Elford</persName> of <date when="1820-03-20">20 March 1820</date> describes the election of Monck, describing him in context with a shoemaker who brought him from France: <quote defective="false">"<persName ref="#Monck_JB">Mr. Monck</persName> an opposition man of large fortune brought from <placeName ref="#France">France</placeName> in a fit of patriotism by our celebrated shoemaker &amp; Patriot <persName>Mr. <unclear unit="chars" quantity="4">
+                     letters.
+               
+                     <persName ref="#MRM">MRM</persName>'s letter to <persName ref="#Elford_SirWm">Sir William Elford</persName> of <date when="1820-03-20">20 March 1820</date> discusses the election of Monck to Parliament for Reading, and associate him with a shoemaker who brought him from France: <quote>"<persName ref="#Monck_JB">Mr. Monck</persName> an opposition man of large fortune brought from <placeName ref="#France">France</placeName> in a fit of patriotism by our celebrated shoemaker &amp; Patriot <persName>Mr. <unclear unit="chars" quantity="4">
                               <supplied resp="#ebb">W</supplied>
                               <!--ebb: Could this be Waring? or Maury?-->
                            </unclear>
@@ -5342,6 +5448,13 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#err">Daughter of King Priam and Queen Hecuba of Troy, Cassandra was a
                      prophet in Greek mythology whose prophecies were never believed.</note>
                </person>
+               <person xml:id="Catherine_Ab">
+                  <persName>
+                     <forename>Catherine</forename>
+                  </persName>
+                  <note resp="#lmw">Character in <persName ref="#Scott_Wal">Walter Scott</persName>'s novel <title ref="#Abbot_WS">The Abbot.</title>
+                  </note>
+               </person>
                <person xml:id="Celso_F" sex="1">
                   <persName>Celso</persName>
                   <note resp="#lmw">Celso in
@@ -5446,6 +5559,14 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#ebb">A Judge appointed by Parliament to try the <persName ref="#Chas1_MRM">King</persName> in <persName ref="#MRM">Mitford's</persName> play, <title ref="#CharlesI_MRMplay">Charles
                      I</title>.</note>
                </person>
+               <person xml:id="Dulcinea_DQ">
+                  <persName>
+                     <forename>Dulcinea</forename>
+                     <surname>del Toboso</surname>
+                  </persName>
+                  <note resp="#lmw">Name of the idealized female character in <bibl corresp="#Don_Quixote_novel">Cervantes' <title>Don Quixote</title>
+                     </bibl> (who is mentioned in the text but never appears). Proverbial for an ideal woman.</note>
+               </person>
                <person xml:id="Edie_Ochiltree">
                   <persName>Edie Ochiltree</persName>
                   <note resp="#esh">character in <title ref="#Antiquary">The
@@ -5512,6 +5633,13 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <person xml:id="Hengo_B">
                   <persName>Hengo</persName>
                   <note resp="#lmw">character in <title ref="#Bonduca_play">Bonduca</title>
+                  </note>
+               </person>
+               <person xml:id="Henry_Ab">
+                  <persName>
+                     <forename>Henry</forename>
+                  </persName>
+                  <note resp="#lmw">Character in <persName ref="#Scott_Wal">Walter Scott</persName>'s novel <title ref="#Abbot_WS">The Abbot.</title>
                   </note>
                </person>
                <person xml:id="Herbert_Ch1">
@@ -5745,6 +5873,12 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         <persName ref="#Chas1_MRM">King</persName> in <persName ref="#MRM">Mitford's</persName> play, <title ref="#CharlesI_MRMplay">Charles
                      I</title>.</note>
                </person>
+               <person xml:id="Sebastian_TN">
+                  <persName>
+                     <forename>Sebastian</forename>
+                  </persName>
+                  <note resp="#lmw">Character in Shakespeare's Twelfth Night.</note>
+               </person>
                <person xml:id="servant_Ch1">
                   <persName>Servant</persName>
                   <note resp="#ebb">A servant belonging to <persName ref="#Cromwell_MRM">Cromwell</persName> in <persName ref="#MRM">Mitford's</persName> play,
@@ -5792,6 +5926,12 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#ebb">A Commissioner appointed by Parliament to treat with the
                         <persName ref="#Chas1_MRM">King</persName> in <persName ref="#MRM">Mitford's</persName> play, <title ref="#CharlesI_MRMplay">Charles
                      I</title>.</note>
+               </person>
+               <person xml:id="Viola_TN">
+                  <persName>
+                     <forename>Viola</forename>
+                  </persName>
+                  <note resp="#lmw">Character in Shakespeare's Twelfth Night.</note>
                </person>
                <person xml:id="Volumnia_C">
                   <persName>Volumnia</persName>
@@ -5873,6 +6013,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </place>
                <place xml:id="Bickham_village">
                   <placeName>Bickham</placeName>
+                  <note resp="#ebb">
+                     <rs type="event">Village near <placeName ref="#Plymouth_city">Plymouth</placeName>, and residence of <persName ref="#Elford_SirWm">Sir William Elford</persName> lived until the failure of his finances in <date when="1825">1825</date> forced him eventually to sell his family's estate.</rs> According to the ODNB, <rs type="event">he sold Bickham in <date when="1831">1831</date>
+                     </rs> and moved to <placeName>The Priory</placeName>, in <placeName>Totnes, Devon</placeName> the house of his daughter (<persName ref="#Elford_Elizabeth">Elizabeth</persName>) and son-in-law.</note>
                </place>
                <place xml:id="Boston">
                   <placeName>Boston, Massachusetts</placeName>
@@ -6046,6 +6189,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <placeName>Holdenby House</placeName>
                   <note resp="#ebb">Palace near <placeName>Althorp, Northamptonshire</placeName> where King Charles I was held captive in <date when="1647">1647</date>.</note>
                </place>
+               <place xml:id="India">
+                  <placeName>Indian subcontinent</placeName>
+                  <note resp="#ebb">In Mitford's day, the <orgName>East India Company</orgName> and its private armies controlled India and its economy, effectively <date from="1757" to="1858">from 1757 to 1858</date>, after which <persName ref="#Victoria_Queen">Queen Victoria</persName> and her government directly governed India as the <placeName>Raj</placeName>.</note>
+               </place>
                <place xml:id="Ireland"/>
                <place xml:id="Isle_of_Wight">
                   <country>England</country>
@@ -6149,6 +6296,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </place>
                <place xml:id="Plymouth_city">
                   <placeName>Plymouth</placeName>
+                  <note resp="#ebb">
+                     <persName ref="#MRM">Mitford</persName> posted her letters to <persName ref="#Elford_SirWm">Sir William Elford</persName> to <placeName ref="#Bickham_village">Bickham</placeName> by way of Plymouth.</note>
                </place>
                <place xml:id="Pump_Court">
                   <placeName>Pump Court</placeName>
@@ -6593,7 +6742,8 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <bibl xml:id="_55Days_play">
                   <title>55 Days</title>
                   <author>Howard Brenton</author>
-                  <placeName>London: Nick Hern</placeName>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Nick Hern</publisher>
                   <date when="2012"/>
                </bibl>
                <bibl xml:id="Abbot_WS">
@@ -6753,6 +6903,14 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <title>The Decline and Fall of the Roman Empire</title>
                   <author ref="#Gibbon_Edward"/>
                </bibl>
+               <bibl xml:id="Don_Quixote_novel">
+                  <title>The Ingenious Gentleman Don Quixote of La Mancha</title>
+                  <title>El ingenioso hidalgo don Quijote de la Mancha</title>
+                  <author>Miguel de Cervantes</author>
+                  <date>1615</date>
+                  <note resp="#ebb">First published in English in <date when="1620">1620</date>
+                  </note>
+               </bibl>
                <bibl xml:id="Don_Sebastian_play">
                   <title>Don Sebastian</title>
                   <author ref="#Dryden"/>
@@ -6898,6 +7056,18 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <title>The Iliad</title>
                   <note resp="#ebb #lmw">The author of this poem would have been presumed to be
                         <persName ref="#Homer">Homer</persName> in Mitford's time.</note>
+               </bibl>
+               <bibl xml:id="India_JournalResidence_Graham">
+                  <author ref="#Graham_Maria">Maria Graham</author>
+                  <title>Journal of a Residence in India: illustrated by engravings</title>
+                  <pubPlace>Edinburgh</pubPlace>
+                  <publisher>A. Constable</publisher>
+                  <date>1812</date>
+                  <note resp="#ebb">
+                     <bibl>
+                        <edition> Site Index for the Digital Mitford project. Date: 2015-03-11T18:24:24.859-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 844. First digital edition in TEI P5, launched on 19 August 2013.</edition> was published in <date>1813</date> in <pubPlace>Edinburgh</pubPlace> by <publisher>A. Constable and Company</publisher>, and in <pubPlace>London</pubPlace> by <publisher>Longman, Rees, Orme, and Browne</publisher>. Source: WorldCAT and Google Books.</bibl>
+                  </note>
                </bibl>
                <bibl xml:id="Inez_deCastro_MRMplay">
                   <title>Inez de Castro; A Tragedy in Five Acts</title>
@@ -7108,6 +7278,15 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <title>Prometheus Bound</title>
                   <note resp="#ebb">The authorship of this influential ancient Greek tragedy was classically attributed to <persName ref="#Aeschylus">Aeschylus</persName>, but this has been disputed since the mid-19th century.</note>
                </bibl>
+               <bibl xml:id="QueensWake">
+                  <title>The Queen's Wake: a legendary poem</title>
+                  <author ref="#Hogg_J">James Hogg</author>
+                  <pubPlace>Edinburgh</pubPlace>
+                  <publisher>A. Balfour, for G. Goldie</publisher>
+                  <date>1813</date>
+                  <note resp="#ebb">long poem on <persName ref="#MaryQoS">Mary, Queen of Scots</persName>
+                  </note>
+               </bibl>
                <bibl xml:id="Recoll_Reign_GeoIII">
                   <title>Recollections and Reflections, Personal and Political, as Connected with Public Affairs, During the Reign of George III </title> by <author ref="#Nicholls_John">John Nicholls</author>
                   <!-- 2 vols.  London:  Longman, Hurst, Rees, Orme, and Brown, 1822.  Google Books.  LMW -->
@@ -7133,6 +7312,16 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <title>The Rival Sisters a Poem in Three Cantos</title>
                   <author ref="#MRM"/>
                   <bibl corresp="#NarrativePoems"/>
+               </bibl>
+               <bibl xml:id="Rome_ThreeMonths_Graham">
+                  <author ref="#Graham_Maria">Maria Graham</author>
+                  <title>Three months passed in the mountains east of Rome : during the year 1819</title>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Longman, Hurst, Rees, Orme, and Brown</publisher>
+                  <pubPlace>Edinburgh</pubPlace>
+                  <publisher>A. Constable and Company</publisher>
+                  <date>1820</date>
+                  <note resp="#ebb #lmw">Illustrated with engravings. Source: Google Books and WorldCAT.</note>
                </bibl>
                <bibl xml:id="Sadak_Kalasrade">
                   <title>Sadak and Kalasrade; or, The Waters of Oblivions. A Romantic Opera in Two
@@ -7225,6 +7414,12 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <title>Watlington Hill; A Poem</title>
                   <date>1811</date>
                   <author ref="#MRM">Mary Russell Mitford</author>
+               </bibl>
+               <bibl xml:id="Waverley">
+                  <title>Waverley; or 'Tis Sixty Years Since</title>
+                  <author ref="#Scott_Wal"/>
+                  <publisher>Archibald Constable</publisher>
+                  <date>1814</date>
                </bibl>
                <bibl xml:id="Wheel_Fortune_play">
                   <title>Wheel of Fortune</title>
