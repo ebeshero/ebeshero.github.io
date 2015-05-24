@@ -4,7 +4,7 @@
     
    
     <pattern>
-        <let name="si" value="doc('http://mitford.pitt.edu/si.xml')//@xml:id"/> 
+        <let name="si" value="doc('http://digitalmitford.org/si.xml')//@xml:id"/> 
         <rule context="//@ref | //@corresp">
             <assert test="substring-after(., '#') = //tei:text//@xml:id | $si">
                 
