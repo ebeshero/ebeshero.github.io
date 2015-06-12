@@ -8,11 +8,14 @@
           <!--  <assert test="substring-after(., '#') = //tei:text//@xml:id">
                 The attribute of @ref or @corresp (after the hashtag, #) must match a defined @xml:id in this file. 
             </assert>-->
+            <assert test="starts-with(., '#')">
+            </assert>
             
             <let name="tokens" value="for $w in tokenize(., '\s+') return substring-after($w, '#')"/>
             <assert test="every $token in $tokens satisfies $token = //tei:text//@xml:id">
                 The attribute of @ref or @corresp (after the hasthtag, #) must match a defined @xml:id in this file.
             </assert>
+            
         </rule>
        
     </pattern>
