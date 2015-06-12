@@ -4,7 +4,7 @@
     
     <pattern>
        
-        <rule context="//@ref | //@corresp ">
+        <rule context="//@ref | //@corresp | //@resp">
           <!--  <assert test="substring-after(., '#') = //tei:text//@xml:id">
                 The attribute of @ref or @corresp (after the hashtag, #) must match a defined @xml:id in this file. 
             </assert>-->
