@@ -16,6 +16,9 @@ div.boilerplate span {text-indent:-1em;
 div#container {width:80%; float:left; margin-left:5%}
 div#map {width:1000px;
    height:666px;}
+ 
+ div#mapb {width:1000px;
+   height:666px;}
 
 h1 {font-size:1.5em; padding:2px; color:#FFCC66; display:block; text-align:center}
 h2 {font-size:1.3em; padding:1px; color:#FFCCB2; text-align:center; color:#F2D9E6; display:inline-block;}
