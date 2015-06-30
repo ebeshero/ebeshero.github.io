@@ -1,0 +1,41 @@
+body{background-color:#000000; color:#FFEBB9;
+ font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif; line-height:1.2em}
+
+div#top {width:100%; padding:5px}
+div#banner {width:100%; float:right;  margin-left:auto; margin-right:auto}
+div#banner img {width:1000px; padding:10px; margin-left:auto; margin-right:auto}
+
+
+div#menu {width:60%; display:inline-block; margin-left:auto; margin-right:auto; float:left}
+div.boilerplate {display:inline; width:40%; float:left; text-align:left}
+div.boilerplate span {text-indent:-1em;
+    margin-left:1em;
+    display:block;
+    font-size:smaller;
+    line-height:1.4em;}
+div#container {width:80%; float:left; margin-left:5%}
+div#map {width:1000px;
+   height:666px;}
+
+h1 {font-size:1.5em; padding:2px; color:#FFCC66; display:block; text-align:center}
+h2 {font-size:1.3em; padding:1px; color:#FFCCB2; text-align:center; color:#F2D9E6; display:inline-block;}
+h3 {font-size:1.2em; padding:1px; color:#FFCC66;
+ display:inline-block;}
+h4 {font-size:1.1em; padding:1px; color:#8270E8;  display:inline-block;
+}
+
+p {padding:5px; margin-left:auto; margin-right:auto}
+
+ol.letter {list-style-type:lower-alpha;}
+
+ul li {padding:3px}
+
+ol li {padding:3px}
+
+
+a:link {color:#FFFF99 }      /* unvisited link */
+a:visited {color:#CCCCFF
+;}  /* visited link */
+a:hover {color:#CCCCFF;
+;}  /* mouse over link */
+a:active {color:#CC99FF;}  /* selected link */

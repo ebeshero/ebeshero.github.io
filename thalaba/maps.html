@@ -4,7 +4,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>Thalaba’s Place Networks: Graphs and Slides</title>
-        <link rel="stylesheet" type="text/css" href="thalaba.css"/> 
+        <link rel="stylesheet" type="text/css" href="map.css"/>
+        <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+       
+        
     </head>
     <body>
        
@@ -22,15 +25,39 @@ document.write(document.lastModified);
 </script></span></div>
          </div> 
         </div>
-        <div id="container">
-           
-           <p>This page, designed to accompany conference presentations, features some views of the Thalaba Network Analysis project from its early stages to the present, and is under development.</p>
-            <h2>Prezi for the 2014 TEI Conference at Northwestern University, 22 October 2014:</h2>
-            <iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="550" height="400" src="http://prezi.com/embed/l8yclizbjgq6/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0#"></iframe>
-            
-        </div>
-        
-      
+        <div id="container"><div id="map"></div></div>
+        <script type="application/javascript" src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+        <script type="application/javascript">
+      function main() {
+        cartodb.createVis('map', 'https://ebbondar.cartodb.com/api/v2/viz/a85a088c-1efe-11e5-95a8-0e8dde98a187/viz.json', {
+            shareable: true,
+            title: true,
+            description: true,
+            search: true,
+            tiles_loader: true,
+            center_lat: 0,
+            center_lon: 0,
+            zoom: 2
+        })
+        .done(function(vis, layers) {
+          // layer 0 is the base layer, layer 1 is cartodb layer
+          // setInteraction is disabled by default
+          layers[1].setInteraction(true);
+          layers[1].on('featureOver', function(e, latlng, pos, data) {
+            cartodb.log.log(e, latlng, pos, data);
+          });
+          // you can get the native map to work with it
+          var map = vis.getNativeMap();
+          // now, perform any operations you need
+          // map.setZoom(3);
+          // map.panTo([50.5, 30.5]);
+        })
+        .error(function(err) {
+          console.log(err);
+        });
+      }
+      window.onload = main;
+      </script>
         
     </body>
 </html>
