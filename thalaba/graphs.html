@@ -23,8 +23,27 @@ document.write(document.lastModified);
          </div> 
         </div>
         <div id="container">
-           
-           <p>This page, designed to accompany conference presentations, features some views of the Thalaba Network Analysis project from its early stages to the present, and is under development.</p>
+            <h2>An Overview of this project, with some early plots</h2>
+            <p>I first began plotting network graphs for this project in 2013, before I had finished coding all of the places in Southey's poem. Please read my blog post, "<a href="https://digitalromanticist.wordpress.com/2013/08/23/spectacular-intersections-of-place-in-southeys-thalaba-the-destroyer/">Spectacular Intersections of Place in Robert Southey's <i>Thalaba the Destroyer</i></a>" first, for an overview of the project, its beginnings, and an orientation to Southey's place-referencing in <cite>Thalaba the Destroyer</cite>. This page will feature network views of current work in progress.</p>
+           <h2>"Closeness" and "Distance" of Networked Places</h2>
+            <p>What do we mean when we say that one place is “close” to another place? If we think in terms of geography, of course, the distance is something we measure in quantifiable units (kilometers or miles). But if we think in terms of how places are plotted in relation to one another inside an epic poem and its prose annotations, we might think of “close” and “far” in terms of whether two places are frequently referenced together in the same passages of a poem: Perhaps Southey has “plotted” places around the world literally within the plot fabric of his narrative poem, and he has created little neighborhoods or clusters based on places referenced in the annotations of a given unit of text.</p>
+            
+           <p> I became curious about a statistical measurement in network analysis graphs called “closeness centrality” and its companion measurement, “average shortest path length”. The two concepts are inversely connected, based on the concept of a “path-step” in network analysis: A single path step takes you from one node to another along its shared connecting edge. If a node has six other nodes connected directly to it, those six nodes are the ones that are one path step away from this node. We can study a network by considering how many steps it would take to go from the most centrally connected node to the ones that are “furthest away,” that is, the nodes that it would take the most path steps to reach from most of the other nodes. Thus, the node with the highest “closeness centrality” is the node that has the lowest average shortest path to reach any other node in the network.</p>
+            
+            <p>Because I am studying places (and metaplaces) in an unusual way by networking them together based on their position in an epic poem, I am interested in how “close” and how “far” these locations are from one another from the perspective of their distance in path steps on the network graph. Here is a view of the places in the poem organized by the network measure of closeness centrality.</p> 
+            <img src="ThaLabelled-AvSP.png" alt="Thalaba's places and metaplaces organized by Average Shortest Path Length"/>
+            
+            <p>Here is <a href="cytoscape3/">a dynamic, interactive version of this network graph</a>, though the nodes and edges are not so distinct as in the static view above. On the web view, change the Visual Style to default-black and click on the droplet icon on the right to change the backgroudn to a dark color or black for best viewing results. </p>
+            
+            <h2>How Does Southey's Thalaba Compare to Erasmus Darwin's <i>The Temple of Nature</i> for Place-Referencing?</h2>
+            <p>At the DH-2015 Conference in Sydney, I presented a preliminary plot of a place network from Erasmus Darwin's <i>The Temple of Nature</i> plotted in the same way, according to closeness centrality, as the Thalaba network plotted above. Here is the network view of places in <i>Temple of Nature</i> for the sake of comparison, which, though heavily footnoted, is visibly less complex in its clusters of place references than Southey's poem:</p>
+            <img src="" title="Erasmus Darwin's The Temple of Nature: places plotted by Average Shortest Path Length"/>
+            <h2>Filtering the Thalaba Place-Network: A Closeup of a cluster of places surrounding the "Vampire Cluster"</h2>   
+            
+            <p>The largest cluster visible in the graph above represents a clique or neighborhood of nodes all connected by reference in one massive footnote, which contains one of the earliest known references in English literature to vampires and a special "metaplace" associated with them. For more on the Vampire cluster and why it's significant, see <a href="https://digitalromanticist.wordpress.com/2013/08/23/spectacular-intersections-of-place-in-southeys-thalaba-the-destroyer/">my blog on "Spectacular Intersections of Place"</a>. Here is a view of the Vampire metaplace and the nodes within two path steps of it, representing a fascinating worldly diversity of places that effectively encircle the planet from this one location in Book 8 of Southey's poem:
+            </p>
+            <img src="ThalabaAna-TwoStepsVampire.png" alt="Two Steps from the Vampire metaplace"/>
+            
             <h2>Prezi for the 2014 TEI Conference at Northwestern University, 22 October 2014:</h2>
             <iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="550" height="400" src="http://prezi.com/embed/l8yclizbjgq6/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0#"></iframe>
             
