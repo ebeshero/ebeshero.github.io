@@ -5,17 +5,13 @@
     <pattern>
        
         <rule context="//@ref | //@corresp | //@resp">
-          <!--  <assert test="substring-after(., '#') = //tei:text//@xml:id">
-                The attribute of @ref or @corresp (after the hashtag, #) must match a defined @xml:id in this file. 
-            </assert>-->
-            <!--<assert test="starts-with(., '#')">
-               @ref and @corresp attributes must begin with a hashtag (#).
-            </assert>-->
             
             <let name="tokens" value="for $w in tokenize(., '\s+') return substring-after($w, '#')"/>
             <assert test="every $token in $tokens satisfies $token = //tei:text//@xml:id">
-                The attribute of @ref or @corresp (after the hasthtag, #) must match a defined @xml:id in this file.
+                The attribute of @ref or @corresp (after the hasthtag, #) must match a defined @xml:id in this file. 
+                And did you remember to start with a hashtag when pointing to an xml:id? 
             </assert>
+         
             
         </rule>
        
@@ -26,6 +22,9 @@
                 <report test="matches(., '\s+')">
                 @xml:id values may NOT contain white spaces!
             </report>
+            <report test="starts-with(., '#')">
+                @xml:id values may NOT begin with a hashtag.
+            </report>
         </rule> 
     </pattern>
     <pattern>
@@ -34,6 +33,10 @@
                 
             </assert>
         </rule>
+
+           
+       
+       
     </pattern>
     
 </schema>
