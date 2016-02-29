@@ -25,8 +25,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition> Site Index for the Digital Mitford project. Date: 2016-02-28T21:13:05.594-05:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 1426. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition> Site Index for the Digital Mitford project. Date: 2016-02-28T22:33:06.411-05:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 1425. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -268,8 +268,12 @@
                      <affiliation>UCLA</affiliation>
                   </occupation>
                   <note type="bio">
-                     <persName ref="#err">Elizabeth Raisanen</persName> writes on literary representations of the pregnant and birthing body in British Romantic literature, although her research interests also extend to Romantic drama, during the study of which she first discovered <persName ref="#MRM">Mary Russell Mitford</persName>. Elizabeth has presented papers on Mitford's plays at the North American Society for the Study of Romanticism, the Wordsworth Summer Conference, and the British Women Writer's Conference, and <bibl>her article on Mitford's play <title ref="#Rienzi">Rienzi</title> appeared in <title level="s">European Romantic Review</title> in <date when="2011">2011</date>
-                     </bibl>. Elizabeth has also taught undergraduate students at UCLA to transcribe, code, and research a group of Mitford's letters stored at <orgName ref="#ReadingCL">Reading Central Library</orgName>.
+                     <note type="bio">
+                        <persName ref="#err">Elizabeth Raisanen</persName> is the Director of Undergraduate Advising and an Instructor of Literature in the Robert D. Clark Honors College at the University of Oregon. A specialist in the women writers of the British Romantic era, Elizabeth's research interests also extend to eighteenth- and nineteenth-century British literature, Romantic drama, and the Digital Humanities. She has presented papers on Mitford's plays at the North American Society for the Study of Romanticism, the Wordsworth Summer Conference, and the British Women Writer's Conference, and <bibl>her article on Mitford's play <title ref="#Rienzi">Rienzi</title> appeared in <title>European Romantic Review</title>in <date when="2011">2011</date>
+                        </bibl>. Other essays on Romantic women writers have appeared (or are forthcoming) in <bibl>
+                           <title>Women's Studies</title>
+                        </bibl> and <bibl>an edited collection on Mary Wollstonecraft</bibl>. Elizabeth has also taught undergraduate students how to transcribe, code, and conduct research on a collection of Mitford's letters stored at <orgName ref="#ReadingCL">Reading Central Library</orgName>.<p/>
+                     </note>
                   </note>
                </person>
                <person xml:id="esh">
@@ -574,18 +578,6 @@
                         Vanishing Voyager and the Emerging Outsider, 1818-1930</title>, was directed
                      by Prof. <persName>Jeanne Moskal</persName> and won UNC-Chapel Hill's Thomson
                      award for the best nineteenth-century literature dissertation. </note>
-               </person>
-               <person xml:id="sajj">
-                  <persName>
-                     <surname>Jones</surname>
-                     <forename>Shelley</forename>
-                     <forename>AJ</forename>
-                     <roleName>Editor</roleName>
-                  </persName>
-                  <occupation>Assistant Professor of English
-                     <affiliation>University of South Carolina, Extended University</affiliation>
-                  </occupation>
-                  <note type="bio">Shelley AJ Jones is an Assistant Professor of English at the University of South Carolina-Extended University, Palmetto College, where she teaches online and distance education classes. Her main research interests include the intersections of genre and revision and technology and pedagogy in British Romantic poetry, with a particular focus on Mary Robinson. Most recently, she was an associate editor for a parallel-text version of Helen Maria Williams' <title>Peru and Peruvian Tales</title>, newly out from Broadview Press.</note>
                </person>
                <person xml:id="scw">
                   <persName>
