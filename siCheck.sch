@@ -33,15 +33,12 @@
               You must include an @sortKey on a list element, and it needs to be one of the legal values!
             </assert>
         </rule>
+        <rule context="@sortKey">
+        <assert test="count(distinct-values(.)) eq count(.)">
+            There must not be any duplicate @sortkey values in the site index! 
+        </assert>
+        </rule>
 
     </pattern>
-    <pattern>
-        <rule context="@sortKey">
-            <assert test="count(distinct-values(.)) eq count(.)">
-                There must not be any duplicate @sortkey values in the site index!
-                
-            </assert>
-        </rule>
-    </pattern>
-    
+   
 </schema>
