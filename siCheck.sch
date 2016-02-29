@@ -36,8 +36,8 @@
 
     </pattern>
     <pattern>
-        <rule context="tei:text//tei:div/*">
-            <report test="count(distinct-values(@sortKey)) ne count(@sortKey)">
+        <rule context="@sortKey">
+            <report test="count(distinct-values(./text())) ne count(.)">
                 There must not be any duplicate @sortkey values in the site index!
                 
             </report>
