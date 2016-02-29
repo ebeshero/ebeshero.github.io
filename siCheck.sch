@@ -37,10 +37,10 @@
     </pattern>
     <pattern>
         <rule context="@sortKey">
-            <report test="count(distinct-values(./text())) ne count(.)">
+            <assert test="count(distinct-values(.)) eq count(.)">
                 There must not be any duplicate @sortkey values in the site index!
                 
-            </report>
+            </assert>
         </rule>
     </pattern>
     
