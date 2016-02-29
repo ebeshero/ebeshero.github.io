@@ -32,10 +32,14 @@
             <assert test="@sortKey = ('Mitford_Team', 'archives', 'Past_Editors', 'histOrgs', 'histPersons', 'fictOrgs', 'archOrgs', 'archPersons', 'fictPersons', 'histPlaces', 'fictPlaces', 'plants', 'histEvents', 'art', 'ref_19thc', 'per_19thc', 'literary', 'MRM_Schol', 'other_current_Schol')">
               You must include an @sortKey on a list element, and it needs to be one of the legal values!
             </assert>
-            <assert test="count(distinct-values(@sortKey)) eq count(@sortKey)">
-                There must not be any duplicate @sortkey values in the site index! 
-            </assert>
-        </rule>
+         </rule>
+    </pattern>
+    <pattern>
+       <rule context="/"> 
+           <assert test="count(distinct-values(//*[@sortKey]/@sortKey)) eq count(//*[@sortKey])">
+            There must not be any duplicate @sortkey values in the site index! 
+        </assert></rule>
+        
     </pattern>
    
 </schema>
