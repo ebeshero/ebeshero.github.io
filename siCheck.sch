@@ -35,8 +35,8 @@
          </rule>
     </pattern>
     <pattern>
-       <rule context="/"> 
-           <assert test="count(distinct-values(//*[@sortKey]/@sortKey)) eq count(//*[@sortKey])">
+       <rule context="tei:TEI"> 
+           <assert test="count(distinct-values(//@sortKey)) eq count(//*[@sortKey])">
             There must not be any duplicate @sortkey values in the site index! 
         </assert></rule>
         
