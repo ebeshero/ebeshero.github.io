@@ -28,7 +28,7 @@
         </rule> 
     </pattern>
     <pattern>
-        <rule context="text//div/*">
+        <rule context="tei:text//tei:div/*">
             <assert test="@sortKey = ('Mitford_Team', 'archives', 'Past_Editors', 'histOrgs', 'histPersons', 'fictOrgs', 'archOrgs', 'archPersons', 'fictPersons', 'histPlaces', 'fictPlaces', 'plants', 'histEvents', 'art', 'ref_19thc', 'per_19thc', 'literary', 'MRM_Schol', 'other_current_Schol')">
                 
             </assert>
