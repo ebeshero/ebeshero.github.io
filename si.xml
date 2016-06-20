@@ -25,8 +25,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition> Site Index for the Digital Mitford project. Date: 2016-06-08T04:29:43.369-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 1449. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition> Site Index for the Digital Mitford project. Date: 2016-06-20T17:21:29.7-04:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 1453. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -284,7 +284,7 @@
                   <occupation>
                      <affiliation>Adrian College</affiliation>
                   </occupation>
-                  <note type="bio"> Eric Hood is an Assistant Professor at Adrian College and holds
+                  <note type="bio">Eric Hood is an Assistant Professor at Adrian College and holds
                      a PhD from the University of Kansas. He specializes in literary theory,
                      eighteenth- and nineteenth-century British poetry (particularly, the epic), and
                      intellectual networks. <ptr target="http://academichood.wordpress.com"/>
@@ -3118,6 +3118,23 @@
                   </occupation>
                   <note resp="#scw">Listed as a shopkeeper in <placeName ref="#ThreeMileCross">Three Mile Cross</placeName>in <bibl corresp="#PO_BerkshireDir">the 1854 <title>Post Office Directory of Berkshire</title>
                      </bibl>. <persName ref="#Needham_Francis">Needham</persName> notes his name on a list of local tradespeople taken from <bibl corresp="#PO_BerkshireDir">the <date when="1847">1847</date> edition</bibl>, adding that <persName ref="#Clarke_William">Clarke</persName>was also a baker.</note>
+               </person>
+               <person xml:id="Clement6_Pope" sex="1">
+                  <persName>
+                     <roleName>Pope</roleName> Clement 6</persName>
+                  <persName>
+                     <surname>Roger</surname>
+                     <forename>Pierre</forename>
+                  </persName>
+                  <birth when="1291">
+                     <placeName>Maumont, France</placeName>
+                  </birth>
+                  <death when="1352-12-06">
+                     <placeName>Avignon, Papal States</placeName>
+                  </death>
+                  <occupation>religion</occupation>
+                  <note resp="#esh">Clement the VI reigned the Pope, or patriarch of the Catholic Church, from <date from="1329" to="1352">1329 to 1352</date>. He is mentioned in Mitford's <title ref="#Rienzi">Rienzi</title>, as an influential political power outside of the city of Rome, although he does he not appear on the stage. </note>
+                  <note>VIAF record: http://viaf.org/viaf/121108971/</note>
                </person>
                <person xml:id="Cobbett_Wm" sex="1">
                   <persName>
@@ -9079,7 +9096,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <forename>Bysshe</forename>
                   </persName>
                   <birth when="1792-08-04">Horsham, Sussex, England</birth>
-                  <death when="1822-07-08"><placeName>Gulf of La Spezia, Sardinia</placeName></death>
+                  <death when="1822-07-08">
+                     <placeName>Gulf of La Spezia, Sardinia</placeName>
+                  </death>
                   <note resp="#ebb">Radical English poet, friend of <persName ref="#Peacock_TL">Thomas Love Peacock</persName>, <persName ref="#Hunt">Leigh Hunt</persName>, and <persName ref="#Byron">Lord Byron</persName>, married to <persName>Mary Wollstonecraft</persName>'s and <persName ref="#Godwin_Wm">William Godwin</persName>'s daughter <persName ref="#Shelley_MW">Mary Wollstonecraft Godwin Shelley</persName>. This influential and unconventional group of writers is sometimes known as <q>England's first family of writers</q> . 
                      See <ref target="http://shelleygodwinarchive.org/about/#firstfamily">the Shelley-Godwin Archive's biographical page on the group and their circle</ref>.</note>
                   <note>http://viaf.org/viaf/95159449/</note>
@@ -9225,11 +9244,20 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <surname>Smith</surname>
                      <forename>Horatio</forename>
                   </persName>
-             
-               <birth when="1779-12-31"><placeName>London</placeName></birth>
-               <death when="1849-07-12"><placeName>Tunbridge Wells</placeName></death>
-                  <note resp="#ebb"><p>Poet, parodist, playwright, and successful stockbroker, friend of <persName ref="#Shelley_PB">Percy Bysshe Shelley</persName>, and member of <persName ref="#Hunt">Leigh Hunt</persName>'s circle. Horace and his older brother James wrote and published <bibl><title level="m">Rejected Addresses: Or, The New Theatrum Poetarum</title> in <date when="1812">1812</date></bibl>, which parodied the styles of 21 poets and dramatists in a series of fake addresses to be delivered on stage and supposedly rejected by the managers of <placeName ref="#Drury_Lane_Theatre">Drury Lane Theatre</placeName> for <rs type="event">a competition they had sponsored to celebrate the rebuilding of their theater in <date when="1812-10">October 1812</date> following a fire</rs>. Poets parodied by the Smith brothers included <persName ref="#Byron">Lord Byron</persName>, <persName ref="#Scott_Wal">Walter Scott</persName>, <persName ref="#Southey_R">Robert Southey</persName>, <persName ref="#Coleridge_ST">Samuel Taylor Coleridge</persName>, and <persName ref="#Wordsworth_Wm">William Wordsworth</persName>.</p> 
-                     <p>Horace Smith and Percy Shelley drafted a competing pair of sonnets on Egyptian antiquities, each published in <bibl><title level="s">The Examiner</title> (Shelley's was published on <date when="1818-01-11">11 January</date> and Smith's on <date when="1818-02-01">1 February of 1818</date>)</bibl>, and of the two, Shelley's <title level="a">Ozymandias</title> became far better known. Romantic Circles hosts <ref target="http://www.rc.umd.edu/sites/default/RCOldSite/www/rchs/reader/smith.html">a digital edition of Smith's sonnet, <title level="a">On a Stupendous Leg of Granite, Discovered Standing by Itself in the Deserts of Egypt, with the Inscription Inserted Below</title></ref>.</p></note>
+                  <birth when="1779-12-31">
+                     <placeName>London</placeName>
+                  </birth>
+                  <death when="1849-07-12">
+                     <placeName>Tunbridge Wells</placeName>
+                  </death>
+                  <note resp="#ebb">
+                     <p>Poet, parodist, playwright, and successful stockbroker, friend of <persName ref="#Shelley_PB">Percy Bysshe Shelley</persName>, and member of <persName ref="#Hunt">Leigh Hunt</persName>'s circle. Horace and his older brother James wrote and published <bibl>
+                           <title level="m">Rejected Addresses: Or, The New Theatrum Poetarum</title> in <date when="1812">1812</date>
+                        </bibl>, which parodied the styles of 21 poets and dramatists in a series of fake addresses to be delivered on stage and supposedly rejected by the managers of <placeName ref="#Drury_Lane_Theatre">Drury Lane Theatre</placeName> for <rs type="event">a competition they had sponsored to celebrate the rebuilding of their theater in <date when="1812-10">October 1812</date> following a fire</rs>. Poets parodied by the Smith brothers included <persName ref="#Byron">Lord Byron</persName>, <persName ref="#Scott_Wal">Walter Scott</persName>, <persName ref="#Southey_R">Robert Southey</persName>, <persName ref="#Coleridge_ST">Samuel Taylor Coleridge</persName>, and <persName ref="#Wordsworth_Wm">William Wordsworth</persName>.</p>
+                     <p>Horace Smith and Percy Shelley drafted a competing pair of sonnets on Egyptian antiquities, each published in <bibl>
+                           <title level="s">The Examiner</title> (Shelley's was published on <date when="1818-01-11">11 January</date> and Smith's on <date when="1818-02-01">1 February of 1818</date>)</bibl>, and of the two, Shelley's <title level="a">Ozymandias</title> became far better known. Romantic Circles hosts <ref target="http://www.rc.umd.edu/sites/default/RCOldSite/www/rchs/reader/smith.html">a digital edition of Smith's sonnet, <title level="a">On a Stupendous Leg of Granite, Discovered Standing by Itself in the Deserts of Egypt, with the Inscription Inserted Below</title>
+                        </ref>.</p>
+                  </note>
                   <note>http://viaf.org/viaf/207338554/</note>
                </person>
                <person xml:id="Smollett_Tob" sex="1">
@@ -9280,7 +9308,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <placeName>London, England</placeName>
                   </death>
                   <occupation>literary</occupation>
-                  <note resp="#lmw #ebb">Second son of the architect <persName>John Soane</persName>. He wrote numerous melodramas for the stage <date from="1817" to="1850">between 1817 and 1850</date>, and translated works from the French, German, and Italian, including <bibl>the first English translation of <author ref="#delaMotte_F">de la Motte</author>'s <title ref="#Undine">prose</title> in <date when="1818">1818</date></bibl>, which he turned into a three-act play, <bibl><title level="m">Undine, or, The Spirit of the Waters</title> by <date notBefore="1821">1821</date></bibl>.</note>
+                  <note resp="#lmw #ebb">Second son of the architect <persName>John Soane</persName>. He wrote numerous melodramas for the stage <date from="1817" to="1850">between 1817 and 1850</date>, and translated works from the French, German, and Italian, including <bibl>the first English translation of <author ref="#delaMotte_F">de la Motte</author>'s <title ref="#Undine">prose</title> in <date when="1818">1818</date>
+                     </bibl>, which he turned into a three-act play, <bibl>
+                        <title level="m">Undine, or, The Spirit of the Waters</title> by <date notBefore="1821">1821</date>
+                     </bibl>.</note>
                   <note>
                      <ref target="http://viaf.org/viaf/315673958"/>
                   </note>
@@ -10267,8 +10298,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                         Nomenclature</bibl>
                      <!--ebb: Make xml:ids for OV sketches-->.</note>
                </person>
-               <person xml:id="whitekitten_WEpet">
-                  <!--FLAG 2016-06-19 ebb: Would this be better as an editorial note in the letter in which it is mentioned, 
+               <person xml:id="whitekitten_WEpet"><!--FLAG 2016-06-19 ebb: Would this be better as an editorial note in the letter in which it is mentioned, 
                      until we notice if the kitten is mentioned in later letters?-->
                   <persName>White kitten</persName>
                   <persName>Selima</persName>
@@ -10496,6 +10526,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                <org xml:id="BustlingDamesChildren">
                   <orgName>the <persName ref="#BustlingDame">Bustling Dame</persName>'s children</orgName>
                </org>
+               <org xml:id="Chorus_R">
+                  <orgName>Chorus</orgName>
+                  <note resp="#esh">Chorus in <title ref="#Rienzi">Rienzi</title>.</note>
+               </org>
                <org xml:id="Citizens_R">
                   <orgName>Citizens</orgName>
                   <note resp="#ebb">Citizens of <placeName ref="#Rome">Rome</placeName> in <title ref="#Rienzi">Rienzi</title>.</note>
@@ -10657,6 +10691,10 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <occupation>"The Adversary" of God and Man.</occupation>
                   <note type="bio" resp="#rnes">In Judeo-Christian theology, the opponent of God and mankind. The word's derivation Hebrew means "adversary."</note>
                </person>
+               <person xml:id="Vesta" sex="2">
+                  <persName>Vesta</persName>
+                  <note resp="#esh">Vesta is the Roman goddess of hearth and domesticity. The temple to Vesta was kept by priestesses known as Vestal Virgins, who took vows of chastity, a vow enforced under penalty of death. In <title ref="#Rienzi">Rienzi</title>, Claudia's dedication to Liberty is compared to the life-long commitment of the Vestal Virgins.</note>
+               </person>
             </listPerson>
             <listPerson sortKey="fictPersons">
                <person xml:id="Abbe_de_L_Epee_DD" sex="1">
@@ -10778,7 +10816,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note resp="#lmw">A character in the <persName ref="#Colman_the_Younger">George Colman the younger</persName> play, <title ref="#JohnBull_play">John Bull the Englishman's Fireside, a Comedy in five acts.</title>  In the play the character is the proprietor of a public house at the sign of the "red cow."</note>
                </person>
                <person xml:id="BustlingDame" sex="2"/>
-            
                <person xml:id="Cafarello">
                   <persName>Cafarello</persName>
                </person>
@@ -10793,7 +10830,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <surname>Donato</surname>
                      <forename>Camilla</forename>
                   </persName>
-                  <note resp="#ebb">daughter of <persName ref="#Donato">Senator Donato</persName> in <bibl><author ref="#MRM">Mitford</author>'s play <title ref="#Foscari_MRMplay">Foscari</title></bibl>
+                  <note resp="#ebb">daughter of <persName ref="#Donato">Senator Donato</persName> in <bibl>
+                        <author ref="#MRM">Mitford</author>'s play <title ref="#Foscari_MRMplay">Foscari</title>
+                     </bibl>
                   </note>
                </person>
                <person xml:id="Camilla_char" sex="2">
@@ -10957,7 +10996,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="Doge_F" sex="1">
                   <persName>Doge Foscari</persName>
-                  <note resp="#ebb">character in <bibl><author ref="#MRM">Mitford</author>'s play <title ref="#Foscari_MRMplay">Foscari</title></bibl>
+                  <note resp="#ebb">character in <bibl>
+                        <author ref="#MRM">Mitford</author>'s play <title ref="#Foscari_MRMplay">Foscari</title>
+                     </bibl>
                   See also historical counterpart: <persName ref="#Doge_F_hist">Doge Foscari</persName>.</note>
                </person>
                <person xml:id="Don_Quixote_char" sex="1">
@@ -11008,7 +11049,9 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                </person>
                <person xml:id="Erizzo" sex="1">
                   <persName>Erizzo</persName>
-                  <note resp="#ebb">Count Erizzo, character in <bibl corresp="#Foscari_MRMplay"><author ref="#MRM">Mitford</author>'s play <title>Foscari</title></bibl>
+                  <note resp="#ebb">Count Erizzo, character in <bibl corresp="#Foscari_MRMplay">
+                        <author ref="#MRM">Mitford</author>'s play <title>Foscari</title>
+                     </bibl>
                   </note>
                </person>
                <person xml:id="Fairfax" sex="1">
@@ -11193,7 +11236,6 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   </note>
                </person>
                <person xml:id="Lieutenant" sex="1"/>
-               <person xml:id="Lizzy_OV" sex="2"/>
                <person xml:id="Lizzy_fict" sex="2">
                   <persName>
                      <forename>Elizabeth</forename>
@@ -11202,6 +11244,7 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <persName>Lizzy Bennet</persName>
                   <note resp="#lmw">Character in <persName ref="#Austen_Jane">Austen</persName>'s novel <title ref="#Pride_and_Prejudice">Pride and Prejudice</title>.</note>
                </person>
+               <person xml:id="Lizzy_OV" sex="2"/>
                <person xml:id="LizzysFather_OV" sex="1"/>
                <person xml:id="LizzysMother_OV" sex="2"/>
                <person xml:id="Macbeth_Lady" sex="2">
@@ -13420,6 +13463,13 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <title level="a">Beauty</title>
                   <author ref="#MRM"/>
                   <note resp="#lmw">Poem by Mary Russell Mitford, first collected in her <title ref="#Poems_1st_ed_MRM">1810 Poems</title>, mentioned in a <date when="1821-02-13">13 February 1821</date> letter to <persName ref="#Haydon">Haydon</persName> as one of three poems from that volume that are "not better, that is too vain a word, but less bad than the rest."</note>
+               </bibl>
+               <bibl xml:id="Bees_Fable">
+                  <title>The fable of the bees, or, Private vices, public benefits : containing several discourses to demonstrate that human frailties, during the degeneracy of mankind, may be turn'd to the advantage of the civil society, and made to supply the place of moral virtues.</title>
+                  <author>Bernard Mandeville</author>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Printed for J. Roberts</publisher>
+                  <date when="1714"/>
                </bibl>
                <bibl xml:id="Belford_Regis">
                   <title>Belford Regis; or, Sketches of a Country Town</title>
