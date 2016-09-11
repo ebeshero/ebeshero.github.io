@@ -29,7 +29,7 @@
     </pattern>
     <pattern>
         <rule context="tei:text//tei:div/*">
-            <assert test="@sortKey = ('Mitford_Team', 'archives', 'Past_Editors', 'histOrgs', 'histPersons', 'fictOrgs', 'archOrgs', 'archPersons', 'fictPersons', 'histPlaces', 'fictPlaces', 'animals', 'plants', 'histEvents', 'art', 'ref_19thc', 'per_19thc', 'literary', 'MRM_Schol', 'other_current_Schol')">
+            <assert test="@sortKey = ('Mitford_Team', 'archives', 'Past_Assistants', 'Past_Editors', 'histOrgs', 'histPersons', 'fictOrgs', 'archOrgs', 'archPersons', 'fictPersons', 'histPlaces', 'fictPlaces', 'animals', 'plants', 'histEvents', 'art', 'ref_19thc', 'per_19thc', 'literary', 'MRM_Schol', 'other_current_Schol')">
               You must include an @sortKey on a list element, and it needs to be one of the legal values!
             </assert>
          </rule>

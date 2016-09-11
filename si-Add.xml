@@ -55,25 +55,29 @@
       <body>
          
    <div type="Mitford_Team"><!--contains Mitford editors as well as archives identifiers. We may want to add a list of all our files from manuscript, with an xml:id for each. More on this as we figure out how!-->
-      <listPerson type="Mitford_Team">
+      <listPerson sortKey="Mitford_Team">
          <person/>
       </listPerson>
-      <listOrg>
+      <listOrg sortKey="archives">
          <org/>
       </listOrg>
    </div>    
        <div type="Past_Editors">
-          <listPerson type="Past_Editors">
+          <listPerson sortKey="Past_Assistants">
+             <person xml:id="whatever"></person>
+          </listPerson>
+          
+          <listPerson sortKey="Past_Editors">
              <person xml:id="whatever"></person>
           </listPerson>
        </div>
          
        <div type="historical_people">
-          <listOrg type="hist">
+          <listOrg sortKey="histOrgs">
              <org xml:id="whatever1"></org>
           </listOrg>
           
-          <listPerson type="hist">
+          <listPerson sortKey="histPersons">
              <person xml:id="whatever3"><!--This is about as elaborate as we need to be for person entries in our project. Historical people will probably have the most extensive entries. Note: We've decided that named animals count as historical people, so Mitford's pets go into this list.-->
                 <persName>
                    <surname type="married"></surname><!--takes @type attributes: @type="married" @type="maiden"-->
@@ -91,38 +95,50 @@
           </listPerson>
        </div>
        <div type="fictional_and_archetypal">
-          <listPerson type="arch">
+          <listPerson sortKey="archPersons">
              <person/><!--This list is for mythical, legendary entities, 
                 not precisely rooted in a place or time, or in a particular text either. -->
           </listPerson>
-          <listPerson type="fict">
+          <listPerson sortKey="fictPersons">
              <person/><!--Use this list for fictional characters from particular texts.-->
           </listPerson>
-          <listOrg type="fict">
+          <listOrg sortKey="fictOrgs">
              <org/>
           </listOrg>
-          <listOrg type="arch">
+          <listOrg sortKey="archOrgs">
              <org/>
           </listOrg>
        </div>
          <div type="places">
-            <listPlace type="hist">
+            <listPlace sortKey="histPlaces">
                <place/>
             </listPlace>
-            <listPlace type="fict">
+            <listPlace sortKey="fictPlaces">
                <place/><!--for any fictional/imaginary/mythical places-->
             </listPlace>
          </div>
-         <div type="plant">
-            <list type="plants">
-               <item>
-                  <name>Daphne's favorite plant</name>
-                  <note><persName ref="#Daphne">Daphne</persName>, Mitford's pet dog, enjoyed romping in the woods and finding this plant...</note><!--OK, I'm just playing here, but showing how to point to other references in the site index! Adding cross references is very helpful; please try to do it.-->
+         <div type="nature">
+            <list sortKey="plants">
+               <item xml:id="cowslip">
+                  <name>cowslip</name>
+                  <name>common cowslip</name>
+                  <name>cowslip primrose</name>
+                  <name><rs type="genus">Primula</rs><rs type="species">veris</rs><rs type="family">Primulaceae</rs></name>
+                  <note resp="#lmw">One of <persName ref="#MRM">Mitford</persName>'s favorite flowers, blooms in spring in <placeName ref="#Berkshire">Berkshire</placeName>. Mitford likely refers to Primula veris (also called cowslip, common cowslip, cowslip primrose), a flowering plant in the genus Primula of the family Primulaceae. The species is native throughout most of temperate <placeName>Europe</placeName> and <placeName>Asia</placeName>, although absent from more northerly areas. May hybridize with <rs type="plant" ref="#primrose">English/common primroses</rs>.
+                  </note>
+               </item>
+            </list>
+            <list sortKey="animals">
+               <item xml:id="Long_tailed_wren">
+                  <name>long-tailed wren</name>
+                  <name>Naga wren-babbler</name>
+                  <name><rs type="genus">Spelaeornis</rs><rs type="species">chocolatinus</rs><rs type="family">Timaliidae</rs></name>
+                  <note resp="#mq">The Naga wren-babbler or long-tailed wren-babbler (Spelaeornis chocolatinus), a bird species in the family Timaliidae.</note>
                </item>
             </list>
          </div>
          <div type="events">
-            <listEvent>
+            <listEvent sortKey="histEvents">
                <event>
                   <label></label>
                   <note></note>
@@ -130,7 +146,7 @@
             </listEvent>
          </div>
          <div type="art"><!--for graphical works of art, or works that aren't published in print form. Differentiate lists as needed.-->
-            <list type="art">
+            <list sortKey="art">
                <item/><!--leave this stump in place. Needed for this list to be valid.-->
               <figure xml:id="whatevs9">
                <bibl></bibl>
@@ -140,20 +156,23 @@
             </list>
          </div>
          <div type="publications">
-            <listBibl type="ref_19thc"><!--For encyclopedic or reference works from Mitford's time.-->
+            <listBibl sortKey="ref_19thc"><!--For encyclopedic or reference works from Mitford's time.-->
                <bibl xml:id="whatevs21">
                </bibl>        
             </listBibl>
             
-            <listBibl type="per_19thc"><!--For 19th-c. periodicals, as well as nonliterary stuff published in periodicals, like reviews, critiques, newspaper articles, etc.-->
+            <listBibl sortKey="per_19thc"><!--For 19th-c. periodicals, as well as nonliterary stuff published in periodicals, like reviews, critiques, newspaper articles, etc.-->
                <bibl/>
             </listBibl>
             
-            <listBibl type="literary"><!--Anything literary, not restricted to Mitford's time.-->
+            <listBibl sortKey="literary"><!--Anything literary, not restricted to Mitford's time.-->
                <bibl/>
             </listBibl>
             
-            <listBibl type="currSchol"><!--Scholarship from our time.-->
+            <listBibl sortKey="MRM_Schol"><!--Scholarship about Mitford.-->
+               <bibl/>
+            </listBibl>
+            <listBibl sortKey="other_current_Schol"><!--Scholarship from our time, not directly related to Mitford but relevant to the project.-->
                <bibl/>
             </listBibl>
             
