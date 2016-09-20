@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a">The Swallow</title>
+            <author>Charlotte Turner Smith</author>
+         </titleStmt>
+         <publicationStmt>
+            <p>prepared for Elisa Beshero-Bondar's course materials on <ref target="http://newtfire.org">newtFire</ref>.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>As published in <bibl><author>Charlotte Turner Smith</author>, <title level="m">Beachy Head: With Other Poems</title>,
+                     <pubPlace>London</pubPlace>:<publisher>J. Johnson</publisher>, <date when="1807">1807</date>, <biblScope unit="page">79-83</biblScope></bibl>.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <lg>
+            <l n="1">The gorse is yellow on the heath,</l>
+            <l rend="indent" n="2">The banks with speedwell flowers are gay,</l>
+            <l n="3">The oaks are budding; and beneath,</l>
+            <l n="4">The hawthorn soon will bear the wreath,</l>
+            <l rend="indent" n="5">The silver wreath of May.</l>
+         </lg>
+
+         <lg>
+            <l n="6">The welcome guest of settled Spring,</l>
+            <l rend="indent" n="7">The Swallow too is come at last;</l>
+            <l n="8">Just at sun-set, when thrushes sing,</l>
+            <l n="9">I saw her dash with rapid wing,</l>
+            <l rend="indent" n="10">And hail’d her as she pass’d.</l>
+         </lg>
+
+         <lg>
+            <l n="11">Come, summer visitant, attach</l>
+            <l rend="indent" n="12">To my reed roof your nest of clay,</l>
+            <l n="13">And let my ear your music catch</l>
+            <l n="14">Low twittering underneath the thatch</l>
+            <l rend="indent" n="15">At the gray dawn of day.</l>
+         </lg>
+
+         <lg>
+            <l n="16">As fables tell, an Indian Sage,</l>
+            <l rend="indent" n="17">The Hindostani woods among,</l>
+            <l n="18">Could in his desert hermitage,</l>
+            <l n="19">As if ’twere mark’d in written page,</l>
+            <l rend="indent" n="20">Translate the wild bird’s song.</l>
+         </lg>
+
+         <lg>
+            <l n="21">I wish I did his power possess,</l>
+            <l rend="indent" n="22">That I might learn, fleet bird, from thee,</l>
+            <l n="23">What our vain systems only guess,</l>
+            <l n="24">And know from what wide wilderness</l>
+            <l rend="indent" n="25">You came across the sea.</l>
+         </lg>
+
+         <lg>
+            <l n="26">I would a little while restrain</l>
+            <l rend="indent" n="27">Your rapid wing, that I might hear</l>
+            <l n="28">Whether on clouds that bring the rain,</l>
+            <l n="29">You sail’d above the western main,</l>
+            <l rend="indent" n="30">The wind your charioteer.</l>
+         </lg>
+
+         <lg>
+            <l n="31">In Afric, does the sultry gale</l>
+            <l rend="indent" n="32">Thro’ spicy bower, and palmy grove,</l>
+            <l n="33">Bear the repeated Cuckoo’s tale?</l>
+            <l n="34">Dwells <hi rend="em">there</hi> a time, the wandering Rail</l>
+            <l rend="indent" n="35">Or the itinerant Dove?</l>
+         </lg>
+
+         <lg>
+            <l n="36">Were you in Asia? O relate,</l>
+            <l rend="indent" n="37">If there your fabled sister’s woes</l>
+            <l n="38">She seem’d in sorrow to narrate;</l>
+            <l n="39">Or sings she but to celebrate</l>
+            <l rend="indent" n="40">Her nuptials with the rose?</l>
+         </lg>
+
+         <lg>
+            <l n="41">I would enquire how journeying long,</l>
+            <l rend="indent" n="42">The vast and pathless ocean o’er,</l>
+            <l n="43">You ply again those pinions strong,</l>
+            <l n="44">And come to build anew among</l>
+            <l rend="indent" n="45">The scenes you left before;</l>
+         </lg>
+
+         <lg>
+            <l n="46">But if, as colder breezes blow,</l>
+            <l rend="indent" n="47">Prophetic of the waning year,</l>
+            <l n="48">You hide, tho’ none know when or how,</l>
+            <l n="49">In the cliff’s excavated brow,</l>
+            <l rend="indent" n="50">And linger torpid here;</l>
+         </lg>
+
+         <lg>
+            <l n="51">Thus lost to life, what favouring dream</l>
+            <l rend="indent" n="52">Bids you to happier hours awake;</l>
+            <l n="53">And tells, that dancing in the beam,</l>
+            <l n="54">The light gnat hovers o’er the stream,</l>
+            <l rend="indent" n="55">The May-fly on the lake?</l>
+         </lg>
+
+         <lg>
+            <l n="56">Or if, by instinct taught to know</l>
+            <l rend="indent" n="57">Approaching dearth of insect food;</l>
+            <l n="58">To isles and willowy aits you go,</l>
+            <l n="59">And crouding on the pliant bough,</l>
+            <l rend="indent" n="60">Sink in the dimpling flood:</l>
+         </lg>
+
+         <lg>
+            <l n="61">How learn ye, while the cold waves boom</l>
+            <l rend="indent" n="62">Your deep and ouzy couch above,</l>
+            <l n="63">The time when flowers of promise bloom,</l>
+            <l n="64">And call you from your transient tomb,</l>
+            <l rend="indent" n="65">To light, and life, and love?</l>
+         </lg>
+
+         <lg>
+            <l n="66">Alas! how little can be known,</l>
+            <l rend="indent" n="67">Her sacred veil where Nature draws;</l>
+            <l n="68">Let baffled Science humbly own,</l>
+            <l n="69">Her mysteries understood alone,</l>
+            <l rend="indent" n="70">By <hi rend="em">Him</hi> who gives her laws.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

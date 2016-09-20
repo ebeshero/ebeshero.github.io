@@ -4,211 +4,171 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
    
    	
-   
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      
-      
       <link rel="stylesheet" type="text/css" href="explain.css" />
-      
       <title>XQuery Exercise 2</title>
-      
    </head>
    
    
    
-   
    <body>
-      
-      <div id="top">
-         <div id="bannerImage"><a href="http://ebeshero.github.io/newtfire/dh/"><img src="newt-mosaic4.png" alt="NewtFire logo: a mosaic rendering of a firebelly newt" /></a></div>
-         <div id="title"><a href="http://ebeshero.github.io/newtfire/">newtFire</a><a href="http://ebeshero.github.io/newtfire/dh/">{dh|ds}</a></div>
-         <div class="boilerplate"><span><strong>Maintained by: </strong> Elisa E. Beshero-Bondar
-               (ebb8 at pitt.edu)   <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png" /></a><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></a><strong>Last modified:
-                  </strong><script type="application/javascript">
-                document.write(document.lastModified);
-            </script>. <a href="http://ebeshero.github.io/newtfire/firebellies.html">Powered by firebellies</a>.</span></div>
-      </div>
-      <hr />
+      <!--#include virtual="top.html" -->
       	
       	
-      
       <h1><span class="banner">XQuery Exercise 2</span></h1>
       	
       	
       	
       		
-      
       <p>Our second XQuery homework exercise works with our Digital Mitford project files,
-         coded in TEI. Here’s how to locate this collection in eXist on our Greensburg DH/DS
-         Sandbox server: <span class="code">collection('/db/mitford')</span>.
-         
+         coded in TEI. Here’s how to locate this collection in <a href="http://dxcvm05.psc.edu:8080/">our eXist at the Pittsburgh Supercomputing Center</a>: <code>collection('/db/mitford')</code>.
       </p>
       				
       			
       		
-      
-      <p>IMPORTANT: You’ll need to <b>declare the TEI namespace </b>at the top of any XQuery you run (in the line just under "xquery version "3.0";).
+      <p>IMPORTANT: You’ll need to <b>declare the TEI namespace </b>at the top of any XQuery you run (in the line just under <code>xquery version "3.0";</code>).
          Here’s the line you need for that:
-         
       </p>
-      
       
       <div class="code">declare default element namespace "http://www.tei-c.org/ns/1.0";</div>
       			
-      
-      <!--<p>Here's <b><a href="https://pitt.box.com/s/t1iph7pf0vwbn3s2bn7r">a model (text file saved in our Box XQuery collection)</a></b> on how to do a very similar task with the Shakespeare collection, the one we walked through in class on Mon. Oct. 21. (Remember, this wasn't a TEI file, and our TEI files have a different structure-\-you'll want to look at their file structure to see how to find your way to their main title element.)</p>-->
-      
+      <!--<p>Here’s <b><a href="https://pitt.box.com/s/t1iph7pf0vwbn3s2bn7r">a model (text file saved in our Box XQuery collection)</a></b> on how to do a very similar task with the Shakespeare collection, the one we walked through in class on Mon. Oct. 21. (Remember, this wasn’t a TEI file, and our TEI files have a different structure-\-you’ll want to look at their file structure to see how to find your way to their main title element.)</p>-->
       
       <p>Write XQuery expressions for each of the following tasks. Paste these into a text
-         file or a document, and upload your assignment to Courseweb.
-         
+         file or a document, and where we ask you to do so, record your return or output. Save your file using our standard homework filenaming conventions (as in <code>besheroXQuery2.txt</code>), and upload your assignment to Courseweb.
       </p>
       			
-      
       <ol>
          				
-         
          <li>First, let’s do some exploring. This is a large collection of files, so we might want
             to look at a complete list of their file names and get a count of the number of files.
-            For this, we use the XPath function <span class="code">base-uri()</span>. Write a statement in XQuery that returns the base-uri() (or filename) for each file
-            in the Mitford collection. How many files are there? Wrap the expression in a count()
+            For this, we use the XPath function <code>base-uri()</code>. Write a statement in XQuery that returns the base-uri() (or filename) for each file
+            in the Mitford collection. How many files are there? (Record the number.) Wrap the expression in a <code>count()</code>
             function so you return the number, and record the expression you used.
-            
          </li>
          				
          				
-         
-         <li> Starting from the collection(), write a basic XQuery expression to show you the coding
-            of the files, using <span class="code">/*</span>, so that you can see how to locate the <span class="code">&lt;title&gt;</span> element inside the <span class="code">&lt;teiHeader&gt;</span> and <span class="code">&lt;titleStmt&gt;</span>. Copy this into your text file recording this homework exercise.
+         <li> Starting from the <code>collection()</code>, write a basic XQuery expression to show you the coding
+            of the files, using <code>/*</code>, so that you can see how to locate the <code>&lt;title&gt;</code> element inside the <code>&lt;teiHeader&gt;</code> and <code>&lt;titleStmt&gt;</code>. Copy this into your text file recording this homework exercise.
             			
-            
          </li>
          			
-         
          <li>
             			Begin working on FLWOR expressions. First, write a very simple FLWOR statement
             to define variables that will return the following:
             
-            
             <ul>
-               
                
                <li>the whole collection</li>
                
-               
-               <li>the particular texts in the collection, starting from the <span class="code">&lt;body&gt;</span> element in our TEI files. (You'll need this later.)
-                  
+               <li>the particular texts in the collection, starting from the <code>&lt;body&gt;</code> element in our TEI files. (You’ll need this later.)
                </li>
                
-               
-               <li>the main title of the files (as described in #2: up in the TEI header, inside the
-                  titleStmt).
-                  
+               <li>the main title of the files (as described in #2: up in the <code>&lt;teiHeader&gt;</code>, inside the <code>&lt;titleStmt&gt;</code>).
                   
                </li>
-               
-               
+               <li>Write a return statement to return the text ONLY of the main titles of the files in
+                  this collection. Refer to what you learned in <a href="XQueryExercise1.html">XQuery Exercise 1</a> about the differences between text() vs. string(). Which one of these should you use here and why? (Copy your FLWOR into your text file for this homework exercise, together with your explanation.)   </li>
+               <li>How many titles did you return? (Record the number.) Note: You should actually return one extra title compared to the number of file names you returned, which surprised us as we worked with the collection, until we realized that one file here actually has <em>two</em> <code>&lt;title&gt;</code> elements inside its <code>&lt;titleStmt&gt;</code>. </li>
+               <li><strong>Bonus: </strong> In Real Life we would write some more XQuery to figure out what is going on when we receive a puzzling result like this. To find out which file is the culprit, with two titles instead of one, we wrote a little more XQuery code, using a <q>for loop</q> and another variable to return the file in question. See if you can write the code to locate that file for a bonus on this assignment. Record your XQuery and give the two titles of the file. </li>
                
             </ul>
-            Write a return statement to return the text ONLY of the main titles of the files in
-            this collection. Refer to our past homework exercise...data() or string() or text().
-            **Copy this into a text file recording this homework exercise.**   
             
             
          </li>
          				
-         
          <li>Build on your FLWOR expression. We are looking for some very important personal contacts
-            of Mitford whose names turn up in the <span class="code">//body</span> of <strong>more than 15 files</strong> in the Digital Mitford collection. Note: 
-            
+            of Mitford whose names turn up in the <code>//body</code> of <strong>more than 15 files</strong> in the Digital Mitford collection. Note: 
             <ul>
                					
-               
-               <li>We don't want results from the TEI Header because that would include the current Mitford
-                  editors, so we want to define our variable with an XPath that drills into the <span class="code">body</span> element of each file.
-                  
+               <li>We don’t want results from the TEI Header because that would include the current Mitford
+                  editors, so we want to define our variable with an XPath that drills into the <code>body</code> element of each file.
                </li> 
-               
-               <li>Each person is coded with a distinct identifier held in an @ref attribute: <span class="code">&lt;persName ref="#id"&gt;</span>, which helps us to keep track of people when they are referred to by different names
+               <li>Each person is coded with a distinct identifier held in an @ref attribute: <code>&lt;persName ref="#id"&gt;</code>, which helps us to keep track of people when they are referred to by different names
                   in the archive.
-                  
                </li> 
-               
-               <li>Define a variable to collect a list of the distinct values of this <span class="code">@ref</span> attribute. <strong>Note:</strong> To get output in XQuery when you collect a list of attribute values, you need to
-                  return the <span class="code">string()</span> value of the attribute.
-                  
+               <li>Define a variable to collect a list of the distinct values of this <code>@ref</code> attribute. <strong>Note:</strong> To get output in XQuery when you collect a list of attribute values, you need to
+                  return the <code>string()</code> value of the attribute. (Check your results here. We returned 707 distinct values of the <code>@ref</code> attribute on the <code>&lt;persName&gt;</code> element across the collection.)
                </li>
-               
-               <li>Then we'll need to test each entry in that list (<span class="code">$i</span>) to see if it can be found by an XPath walking through all the files in the collection,
-                  building a predicate expression to filter the files to see if they contain our match.
-                  (You are looking to see if a file contains a <span class="code">persName @ref</span> that matches each single entry in that list of distinct values.) 
-                  
+               <li>What we need to do next is something like building an index in a book. We have isolated the 707 distinct values of all the identifiers for people across the collection. We now need a way to check and see if a file contains a <code>&lt;persName @ref&gt;</code> that matches each single entry in that list of distinct values, since those entries are now just a simple <em>dereferenced</em> list, and pulled out of their XPath context. A good example of what we are doing is the index of a printed book: You go to the back of a book and look up a word or phrase that is only listed once, and find out all the different places in the body of the book that mention it, so you can flip back and find what you need. What we are doing here is similar: We want XQuery to look up for us <em>which files are holding each entry</em> on our list of distinct values. We’ll need to test each entry in our list of distinct values (using a <strong><q>for loop</q></strong>) and <em>map it back into the XML tree</em> to locate the files holding it. You will need a predicate expression that uses a comparison operator (and we used a General Comparison operator, the equal sign <code>=</code> to filter <em>which files contain <code>&lt;persName&gt;</code> elements with <code>@ref</code> attributes <strong>equal to</strong> the current distinct value in the <q>for loop</q>.</em> Here is <a href="http://newtfire.org/dh/explainXPath.html#comparison">a review of comparison operators</a>, which you used in the Schematron assignments.         
                </li>
                				
-               
-               <li>Use the <span class="code">where</span> statement in the FLWOR to filter your results so that you return only the distinct
-                  @ref attributes that are seen in more than 15 files. 
-                  
+               <li>Now, use the <code>where</code> statement in the FLWOR to filter your results so that you return <em>only the distinct
+                  <code>@ref</code> attributes that are seen in more than 15 files</em>. <strong>Note:</strong> This make take about 15 seconds to run, so do not be alarmed if eXist seems to pause a little while. Our collection of files is pretty large and you are testing a list of 707 distinct values in your <q>for loop</q>! When the dust settles, you should return a list of 10 name ids, a <q>top 10</q> list of popular names in the Digital Mitford collection.
                </li>
                					
-               
-               <li>We'd like to return the output without the hashtag (<strong>#</strong>) in front, and we want to output the results in alphabetical order by the @ref (without
-                  hashtag). To eliminate the hashtag, we recommend the <span class="code">translate()</span> function (read about it in Michael Kay or look it up in <a href="http://dh.obdurodon.org/functions.html">The XPath Functions We Use the Most</a>. (You may remember that we've used it before in our XSLT exercises.)
-                  
+               <li>We’d like to return the output without the hashtag (<code>#</code>) in front, and we want to output the results in alphabetical order by the <code>@ref</code> (without
+                  hashtag). To eliminate the hashtag, we recommend either the <code>tokenize()</code> function we used in the previous assignment, or the <code>translate()</code> function (read about these in Michael Kay or look it up in <a href="http://dh.obdurodon.org/functions.xhtml">The XPath Functions We Use the Most</a>.</li>
+               					
+               <li>Reading our <a href="explainXQuery.html">Explain XQuery Guide</a> to look up the details, write the FLOWR statement to <code>order</code> results alphabetically.
                </li>
                					
-               
-               <li>Reading our <a href="explainXQuery.html">Explain XQuery Guide</a> to look up the details, write the FLOWR statement to <span class="code">order</span> results alphabetically.
-                  
-               </li>
-               					
-               
                <li>Add the appropriate word to the "order" statement to generate these results in reverse
                   order. (Refer to our guide linked here.)
-                  
                </li>
                				
-               
             </ul>
             			 
             			 
             			  
-            
          </li>
          			
-         
-         <li> Now, build an html file around your XQuery results using curly braces <strong>{ }</strong> where necessary. Consult our <b><a href="explainXQuery.html#Curly">XQuery Intro Guide on building HTML with Curly Braces</a>.</b></li>
-         				
-         
-         <li>Build an HTML table in the HTML body part of the file to contain table rows and a
-            two columns of cells (two cells side by side in each column) that will contain in
-            one cell the translated and sorted @ref (without hashtag). You'll need to write a
-            new XQuery line or two to generate the results in the cell next to it. In that cell,
-            return a string-joined list of the <span class="code">base-uri()</span> or filenames of each file that contains the match, separated by commas.
-            			  
+         <li> Finally, we will build an HTML file around your XQuery results using curly braces <code>{ }</code> where necessary. Consult our <strong><a href="explainXQuery.html#Curly">XQuery Intro Guide on building HTML with Curly Braces</a>.</strong>  We need to make some changes to our file, though, because we are working with two different namespaces now, HTML and TEI. Alter the top lines of the XQuery so they look like this:
+         <pre>
+            xquery version "3.0";
+declare default element namespace "http://www.w3.org/1999/xhtml";
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+ 
+         </pre>   
             
+And begin building your HTML around your FLWOR so the basic outermost structure of the file is set:
+
+<pre>
+   xquery version "3.0";
+declare default element namespace "http://www.w3.org/1999/xhtml";
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+  &lt;html&gt;
+&lt;head&gt;&lt;title&gt;Top Ten Most Referenced People in the Digital Mitford Project&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+    
+        
+<code>{</code>
+<strong>. . . FLWOR HERE. . . 
+[use the tei:prefix on any TEI element names here]
+Return $something</strong>
+
+<code>}</code>
+&lt;/body&gt;
+&lt;/html&gt;   
+</pre>
+            
+            </li>
+         				
+         <li>Build an HTML table in the HTML body part of the file to contain table rows and
+            two columns of cells (two cells side by side in each column). <ul><li>The first cell will contain each of the top ten
+           the translated and sorted <code>@ref</code> value (without hashtag) that you retrieved in number 4. </li>
+            <li>In the other cell, return a string-joined list of the <code>base-uri()</code> or filenames of each file that contains the match, 
+               separated by commas. You might just want to trim down that <code>base-uri()</code> so you only return the filename at the end (like we did in <a href="XQueryExercise1.html">XQuery Exercise 1</a>.
+               Here is <a href="http://dxcvm10.psc.edu:8080/exist/rest/db/output/TopTenPeopleString.html">our HTML table output</a> to view in a web browser. (View Page Source to look under the hood at the HTML code.)
+            </li>
+            			  </ul>
          </li>
          				
-         
-         <li><strong>Bonus</strong>: If you don't like the look of that string-joined output in your second table cell,
-            can you work out how to output it in its own table, nested inside the table cell?
+         <li><strong>Bonus</strong>: Instead of using <code>string-join()</code> to list out the multiple filenames in your second table cell,
+            can you work out how to output that list of names in its own table, nested inside that second table cell?
             Inside the table cell, you will need to nest a new FLWOR statement inside a new set
-            of curly braces, in which you'll make another <span class="code">for</span> statement. Return your output in table rows with a single column of cells.
-            
+            of curly braces, in which you’ll make another <code>for</code> statement. Return your output in table rows with a single column of cells.
+            Here is <a href="http://dxcvm10.psc.edu:8080/exist/rest/db/output/TopTenPeople.html">our HTML table output</a> to view in a web browser. (View Page Source to look under the hood at the HTML code.)
          </li>
          					
          			
-         
       </ol>
       		
-      
       <p>Copy your HTML and FLWOR constructions into your document to upload to Courseweb.</p>
       		
       	
-      
    </body>
-   
    
    
    

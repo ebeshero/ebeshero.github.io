@@ -1,7 +1,10 @@
+html {
+    background:#F5F5DC; /*beige*/
+}
 .headLine
 {
     font-weight: bold;
-    color: black;
+    color: red;
     background:yellow;
 }
 
@@ -11,15 +14,18 @@
 }
 .neutral
 {
-    color:blue;   
+    color:blue;
+    font-weight:bold
 }
 .good
 {
     color: green;
+font-weight:bold
 }
 .bad
 {
     color: red;
+font-weight:bold
 }
 
 .nellVoice, .mascVoice, .femVoice
@@ -30,5 +36,5 @@
 
 .dialogue
 {
-    border:dot-dash;
+    background:#B9FFAC /* almost newtFire green*/
 }

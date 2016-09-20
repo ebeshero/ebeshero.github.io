@@ -11,13 +11,13 @@
     <connotation id="intimidated" tone="bad"/>
     <connotation id="sexual" tone="bad"/>
     <connotation id="prayer" tone="good"/>
-    <workingCondition id="camaraderie" tone="good"/>
-    <workingCondition id="positive" tone="good"/>
-    <workingCondition id="negative" tone="bad"/>
-    <workingCondition id="comparison" tone="bad"/>
-    <workingCondition id="wageDesc" tone="bad"/>
-    <workingCondition id="workDesc" tone="bad"/>
-    <workingCondition id="descriptionNeutral" tone="neutral"/>
+    <category id="camaraderie" tone="good"/>
+    <category id="positive" tone="good"/>
+    <category id="negative" tone="bad"/>
+    <category id="comparison" tone="bad"/>
+    <category id="wageDesc" tone="bad"/>
+    <category id="workDesc" tone="bad"/>
+    <category id="descriptionNeutral" tone="neutral"/>
 </toneElements>
     <!-- RJP: 2015-10-17: The <toneElements> element holds information needed to make this assignment compatible with newtfire.org XSLT Exercise 4: The contents of this element are not part of the transcription from the original article. In fact this entire document is edited from the original and was simplified for use in this XSLT assignment. -->
 <head>
@@ -26,7 +26,7 @@
     <date when="1888-07-30">Monday Morning, July 30, 1888.</date>
     <byline>Nell Nelson</byline>
     
-    <!-- RJP: 2015-10-18: The above four elements contained inside of head (besides the headlines) will be important to display in your output HTML for XSLT Exercise 4-->
+    <!-- RJP: 2015-10-18: The above four elements contained inside of head will be important to display in your output HTML for XSLT Exercise 4-->
     
     <headLine>A <ref to="nellNelson">Lady Reporter</ref>’s Experience in the Shops with <desc
             of="workingClass">Sewing Serfs</desc>.</headLine>
