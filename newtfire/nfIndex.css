@@ -1,7 +1,7 @@
-head {background-color: #B4D6B4;
+head {background-color: #C5D3D3;
 ;}
 
-body {background-color: #B4D6B4; color: #031B3F; font-family: arial, helvetica, sans-serif; padding:15px; line-height:1.3em}
+body {background-color: #C5D3D3; color: #031B3F; font-family: arial, helvetica, sans-serif; padding:15px; line-height:1.3em}
 /*div#space {background-color:#FFFFFF; width:99%; margin:auto; padding: 20px; line-height:1.2em; } */
 
 div#top {width:100%}
@@ -9,7 +9,7 @@ div#bannerImage {float:left; padding-right:15px}
 div#bannerImage img {width:275px;}
 div#about {font-size:1.2em; line-height:1.5em}
 
-div#main {width:100%; padding:30px; margin-left:15%}
+div#main {padding:30px; margin-left:15%; margin-right:200px;}
 
 div.boilerplate span {
     color:#63604F;
@@ -65,7 +65,7 @@ hr { display: block; height: 1px;
     border: 0; border-top: 1px solid #AA0000;
     margin: 1em 0; padding: 0; }
     
-span.smaller {display:inline-block;; font-size:0.8em; line-height:1.2em; padding:2px}
+span.smaller {font-size:0.8em; line-height:1.2em; padding:2px}
 
 span.red {color: #AA0000; font-weight:bold;}
 span.green {color: #004C00; font-weight:bold;}
@@ -85,9 +85,11 @@ span.indentMore {margin-left:5em;}
 span.indentEvMore {margin-left:7em}
 
 
-ul {list-style-type: circle;}
+ul {list-style-type: square;}
 
-ul li { padding: 10px 10px 10px 10px}
+ul li {padding: 10px;}
+ul li ul {list-style-type: circle; padding: 5px;}
+ul li ul li { padding: 1px; margin-left:20px; font-size: smaller;}
 
 
 ol li { padding: 3px}

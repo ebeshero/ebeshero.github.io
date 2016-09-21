@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <!--ebb: Need to rewrite XSLT to calculate dates from start to end of term. Non XSLT solution: To begin for a new year, autogenerate a list of dates and days of week in Excel (start with manually entering the first week’s dates, and add +7 to each; format as ISO dates. 
+            Paste in template xml file and autotag day and week divs. 
+            Then manually correct with holidays and Fall Break, etc.-->
+         <titleStmt>
+            <title>Autumn 2016 Syllabus: Fantasy and Romance</title>
+            <author>Elisa E. Beshero-Bondar</author>
+
+            <sponsor>The University of Pittsburgh at Greensburg</sponsor>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date from="2016-08" to="2016-12">Fall
+                  2016</date>. P5.</edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>University of Pittsburgh at Greensburg</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2014</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <p/>
+         </seriesStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <div type="courseID" style="outer">
+            <head>Fantasy and Romance</head>
+            <p>Englit 1572</p>
+            <div type="meetTimes">
+               <p><hi rend="em">Autumn 2016:</hi> Classes meet M W 4:00 - 5:15 PM, 118 Powers
+                  Hall</p>
+              <!-- <p><hi rend="em">Course Website: <ref target="http://newtfire.org/19cBrit/">http://newtfire.org/19cBrit/</ref></hi></p>-->
+            </div>
+            <div type="CRN">
+               <p>Course Enrollment and Electives Info: </p>
+               <list>
+                  <item>Englit 1572: course registration number: <idno>29088</idno></item>
+                  <!--<item>Socsci 1031: 25980</item>-->
+                  <item>Satisfies the LT General Elective Requirement at Pitt-Greensburg and an R (Research) requirement for the Digital Studies Certificate.</item>
+               </list>
+            </div>
+            <div type="faculty">
+               <head>Instructor:</head>
+               <p>
+                  <ref target="http://www.pitt.edu/~ebb8/">Elisa Beshero-Bondar</ref></p>
+               <p>Office Hours (in FOB 204)</p>
+               <list>
+                  <item>Wed. 11:30 AM -12:30 PM</item>
+                  <item>Tues. 2-4 PM</item>
+                  <item>and by appointment.</item>
+               </list>
+            </div>
+         </div>
+      </front>
+      <body>
+         <div type="description" style="main">
+            <head>Course Description</head>
+            <!--  <graphic url=""/>-->
+             <p>In its age-old context, the term romance refers to narratives that explore the unfamiliar, the wonderful, strange, and otherworldly. Romance takes us beyond the apparent limits of “reality” as we know it from our “home” culture, and can return us back to familiar ground in a way that helps us to perceive the world in a new way. Such narratives are the focus of this course. Our readings include centuries-old poetry and prose in translation from Europe and the Middle East, as well as twentieth-century and contemporary literature in the “fantasy” genre that draw upon centuries-old resources to build alternate realities for readers in our time. Our texts will show how ancient mythologies transform and take on new dimensions as they are shared and translated across cultures over centuries.</p>
+             <p>We will study how fantasy literature in our time builds on a worldly literary heritage to develop complex multicultural and pointedly unreal realms shared between writers and readers. We will consider how Faerie lands and alternate worlds develop with precise rules of their own to give believable life to the bizarre, the magical, the supernatural. In fantasy’s escapes from the familiar we may recognize our powerful abilities to invent new realities, made real by sharing with communities through text, image, film, game, and wired network. Through our shared alternate realities of fantasy and romance, we may gain perspective on our fears of death and change as well as our desires to escape and travel out of ourselves.</p>
+         </div>
+         <div type="objectives" style="main">
+            <head>Objectives:</head>
+            <list>
+                <item>Study contemporary fantasy literature in context with ancient and medieval texts and traditions.</item>
+                <item>Investigate how cultural transitions and cross-cultural exchange of narratives helps to generate alternate realms of “Faerie” and fantasy.</item>
+               <item>Enhance your comprehension of the course material by engaging in class
+                  discussions, and by conducting your own conversation with the texts as you
+                  read</item>
+                <item>Investigate the digital environments and research involved in the alternate world-building of fantasy in our time.</item>
+                <item>Enhance your reading comprehension by engaging in class discussions, and by conducting your own conversation with the texts as you read and write.</item>
+            </list>
+         </div>
+         <div type="courseMtls" style="main">
+            <head>Texts to Purchase:</head>
+            <list type="numbered">
+                <item><bibl><author role="translator">Seamus Heaney</author>, trans. <title level="m">Beowulf: A Verse Translation</title>, ed. <editor>Daniel Donoghue</editor> (<publisher>Norton Critical Edition</publisher>, <date>2002</date>) ISBN-13: <idno type="ISBN">978-0393-975802</idno>.</bibl></item>
+                <item><bibl><author>J. R. R. Tolkien</author>, <title level="m">The Tolkien Reader</title> (<publisher>Random House</publisher>, <date>1989</date>) ISBN: <idno type="ISBN">978-0-345-34506-6</idno>.</bibl></item>
+                <item><bibl><author>J. R. R. Tolkien</author>, <title level="m">Sir Gawain and the Green Knight, Pearl, and Sir Orfeo</title>, (<publisher>Random House</publisher>, <date>1975</date>) ISBN: <idno type="ISBN">978-0345277602</idno>.</bibl></item>
+                <item><bibl><author>J. R. R. Tolkien</author>, <title level="m">The Lord of the Rings</title>, <edition>50th Anniversary, One Vol. Edition</edition> (<publisher>Houghton Mifflin</publisher>, <date>2005</date>) ISBN: <idno type="ISBN">978-0618640157</idno>.</bibl></item>
+                <item><bibl><author role="translator">Jesse Byock</author>, trans. <title level="m">The Saga of the Volsungs</title> (<publisher>Penguin</publisher>, <date>2000</date>) ISBN: <idno type="ISBN">978-0140-44738-5</idno>.</bibl></item>
+                <item><bibl><author>Ursula K. Le Guin</author>, <title level="m">Tehanu</title> (<publisher>Simon Pulse</publisher>, <date>2001</date>) ISBN: <idno type="ISBN">978-0689845338</idno>.</bibl></item>
+                <item><bibl><author>Catherynne M. Valente</author>, <title level="m">The Orphan’s Tales: In the Night Garden</title> (<publisher>Bantam</publisher>, <date>2006</date>) ISBN: <idno type="ISBN">978-0553384031</idno>.</bibl></item>
+                <item><bibl><author>Linda Nagata</author>, <title level="m">Memory</title> (<publisher>Mythic Island Press LLC</publisher>, <date>2013</date>) ISBN: <idno type="ISBN">9781937197124</idno>.</bibl></item>
+            </list>
+             <note>Other course readings and important information will be posted online on <ref target="http://courseweb.pitt.edu">CourseWeb</ref>.</note>
+         </div>
+         <div type="grading" style="main">
+            <head>Grading:</head>
+            <p> Your grade will be based on Class Participation and In-Class Exercises (15%), Short Assignments (total: 25%), one Creative or Analytical Research Project (total: 20%), one Midterm Exam (total: 20%) and
+               one Final Exam (20%). At least 90% of the work for the course must be completed in
+               order to receive a passing grade (C or above).</p>
+            <div type="participation">
+               <head>Class Participation and In-Class Exercises: (15%)</head>
+                <p>This portion of your grade reflects the extent to which you attend class regularly and take an active role in class discussion, contributing thoughtful questions and observations based on the readings, as well as responding to my questions. It will also include your performance on any announced and unannounced quizzes and group exercises I may give in class. If you keep up with the readings listed on the schedule, and come to class each day prepared to discuss them, you will certainly do well with this component.</p>
+               <p><hi rend="em">** Note:</hi> Your attendance is vital to this course and your achievement in it. You
+                  may miss three classes for any reason without penalty, but your participation
+                  grade will be reduced for additional unexcused absences. You’ll also be missing
+                  information and perspective on the readings that will almost certainly affect your
+                  performance on assignments and exams. If you miss class, try to keep in touch with
+                  other members of the class to find out what you’ve missed and consult with me to
+                  help you catch up and to be sure you understand the material. Please note that
+                  quizzes and in-class activities are time-sensitive and cannot be made up outside of the classes you
+                  missed.</p>
+            </div>
+            <div type="weekly">
+               <head>Short Assignments: (25%)</head>
+                <p>Periodically throughout the semester, I will assign informal 2-3 page short response papers and/or other exercises, including exploring and writing about virtual environments based on literary texts. These exercises and short papers are designed to help you grapple with some challenging dimensions of our course readings, and should help you to strengthen your comprehension. They may also give you topic ideas for the major paper. Short papers should follow MLA formatting and citation guidelines (as needed). At the beginning or end of your paper, provide a relevant quote or two from the reading you’re discussing, a quote that helps to capture an idea you’re commenting on in your response.  Short writing assignments lose points for lateness.</p>
+            </div>
+            <div type="projects">
+               <head>Creative or Analytical Research Project: (20%)</head>
+                <p>One longer piece of writing, developed either as a paper or a digital project, applying fantasy criticism and theory, will be due in the second half of the course. Detailed project guidelines will be distributed in class. You will have an option to develop a fantasy narrative of your own working with (and reflecting on) materials from our course, or you may develop a research project investigating significant cultural, historical, or thematic issues in one or two of our course texts. This paper will be about 6-8 double-spaced pages, and must be your own, independent work (see the section on Academic Dishonesty below). Follow MLA formatting and citation guidelines. Note: Late projects will drop one grade notch (from B to B-) for each day late.</p>
+            </div>
+            <div type="exams">
+               <head>Midterm Exam: (20%) and Final Exam: (20%)</head>
+               <p>The exams may consist of essay questions, identifications of passages, and brief
+                  responses regarding significant events, terms, and concepts we have discussed in
+                  class. The Midterm will cover material from the first half of the course. The
+                  Final Exam, given during Finals Week, will have a comprehensive section, but will
+                  focus on material from the second half of the course. </p>
+            </div>
+            <div type="scale">
+               <head>Grading Scale:</head>
+               <p>Grades are posted on Courseweb, and follow this standard scale: A: 93-100%, A-:
+                  90-92%, B+: 87-89%, B: 83-86%, B-: 80-82%, C+: 77-79%, C: 73-76%, C-: 70-72%, D+:
+                  67-69%, D: 60-66%, F: 59% and below. In taking the course on a S / NC (pass-fail)
+                  basis, students must earn a C to receive Satisfactory credit. G grades
+                  (incomplete) may be given only in conformity with the University of Pittsburgh at
+                  Greensburg’s Bulletin: <ref target="http://www.bulletins.pitt.edu/greensburg/upg-academicpolicies.htm">http://www.bulletins.pitt.edu/greensburg/upg-academicpolicies.htm</ref>.</p>
+            </div>
+         </div>
+
+         <div type="policies" style="main">
+            <div type="daily">
+               <head>Classes and Readings:</head>
+               <p>This class is fast paced with very challenging reading. To do well in this course
+                  it is vital that you attend class regularly and keep up with the readings! <hi rend="em">Read all the material assigned before class on the day it is
+                     scheduled</hi> so that you can discuss the material in class, raise questions
+                  about it, and intelligently respond to my questions and comments. <hi rend="em">Stay alert for any changes to the class schedule</hi>, which I will announce
+                  in class and online on Courseweb and e-mail. </p>
+            </div>
+            <div type="courtesy">
+               <head>Classroom Courtesy:</head>
+               <p>Our class is fast paced, and requires that we all be making the best use we can of
+                  our in-person class sessions. Arriving late and leaving early disrupts the
+                  important collective mental activity of class. So does in-class texting and
+                  checking your cell phone. While class is in progress, talking disruptively,
+                  leaving the classroom, texting or using a cell phone or computer, reading a
+                  newspaper, or other distracting behavior will be actively discouraged, and will
+                  result in a deduction in your Participation grade. Please respect what we do in
+                  the classroom: attend class regularly, and come prepared to contribute your
+                  questions and ideas.</p>
+               <p><hi rend="em">When an assignment is due,</hi> I expect that you will carefully
+                  edit and proofread your documents, and that you will turn in your assignments on
+                  time at the beginning of class or by the posted deadline for Courseweb
+                  assignments. If you need an extension, ask me courteously at least a day ahead of
+                  time. Do not ask for an extension on or after the day the paper is due.</p>
+            </div>
+            <div type="integrity">
+               <head>Academic Dishonesty and Plagiarism:</head>
+               <p><hi rend="em">Plagiarism</hi> falsely represents another source’s words or ideas
+                  as your own, and, if you commit plagiarism in this course, you will receive a
+                  final course grade of F and be reported to the Vice President of Academic Affairs.
+                  Representing the voice of another individual as your own voice constitutes
+                  plagiarism, however generous that person may be in "helping" you with an
+                  assignment. <hi rend="em">To avoid plagiarism,</hi> cite your sources whenever you
+                  quote, paraphrase, or summarize material, or use digital images from any outside
+                  source (including websites, articles, books, course readings, Courseweb postings,
+                  or someone else’s notes). Turning in an assignment generated collectively under
+                  the name of a single individual is considered plagiarism. When instructed to
+                  collaborate on a project, project collaborators share collective authorship and
+                  should identify themselves directly as a team. When using the "copy" and "paste"
+                  features as you read and research, be sure that you are carefully marking that
+                  these passages are unprocessed from their source, so that you know to process it
+                  later. Forgetting to do so not only produces sloppy work but (whether you intended
+                  it or not) results in a false representation. As long as you make a good faith and
+                  clear effort to cite your sources, you will not be faulted for plagiarism, but
+                  your work will be penalized if citations are inaccurate, unclear, or lack
+                  important information. <hi rend="em">Cheating</hi> on exams or exercises will also
+                  receive a final course grade of F and be reported to the Vice President of
+                  Academic Affairs.</p>
+            </div>
+            <div type="online" style="main">
+               <head>Online Policies: </head>
+               <div type="courseweb">
+                  <head>Courseweb (or Blackboard): </head>
+                  <p>My announcements, changes to the course schedule, assignments + online
+                     assignment submissions, some course readings, powerpoint notes, and review
+                     guides for this class will be regularly posted to Courseweb. Login to Courseweb
+                     using your Pitt userid and password (the same one you use for your e-mail). All
+                     courses you’re enrolled in that have Courseweb materials should be listed.
+                     Courseweb link: <ref target="https://courseweb.pitt.edu">https://courseweb.pitt.edu</ref></p>
+               </div>
+
+               <div type="submissions">
+                  <head>Turning in Assignments: Courseweb Upload</head>
+                  <p> Turn in your papers <hi rend="em">by electronic upload through Courseweb</hi>.
+                     We will be using the <hi rend="em">SafeAssign</hi> feature built into Courseweb
+                     as a stable, time-stamped electronic archive for your papers. <note>Note: In a
+                        crisis situation, you may send your paper to me by e-mail as an attachment,
+                        but you must follow up with me to be sure I received it, if you have not
+                        received a response from me in 24 hours!</note>
+                  </p>
+               </div>
+
+               <div type="email">
+                  <head>E-mail Correspondence: </head>
+                  <p>Send e-mail to me when you have questions or want to meet with me, but <hi rend="em">please identify yourself by name (first and last), and provide a
+                        Subject Line</hi> when you do so. I prefer you <hi rend="em">do not submit
+                        your papers to me by e-mail</hi>; see directions above for submitting
+                     assignments online. </p>
+                  <p>Each student is issued a University email address (username@pitt.edu) upon
+                     admission. This email address may be used by the University for official
+                     communication with students. Students are expected to read email sent to this
+                     account on a regular basis. Failure to read and react to University
+                     communications in a timely manner does not absolve the student from knowing and
+                     complying with the content of the communications. The University provides an
+                     email forwarding service that allows students to read their email via other
+                     service providers (e.g., Hotmail, AOL, Yahoo). Students who choose to forward
+                     their email from their pitt.edu address to another address do so at their own
+                     risk. If email is lost as a result of forwarding, it does not absolve the
+                     student from responding to official communications sent to their University
+                     email address. To forward email sent to your University account, go to
+                     http://accounts.pitt.edu, log into your account, click on Edit Forwarding
+                     Addresses, and follow the instructions on the page. Be sure to log out of your
+                     account when you have finished. (For the full Email Communication Policy, go to
+                        <ref target="http://www.bc.pitt.edu/policies/policy/09/09-10-01.html">http://www.bc.pitt.edu/policies/policy/09/09-10-01.html</ref>.)</p>
+
+               </div>
+
+            </div>
+
+
+
+            <div type="disability">
+               <head>Disability Services:</head>
+               <p>If you have a disability for which you are or may be requesting an accommodation,
+                  you are encouraged to contact both your instructor and the Director of the
+                  Learning Resources Center, Dr. Lou Ann Sears, Room 240 Millstein Library Building
+                  (724) 836-7098 (voice) or los3 at pitt.edu as early as possible in the term.
+                  Learning Resources Center will verify your disability and determine reasonable
+                  accommodations for this course.</p>
+            </div>
+         </div>
+
+         <!--  <div type="resources"><head>outside resources, fun stuff of use or interest?</head></div>-->
+
+   <div type="schedule">
+    <div type="week" n="1">
+        <div type="day">
+            <head>
+                <date when="2016-08-29">M 08-29</date>
+            </head>
+            <div type="inclass">
+                <p>First Day</p>
+            </div>
+            <div type="assign">
+             
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-08-31">W 08-31</date>
+            </head>
+            <div type="inclass">
+                <p>Start <title level="m">Beowulf</title>: pp. 3-22 (to Celebration at Heorot); + intro pages: “Old English Language and Poetics” pp. xv-xxii, part of Translator’s Introduction: “About This Translation” pp. xxxii-xxxviii.</p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+    </div>
+    <div type="week" n="2">
+        <div type="day">
+            <head>
+                <date when="2016-09-05">M 09-05</date>
+            </head>
+            <div type="inclass">
+               <p><hi rend="em">Labor Day Holiday: No classes.</hi></p>
+            </div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-09-07">W 09-07</date>
+            </head>
+            <div type="inclass">
+                <p>Finish <title level="m">Beowulf</title>; In the Beowulf text, read “Grettir the Strong and the Troll Woman,” pp. 86-89, plus, excerpt from Tolkien’s “Beowulf: The Monsters and the Critics” pp. 124-130 (starting with “Beowulf is not an actual picture. . .”)</p>
+            </div>
+            <div type="assign">
+                <p><ref target="https://courseweb.pitt.edu">The Scop's Way: Discussion Board Exercise on Courseweb</ref></p>
+            </div>
+        </div>
+    </div>
+    <div type="week" n="3">
+        <div type="day">
+            <head>
+                <date when="2016-09-12">M 09-12</date>
+            </head>
+            <div type="inclass">
+                <p>Tolkien, <title level="m">LoTR</title> Part 1: <title level="m">The Fellowship of the Ring</title>, Prologue, pp. 1-16; Book 1 Chs. 1-3, pp. 21-85.</p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-09-14">W 09-14</date>
+            </head>
+            <div type="inclass">
+                <p><title level="m">LoTR: Fellowship, Book 1</title> Chs.4-7, pp. 86-134</p>
+            </div>
+            <div type="assign">
+                <p><ref target="http://courseweb.pitt.edu">Short response paper due via CourseWeb.</ref>. (See CourseWeb for assignment.)</p>
+            </div>
+        </div>
+    </div>
+    <div type="week" n="4">
+        <div type="day">
+            <head>
+                <date when="2016-09-19">M 09-19</date>
+            </head>
+            <div type="inclass">
+                <p><title level="m">LoTR: Fellowship</title>, Finish Book 1 (Chs. 8-12), pp. 135-215</p>
+            </div>
+            <div type="assign">
+               <list>
+                   <item>First, create a free account with <title level="m">The Lord of the Rings Online</title> (LOTRO) by <ref target="http://signup.lotro.com/lotro.php">following this link</ref>, and choose a username and a password to log in. (Write down your username and password somewhere safe and convenient: you will need it for the next few weeks.)</item>
+                   <item>Go to Cassell Hall 210, and locate <title level="m">The Lord of the Rings Online</title> (LOTRO) installed on the computers there, and/or <ref target="https://www.lotro.com/en/game/download">download and install <title level="m">The Lord of the Rings Online</title></ref> on your own PC or Mac computer. (If you install this on a laptop computer, bring your laptop to class with you this week and next.) Note: the download and installation process takes some time: it can be running in the background for a few hours while you do other things.</item>
+                   <item>Open the game, and when prompted to choose an <q>Available World</q>, choose <hi>Landroval</hi>, so that all of us will be developing characters and exploring together on the same game server.</item>
+               <item>Create a character (of any kind) and complete the necessary introductory quests that allow you to enter Middle Earth.</item>
+                   <item>By class time on Monday, be prepared to add your character's name to a list. (I will create a place to record this.) Your characters will receive invitations after next week to join a fellowship together with faculty-generated characters, so that we can travel safely together and tour the game environment.</item>
+               </list>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-09-21">W 09-21</date>
+            </head>
+            <div type="inclass">
+                <p><title level="m">LoTR: Fellowship</title>, through Book 2 Ch. 4; pp. 219-320
+                <note>entrance to the mines of Moria</note></p>
+            </div>
+          <div type="assign">
+              <p><hi rend="em">LOTRO</hi>: <ref target="https://courseweb.pitt.edu">CourseWeb: Character List and Discussion Forum Assignment</ref>(discussing intro quests)
+              </p>
+          </div>
+        </div>
+    </div>
+    <div type="week" n="5">
+        <div type="day">
+            <head>
+                <date when="2016-09-26">M 09-26</date>
+            </head>
+            <div type="inclass">
+                <p><title level="m">LOTRO</title> Event Part 1: <hi rend="em">Meet in computer lab classroom, Cassell Hall 210</hi>
+                <note>TEI Conference</note></p>
+            </div>
+            <div type="assign">
+                
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-09-28">W 09-28</date>
+            </head>
+            <div type="inclass">
+               <list><item>LoTR: Finish <title level="m">Fellowship</title> + first chapter of <title level="m">The Two Towers</title>, Book 2 Chs. 5-10 through Book 3 Chapter 1, pp. 321-420</item>
+                   <item><title level="m">LOTRO</title> Event Part 2: <hi rend="em">Meet in computer lab classroom, Cassell Hall 210</hi></item></list>
+                    <note>TEI Conference</note>
+                
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+    </div>
+    <div type="week" n="6">
+        <div type="day">
+            <head>
+                <date when="2016-10-03">M 10-03</date>
+            </head>
+            <div type="inclass">
+                <p>LoTR: <title level="m">The Two Towers</title>, Book 3 Chapters 2-7 (pp. 421-542) </p>
+                <note>through Helm's Deep</note>
+            </div>
+            <div type="assign">
+                <p><title level="m">LOTRO</title> paper due [TBD]</p>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-10-05">W 10-05</date>
+            </head>
+            <div type="inclass">
+                <p><title level="m">Tolkien Reader</title>: Tree and Leaf: “On Fairy Stories”, pp. 31-99.</p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+    </div>
+    <div type="week" n="7">
+        <div type="day">
+            <head>
+                <date when="2016-10-10">M 10-10</date>
+            </head>
+            <div type="inclass">
+                <p>In <title level="m">Tolkien Reader</title>: “Leaf by Niggle” (pp. 100-120), and in <title level="m">Sir Gawain / Pearl / Sir Orfeo</title>: “Sir Orfeo”, pp. 169-190.</p>
+            </div>
+            <div type="assign">
+                <p>“Tree and Leaf” assignment due [TBD]</p>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-10-12">W 10-12</date>
+            </head>
+            <div type="inclass">
+                <p><hi rend="em">Midterm Exam</hi></p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+    </div>
+    <div type="week" n="8">
+        <div type="day">
+            <head>
+                <date when="2016-10-17">M 10-17</date>
+            </head>
+            <div type="inclass">
+               <p><hi rend="em">Fall Break: Monday classes meet on Tuesday this week.</hi></p>
+            </div>
+            <div type="assign">
+                <p></p>
+            </div>
+        </div>
+       <div type="day">
+          <head>
+             <date when="2016-10-18">T 10-18</date>
+          </head>
+          <div type="inclass">
+              <p><title level="m">The Saga of the Volsungs</title>, pp. 35-73</p>
+          </div>
+          <div type="assign">
+             <p>. . . .</p>
+          </div>
+       </div>
+        <div type="day">
+            <head>
+                <date when="2016-10-19">W 10-19</date>
+            </head>
+            <div type="inclass">
+                <p>Finish <title level="m">The Saga of the Volsungs</title> (to p. 109)</p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+    </div>
+    <div type="week" n="9">
+        <div type="day">
+            <head>
+                <date when="2016-10-24">M 10-24</date>
+            </head>
+            <div type="inclass">
+                <p>start Ursula Le Guin, <title level="m">Tehanu</title> pp. 1-54</p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-10-26">W 10-26</date>
+            </head>
+            <div type="inclass">
+                <p><title level="m">Tehanu</title> to p. 160</p>
+    
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+    </div>
+    <div type="week" n="10">
+        <div type="day">
+            <head>
+                <date when="2016-10-31">M 10-31</date>
+            </head>
+            <div type="inclass">
+                <p>Finish <title level="m">Tehanu</title></p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-11-02">W 11-02</date>
+            </head>
+            <div type="inclass">
+                <p>Catherynne Valente, <title level="m">In the Night Garden</title> (The Book of the Steppe): pp. 1-60</p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+    </div>
+    <div type="week" n="11">
+        <div type="day">
+            <head>
+                <date when="2016-11-07">M 11-07</date>
+            </head>
+            <div type="inclass">
+                <p><title level="m">In the Night Garden</title>, pp. 61- 145</p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-11-09">W 11-09</date>
+            </head>
+            <div type="inclass">
+                <p><title level="m">In the Night Garden</title>, pp. 146-225 (end of The Book of the Steppe)</p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+    </div>
+    <div type="week" n="12">
+        <div type="day">
+            <head>
+                <date when="2016-11-14">M 11-14</date>
+            </head>
+            <div type="inclass">
+                <p>start Linda Nagata, <title level="m">Memory</title> Chs. 1-8 (pp. 9-107)</p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-11-16">W 11-16</date>
+            </head>
+            <div type="inclass">
+                <p><title level="m">Memory</title> through Ch 14 (to p. 175)</p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+    </div>
+    <div type="week" n="13">
+        <div type="day">
+            <head>
+                <date when="2016-11-21">M 11-21</date>
+            </head>
+            <div type="inclass">
+                <p><title level="m">Memory</title> through Ch 24 (to p. 273)</p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-11-23">W 11-23</date>
+            </head>
+            <div type="inclass">
+               <p><hi rend="em">Thanksgiving Recess: No Classes.</hi></p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+    </div>
+    <div type="week" n="14">
+        <div type="day">
+            <head>
+                <date when="2016-11-28">M 11-28</date>
+            </head>
+            <div type="inclass">
+                <p>Finish <title level="m">Memory</title></p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-11-30">W 11-30</date>
+            </head>
+            <div type="inclass">
+                <p>Reader's Choice! [TBD]</p>
+            </div>
+            <div type="assign">
+                <p><hi rend="em">Research Project due</hi></p>
+            </div>
+        </div>
+    </div>
+    <div type="week" n="15">
+        <div type="day">
+            <head>
+                <date when="2016-12-05">M 12-05</date>
+            </head>
+            <div type="inclass">
+                <p>Reader's Choice! [TBD]</p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2016-12-07">W 12-07</date>
+            </head>
+            <div type="inclass">
+                <p>Last day: Reader's Choice! [TBD]</p>
+            </div>
+            <div type="assign">
+                <p>. . . .</p>
+            </div>
+        </div>
+    </div>
+      <div type="week">
+         <head>Final Exam Period - December 12-17</head>
+         <div type="day">
+            <head><date when="2016-12-15">Final Exam Date: Thursday 12/15</date></head>
+            <div type="assign">
+               <p><hi rend="em">Final Examination: 1 PM in our classroom, 118 Powers Hall</hi></p>
+            </div>
+         </div>
+      </div>
+</div>
+
+      </body>
+   </text>
+</TEI>
