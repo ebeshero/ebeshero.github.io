@@ -489,7 +489,13 @@
                <note>TEI Conference</note>
             </div>
             <div type="assign">
-               
+              <p>Hypothes.is Annotations: Make two annotations on two different poems (a total of four annotations) from the following list:</p>
+               <list>
+                  <item>Charlotte Smith, <ref target="Swallow_CSmith.html"><title level="a">The Swallow</title></ref></item>
+                  <item><ref target="https://rpo.library.utoronto.ca/poems/eolian-harp"><title level="a">The Eolian Harp</title></ref></item>
+                  <item>William Wordsworth, <ref target="https://rpo.library.utoronto.ca/poems/ode-intimations-immortality-recollections-early-childhood"><title level="a">Ode: Intimations of Immortality</title></ref></item>
+                  <item>S. T. Coleridge, <ref target="https://rpo.library.utoronto.ca/poems/dejection-ode"><title level="a">Dejection: An Ode</title></ref></item>
+               </list>
             </div>
          </div>
       </div>
@@ -558,7 +564,6 @@
                <p>Coleridge, <title level="a">Christabel</title> (discussion continued)</p>
             </div>
             <div type="assign">
-               <p><hi rend="em">Major Project (Poetry Annotation Exercise 2):</hi> Hypothes.is Annotations of <title level="a">Rime of the Ancient Mariner</title></p>
             </div>
          </div>
       </div>
@@ -578,7 +583,7 @@
                <date when="2016-10-12">W 10-12</date>
             </head>
             <div type="inclass">
-               <p>William Wordsworth, Preface to <title>Lyrical Ballads</title>, pp. 293-304; Revisit <title level="a">The Thorn</title></p>
+               <p>William Wordsworth, <title level="a">Lines Composed a Few Miles Above Tintern Abbey</title>, with Preface to <title>Lyrical Ballads</title>, pp. 288-304</p>
             </div>
             <div type="assign">
                
@@ -588,12 +593,15 @@
             <head>
                <date when="2016-10-14">F 10-14</date>
             </head>
-            <div type="inclass">
-               <p>William Wordsworth, <title level="a">Resolution and Independence</title> and <title level="a">I wandered lonely as a cloud</title>, pp. 330-335, excerpts from Dorothy Wordsworth’s Grasmere Journals and poems, pp. 406-418</p>
-               <note>Pittsburgh lecture</note>
+            <div type="inclass"><p><hi>Class Cancelled:</hi> Reading and Annotating Day. </p> 
+               <note>I am delivering a lecture at the Pittsburgh campus.</note>
+               <!--<p>William Wordsworth, <title level="a">Resolution and Independence</title> and <title level="a">I wandered lonely as a cloud</title>, pp. 330-335, excerpts from Dorothy Wordsworth’s Grasmere Journals and poems, pp. 406-418</p>
+               <note>Pittsburgh lecture</note>-->
             </div>
-            <div type="assign"/>
-              
+            <div type="assign">
+               <p><hi rend="em">Hypothes.is Annotations + Short Paper:</hi> Assignment Options and Guidelines posted on <ref target="http://courseweb.pitt.edu">Courseweb</ref>.</p>
+               
+            </div>
          </div>
       </div>
       <div type="week" n="8">
@@ -623,7 +631,9 @@
                <date when="2016-10-19">W 10-19</date>
             </head>
             <div type="inclass">
-               <p><ref target="ByronCorsairCochranEd.pdf">PDF edition of Byron, <title>The Corsair</title></ref>, at least to the end of Canto the First (to page 18) (or somewhere halfway—through middle of Canto the Second <note><hi rend="em">Note for those printing:</hi> this is 51 pages long (try printing multiple pages per sheet). I would like you to read the PDF version since it contains informative notes, but there is, of course, <ref target="http://lit.genius.com/George-gordon-lord-byron-the-works-of-lord-byron-vol-3-the-corsair-annotated">a copy on Literature Genius</ref> that you may choose to work on for the Major Annotation Assignment.]</note></p>
+               <p><ref target="ByronCorsairCochranEd.pdf">PDF edition of Byron, <title>The
+                  Corsair</title></ref>, at least to the end of Canto the First (to page 18) (or
+                  somewhere halfway—through middle of Canto the Second <note><hi>Note for printing:</hi> This is 51 pages long (try printing multiple pages per sheet). I would like you to read the PDF version since it contains informative notes.</note></p>
             </div>
             <div type="assign"/>
               
@@ -633,7 +643,10 @@
                <date when="2016-10-21">F 10-21</date>
             </head>
             <div type="inclass">
-               <p>Finish <ref target="ByronCorsairCochranEd.pdf">PDF edition of Byron, The Corsair</ref> (Cantos the Second and The Third); start PDF edition of <ref target="ByronBeppoPCochranClassEd.pdf">Byron’s “Beppo: a Venetian Story”</ref> (~44 pages) <note>Again, I would like you to read the PDF version since it contains informative notes, but there is, of course, <ref target="http://lit.genius.com/George-gordon-lord-byron-beppo-annotated">a copy on Literature Genius</ref> that you may choose to work on for the Major Annotation Assignment.</note></p>
+               <p>Finish <ref target="ByronCorsairCochranEd.pdf">PDF edition of Byron, The
+                  Corsair</ref> (Cantos the Second and The Third); start PDF edition of <ref
+                     target="ByronBeppoPCochranClassEd.pdf">Byron’s “Beppo: a Venetian Story”</ref>
+                <note><hi>Note for printing:</hi> This is 44 pages long, and once again you may wish to print multiple pages per sheet.</note> </p>
             </div>
             <div type="assign">
              
@@ -740,7 +753,7 @@
                <date when="2016-11-11">F 11-11</date>
             </head>
             <div type="inclass">
-               <p><hi rend="em">Class Cancelled: Reading Day</hi></p>
+               <p>Catch-up Day (TBA)</p>
             </div>
             <div type="assign">
                
