@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="Schematron/Schematron2Dickinson.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Poem 7. (J 282: 1861/1929)</title>
+                <author>Emily Dickinson</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Fascicle 16: Dickinson's variants and published versions</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository/>
+                        <idno>1607</idno></msIdentifier>
+                </msDesc>
+                <bibl><ref target="http://www.cs.virginia.edu/~ajf2j/emily/"/>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="references">
+                <listRef>
+                    <ptr target="xml/1607variant.xml"/>
+                    <ptr target="img/1607/fs1607.jpg"/>
+                    <ptr target="img/1607/1607ce.jpg"/>
+                    <ptr target="img/1607/1607fha.jpg"/>
+                    <ptr target="img/1607/1607fhb.jpg"/>
+                    <ptr target="img/1607/1607fp.jpg"/>
+                    <ptr target="img/1607/1607ceMap.jpg"/>
+                    <ptr target="img/1607/1607fhMap.jpg"/>
+                    <ptr target="img/1607/1607fpMap.jpg"/>
+                    <ptr target="img/1607/fs1607Map.jpg"/>
+                </listRef>
+            </div>
+            <div type="witness">
+                <listWit>
+                    <witness xml:id="df16">
+                        <bibl>
+                            <title>ORIGINAL POEMS</title>
+                            <author>Emily Dickinson</author>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="fp">
+                        <bibl>
+                            <title>Further Poems</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Martha Dickinson Bianchi</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1929</date>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="ce">
+                        <bibl>
+                            <title>The Poems of Emily Dickinson: Centenary Edition</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Martha Dickinson Bianchi and Alfred Leete Hampson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1930</date>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="fh">
+                        <bibl>
+                            <title>Final Harvest: Emily Dickinson's Poems</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Thomas H. Johnson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1961</date>
+                        </bibl>
+                    </witness>
+                </listWit>
+            </div>
+        </front>
+        <body>
+            <head><title>Poem 7. (J 282: 1861/1929)</title></head>
+            <lg>
+                <l n="1">How noteless <app>
+                    <rdg wit="#df16 #fh">Men</rdg>
+                    <rdg wit="#ce #fp">men</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce"></rdg>
+                </app> and<app>
+                    <rdg wit="#df16 #fh"> Pleiads, stand,</rdg>
+                    <rdg wit="#ce"> Pleiads stand</rdg>
+                    <rdg wit="#fp"></rdg>
+                </app></l>
+                <l n="2"><app>
+                    <rdg wit="#df16 #fh #ce"></rdg>
+                    <rdg wit="#fp">Pleiads stand</rdg>
+                </app></l>
+                <l n="3">Until a sudden sky</l>
+                <l n="4">Reveals the fact that <app>
+                    <rdg wit="#df16 #fh">One</rdg>
+                    <rdg wit="#ce #fp">one</rdg>
+                </app> is <app>
+                    <rdg wit="#df16 #fh">rapt</rdg>
+                    <rdg wit="#ce #fp">wrapt</rdg>
+                </app></l>
+                <l n="5">Forever from the <app>
+                    <rdg wit="#df16 #fh">Eye</rdg>
+                    <rdg wit="#ce #fp">eye</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #fp">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="6">Members of the Invisible,</l>
+                <l n="7">Existing<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #fp"></rdg>
+                </app> while we stare<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #fp"></rdg>
+                </app></l>
+                <l n="8">In <app>
+                    <rdg wit="#df16 #fh">Leagueless</rdg>
+                    <rdg wit="#ce #fp">leagueless</rdg>
+                </app> <app>
+                    <rdg wit="#df16 #fh">Opportunity</rdg>
+                    <rdg wit="#ce #fp">opportunity</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #fp"></rdg>
+                </app></l>
+                <l n="9"><app>
+                    <rdg wit="#df16 #fh">O'ertakeless</rdg>
+                    <rdg wit="#ce #fp">O'er-take-less</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #fp"></rdg>
+                </app> as the <app>
+                    <rdg wit="#df16 #fh">Air</rdg>
+                    <rdg wit="#ce #fp">air</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #fp">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="10">Why didn't we <app>
+                    <rdg wit="#df16 #fh" type="var0">detain Them</rdg>
+                    <rdg wit="#df16" type="var1">retain Them</rdg>
+                    <rdg wit="#df16" type="var2">detain it</rdg>
+                    <rdg wit="#ce #fp">detain them</rdg>
+                </app>?</l>
+                <l n="11">The Heavens with a smile<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #fp"></rdg>
+                </app></l>
+                <l n="12">Sweep by our disappointed<app>
+                    <rdg wit="#df16 #fh"> Heads</rdg>
+                    <rdg wit="#ce"> heads</rdg>
+                    <rdg wit="#fp"></rdg>
+                </app><app>
+                    <rdg wit="#df16 #ce">,</rdg>
+                    <rdg wit="#fh #fp"></rdg>
+                </app></l>
+                <l n="13"><app>
+                    <rdg wit="#df16 #fh #ce"></rdg>
+                    <rdg wit="#fp">Heads,</rdg>
+                </app></l>
+                <l n="14"><app>
+                    <rdg wit="#df16 #fh" type="var0">Without a syllable&#8212;</rdg>
+                    <rdg wit="#df16" type="var1">But deign no syllable</rdg>
+                    <rdg wit="#ce #fp">But deign no syllable.</rdg>
+                </app></l>
+            </lg>
+        </body>
+    </text>
+</TEI>

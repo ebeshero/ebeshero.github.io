@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="Schematron/Schematron2Dickinson.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Fascicle 16: Poem 10 (J 608: 1862/1890)</title>
+                <author>Emily Dickinson</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Fascicle 16: Dickinson's variants and published versions</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository/>
+                        <idno>1610</idno></msIdentifier>
+                </msDesc>
+                <bibl><ref target="http://www.cs.virginia.edu/~ajf2j/emily/"/>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="references">
+                <listRef>
+                    <ptr target="xml/1610variant.xml"/>
+                    <ptr target="img/1610/fs1610.jpg"/>
+                    <ptr target="img/1610/1610ce.jpg"/>
+                    <ptr target="img/1610/1610fh.jpg"/>
+                    <ptr target="img/1610/1610poems1.jpg"/>
+                    <ptr target="img/1610/1610ceMap.jpg"/>
+                    <ptr target="img/1610/1610fhMap.jpg"/>
+                    <ptr target="img/1610/1610poems1Map.jpg"/>
+                    <ptr target="img/1610/fs1610Map.jpg"/>
+                </listRef>
+            </div>
+            <div type="witness">
+                <listWit>
+                    <witness xml:id="df16">
+                        <bibl>
+                            <title>ORIGINAL POEMS</title>
+                            <author>Emily Dickinson</author>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="poems1">
+                        <bibl>
+                            <title>Poems, First Series</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Mabel loomis Todd and Thomas Wentworth Higginson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Roberts Brothers</publisher>
+                            <date>1890</date>
+                            <ref target="http://www.ibiblio.org/ebooks/Dickinson/Dickinson_Poems1.htm">oems by Emily Dickinson, First Series (html version)</ref>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="ce">
+                        <bibl>
+                            <title>The Poems of Emily Dickinson: Centenary Edition</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Martha Dickinson Bianchi and Alfred Leete Hampson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1930</date>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="fh">
+                        <bibl>
+                            <title>Final Harvest: Emily Dickinson's Poems</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Thomas H. Johnson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1961</date>
+                        </bibl>
+                    </witness>
+                </listWit>
+            </div>
+        </front>
+        <body>
+            <head><title>Poem 10 (J 608: 1862/1890)</title></head>
+            <lg>
+                <l n="1">Afraid! Of whom am I afraid?</l>
+                <l n="2">Not <app>
+                    <rdg wit="#df16 #fh">Death</rdg>
+                    <rdg wit="#ce #poems1">death</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems1">; </rdg>
+                </app>for who is <app>
+                    <rdg wit="#df16 #fh">He</rdg>
+                    <rdg wit="#ce #poems1">he</rdg>
+                </app>?</l>
+                <l n="3">The <app>
+                    <rdg wit="#df16 #fh">Porter</rdg>
+                    <rdg wit="#ce #poems1">porter</rdg>
+                </app> of my <app>
+                    <rdg wit="#df16 #fh">Father's</rdg>
+                    <rdg wit="#ce #poems1">father's</rdg>
+                </app> <app>
+                    <rdg wit="#df16 #fh">Lodge</rdg>
+                    <rdg wit="#ce #poems1">lodge</rdg>
+                </app></l>
+                <l n="4">As much abasheth me<app>
+                    <rdg wit="#df16 #fh">!</rdg>
+                    <rdg wit="#ce #poems1">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="5">Of <app>
+                    <rdg wit="#df16 #fh">Life</rdg>
+                    <rdg wit="#ce #poems1">life</rdg>
+                </app>? 'Twere odd I fear <app>
+                    <rdg wit="#df16"></rdg>
+                    <rdg wit="#ce #poems1">a </rdg>
+                    <rdg wit="#fh">[a] </rdg>
+                </app>thing</l>
+                <l n="6">That comprehendeth me</l>
+                <l n="7">In one or <app>
+                    <rdg wit="#df16 #fh" type="var0">two </rdg>
+                    <rdg wit="#df16" type="var1">more&#8212;</rdg>
+                    <rdg wit="#ce #poems1">more </rdg>
+                </app><app>
+                    <rdg wit="#df16">Existences</rdg>
+                    <rdg wit="#ce #fh #poems1">existences</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems1"></rdg>
+                </app></l>
+                <l n="8"><app>
+                    <rdg wit="#df16" type="var0">Just as the case may be</rdg>
+                    <rdg wit="#df16 #fh" type="var1">As Deity decree</rdg>
+                    <rdg wit="#ce #poems1">At Deity's decree</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems1">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="9">Of <app>
+                    <rdg wit="#df16 #fh">Resurrection</rdg>
+                    <rdg wit="#ce #poems1">resurrection</rdg>
+                </app>? Is the <app>
+                    <rdg wit="#df16 #fh">East</rdg>
+                    <rdg wit="#ce #poems1">east</rdg>
+                </app></l>
+                <l n="10">Afraid to trust the <app>
+                    <rdg wit="#df16 #fh">Morn</rdg>
+                    <rdg wit="#ce #poems1">morn</rdg>
+                </app></l>
+                <l n="11">With her fastidious forehead?</l>
+                <l n="12">As soon impeach my <app>
+                    <rdg wit="#df16 #fh">Crown</rdg>
+                    <rdg wit="#ce #poems1">crown</rdg>
+                </app>!</l>
+            </lg>
+        </body>
+    </text>
+</TEI>

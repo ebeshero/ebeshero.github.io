@@ -1,0 +1,59 @@
+
+
+#title {
+    background-color:#BEB8EB;
+    color:#353B3C;
+    font-family: "Segoe UI", helvetica, georgia;
+    text-align: center;
+    font-size: 40px;
+    max-width:600px;
+    margin:0 auto;
+    text-transform:uppercase;
+    
+}
+
+body { background-color:#677DA5;
+       color:#353B3C;
+       font-family:georgia, arial, helvetica, sans-serif;
+       text-align: center;
+       font-size:15px; 
+}
+
+
+img{
+    width: 50%;
+}
+
+#text{
+    font-family:georgia, arial, helvetica, sans-serif;
+    color:#353B3C;
+    text-align:center;
+    font-size:30px;
+    text-transform:uppercase;
+      
+}
+
+
+table {
+    border-collapse: collapse;
+    margin-right:auto;
+    margin-left:auto;
+}
+table, th, td {
+    border: 1px solid black;
+    padding:7px;
+    background-color: #A2BCE0;
+   
+}
+
+
+
+#sub{
+    font-family: georgia, arial, helvetica, sans-serif;
+    color:#353B3C;
+    text-align:center;
+    font-size:30px;
+    text-transform:uppercase;
+      
+}
+

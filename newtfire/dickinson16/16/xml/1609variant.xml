@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="Schematron/Schematron2Dickinson.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Fascicle 16: Poem 9 (J 445: 1862/1896)</title>
+                <title type="Poems3alt" corresp="#poems3">RETROSPECT.</title>
+                <author>Emily Dickinson</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Fascicle 16: Dickinson's variants and published versions</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository/>
+                        <idno>1609</idno></msIdentifier>
+                </msDesc>
+                <bibl><ref target="http://www.cs.virginia.edu/~ajf2j/emily/"/>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="references">
+                <listRef>
+                    <ptr target="xml/1609variant.xml"/>
+                    <ptr target="img/1609/fs1609b.jpg"/>
+                    <ptr target="img/1609/fs1609a.jpg"/>
+                    <ptr target="img/1609/1609ce.jpg"/>
+                    <ptr target="img/1609/1609fha.jpg"/>
+                    <ptr target="img/1609/1609fhb.jpg"/>
+                    <ptr target="img/1609/1609poems3.jpg"/>
+                    <ptr target="img/1609/1609ceMap.jpg"/>
+                    <ptr target="img/1609/1609fhMap.jpg"/>
+                    <ptr target="img/1609/1609poems3Map.jpg"/>
+                    <ptr target="img/1609/fs1609Map.jpg"/>
+                </listRef>
+            </div>
+            <div type="witness">
+                <listWit>
+                    <witness xml:id="df16">
+                        <bibl>
+                            <title>ORIGINAL POEMS</title>
+                            <author>Emily Dickinson</author>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="poems3">
+                        <bibl>
+                            <title>Poems, Third Series</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Mabel Loomis Todd</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1896</date>
+                            <ref target="http://catalog.hathitrust.org/Record/100654113">Hathi Trust Digital Library</ref>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="ce">
+                        <bibl>
+                            <title>The Poems of Emily Dickinson: Centenary Edition</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Martha Dickinson Bianchi and Alfred Leete Hampson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1930</date>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="fh">
+                        <bibl>
+                            <title>Final Harvest: Emily Dickinson's Poems</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Thomas H. Johnson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1961</date>
+                        </bibl>
+                    </witness>
+                </listWit>
+            </div>
+        </front>
+        <body>
+            <head><title>Poem 9 (J 445: 1862/1896)</title></head>
+            <lg>
+                <l n="1">'Twas just this time<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> last year<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> I died.</l>
+                <l n="2">I know I heard the <app>
+                    <rdg wit="#df16 #fh">Corn</rdg>
+                    <rdg wit="#ce #poems3">corn</rdg>
+                </app>,</l>
+                <l n="3">When I was <app>
+                    <rdg wit="#df16">Carried</rdg>
+                    <rdg wit="#ce #fh #poems3">carried</rdg>
+                </app> by the <app>
+                    <rdg wit="#df16 #fh">Farms</rdg>
+                    <rdg wit="#ce #poems3">farms</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">,&#8212;</rdg>
+                </app></l>
+                <l n="4">It had the <app>
+                    <rdg wit="#df16 #fh">Tassels</rdg>
+                    <rdg wit="#ce #poems3">tassels</rdg>
+                </app> on<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="5">I thought how yellow it would look<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app></l>
+                <l n="6">When <persName>Richard</persName> went to mill<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">;</rdg>
+                </app></l>
+                <l n="7">And then<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> I wanted to get out,</l>
+                <l n="8">But something held my will.</l>
+            </lg>
+            <lg>
+                <l n="9">I thought just how <app>
+                    <rdg wit="#df16 #fh">Red</rdg>
+                    <rdg wit="#ce #poems3">red</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3"> </rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">Apples</rdg>
+                    <rdg wit="#ce #poems3">apples</rdg>
+                </app> wedged</l>
+                <l n="10">The <app>
+                    <rdg wit="#df16 #fh">Stubble's</rdg>
+                    <rdg wit="#ce #poems3">stubble's</rdg>
+                </app> joints between<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">;</rdg>
+                </app></l>
+                <l n="11">And <app>
+                    <rdg wit="#df16 #ce #poems3"></rdg>
+                    <rdg wit="#fh">the </rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">Carts</rdg>
+                    <rdg wit="#ce #poems3">carts</rdg>
+                </app> <app>
+                    <rdg wit="#df16 #ce #poems3">went </rdg>
+                    <rdg wit="#fh"></rdg>
+                </app>stooping round the fields</l>
+                <l n="12">To take the <app>
+                    <rdg wit="#df16 #fh">Pumpkins</rdg>
+                    <rdg wit="#ce #poems3">pumpkins</rdg>
+                </app> in<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="13">I wondered which would miss me<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> least,</l>
+                <l n="14">And when Thanksgiving<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> came,</l>
+                <l n="15">If <app>
+                    <rdg wit="#df16 #fh">Father'd</rdg>
+                    <rdg wit="#ce #poems3">father'd</rdg>
+                </app> multiply the plates<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app></l>
+                <l n="16">To make an even <app>
+                    <rdg wit="#df16 #fh">Sum</rdg>
+                    <rdg wit="#ce #poems3">sum</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="17"><app>
+                    <rdg wit="#df16 #fh">And would it blur the Christmas glee</rdg>
+                    <rdg wit="#ce #poems3">And if my stocking hung too high,</rdg>
+                </app></l>
+                <l n="18"><app>
+                    <rdg wit="#df16 #fh">My Stocking hang too high</rdg>
+                    <rdg wit="#ce #poems3">Would it blur the Christmas glee,</rdg>
+                </app></l>
+                <l n="19"><app>
+                    <rdg wit="#df16 #fh">For any</rdg>
+                    <rdg wit="#ce #poems3">That not a</rdg>
+                </app> Santa Claus to reach</l>
+                <l n="20">The <app>
+                    <rdg wit="#df16 #fh">Altitude</rdg>
+                    <rdg wit="#ce #poems3">altitude</rdg>
+                </app> of me<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">?</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="21">But this sort<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> grieved myself,<app>
+                    <rdg wit="#df16 #fh"></rdg>
+                    <rdg wit="#ce #poems3"> and so</rdg>
+                </app></l>
+                <l n="22"><app>
+                    <rdg wit="#df16 #fh">And so, </rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app>I thought <app>
+                    <rdg wit="#df16 #fh">the other way</rdg>
+                    <rdg wit="#ce #poems3">how it would be</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce"></rdg>
+                </app></l>
+                <l n="23"><app>
+                    <rdg wit="#df16">And</rdg>
+                    <rdg wit="#ce #poems3">When</rdg>
+                    <rdg wit="#fh">How</rdg>
+                </app> just this time, some perfect year<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">,</rdg>
+                </app></l>
+                <l n="24"><app>
+                    <rdg wit="#df16 #fh">Themself</rdg>
+                    <rdg wit="#ce #poems3">Themselves</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> should come to me<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">.</rdg>
+                </app></l>
+            </lg>
+        </body>
+    </text>
+</TEI>

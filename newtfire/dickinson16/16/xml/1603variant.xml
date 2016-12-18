@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="Schematron/Schematron2Dickinson.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Poem 3 (J 279: 1861/1896)</title>
+                <title type="Poems3alt" corresp="#poems3">FAREWELL.</title>
+                <author>Emily Dickinson</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Fascicle 16: Dickinson's variants and published versions</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository/>
+                        <idno>1603</idno></msIdentifier>
+                </msDesc>
+                <bibl><ref target="http://www.cs.virginia.edu/~ajf2j/emily/"/>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="references">
+                <listRef>
+                    <ptr target="xml/1603variant.xml"/>
+                    <ptr target="img/1603/fs1603a.jpg"/>
+                    <ptr target="img/1603/fs1603b.jpg"/>
+                    <ptr target="img/1603/1603ce.jpg"/>
+                    <ptr target="img/1603/1603fh.jpg"/>
+                    <ptr target="img/1603/1603poems3.jpg"/>
+                    <ptr target="img/1603/1603ceMap.jpg"/>
+                    <ptr target="img/1603/1603fhMap.jpg"/>
+                    <ptr target="img/1603/1603poems3Map.jpg"/>
+                    <ptr target="img/1603/fs1603Map.jpg"/>
+                </listRef>
+            </div>
+            <div type="witness">
+                <listWit>
+                    <witness xml:id="df16">
+                        <bibl>
+                            <title>ORIGINAL POEMS</title>
+                            <author>Emily Dickinson</author>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="poems3">
+                        <bibl>
+                            <title>Poems, Third Series</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Mabel Loomis Todd</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1896</date>
+                            <ref target="http://catalog.hathitrust.org/Record/100654113">Hathi Trust Digital Library</ref>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="ce">
+                        <bibl>
+                            <title>The Poems of Emily Dickinson: Centenary Edition</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Martha Dickinson Bianchi and Alfred Leete Hampson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1930</date>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="fh">
+                        <bibl>
+                            <title>Final Harvest: Emily Dickinson's Poems</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Thomas H. Johnson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1961</date>
+                        </bibl>
+                    </witness>
+                </listWit>
+            </div>
+        </front>
+        <body>
+            <head><title>Poem 3 (J 279: 1861/1896)</title></head>
+            <!-- 2016-06-14: nll: Okay, so it's odd that the rdgs with ONLY a #df16 variation MUST come first... -->
+            <lg>
+                <l n="1">Tie the <app>
+                    <rdg wit="#df16 #fh">Strings</rdg>
+                    <rdg wit="#ce #poems3">strings</rdg>
+                </app> to my <app>
+                    <rdg wit="#df16 #fh">Life</rdg>
+                    <rdg wit="#ce #poems3">life</rdg>
+                </app>, <app>
+                    <rdg wit="#df16 #fh">My</rdg>
+                    <rdg wit="#ce #poems3">my</rdg>
+                </app> Lord,</l>
+                <l n="2">Then<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> I am ready to go!</l>
+                <l n="3">Just a look at the <app>
+                    <rdg wit="#df16 #fh">Horses</rdg>
+                    <rdg wit="#ce #poems3">horses</rdg>
+                </app>&#8212;</l>
+                <l n="4">Rapid! That will do!</l>
+            </lg>
+            <lg>
+                <l n="5">Put me <app>
+                    <rdg wit="#df16 #fh #poems3">in </rdg>
+                    <rdg wit="#ce"></rdg>
+                </app>on the <app>
+                    <rdg wit="#df16" type="var1">tightest </rdg>
+                    <rdg wit="#df16" type="var2">highest&#8212;</rdg>
+                    <rdg wit="#df16 #ce #fh #poems3" type="var0">firmest </rdg>
+                </app>side<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">,</rdg>
+                </app></l>
+                <l n="6">So I shall never fall<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">;</rdg>
+                </app></l>
+                <l n="7">For we must ride to the Judgment<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">,</rdg>
+                </app></l>
+                <l n="8">And it's <app>
+                    <rdg wit="#df16 #fh" type="var0">partly, down Hill&#8212;</rdg>
+                    <rdg wit="#df16" type="var1">many a mile&#8212;the Hills</rdg>
+                    <rdg wit="#ce #poems3">partly down hill.</rdg>
+                    </app>
+                </l>
+            </lg>
+            <lg>
+                <l n="9">But never I mind the <app>
+                    <rdg wit="#df16 #fh" type="var0">steepest&#8212;</rdg>
+                    <rdg wit="#df16" type="var1">Bridges</rdg>
+                    <rdg wit="#ce #poems3">bridges,</rdg>
+                </app>
+                </l>
+                <l n="10">And never I mind the <app>
+                    <rdg wit="#df16 #fh">Sea</rdg>
+                    <rdg wit="#ce #poems3">sea</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">;</rdg>
+                </app></l>
+                <l n="11">Held fast in <app>
+                    <rdg wit="#df16 #fh">Everlasting</rdg>
+                    <rdg wit="#ce #poems3">everlasting</rdg>
+                </app> <app>
+                    <rdg wit="#df16 #fh">Race</rdg>
+                    <rdg wit="#ce #poems3">race</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app></l>
+                <l n="12">By my own <app>
+                    <rdg wit="#df16 #fh">Choice</rdg>
+                    <rdg wit="#ce #poems3">choice</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> and <app>
+                    <rdg wit="#df16 #fh">Thee</rdg>
+                    <rdg wit="#ce #poems3">thee</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="13"><app>
+                    <rdg wit="#df16">Good bye</rdg>
+                    <rdg wit="#ce #poems3">Good-by</rdg>
+                    <rdg wit="#fh">Goodbye</rdg>
+                </app> to the <app>
+                    <rdg wit="#df16 #fh">Life</rdg>
+                    <rdg wit="#ce #poems3">life</rdg>
+                </app> I used to live<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">,</rdg>
+                </app></l>
+                <l n="14">And the <app>
+                    <rdg wit="#df16 #fh">World</rdg>
+                    <rdg wit="#ce #poems3">world</rdg>
+                </app> I used to know<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">;</rdg>
+                </app></l>
+                <l n="15">And kiss the <app>
+                    <rdg wit="#df16 #fh">Hills</rdg>
+                    <rdg wit="#ce #poems3">hills</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> for me, just once<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">;</rdg>
+                </app></l>
+                <l n="16"><app>
+                    <rdg wit="#df16" type="var2">Here's a keepsake for </rdg>
+                    <rdg wit="#df16 #fh" type="var0">Then&#8212;</rdg>
+                    <rdg wit="#df16 #ce #poems3" type="var1">Now </rdg>
+                </app> I am ready to go!</l>
+            </lg>
+        </body>
+    </text>
+</TEI>

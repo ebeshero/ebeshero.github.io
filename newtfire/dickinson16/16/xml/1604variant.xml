@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="Schematron/Schematron2Dickinson.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Poem 4 (J 241: 1861/1890)</title>
+                <author>Emily Dickinson</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Fascicle 16: Dickinson's variants and published versions</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository/>
+                        <idno>1604</idno></msIdentifier>
+                </msDesc>
+                <bibl><ref target="http://www.cs.virginia.edu/~ajf2j/emily/"/>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="references">
+                <listRef>
+                    <ptr target="xml/1604variant.xml"/>
+                    <ptr target="img/1604/fs1604.jpg"/>
+                    <ptr target="img/1604/1604cea.jpg"/>
+                    <ptr target="img/1604/1604ceb.jpg"/>
+                    <ptr target="img/1604/1604fha.jpg"/>
+                    <ptr target="img/1604/1604fhb.jpg"/>
+                    <ptr target="img/1604/1604poems1.jpg"/>
+                    <ptr target="img/1604/1604ceMap.jpg"/>
+                    <ptr target="img/1604/1604fhMap.jpg"/>
+                    <ptr target="img/1604/1604poemsMap.jpg"/>
+                    <ptr target="img/1604/fs1604Map.jpg"/>
+                </listRef>
+            </div>
+            <div type="witness">
+                <listWit>
+                    <witness xml:id="df16">
+                        <bibl>
+                            <title>ORIGINAL POEMS</title>
+                            <author>Emily Dickinson</author>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="poems1">
+                        <bibl>
+                            <title>Poems, First Series</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Mabel loomis Todd and Thomas Wentworth Higginson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Roberts Brothers</publisher>
+                            <date>1890</date>
+                            <ref target="http://www.ibiblio.org/ebooks/Dickinson/Dickinson_Poems1.htm">oems by Emily Dickinson, First Series (html version)</ref>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="ce">
+                        <bibl>
+                            <title>The Poems of Emily Dickinson: Centenary Edition</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Martha Dickinson Bianchi and Alfred Leete Hampson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1930</date>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="fh">
+                        <bibl>
+                            <title>Final Harvest: Emily Dickinson's Poems</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Thomas H. Johnson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1961</date>
+                        </bibl>
+                    </witness>
+                </listWit>
+            </div>
+        </front>
+        <body>
+            <head><title>Poem 4 (J 241: 1861/1890)</title></head>
+            <lg>
+                <l n="1">I like a look of <app>
+                    <rdg wit="#df16 #fh">Agony</rdg>
+                    <rdg wit="#ce #poems1">agony</rdg>
+                </app>,</l>
+                <l n="2">Because I know it's true<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems1">;</rdg>
+                </app></l>
+                <l n="3">Men do not sham <app>
+                    <rdg wit="#df16 #fh">Convulsion</rdg>
+                    <rdg wit="#ce #poems1">convulsion</rdg>
+                </app>,</l>
+                <l n="4">Nor simulate<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems1"></rdg>
+                </app> a <app>
+                    <rdg wit="#df16 #fh">Throe</rdg>
+                    <rdg wit="#ce #poems1">throe</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems1">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="5">
+                    <app>
+                        <rdg wit="#df16"><del rend="strikethrough">Death Comes</del></rdg>
+                        <rdg wit="#ce #fh #poems1"></rdg>
+                    </app>
+                </l>
+                <l n="6">The <app>
+                    <rdg wit="#df16 #fh">Eyes</rdg>
+                    <rdg wit="#ce #poems1">eyes</rdg>
+                </app> glaze once<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems1">, </rdg>
+                </app>and that is <app>
+                    <rdg wit="#df16 #fh">Death</rdg>
+                    <rdg wit="#ce #poems1">death</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems1">.</rdg>
+                </app></l>
+                <l n="7">Impossible to feign</l>
+                <l n="8">The <app>
+                    <rdg wit="#df16 #fh">Beads</rdg>
+                    <rdg wit="#ce #poems1">beads</rdg>
+                </app> upon the <app>
+                    <rdg wit="#df16 #fh">Forehead</rdg>
+                    <rdg wit="#ce #poems1">forehead</rdg>
+                </app></l>
+                <l n="9">By homely <app>
+                    <rdg wit="#df16 #fh">Anguish</rdg>
+                    <rdg wit="#ce #poems1">anguish</rdg>
+                </app> strung.</l>
+            </lg>
+        </body>
+    </text>
+</TEI>

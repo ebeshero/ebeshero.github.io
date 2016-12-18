@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="Schematron/Schematron2Dickinson.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Poem 2. (J 607: 1862/1929)</title>
+                <author>Emily Dickinson</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Fascicle 16: Dickinson's variants and published versions</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository/>
+                        <idno>1602</idno></msIdentifier>
+                </msDesc>
+                <bibl><ref target="http://www.cs.virginia.edu/~ajf2j/emily/"/>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="references">
+                <listRef>
+                    <ptr target="xml/1602variant.xml"/>
+                    <ptr target="img/1602/fs1602a.jpg"/>
+                    <ptr target="img/1602/fs1602b.jpg"/>
+                    <ptr target="img/1602/1602am.jpg"/>
+                    <ptr target="img/1602/1602ce.jpg"/>
+                    <ptr target="img/1602/1602fha.jpg"/>
+                    <ptr target="img/1602/1602fhb.jpg"/>
+                    <ptr target="img/1602/1602fp.jpg"/>
+                    <ptr target="img/1602/1602amMap.jpg"/>
+                    <ptr target="img/1602/1602ceMap.jpg"/>
+                    <ptr target="img/1602/1602fhMap.jpg"/>
+                    <ptr target="img/1602/1602fpMap.jpg"/>
+                    <ptr target="img/1602/fs1602Map.jpg"/>
+                </listRef>
+            </div>
+            <div type="witness">
+                <listWit>
+                    <witness xml:id="df16">
+                        <bibl>
+                            <title>ORIGINAL POEMS</title>
+                            <author>Emily Dickinson</author>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="fp">
+                        <bibl>
+                            <title>Further Poems</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Martha Dickinson Bianchi</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1929</date>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="ce">
+                        <bibl>
+                            <title>The Poems of Emily Dickinson: Centenary Edition</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Martha Dickinson Bianchi and Alfred Leete Hampson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1930</date>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="fh">
+                        <bibl>
+                            <title>Final Harvest: Emily Dickinson's Poems</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Thomas H. Johnson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1961</date>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="am">
+                        <bibl>
+                            <title>Atlantic Monthly</title>
+                            <author>Enily Dickinson</author>
+                            <date>February 1929</date>
+                        </bibl>
+                    </witness>
+                </listWit>
+            </div>
+        </front>
+        <body>
+            <head><title>Poem 2. (J 607: 1862/1929)</title></head>
+            <lg>
+                <l n="1">Of nearness to her <app>
+                    <rdg wit="#df16">Sundered</rdg>
+                    <rdg wit="#am #ce #fh #fp">sundered</rdg>
+                </app> <app>
+                    <rdg wit="#df16 #fh">Things</rdg>
+                    <rdg wit="#am #ce #fp">things</rdg>
+                </app></l>
+                <l n="2">The Soul has special times<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp">,</rdg>
+                </app></l>
+                <l n="3">When Dimness<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp"> </rdg>
+                </app>looks the <app>
+                    <rdg wit="#df16 #am #fh">Oddity</rdg>
+                    <rdg wit="#ce #fp">oddity</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp">,</rdg>
+                </app></l>
+                <l n="4">Distinctness<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp"> </rdg>
+                </app>easy<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp"> </rdg>
+                </app>seems<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="5">The <app>
+                    <rdg wit="#df16 #fh">Shapes</rdg>
+                    <rdg wit="#am #ce #fp">shapes</rdg>
+                </app> we buried<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#am #ce #fp"></rdg>
+                </app> dwell about<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#am #fp">.</rdg>
+                    <rdg wit="#ce"></rdg>
+                </app></l>
+                <l n="6">Familiar<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#am #ce #fp"></rdg>
+                </app> in the <app>
+                    <rdg wit="#df16 #fh">Rooms</rdg>
+                    <rdg wit="#am #ce #fp">rooms</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce">,</rdg>
+                </app></l>
+                <l n="7">Untarnished by the <app>
+                    <rdg wit="#df16 #fh">Sepulchre</rdg>
+                    <rdg wit="#am #ce">sepulchre</rdg>
+                    <rdg wit="#fp">sepulcher</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#am #ce #fp"></rdg>
+                </app></l>
+                <l n="8"><app>
+                        <rdg wit="#df16 #fh" type="var0">The</rdg>
+                        <rdg wit="#df16 #am #ce #fp" type="var1">Our</rdg>
+                </app> <app>
+                    <rdg wit="#df16 #fh">Mouldering</rdg>
+                    <rdg wit="#am #ce #fp">moldering</rdg>
+                </app> <app>
+                    <rdg wit="#df16 #fh">Playmate</rdg>
+                    <rdg wit="#am #ce #fp">playmate</rdg>
+                </app> <app>
+                    <rdg wit="#df16">Comes</rdg>
+                    <rdg wit="#am #ce #fh #fp">comes</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp"></rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="9">In just the <app>
+                    <rdg wit="#df16 #fh">Jacket</rdg>
+                    <rdg wit="#am #ce #fp">jacket</rdg>
+                </app> that he wore<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp">,</rdg>
+                </app></l>
+                <l n="10">Long buttoned in the <app>
+                    <rdg wit="#df16 #fh">Mold</rdg>
+                    <rdg wit="#am #ce #fp">mold</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh"></rdg>
+                    <rdg wit="#am #ce #fp">,</rdg>
+                </app></l>
+                <l n="11">Since we<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp">, </rdg>
+                </app>old mornings, <app>
+                    <rdg wit="#df16 #fh">Children</rdg>
+                    <rdg wit="#am #ce #fp">children</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp"> </rdg>
+                </app>played<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp">,</rdg>
+                </app></l>
+                <l n="12">Divided<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp"> </rdg>
+                </app>by a world<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="13">The <app>
+                    <rdg wit="#df16 #fh">Grave</rdg>
+                    <rdg wit="#am #ce #fp">grave</rdg>
+                </app> yields back her <app>
+                    <rdg wit="#df16 #fh">Robberies</rdg>
+                    <rdg wit="#am #ce #fp">robberies</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp">,</rdg>
+                </app></l>
+                <l n="14">The <app>
+                    <rdg wit="#df16 #fh">Years</rdg>
+                    <rdg wit="#am #ce #fp">years</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#am #ce #fp"></rdg>
+                </app> <app>
+                    <rdg wit="#df16 #fh">our</rdg>
+                    <rdg wit="#am #ce #fp">are</rdg>
+                </app> pilfered <app>
+                    <rdg wit="#df16 #fh">Things</rdg>
+                    <rdg wit="#am #ce #fp">things</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp">,</rdg>
+                </app></l>
+                <l n="15">Bright <app>
+                    <rdg wit="#df16 #fh">Knots</rdg>
+                    <rdg wit="#am #ce #fp">knots</rdg>
+                </app> of <app>
+                    <rdg wit="#df16 #fh">Apparitions</rdg>
+                    <rdg wit="#am #ce #fp">apparitions</rdg>
+                </app></l>
+                <l n="16">Salute us<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#am #ce #fp"></rdg>
+                </app> with their wings&#8212;</l>
+            </lg>
+            <lg>
+                <l n="17">As we<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp"> </rdg>
+                </app>it were<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp"> </rdg>
+                </app>that perished<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp">,</rdg>
+                </app></l>
+                <l n="18"><app>
+                    <rdg wit="#df16 #fh">Themself</rdg>
+                    <rdg wit="#am #ce #fp">Themselves</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#am #ce #fp"> </rdg>
+                </app>had just remained<app>
+                    <rdg wit="#df16 #fh"> till we rejoin them&#8212;</rdg>
+                    <rdg wit="#am #ce #fp"></rdg>
+                </app></l>
+                <l n="19"><app>
+                    <rdg wit="#df16 #fh"></rdg>
+                    <rdg wit="#am #fp">Till we rejoin them,</rdg>
+                    <rdg wit="#ce">Till we rejoin them, and 'twas They</rdg>
+                </app></l>
+                <l n="20"><app>
+                    <rdg wit="#df16 #fh">And 'twas they, and not ourself</rdg>
+                    <rdg wit="#am">And 't was They, and not Ourselves</rdg>
+                    <rdg wit="#ce">And not Ourselves that mourned.</rdg>
+                    <rdg wit="#fp">And 'twas They, and not Ourselves</rdg>
+                </app></l>
+                <l n="21"><app>
+                    <rdg wit="#df16 #am #fh #fp">That mourned.</rdg>
+                    <rdg wit="#ce"></rdg>
+                </app></l>
+            </lg>
+        </body>
+    </text>
+</TEI>

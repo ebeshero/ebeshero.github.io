@@ -1,0 +1,218 @@
+html{
+	background-color: white;
+	font-family: 'Avenir';
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#main_container{
+    padding: 8px;
+}
+
+h1{
+	color: steelblue;
+	padding-left: 40px;
+    font-size: 56px;
+    font-family: 'Century Gothic';
+}
+
+h2{
+    color: steelblue;
+    padding-left: 20px;
+    font-family: 'Century Gothic';
+    
+}
+
+h3{
+    color: white;
+    padding-left: 40px;
+    font-family: 'Verdana';
+}
+p.homePage {
+    
+    font-size: 18px;
+	line-height: 1.5;
+	padding-left: 20px;
+}
+
+p.projectAbout {
+   font-size: 18px;
+    line-height: 1.5;
+    padding-left: 20px;
+    width: 800px;
+     
+}
+ul.projectTeam {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 40px;
+    width: 800px;
+}
+
+h2.projectTeam {
+    
+    font-size: 24px;
+    
+    
+}
+h2.projectAbout {
+    
+    font-size: 24px;
+    
+    
+}
+
+img{
+	padding: 15px;
+	float: left;
+	width: 200px;
+}
+
+img.cc {
+    width: 100px;
+    margin: auto;
+    display: block;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: slategray;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+	font-family: 'Avenir';
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    }
+
+p{
+	color:black;
+    font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Avenir';
+    padding-left: 0px;
+    
+}
+
+span.protagonist { 
+    color: maroon;
+    font-family: 'Avenir'; 
+    font-size: 16px;
+    position: absolute;
+    left: 65px;
+}
+
+table.td {
+    color: white;
+    font-family: 'Avenir';
+    font-size: 16px;
+}
+
+span.ln{
+    color: white;
+    font-family: 'Avenir';
+    font-size: 12px;
+    float: left;
+    padding-left: 10px;
+}
+span.line{
+    color:black;
+    font-size: 16px;
+    line-height: 1.5;
+    position: absolute;
+    left: 180px;
+    
+    font-family: 'Avenir';
+    
+
+}
+span.character { 
+    color: steelblue; 
+    font-family: 'Avenir';
+    font-size: 16px;
+    position: absolute;
+    left: 65px;
+}
+span.stage {
+    color: dimgray;
+    font-family: 'Avenir';
+    font-size: 16px;
+}
+span.act {
+    font-family: 'Avenir';
+    font-size: 16px;
+    color: maroon;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 2;
+
+}
+span.aside {
+    color: dimgray;
+    font-family: 'Avenir';
+    font-size: 16px;
+    position: absolute;
+    left: 550px;
+
+}
+th {
+    color: steelblue; 
+    font-family: 'Avenir';
+    font-size: 16px;
+    padding-right: 10px;
+
+}
+
+
+
+td {
+    padding-right: 30px;
+}
+
+table {
+    border-width: 2px;
+}
+
+p.prose {
+    font-size: 18px;
+    line-height: 2;
+    padding-left: 40px;
+    width: 800px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+p.desc{font-size: 18px;
+    line-height: 1.5;
+    padding-left: 40px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right:0px;
+    color: black;
+    
+}
+
+h2.svg{
+    color: steelblue;
+    padding-left: 40px;
+    font-family: 'Century Gothic';
+    padding-bottom: 10px;
+}
+

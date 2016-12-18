@@ -1,0 +1,81 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" /><script type="text/javascript" src="scripts/dickinson.js"></script><title>Emily Dickinson: Fascicle 16 | Assumptions</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <h1 class="title"><a class="noShowLink" href="index.html"><span class="nameTitle">Emily Dickinson</span><span class="siteTitle">: Fascicle 16</span></a></h1><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="cclic" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a></div>
+            <div class="mwrapper">
+                <div class="menu">
+                    <ul class="cfix">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About <span class="arrow">▼</span></a><ul class="sub">
+                        <li><a href="members.html">Our Members</a></li>
+                        <li><a href="methodology.html">Methodology</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="poems.html">Poems <span class="arrow">▼</span></a><ul class="sub">
+                        <li><a href="1601.html">1601</a></li>
+                        <li><a href="1602.html">1602</a></li>
+                        <li><a href="1603.html">1603</a></li>
+                        <li><a href="1604.html">1604</a></li>
+                        <li><a href="1605.html">1605</a></li>
+                        <li><a href="1606.html">1606</a></li>
+                        <li><a href="1607.html">1607</a></li>
+                        <li><a href="1608.html">1608</a></li>
+                        <li><a href="1609.html">1609</a></li>
+                        <li><a href="1610.html">1610</a></li>
+                        <li><a href="1611.html">1611</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="analysis.html">Analysis <span class="arrow">▼</span></a><ul class="sub">
+                        <li><a href="dash.html">Dash Usage Comparison</a></li>
+                        <li><a href="conclusion.html">Conclusion</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="contact.html">Contact</a></li>
+               </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="side-nav">
+					<a class="regButton" href="about.html">About</a>
+                	<a class="regButton" href="members.html">Our Members</a>
+                	<a class="regButton" href="methodology.html">Methodology</a>
+                </div>
+                <div class="copy">
+                    <h2>Methodology</h2>
+                    <p><span class="drop">A</span>s discussed in the <a href="http://dickinson16.newtfire.org/about.html">About Page</a> and the <a href="http://dickinson16.newtfire.org/conclusion.html">Conclusion Page</a>, 
+                        our team's mission was to create a new, user friendly webpage that described how Dickinson may have wanted different variations of words, or even total lines, within the eleven poems of Fascicle 16.  (To view the original website by Michele Ierardi, <a href="http://www.cs.virginia.edu/~ajf2j/emily/stab.html">click here</a>. To see Dr. Elisa Beshero-Bondar's rendition of the website, <a href="http://www.pitt.edu/~ebb8/EmilyDickinson16/1601.html">click here</a>.)
+                    However, while analyzing these variations, our team decided to dig a little deeper into Dickinson's poems of Fascicle 16 as opposed to the different published versions of the poems.  
+                    In order to do this and analyze this new data, our team had to go through many different processes and obstacles to produce what you are seeing today.  Below is a breakdown of everything our team has had to do 
+                    in the past semester.</p>
+                    <p>To begin the process to a better website, <a href="http://dickinson16.newtfire.org/members.html">Brooke Stewart</a> and <a href="http://dickinson16.newtfire.org/members.html">Nicole</a> had to go back through the original scans of Dickinson's Fascicle 16 and re-transcribe them.  After we did this, we compared them to the code that was already marking 
+                        up all of the poems.  (You can see the original markup <a href="https://github.com/ebeshero/EmilyDickinson16/tree/master/Old%20Files/TEI-XML">here</a>.)  After fixing the transcription errors and the markup, our team decided it would be interesting to compare the 
+                        original Dickinson Fascicle 16 poems to the various published versions of the poems.  However, this required a new and difficult markup.  First, we had to find a way to distinguish which poem line, word, or punctuation variations belonged to which published version of the 
+                        poems.  To do this, Brooke Stewart and <a href="http://dickinson16.newtfire.org/members.html">Brooke Lawrence</a> got to work on creating new witness attributes within the reading elements to define the different publications (#fh for Final Harvest, etc.).  Nicole created a list of witnesses in the top parts of the XML documents so we could reference the witness attributes.  
+                        To see the new markup we created, <a href="https://github.com/ebeshero/EmilyDickinson16/tree/master/Dickinson">click here</a>.</p>
+                    <p>As the Brooke's and Nicole got the markup finished for the poems, <a href="http://dickinson16.newtfire.org/members.html">Alex</a> was working to create an XSLT to turn the XML versions of the poems into HTML versions that are readable online.  You can see his XSLT <a href="https://github.com/ebeshero/EmilyDickinson16/blob/master/DickinsonLineNumbers/dickinson.xsl">here</a>.  
+                    Alex was also working on a way that would help the viewers see the differences in the variations within the original Dickinson poems themselves as well as in the various published versions.  He did this by creating color coordinating buttons, which, when clicked, would show and highlight the different variations within the 
+                    poems.  He did this by using a <a href="https://github.com/ebeshero/EmilyDickinson16/blob/master/Web%20Files/css/styles.css">CSS stylesheet</a> and <a href="https://github.com/ebeshero/EmilyDickinson16/blob/master/Web%20Files/scripts/dickinson.js">Javascript</a>.</p>
+                    <p>Next, our team definitely wanted the viewers to be able to see the original, scanned images of all of the poems, the Dickinson originals and the published versions, but we were unsure how we wanted to set this up.  Dr. Beshero-Bondar recommended that we try out a new concept for our team: image mapping.  
+                    What image mapping would do to the images would be to highlight the differences in variants and create a mouse-over effect where the original Dickinson line would appear.  There were many steps to complete in order for this part of the project to come together, such as photoshopping the images, uploading these photoshopped 
+                    images into an <a href="http://imagemap-generator.dariodomi.de/">online generator</a> that would allow us to create the code for the image maps, and then modifying the code to present the information that we wanted to show on the mouse-over.  First, Nicole went through and made copies of all the images, so we could have the original image as well 
+                        as a photoshopped copy, which shows the variants within a colored box that was coordinated with the color used for the highlighting of the variants.  You can see all of the images that we created and used for this project <a href="https://github.com/ebeshero/EmilyDickinson16/tree/master/Web%20Files/img">here</a>.  Alex photoshopped the images that 
+                        were originally two pages long into one image and Nicole helped by photoshopping the colored boxes around the variants.  Next, Alex put all of the images into the image map generator to output the code we needed in the HTML documents.  Nicole then input the text we wanted to show on the mouse-over into the alternative attributes and the title attributes.  You can see 
+                        our discussion about image mapping <a href="https://github.com/ebeshero/EmilyDickinson16/issues/14">here</a> and an example of our final HTML documents with the image mapping code <a href="https://github.com/ebeshero/EmilyDickinson16/blob/master/Web%20Files/1601.html">here</a> (scroll to the bottom of the document).</p>
+                    <p>After we got most of the hard work finished, it was time to decide what kind of data we wanted to analyze within all of the different versions of the poems.  Originally, we only wanted to analyze why Dickinson may have wanted different words or lines in her poems and how this would create a different meaning within the entire poem.  However, after finishing 
+                        all of our previous work, we decided to analyze how Dickinson used dashes in her original poems compared to whether the published poems kept these dashes, took them out, or replaced them with another type of punctuation.  With the help of Dr. Beshero-Bondar, Nicole and Brooke Stewart created an <a href="https://github.com/ebeshero/EmilyDickinson16/blob/master/SVG_Files/xslt_to_SVG.xsl">SVG graph using an XSLT</a> to run over the collection of our XML poems that looks at the dash reduction of the published poems compared to Dickinson's originals.  This, though, took a lot of 
+                    thought and searching for how to find a dash regex character in the poems.  We decided to use the analyze-string function in doing this.  You can see our brainstorming <a href="https://github.com/ebeshero/EmilyDickinson16/issues/28">here</a>.  After finally figuring out how to calculate our percentages, we finally output an SVG graph that you can find <a href="http://dickinson16.newtfire.org/dash.html">here</a> with Brooke Stewart's dash analysis.</p>
+                    <p>In the meantime, Brooke Lawrence was busy typing up our <a href="http://dickinson16.newtfire.org/index.html">Home</a>, <a href="http://dickinson16.newtfire.org/about.html">About</a>, and <a href="http://dickinson16.newtfire.org/conclusion.html">Conclusion</a> pages, which as you can see, was a lot of work in and of itself.  After all of the hard work our team put into this project, we hope it helps you understand the poems of Emily Dickinson's Fascicle 16 better.  If you have any questions or concerns 
+                        regarding our analysis or methodology, you can do so by contacting us <a href="http://dickinson16.newtfire.org/contact.html">here</a>.</p>
+				</div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </body>
+</html>
