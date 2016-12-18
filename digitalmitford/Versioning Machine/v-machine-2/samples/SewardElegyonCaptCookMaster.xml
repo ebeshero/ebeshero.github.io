@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../src/vmachine.xsl"?>
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Elegy on Captain Cook</title>
+            <respStmt>
+               <resp>transcribed, encoded, and edited by</resp>
+               <persName>Digital Humanities Class, Fall 2012</persName>
+            </respStmt>
+            <sponsor>
+               <orgName>University of Pittsburgh at Greensburg</orgName>
+               
+            </sponsor>
+            <funder>
+               <orgName>University of Pittsburgh at Greensburg</orgName>
+               
+            </funder>
+            <principal>
+               <persName>Elisa E. Beshero-Bondar</persName>
+            </principal>
+         </titleStmt>
+
+         <editionStmt>
+            <edition n="1"/>
+            <respStmt>
+               <resp>Transcription, encoding, transformations, and notes</resp>
+               <persName>Digital Humanities Class</persName>
+               <orgName>University of Pittsburgh at Greensburg</orgName>
+            
+            </respStmt>
+         </editionStmt>
+
+         <extent/>
+
+         <publicationStmt>
+            <publisher>Elisa Beshero-Bondar for demonstration purposes only. May not be reproduced without
+               permission</publisher>
+            <address>
+               <addrLine/>
+            </address>
+            <idno type="ISBN"/>
+            <availability>
+               <p/>
+            </availability>
+            <distributor/>
+         </publicationStmt>
+
+         <notesStmt>
+            <note/>
+         </notesStmt>
+
+         <sourceDesc>
+            <listBibl>
+               <msDesc>
+                  <msIdentifier>
+                     <repository>See witness list.</repository>
+                  </msIdentifier>
+               </msDesc>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p><!-- Insert stuff about the Elegy editions and why we're doing this. --></p>
+         </projectDesc>
+         <p>Transcriptions are encoded in TEI(P5)-conformant XML.</p>
+         <samplingDecl>
+            <p><!-- Here's where we derived our files...Explain our source texts here. --></p>
+         </samplingDecl>
+         <editorialDecl>
+            
+            <normalization>
+               <p><!-- Did we normalize the editions at all? If so, explain here. For example, shall we normalize the long s in the 1780 edition? --></p>
+            </normalization>
+           
+         </editorialDecl>
+
+         <charDecl>
+            <!-- Ligature combinations for which there are currently no corresponding Unicode codepoints. -->
+           
+            <glyph xml:id="sslig">
+               <glyphName>LATIN LIGATURE SMALL LONG S AND SMALL LONG S</glyphName>
+            </glyph>
+
+            <glyph xml:id="ssilig">
+               <glyphName>LATIN LIGATURE SMALL LONG S, SMALL LONG S, AND SMALL I</glyphName>
+            </glyph>
+
+           
+         </charDecl>
+
+         
+      </encodingDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         
+         </langUsage>
+
+      </profileDesc>
+
+   </teiHeader>
+
+<!-- Are we including a facsimile image here? -->
+<!--   </facsimile> -->
+
+   <text>
+      <front>
+         <div>
+            <listWit>
+               <witness xml:id="early">1780 edition</witness>
+               <witness xml:id="late">1810 edition</witness>
+               
+            </listWit>
+         </div>
+      </front>
+      <body>
+
+        
+
+         <div type="poem">
+            
+            <head>
+               <app>
+                  <rdg wit="#late"><!-- This is the header from the LION database -->
+                    ELEGY ON CAPTAIN COOK, The Poetical Works of Anna Seward, Vol. 2 (1810) </rdg> 
+               </app>
+               <app>
+                  <rdg wit="#early">
+  <!-- Give title info from 1780 edition --> ELEGY ON CAPTAIN COOK (1780)                 
+                  </rdg>
+               </app>
+               
+            </head>
+           
+            <lg>
+               <l n="1">Sorrowing , the Nine beneath yon blasted yew</l> 
+               <l n="2"><app><rdg wit="#late">Shed the soft drops of pity's holy dew;</rdg></app></l>
+               <l n="2"><app><rdg wit="#early">Shed the bright drops of Pity's holy dew;</rdg></app></l>  
+               <l n="3">Mute are their tuneful tongues, extinct their fires;</l>  
+               <l n="4">Yet not in silence sleep their silver lyres;</l>  
+               <l n="5">To the bleak gale they vibrate sad and slow,</l>  
+               <l n="6">In deep accordance to a Nation's woe.</l>
+               <l></l>
+               <l></l>
+            </lg> 
+         
+         <lg>
+            <l n="7">  <app><rdg wit="#late"> Ye, who ere-while for Cook's illustrious brow</rdg></app></l>
+            <l n="7">  <app><rdg wit="#early"> Ye, who ere while for COOK's illustrious brow</rdg></app></l> 
+            <l n="8">  Pluck'd the green laurel, and the oaken bough,</l>  
+            <l n="9">   Hung the gay garlands on the trophied oars, </l>
+            <l n="10">   And pour'd his fame along a thousand shores, </l>
+            <l n="11">   Strike the slow death-bell!---weave the sacred verse, </l>
+            <l n="12">   And strew the cypress o'er his honour'd hearse; </l> 
+            <l n="13">   In sad procession wander round the shrine, </l> 
+            <l n="14">   And weep him mortal, whom ye sung divine!</l>
+         </lg>
+         <lg>
+            <l n="15">   <app><rdg wit="#late">Say first, what Power inspir'd his dauntless breast </rdg></app></l>
+            <l n="16">  <app><rdg wit="#late"> With scorn of danger and inglorious rest, </rdg></app></l>
+            <l n="17">  <app><rdg wit="#late"> To quit imperial London's gorgeous domes,</rdg></app></l> 
+            <l n="18">   <app><rdg wit="#late">Where, deck'd in thousand tints, young Pleasure roams;</rdg></app></l>
+            <l n="19">   <app><rdg wit="#late">In cups of summer-ice her nectar pours,</rdg></app></l>  
+            <l n="20"><app><rdg wit="#late">Or twines, 'mid wint'ry snows, her roseate bowers;</rdg></app></l> 
+            <lg>
+               <l n="15"> <app><rdg wit="#early"> Say first, what Pow'r inspir'd his dauntless breast </rdg></app></l>
+               <l n="16"> <app><rdg wit="#early">With scorn of danger and inglorious rest, </rdg></app></l>
+               <l n="17"> <app><rdg wit="#early">To quit imperial London's gorgeous plains,</rdg></app></l> 
+               <l n="18"> <app><rdg wit="#early">Where, rob'd in thousand tints, bright Pleasure reigns;</rdg></app></l>
+               <l n="19"> <app><rdg wit="#early">In cups of summer-ice her nectar pours,</rdg></app></l>  
+               <l n="20"> <app><rdg wit="#early">And twines, 'mid wint'ry snows, her roseate bow'rs?</rdg></app></l>
+             
+            </lg>
+            
+       <!-- 1810 version adds 4 lines here -->
+           
+              
+           <lg>      
+            <l n="21"> <app><rdg wit="#late">Where the warm Orient loads Britannia's gales</rdg></app></l>  
+            <l n="22"> <app><rdg wit="#late">With all the incense of Sabæan vales;</rdg></app> </l> 
+            <l n="23"> <app><rdg wit="#late"> Where soft Italia's silken sons prolong</rdg></app></l> 
+            <l n="24"> <app><rdg wit="#late">The lavish cadence of the artful song;</rdg></app></l>  
+           </lg>
+       <!-- Here we merge with the 1780 edition again. The 1780 version continues with a few small differences  at line 21  -->
+            <lg>
+            <l n="21"> <app><rdg wit="#early">Where Beauty moves with undulating grace,</rdg></app></l>
+            <l n="22"> <app><rdg wit="#early">Calls the sweet blush to wanton o'er her face,</rdg></app></l>  
+            <l n="23"> <app><rdg wit="#early">On each fond Youth her soft artillery tries,</rdg></app></l>  
+            <l n="24"> <app><rdg wit="#early">Aims her light smile, and rolls her frolic eyes?</rdg></app></l>  
+            <l><app><rdg wit="#early">BLANK SPACE<space extent="line"></space></rdg></app></l>
+            <l><app><rdg wit="#early">BLANK SPACE<space extent="line"></space></rdg></app></l>
+            </lg>
+            
+            <lg>    
+             <l n="25"> <app><rdg wit="#early">What Power inspir'd his dauntless breast to brave</rdg></app></l>  
+             <l n="26">  <app><rdg wit="#early"> The scorch'd Equator, and th' Antarctic wave?</rdg></app> </l> 
+            <l n="27">   <app><rdg wit="#early"> Climes, where fierce Suns in cloudless ardors shine,</rdg></app></l>  
+            <l n="28">   <app><rdg wit="#early">And pour the dazzling deluge round the Line;</rdg></app></l>  
+            <l n="29">  <app><rdg wit="#early"> The realms of frost, where icy mountains rise,</rdg></app></l>  
+            <l n="30">   <app><rdg wit="#early">'Mid the pale summer of the polar skies?---</rdg></app></l>  
+            <l n="31">   <app><rdg wit="#early">It was Benevolence! ---on coasts unknown,</rdg></app></l>  
+            <l n="32">   <app><rdg wit="#early">The shiv'ring natives of the frozen zone, </rdg></app></l> 
+            <l n="33">  <app><rdg wit="#early"> And the swart Indian, as he faintly strays</rdg></app></l>  
+            <l n="34">   <app><rdg wit="#early">"Where Cancer reddens in the solar blaze,"</rdg></app></l>  
+            <l n="35">   <app><rdg wit="#early">She bade him seek;---on each inclement shore </rdg></app></l> 
+            <l n="36">   <app><rdg wit="#early">Plant the rich seeds of her exhaustless store;</rdg></app></l>   
+            <l n="37">  <app><rdg wit="#early"> Unite the savage hearts, and hostile hands,</rdg></app></l>  
+            <l n="38">   <app><rdg wit="#early">In the firm compact of her gentle bands;</rdg></app> </l> 
+            <l n="39">   <app><rdg wit="#early">Strew her soft comforts o'er the barren plain,</rdg></app></l>  
+            <l n="40">  <app><rdg wit="#early"> Sing her sweet lays, and consecrate her fane.</rdg></app></l>
+            </lg>
+            
+           <lg> 
+            <l n="25"> <app><rdg wit="#late"> Where Beauty moves with fascinating grace,</rdg></app></l>
+            <l n="26"><app><rdg wit="#late">Calls the sweet blush to wanton o'er her face,</rdg></app></l>  
+            <l n="27"><app><rdg wit="#late">   On each fond youth her soft artillery tries,</rdg></app></l>  
+            <l n="28">  <app><rdg wit="#late"> Aims the light smile, and rolls the frolic eyes:</rdg></app></l>  
+            <l n="29">   <app><rdg wit="#late">What Power inspir'd his dauntless breast to brave</rdg></app></l>  
+            <l n="30">   <app><rdg wit="#late">The scorch'd Equator, and th' Antarctic wave?</rdg></app> </l> 
+            <l n="31">  <app><rdg wit="#late"> Climes, where fierce Suns in cloudless ardors shine,</rdg></app></l>  
+            <l n="32">   <app><rdg wit="#late">And pour the dazzling deluge round the Line;</rdg></app></l>  
+            <l n="33">  <app><rdg wit="#late"> The realms of frost, where icy mountains rise,</rdg></app></l>  
+            <l n="34">   <app><rdg wit="#late">'Mid the pale summer of the polar skies?---</rdg></app></l>  
+            <l n="35">   <app><rdg wit="#late">It was Benevolence! ---on coasts unknown,</rdg></app></l>  
+            <l n="36">   <app><rdg wit="#late">The shiv'ring natives of the frozen zone, </rdg></app></l> 
+            <l n="37">  <app><rdg wit="#late"> And the swart Indian, as he faintly strays</rdg></app></l>  
+            <l n="38">   <app><rdg wit="#late">"Where Cancer reddens in the solar blaze,"</rdg></app></l>  
+            <l n="39">   <app><rdg wit="#late">She bade him seek;---on each inclement shore </rdg></app></l> 
+            <l n="40">   <app><rdg wit="#late">Plant the rich seeds of her exhaustless store;</rdg></app></l>   
+            <l n="41">  <app><rdg wit="#late"> Unite the savage hearts, and hostile hands,</rdg></app></l>  
+            <l n="42">   <app><rdg wit="#late">In the firm compact of her gentle bands;</rdg></app> </l> 
+            <l n="43">   <app><rdg wit="#late">Strew her soft comforts o'er the barren plain,</rdg></app></l>  
+            <l n="44">  <app><rdg wit="#late"> Sing her sweet lays, and consecrate her fane.</rdg></app></l> 
+         </lg>   
+               
+            
+         </lg>    
+            
+
+               
+              
+        
+         </div>
+      </body>
+   </text>
+
+</TEI>

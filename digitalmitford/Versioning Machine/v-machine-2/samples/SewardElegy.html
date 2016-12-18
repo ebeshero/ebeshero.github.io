@@ -1,0 +1,231 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <title>Elegy on Captain Cook -- The Versioning Machine 4.0</title>
+      <link rel="stylesheet" type="text/css" href="../src/vmachine_evfl.css">
+      <!--[if IE 6]>
+            <link rel="stylesheet" type="text/css" href="../src/vmachine_evfl_ie6.css">
+         <![endif]--><script type="text/javascript" src="../src/vmachine_evfl.js"></script><script type="text/javascript">
+      var witnesses = new Array();
+      
+         witnesses["early"] = "early";
+      
+         witnesses["late"] = "late";
+      
+      var maxPanels = 2;
+   </script></head>
+   <body onload="init();">
+      <div id="mainBanner">
+         <div id="brandingLogo"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/poweredby.gif"></div>
+         <div id="headline">
+            <h1 onclick="toggleBiblio();">Elegy on Captain Cook</h1><span class="versionCount"> has 2 versions</span></div><img id="topEdge" src="../vm-images/topedge.gif" alt=""><div id="mainControls"><input type="button" id="newPanel" value="New Version" onclick="openPanel();">
+            &#8226;
+            <input type="button" id="bibToggle" value="Bibliographic Info" onclick="toggleBiblio();">
+            &#8226;
+            <input type="button" id="critToggle" value="Critical Introduction" onclick="toggleCrit();">
+            &#8226;
+            <label for="toggleLineNumbers">Line Numbers:</label><input type="checkbox" id="toggleLineNumbers" onclick="toggleLineNumbers(this.checked);">
+            &#8226;
+            <select id="notesMenu" disabled>
+               <option>No notes found</option></select>
+            &#8226;
+            <i><a href="../index.html">Index</a></i></div>
+      </div>
+      <div id="mssArea">
+         <div class="panel" id="bibPanel">
+            <div class="panelBanner"><img class="closePanel" onclick="toggleBiblio();" alt="X" src="../vm-images/closePanel.gif">
+               Bibliographic Information
+               
+            </div>
+            <div class="bibContent">
+               <h2>Elegy on Captain Cook</h2>
+               <h4>Original Source</h4>See witness list.
+               <h4>Witness List</h4>
+               <ul></ul>
+               <h4>Electronic Edition Information:</h4>
+               <h5>Responsibility Statement:</h5>
+               <ul>
+                  <li>Transcribed, encoded, and edited by Digital Humanities Class</li>
+                  <li>Sponsored by University of Pittsburgh at Greensburg</li>
+                  <li>Funding provided by University of Pittsburgh at Greensburg and </li>
+               </ul>
+               <h5>Publication Details:</h5>
+               <p>Published by Elisa Beshero-Bondar for demonstration purposes only. May not be reproduced without
+                                 permission..
+               </p>
+               <p></p>
+               <h4>Encoding Principles</h4>
+               <p></p>
+               <p>Transcriptions are encoded in TEI(P5)-conformant XML.</p>
+               <p></p>
+               <p></p>
+            </div>
+         </div>
+         <div class="panel" id="critPanel">
+            <div class="panelBanner"><img class="closePanel" onclick="toggleCrit();" alt="X" src="../vm-images/closePanel.gif">
+               Critical Introduction
+               
+            </div>
+            <div class="critContent"></div>
+         </div>
+         <div id="manuscripts">
+            <div class="panel mssPanel">
+               <div class="panelBanner"><img class="closePanel" onclick="closePanel(this.parentNode.parentNode);" src="../vm-images/closePanel.gif" alt="X">Witness <select class="witnessMenu" onchange="changeWitness(this.value,this.parentNode.parentNode);">
+                     <option selected value="early">1: 1780 edition</option>
+                     <option value="late">2: 1810 edition</option></select></div>
+               <div class="mssContent">
+                  <table style="table-layout:fixed; width:310px">
+                     <tr>
+                        <td width="265px">
+                           <div class="div type-poem">
+                              <div class="head"><span class="apparatus app-d0e88 clickable" onclick="matchApp('app-d0e88');"><span class="reading late">
+                                                            Seward, Anna, 1742-1809:  [from The Poetical Works (1810)]
+                                                            VOL. II.
+                                                            Volume section
+                                                            Seward, Anna, 1742-1809 : 
+                                                            ELEGY ON CAPTAIN COOK. [from The Poetical Works (1810)] </span></span><span class="apparatus app-d0e92 clickable" onclick="matchApp('app-d0e92');"><span class="reading early"> ELEGY ON CAPTAIN COOK (1780)                 
+                                                         </span></span></div>
+                              <div class="lg">
+                                 <div class="line lined0e97" onclick="matchLine('lined0e97');">
+                                    <div class="linenumber" style="visibility: hidden;">1</div>Sorrowing , the Nine beneath yon blasted yew
+                                 </div>
+                                 <div class="line lined0e99" onclick="matchLine('lined0e99');">
+                                    <div class="linenumber" style="visibility: hidden;">2</div>Shed the soft drops of pity's holy dew;
+                                 </div>
+                                 <div class="line lined0e101" onclick="matchLine('lined0e101');">
+                                    <div class="linenumber" style="visibility: hidden;">3</div>Mute are their tuneful tongues, extinct their fires;
+                                 </div>
+                                 <div class="line lined0e103" onclick="matchLine('lined0e103');">
+                                    <div class="linenumber" style="visibility: hidden;">4</div>Yet not in silence sleep their silver lyres;
+                                 </div>
+                                 <div class="line lined0e105" onclick="matchLine('lined0e105');">
+                                    <div class="linenumber" style="visibility: hidden;">5</div>To the bleak gale they vibrate sad and slow,
+                                 </div>
+                                 <div class="line lined0e107" onclick="matchLine('lined0e107');">
+                                    <div class="linenumber" style="visibility: hidden;">6</div>In deep accordance to a Nation's woe.
+                                 </div>
+                              </div>
+                              <div class="lg">
+                                 <div class="line lined0e110" onclick="matchLine('lined0e110');">
+                                    <div class="emptynumber">&nbsp;</div>Ye, who ere-while for Cook's illustrious brow
+                                 </div>
+                                 <div class="line lined0e112" onclick="matchLine('lined0e112');">
+                                    <div class="emptynumber">&nbsp;</div>Pluck'd the green laurel, and the oaken bough,
+                                 </div>
+                                 <div class="line lined0e114" onclick="matchLine('lined0e114');">
+                                    <div class="emptynumber">&nbsp;</div>Hung the gay garlands on the trophied oars,
+                                 </div>
+                                 <div class="line lined0e116" onclick="matchLine('lined0e116');">
+                                    <div class="emptynumber">&nbsp;</div>And pour'd his fame along a thousand shores,
+                                 </div>
+                                 <div class="line lined0e118" onclick="matchLine('lined0e118');">
+                                    <div class="emptynumber">&nbsp;</div>Strike the slow death-bell!---weave the sacred verse,
+                                 </div>
+                                 <div class="line lined0e120" onclick="matchLine('lined0e120');">
+                                    <div class="emptynumber">&nbsp;</div>And strew the cypress o'er his honour'd hearse;
+                                 </div>
+                                 <div class="line lined0e122" onclick="matchLine('lined0e122');">
+                                    <div class="emptynumber">&nbsp;</div>In sad procession wander round the shrine,
+                                 </div>
+                                 <div class="line lined0e124" onclick="matchLine('lined0e124');">
+                                    <div class="emptynumber">&nbsp;</div>And weep him mortal, whom ye sung divine!
+                                 </div>
+                              </div>
+                           </div>
+                        </td>
+                        <td align="right" valign="top"></td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+            <div class="panel mssPanel">
+               <div class="panelBanner"><img class="closePanel" onclick="closePanel(this.parentNode.parentNode);" src="../vm-images/closePanel.gif" alt="X">Witness <select class="witnessMenu" onchange="changeWitness(this.value,this.parentNode.parentNode);">
+                     <option value="early">1: 1780 edition</option>
+                     <option selected value="late">2: 1810 edition</option></select></div>
+               <div class="mssContent">
+                  <table style="table-layout:fixed; width:310px">
+                     <tr>
+                        <td width="265px">
+                           <div class="div type-poem">
+                              <div class="head"><span class="apparatus app-d0e88 clickable" onclick="matchApp('app-d0e88');"><span class="reading late">
+                                                            Seward, Anna, 1742-1809:  [from The Poetical Works (1810)]
+                                                            VOL. II.
+                                                            Volume section
+                                                            Seward, Anna, 1742-1809 : 
+                                                            ELEGY ON CAPTAIN COOK. [from The Poetical Works (1810)] </span></span><span class="apparatus app-d0e92 clickable" onclick="matchApp('app-d0e92');"><span class="reading early"> ELEGY ON CAPTAIN COOK (1780)                 
+                                                         </span></span></div>
+                              <div class="lg">
+                                 <div class="line lined0e97" onclick="matchLine('lined0e97');">
+                                    <div class="linenumber" style="visibility: hidden;">1</div>Sorrowing , the Nine beneath yon blasted yew
+                                 </div>
+                                 <div class="line lined0e99" onclick="matchLine('lined0e99');">
+                                    <div class="linenumber" style="visibility: hidden;">2</div>Shed the soft drops of pity's holy dew;
+                                 </div>
+                                 <div class="line lined0e101" onclick="matchLine('lined0e101');">
+                                    <div class="linenumber" style="visibility: hidden;">3</div>Mute are their tuneful tongues, extinct their fires;
+                                 </div>
+                                 <div class="line lined0e103" onclick="matchLine('lined0e103');">
+                                    <div class="linenumber" style="visibility: hidden;">4</div>Yet not in silence sleep their silver lyres;
+                                 </div>
+                                 <div class="line lined0e105" onclick="matchLine('lined0e105');">
+                                    <div class="linenumber" style="visibility: hidden;">5</div>To the bleak gale they vibrate sad and slow,
+                                 </div>
+                                 <div class="line lined0e107" onclick="matchLine('lined0e107');">
+                                    <div class="linenumber" style="visibility: hidden;">6</div>In deep accordance to a Nation's woe.
+                                 </div>
+                              </div>
+                              <div class="lg">
+                                 <div class="line lined0e110" onclick="matchLine('lined0e110');">
+                                    <div class="emptynumber">&nbsp;</div>Ye, who ere-while for Cook's illustrious brow
+                                 </div>
+                                 <div class="line lined0e112" onclick="matchLine('lined0e112');">
+                                    <div class="emptynumber">&nbsp;</div>Pluck'd the green laurel, and the oaken bough,
+                                 </div>
+                                 <div class="line lined0e114" onclick="matchLine('lined0e114');">
+                                    <div class="emptynumber">&nbsp;</div>Hung the gay garlands on the trophied oars,
+                                 </div>
+                                 <div class="line lined0e116" onclick="matchLine('lined0e116');">
+                                    <div class="emptynumber">&nbsp;</div>And pour'd his fame along a thousand shores,
+                                 </div>
+                                 <div class="line lined0e118" onclick="matchLine('lined0e118');">
+                                    <div class="emptynumber">&nbsp;</div>Strike the slow death-bell!---weave the sacred verse,
+                                 </div>
+                                 <div class="line lined0e120" onclick="matchLine('lined0e120');">
+                                    <div class="emptynumber">&nbsp;</div>And strew the cypress o'er his honour'd hearse;
+                                 </div>
+                                 <div class="line lined0e122" onclick="matchLine('lined0e122');">
+                                    <div class="emptynumber">&nbsp;</div>In sad procession wander round the shrine,
+                                 </div>
+                                 <div class="line lined0e124" onclick="matchLine('lined0e124');">
+                                    <div class="emptynumber">&nbsp;</div>And weep him mortal, whom ye sung divine!
+                                 </div>
+                              </div>
+                           </div>
+                        </td>
+                        <td align="right" valign="top"></td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="panel" id="notesPanel" style="display: none;">
+            <div class="panelBanner"><img class="closePanel" onclick="hideNotesPanel();" alt="X" src="../vm-images/closePanel.gif">
+               Textual Notes
+               
+            </div>
+            <div id="noNotesFound" class="noteContent">
+               Sorry, but there are no notes associated with
+               any currently displayed witness.
+               
+            </div>
+         </div><br class="clear"></div>
+      <div class="viewerRoot" id="panel_imageViewer">
+         <div title="Click to drag panel." class="viewerHandle" id="handle_imageViewer"><span class="viewerHandleLt" id="title_imageViewer">Image Viewer</span><img class="viewerHandleRt" onclick="return hidePanel('imageViewer');" alt="X" src="../vm-images/closePanel.gif"></div>
+         <div class="viewerContent" id="content_imageViewer"></div>
+      </div>
+   </body>
+</html>
