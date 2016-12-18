@@ -25,8 +25,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>Site Index for the Digital Mitford project. Date: 2016-09-11T18:05:35.41-04:00. Extracted by Elisa Beshero-Bondar.
-        Count of all @xml:ids in the current file: 1499. First digital edition in TEI P5, launched on 19 August 2013.</edition>
+            <edition>Site Index for the Digital Mitford project. Date: 2016-12-12T15:25:37.309-05:00. Extracted by Elisa Beshero-Bondar.
+        Count of all @xml:ids in the current file: 1506. First digital edition in TEI P5, launched on 19 August 2013.</edition>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
@@ -5415,6 +5415,21 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                      <ref target="http://viaf.org/viaf/22892749"/>
                   </note>
                </person>
+               <person xml:id="Hamilton_S" sex="1"><!--This is about as elaborate as we need to be for person entries in our project. Historical people will probably have the most extensive entries. Note: We've decided that named animals count as historical people, so Mitford's pets go into this list.-->
+                  <persName>
+                     <surname>Hamilton</surname>
+                     <forename>Samuel</forename>
+                  </persName>
+                  <persName/>
+                  <floruit notBefore="1799" notAfter="1841"/>
+                  <occupation>publisher</occupation>
+                  <occupation>editor</occupation>
+                  <note resp="#bas">Publisher and editor of the <title ref="#Ladys_Mag">Lady's Magazine</title>. He took over the publishing business of his father and grandfather, both named Archibald, alongside his brother, also named Archibald. He first appeared as the printer of the magazine in <date when="1799-08">August 1799</date>. Mitford had contributed articles to the magazine, for which Hamilton may have neglected to pay her the total amount due, sometime in 1823.</note>
+                  <note>
+                     <ref target="http://viaf.org/viaf/4584459"/>
+                     <ref target="https://blogs.kent.ac.uk/ladys-magazine/2015/07/08/an-alarming-fire/"/>
+                  </note>
+               </person>
                <person xml:id="Handel" sex="1">
                   <persName>
                      <forename>George</forename>
@@ -5693,6 +5708,35 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <note>
                      <ref target="http://viaf.org/viaf/29543710"/>
                   </note>
+               </person>
+               <person xml:id="Heath_C">
+                  <persName>
+                     <surname>Heath</surname>
+                     <forename>Charles</forename>
+                     <forename>Theodosius</forename>
+                  </persName>
+                  <birth when="1785-03-01">
+                     <placeName>13 Lisle Street, Leicestor Square, London</placeName>
+                  </birth>
+                  <death when="1848-11-18">
+                     <placeName>24 Seymour Place North, Euston, London</placeName>
+                  </death>
+                  <note resp="#bas">Son of engraver <persName ref="#Heath_J">James Heath</persName>. He studied under his father and became an accomplished engraver in his own right. He is also connected with <title ref="#Ladys_Mag" level="j">The Lady's Magazine</title> and resolved the debt owed to Mitford by the magazine by agreeing to give her the copyrights for her published sketches, as described in a <rs type="letter" ref="#MRM0274">letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1823-05-16">May 16, 1823</date>
+                     </rs>.</note>
+               </person>
+               <person xml:id="Heath_J">
+                  <persName>
+                     <surname>Heath</surname>
+                     <forename>James</forename>
+                  </persName>
+                  <birth when="1757-04-19">
+                     <placeName>Butcher Hall Lane, Newgate</placeName>
+                  </birth>
+                  <death when="1834-11-15">
+                     <placeName>Great Coram Street, London</placeName>
+                  </death>
+                  <note resp="#bas">An accomplished engraver, he produced many prints over his lifetime, and worked under the Robinson family, booksellers and publishers of <title ref="#Ladys_Mag" level="j">The Lady's Magazine</title>. In a <rs type="letter" ref="#MRM0274">letter to <persName ref="#Talfourd_Thos">Talfourd</persName> of <date when="1823-05-16">May 16, 1823</date>
+                     </rs>, Mitford believes that he is the true proprietor of <title ref="#Ladys_Mag" level="j">The Lady's Magazine</title>. He was also the father-in-law of <persName ref="#Hamilton_S">Samuel Hamilton</persName>.</note>
                </person>
                <person xml:id="Heber_Rich" sex="1">
                   <persName>Richard Heber
@@ -13647,6 +13691,60 @@ Life of William Harness (1870s):  mentions Fitzharris as MRM protege and failure
                   <title>John Bull</title>
                   <note resp="#err">Presumably the popular periodical founded in
                      <date>1820</date>.</note>
+               </bibl>
+               <bibl xml:id="Ladys_Mag">
+                  <title level="j" ref="#Ladys_Mag">The Lady's Magazine</title>
+                  <date from="1770" to="1847">1770-1847</date>
+                  <pubPlace ref="#London_city">London</pubPlace>
+                  <bibl corresp="#Ladys_Mag_Ser1"/>
+                  <bibl corresp="#Ladys_Mag_Ser2_v1-3"/>
+                  <bibl corresp="#Ladys_Mag_Ser2_v4-10"/>
+                  <note resp="#lmw #scw">
+                     <p>A popular and influential monthly magazine for women that ran <date from="1756" to="1847">from 1756 until 1847</date> under various editorships, publishers, and subtitles. It offered fiction, poetry, as well as educational pieces, and spawned a series of immitators, including <title level="j">Blackwood's Lady's Magazine</title>. The first series was published as volumes 1 through 49 <date from="1770-08" to="1818-12">from August 1770 to December 1818</date>. Ownership and series numbering are unclear for 1819. It was thereafter continued as "new series" (series two), volumes 1 through 10, <date from="1820" to="1829">from 1820 to 1829</date>, under two different subtitles. <date from="1830" to="1832">Between 1830 and 1832</date>, the magazine advertised volumes one to five as an "improved series." In <date when="1832">1832</date>, it merged with <title level="j">The Lady's Museum</title> and continued until <date when="1847">1837</date>as the <title level="j">Lady's Magazine and Museum of Belle Lettres &amp;c. </title>, improved series, and enlarged, volumes 1 through 11. The magazine underwent a further merger in <date when="1837">1837</date>, when it was continued as the <bibl>
+                           <title level="j">Court Magazine and Monthly Critic and Lady's Magazine and Museum of Belles Lettres</title>, <biblScope unit="volume" from="12" to="31">volumes 12 through 31</biblScope>, improved series and enlarged</bibl>. It ceased publication in <date when="1837">1837</date> with volume 31. In the 1820s, <persName ref="#MRM">Mitford</persName> was a frequent contributor, contributing the stories and sketches that would later be collected as <title ref="#OV">Our Village</title>. </p>
+                     <p>
+                        Sources: English Press, Then and Now. <ref target="http://www.aboutenglish.it/englishpress/Ladys_Maga.htm"/>; 
+                        WorldCat <ref target="http://www.worldcat.org/title/ladys-magazine-museum-of-the-belles-lettres-music-fine-arts-drama-fashions-c/oclc/48090188"/>;
+                        "The Lady's Magazine and the Emergence of Women as Active Participants in the Eighteenth-Century Periodical Press." <ref target="http://www.amdigital.co.uk/m-news/the-ladys-magazine-and-the-emergence-of-women-as-active-participants-in-the-eighteenth-century-periodical-press/"/>; "Lady's Magazine" in Cambridge Bibliography of English Literature, vol. 1 (Cambridge:  Cambridge UP, 1940).</p>
+                  </note>
+                  <note>
+                     <ref target="http://www.worldcat.org/title/ladys-magazine-museum-of-the-belles-lettres-music-fine-arts-drama-fashions-c/oclc/48090188"/>
+                  </note>
+                  <note>
+                     <ref target="http://www.worldcat.org/title/ladys-magazine-museum-of-the-belles-lettres-music-fine-arts-drama-fashions-c/oclc/224411834"/>
+                  </note>
+               </bibl>
+               <bibl xml:id="Ladys_Mag_Ser1">
+                  <title ref="#Ladys_Mag_Ser1">The Lady's Magazine; or Entertaining Companion for the Fair Sex, appropriated solely for their Use and Amusement. [series 1.]</title>
+                  <title ref="#Ladys_Mag">The Lady's Magazine</title>
+                  <pubPlace ref="#London_city">London</pubPlace>
+                  <date from="1770" to="1818">1770-1818</date>
+                  <publisher>J. [John] Wheble</publisher>
+                  <publisher>Robinson &amp; Roberts</publisher>
+                  <publisher>G. [George] Robinson</publisher>
+                  <publisher>G. and J.J. Robinson</publisher>
+                  <note resp="#lmw">Monthly magazine for women founded by bookseller and publisher <persName>John Coote</persName> and edited by <persName>J. H. Wynne</persName>. It was first published by <orgName>John Wheble</orgName> in <date when="1770">1770</date> and the publishing rights were later sold to the Robinson publishing firm, who published under <orgName>Robinson and Roberts</orgName> (publishers <persName>George Robinson</persName> and partner <persName>John Roberts</persName>), <orgName>G. Robinson</orgName>, and <orgName>G. and J. J. Robinson</orgName> (partners <persName>George Robinson</persName>, his son <persName>George Robinson, junior</persName>, and his brother <persName>John Robinson</persName>. A later editor would claim that the magazine had been continuously in print since 1756 (See series four, volume 18); there is no evidence to support that claim. <persName>Coote</persName> and <persName>Wheble</persName> disagreed over the transfer of the publishing rights to <persName>George Robinson</persName>, and <persName>Wheble</persName> reportedly continued to publish under that title on his own account and was fined for doing so. The first series was published as volumes 1 through 49 <date from="1770-08" to="1818-12">August 1770 to December 1818</date>. Ownership and series numbering is unclear for 1819. It was thereafter continued as "new series" (series two), volumes 1 through 10, <date from="1820" to="1829">from 1820 to 1829</date>, under publisher <orgName>S. Robinson</orgName> and with two different subtitles.</note>
+               </bibl>
+               <bibl xml:id="Ladys_Mag_Ser2_v1-3">
+                  <title ref="#Ladys_Mag_Ser2_v1-3">The Lady's Magazine; or Entertaining Companion for the Fair Sex, appropriated solely for their Use and Amusement. [series 2, vol. 1-3]</title>
+                  <title ref="#Ladys_Mag">The Lady's Magazine</title>
+                  <pubPlace ref="#London_city">London</pubPlace>
+                  <date from="1820" to="1822">1820-1822</date>
+                  <publisher>
+                     <orgName>S. Robinson</orgName>
+                  </publisher>
+                  <note resp="#scw #lmw">A continuation of <title ref="#Ladys_Mag">The Lady's Magazine</title> as a "new series" (series two), volumes 1 through 3, <date from="1820" to="1822">from 1820 to 1822</date>, under the subtitle "Entertaining Companion for the Fair Sex, appropriated solely for their Use and Amusement". Published by <orgName>S. Robinson</orgName>.<!--LMW: Based on our scans of the Lady's Magazine from Reading, volume one, new series, definitely starts in 1820. That means that I have no idea what happens in 1819, if series one ceases publication in December 1818, as sources indicate. Sometimes the numbering can be off from the actual month/year that the issue was published, and this may have led to the bibliographic confusion of dates. We'd have to check the microfilm versions and their title pages to be sure.--><!--scw: earliest we have in our collection in Box is Sept 1822. I'll see if I can IL some microfilm from my end. I've been able to in the past.--></note>
+                  <ref target="http://www.worldcat.org/title/ladys-magaine-museum-of-the-belles-lettres-music-fine-arts-drama-fashions-c/oclc/48090188"/>.
+               </bibl>
+               <bibl xml:id="Ladys_Mag_Ser2_v4-10">
+                  <title ref="#Ladys_Mag_Ser2_v4-10">The Lady's Magazine; or Mirror of the Belle-Lettres, Fine Arts, Fashions, Music, Drama, &amp;c. [series 2, vol. 4-10]</title>
+                  <pubPlace ref="#London_city">London</pubPlace>
+                  <date from="1823" to="1829">1823-1829</date>
+                  <publisher>
+                     <orgName>S. Robinson</orgName>
+                  </publisher>
+                  <note resp="#scw #lmw">Many of <persName ref="#MRM">Mitford</persName>'s contributions to the magazine were to this series, a continuation of the "new series" (second series) begun in 1820 by publisher <orgName>S. Robinson</orgName>. For volumes four through ten of the "new series," published <date from="1823" to="1829">between 1823 and 1829</date>, the magazine was subtitled "Mirror of the Belle-Lettres, Fine Arts, Fashions, Music, Drama, &amp;c." Notable contributions included the <title ref="#Walks_Country_LM">Walks in the Country</title>, as well as the <title ref="#Boarding_School_Rec_LM">Boarding School Recollections</title> subseries, which became <title ref="#Early_Rec_OV">Early Recollections</title> in <title ref="#OV"/>.</note>
+                  <ref target="http://www.worldcat.org/title/ladys-magazine-museum-of-the-belles-lettres-music-fine-arts-drama-fashions-c/oclc/48090188"/>
                </bibl>
                <bibl xml:id="Ladys_Monthly_Museum">
                   <title>Lady's Monthly Museum; Or, Polite Repository of Amusement and
