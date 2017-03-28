@@ -1,0 +1,24 @@
+html{
+    background-color: #FFFFCC;
+    font-family: "Palatino Linotype", "Book Antiqua", Palantino, serif;
+}
+
+
+
+table, th, td {
+       border-collapse: collapse;
+    border: 2px solid #580000;   
+       text-align: center;
+       color: #A04747;
+              max-width: 80%;
+       margin:  auto;
+}
+
+td{
+       padding: 2px
+}
+
+caption{
+       font-size: 23px;
+       padding: 5px;
+}

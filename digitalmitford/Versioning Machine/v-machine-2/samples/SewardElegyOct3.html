@@ -1,0 +1,787 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <title>Elegy on Captain Cook -- The Versioning Machine 4.0</title>
+      <link rel="stylesheet" type="text/css" href="../src/vmachine.css">
+      <!--[if IE 6]>
+            <link rel="stylesheet" type="text/css" href="../src/vmachine_ie6.css">
+         <![endif]--><script type="text/javascript" src="../src/vmachine.js"></script><script type="text/javascript">
+      var witnesses = new Array();
+      
+         witnesses["early"] = "early";
+      
+         witnesses["late"] = "late";
+      
+      var maxPanels = 2;
+   </script></head>
+   <body onload="init();">
+      <div id="mainBanner">
+         <div id="brandingLogo"><img id="logo" alt="Powered by the Versioning Machine" src="../vm-images/poweredby.gif"></div>
+         <div id="headline">
+            <h1 onclick="toggleBiblio();">Elegy on Captain Cook</h1><span class="versionCount"> has 2 versions</span></div><img id="topEdge" src="../vm-images/topedge.gif" alt=""><div id="mainControls"><input type="button" id="newPanel" value="New Version" onclick="openPanel();">
+            &#8226;
+            <input type="button" id="bibToggle" value="Bibliographic Info" onclick="toggleBiblio();">
+            
+            &#8226;
+            <label for="toggleLineNumbers">Line Numbers:</label><input type="checkbox" id="toggleLineNumbers" onclick="toggleLineNumbers(this.checked);" checked>
+            &#8226;
+            <select id="notesMenu" disabled>
+               <option>No notes found</option></select>
+            &#8226;
+            <a href="../samples.html">Index of texts</a></div>
+      </div>
+      <div id="mssArea">
+         <div class="panel" id="bibPanel">
+            <div class="panelBanner"><img class="closePanel" onclick="toggleBiblio();" alt="X" src="../vm-images/closePanel.gif">
+               Bibliographic Information
+               
+            </div>
+            <div class="bibContent">
+               <h2>Elegy on Captain Cook</h2>
+               <h4>Original Source</h4>
+                           
+                              
+                                 
+                                    See witness list.
+                                 
+                              
+                           
+                        
+               <h4>Witness List</h4>
+               <ul>
+                  <li><strong>Witness early:</strong> 1780 edition
+                  </li>
+                  <li><strong>Witness late:</strong> 1810 edition
+                  </li>
+               </ul>
+               <h4>Electronic Edition Information:</h4>
+               <h5>Responsibility Statement:</h5>
+               <ul>
+                  <li>Transcribed, encoded, and edited by Digital Humanities Class</li>
+                  <li>Sponsored by University of Pittsburgh at Greensburg</li>
+                  <li>Funding provided by University of Pittsburgh at Greensburg</li>
+               </ul>
+               <h5>Publication Details:</h5>
+                           
+               <p>Published by Elisa Beshero-Bondar for demonstration purposes only. May not be reproduced without
+                                 permission..
+               </p>
+                           
+                              
+                           
+                           
+                           
+                              
+               <p></p>
+                           
+                           
+                        
+               <h4>Encoding Principles</h4>
+                        
+                           
+               <p></p>
+                        
+                        
+               <p>Transcriptions are encoded in TEI(P5)-conformant XML.</p>
+                        
+                           
+               <p></p>
+                        
+                        
+                           
+                           
+                              
+               <p></p>
+                           
+                          
+                        
+               
+                        
+               
+                        
+                     
+            </div>
+         </div>
+         <div id="manuscripts">
+            <div class="panel mssPanel">
+               <div class="panelBanner"><img class="closePanel" onclick="closePanel(this.parentNode.parentNode);" src="../vm-images/closePanel.gif" alt="X">Witness <select class="witnessMenu" onchange="changeWitness(this.value,this.parentNode.parentNode);">
+                     <option selected value="early">1: early</option>
+                     <option value="late">2: late</option></select></div>
+               <div class="mssContent">
+                  
+                          
+                  
+                           
+                  <div class="div type-poem">
+                                 
+                                 
+                     <div class="head">
+                                       <span class="apparatus app-d0e182 clickable" onclick="matchApp('app-d0e182');">
+                                             <span class="reading late">
+                                                   Seward, Anna, 1742-1809:  [from The Poetical Works (1810)]
+                                                   VOL. II.
+                                                   Volume section
+                                                   Seward, Anna, 1742-1809 : 
+                                                   ELEGY ON CAPTAIN COOK. [from The Poetical Works (1810)] </span> 
+                                          </span>
+                                       <span class="apparatus app-d0e189 clickable" onclick="matchApp('app-d0e189');">
+                                             <span class="reading early">
+                                 ELEGY ON CAPTAIN COOK (1780)                 
+                                                </span>
+                                          </span>
+                                       
+                                    
+                     </div>
+                                
+                                 
+                     <div class="lg">
+                                       
+                        <div class="line lined0e200" onclick="matchLine('lined0e200');">
+                           <div class="linenumber">1</div>Sorrowing , the Nine beneath yon blasted yew
+                        </div> 
+                                       
+                        <div class="line lined0e203" onclick="matchLine('lined0e203');">
+                           <div class="linenumber">2</div><span class="apparatus"><span class="reading late">Shed the soft drops of pity's holy dew;</span></span></div>
+                                       
+                        <div class="line lined0e208" onclick="matchLine('lined0e208');">
+                           <div class="linenumber">2</div><span class="apparatus"><span class="reading early">Shed the bright drops of Pity's holy dew;</span></span></div>  
+                                       
+                        <div class="line lined0e213" onclick="matchLine('lined0e213');">
+                           <div class="linenumber">3</div>Mute are their tuneful tongues, extinct their fires;
+                        </div>  
+                                       
+                        <div class="line lined0e216" onclick="matchLine('lined0e216');">
+                           <div class="linenumber">4</div>Yet not in silence sleep their silver lyres;
+                        </div>  
+                                       
+                        <div class="line lined0e219" onclick="matchLine('lined0e219');">
+                           <div class="linenumber">5</div>To the bleak gale they vibrate sad and slow,
+                        </div>  
+                                       
+                        <div class="line lined0e222" onclick="matchLine('lined0e222');">
+                           <div class="linenumber">6</div>In deep accordance to a Nation's woe.
+                        </div>
+                                       
+                        <div class="line lined0e225" onclick="matchLine('lined0e225');">
+                           <div class="emptynumber">&nbsp;</div>
+                        </div>
+                                       
+                        <div class="line lined0e227" onclick="matchLine('lined0e227');">
+                           <div class="emptynumber">&nbsp;</div>
+                        </div>
+                                    
+                     </div> 
+                              
+                              
+                     <div class="lg">
+                                    
+                        <div class="line lined0e232" onclick="matchLine('lined0e232');">
+                           <div class="linenumber">7</div>  <span class="apparatus"><span class="reading late"> Ye, who ere-while for Cook's illustrious brow</span></span></div>
+                                    
+                        <div class="line lined0e238" onclick="matchLine('lined0e238');">
+                           <div class="linenumber">7</div>  <span class="apparatus"><span class="reading early"> Ye, who ere while for COOK's illustrious brow</span></span></div> 
+                                    
+                        <div class="line lined0e244" onclick="matchLine('lined0e244');">
+                           <div class="linenumber">8</div>  Pluck'd the green laurel, and the oaken bough,
+                        </div>  
+                                    
+                        <div class="line lined0e247" onclick="matchLine('lined0e247');">
+                           <div class="linenumber">9</div>   Hung the gay garlands on the trophied oars, 
+                        </div>
+                                    
+                        <div class="line lined0e250" onclick="matchLine('lined0e250');">
+                           <div class="linenumber">10</div>   And pour'd his fame along a thousand shores, 
+                        </div>
+                                    
+                        <div class="line lined0e253" onclick="matchLine('lined0e253');">
+                           <div class="linenumber">11</div>   Strike the slow death-bell!---weave the sacred verse, 
+                        </div>
+                                    
+                        <div class="line lined0e256" onclick="matchLine('lined0e256');">
+                           <div class="linenumber">12</div>   And strew the cypress o'er his honour'd hearse; 
+                        </div> 
+                                    
+                        <div class="line lined0e259" onclick="matchLine('lined0e259');">
+                           <div class="linenumber">13</div>   In sad procession wander round the shrine, 
+                        </div> 
+                                    
+                        <div class="line lined0e262" onclick="matchLine('lined0e262');">
+                           <div class="linenumber">14</div>   And weep him mortal, whom ye sung divine!
+                        </div>
+                                 
+                     </div>
+                              
+                     <div class="lg">
+                                    
+                        <div class="line lined0e268" onclick="matchLine('lined0e268');">
+                           <div class="linenumber">15</div>   <span class="apparatus"><span class="reading late">Say first, what Power inspir'd his dauntless breast </span></span></div>
+                                    
+                        <div class="line lined0e274" onclick="matchLine('lined0e274');">
+                           <div class="linenumber">16</div>  <span class="apparatus"><span class="reading late"> With scorn of danger and inglorious rest, </span></span></div>
+                                    
+                        <div class="line lined0e280" onclick="matchLine('lined0e280');">
+                           <div class="linenumber">17</div>  <span class="apparatus"><span class="reading late"> To quit imperial London's gorgeous domes,</span></span></div> 
+                                    
+                        <div class="line lined0e286" onclick="matchLine('lined0e286');">
+                           <div class="linenumber">18</div>   <span class="apparatus"><span class="reading late">Where, deck'd in thousand tints, young Pleasure roams;</span></span></div>
+                                    
+                        <div class="line lined0e292" onclick="matchLine('lined0e292');">
+                           <div class="linenumber">19</div>   <span class="apparatus"><span class="reading late">In cups of summer-ice her nectar pours,</span></span></div>  
+                                    
+                        <div class="line lined0e298" onclick="matchLine('lined0e298');">
+                           <div class="linenumber">20</div><span class="apparatus"><span class="reading late">Or twines, 'mid wint'ry snows, her roseate bowers;</span></span></div> 
+                                    
+                        <div class="lg">
+                                          
+                           <div class="line lined0e305" onclick="matchLine('lined0e305');">
+                              <div class="linenumber">15</div> <span class="apparatus"><span class="reading early"> Say first, what Pow'r inspir'd his dauntless breast </span></span></div>
+                                          
+                           <div class="line lined0e311" onclick="matchLine('lined0e311');">
+                              <div class="linenumber">16</div> <span class="apparatus"><span class="reading early">With scorn of danger and inglorious rest, </span></span></div>
+                                          
+                           <div class="line lined0e317" onclick="matchLine('lined0e317');">
+                              <div class="linenumber">17</div> <span class="apparatus"><span class="reading early">To quit imperial London's gorgeous plains,</span></span></div> 
+                                          
+                           <div class="line lined0e323" onclick="matchLine('lined0e323');">
+                              <div class="linenumber">18</div> <span class="apparatus"><span class="reading early">Where, rob'd in thousand tints, bright Pleasure reigns;</span></span></div>
+                                          
+                           <div class="line lined0e329" onclick="matchLine('lined0e329');">
+                              <div class="linenumber">19</div> <span class="apparatus"><span class="reading early">In cups of summer-ice her nectar pours,</span></span></div>  
+                                          
+                           <div class="line lined0e335" onclick="matchLine('lined0e335');">
+                              <div class="linenumber">20</div> <span class="apparatus"><span class="reading early">And twines, 'mid wint'ry snows, her roseate bow'rs?</span></span></div>
+                                        
+                                       
+                        </div>
+                                    
+                               
+                                   
+                                      
+                                   
+                        <div class="lg">      
+                                       
+                           <div class="line lined0e346" onclick="matchLine('lined0e346');">
+                              <div class="linenumber">21</div> <span class="apparatus"><span class="reading late">Where the warm Orient loads Britannia's gales</span></span></div>  
+                                       
+                           <div class="line lined0e352" onclick="matchLine('lined0e352');">
+                              <div class="linenumber">22</div> <span class="apparatus"><span class="reading late">With all the incense of Sab&aelig;an vales;</span></span> 
+                           </div> 
+                                       
+                           <div class="line lined0e359" onclick="matchLine('lined0e359');">
+                              <div class="linenumber">23</div> <span class="apparatus"><span class="reading late"> Where soft Italia's silken sons prolong</span></span></div> 
+                                       
+                           <div class="line lined0e365" onclick="matchLine('lined0e365');">
+                              <div class="linenumber">24</div> <span class="apparatus"><span class="reading late">The lavish cadence of the artful song;</span></span></div>  
+                                      
+                        </div>
+                               
+                                    
+                        <div class="lg">
+                                       
+                           <div class="line lined0e376" onclick="matchLine('lined0e376');">
+                              <div class="linenumber">21</div> <span class="apparatus"><span class="reading early">Where Beauty moves with undulating grace,</span></span></div>
+                                       
+                           <div class="line lined0e382" onclick="matchLine('lined0e382');">
+                              <div class="linenumber">22</div> <span class="apparatus"><span class="reading early">Calls the sweet blush to wanton o'er her face,</span></span></div>  
+                                       
+                           <div class="line lined0e388" onclick="matchLine('lined0e388');">
+                              <div class="linenumber">23</div> <span class="apparatus"><span class="reading early">On each fond Youth her soft artillery tries,</span></span></div>  
+                                       
+                           <div class="line lined0e394" onclick="matchLine('lined0e394');">
+                              <div class="linenumber">24</div> <span class="apparatus"><span class="reading early">Aims her light smile, and rolls her frolic eyes?</span></span></div>  
+                                       
+                           <div class="line lined0e400" onclick="matchLine('lined0e400');">
+                              <div class="emptynumber">&nbsp;</div><span class="apparatus"><span class="reading early">BLANK SPACE</span></span></div>
+                                       
+                           <div class="line lined0e406" onclick="matchLine('lined0e406');">
+                              <div class="emptynumber">&nbsp;</div><span class="apparatus"><span class="reading early">BLANK SPACE</span></span></div>
+                                       
+                        </div>
+                                    
+                                    
+                        <div class="lg">
+                                          
+                           <div class="line lined0e415" onclick="matchLine('lined0e415');">
+                              <div class="linenumber">25</div>   <span class="apparatus"><span class="reading early">What Power inspir'd his dauntless breast to brave</span></span></div>  
+                                       
+                           <div class="line lined0e421" onclick="matchLine('lined0e421');">
+                              <div class="linenumber">26</div>   <span class="apparatus"><span class="reading early">The scorch'd Equator, and th' Antarctic wave?</span></span> 
+                           </div> 
+                                       
+                           <div class="line lined0e428" onclick="matchLine('lined0e428');">
+                              <div class="linenumber">27</div>  <span class="apparatus"><span class="reading early"> Climes, where fierce Suns in cloudless ardors shine,</span></span></div>  
+                                       
+                           <div class="line lined0e434" onclick="matchLine('lined0e434');">
+                              <div class="linenumber">28</div>   <span class="apparatus"><span class="reading early">And pour the dazzling deluge round the Line;</span></span></div>  
+                                       
+                           <div class="line lined0e440" onclick="matchLine('lined0e440');">
+                              <div class="linenumber">29</div>  <span class="apparatus"><span class="reading early"> The realms of frost, where icy mountains rise,</span></span></div>  
+                                       
+                           <div class="line lined0e446" onclick="matchLine('lined0e446');">
+                              <div class="linenumber">30</div>   <span class="apparatus"><span class="reading early">'Mid the pale summer of the polar skies?---</span></span></div>  
+                                       
+                           <div class="line lined0e452" onclick="matchLine('lined0e452');">
+                              <div class="linenumber">31</div>   <span class="apparatus"><span class="reading early">It was Benevolence! ---on coasts unknown,</span></span></div>  
+                                       
+                           <div class="line lined0e458" onclick="matchLine('lined0e458');">
+                              <div class="linenumber">32</div>   <span class="apparatus"><span class="reading early">The shiv'ring natives of the frozen zone, </span></span></div> 
+                                       
+                           <div class="line lined0e464" onclick="matchLine('lined0e464');">
+                              <div class="linenumber">33</div>  <span class="apparatus"><span class="reading early"> And the swart Indian, as he faintly strays</span></span></div>  
+                                       
+                           <div class="line lined0e470" onclick="matchLine('lined0e470');">
+                              <div class="linenumber">34</div>   <span class="apparatus"><span class="reading early">"Where Cancer reddens in the solar blaze,"</span></span></div>  
+                                       
+                           <div class="line lined0e476" onclick="matchLine('lined0e476');">
+                              <div class="linenumber">35</div>   <span class="apparatus"><span class="reading early">She bade him seek;---on each inclement shore </span></span></div> 
+                                       
+                           <div class="line lined0e482" onclick="matchLine('lined0e482');">
+                              <div class="linenumber">36</div>   <span class="apparatus"><span class="reading early">Plant the rich seeds of her exhaustless store;</span></span></div>   
+                                       
+                           <div class="line lined0e488" onclick="matchLine('lined0e488');">
+                              <div class="linenumber">37</div>  <span class="apparatus"><span class="reading early"> Unite the savage hearts, and hostile hands,</span></span></div>  
+                                       
+                           <div class="line lined0e494" onclick="matchLine('lined0e494');">
+                              <div class="linenumber">38</div>   <span class="apparatus"><span class="reading early">In the firm compact of her gentle bands;</span></span> 
+                           </div> 
+                                       
+                           <div class="line lined0e501" onclick="matchLine('lined0e501');">
+                              <div class="linenumber">39</div>   <span class="apparatus"><span class="reading early">Strew her soft comforts o'er the barren plain,</span></span></div>  
+                                       
+                           <div class="line lined0e507" onclick="matchLine('lined0e507');">
+                              <div class="linenumber">40</div>  <span class="apparatus"><span class="reading early"> Sing her sweet lays, and consecrate her fane.</span></span></div>
+                                       
+                        </div>
+                                    
+                                   
+                        <div class="lg"> 
+                                       
+                           <div class="line lined0e516" onclick="matchLine('lined0e516');">
+                              <div class="linenumber">25</div> <span class="apparatus"><span class="reading late"> Where Beauty moves with fascinating grace,</span></span></div>
+                                       
+                           <div class="line lined0e522" onclick="matchLine('lined0e522');">
+                              <div class="linenumber">26</div><span class="apparatus"><span class="reading late">Calls the sweet blush to wanton o'er her face,</span></span></div>  
+                                       
+                           <div class="line lined0e527" onclick="matchLine('lined0e527');">
+                              <div class="linenumber">27</div><span class="apparatus"><span class="reading late">   On each fond youth her soft artillery tries,</span></span></div>  
+                                       
+                           <div class="line lined0e532" onclick="matchLine('lined0e532');">
+                              <div class="linenumber">28</div>  <span class="apparatus"><span class="reading late"> Aims the light smile, and rolls the frolic eyes:</span></span></div>  
+                                       
+                           <div class="line lined0e538" onclick="matchLine('lined0e538');">
+                              <div class="linenumber">29</div>   <span class="apparatus"><span class="reading late">What Power inspir'd his dauntless breast to brave</span></span></div>  
+                                       
+                           <div class="line lined0e544" onclick="matchLine('lined0e544');">
+                              <div class="linenumber">30</div>   <span class="apparatus"><span class="reading late">The scorch'd Equator, and th' Antarctic wave?</span></span> 
+                           </div> 
+                                       
+                           <div class="line lined0e551" onclick="matchLine('lined0e551');">
+                              <div class="linenumber">31</div>  <span class="apparatus"><span class="reading late"> Climes, where fierce Suns in cloudless ardors shine,</span></span></div>  
+                                       
+                           <div class="line lined0e557" onclick="matchLine('lined0e557');">
+                              <div class="linenumber">32</div>   <span class="apparatus"><span class="reading late">And pour the dazzling deluge round the Line;</span></span></div>  
+                                       
+                           <div class="line lined0e563" onclick="matchLine('lined0e563');">
+                              <div class="linenumber">33</div>  <span class="apparatus"><span class="reading late"> The realms of frost, where icy mountains rise,</span></span></div>  
+                                       
+                           <div class="line lined0e569" onclick="matchLine('lined0e569');">
+                              <div class="linenumber">34</div>   <span class="apparatus"><span class="reading late">'Mid the pale summer of the polar skies?---</span></span></div>  
+                                       
+                           <div class="line lined0e575" onclick="matchLine('lined0e575');">
+                              <div class="linenumber">35</div>   <span class="apparatus"><span class="reading late">It was Benevolence! ---on coasts unknown,</span></span></div>  
+                                       
+                           <div class="line lined0e581" onclick="matchLine('lined0e581');">
+                              <div class="linenumber">36</div>   <span class="apparatus"><span class="reading late">The shiv'ring natives of the frozen zone, </span></span></div> 
+                                       
+                           <div class="line lined0e587" onclick="matchLine('lined0e587');">
+                              <div class="linenumber">37</div>  <span class="apparatus"><span class="reading late"> And the swart Indian, as he faintly strays</span></span></div>  
+                                       
+                           <div class="line lined0e593" onclick="matchLine('lined0e593');">
+                              <div class="linenumber">38</div>   <span class="apparatus"><span class="reading late">"Where Cancer reddens in the solar blaze,"</span></span></div>  
+                                       
+                           <div class="line lined0e599" onclick="matchLine('lined0e599');">
+                              <div class="linenumber">39</div>   <span class="apparatus"><span class="reading late">She bade him seek;---on each inclement shore </span></span></div> 
+                                       
+                           <div class="line lined0e605" onclick="matchLine('lined0e605');">
+                              <div class="linenumber">40</div>   <span class="apparatus"><span class="reading late">Plant the rich seeds of her exhaustless store;</span></span></div>   
+                                       
+                           <div class="line lined0e611" onclick="matchLine('lined0e611');">
+                              <div class="linenumber">41</div>  <span class="apparatus"><span class="reading late"> Unite the savage hearts, and hostile hands,</span></span></div>  
+                                       
+                           <div class="line lined0e617" onclick="matchLine('lined0e617');">
+                              <div class="linenumber">42</div>   <span class="apparatus"><span class="reading late">In the firm compact of her gentle bands;</span></span> 
+                           </div> 
+                                       
+                           <div class="line lined0e624" onclick="matchLine('lined0e624');">
+                              <div class="linenumber">43</div>   <span class="apparatus"><span class="reading late">Strew her soft comforts o'er the barren plain,</span></span></div>  
+                                       
+                           <div class="line lined0e630" onclick="matchLine('lined0e630');">
+                              <div class="linenumber">44</div>  <span class="apparatus"><span class="reading late"> Sing her sweet lays, and consecrate her fane.</span></span></div> 
+                                    
+                        </div>   
+                                       
+                                    
+                                 
+                     </div>    
+                                 
+                     
+                                    
+                                   
+                             
+                              
+                  </div>
+                        
+               </div>
+            </div>
+            <div class="panel mssPanel">
+               <div class="panelBanner"><img class="closePanel" onclick="closePanel(this.parentNode.parentNode);" src="../vm-images/closePanel.gif" alt="X">Witness <select class="witnessMenu" onchange="changeWitness(this.value,this.parentNode.parentNode);">
+                     <option value="early">1: early</option>
+                     <option selected value="late">2: late</option></select></div>
+               <div class="mssContent">
+                  
+                          
+                  
+                           
+                  <div class="div type-poem">
+                                 
+                                 
+                     <div class="head">
+                                       <span class="apparatus app-d0e182 clickable" onclick="matchApp('app-d0e182');">
+                                             <span class="reading late">
+                                                   Seward, Anna, 1742-1809:  [from The Poetical Works (1810)]
+                                                   VOL. II.
+                                                   Volume section
+                                                   Seward, Anna, 1742-1809 : 
+                                                   ELEGY ON CAPTAIN COOK. [from The Poetical Works (1810)] </span> 
+                                          </span>
+                                       <span class="apparatus app-d0e189 clickable" onclick="matchApp('app-d0e189');">
+                                             <span class="reading early">
+                                 ELEGY ON CAPTAIN COOK (1780)                 
+                                                </span>
+                                          </span>
+                                       
+                                    
+                     </div>
+                                
+                                 
+                     <div class="lg">
+                                       
+                        <div class="line lined0e200" onclick="matchLine('lined0e200');">
+                           <div class="linenumber">1</div>Sorrowing , the Nine beneath yon blasted yew
+                        </div> 
+                                       
+                        <div class="line lined0e203" onclick="matchLine('lined0e203');">
+                           <div class="linenumber">2</div><span class="apparatus"><span class="reading late">Shed the soft drops of pity's holy dew;</span></span></div>
+                                       
+                        <div class="line lined0e208" onclick="matchLine('lined0e208');">
+                           <div class="linenumber">2</div><span class="apparatus"><span class="reading early">Shed the bright drops of Pity's holy dew;</span></span></div>  
+                                       
+                        <div class="line lined0e213" onclick="matchLine('lined0e213');">
+                           <div class="linenumber">3</div>Mute are their tuneful tongues, extinct their fires;
+                        </div>  
+                                       
+                        <div class="line lined0e216" onclick="matchLine('lined0e216');">
+                           <div class="linenumber">4</div>Yet not in silence sleep their silver lyres;
+                        </div>  
+                                       
+                        <div class="line lined0e219" onclick="matchLine('lined0e219');">
+                           <div class="linenumber">5</div>To the bleak gale they vibrate sad and slow,
+                        </div>  
+                                       
+                        <div class="line lined0e222" onclick="matchLine('lined0e222');">
+                           <div class="linenumber">6</div>In deep accordance to a Nation's woe.
+                        </div>
+                                       
+                        <div class="line lined0e225" onclick="matchLine('lined0e225');">
+                           <div class="emptynumber">&nbsp;</div>
+                        </div>
+                                       
+                        <div class="line lined0e227" onclick="matchLine('lined0e227');">
+                           <div class="emptynumber">&nbsp;</div>
+                        </div>
+                                    
+                     </div> 
+                              
+                              
+                     <div class="lg">
+                                    
+                        <div class="line lined0e232" onclick="matchLine('lined0e232');">
+                           <div class="linenumber">7</div>  <span class="apparatus"><span class="reading late"> Ye, who ere-while for Cook's illustrious brow</span></span></div>
+                                    
+                        <div class="line lined0e238" onclick="matchLine('lined0e238');">
+                           <div class="linenumber">7</div>  <span class="apparatus"><span class="reading early"> Ye, who ere while for COOK's illustrious brow</span></span></div> 
+                                    
+                        <div class="line lined0e244" onclick="matchLine('lined0e244');">
+                           <div class="linenumber">8</div>  Pluck'd the green laurel, and the oaken bough,
+                        </div>  
+                                    
+                        <div class="line lined0e247" onclick="matchLine('lined0e247');">
+                           <div class="linenumber">9</div>   Hung the gay garlands on the trophied oars, 
+                        </div>
+                                    
+                        <div class="line lined0e250" onclick="matchLine('lined0e250');">
+                           <div class="linenumber">10</div>   And pour'd his fame along a thousand shores, 
+                        </div>
+                                    
+                        <div class="line lined0e253" onclick="matchLine('lined0e253');">
+                           <div class="linenumber">11</div>   Strike the slow death-bell!---weave the sacred verse, 
+                        </div>
+                                    
+                        <div class="line lined0e256" onclick="matchLine('lined0e256');">
+                           <div class="linenumber">12</div>   And strew the cypress o'er his honour'd hearse; 
+                        </div> 
+                                    
+                        <div class="line lined0e259" onclick="matchLine('lined0e259');">
+                           <div class="linenumber">13</div>   In sad procession wander round the shrine, 
+                        </div> 
+                                    
+                        <div class="line lined0e262" onclick="matchLine('lined0e262');">
+                           <div class="linenumber">14</div>   And weep him mortal, whom ye sung divine!
+                        </div>
+                                 
+                     </div>
+                              
+                     <div class="lg">
+                                    
+                        <div class="line lined0e268" onclick="matchLine('lined0e268');">
+                           <div class="linenumber">15</div>   <span class="apparatus"><span class="reading late">Say first, what Power inspir'd his dauntless breast </span></span></div>
+                                    
+                        <div class="line lined0e274" onclick="matchLine('lined0e274');">
+                           <div class="linenumber">16</div>  <span class="apparatus"><span class="reading late"> With scorn of danger and inglorious rest, </span></span></div>
+                                    
+                        <div class="line lined0e280" onclick="matchLine('lined0e280');">
+                           <div class="linenumber">17</div>  <span class="apparatus"><span class="reading late"> To quit imperial London's gorgeous domes,</span></span></div> 
+                                    
+                        <div class="line lined0e286" onclick="matchLine('lined0e286');">
+                           <div class="linenumber">18</div>   <span class="apparatus"><span class="reading late">Where, deck'd in thousand tints, young Pleasure roams;</span></span></div>
+                                    
+                        <div class="line lined0e292" onclick="matchLine('lined0e292');">
+                           <div class="linenumber">19</div>   <span class="apparatus"><span class="reading late">In cups of summer-ice her nectar pours,</span></span></div>  
+                                    
+                        <div class="line lined0e298" onclick="matchLine('lined0e298');">
+                           <div class="linenumber">20</div><span class="apparatus"><span class="reading late">Or twines, 'mid wint'ry snows, her roseate bowers;</span></span></div> 
+                                    
+                        <div class="lg">
+                                          
+                           <div class="line lined0e305" onclick="matchLine('lined0e305');">
+                              <div class="linenumber">15</div> <span class="apparatus"><span class="reading early"> Say first, what Pow'r inspir'd his dauntless breast </span></span></div>
+                                          
+                           <div class="line lined0e311" onclick="matchLine('lined0e311');">
+                              <div class="linenumber">16</div> <span class="apparatus"><span class="reading early">With scorn of danger and inglorious rest, </span></span></div>
+                                          
+                           <div class="line lined0e317" onclick="matchLine('lined0e317');">
+                              <div class="linenumber">17</div> <span class="apparatus"><span class="reading early">To quit imperial London's gorgeous plains,</span></span></div> 
+                                          
+                           <div class="line lined0e323" onclick="matchLine('lined0e323');">
+                              <div class="linenumber">18</div> <span class="apparatus"><span class="reading early">Where, rob'd in thousand tints, bright Pleasure reigns;</span></span></div>
+                                          
+                           <div class="line lined0e329" onclick="matchLine('lined0e329');">
+                              <div class="linenumber">19</div> <span class="apparatus"><span class="reading early">In cups of summer-ice her nectar pours,</span></span></div>  
+                                          
+                           <div class="line lined0e335" onclick="matchLine('lined0e335');">
+                              <div class="linenumber">20</div> <span class="apparatus"><span class="reading early">And twines, 'mid wint'ry snows, her roseate bow'rs?</span></span></div>
+                                        
+                                       
+                        </div>
+                                    
+                               
+                                   
+                                      
+                                   
+                        <div class="lg">      
+                                       
+                           <div class="line lined0e346" onclick="matchLine('lined0e346');">
+                              <div class="linenumber">21</div> <span class="apparatus"><span class="reading late">Where the warm Orient loads Britannia's gales</span></span></div>  
+                                       
+                           <div class="line lined0e352" onclick="matchLine('lined0e352');">
+                              <div class="linenumber">22</div> <span class="apparatus"><span class="reading late">With all the incense of Sab&aelig;an vales;</span></span> 
+                           </div> 
+                                       
+                           <div class="line lined0e359" onclick="matchLine('lined0e359');">
+                              <div class="linenumber">23</div> <span class="apparatus"><span class="reading late"> Where soft Italia's silken sons prolong</span></span></div> 
+                                       
+                           <div class="line lined0e365" onclick="matchLine('lined0e365');">
+                              <div class="linenumber">24</div> <span class="apparatus"><span class="reading late">The lavish cadence of the artful song;</span></span></div>  
+                                      
+                        </div>
+                               
+                                    
+                        <div class="lg">
+                                       
+                           <div class="line lined0e376" onclick="matchLine('lined0e376');">
+                              <div class="linenumber">21</div> <span class="apparatus"><span class="reading early">Where Beauty moves with undulating grace,</span></span></div>
+                                       
+                           <div class="line lined0e382" onclick="matchLine('lined0e382');">
+                              <div class="linenumber">22</div> <span class="apparatus"><span class="reading early">Calls the sweet blush to wanton o'er her face,</span></span></div>  
+                                       
+                           <div class="line lined0e388" onclick="matchLine('lined0e388');">
+                              <div class="linenumber">23</div> <span class="apparatus"><span class="reading early">On each fond Youth her soft artillery tries,</span></span></div>  
+                                       
+                           <div class="line lined0e394" onclick="matchLine('lined0e394');">
+                              <div class="linenumber">24</div> <span class="apparatus"><span class="reading early">Aims her light smile, and rolls her frolic eyes?</span></span></div>  
+                                       
+                           <div class="line lined0e400" onclick="matchLine('lined0e400');">
+                              <div class="emptynumber">&nbsp;</div><span class="apparatus"><span class="reading early">BLANK SPACE</span></span></div>
+                                       
+                           <div class="line lined0e406" onclick="matchLine('lined0e406');">
+                              <div class="emptynumber">&nbsp;</div><span class="apparatus"><span class="reading early">BLANK SPACE</span></span></div>
+                                       
+                        </div>
+                                    
+                                    
+                        <div class="lg">
+                                          
+                           <div class="line lined0e415" onclick="matchLine('lined0e415');">
+                              <div class="linenumber">25</div>   <span class="apparatus"><span class="reading early">What Power inspir'd his dauntless breast to brave</span></span></div>  
+                                       
+                           <div class="line lined0e421" onclick="matchLine('lined0e421');">
+                              <div class="linenumber">26</div>   <span class="apparatus"><span class="reading early">The scorch'd Equator, and th' Antarctic wave?</span></span> 
+                           </div> 
+                                       
+                           <div class="line lined0e428" onclick="matchLine('lined0e428');">
+                              <div class="linenumber">27</div>  <span class="apparatus"><span class="reading early"> Climes, where fierce Suns in cloudless ardors shine,</span></span></div>  
+                                       
+                           <div class="line lined0e434" onclick="matchLine('lined0e434');">
+                              <div class="linenumber">28</div>   <span class="apparatus"><span class="reading early">And pour the dazzling deluge round the Line;</span></span></div>  
+                                       
+                           <div class="line lined0e440" onclick="matchLine('lined0e440');">
+                              <div class="linenumber">29</div>  <span class="apparatus"><span class="reading early"> The realms of frost, where icy mountains rise,</span></span></div>  
+                                       
+                           <div class="line lined0e446" onclick="matchLine('lined0e446');">
+                              <div class="linenumber">30</div>   <span class="apparatus"><span class="reading early">'Mid the pale summer of the polar skies?---</span></span></div>  
+                                       
+                           <div class="line lined0e452" onclick="matchLine('lined0e452');">
+                              <div class="linenumber">31</div>   <span class="apparatus"><span class="reading early">It was Benevolence! ---on coasts unknown,</span></span></div>  
+                                       
+                           <div class="line lined0e458" onclick="matchLine('lined0e458');">
+                              <div class="linenumber">32</div>   <span class="apparatus"><span class="reading early">The shiv'ring natives of the frozen zone, </span></span></div> 
+                                       
+                           <div class="line lined0e464" onclick="matchLine('lined0e464');">
+                              <div class="linenumber">33</div>  <span class="apparatus"><span class="reading early"> And the swart Indian, as he faintly strays</span></span></div>  
+                                       
+                           <div class="line lined0e470" onclick="matchLine('lined0e470');">
+                              <div class="linenumber">34</div>   <span class="apparatus"><span class="reading early">"Where Cancer reddens in the solar blaze,"</span></span></div>  
+                                       
+                           <div class="line lined0e476" onclick="matchLine('lined0e476');">
+                              <div class="linenumber">35</div>   <span class="apparatus"><span class="reading early">She bade him seek;---on each inclement shore </span></span></div> 
+                                       
+                           <div class="line lined0e482" onclick="matchLine('lined0e482');">
+                              <div class="linenumber">36</div>   <span class="apparatus"><span class="reading early">Plant the rich seeds of her exhaustless store;</span></span></div>   
+                                       
+                           <div class="line lined0e488" onclick="matchLine('lined0e488');">
+                              <div class="linenumber">37</div>  <span class="apparatus"><span class="reading early"> Unite the savage hearts, and hostile hands,</span></span></div>  
+                                       
+                           <div class="line lined0e494" onclick="matchLine('lined0e494');">
+                              <div class="linenumber">38</div>   <span class="apparatus"><span class="reading early">In the firm compact of her gentle bands;</span></span> 
+                           </div> 
+                                       
+                           <div class="line lined0e501" onclick="matchLine('lined0e501');">
+                              <div class="linenumber">39</div>   <span class="apparatus"><span class="reading early">Strew her soft comforts o'er the barren plain,</span></span></div>  
+                                       
+                           <div class="line lined0e507" onclick="matchLine('lined0e507');">
+                              <div class="linenumber">40</div>  <span class="apparatus"><span class="reading early"> Sing her sweet lays, and consecrate her fane.</span></span></div>
+                                       
+                        </div>
+                                    
+                                   
+                        <div class="lg"> 
+                                       
+                           <div class="line lined0e516" onclick="matchLine('lined0e516');">
+                              <div class="linenumber">25</div> <span class="apparatus"><span class="reading late"> Where Beauty moves with fascinating grace,</span></span></div>
+                                       
+                           <div class="line lined0e522" onclick="matchLine('lined0e522');">
+                              <div class="linenumber">26</div><span class="apparatus"><span class="reading late">Calls the sweet blush to wanton o'er her face,</span></span></div>  
+                                       
+                           <div class="line lined0e527" onclick="matchLine('lined0e527');">
+                              <div class="linenumber">27</div><span class="apparatus"><span class="reading late">   On each fond youth her soft artillery tries,</span></span></div>  
+                                       
+                           <div class="line lined0e532" onclick="matchLine('lined0e532');">
+                              <div class="linenumber">28</div>  <span class="apparatus"><span class="reading late"> Aims the light smile, and rolls the frolic eyes:</span></span></div>  
+                                       
+                           <div class="line lined0e538" onclick="matchLine('lined0e538');">
+                              <div class="linenumber">29</div>   <span class="apparatus"><span class="reading late">What Power inspir'd his dauntless breast to brave</span></span></div>  
+                                       
+                           <div class="line lined0e544" onclick="matchLine('lined0e544');">
+                              <div class="linenumber">30</div>   <span class="apparatus"><span class="reading late">The scorch'd Equator, and th' Antarctic wave?</span></span> 
+                           </div> 
+                                       
+                           <div class="line lined0e551" onclick="matchLine('lined0e551');">
+                              <div class="linenumber">31</div>  <span class="apparatus"><span class="reading late"> Climes, where fierce Suns in cloudless ardors shine,</span></span></div>  
+                                       
+                           <div class="line lined0e557" onclick="matchLine('lined0e557');">
+                              <div class="linenumber">32</div>   <span class="apparatus"><span class="reading late">And pour the dazzling deluge round the Line;</span></span></div>  
+                                       
+                           <div class="line lined0e563" onclick="matchLine('lined0e563');">
+                              <div class="linenumber">33</div>  <span class="apparatus"><span class="reading late"> The realms of frost, where icy mountains rise,</span></span></div>  
+                                       
+                           <div class="line lined0e569" onclick="matchLine('lined0e569');">
+                              <div class="linenumber">34</div>   <span class="apparatus"><span class="reading late">'Mid the pale summer of the polar skies?---</span></span></div>  
+                                       
+                           <div class="line lined0e575" onclick="matchLine('lined0e575');">
+                              <div class="linenumber">35</div>   <span class="apparatus"><span class="reading late">It was Benevolence! ---on coasts unknown,</span></span></div>  
+                                       
+                           <div class="line lined0e581" onclick="matchLine('lined0e581');">
+                              <div class="linenumber">36</div>   <span class="apparatus"><span class="reading late">The shiv'ring natives of the frozen zone, </span></span></div> 
+                                       
+                           <div class="line lined0e587" onclick="matchLine('lined0e587');">
+                              <div class="linenumber">37</div>  <span class="apparatus"><span class="reading late"> And the swart Indian, as he faintly strays</span></span></div>  
+                                       
+                           <div class="line lined0e593" onclick="matchLine('lined0e593');">
+                              <div class="linenumber">38</div>   <span class="apparatus"><span class="reading late">"Where Cancer reddens in the solar blaze,"</span></span></div>  
+                                       
+                           <div class="line lined0e599" onclick="matchLine('lined0e599');">
+                              <div class="linenumber">39</div>   <span class="apparatus"><span class="reading late">She bade him seek;---on each inclement shore </span></span></div> 
+                                       
+                           <div class="line lined0e605" onclick="matchLine('lined0e605');">
+                              <div class="linenumber">40</div>   <span class="apparatus"><span class="reading late">Plant the rich seeds of her exhaustless store;</span></span></div>   
+                                       
+                           <div class="line lined0e611" onclick="matchLine('lined0e611');">
+                              <div class="linenumber">41</div>  <span class="apparatus"><span class="reading late"> Unite the savage hearts, and hostile hands,</span></span></div>  
+                                       
+                           <div class="line lined0e617" onclick="matchLine('lined0e617');">
+                              <div class="linenumber">42</div>   <span class="apparatus"><span class="reading late">In the firm compact of her gentle bands;</span></span> 
+                           </div> 
+                                       
+                           <div class="line lined0e624" onclick="matchLine('lined0e624');">
+                              <div class="linenumber">43</div>   <span class="apparatus"><span class="reading late">Strew her soft comforts o'er the barren plain,</span></span></div>  
+                                       
+                           <div class="line lined0e630" onclick="matchLine('lined0e630');">
+                              <div class="linenumber">44</div>  <span class="apparatus"><span class="reading late"> Sing her sweet lays, and consecrate her fane.</span></span></div> 
+                                    
+                        </div>   
+                                       
+                                    
+                                 
+                     </div>    
+                                 
+                     
+                                    
+                                   
+                             
+                              
+                  </div>
+                        
+               </div>
+            </div>
+         </div>
+         <div class="panel" id="notesPanel" style="display: none;">
+            <div class="panelBanner"><img class="closePanel" onclick="hideNotesPanel();" alt="X" src="../vm-images/closePanel.gif">
+               Textual Notes
+               
+            </div>
+            <div id="noNotesFound" class="noteContent">
+               Sorry, but there are no notes associated with
+               any currently displayed witness.
+               
+            </div>
+         </div><br class="clear"></div>
+      <div class="viewerRoot" id="panel_imageViewer">
+         <div title="Click to drag panel." class="viewerHandle" id="handle_imageViewer"><span class="viewerHandleLt" id="title_imageViewer">Image Viewer</span><img class="viewerHandleRt" onclick="return hidePanel('imageViewer');" alt="X" src="../vm-images/closePanel.gif"></div>
+         <div class="viewerContent" id="content_imageViewer"></div>
+      </div>
+   </body>
+</html>

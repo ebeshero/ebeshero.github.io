@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="Schematron/Schematron2Dickinson.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Poem 5 (J 280: 1861/1896)</title>
+                <author>Emily Dickinson</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Fascicle 16: Dickinson's variants and published versions</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository/>
+                        <idno>1605</idno></msIdentifier>
+                </msDesc>
+                <bibl><ref target="http://www.cs.virginia.edu/~ajf2j/emily/"/>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="references">
+                <listRef>
+                    <ptr target="xml/1605variant.xml"/>
+                    <ptr target="img/1605/fs1605a.jpg"/>
+                    <ptr target="img/1605/fs1605b.jpg"/>
+                    <ptr target="img/1605/1605cea.jpg"/>
+                    <ptr target="img/1605/1605ceb.jpg"/>
+                    <ptr target="img/1605/1605fh.jpg"/>
+                    <ptr target="img/1605/1605poems3.jpg"/>
+                    <ptr target="img/1605/1605ceMap.jpg"/>
+                    <ptr target="img/1605/1605fhMap.jpg"/>
+                    <ptr target="img/1605/1605poems3Map.jpg"/>
+                    <ptr target="img/1605/fs1605Map.jpg"/>
+                </listRef>
+            </div>
+            <div type="witness">
+                <listWit>
+                    <witness xml:id="df16">
+                        <bibl>
+                            <title>ORIGINAL POEMS</title>
+                            <author>Emily Dickinson</author>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="poems3">
+                        <bibl>
+                            <title>Poems, Third Series</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Mabel Loomis Todd</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1896</date>
+                            <ref target="http://catalog.hathitrust.org/Record/100654113">Hathi Trust Digital Library</ref>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="ce">
+                        <bibl>
+                            <title>The Poems of Emily Dickinson: Centenary Edition</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Martha Dickinson Bianchi and Alfred Leete Hampson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1930</date>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="fh">
+                        <bibl>
+                            <title>Final Harvest: Emily Dickinson's Poems</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Thomas H. Johnson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1961</date>
+                        </bibl>
+                    </witness>
+                </listWit>
+            </div>
+        </front>
+        <body>
+            <head><title>Poem 5 (J 280: 1861/1896)</title></head>
+            <lg>
+                <l n="1">I felt a <app>
+                    <rdg wit="#df16 #fh">Funeral</rdg>
+                    <rdg wit="#ce #poems3">funeral</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> in my <app>
+                    <rdg wit="#df16 #fh">Brain</rdg>
+                    <rdg wit="#ce #poems3">brain</rdg>
+                </app>,</l>
+                <l n="2">And <app>
+                    <rdg wit="#df16 #fh">Mourners</rdg>
+                    <rdg wit="#ce #poems3">mourners</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh"></rdg>
+                    <rdg wit="#ce #poems3">,</rdg>
+                </app> to and fro<app>
+                    <rdg wit="#df16 #fh"></rdg>
+                    <rdg wit="#ce">.</rdg>
+                    <rdg wit="#poems3">,</rdg>
+                </app></l>
+                <l n="3">Kept treading<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">, </rdg>
+                </app>treading<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">, </rdg>
+                </app>till it seemed</l>
+                <l n="4">That <app>
+                    <rdg wit="#df16 #fh">Sense</rdg>
+                    <rdg wit="#ce #poems3">sense</rdg>
+                </app> was breaking through<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="5">And when they all were seated,</l>
+                <l n="6">A <app>
+                    <rdg wit="#df16 #fh">Service</rdg>
+                    <rdg wit="#ce #poems3">service</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> like a <app>
+                    <rdg wit="#df16 #fh">Drum</rdg>
+                    <rdg wit="#ce #poems3">drum</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app></l>
+                <l n="7">Kept beating<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">, </rdg>
+                </app>beating<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">, </rdg>
+                </app>till I thought</l>
+                <l n="8">My <app>
+                    <rdg wit="#df16 #fh">Mind</rdg>
+                    <rdg wit="#ce #poems3">mind</rdg>
+                </app> was going numb<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="9">And then I heard them lift a <app>
+                    <rdg wit="#df16 #fh">Box</rdg>
+                    <rdg wit="#ce #poems3">box</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh"></rdg>
+                    <rdg wit="#ce #poems3">,</rdg>
+                </app></l>
+                <l n="10">And creak across my <app>
+                    <rdg wit="#df16"><del rend="strikethrough">Brain</del></rdg>
+                    <rdg wit="#ce #fh #poems3"></rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">Soul</rdg>
+                    <rdg wit="#ce #poems3">soul</rdg>
+                </app></l>
+                <l n="11">With those same <app>
+                    <rdg wit="#df16 #fh">Boots</rdg>
+                    <rdg wit="#ce #poems3">boots</rdg>
+                </app> of <app>
+                    <rdg wit="#df16 #fh">Lead</rdg>
+                    <rdg wit="#ce #poems3">lead</rdg>
+                </app>, again<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3">.</rdg>
+                </app></l>
+                <l n="12">Then <app>
+                    <rdg wit="#df16 #fh">Space</rdg>
+                    <rdg wit="#ce #poems3">space</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3"> </rdg>
+                </app>began to toll<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="13">As all the <app>
+                    <rdg wit="#df16 #fh">Heavens</rdg>
+                    <rdg wit="#ce #poems3">heavens</rdg>
+                </app> were a <app>
+                    <rdg wit="#df16 #fh">Bell</rdg>
+                    <rdg wit="#ce #poems3">bell</rdg>
+                </app>,</l>
+                <l n="14">And Being<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> but an <app>
+                    <rdg wit="#df16 #fh">Ear</rdg>
+                    <rdg wit="#ce #poems3">ear</rdg>
+                </app>,</l>
+                <l n="15">And I<app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> and <app>
+                    <rdg wit="#df16 #fh">Silence</rdg>
+                    <rdg wit="#ce #poems3">silence</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh">,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app> some strange <app>
+                    <rdg wit="#df16 #fh">Race</rdg>
+                    <rdg wit="#ce #poems3">race</rdg>
+                </app><app>
+                    <rdg wit="#df16 #fh"></rdg>
+                    <rdg wit="#ce #poems3">,</rdg>
+                </app></l>
+                <l n="16">Wrecked, solitary, here<app>
+                    <rdg wit="#df16 #fh">&#8212;</rdg>
+                    <rdg wit="#ce #poems3">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="17"><app>
+                    <rdg wit="#df16 #fh">And then a Plank in Reason, broke,</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app></l>
+                <l n="18"><app>
+                    <rdg wit="#df16 #fh">And I dropped down, and down&#8212;</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app></l>
+                <l n="19"><app>
+                    <rdg wit="#df16 #fh" type="var0">And hit a World, at every plunge,</rdg>
+                    <rdg wit="#df16" type="var1">And hit a World, at every Crash&#8212;</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app></l>
+                <l n="20"><app>
+                    <rdg wit="#df16 #fh" type="var0">And Finished knowing&#8212;then&#8212;</rdg>
+                    <rdg wit="#df16" type="var1">And Got through&#8212;knowing&#8212;then&#8212;</rdg>
+                    <rdg wit="#ce #poems3"></rdg>
+                </app></l>
+            </lg>
+        </body>
+    </text>
+</TEI>

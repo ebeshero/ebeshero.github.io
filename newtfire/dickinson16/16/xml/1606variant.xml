@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="Schematron/Schematron2Dickinson.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Poem 6 (J 281: 1861/1935)</title>
+                <author>Emily Dickinson</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Fascicle 16: Dickinson's variants and published versions</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository/>
+                        <idno>1606</idno></msIdentifier>
+                </msDesc>
+                <bibl><ref target="http://www.cs.virginia.edu/~ajf2j/emily/"/>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="references">
+                <listRef>
+                    <ptr target="xml/1606variant.xml"/>
+                    <ptr target="img/1606/fs1606a.jpg"/>
+                    <ptr target="img/1606/fs1606b.jpg"/>
+                    <ptr target="img/1606/1606fha.jpg"/>
+                    <ptr target="img/1606/1606fhb.jpg"/>
+                    <ptr target="img/1606/1606fhMap.jpg"/>
+                    <ptr target="img/1606/fs1606Map.jpg"/>
+                </listRef>
+            </div>
+            <div type="witness">
+                <listWit>
+                    <witness xml:id="df16">
+                        <bibl>
+                            <title>ORIGINAL POEMS</title>
+                            <author>Emily Dickinson</author>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="fh">
+                        <bibl>
+                            <title>Final Harvest: Emily Dickinson's Poems</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Thomas H. Johnson</editor>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Little, Brown and Company</publisher>
+                            <date>1961</date>
+                        </bibl>
+                    </witness>
+                </listWit>
+            </div>
+        </front>
+        <body>
+            <head><title>Poem 6 (J 281: 1861/1935)</title></head>
+            <lg>
+                <l n="1">'Tis so appalling&#8212;it <app>
+                    <rdg wit="#df16">Exhilarates&#8212;</rdg>
+                    <rdg wit="#fh">exhilarates&#8212;</rdg>
+                    <!-- 2016-06-23: nll: The XSLT to grab and count all of the dashes for the Dash Reduction SVG Graph (xsl:analyze-string) would not grab two dashes within the text only of the l element (not to do with anything in the rdg element), so I had to improvise and put the dashes inside the rdg elements. it ended up counting the dashes correctly. I'm hoping to fix this problem as soon as possible!! -->
+                </app></l>
+                <l n="2">So over Horror, <app>
+                    <rdg wit="#df16" type="var1">it dumb fascinates&#8212;</rdg>
+                    <rdg wit="#df16 #fh" type="var0">it half Captivates&#8212;</rdg>
+                </app></l>
+                <l n="3">The Soul stares after it, secure&#8212;</l>
+                <l n="4"><app>
+                    <rdg wit="#df16" type="var0">To know the worst, leaves no dread more&#8212;</rdg>
+                    <rdg wit="#df16 #fh" type="var1">A Sepulchre, fears frost, no more&#8212;</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="5">To scan a Ghost, is faint&#8212;</l>
+                <l n="6">But grappling, <app>
+                    <rdg wit="#df16">Conquers</rdg>
+                    <rdg wit="#fh">conquers</rdg>
+                </app> it&#8212;</l>
+                <l n="7">How easy, Torment, now&#8212;</l>
+                <l n="8">Suspense kept sawing so&#8212;</l>
+            </lg>
+            <lg>
+                <l n="9">The Truth, is Bald<app>
+                    <rdg wit="#df16">&#8212;</rdg>
+                    <rdg wit="#fh">, </rdg>
+                </app>and Cold&#8212;</l>
+                <l n="10">But that will hold&#8212;</l>
+                <l n="11">If any are not sure&#8212;</l>
+                <l n="12">We show them&#8212;prayer&#8212;</l>
+                <l n="13">But we, who know,</l>
+                <l n="14">Stop hoping, now&#8212;</l>
+            </lg>
+            <lg>
+                <l n="15">Looking at Death, is Dying&#8212;</l>
+                <l n="16">Just let go the Breath&#8212;</l>
+                <l n="17">And not the pillow at your Cheek</l>
+                <l n="18">So Slumbereth&#8212;</l>
+            </lg>
+            <lg>
+                <l n="19">Others, Can wrestle&#8212;</l>
+                <l n="20">Yours, is done&#8212;</l>
+                <l n="21">And so of <app>
+                    <rdg wit="#df16">Wo</rdg>
+                    <rdg wit="#fh">Woe</rdg>
+                </app>, bleak dreaded&#8212;<app>
+                    <rdg wit="#df16">Come</rdg>
+                    <rdg wit="#fh">come</rdg>
+                </app>,</l>
+                <l n="22">It sets the Fright at liberty&#8212;</l>
+                <l n="23">And Terror's free&#8212;</l>
+                <l n="24">Gay, Ghastly, Holiday!</l>
+            </lg>
+        </body>
+    </text>
+</TEI>

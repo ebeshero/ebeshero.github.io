@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="Schematron/Schematron2Dickinson.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Poem 8 (J 242: 1861/1945)</title>
+                <author>Emily Dickinson</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Fascicle 16: Dickinson's variants and published versions</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository/>
+                        <idno>1608</idno></msIdentifier>
+                </msDesc>
+                <bibl><ref target="http://www.cs.virginia.edu/~ajf2j/emily/"/>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="references">
+                <listRef>
+                    <ptr target="xml/1608variant.xml"/>
+                    <ptr target="img/1608/fs1608a.jpg"/>
+                    <ptr target="img/1608/fs1608b.jpg"/>
+                    <ptr target="img/1608/1608bm.jpg"/>
+                    <ptr target="img/1608/1608bmMap.jpg"/>
+                    <ptr target="img/1608/fs1608Map.jpg"/>
+                </listRef>
+            </div>
+            <div type="witness">
+                <listWit>
+                    <witness xml:id="df16">
+                        <bibl>
+                            <title>ORIGINAL POEMS</title>
+                            <author>Emily Dickinson</author>
+                        </bibl>
+                    </witness>
+                    <witness xml:id="bm">
+                        <bibl>
+                            <title>Bolts of Melody: New Poems of Emily Dickinson</title>
+                            <author>Emily Dickinson</author>
+                            <editor>Mabel Loomis Todd and Millicent Todd Bingham</editor>
+                            <pubPlace>New York</pubPlace>
+                            <publisher>Harper and Brothers</publisher>
+                            <date>1945</date>
+                        </bibl>
+                    </witness>
+                </listWit>
+            </div>
+        </front>
+        <body>
+            <head><title>Poem 8 (J 242: 1861/1945)</title></head>
+            <lg>
+                <l n="1">When we stand on tops of <app>
+                    <rdg wit="#df16">Things</rdg>
+                    <rdg wit="#bm">things</rdg>
+                </app><app>
+                    <rdg wit="#df16">&#8212;</rdg>
+                    <rdg wit="#bm"></rdg>
+                </app></l>
+                <l n="2">And like the <app>
+                    <rdg wit="#df16">Trees</rdg>
+                    <rdg wit="#bm">trees</rdg>
+                </app><app>
+                    <rdg wit="#df16">,</rdg>
+                    <rdg wit="#bm"></rdg>
+                </app> look down<app>
+                    <rdg wit="#df16">&#8212;</rdg>
+                    <rdg wit="#bm">,</rdg>
+                </app></l>
+                <l n="3">The smoke all cleared away from it<app>
+                    <rdg wit="#df16">&#8212;</rdg>
+                    <rdg wit="#bm"></rdg>
+                </app></l>
+                <l n="4">And <app>
+                    <rdg wit="#df16">Mirrors</rdg>
+                    <rdg wit="#bm">[sunset]</rdg><!-- 2016-06-10: nll: There is a not in this publication that states the following: "As no copy of this poem in Emily's handwriting is at present accessible, I have supplied the word "sunset" to fill a blank in the copy made by Mrs. Todd."-->
+                </app> on the scene<app>
+                    <rdg wit="#df16">&#8212;</rdg>
+                    <rdg wit="#bm"></rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="5">Just laying light<app>
+                    <rdg wit="#df16">&#8212;</rdg>
+                    <rdg wit="#bm">, </rdg>
+                </app>no <app>
+                    <rdg wit="#df16">Soul</rdg>
+                    <rdg wit="#bm">soul</rdg>
+                </app> will wink</l>
+                <l n="6">Except it have a flaw<app>
+                    <rdg wit="#df16">&#8212;</rdg>
+                    <rdg wit="#bm">;</rdg>
+                </app></l>
+                <l n="7">The <app>
+                    <rdg wit="#df16"><del rend="strikethrough">H</del></rdg>
+                    <rdg wit="#bm"></rdg>
+                </app> <app>
+                    <rdg wit="#df16">Sound</rdg>
+                    <rdg wit="#bm">sound</rdg>
+                </app> ones<app>
+                    <rdg wit="#df16">,</rdg>
+                    <rdg wit="#bm"></rdg>
+                </app> like the <app>
+                    <rdg wit="#df16">Hills</rdg>
+                    <rdg wit="#bm">hills</rdg>
+                </app><app>
+                    <rdg wit="#df16">&#8212;</rdg>
+                    <rdg wit="#bm"></rdg>
+                </app><app>
+                    <rdg wit="#df16" type="var1">stand up</rdg>
+                    <rdg wit="#df16 #bm" type="var0">shall stand</rdg>
+                </app><app>
+                    <rdg wit="#df16">&#8212;</rdg>
+                    <rdg wit="#bm"></rdg>
+                </app></l>
+                <l n="8">No <app>
+                    <rdg wit="#df16">Lightning</rdg>
+                    <rdg wit="#bm">lightning</rdg>
+                </app><app>
+                    <rdg wit="#df16">,</rdg>
+                    <rdg wit="#bm"></rdg>
+                </app> <app>
+                    <rdg wit="#df16" type="var0">scares away</rdg>
+                    <rdg wit="#df16" type="var1">drives</rdg><!-- 2016-06-10: nll: I believe in Dickinson's variations, 'away' is not in the second variation because of the dash after it on the image.-->
+                    <rdg wit="#bm">drives away</rdg>
+                </app><app>
+                    <rdg wit="#df16">&#8212;</rdg>
+                    <rdg wit="#bm">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="9">The <app>
+                    <rdg wit="#df16">Perfect</rdg>
+                    <rdg wit="#bm">perfect</rdg>
+                </app><app>
+                    <rdg wit="#df16">,</rdg>
+                    <rdg wit="#bm"></rdg>
+                </app> nowhere be afraid<app>
+                    <rdg wit="#df16">&#8212;</rdg>
+                    <rdg wit="#bm">,</rdg>
+                </app></l>
+                <l n="10">They bear their <app>
+                    <rdg wit="#df16" type="var0">dauntless </rdg>
+                    <rdg wit="#df16" type="var1">fearless&#8212;</rdg>
+                    <rdg wit="#df16" type="var2">tranquil&#8212;</rdg>
+                    <rdg wit="#bm">tranquil</rdg>
+                </app><app>
+                    <rdg wit="#df16">Heads</rdg>
+                    <rdg wit="#bm">heads</rdg>
+                </app><app>
+                    <rdg wit="#df16">,</rdg>
+                    <rdg wit="#bm"></rdg>
+                </app></l>
+                <l n="11">When others<app>
+                    <rdg wit="#df16">,</rdg>
+                    <rdg wit="#bm"></rdg>
+                </app> dare not <app>
+                    <rdg wit="#df16" type="var0">go at Noon,</rdg>
+                    <rdg wit="#df16" type="var1">walk at noon&#8212;</rdg>
+                    <rdg wit="#bm">go at noon,</rdg>
+                </app></l>
+                <l n="12">Protected by their deeds<app>
+                    <rdg wit="#df16">&#8212;</rdg>
+                    <rdg wit="#bm">.</rdg>
+                </app></l>
+            </lg>
+            <lg>
+                <l n="13">The <app>
+                    <rdg wit="#df16">Stars</rdg>
+                    <rdg wit="#bm">stars</rdg>
+                </app> dare shine occasionally</l>
+                <l n="14">Upon a spotted <app>
+                    <rdg wit="#df16">World</rdg>
+                    <rdg wit="#bm">world</rdg>
+                </app><app>
+                    <rdg wit="#df16">&#8212;</rdg>
+                    <rdg wit="#bm">,</rdg>
+                </app></l>
+                <l n="15">And <app>
+                    <rdg wit="#df16">Suns</rdg>
+                    <rdg wit="#bm">suns</rdg>
+                </app><app>
+                    <rdg wit="#df16">,</rdg>
+                    <rdg wit="#bm"></rdg>
+                </app> go surer<app>
+                    <rdg wit="#df16">,</rdg>
+                    <rdg wit="#bm"></rdg>
+                </app> for their <app>
+                    <rdg wit="#df16">Proof</rdg>
+                    <rdg wit="#bm">proof</rdg>
+                </app>,</l>
+                <l n="16">As if <app>
+                    <rdg wit="#df16" type="var0">An Axle, held&#8212;</rdg>
+                    <rdg wit="#df16" type="var1">A Muscle&#8212;held</rdg>
+                    <rdg wit="#bm">an axle held.</rdg>
+                </app></l>
+            </lg>
+        </body>
+    </text>
+</TEI>

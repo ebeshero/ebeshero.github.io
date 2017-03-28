@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="NellNelson_CitySlaveGirls" />
+        <meta name="author" content="RebeccaParker" />
+
+        <title>Nell Nelson: City Slave Girls</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+        <!-- Custom CSS -->
+        <link href="css/custom.css" rel="stylesheet" />
+        <link href="http://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <!--#include virtual="top.html" -->
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 key">
+                    <h3 class="keyH">Reading the Network:</h3>
+                    <p class="keyDesc">In this visualization, the size of the node is dependent on
+                        the out-degree, or the number of nouns that word possessed. The larger the
+                        node, the more nouns the word possessed. This is a directional network,
+                        meaning that certain words own others; this is represented with arrows along
+                        the lines connecting the nodes. The color of the node is dependent on the
+                        in-degree, or the number of words by which the node was possessed. The more
+                        light blue a node is, the more it is being possessed by other words. The
+                        shape of the node determines if the node ever possesses another node:
+                        diamond nodes possess other nodes, and circle nodes never possess other
+                        nodes. The color of the border is dependent on different factors:
+                        black-border nodes are never owned, red-border nodes are site-index nouns or
+                        attributes that are directly possessed, orange-border nodes are site-index
+                        nouns or archetypes that are indirectly possessed, and yellow-border nodes
+                        never possess other nodes. The edge color is dependent on the article in
+                        which a link between nodes was first made and each article has a different
+                        color associated with it <small>(Click <a
+                                href="https://github.com/RJP43/CitySlaveGirls/blob/master/webDevelopment/GrammarNetworks/edgeColors.jpg"
+                                target="_blank">here</a> for color chart)</small>. Self-loops have
+                        been eliminated, and edges have been bundled.</p>
+                </div>
+                <!-- RJP:2016-07-31: EXPLORE options to have magnify view when mouseover on svg and edit svgs -->
+                <div class="col-md-4">
+                    <div class="network">
+                        <object id="svg1" data="images/1888-08-04GrammarNetwork.svg"
+                            type="image/svg+xml">Your Browser Doesn't Support SVG</object>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <!--#include virtual="foot.html" -->
+        </div>
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/8a3ee4eb37.js"></script>
+    </body>
+
+</html>
