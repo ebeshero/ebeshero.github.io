@@ -4,7 +4,7 @@
     
     <pattern>
        
-        <rule context="//@ref | //@corresp | //@resp">
+        <rule context="@ref | @corresp | @resp">
             
             <let name="tokens" value="for $w in tokenize(., '\s+') return substring-after($w, '#')"/>
             <assert test="every $token in $tokens satisfies $token = //tei:text//@xml:id">
@@ -18,7 +18,7 @@
     </pattern>
     
     <pattern>
-        <rule context="//@xml:id">     
+        <rule context="@xml:id">     
                 <report test="matches(., '\s+')">
                 @xml:id values may NOT contain white spaces!
             </report>
