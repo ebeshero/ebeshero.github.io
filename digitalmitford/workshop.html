@@ -1,8 +1,9 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <title>Digital Mitford: Workshop Materials</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="Description"
             content="Supported by the University of Pittsburgh at Greensburg and the Mary Russell Mitford Society." />
         <meta name="keywords"
@@ -14,18 +15,9 @@
     </head>
     <body>
 
-        <div id="title"><h1>Digital Mitford: Workshop Materials</h1>
-            <hr/></div> 
-        <div id="menubar">
-            <h3>Digital Mitford: The Mary Russell Mitford Archive</h3>
-            <ul> <li><a href="index.html">Welcome</a></li> 
-                <li><a href="about.html">About</a></li> 
-                <li><a href="bibliogType.html">Published Works</a></li>  <li><a href="lettersData.html">Manuscript Locations</a></li> 
-                <li> <a href="letters.html">Letters</a></li> 
-                <li><a href="visual.html">People, Places, and Networks</a></li> 
-                <li><a href="staff.html">Staff</a></li>  
-                <li><a href="workshop.html">Workshop Materials</a></li></ul>
-        </div>
+
+        <!--#include virtual="mitfordMainMenu.html" --> 
+
    
         <div id="container">
             <div id="images">
@@ -33,7 +25,7 @@
             </div>
             <div id="floatright">
                 <div class="content">
-                  
+                  <h2>Digital Mitford Coding School Materials</h2>
                     
                     <p class="boilerplate"><span><strong>Maintained by: </strong> Elisa E. Beshero-Bondar (ebb8 at
                         pitt.edu) <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a></span><span><strong>Last modified:
@@ -68,11 +60,16 @@ document.write(document.lastModified);
                         
                         <li><a href="LetterCoding_PrtGuideCol_2015.pdf">Coding and Proofreading Mitford Letters in TEI: Detailed Tips, Examples, and Workflow</a>, by Lisa Wilson, Elisa Beshero-Bondar, and Elizabeth Raisanen</li>
                         <li><a href="MRM_TipsOnTranscribing_2016_03.pdf">Digital Mitford Paleography: Tips for Transcribing Mitford Letters</a>, by Lisa Wilson</li>
-                        <li><a href="http://www.slideshare.net/fullscreen/ebbondar/how-to-read-and-code-19thcentury-british-postmarks-in-tei/">The Digital Mitford&#8217;s Guide to 19th-Century British Postmarks (1800s to 1840s), and How to Code Them in TEI</a>, by Greg Bondar</li>
-                        <li><a href="MRMAlphabet_err.pdf">The alphabet in Mitford's handwriting</a>, by Elizabeth Raisanen </li>
-                        <li><a href="MitfordSymbols_lmw.pdf">Symbols in Mitford's handwriting</a> (carets, ampersands, punctuation, etc), by Lisa Wilson</li>
-                        <li><a href="MRMLetterTranscriptEx.pdf">Transcription Guidance with a Sample PDF Photo-Facsimile of a Mitford letter</a>, by Lisa
-                            Wilson</li>
+                        <li><a href="https://www.slideshare.net/ebbondar/how-to-read-and-code-19thcentury-british-postmarks-in-tei">The Digital Mitford&#8217;s Guide to 19th-Century British Postmarks (1800s to 1840s), and How to Code Them in TEI</a>, by Greg Bondar</li>
+                        <li>Alphabets and Symbols in Mitford’s handwriting: 
+                            <ul>
+                            <li><a href="alphabet1.pdf">Alphabet (letters)</a>, by Elizabeth Raisanen </li>
+                             <li><a href="alphabet2.pdf">Alphabet (letters)</a>, by Lisa M. Wilson</li>  
+                                <li><a href="alphabet_words.pdf">Alphabet (words)</a>, by Rebecca Nesvet</li>
+                                <li><a href="symbols.pdf">Symbols (carets, ampersands, punctuation, etc)</a>, by Lisa M. Wilson</li>
+                    </ul>
+                    </li>
+                        <li><a href="MRMLetterTranscriptEx.pdf">Transcription Guidance with a Sample PDF Photo-Facsimile of a Mitford letter</a>, by Lisa M. Wilson</li>
                         <li><a href="XMLtoHTML_Proofing_err.pdf">How to transform your document from XML to HTML for proofreading</a>, by Elizabeth Raisanen</li>
                        
                        
@@ -83,30 +80,47 @@ document.write(document.lastModified);
                     <h4>Examples of Coded Mitford Letters</h4>
                     <ol>
 
-                        <li><ul>
-                            <li><a href="1821-10-31-BRHaydon.pdf">Mitford&#8217;s Letter to Benjamin Robert Haydon of Oct. 31, 1821: PDF Photo-Facsimile</a></li>
-                                <li><a href="DigitalMitfordTEILetterTemplate.xml">Mitford&#8217;s Letter to Benjamin Robert Haydon of Oct. 31, 1821: Coded in TEI</a></li>
+                        <li>One Mitford Letter in Multiple Forms:<ul>
+                            <li><a href="1821-10-31-BRHaydon.pdf">Mitford’s Letter to Benjamin Robert Haydon of Oct. 31, 1821: PDF Photo-Facsimile</a></li>
+                            <li><a href="DigitalMitfordTEILetterTemplate.xml">Mitford’s Letter to Benjamin Robert Haydon of Oct. 31, 1821: Coded in TEI</a></li>
 
-                            <li><a href="http://juxtacommons.org/shares/nDPeai">A Side-by-Side View (generated by Juxta Commons)</a>: showing L&#8217;Estrange&#8217;s 1870 edition of this letter vs. Our Transcription from Manuscript</li>
+                            <li><a href="http://juxtacommons.org/shares/nDPeai">A Side-by-Side View (generated by Juxta Commons)</a>: showing L’Estrange’s 1870 edition of this letter vs. Our Transcription from Manuscript</li>
                             <li><a href="1821-10-31-BRHaydon.xml">Same Mitford Letter Coded with Versioning Markup (or Parallel Segmentation) in TEI</a>. (Makes side-by-side visualization, like the JuxtaCommons view, possible) </li>
                             </ul></li>
-                        <li><a href="1825-06-29-Talfourd.html"> Our Very First Transformed Letter, from coded TEI to HTML: Mitford to Talfourd, June 29, 1825</a></li>
+                        <li><a href="1825-06-29-Talfourd.html">Our Very First Transformed Letter, from coded TEI to HTML: Mitford to Talfourd, June 29, 1825</a></li>
                     </ol>   
                
     
                     
                     
-                    <h4>Helpful Backup: Slides from the Women Writers&#8217; Project</h4>
-                    <ol>
-                        <li><a
+                    <h4>Tutorials and Background:</h4>
+                    <ul>
+                        <li>Coding Tutorials:
+                        <ol>
+                            <li>Introductions to XML
+                            <ul>
+                                <li><a href="http://newtfire.org/dh/explainXML.html">So...what exactly is ‘XML’ anyway?</a></li>
+                                <li><a href="http://dh.obdurodon.org/what-is-xml.xhtml">What is XML and why should humanists care?</a> (longer intro on Obdurodon)</li>
+                            </ul>
+                            </li>
+                            <li><a href="http://newtfire.org/dh/explainRegex.html">Autotagging with Regular Expressions</a> (up-conversion from “plain” text to XML) </li>
+                            <li><a href="http://newtfire.org/dh/explainXPath.html">Follow the XPath! What is XPath and how does it work?</a></li>
+                            <li>XSLT: <ul><li><a href="http://newtfire.org/dh/explainXSLT.html">Introduction to XSLT</a></li>
+                                <li><a href="http://newtfire.org/dh/XSLTExercise1.html">Identity Transformation</a> (automated numbering of lines, paragraphs, etc)</li></ul></li>
+                            <li><a href="http://newtfire.org/dh/">All newtFire tutorials and exercises</a> (including XPath exercises, advanced XSLT and XQuery)</li>
+                        </ol>
+                            </li>
+                            
+                            
+   
+                        <li>Slides from the Women Writers’ Project <ol><li><a
                             href="http://www.wwp.northeastern.edu/outreach/seminars/mss_2012-05/presentations/overview/overview_newer_00.xhtml"
                             >Overview of Text Encoding and the TEI</a></li>
                         <li><a
                             href="http://www.wwp.northeastern.edu/outreach/seminars/mss_2012-05/presentations/xml_intro/xml_brief_00.xhtml"
                             >A Hurried Introduction to XML</a></li>
                         <li><a
-                            href="http://www.wwp.northeastern.edu/outreach/seminars/mss_2012-05/presentations/manuscript_encoding/basic_manuscript_encoding_00.xhtml"
-                            >Basic Manuscript and Physical Document Encoding</a></li>
+                            href="http://www.wwp.northeastern.edu/outreach/seminars/mss_2012-05/presentations/manuscript_encoding/basic_manuscript_encoding_00.xhtml">Basic Manuscript and Physical Document Encoding</a></li>
                         <li><a
                             href="http://www.wwp.northeastern.edu/outreach/seminars/mss_2012-05/presentations/manuscript_encoding/advanced_manuscript_encoding_00.xhtml"
                             >Advanced Manuscript Encoding</a></li>
@@ -115,8 +129,8 @@ document.write(document.lastModified);
                             >The TEI Header: Metadata for Manuscripts</a></li>
                         <li><a
                             href="http://www.wwp.northeastern.edu/outreach/seminars/mss_2012-05/presentations/contextual_encoding/contextual_encoding_00.xhtml"
-                            >Coding Contextual Information</a></li>
-                    </ol>
+                            >Coding Contextual Information</a></li></ol></li>
+                    </ul>
                     <h4>Broader Context and Examples</h4>
                     <ol>
                         <li><a href="http://teibyexample.org/modules/TBED00v00.htm">Historical
