@@ -1,0 +1,239 @@
+@media screen{
+
+head {
+}
+
+div#top {width:100%; background-color: #C5D3D3; padding:5px; border-top-left-radius: 45px; 
+border-bottom-right-radius: 45px; font-family: arial, helvetica, sans-serif;}
+div#bannerImage {float:left}
+div#bannerImage img {width:150px}
+div#title{font-size:30px; font-weight:bold; color:#003300;  line-height:1.3em}
+/*div#title h2 {text-align:center;}*/
+div#title a { text-decoration:none;}
+
+div.boilerplate span {text-indent:5px;
+    color:#63604F;
+    margin-left:1em;
+    display:block;
+    font-size:smaller;
+    line-height:1.4em;}
+    
+div.boilerplate img {position: relative; top:7px; right: -2px }
+
+
+
+
+body {background-color:	#F8F8FF; color: black; 
+                        font-family: Georgia, Times, "Times New Roman", serif; padding:15px; line-height:1.2em;}
+
+div#headIcon {float:right; margin-left:auto; margin-right:35%; padding:3px}
+div#headIcon img {max-width:300px; width:70%; padding:1px;}
+div#footIcon {float:left; margin-left:auto; margin-right:auto; padding:3px}
+div#footIcon img {max-width:175px; width:30%; padding:1px;}
+div#imageHead {float:left; margin-left: auto;
+    margin-right: auto; padding:15px;}
+
+div#imageHead img {max-width:5000px; width:100%; padding: 2px;}
+
+h1 {color:#556B2F; display:block; letter-spacing:1.5px; font-size: 2.5em; margin-left:10%; line-height:50px; padding: 5px; }
+
+div.title h2 {color:#006400; display:inline; font-size: 1.3em; margin-left:10%; padding: 2px;
+}
+div.title h3 {color:#006400; display:inline;
+ font-size: 1.1em; margin-left:15%; padding:3px
+}
+p#byline {color:#006400;
+ font-size: 1.1em; margin-left:15%; padding:3px}
+span.note {display:inline; font-size:0.8em; line-height:1.2em; padding:2px; }
+span.anchor span.note {position:absolute;
+    color:#00056B;
+    background:#e6e6ff;
+    font-size:.8em;
+    line-height:1.2em;
+    border:solid blue 1px;
+    width:350px;
+   display:none;}
+h2 {color:#006400; display:block; font-size: 1.3em; margin-left:10%; padding: 2px;
+}
+h3 {color:#006400; display:block;
+ font-size: 1.1em; margin-left:10%; padding:3px;}
+h4{color:#990033; display:block; margin-left:10%; font-size: 1em; text-align:left;    
+}
+
+
+hr.article {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.article::after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    /*background: white;*/
+}
+
+
+div[class="lg"]{padding-top:7px; padding-bottom:7px;}
+span[class="line"]{margin-left:10%; color:black; display:block;}
+
+span.publine {display:inline; font-size:0.8em; line-height:1.2em; padding:2px; margin-left:5%}
+span[class="indent"]{padding-left:1em;}
+span.indent_15 {padding-left:10em;}
+span.indent_5{padding-left:3em;}
+span[class="num"]{color:#70003D; padding-left:2em; padding-right:1em; font-size:.75em;}
+q {quotes:'“' '”' '‘' '’'; 
+}
+
+cite.sub {font-style:normal;}
+cite.sub::before {content:'“'; 
+}
+cite.sub::after {content:'”';
+}
+
+q cite.sub::before {content: '‘'}
+q cite.sub::after {content: '’'}
+cite.sub cite.sub::before {content: '‘'}
+cite.sub cite.sub::after {content: '’'}
+
+/*title {color:#FEE0D2}*/
+/*
+img[style] {position: relative; top: 20px;}*/
+
+
+p {display:block; margin-left:5%;}
+
+
+/*hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #AA0000;
+    margin: 1em 0; padding: 0; }*/
+    
+    
+
+    
+span.italic {font-style: italic;}
+
+span.strong {font-weight:bold;}
+
+span.smaller {display:inline; font-size:0.8em; line-height:1.2em; padding:2px}
+
+span.code {color:#B20000
+}
+
+ul.circle
+
+li {display: block; padding: 5px 5px 5px 5px; line-height:1.2em}
+
+ul li ul.square
+
+ul li ul li {display:block; font-size:smaller; line-height:1.2em}
+
+a:link {color:#00056B;}      /* unvisited link */
+a:visited {color:#333399
+;}  /* visited link */
+a:hover {color:#003197;}  /* mouse over link */
+a:active {color:#003197;}  /* selected link */
+
+table { border-collapse: collapse; width: 100%;
+border: 2px solid #BF9E7D;
+/*border: 0*/
+}
+
+tr {border-collapse: collapse; border: 0}
+
+th
+{ border-collapse: collapse;
+border: 1px solid  #BF9E7D;
+background-color: #E1C99B;
+padding: 1px;
+vertical-align:top;
+}
+
+td 
+{ border-collapse: collapse;
+border: 1px solid  #BF9E7D;
+padding: 7px;
+vertical-align:top;
+}
+
+
+th:nth-child(1), td:nth-child(1) {
+width:12%; text-align:center;   
+}
+
+th:nth-child(2), td:nth-child(2) {
+width:44%;  
+}
+
+th:nth-child(3), td:nth-child(3) {
+width:44%;  
+}
+
+/*table tr th, table tr td 
+{ border-collapse: collapse;
+border: 1px solid  #BF9E7D;
+padding: 15px;
+vertical-align:top;
+}*/
+
+}
+
+@page {
+size: 8.5in 11in;/* width height */ padding:10em;
+}
+
+@media print{
+
+ 
+ body {background-color: white; color: black; font-family: arial, helvetica, sans-serif; font-size:10pt;  }
+div.container {background-color:white; width:90%;   }  
+div[class="lg"]{padding-top:10px; padding-bottom:10px;}
+div[class="line"]{margin-left:5em; color:black;}
+span[class="indent"]{padding-left:1em;}
+span.indent_15 {padding-left:10em;}
+span.indent_5{padding-left:3em;}
+span[class="num"]{color:#70003D; padding-left:2em; padding-right:1em; font-size:.75em;}
+span.note {color:#00056B;font-size:.9em;}
+div.footNote {color:#00056B;font-size:.93em;}
+ table {width:100%;border-collapse: collapse; 
+border: 1px solid black }   
+th, td
+{
+border: 1px solid  black;
+vertical-align:middle;
+}
+  tr, th, td {page-break-inside: avoid;} 
+  th:nth-child(1), td:nth-child(1) {
+width:12%; text-align:center;   
+}
+
+th:nth-child(2), td:nth-child(2) {
+width:44%;  
+}
+
+th:nth-child(3), td:nth-child(3) {
+width:44%;  
+}
+   p {page-break-inside:avoid;}
+   li {page-break-inside: avoid; }
+   h1, h2, h3, h4 {page-break-inside: avoid; page-break-after: avoid; line-height:1.15em;}
+   
+h1 {display:block; letter-spacing:1.5px; font-size: 2.5em; text-align:center; padding: 2px;}
+
+h2 {font-size: 1.3em; text-align:center; padding: 2px;
+}
+   div#bannerImage {float:left}
+div#bannerImage img {width:150px}
+div#main {line-height:1.1em;}
+div#heading {width:100%}
+div#courseInfo {width:40%; float:left;}
+div#picture {width:60%; float:right;}
+img#goblinMarket {max-width:300px; width:100%; margin-left:2em; margin-bottom: 2em;}
+img#frontis {max-width:200px; width:100%; margin-left:2em; margin-bottom: 2em;}
+}
+

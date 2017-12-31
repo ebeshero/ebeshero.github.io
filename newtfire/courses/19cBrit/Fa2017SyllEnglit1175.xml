@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <!--ebb: Need to rewrite XSLT to calculate dates from start to end of term. Non XSLT solution: To begin for a new year, autogenerate a list of dates and days of week in Excel (start with manually entering the first week’s dates, and add +7 to each; format as ISO dates. 
+            Paste in template xml file and autotag day and week divs. 
+            Then manually correct with holidays and Fall Break, etc.-->
+         <titleStmt>
+            <title>Autumn 2017 Syllabus: Nineteenth-Century British Literature</title>
+            <author>Elisa E. Beshero-Bondar</author>
+
+            <sponsor>The University of Pittsburgh at Greensburg</sponsor>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: <date from="2014-08" to="2014-12">Fall
+                  2014</date>. P5.</edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>University of Pittsburgh at Greensburg</authority>
+            <pubPlace>Greensburg, PA, USA</pubPlace>
+            <date>2014</date>
+            <availability>
+               <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                  License</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <p/>
+         </seriesStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <div type="courseID" style="outer">
+            <head>Nineteenth-Century British Literature</head>
+            <p>Englit 1175</p>
+            <div type="meetTimes">
+               <p><hi rend="em">Autumn 2017:</hi> Classes meet M W F 2:00 - 2:50 PM, 119 Powers
+                  Hall</p>
+              <!-- <p><hi rend="em">Course Website: <ref target="http://newtfire.org/19cBrit/">http://newtfire.org/19cBrit/</ref></hi></p>-->
+            </div>
+            <div type="CRN">
+               <p>Course Enrollment and Electives Info: </p>
+               <list>
+                  <item>Englit 1175: course registration number: <idno>15460</idno></item>
+                  <item>Satisfies the LT General Elective Requirement at Pitt-Greensburg, a core course requirement for the English Literature Major, and an R (Research) requirement for the Digital Studies Certificate.</item>
+               </list>
+            </div>
+            <div type="faculty">
+               <head>Instructor:</head>
+               <p>
+                  <ref target="http://www.pitt.edu/~ebb8/">Elisa Beshero-Bondar</ref></p>
+               <p>Office Hours, in FOB 204</p>
+               <list>
+                  <item>Wed. 3 - 4:30 PM</item>
+                  <item>Thurs. 2:30 - 4:30 PM</item>
+                  <item>and by appointment.</item>
+               </list>
+            </div>
+         </div>
+      </front>
+      <body>
+         <div type="description" style="main">
+            <head>Course Description</head>
+            <!--  <graphic url=""/>-->
+            <p>This course in literary history spans a busy century in Britain from the 1790s to
+               about 1900, a time of revolutionary transformation and rapid technological
+               development. We’ll learn about the emergence of Britain’s Romantic Movement in its
+               revolutionary context, and observe Romanticism’s lasting influence on the
+               writers of the Victorian era, named for the long reign of Britain’s Queen Victoria.
+               Writers of this time witnessed the development of public education systems and the
+               transformation of publishing technology to accommodate increasing numbers of literate
+               readers in England and across the expanding British empire. Aspiring poets and
+               novelists vied with each other to reach larger and larger markets and reflected on the power of literary language to govern and excite a public of readers. Many British
+               writers took seriously the idea that literature could help connect the rich and the
+               poor, and their writings address very serious social issues of the rapidly
+               modernizing nineteenth century. </p>
+            <p>These writers still speak to issues of our times. They addressed controversies
+               surrounding poverty, race relations, and women’s rights. They responded to scientific
+               debates over geological discoveries, as well as new theories of sexual selection and
+               survival of the fittest. They questioned humanity’s relation to nature, the way
+               emotions influence thinking, and what might happen to Britons living among people of
+               other cultures around the world. Over the next fifteen weeks, we will be discussing
+               how nineteenth-century British writers challenged the social conventions of their
+               times, including the barriers between wealth and
+               poverty, men and women, Britons and foreigners, nation and empire—when
+               that empire stretched itself thin to span the world. Along the way we’ll consider why
+               the <q>antique</q> ideas, images, structures, and stories of nineteenth-century Britain
+               are still so appealing to many of us in the twenty-first century.</p>
+         </div>
+         <div type="objectives" style="main">
+            <head>Objectives:</head>
+            <list>
+               <item>Learn the contexts of nineteenth-century British literary history, its writers,
+                  genres, and movements </item>
+               <item>Learn to read poetry and prose as a dialogue with past contexts and current
+                  issues</item>
+               <item>Enhance your comprehension of the course material by engaging in class
+                  discussions, and by conducting your own conversation with the texts as you
+                  read</item>
+               <item>Research and write about literature in historical and cultural contexts</item>
+               <item>Gain experience in preparing informational resources about literature on the public web</item>
+            </list>
+         </div>
+         <div type="courseMtls" style="main">
+            <head>Texts to Purchase:</head>
+            <p>Find the following texts at the campus bookstore or on your own. They are listed in the order in which we are working with them:</p>
+            <list type="numbered">
+               <item><bibl><author>William Blake</author>, <title level="m">Songs of Innocence and Experience</title> (<publisher>Oxford Paperbacks</publisher>, <date>1977</date>) ISBN: <idno type="ISBN">9780192810892</idno></bibl></item>
+               <item><bibl><author>Samuel Taylor Coleridge</author>, <title level="m">The Rime of the Ancient Mariner and Other Poems</title> (<publisher>Dover Publications</publisher>, <date>1992</date>) ISBN: <idno type="ISBN">9780486272665</idno></bibl></item>
+               <item><bibl><author>Samuel Taylor Coleridge and William Wordsworth</author>, <title level="m">Lyrical Ballads: 1798 and 1800</title>, ed. <editor>Michael Gamer and Dahlia Porter</editor> (<publisher>Broadview Editions</publisher>, <date>2008</date>) ISBN: <idno type="ISBN">9781551116006</idno></bibl></item>
+               <item><bibl><author>Mary Shelley</author>, <title level="m">Frankenstein</title>, ed. <editor>J. Paul Hunter</editor>, <edition>2nd edition</edition> (<publisher>Norton Critical Edition</publisher>, <date>2012</date>) ISBN: <idno type="ISBN">9780393927931</idno></bibl></item>
+               <item><bibl><author>Emily Brontë</author>, <title level="m">Wuthering Heights</title>, ed. <editor>Beth Newman</editor> (<publisher>Broadview Editions</publisher>, <date>2007</date>) ISBN: <idno type="ISBN">9781551115320</idno></bibl></item>
+               <item><bibl><author>Christina Rossetti</author>, <title level="m">Goblin Market and Other Poems</title> (<publisher>Dover Thrift Editions</publisher>, <date>1994</date>) ISBN: <idno type="ISBN">9780486280554</idno></bibl></item>
+               <item><bibl><author>Arthur Conan Doyle</author>, <title level="m">The Hound of the Baskervilles</title> (<publisher>Dover Thrift Editions</publisher>, <date>1994</date>) ISBN: <idno type="ISBN">9780486282145</idno></bibl></item>
+            </list>
+         </div>
+         <div type="grading" style="main">
+            <head>Grading:</head>
+            <p> Your grade will be based on Class Participation/Quizzes (10%), Short Papers (total: 20%), Three Digital Annotation Projects (total: 35%), two Midterm Exams (worth 10% each), and
+               one Final Exam (15%). At least 90% of the work for the course must be completed in
+               order to receive a passing grade (C or above).</p>
+            <div type="participation">
+               <head>Class Participation and In-Class Exercises: (15%)</head>
+               <p>This portion of your grade reflects the extent to which you attend class regularly
+                  and take an active role in class discussion, contributing thoughtful questions and
+                  observations based on the readings, as well as responding to my questions. It will
+                  also include your performance on any announced and unannounced quizzes and group
+                  exercises I may give in class. If you keep up with the readings listed on the
+                  schedule, and come to class each day prepared to discuss them, you will certainly
+                  do well with this component.</p>
+               <p> ** Note: Your attendance is vital to this course and your achievement in it. You
+                  may miss three classes for any reason without penalty, but your participation
+                  grade will be reduced for additional unexcused absences. You’ll also be missing
+                  information and perspective on the readings that will almost certainly affect your
+                  performance on assignments and exams. If you miss class, try to keep in touch with
+                  other members of the class to find out what you’ve missed and consult with me to
+                  help you catch up and to be sure you understand the material. Please note that
+                  quizzes and in-class activities cannot be made up outside of the classes you
+                  missed. </p>
+            </div>
+            <div type="weekly">
+               <head>Short Writings: (15%)</head>
+               <p>This portion of your grade is based on short
+                  (2-page) response papers, and/or discussion board posts.</p>
+             <!--  OLD Material from Fall 2014: <p><hi rend="em">Vocab/Context Logs (WLs): </hi> Submit on
+                  Courseweb a Log entry in which you compile and explain at least 3 to 5 unfamiliar
+                  words and/or contexts. Instructions:</p>
+               <list type="numbered">
+                  <item>Identify and locate the word or context using a line number in a poem, or a
+                     page, chapter, or section (for a web reading). Check the footnotes in your text
+                     or glosses along the sides of the page. If there is no gloss or footnote, or if
+                     these aren’t sufficient to understand the word or subject, record it in your
+                     log to research further:</item>
+                  <item>
+                     <list>
+                        <item>Find the most likely definition of words from the Oxford English
+                           Dictionary (Pitt Digital Library Database) that fits the passage or
+                           sentence from which you excerpted it. Provide what you think is the most
+                           likely and appropriate definition, quoting the relevant passages from the
+                           dictionary. </item>
+                        <item>For an unfamiliar phrase or context, try searching in Credo Reference
+                           (Pitt Digital Library Database) first before a Google search. Give a
+                           clear explanation in your own words.</item>
+                     </list></item>
+                  <item>Reflect and comment on how this word or topic fits within the part of the
+                     text it’s from: Consider its use in the surrounding grammatical unit
+                     (sentence), or paragraph or passage. Could there be more than one way to read
+                     this? Briefly explain. Logs must be your own individual work and must not be
+                     duplicated by others in the class. (See the section on Academic Dishonesty and
+                     Plagiarism below.) </item>
+               </list>-->
+               <p><hi rend="em">Response Papers (RPs): </hi> (typically 2 pages long) are designed
+                  to help you grapple with some challenging dimensions of our course readings, and
+                  should help you to strengthen your comprehension. They may also give you topic
+                  ideas for the major papers. Response Papers should follow MLA formatting and
+                  citation guidelines (as needed). Short writing assignments lose points for lateness.</p>
+            </div>
+            <div type="projects">
+               <head>Digital Annotation and Voiceover Assignments (10%, 10%, and 15%, for a total of 35%)</head>
+               <p>Over the course of the semester, you will work on three projects involving close analysis and research, applied as 
+                  annotation and voice interpretation to produce digital sound recordings and online editions of our course readings. You will work with digital tools
+                  to build web-based information resources of nineteenth-century literary texts available for public view, and produce a research paper to accompany your work as your major project for the class. 
+                  Detailed assignments for each project will be distributed in class and on Courseweb. Late project
+                  submissions will drop one grade notch (for example, from B to B-) for each day
+                  late.</p>
+            </div>
+            <div type="exams">
+               <head>Two Midterm Exams (10% each) and a Final Exam (15%):</head>
+               <p>The exams may consist of essay questions, identifications of passages, and brief
+                  responses regarding significant events and literary terms we have discussed in
+                  class. The Midterm will cover material from the first half of the course. The
+                  Final Exam, given during Finals Week, will have a comprehensive section, but will
+                  focus on material from the second half of the course. </p>
+            </div>
+            <div type="scale">
+               <head>Grading Scale:</head>
+               <p>Grades are posted on Courseweb, and follow this standard scale: A: 93-100%, A-:
+                  90-92%, B+: 87-89%, B: 83-86%, B-: 80-82%, C+: 77-79%, C: 73-76%, C-: 70-72%, D+:
+                  67-69%, D: 60-66%, F: 59% and below. In taking the course on a S / NC (pass-fail)
+                  basis, students must earn a C to receive Satisfactory credit. G grades
+                  (incomplete) may be given only in conformity with the University of Pittsburgh at
+                  Greensburg’s Bulletin: <ref target="http://www.bulletins.pitt.edu/greensburg/upg-academicpolicies.htm">http://www.bulletins.pitt.edu/greensburg/upg-academicpolicies.htm</ref>.</p>
+            </div>
+         </div>
+
+         <div type="policies" style="main">
+            <div type="daily">
+               <head>Classes and Readings:</head>
+               <p>This class is fast paced with very challenging reading. To do well in this course
+                  it is vital that you attend class regularly and keep up with the readings! <hi rend="em">Read all the material assigned before class on the day it is
+                     scheduled</hi> so that you can discuss the material in class, raise questions
+                  about it, and intelligently respond to my questions and comments. <hi rend="em">Stay alert for any changes to the class schedule</hi>, which I will announce
+                  in class and online on Courseweb and e-mail. </p>
+            </div>
+            <div type="courtesy">
+               <head>Classroom Courtesy:</head>
+               <p>Our class is fast paced, and requires that we all be making the best use we can of
+                  our in-person class sessions. Arriving late and leaving early disrupts the
+                  important collective mental activity of class. So does in-class texting and
+                  checking your cell phone. While class is in progress, talking disruptively,
+                  leaving the classroom, texting or using a cell phone or computer, reading a
+                  newspaper, or other distracting behavior will be actively discouraged, and may
+                  result in a deduction in your Participation grade. Please respect what we do in
+                  the classroom: attend class regularly, and come prepared to contribute your
+                  questions and ideas.</p>
+               <p><hi rend="em">When an assignment is due,</hi> I expect that you will carefully
+                  edit and proofread your documents, and that you will turn in your assignments on
+                  time at the beginning of class or by the posted deadline for Courseweb
+                  assignments. If you need an extension, ask me courteously at least a day ahead of
+                  time. Do not ask for an extension on or after the day the paper is due.</p>
+            </div>
+            <div type="integrity">
+               <head>Academic Dishonesty and Plagiarism:</head>
+               <p><hi rend="em">Plagiarism</hi> falsely represents another source’s words or ideas
+                  as your own, and, if you commit plagiarism in this course, you will receive a
+                  final course grade of F and be reported to the Vice President of Academic Affairs.
+                  Representing the voice of another individual as your own voice constitutes
+                  plagiarism, however generous that person may be in "helping" you with an
+                  assignment. <hi rend="em">To avoid plagiarism,</hi> cite your sources whenever you
+                  quote, paraphrase, or summarize material, or use digital images from any outside
+                  source (including websites, articles, books, course readings, Courseweb postings,
+                  or someone else’s notes). Turning in an assignment generated collectively under
+                  the name of a single individual is considered plagiarism. When instructed to
+                  collaborate on a project, project collaborators share collective authorship and
+                  should identify themselves directly as a team. When using the "copy" and "paste"
+                  features as you read and research, be sure that you are carefully marking that
+                  these passages are unprocessed from their source, so that you know to process it
+                  later. Forgetting to do so not only produces sloppy work but (whether you intended
+                  it or not) results in a false representation. As long as you make a good faith and
+                  clear effort to cite your sources, you will not be faulted for plagiarism, but
+                  your work will be penalized if citations are inaccurate, unclear, or lack
+                  important information. <hi rend="em">Cheating</hi> on exams or exercises will also
+                  receive a final course grade of F and be reported to the Vice President of
+                  Academic Affairs.</p>
+            </div>
+            <div type="online" style="main">
+               <head>Online Policies: </head>
+               <div type="courseweb">
+                  <head>Courseweb (or Blackboard): </head>
+                  <p>My announcements, changes to the course schedule, assignments + online
+                     assignment submissions, some course readings, powerpoint notes, and review
+                     guides for this class will be regularly posted to Courseweb. Login to Courseweb
+                     using your Pitt userid and password (the same one you use for your e-mail). All
+                     courses you’re enrolled in that have Courseweb materials should be listed.
+                     Courseweb link: <ref target="https://courseweb.pitt.edu">https://courseweb.pitt.edu</ref></p>
+               </div>
+
+               <div type="submissions">
+                  <head>Turning in Assignments: Courseweb Upload</head>
+                  <p> Turn in your papers <hi rend="em">by electronic upload through Courseweb</hi>.
+                     We will be using the <hi rend="em">SafeAssign</hi> feature built into Courseweb
+                     as a stable, time-stamped electronic archive for your papers. <note>Note: In a
+                        crisis situation, you may send your paper to me by e-mail as an attachment,
+                        but you must follow up with me to be sure I received it, if you have not
+                        received a response from me in 24 hours!</note>
+                  </p>
+               </div>
+
+               <div type="email">
+                  <head>E-mail Correspondence: </head>
+                  <p>Send e-mail to me when you have questions or want to meet with me, but <hi rend="em">please identify yourself by name (first and last), and provide a
+                        Subject Line</hi> when you do so. I prefer you <hi rend="em">do not submit
+                        your papers to me by e-mail</hi>; see directions above for submitting
+                     assignments in print and online. </p>
+                  <p>Each student is issued a University email address (username@pitt.edu) upon
+                     admission. This email address may be used by the University for official
+                     communication with students. Students are expected to read email sent to this
+                     account on a regular basis. Failure to read and react to University
+                     communications in a timely manner does not absolve the student from knowing and
+                     complying with the content of the communications. The University provides an
+                     email forwarding service that allows students to read their email via other
+                     service providers (e.g., Hotmail, AOL, Yahoo). Students who choose to forward
+                     their email from their pitt.edu address to another address do so at their own
+                     risk. If email is lost as a result of forwarding, it does not absolve the
+                     student from responding to official communications sent to their University
+                     email address. To forward email sent to your University account, go to
+                     http://accounts.pitt.edu, log into your account, click on Edit Forwarding
+                     Addresses, and follow the instructions on the page. Be sure to log out of your
+                     account when you have finished. (For the full Email Communication Policy, go to
+                        <ref target="http://www.bc.pitt.edu/policies/policy/09/09-10-01.html">http://www.bc.pitt.edu/policies/policy/09/09-10-01.html</ref>.)</p>
+
+               </div>
+
+            </div>
+
+
+
+            <div type="disability">
+               <head>Disability Services:</head>
+               <p>If you have a disability for which you are or may be requesting an accommodation,
+                  you are encouraged to contact both your instructor and the Director of the
+                  Learning Resources Center, Dr. Lou Ann Sears, Room 240 Millstein Library Building
+                  (724) 836-7098 (voice) or los3 at pitt.edu as early as possible in the term.
+                  Learning Resources Center will verify your disability and determine reasonable
+                  accommodations for this course.</p>
+            </div>
+         </div>
+
+         <!--  <div type="resources"><head>outside resources, fun stuff of use or interest?</head></div>-->
+
+
+
+         <div type="schedule" style="outer">
+            <head>Schedule of Readings and Assignments</head>
+
+            <div type="advice">
+               <p>Complete all assigned readings <hi rend="em">before</hi> the class period on which
+                  they are listed. </p>
+               <p><hi rend="em">Updates and revisions to this schedule will be announced in class and via Courseweb,
+                  and posted here. </hi>
+               </p>
+               <p>Courseweb address: <ref target="http://courseweb.pitt.edu">http://courseweb.pitt.edu</ref></p>
+            </div>
+
+          <div type="abbrev">
+               <head>Abbreviations:</head>
+               <list>
+                 <!-- <item><hi rend="em">book:</hi> a reading from a printed book</item>
+                  <item><hi rend="em">web:</hi> reading on the web</item>-->
+                  <item><hi rend="em">CW:</hi> assignment to be submitted on CourseWeb <ref target="https://courseweb.pitt.edu">https://courseweb.pitt.edu</ref></item>
+               </list>
+
+            </div>
+
+<div type="schedule">
+    <div type="week" n="1">
+        <div type="day">
+            <head>
+                <date when="2017-08-28">M 08-28</date>
+            </head>
+           <div type="inclass"><p>First day! <ref target="Barbauld_MouseCaterpillar.pdf"><hi rend="em">Handout:</hi> Anna Barbauld, <title level="a">The Mouse’s Petition</title>
+              and <title level="a">The Caterpillar</title></ref></p></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-08-30">W 08-30</date>
+            </head>
+           <div type="inclass"><p>Anna Barbauld, <title level="a"><ref target="http://spenserians.cath.vt.edu/TextRecord.php?textsid=39102">Washing Day</ref></title></p>
+               <list>
+                   <item><ref target="https://web.hypothes.is/start/">Create hypothes.is account</ref> for online annotations, with your pitt userid.</item>
+                   <item>Invitation to join <ref target="https://hypothes.is/groups/V5PWYY19/upg-fa2017-19cbrit">our class's hypothes.is annotation group</ref></item></list>
+           </div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-09-01">F 09-01</date>
+            </head>
+           <div type="inclass"><list><item><hi>book:</hi> William Blake, <title level="m">Songs of Innocence and Experience</title>: just <title level="m">Songs of Innocence</title> (1789) for today 
+              <list><item><hi>web:</hi> Expanded views of illuminated pages: <list><item><ref target="https://www.slideshare.net/ebbondar/songs-of-innocence">Slide view of selections from <title level="m">Songs of Innocence</title></ref></item> <item>the William Blake Archive’s full view of <ref target="http://www.blakearchive.org/work/songsie">all known illuminated printings</ref></item> </list></item></list></item>
+              <item><hi>web:</hi> Blake, <ref target="http://www.blakearchive.org/copy/nnr.c?descId=nnr.c.illbk.01"><title level="m">There is No Natural Religion</title> (1794)</ref>: Toggle on <q>Diplomatic Transcription</q> at the bottom to help read the text on Blake’s plates, and turn the pages on the right to read all twelve plates. (Page back on the left).</item>
+              <item><p><ref target="http://www.williamblakeprints.co.uk/making-the-plates/"><title level="a">William Blake Prints: Making the Plates</title></ref></p></item>
+           </list>
+            </div>
+            <div type="assign"/>
+        </div>
+    </div>
+    <div type="week" n="2">
+        <div type="day">
+            <head>
+                <date when="2017-09-04">M 09-04</date>
+            </head>
+            <div type="inclass"><p>
+                <hi>Labor Day Holiday: No classes.</hi>
+            </p></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-09-06">W 09-06</date>
+            </head>
+            <div type="inclass"><list>
+               <item><hi>book:</hi> Blake, <title level="m">Songs of Experience</title>
+                  <list><item><hi>web:</hi> Expanded views of illuminated pages: <list><item><ref target="https://www.slideshare.net/ebbondar/william-blake-songs-of-experience">Slide view of selections from <title level="m">Songs of Experience</title></ref></item> <item>the William Blake Archive’s full view of <ref target="http://www.blakearchive.org/work/songsie">all known illuminated printings</ref></item> </list></item></list>
+               </item>
+            </list></div>
+            <div type="assign"><p><hi>WikiSpaces: <ref target="http://upg-19cbritlit-fa2017.wikispaces.com/Threaded+Writing+Assignment+1+on+Blake">Threaded Writing Assignment 1 due</ref> before class. If you were not in class on Friday 9/1, set up a free account on our class WikiSpace using the link and join code posted on our Announcements page on <ref target="http://courseweb.pitt.edu">Courseweb</ref>.</hi></p></div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-09-08">F 09-08 <note>drop-add period ends</note></date>
+            </head>
+           <div type="inclass"><list><item><hi rend="em">web:</hi> <ref target="http://www.pitt.edu/~ebb8/Southey/PoemsSlaveTrade.html">Robert Southey, <title level="a">Poems on the Slave Trade</title>,</ref></item> 
+              <item><hi>web:</hi> <ref target="https://www.slideshare.net/ebbondar/blake-and-race"><title level="a">Images of Little Black Boys in William Blake’s Songs of Innocence and Experience</title></ref></item>
+           </list>
+           </div>
+            <div type="assign"/>
+        </div>
+    </div>
+    <div type="week" n="3">
+        <div type="day">
+            <head>
+                <date when="2017-09-11">M 09-11</date>
+            </head>
+           <div type="inclass"><p><ref target="http://www.wwnorton.com/college/english/nael/romantic/topic_3/welcome.htm">French Revolution—Apocalyptic Expectations: Overview, + first 6 selections in "Texts and contexts"</ref>; with <ref target="http://lit.genius.com/William-blake-auguries-of-innocence-annotated">William Blake, "Auguries of Innocence"</ref> </p></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-09-13">W 09-13</date>
+            </head>
+           <div type="inclass"><list><item><hi>web:</hi> <ref target="http://digital.library.upenn.edu/women/barbauld/1773/1773-poems.html#meditation">Anna Barbauld, <title level="a">A Summer Evening’s Meditation</title></ref></item>
+              <item><ref target="http://lit.genius.com/William-blake-the-mental-traveller-annotated">William Blake, <title level="a">The Mental Traveller</title></ref></item> <item><ref target="http://lit.genius.com/William-blake-the-crystal-cabinet-annotated">William Blake, <title level="a">The Crystal Cabinet</title></ref></item></list></div>
+            <div type="assign"><p><hi>Annotation Exercise 1</hi>: The class works together in hypothes.is with Anna Barbauld’s <ref target="http://digital.library.upenn.edu/women/barbauld/1773/1773-poems.html#meditation"><title level="a">A Summer Evening’s Meditation</title></ref>, in our UPG_Fa2017_19cBrit group so you have a <q>clean slate</q>. Look for at least three opportunities to make an interesting annotation that helps to highlight, explain, or illustrate something unfamiliar.</p> 
+                <list><item>Look up definitions of words first in the Oxford English Dictionary (via the Pitt Digital Library Database login). Choose what strikes you as the best-fitting definition for an interesting word, and then also be sure to explain how the word fits in the context of the larger phrase: Why does this word fit here, or what significance does it seem to have in context with the language in the poem at this point? </item> 
+                    <item>Try looking up unusual phrases in the Credo Reference (Pitt Digital Library database) or with a Google Search, or in <ref target="http://www.bartleby.com/81/">Brewer’s Dictionary of Phrase and Fable</ref>. As with definitions, in your annotation, describe what strikes you as the best explanation for a phrase, and explain how it fits in context with the passage in the poem of which it is part. </item>
+              <item>Look for images or multimedia that help illuminate a phenomenon being described verbally, and provide some explanation and context (link to their source on the web if you can). </item>  
+                </list>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-09-15">F 09-15</date>
+            </head>
+            <div type="inclass"><list>
+               <item><ref target="https://www.slideshare.net/ebbondar/sublime-beautiful-and-picturesque"><title level="a">Background on the Sublime, Beautiful, and Picturesque</title></ref></item>
+                <item><ref target="http://digital.lib.ucdavis.edu/projects/bwrp/Works/SmitCElegi.htm">Charlotte Turner Smith, <title level="m">Elegaic Sonnets</title></ref>: 
+                    <list>
+                        <item><ref target="http://digital.lib.ucdavis.edu/projects/bwrp/Works/SmitCElegi.htm#p1">Sonnets I to VIII</ref> </item>
+                        <item><ref target="http://digital.lib.ucdavis.edu/projects/bwrp/Works/SmitCElegi.htm#p22">Sonnets XLIII to LIX</ref></item>
+                    </list>
+              </item>
+               <item><ref target="examReviews/Fa17Midterm1-Review.pdf">Review Guide for Midterm Exam 1</ref></item>
+            </list></div>
+            <div type="assign"><p><hi>Hypothes.is Annotations on Elegaic Sonnets</hi>: Read and provide at least two annotations on the sonnets readings for today. You might note the <q>voltas</q> and how they <q>turn</q> or <q>pivot</q> the concepts in the poem, as well as imagery and language as you did with the Barbauld poem you read for Wednesday.</p></div>
+        </div>
+    </div>
+    <div type="week" n="4">
+        <div type="day">
+            <head>
+                <date when="2017-09-18">M 09-18</date>
+            </head>
+           <div type="inclass">
+              
+              <list>
+                  <item>Charlotte Smith, <ref target="Swallow_CSmith.html"><title level="a">The Swallow</title></ref></item>
+                  <item>S. T. Coleridge, <ref target="https://rpo.library.utoronto.ca/poems/eolian-harp"><title level="a">The Eolian Harp</title></ref></item>
+                 <item>William Wordsworth, <ref target="https://rpo.library.utoronto.ca/poems/ode-intimations-immortality-recollections-early-childhood"><title level="a">Ode: Intimations of Immortality</title></ref></item> 
+           </list></div>
+            <div type="assign"><p><hi>Hypothes.is Annotations</hi>: Continuing to work within our class group, add at least three annotations on this pair of poems.</p></div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-09-20">W 09-20</date>
+            </head>
+            <div type="inclass"><p>Read the poem S. T. Coleridge wrote in reply to Wm. Wordsworth’s <title level="a">Intimations of Immortality</title> ode: in <hi>book:</hi> <title level="m">The Rime of the Ancient Mariner</title> <title level="a">Dejection: An Ode</title>, with <title level="a">The Pains of Sleep</title>, pp. 63-68.</p></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-09-22">F 09-22</date>
+            </head>
+           <div type="inclass">
+              <p><hi rend="em">Midterm Exam 1</hi></p>
+           </div>
+            <div type="assign"/>
+        </div>
+    </div>
+    <div type="week" n="5">
+        <div type="day">
+            <head>
+                <date when="2017-09-25">M 09-25</date>
+            </head>
+            <div type="inclass"><p>Balladry: <ref target="https://en.wikipedia.org/wiki/Sir_Patrick_Spens"><title level="a">Sir Patrick Spens</title></ref> (annotated in a previous version of this class <ref target=" https://genius.com/4112671">here on Genius.com</ref>), <ref target="https://mainlynorfolk.info/lloyd/songs/thedemonlover.html"><title level="a">The Dæmon-lover</title></ref> (This gives a history of adaptations; scroll down to read the ballad in its variety of forms), read <ref target="http://www.harveyreid.com/lyrics/barbaraallen.html"><title level="a">Barbara Allen</title></ref> and listen to <ref target="https://www.youtube.com/watch?v=087p-Wpkyog">Altan and Dolly Parton sing it in Irish and English</ref>; <ref target="https://www.poets.org/poetsorg/poem/lord-randall"><title level="a">Lord Randall</title></ref>, with <ref target="http://digital.library.upenn.edu/women/robinson/other/rmd-beach.html">Mary Robinson, <title level="a">The Haunted Beach</title></ref></p><!--<note> recommend / assignment with movie: <title level="m">Songcatcher</title></note>--></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-09-27">W 09-27</date>
+            </head>
+           <div type="inclass"><list>
+              <item><hi>book:</hi> <title level="m">Lyrical Ballads</title>: title page of the 1798 edition, Advertisement, and 1798 version of <title level="a">The Rime of the Ancyent Marinere in Seven Parts</title>, pp. 46-72.</item>
+              <item><hi>book:</hi> <title level="m">The Rime of the Ancient Mariner</title>: <title level="a">The Rime of the Ancient Mariner</title> (as revised with margin glosses, 1815-16)</item>
+              <item>See <ref target="https://archive.org/details/sibyllineleaves00colegoog"><title level="a">Rime</title> as published in <title level="m">Sibylline Leaves</title> (1817)</ref></item>
+           </list></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-09-29">F 09-29</date>
+            </head>
+            <div type="inclass">
+                <p>Rime of the Ancient Mariner, 1818 text: continue discussion.</p>
+                <p><ref target="https://tspace.library.utoronto.ca/html/1807/4350/poem524.html"><title level="a">Kubla Khan</title></ref> (also in <hi>book:</hi> <title level="m">The Rime of the Ancient Mariner</title>:  pp. 58-59) <!--, and <title level="a">Christabel</title> pp. 24-41.--></p>
+            </div>
+            <div type="assign"/>
+        </div>
+    </div>
+    <div type="week" n="6">
+        <div type="day">
+            <head>
+                <date when="2017-10-02">M 10-02</date>
+            </head>
+            <div type="inclass"><p><hi>book:</hi> <title level="m">Lyrical Ballads</title>: William Wordsworth’s poems (1798 edition): <title level="a">Goody Blake and Harry Gill, A True Story</title> and all poems through <title level="a">Lines, Written in Early Spring</title> (pp. 89-102)
+                
+               <!--Coleridge, <title level="a">Christabel</title> (discussion continued)--></p></div>
+           <div type="assign"></div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-10-04">W 10-04</date>
+            </head>
+            <div type="inclass"><p><hi>book:</hi> <title level="m">Lyrical Ballads</title>: William Wordsworth, <title level="a">The Thorn</title> pp. 205-212, plus WW's Note to the Thorn, pp. 287-239.</p> </div>
+            <div type="assign"><p><ref target="http://upg-19cbritlit-fa2017.wikispaces.com/Threaded+Writing+Assignment+2+on+Lyrical+Ballads">WikiSpaces Threaded Writing: WW's use of repetition</ref></p></div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-10-06">F 10-06</date>
+            </head>
+            <div type="inclass"><p><hi>book:</hi> <title level="m">Lyrical Ballads</title>: <title level="a">Lines Composed a Few Miles Above Tintern Abbey</title>, pp. 142-147.</p></div>
+            <div type="assign"><p>Hypothes.is Annotations of <ref target="http://newtfire.org/courses/19cBrit/LyricalBallads_1800.html#Tintern">WW's <title level="a">Lines Composed a Few Miles Above Tintern Abbey</title></ref>: Suggestions: </p>
+                <list>
+                    <item>Identify references to natural life, geographic/topographic details, unusual uses of language.</item>
+                    <item>See if you can locate images of the area surrounding the Wye River a few miles from Tintern Abbey. (Is the Abbey ever directly mentioned here?)</item>
+                    <item>How has poet-speaker’s impression of this place and himself changed?  Concentrate on clarifying Wordsworth's language, and on Wordsworth's references to place and time: Where does the poet-speaker represent earlier versions of himself (five years ago, living in another place, etc)</item>
+                    <item>Where and how does the poet-speaker refer to the sublime?</item>
+                    <item>Where does the speaker of the poem turn to address another person, and who does this appear to be?</item>
+                </list>
+</div>
+        </div>
+    </div>
+    <div type="week" n="7">
+        <div type="day">
+            <head>
+                <date when="2017-10-09">M 10-09</date>
+            </head>
+            <div type="inclass"> <p>
+                <hi>Fall Break: Monday classes meet on Tuesday this week.</hi>
+            </p></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-10-10">T 10-10</date>
+            </head>
+            <div type="inclass"><p><ref target="http://www.bartleby.com/39/36.html">WW’s 1800 Preface to Lyrical Ballads</ref> (also in <hi>book:</hi> <title level="m">Lyrical Ballads</title>: pp. 171-187)</p></div>
+            <div type="assign"><p>Write at least two Hypothes.is annotations on <ref target="http://www.bartleby.com/39/36.html">WW’s 1800 Preface to Lyrical Ballads</ref>. Suggestions:</p>
+            <list>
+                <item>Define and explain uses of interesting / unfamiliar words and references.</item>
+                <item>Try to <q>boil down</q> complex stretches of language in this Preface in your own words more simply: or raise questions about particularly difficult passages: what questions do these passages raise for you?</item>
+                <item>What passages indicate positive and negative qualities of poetry (what makes for good vs. bad poems, according to WW)? </item>
+                <item>Note where WW uses language from the sciences to describe the ideal <q>Poet</q> or the act of writing poetry.</item>
+                <item>Note what specific capacities and experiences WW claims poets need to have. How are poets different from other people, according to WW?</item>
+                <item>Note what kinds of people poets should be connecting with, and how they make a connection.</item>
+                
+            </list>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-10-11">W 10-11</date>
+            </head>
+            <div type="inclass"><p>Percy Bysshe Shelley, <ref target="https://www.poetryfoundation.org/poems/46565/ozymandias"><title level="a">Ozymandias</title></ref> and <ref target="https://www.poetryfoundation.org/poems/45130/mont-blanc-lines-written-in-the-vale-of-chamouni"><title level="a">Mont Blanc</title></ref></p></div>
+            <div type="assign"><p>Write at least three annotations on these poems, at least two of these must be on <title level="a">Mont Blanc</title>. Identify proper names (and explain how these fit in the poem), provide images, explain context, but in particular, note how passages might respond to WW’s <title level="a">Lyrical Ballads</title> (and particularly its Preface).</p></div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-10-13">F 10-13</date>
+            </head>
+            <div type="inclass"><list><item>Begin reading <hi rend="em"><title>Frankenstein</title> volume:</hi> Mary Shelley’s <title>Frankenstein</title>, to p. 35 (through Vol. I Ch. III) (in our print Norton edition or in the special online class edition we created from our <ref target="https://ebeshero.github.io/Pittsburgh_Frankenstein/Frankenstein_1818_classEd.html">Pittsburgh Frankenstein project</ref>.)</item> <item>See also: slides  with maps and images: <ref target="http://www.slideshare.net/ebbondar/sublime-places-of-frankenstein">Sublime Places of <hi>Frankenstein</hi></ref></item>
+                <item>Our digital project: See <title level="a">Overview</title> of <ref target="https://www.balisage.net/Proceedings/vol20/html/Beshero-Bondar01/BalisageVol20-Beshero-Bondar01.html"><title level="a">Rebuilding a Digital Frankenstein by 2018</title></ref> and <ref target="https://ebeshero.github.io/Pittsburgh_Frankenstein/">Pittsburgh Bicentennial Frankenstein Project</ref></item>
+                
+            </list>
+               </div>
+            <div type="assign"><p>Regular online annotations each day of <ref target="https://ebeshero.github.io/Pittsburgh_Frankenstein/Frankenstein_1818_classEd.html"><title level="m">Frankenstein</title></ref>: three to four per day: highlight and explain proper names and strange words (and their context), raise questions, provide illustrations.</p></div>
+        </div>
+    </div>
+    <div type="week" n="8">
+        <div type="day">
+            <head>
+                <date when="2017-10-16">M 10-16</date>
+            </head>
+            <div type="inclass"><p><title>Frankenstein</title> to p. 101 (through Vol. II Ch. VIII—the end of the Creature’s narration)</p>
+               </div>
+            <div type="assign"> <p>Regular online annotations each day of <ref target="https://ebeshero.github.io/Pittsburgh_Frankenstein/Frankenstein_1818_classEd.html"><title level="m">Frankenstein</title></ref>: three to four per day: highlight and explain proper names and strange words (and their context), raise questions, provide illustrations.</p></div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-10-18">W 10-18</date>
+            </head>
+            <div type="inclass">	
+                <p>finish <title level="m">Frankenstein</title> (to p. 161)</p>
+                <p><hi>6pm @ Village Hall 118: <title level="m">Frankenstein</title> and Genetics:</hi> paired talks by me and Prof. Olivia Long (Biology/Chemistry). Here are my slides on <ref target="http://bit.ly/FrankenTextGen"><title level="a">Frankenstein and Textual Genetics</title></ref>.</p>
+           </div>
+            <div type="assign"><p>Regular online annotations each day of <ref target="https://ebeshero.github.io/Pittsburgh_Frankenstein/Frankenstein_1818_classEd.html"><title level="m">Frankenstein</title></ref>: three to four per day: highlight and explain proper names and strange words (and their context), raise questions, provide illustrations.</p>
+            </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-10-20">F 10-20</date>
+            </head>
+            <div type="inclass"><p>George Gordon, Lord Byron: <ref target="https://www.poetryfoundation.org/poems/43843/prometheus-56d222b61d799"><title level="a">Prometheus</title></ref>, <ref target="https://www.poetryfoundation.org/poems/43845/so-well-go-no-more-a-roving"><title level="a">So we’ll go no more a roving</title></ref>, <ref target="https://www.poetryfoundation.org/poems/43825/darkness-56d222aeeee1b"><title level="a">Darkness</title></ref>, <ref target="https://www.poetryfoundation.org/poems/43841/january-22nd-missolonghi"><title level="a">On this Day I Complete My Thirty-Sixth Year</title></ref>, and <ref target="https://en.wikisource.org/wiki/The_Works_of_Lord_Byron_(ed._Coleridge,_Prothero)/Poetry/Volume_4/The_Prisoner_of_Chillon"><title level="a">The Prisoner of Chillon</title></ref>: <hi>scroll down to read the poem first</hi>: you can read the introduction and advertisement later!</p>
+                <p>See also <ref target="https://www.slideshare.net/ebbondar/byron-orientalism">Byron and Orientalism image / map slides</ref></p>
+               
+              <p>Introduce <ref target="AnnotResearchAssign.html">Annotation and Research Assignment</ref></p> </div>
+            <div type="assign"><p><hi rend="em">short reflection assignment on <title level="m">Frankenstein</title></hi> (length: 2-3 pages): Options:</p>
+                <list>
+                    <item>Comment on the relationship of Walton, Victor, and the Creature by the end of Frankenstein. What does Walton's frame narrative contribute to this novel--for example to its perspective on science, justice, family, or power?</item>
+                    <item>Reflect on patterns that emerged for you in the process of annotating this novel: Choose a particular pattern that emerged in the annotations that seems of great significance as you complete reading this novel, and discuss why it is important to the way we understand the characters or key issues in the novel. Make specific reference to passages in the novel and to annotations by including direct links to them in your paper.</item>
+                </list></div>
+        </div>
+    </div>
+    
+    <div type="week" n="9">
+        <div type="day">
+            <head>
+                <date when="2017-10-23">M 10-23</date>
+            </head>
+            <div type="inclass"> <!--2017-10-17 ebb: Note: though I've alas had to cut the Corsair from this crazy semester's syllabus, there is a terrific e-book of it available here:https://ebooks.adelaide.edu.au/b/byron/george/corsair/index.html with 19c illustrations of Gulnare, the Pacha, etc. --><!--<p><ref target="ByronCorsairCochranEd.pdf">PDF edition of Byron, <title>The
+                Corsair</title></ref>, at least to the end of Canto the First (to page 18) (or
+                somewhere halfway—through middle of Canto the Second <note><hi>Note for printing:</hi> This is 51 pages long (try printing multiple pages per sheet). I would like you to read the PDF version since it contains informative notes.</note></p>-->
+                <p>PDF edition of <ref target="ByronBeppoPCochranClassEd.pdf">Byron’s <title level="m">Beppo: a Venetian Story</title>, read roughly the first half, through stanza 46 (to the point signed <q>Printer's Devil</q>.</ref>
+                    <note><hi>Note for printing:</hi> This is 44 pages long and you may want to print this with multiple pages per sheet. I would like you to read this PDF edition because it contains informative notes.</note> </p>
+               
+               <note>MITH Digital Dialogue</note></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-10-25">W 10-25</date>
+            </head>
+            <div type="inclass"><p>Finish Byron’s <ref target="ByronBeppoPCochranClassEd.pdf">“Beppo: a Venetian Story”</ref>.</p>
+               <note>MITH Digital Dialogue</note></div>
+           <div type="assign"></div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-10-27">F 10-27</date>
+            </head>
+            <div type="inclass"><p>John Keats, <ref target="http://gutenberg.readingroo.ms/2/3/6/8/23684/23684-h/23684-h.htm#Page_81"><title level="a">The Eve of St. Agnes</title></ref> with Ode to Psyche</p></div>
+           <div type="assign"><p>Hypothes.is annotations on Keats's poems</p>
+           <p><ref target="Fa17Midterm2-Review.pdf">Midterm Exam 2 Review Guide</ref></p>
+           </div>
+        </div>
+    </div>
+    <div type="week" n="10">
+        <div type="day">
+            <head>
+                <date when="2017-10-30">M 10-30</date>
+            </head>
+            <div type="inclass"><p><hi>Midterm Exam 2</hi></p>
+                
+                <!--<p>[TO BE POSTED] John Keats: <title level="a">The Eve of St. Agnes</title> and <title level="a">La Belle Dame Sans Merci</title></p>--></div>
+           <div type="assign"></div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-11-01">W 11-01</date>
+            </head>
+            <div type="inclass"> <p>Start reading Emily Brontë, <title level="m">Wuthering Heights</title>, Chs. 1-5 (pp. 37-71)</p>
+               <list> <item><ref target="http://www.gutenberg.org/files/768/768-h/768-h.htm"><title level="m">Wuthering Heights</title>: Project Gutenberg Edition</ref> (for annotation) </item>
+                <item><ref target="https://www.slideshare.net/ebbondar/wuthering-heights-81474391">Slides on the Brontës and <title level="m">Wuthering Heights</title></ref></item></list>
+            </div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-11-03">F 11-03</date>
+            </head>
+            <div type="inclass"><p><title level="m">Wuthering Heights</title> through end of Ch. 11 (to p. 135)</p>
+                <p>Present <hi rend="em"> <ref target="AnnotResearchAssign.html">Annotation Research Assignment</ref></hi></p>
+</div>
+           <div type="assign"></div>
+        </div>
+    </div>
+    <div type="week" n="11">
+        <div type="day">
+            <head>
+                <date when="2017-11-06">M 11-06</date>
+            </head>
+            <div type="inclass"><p><title level="m">Wuthering Heights</title> through end of Ch. 18 (to p. 200)</p></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-11-08">W 11-08</date>
+            </head>
+            <div type="inclass"><p><title level="m">Wuthering Heights</title> through end of Ch. 26 (to p. 252)</p>
+              </div>
+            <div type="assign"><p><hi rend="em"> <ref target="AnnotResearchAssign.html">Annotation Research Assignment</ref></hi>: Choose your text to annotate: Indicate your choice with an hypothes.is annotation on our Assignment page.</p></div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-11-10">F 11-10</date>
+            </head>
+            <div type="inclass"><p>Finish <title level="m">Wuthering Heights</title></p>
+                <p><hi>Reading Quiz on <title level="m">Wuthering Heights</title></hi> (in class)</p>
+              </div>
+            <div type="assign"/>
+        </div>
+    </div>
+    <div type="week" n="12">
+        <div type="day">
+            <head>
+                <date when="2017-11-13">M 11-13</date>
+            </head>
+            <div type="inclass"> <p></p> <list><item>Elizabeth Barrett Browning, <ref target="http://www.victorianweb.org/authors/ebb/ebbio.html">introduction</ref> on <ref target="http://www.victorianweb.org/authors/ebb/index.html">Victorian Web</ref>; with sonnets and short poems: <ref target="https://www.wwnorton.com/college/english/nael/noa/pdf/27636_Vict_U04_Browning.pdf"><title level="a">To George Sand: A Desire and A Recognition</title>, <title level="a">A Year's Spinning</title>, and <title level="a">A Musical Instrument</title></ref></item>
+                <item>Alfred, Lord Tennyson: <ref target="https://www.biography.com/people/alfred-tennyson-9504013">introduction</ref>; <ref target="https://rpo.library.utoronto.ca/poems/mariana"><title level="a">Mariana</title></ref>, <ref target="https://rpo.library.utoronto.ca/poems/lady-shalott-1832"><title level="a">The Lady of Shalott</title></ref></item></list>
+
+               <note>TEI Conference</note></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-11-15">W 11-15</date>
+            </head>
+            <div type="inclass">
+                <list>
+                <item> <ref target="http://www.slideshare.net/ebbondar/the-industrial-revolution-and-the-hungry-forties">my slideshow notes on The Industrial Revolution and the <q>Hungry Forties</q></ref></item>
+                    <item>Elizabeth Barrett Browning, <ref target="https://rpo.library.utoronto.ca/poems/cry-children"><title level="a">The Cry of the Children</title></ref></item> </list>
+                
+                 
+              
+              <note>TEI Conference</note></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-11-17">F 11-17</date>
+            </head>
+            <div type="inclass"><p><hi>book:</hi> Christina Rossetti, <title level="m">Goblin Market and Other Poems</title>: concentrate on the title poem, <title level="a">Goblin Market</title>, but scan through surrounding poems too, especially those dealing with trees and fruit.</p>
+                <note>TEI Conference</note>
+            </div>
+            <div type="assign"><p><hi><ref target="AnnotResearchAssign.html">Annotation Research Assignment</ref>: Complete draft round of annotations and choose topic for Research Paper </hi></p>
+        </div>
+    </div>
+    </div>
+    <div type="week" n="13">
+        <div type="day">
+            <head>
+                <date when="2017-11-20">M 11-20</date>
+            </head>
+            <div type="inclass"><p><ref target="VictorianIssuesPDF.pdf">Victorian Issues: Evolution: Charles Darwin excerpts from <title>The Origin of Species</title> and <title>The Descent of Man</title>, with Tennyson, intro + stanzas from <title level="a">In Memoriam</title></ref></p>
+                <p><ref target="http://www.slideshare.net/ebbondar/science-vs-religion-darwin-and-the-victorians">Slides on Darwin vs. Religion: Darwin and the Victorians</ref></p></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-11-22">W 11-22 to F 11-24</date>
+            </head>
+            <div type="inclass"><p>Thanksgiving Recess: No Classes.</p></div>
+            <div type="assign"/>
+        </div>
+    </div>
+    <div type="week" n="14">
+        <div type="day">
+            <head>
+                <date when="2017-11-27">M 11-27</date>
+            </head>
+            <div type="inclass"><p><ref target="http://www.ibiblio.org/ebooks/Dickens/Carol/Dickens_Carol.htm">Charles Dickens, <title level="m">A Christmas Carol</title></ref> (e-book of the Dec. 1843 edition) Staves I-II</p>
+               
+           </div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-11-29">W 11-29</date>
+            </head>
+            <div type="inclass"><p>Finish <ref target="http://www.ibiblio.org/ebooks/Dickens/Carol/Dickens_Carol.htm">Charles Dickens, <title level="m">A Christmas Carol</title></ref></p>
+               <!--<p>Christina Rossetti, <title level="a">In an Artist’s Studio</title> (in book: <title level="m">Goblin Market and Other Poems</title>) with [TO BE POSTED] Dante Gabriel Rossetti, <title level="a">Jenny</title>, and sonnets from <title>The House of Life</title></p>--></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-12-01">F 12-01</date>
+            </head>
+            <div type="inclass"><p><hi>book:</hi> Arthur Conan Doyle, <title level="m">The Hound of the Baskervilles</title> (roughly first half)</p>
+                <p>Note: <ref target="http://www.gutenberg.org/files/2852/2852-h/2852-h.htm">annotation copy</ref> (being annotated by one of you); <ref target="http://ignisart.com/camdenhouse/canon/houn-02.htm">Edition with Sidney Paget's illustrations</ref></p></div>
+            <div type="assign"></div>
+        </div>
+    </div>
+    <div type="week" n="15">
+        <div type="day">
+            <head>
+                <date when="2017-12-04">M 12-04</date>
+            </head>
+           <div type="inclass"><p>Finish <title level="m">The Hound of the Baskervilles</title></p>
+               <p>Note: <ref target="http://www.gutenberg.org/files/2852/2852-h/2852-h.htm">annotation copy</ref> (being annotated by one of you); <ref target="http://ignisart.com/camdenhouse/canon/houn-02.htm">Edition with Sidney Paget's illustrations</ref></p>
+           </div>
+            <div type="assign"><p></p>
+        </div>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-12-06">W 12-06</date>
+            </head>
+            <div type="inclass"><p>Rudyard Kipling, <ref target="http://www.telelib.com/authors/K/KiplingRudyard/prose/PhantomRickshaw/manwhowouldbeking.html"><title level="a">The Man Who Would Be King</title></ref>: read to the section break (up to this sentence): <q>I would have prayed for them, but, that night, a real King died in Europe, and demanded an obituary notice.</q>
+            </p>
+                <p><ref target="https://www.slideshare.net/ebbondar/manwhowouldbeking">Context Slides</ref></p></div>
+            <div type="assign"/>
+        </div>
+        <div type="day">
+            <head>
+                <date when="2017-12-08">F 12-08</date>
+            </head>
+            <div type="inclass"><p>Finish Rudyard Kipling, <ref target="http://www.telelib.com/authors/K/KiplingRudyard/prose/PhantomRickshaw/manwhowouldbeking.html"><title level="a">The Man Who Would Be King</title></ref></p>
+                <p><ref target="https://www.slideshare.net/ebbondar/manwhowouldbeking">Context Slides</ref></p>
+            </div>
+            <div type="assign"><p><hi>Annotation Research Paper due by 11:59pm</hi> for <ref target="AnnotResearchAssign.html">Scholarly Annotation Assignment</ref>
+          
+            
+            </p>
+            <p><ref target="Fa17FinalReview.pdf">Final Exam Review Guide</ref></p>
+            </div>
+        </div>
+    </div>
+   <div type="week">
+      <div type="day">
+         <head><date>Final Exam Date: Wed. 12/13</date></head>
+         <div type="assign">
+            <p>
+               <hi>Final Exam: 10:45am in our classroom, 119 Powers Hall.</hi>
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+
+           
+
+         </div>
+      </body>
+   </text>
+</TEI>

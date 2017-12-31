@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>Methodology</title>
+        <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    </head>
+    
+    <body>
+        
+        <a href="http://portu-whatsapp.newtfire.org/index.html"><img src="Corcovado.jpg" alt="Rio de Janeiro"/></a>
+        <!--#include virtual="../ssi/ssi_menu_other_pages.html" -->
+        <div class="header">
+            <h1>Methodology</h1>
+            <hr/>
+        </div>
+        <div class="description">
+            <p>The intent of this project is to look at linguistic characteristics that may make
+                themselves evident through texting conventions. Some of the characterisitcs that
+                this project may look into include the use of abbreviations and exxapnded forms, emojis, laughter notations, and speech errors and corrections.</p>
+        </div>
+        <div class="main">
+            <h2>Goals</h2>
+            <p>The intenion of this project was to analyze texting discourse between Brazilian L1 Portuguese speakers and American L2 Portugues speakers. We wanted to look at the linguistic differences in texting conventions between the groups to determine if there were any patterns that might have developed or been present in the American speakers as they learned Portuguese. The linguistic elements that the project looked into consisted of the use of abbreviations as well as the use of expanded forms, the presence and distribution of different emoji characters, the usage of different textual laughter notations, and the methods for addressing and correcting 'speech errors' as they occured in texting. </p>
+            
+            <h2>Markup and Analysis</h2>
+            <p>The markup was done in compliance with the TEI. The corpus that the project received came in the form of screen shots from individuals' phones who were using <a href="https://www.whatsapp.com/">WhatsApp</a> to communicate witht the Brazilian speakers as part of a class assignment. The data was then transcribed and coded in the following manner. The entirety of the corpus is contained within a single TEI document and each conversation, of which there are 10, has been given its own number so as to uniquely identify it. Additionally, each speaker, both Brazilian and American, has been given their own unique ID while having their names erased so as to identify them indiadually in an anonymous manner. Then, the corpus was searched through to find instances where an aspect of our research question may have been addressed and was coded.</p>
+            <p> Abbreviations were coded as <code>&lt;abbr&gt;</code> with possible <code>@type</code> attribute values of 'textese' 'informal' or 'contraction'. Expanded forms were coded as <code>&lt;expan&gt;</code> with possible <code>@type</code> attribute values of 'formal' 'full' or 'uncontracted'. Emojis were coded as <code>&lt;g&gt;</code> with a @ref attribute that identified their representation. Laughter notations were coded as <code>&lt;hi&gt;</code> with possible <code>@type</code> attribute values of 'ha' 'k' or 'rs'. Corrections were coded as <code>&lt;corr&gt;</code> with possible <code>@type</code> attribute values of 'implicit' 'explicit' or 'self'.</p>
+            
+            <h2>List of the technologies we used</h2>
+            
+            <h2>link to our coding</h2>
+            <p>For an indepth look into our repo organization and to view our acutal coding, you can visit our <a href="https://github.com/BMR59/Portu-WhatsApp">GitHub repo</a> where we have stored all the information that is in anyway relevant to this project.</p>
+        </div>
+        <!--#include virtual="../ssi/creativeCommons.html" -->
+    </body>
+</html>

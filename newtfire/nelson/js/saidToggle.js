@@ -33,7 +33,7 @@ function toggleHighlight() {
         case 'messenger':
         color = '#00A6ED';
         break;
-        case 'promMen':
+        case 'promMan':
         color = 'blue';
         break;
         case 'promWoman':

@@ -1,0 +1,6 @@
+Options +Includes
+AddType text/html shtml
+AddHandler server-parsed shtml
+XBitHack on
+<Files "">
+</Files>

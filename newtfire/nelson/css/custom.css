@@ -9,8 +9,11 @@ body{
     font-family: "Proza Libre";
     font-size: 14pt;
 }
+a{
+    color: #5d3751;
+}
 .navbar-brand:hover{
-    color: #B9929F !important;
+    color: #fff !important;
 }
 .navbar-nav > li > a:hover{
     color: #B9929F !important;
@@ -21,14 +24,10 @@ body{
 .navbar-nav > .open > a:hover{
     color: #B9929F !important;
 }
-.navbar-brand{
+.navbar-brand {
     font-family: Cooper !important;
     font-size: 14pt !important;
-    text-shadow: 
-    -.5px -.5px 0 #FFF, 
-.5px -.5px 0 #FFF, 
--.5px .5px 0 #FFF, 
-.5px .5px 0 #FFF;
+    color: #B9929F !important;
 }
 
 .img-center{
@@ -50,10 +49,11 @@ a:hover{
     /*background:#5d3751;*/
     /*letter-spacing: 1px;*/
 }
-a{
-    color: #5d3751 !important;
-}
+
 ul.nav a{
+    color: #fff !important;
+}
+ul.nav span{
     color: #fff !important;
 }
 
@@ -282,7 +282,7 @@ p.keyDesc{
 
 .article{
     color: black;
-    font-size:12pt;
+    font-size: 12pt;
     float: right;
     margin-left: 100px;
     padding: 15px;
@@ -297,7 +297,7 @@ p.keyDesc{
 .headlinesText ul{
     margin: 5px;
     font-family: sans-serif;
-    font-size:large;
+    font-size: large;
     padding: 10px;
     color: black;
     list-style-type: none;
@@ -312,7 +312,7 @@ p.keyDesc{
 .headlinesTitle{
     margin: 5px;
     font-family: Cooper;
-    font-size:larger;
+    font-size: larger;
     text-align: center;
     list-style-type: none;
 }
@@ -331,7 +331,8 @@ p.keyDesc{
 .dialogue{
     font-weight: 700 !important;
 }
-.chicTimes, .paperTitle{
+.chicTimes,
+.paperTitle{
     font-style: italic;
 }
 

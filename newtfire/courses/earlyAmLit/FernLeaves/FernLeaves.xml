@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fern Leaves: An assortment of Fanny Fern’s newspaper writings</title>
+            <author><persName type="pseudonym">Fanny Fern</persName><note><soCalled>Fanny Fern</soCalled> was the pseudonym of <persName>Sara Willis</persName> or <persName>Sara Willis Parton</persName>. For biographical information please see <ref target="https://fannyfern.org/bio">Fanny Fern in <title level="j">The New York Ledger</title></ref>.</note><graphic url="fern18560216_crop.jpg"><desc>New York Ledger Fresh Fern Leaves masthead photofacsimile</desc></graphic></author>
+            <editor><persName ref="#ebb">Elisa Beshero-Bondar</persName></editor>
+         </titleStmt>
+         <publicationStmt>
+            <p>Shared under a Free Culture Creative Commons Attribution 4.0 International
+               License</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>This collection of Fanny Fern’s writings was assembled from print and internet resources.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="article">
+            <head><title level="m">Leaves of Grass</title></head>
+            <p>Well baptized: fresh, hardy, and grown for the masses. Not more welcome is their
+               natural type to the winter-bound, bed-ridden, and spring-emancipated invalid. <title
+                  level="m">Leaves of Grass</title> thou art unspeakably delicious, after the
+               forced, stiff, Parnassian exotics for which our admiration has been vainly
+               challenged.</p>
+            <p>Walt Whitman, the effeminate world needed thee. The timidest soul whose wings ever
+               drooped with discouragement, could not choose but rise on thy strong pinions.</p>
+            <q><lg>
+                  <l>Undrape—you are not guilty to me, nor stale nor discarded;</l>
+                  <l>I see through the broadcloth and gingham whether or no. . . .</l>
+               </lg>
+               <lg>
+                  <l>O despairer, here is my neck,</l>
+                  <l>You shall <emph>not</emph> go down! Hang your whole weight upon me.</l>
+               </lg></q>
+            <p>Walt Whitman, the world needed a <soCalled>Native American</soCalled> of thorough,
+               out-and-out breed—enamored of <emph>women</emph> not <emph>ladies</emph>,
+                  <emph>men</emph> not <emph>gentlemen</emph>; something beside a mere
+               Catholic-hating Know-Nothing; it needed a man who dared speak out his strong, honest
+               thoughts, in the face of pusillanimous, todeying, republican aristocracy;
+               dictionary-men, hypocrites, cliques, and creeds; it needed a large-hearted,
+               untainted, self-reliant, fearless son of the Stars and Stripes, who disdains to sell
+               his birthright for a mess of pottage; who does <q><l>Not call one greater or one
+                     smaller,</l>
+                  <l>That which fills its period and place being equal to any;</l></q> who will
+                     <q><l>Accept nothing which all cannot have on their counterpart of on the same
+                     terms.</l></q>
+            </p>
+            <p>Fresh <title level="m">Leaves of Grass</title>! not submitted by the self-reliant
+               author to the fingering of any publisher’s critic, to be arranged, re-arranged and
+               disarranged to his circumscribed liking, till they hung limp, tame, spiritless, and
+               scentless. No. It were a spectacle worth seeing, this glorious Native American, who,
+               when the daily labor of chisel and plane was over, himself, with toil-hardened
+               fingers, handled the types to print the pages which wise and good men have since
+               delighted to endorse and to honor. Small critics, whose contracted vision could see
+               no beauty, strength, or grace, in these <title level="m">Leaves</title>, have long
+               ago repented that they so hastily wrote themselves down shallow by such a premature
+               confession. Where an Emerson, and a Howitt have commended, my woman’s voice of praise
+               may not avail; but happiness was born a twin, and so I would fain share with others
+               the unmingled delight which these <title level="m">Leaves</title> have given me.</p>
+            <p>I say unmingled; I am not unaware that the charge of coarseness and sensuality has
+               been affixed to them. My moral constitution may be hopelessly tainted—or too sound to
+               be tainted, as the critic wills—but I confess that I extract no poison from these
+                  <title level="m">Leaves</title>—to me they have brought only healing. Let him who
+               can do so, shroud the eyes of the nursing babe lest it should see its mother’s
+               breast. Let him look carefully between the gilded covers of books, backed by
+               high-sounding names, and endorsed by parson and priest, lying unrebuked upon his own
+               family table; where the asp of sensuality likes coiled amid rhetorical flowers. Let
+               him examine well the paper dropped weekly at his door, in which virtue and religion
+               are rendered disgusting, save when they walk in satin slippers, or, clothed in purple
+               and fine linen, kneel on a damask <soCalled><foreign xml:lang="fr"
+                     >prie-dieu</foreign></soCalled>.</p>
+            <p>Sensual! No—the moral assassin looks you not so boldly in the eye by broad daylight;
+               but Borgia-like takes you treacherously by the hand, while from the glittering ring
+               on his finger he distils through your veins the subtle and deadly poison.</p>
+            <p>Sensual? The artist who would inflame, paints you not nude Nature, but stealing
+               Virtue’s veil, with artful artlessness now conceals, now exposes, the ripe and
+               swelling proportions.</p>
+            <p>Sensual? Let him who would affix this stigma upon <title level="m">Leaves of
+                  Grass</title>, write upon his heart, in letters of fire, these noble words of its
+               author:</p>
+            <q><lg>
+                  <l>In woman I see the bearer of the great fruit, which is immortality</l>
+                  <l>. . . the good thereof is not tasted by <foreign xml:lang="fr">roues</foreign>,
+                     and never can be. . . .</l>
+                  <l>Who degraded or defiles the living human body is cursed,</l>
+                  <l>Who degrades or defiles the body of the dead is not more cursed.</l>
+               </lg></q>
+            <p>Were I an artist I would like no more suggestive subjects for my easel than Walt
+               Whitman’s pen has furnished.</p>
+            <q><lg>
+                  <l>The little one sleeps in its cradle,</l>
+                  <l>I lift the gauze and look a long time, and silently brush away flies with my
+                     hand.</l>
+               </lg>
+               <l>The farmer stops by the bars of a Sunday and looks at the oats and rye. . .</l>
+               <lg>
+                  <l>Earth of the slumbering and liquid trees!</l>
+                  <l>Earth of departed Sunset!</l>
+                  <l>Earth of the mountain’s misty topt</l>
+                  <l>Earth of the vitreous pour of the full moon just tinged with blue!</l>
+                  <l>Earth of the shine and dark mottling the tide of the river!</l>
+                  <l>Earth of the limpid grey of clouds brighter and clearer for my sake!</l>
+                  <l>Far swooping elbowed earth! Rich apple-blossomed earth!</l>
+                  <l>Smile, for your lover comes!</l>
+               </lg>
+            </q>
+            <p>I quote at random, the following passages which appeal to me:</p>
+            <q>
+               <lg>
+                  <l>A morning glory at my window, satisfies me more than the metaphysics of books.
+                     . . .</l>
+                  <l>Logic and sermons never convince.</l>
+                  <l>The damp of the night drives deeper into my soul.</l>
+               </lg>
+            </q>
+            <p>Speaking of animals, he says:</p>
+            <q><lg>
+                  <l>I stand and look at them sometimes half the day long.</l>
+                  <l><emph>They</emph> do not make me sick, discussing their duty to God. . . .</l>
+                  <l>Whoever walks a furlong without sympathy, walks to his funeral dressed in his
+                     shroud. . . .</l>
+               </lg>
+               <lg>
+                  <l>I hate him that oppresses me,</l>
+                  <l>I will either destroy him, or he shall release me. . . .</l>
+                  <l>I find letters from God dropped in teh street, and every one is signed by God’s
+                     name,</l>
+                  <l>And I leave them where they are, for I know that others will punctually come
+                     forever and ever. . . .</l>
+               </lg>
+               <l>—Under Niagara, <emph>the cataract falling like a veil over my
+                  countenance.</emph></l></q>
+            <p>Of the grass he says:</p>
+            <q><l>It seems to me <emph>the beautiful uncut hair of graves</emph>.</l></q>
+            <p>I close the extracts from these <title level="m">Leaves</title>, which it were easy
+               to multiply, for one is more puzzled what to leave unculled, than what to gather,
+               with the following sentiments; for which, and for allt he good things included
+               between the covers of his book, Mr. Whitman will please accept the cordial grasp of a
+               woman’s hand:</p>
+            <q><lg>
+                  <l>The wife—and she is not one jot less than the husband,</l>
+                  <l>The daughter—and she is just as good as the son,</l>
+                  <l>The mother—and she is every bit as much as the father.</l>
+               </lg></q>
+            <note><bibl><title level="j">New York Ledger</title><date when="1856-05-10"
+               /></bibl></note>
+         </div>
+         <div type="article">
+            <head type="title">Fresh Leaves</head>
+            <p>This little volume has just been laid upon our table. The publishers have done all
+               they could for it, with regard to outward adorning. No doubt it will be welcomed by
+               those who admire this lady’s style of writing: we confess ourselves not to be of that
+               number. We have never seen Fanny Fern, nor do we desire to do so. We imagine her,
+               from her writings, to be a muscular, black-browed, grenadier-looking female, who
+               would be more at home in a boxing gallery than in a parlor,—a vociferous,
+               demonstrative, strong-minded horror,—a woman only by virtue of her dress. Bah! the
+               very thought sickens us. We have read, or, rather, tried to read, her halloo-there
+               effusions. When we take up a woman’s book we expect to find gentleness, timidity,
+               that lovely reliance on the patronage of our sex which constitutes a woman’s greatest
+               charm. We do not wish to be startled by bold expressions, or disgusted with
+               exhibitions of masculine weaknesses. We do not desire to see a woman wielding the
+               scimitar blade of sarcasm. If she be, unfortunately, endowed with a gift so
+               dangerous, let her—as she values the approbation of our sex—fold it in a napkin.
+               Fanny’s strong-minded nose would probably turn up at this inducement. Thank heaven!
+               there are still women who <emph>are</emph> women—who know the proper place Heaven
+               assigned them, and keep it—who do not waste floods of ink and paper, brow-beating men
+               and stirring up silly women;—who do not teach children that a game of romps is of as
+               much importance as Blairs Philosophy;—who have not the presumption to advise
+               clergymen as to their duties, or lecture doctors, and savans;—who live for something
+               else than to astonish a gaping, idiotic crowd. Thank heaven! there are women writers
+               who do not disturb our complacence or serenity; whose books lull one to sleep like a
+               strain of gentle music; who excite no antagonism, or angry feeling. Woman never was
+               intended for an irritant: she should be oil upon the troubled waters of manhood—soft
+               and amalgamating, a necessary but unobtrusive ingredient;—never challenging
+               attention—never throwing the gauntlet of defiance to a beard, but softly purring
+               beside it lest it bristle and scratch.</p>
+            <p>The very fact that Fanny Fern has, in the language of her admirers, <q>elbowed her
+                  way through unheard of difficulties,</q> shows that she is an antagonistic,
+               pugilistic female. One must needs, forsooth, get out of her way, or be pushed one
+               side, or trampled down. How much more womanly to have allowed herself to be doubled
+               up by adversity, and quietly laid away on the shelf of fate, than to have rolled up
+               her sleeves, and gone to fisticuffs with it. Such a woman may conquer, it is true,
+               but her victory will cost her dear; it will neither be forgotten nor forgiven—let her
+               put that in her apron pocket.</p>
+            <p>As to Fanny Fern’s grammar, rhetoric, and punctuation, they are beneath criticism. It
+               is all very well for her to say, those who wish commas, semi-colons and periods, must
+               look for them in the printer’s case, or that she who finds ideas must not be expected
+               to find rhetoric or grammar; for our part, we should be gratified if we had even
+               found any ideas!</p>
+            <p>We regret to be obliged to speak thus of a lady’s book: it gives us great pleasure,
+               when we can do so conscientiously, to pat lady writers on the head; but we owe a duty
+               to the public which will not permit us to recommend to their favorable notice an
+               aspirant who has been unwomanly enough so boldly to contest every inch of ground in
+               order to reach them—an aspirant at once so high-stepping and so ignorant, so
+               plausible, yet so pernicious. We have a conservative horror of this pop-gun, torpedo
+               female; we predict for Fanny Fern’s <title level="m">Leaves</title> only a fleeting
+               autumnal flutter.</p>
+            <byline>By Fanny Fern</byline>
+            <note><bibl><title level="j">New York Ledger</title><date
+                        when="1857-10-10"/></bibl></note>
+         </div>
+         <div type="article">
+            <head>A Law More Nice Than Just</head>
+            <p>Here I have been sitting twiddling the morning paper between my fingers this half
+               hour, reflecting upon the following paragraph in it: <q>Emma Wilson was arrested
+                  yesterday for wearing man’s apparel.</q> Now, why this should be an actionable
+               offense is past my finding out, or where’s the harm in it, I am as much at a loss to
+               see. Think of the old maids (and weep) who have to stay at home evening after
+               evening, when, if they provided themselves with a coat, pants, and hat, they might go
+               abroad, instead of sitting there with their noses flattened against the window-pane,
+               looking vainly for <soCalled>the Coming Man</soCalled>. Think of the married women
+               who stay at home after their day’s toil is done, waiting wearily for their
+               thoughtless, truant husbands, when they might be taking the much needed independent
+               walk in trousers, which forbids to petticoats. And this, I fancy, may be the secret
+               of this famous law—who knows? It <emph>wouldn’t</emph> be pleasant for some of them
+               to be surprised by a touch on the shoulder from some dapper young fellow, whose
+               familiar treble voice belied his corduroys. That’s it, now. What a fool I was not to
+               think of it—not to remember that men who make the laws, make them to meet all these
+               little emergencies.</p>
+            <p>Everybody knows what an everlasting drizzle of rain we have had lately, but nobody
+               but a woman, and a woman who lives on fresh air and out-door exercise, knows the
+               thraldom of taking her daily walk through a three weeks’ rain, with skirts to hold
+               up, and umbrella to hold down, and puddles to skip over, and gutters to walk round,
+               and all the time in a fright lest, in an unguarded moment, her calves should become
+               visible to some one of those rainy-day philanthropists who are interested in the
+               public study of female anatomy.</p>
+            <p>One evening, after a long rainy day of scribbling, when my nerves were in
+               double-twisted knots, and I felt as if myriads of little ants were leisurely
+               traveling over me, and all for want of the walk, which is my daily salvation, I stood
+               at the window, looking at the slanting, persistent rain, and took my resolve:
+                     <q><emph>I’ll do it</emph></q>, said I, audibly, planting my slipper upon the
+               carpet. <q>Do what?</q> asked Mr. Fern, looking up from a big book. <q>Put on a suit
+                  of your clothes and take a tramp with you</q>, was the answer. <q>You dare
+                  not</q>, was the rejoinder; <q>you are a little coward, only saucy on paper</q>.
+               It was the work of a moment, with such a challenge, to fly up stairs and overhaul my
+               philosopher’s wardrobe. Of course we had fun. Tailors must be a stingy set, I
+               remarked, to be so sparing of their cloth, as I struggled into a pair of their
+               handiwork, undeterred by the vociferous laughter of the wretch who had solmenly vowed
+               to <q>cherish me</q> through all my tribulations. <q>Upon my word, everything seems
+                  to be narrow where it ought to be broad, and the waist of this coat might be made
+                  for a hogshead; and ugh! this shirt collar is cutting my ears off, and you have
+                  not a decent cravat in the whole lot, and your vests are frights, and what am I to
+                  do with my hair?</q> Still no reply from Mr. Fern, who lay on the floor, faintly
+               ejaculating, between his fits of laughter, <q>Oh, my! by Jove!—oh! by
+               Jupiter!</q></p>
+            <p>Was that to hinder me? Of course not. Strings and pins, women’s never-failing resort,
+               soon brought broadcloth and kerseymere to terms. I parted my hair on one side, rolled
+               i under, and then secured it with hairpins; chose the best fitting coat, and cap-ping
+               the climax with one of those soft, cosy hats, looked in the glass, where I beheld the
+               very fac-simile of a certain musical gentleman, whose photograph hangs this minute in
+               Brady’s entry.<note resp="#ebb">Fern is referring to her brother, Richard Storrs
+                  Willis.</note></p>
+            <p>Well, Mr. Fern seized his hat, and out we went together. <q>Fanny</q>, said he,
+                  <q>you must not take my arm; you are a fellow.</q>
+               <q>True</q>, said I. <q>I forgot; and you must not help me over puddles, as you did
+                  just now, and do, for mercy’s sake, stop laughing. There, there goes your hat—I
+                  mean <emph>my</emph> hat; confound the wind! and down comes my hair; lucky ’tis
+                  dark, isn’t it?</q> But oh, the delicious freedom of that walk; after we were well
+               started! No skirts to hold up, or to draggle their wet folds against my ankles; no
+               stifling vail flapping in my face, and blinding my eyes; no umbrella to turn inside
+               out, but instead, the cool rain driving slap into my face, and the resurrectionized
+               blood coursing through my veins, and tingling in my cheeks. To be sure, Mr. Fern
+               occasionally loitered behind, and leaned up against the side of a house to enjoy a
+               little private <soCalled>guffaw</soCalled>, and I could now and then hear a gasping
+                  <q>Oh, Fanny! Oh my!</q> but none of these things moved me, and if I don’t have a
+               nicely-fitting suit of my own to wear rainy evenings, it is because—well, there
+                  <emph>are</emph> difficulties in the way. Who’s the best tailor?</p>
+            <p>Now, if any male or female Miss Nancy who reads this feels shocked, let ’em! Any
+               woman who likes, may stay at home during a three weeks’ rain, till her skin looks
+               like parchment, and her eyes like those of a dead fish, or she may go out and get a
+               consumption dragging round wet petticoats; I won’t—I positively declare I won’t. I
+               shall begin <emph>evenings</emph> when <emph>that</emph> suit is made, and take
+               private walking lessons with Mr. Fern, and they who choose may crook their backs at
+               home for fashion, and then send for the doctor to straighten them; I prefer to
+               patronize my shoe-maker and tailor. I’ve as good a right to preserve the healthy body
+               God gave me, as if I were not a woman.</p>
+            <note><bibl><title level="j">New York Ledger</title><date when="1858-07-10"
+               /></bibl></note>
+         </div>
+         <div type="article">
+            <head>A Law More Nice Than Just</head>
+            <head type="sub">Number II</head>
+            <p>After all, having tried it I affirm, that nothing reconciles a woman quicker to her
+               feminity, than an experiment in male apparel, although I still maintain that she
+               should not be forbidden by law to adopt it when necessity requires; at least, not
+               till the practice is amended by which a female clerk, who performs her duty equally
+               well with a male clerk, receives less salary, simply because she is a woman.</p>
+            <p>To have to jump on to the cars when in motion, and scramble yourself on to the
+               platform as best you may without a helping hand; to be nudged roughly in the ribs by
+               the conductor with, <q>your fare, sir?</q> to have your pretty little toes trod on,
+               and no healing <q>beg your pardon</q>, applied to the smart; to have all those
+               nice-looking men who used to make you such crushing bows, and give you such
+               insinuating smiles, pass you without the slightest interest in your coat tails, and
+               perhaps push you against the wall or into the gutter, with a word tabooed by the
+               clergy. In fine, to dispense with all those delicious little politenesses, (for men
+               are great bears to each other,) to which one has been accustomed, and yet feel no
+               inclination to take advantage of one’s corduroys and secure an equivalent by making
+               interest with the <soCalled>fair sex</soCalled>, stale to you as a thrice-told tale.
+               Isn’t <emph>that</emph> a situation?</p>
+            <p>To be subject to the promptings of that unstifleable feminine desire for adornment,
+               which is right and lovely within proper limits, and yet have no field for your
+               operations. To have to conceal your silken hair, and yet be forbidden a becoming
+               moustache, or whiskers, or beard—(all hail beards, I say!). To choke up your nice
+               throat with a disguising cravat; to hide your bust (I trust no Miss Nancy is
+               blushing) under a baggy vest. To have nobody ask you to ice cream, and yet be
+               forbidden, by your horrible disgust of tobacco, to smoke. To have a gentleman ask you
+                  <q>the time sir?</q> when you are new to the geography of your watch-pocket. To
+               accede to an invitation to test your <soCalled>heft</soCalled>, by sitting down in
+               one of those street-weighing chairs, and have one of the male bystanders, taking hold
+               of your foot, remark, <q>Halloo, sir, you must not rest these upon the ground while
+                  you are being weighed</q>; and go grinning away in your coat-sleeve at your truly
+               feminine faux pas.</p>
+            <p>And yet—and yet—to be able to step over the ferry-boat chain when you are in a
+               distracted hurry, like any other fellow, without waiting for that tedious unhooking
+               process, and quietly to enjoy your triumph over scores of impatient-waiting crushed
+               petticoats behind you; to taste that nice lager beer <soCalled>on draught</soCalled>;
+               to pick up contraband bits of science in a Medical Museum, forbidden to crinoline,
+               and hold conversations with intelligent men, who supposing you to be a man,
+               consequently talk sense to you. That is worth while.</p>
+            <p>Take it all and all, though, I thank the gods I am a woman. I had rather be loved
+               than make love; though I could beat the makers of it, out and out, if I did not think
+               it my duty to refrain out of regard to their feelings, and the final disappointment
+               of the deluded women! But—oh, dear, I want to do such a quantity of
+                  <soCalled>improper</soCalled> things, that there is not the slightest real harm in
+               doing. I want to see and know a thousand things which are forbidden to
+               flounces—custom only can tell why—I can’t. I want the free use of my ankles, for this
+               summer at least, to take a journey; I want to climb and wade, and tramp about,
+               without giving a thought to my clothes; without carrying about with me a long
+               procession of trunks and boxes, which are the inevitable penalty of feminity as at
+               present appareled. I hate a Bloomer, such as we have seen—words are weak to say how
+               much; I hate myself as much in a man’s dress; and yet I want to run my fingers
+               through my cropped hair some fine morning without the bore of dressing it; put on
+               some sort of loose blouse affair—it must be pretty, though—and a pair of Turkish
+                  trousers—<emph>not</emph> Bloomers—and a cap, or hat—and start; nary a
+                  trunk—<q>nary</q> a bandbox. Wouldn’t that be fine? But propriety scowls and says,
+                  <q>ain’t you ashamed of yourself, Fanny Fern?</q>
+               <emph>Yes, I am.</emph> Miss Nancy. I <emph>am</emph> ashamed of myself, that I
+               haven’t the courage to carry out what would be so eminently convenient, and right,
+               and proper under the circumstances. I am ashamed of myself that I sit like a fool on
+               the piazza of some hotel every season, gazing at some distant mountain, which every
+               pulse and muscle of my body, and every faculty of my soul, are urging me to climb,
+               that I may <q>see the kingdoms of the earth and the glory of them.</q> I
+                  <emph>am</emph> ashamed of myself that you, Miss Nancy, with your uplifted
+               forefinger and your pursed-up mouth, should keep me out of a dress in which I can
+               only hope to do such things. Can’t I make a compromise with you, Miss Nancy? for I’m
+               getting restless, as these lovely summer days pass on. I’d write you such long
+               accounts of beautiful things, Miss Nancy—things which God made for female as well as
+               male eyes to see; and I should come home so strong and healthy, Miss Nancy—a freckle
+               or two, perhaps—but who cares? O-h-n-o-w, Miss Nancy, d-o—Pshaw! you cross old
+               termagant! May Lucifer fly away wid ye.</p>
+
+            <note><bibl><title level="j">New York Ledger</title><date when="1858-07-17"
+               /></bibl></note>
+         </div>
+         <div type="article">
+            <head>Independence</head>
+            <p><soCalled>Fourth of July.</soCalled> Well—I don’t feel patriotic. Perhaps I might if
+               they would stop that deafening racket. Washington was very well, if he
+                  <emph>couldn’t</emph> spell, and I’m glad we are all free; but as a woman—I
+               shouldn’t know it, didn’t some orator tell me. Can I go out of an evening without a
+               hat at my side? Can I go out with one on my head without danger of a station-house?
+               Can I clap my hands at some public speaker when I am nearly bursting with delight?
+               Can I signify the contrary when my hair stands on end with vexation? Can I stand up
+               in the cars <q>like a gentleman</q> without being immediately invited <q>to sit
+                  down</q>? Can I get into an omnibus without having my sixpence taken from my hand
+               and given to the driver? Can I cross Broadway without having a policeman tackled to
+               my helpless elbow? Can I go to see anything <emph>pleasant</emph>, like an execution
+               or a dissection? Can I drive that splendid <soCalled>Lantern</soCalled><note
+                  resp="#ebb">a race horse owned by Robert Bonner, editor of the <title level="j"
+                     >New York Ledger</title> for which Fern was writing her columns.</note>,
+               distancing—like his owner—all competitors? Can I have the nomination for <q>Governor
+                  of Vermont</q>, like our other contributor, John G. Saxe? Can I be a Senator, that
+               I may hurry up that millenial International Copyright Law? Can I <emph>even</emph> be
+               President? Bah—you know I can’t. <q><emph>Free</emph>!</q> Humph!</p>
+            <note><bibl><title level="j">New York Ledger</title><date when="1859-07-30"
+               /></bibl></note>
+         </div>
+         <div type="article">
+            <head>Shall Women Vote?</head>
+            <p>The principal objection made by conservatives to their doing so, is on the score of
+               their being thrown into rowdy company of both sexes. Admitting this necessity
+               (though, by the way, I don’t do it! because if incompetent men-voters are ruled out,
+               it would follow incompetent women should be also), I cannot sufficiently admire the
+               objection; when a good-looking woman, wife or sister, whom husbands and brothers
+               allow, without a demur, to walk our public thoroughfares unattended, can scarcely do
+               it without being jostled, and ogled at street corners, by squads of gamblers, and
+               often times followed whole blocks, and even spoken to by well-dressed villains; when
+               these ladies often have their toes and elbows nudged by them in omnibusses and cars,
+               or an impertinent hand dropped on their shoulder or waist as if by accident. When two
+               ladies, through leaning on the arm of a gentleman, cannot return from the Opera late
+               at night, to a ferry-boat, without being insulted by the wretched of their own sex,
+               or the rascals who make them such. I admire that, when a husband thinks it quite the
+               thing for his wife to explore all sorts of localities, in search of articles needed
+               for family consumption, because <q>he has not time to attend to it</q>. I like that,
+               when he coolly permits his wife and daughters to waltz at public places, with the
+               chance male acquaintance of a week or a day. I admire that, when his serenity is
+               undisturbed, though Tom, Dick, and Harry, tear the crinoline from their backs, in the
+               struggle to secure seats for an hour’s enjoyment of the latest nine-day, New York
+               wonder.</p>
+            <p>Pshaw! all such talk is humbug, as the men themselves very well know. We are always
+                  <soCalled>dear—delicate fragile creatures</soCalled>, who should be immediately
+               gagged with this sugar plum whenever we talk about that of which it is their interest
+               to keep us ignorant. It won’t do, gentlemen; the sugar-plum game is well nigh
+                  <soCalled>played out</soCalled>. <emph>Women will assuredly vote some day</emph>;
+               meanwhile the majority of them will <q>keep up a considerable of a thinking</q>. The whole truth about the male creatures’ dislike to it, is embodied in a remark of
+                  <soCalled>Mr. Tulliver’s</soCalled>, in a late admirable work.<note resp="#ebb">Mr. Tulliver is a character in George Eliot’s novel <bibl><title level="m">The
+                        Mill on the Floss</title>. (George Eliot was the pen name of the British
+                     novelist Mary Anne Evans.)</bibl></note> This gentleman, with more honesty than
+               is usual with the sex, having admitted that from out a bunch of sisters, he selected
+               his milk-and-water wife <q><emph>because he was not going to be told the right of
+                     things by his own fireside</emph>!</q> I take particular pleasure in passing
+               this sentiment round, because editors who have quoted largely and approvingly from
+               this book, somehow or other, have never seemed to see <emph>this</emph> passage!</p>
+            <note><bibl><title level="j">New York Ledger</title><date when="1860-06-30"
+               /></bibl></note>
+         </div>
+         <div type="article">
+            <head>The Working-Girls of New York</head>
+
+            <p>Nowhere more than in New York does the contest between squalor and splendor so
+               sharply present itself. This is the first reflection of the observing stranger who
+               walks its streets. Particularly is this noticeable with regard to its women. Jostling
+               on the same pavement with the dainty fashionist is the care-worn working-girl.
+               Looking at both these women, the question arises, which lives the more miserable
+               life—she whom the world styles <soCalled>fortunate</soCalled>, whose husband belongs to three clubs, and
+               whose only meal with his family is an occasional breakfast, from year’s end to year’s
+               end; who is as much a stranger to his own children as to the reader; whose young son
+               of seventeen has already a detective on his track employed by his father to ascertain
+               where and how he spends his nights and his father’s money; swift retribution for that
+               father who finds food, raiment, shelter, equipages for his household; but love,
+               sympathy, companionship—never? Or she—this other woman—with a heart quite as hungry
+               and unappeased, who also faces day by day the same appalling question: Is this all
+               life has for me? </p>
+            
+            <p>A great book is yet unwritten about women. Michelet has aired his wax-doll theories
+               regarding them. The defender of <soCalled>woman’s rights</soCalled> has given us her views. Authors and
+               authoresses of little, and big repute, have expressed themselves on this subject, and
+               none of them as yet have begun to grasp it: men—because they lack spirituality,
+               rightly and justly to interpret women; women—because they dare not, or will not, tell
+               us that which most interests us to know. Who shall write this bold, frank, truthful
+               book remains to be seen. Meanwhile woman’s millennium is yet a great way off; and
+               while it slowly progresses, conservatism and indifference gaze through their
+               spectacles at the seething elements of to-day, and wonder <q>what ails all our women?</q></p>
+            
+            <p> Let me tell you what ails the working-girls. While yet your breakfast is
+               progressing, and your toilet unmade, comes forth through Chatham Street and the
+               Bowery, a long procession of them by twos and threes to their daily labor. Their
+               breakfast, so called, has been hastily swallowed in a tenement house, where two of
+               them share, in a small room, the same miserable bed. Of its quality you may better
+               judge, when you know that each of these girls pays but three dollars a week for
+               board, to the working man and his wife where they lodge. </p>
+            
+            <p> The room they occupy is close and unventilated, with no accommodations for personal
+               cleanliness, and so near to the little Flinegans that their Celtic night-cries are
+               distinctly heard. They have risen unrefreshed, as a matter of course, and their
+               ill-cooked breakfast does not mend the matter. They emerge from the doorway where
+               their passage is obstructed by <soCalled>nanny goats</soCalled> and ragged children rooting together in
+               the dirt, and pass out into the street. They shiver as the sharp wind of early
+               morning strikes their temples. There is no look of youth on their faces; hard lines
+               appear there. Their brows are knit; their eyes are sunken; their dress is flimsy, and
+               foolish, and tawdry; always a hat, and feather or soiled artificial flower upon it;
+               the hair dressed with an abortive attempt at style; a soiled petticoat; a greasy
+               dress, a well-worn sacque or shawl, and a gilt breast-pin and earrings. </p>
+            
+            <p> Now follow them to the large, black-looking building, where several hundred of them
+               are manufacturing hoop-skirts. If you are a woman you have worn plenty; but you
+               little thought what passed in the heads of these girls as their busy fingers glazed
+               the wire, or prepared the spools for covering them, or secured the tapes which held
+               them in their places. You could not stay five minutes in that room, where the noise
+               of the machinery used is so deafening, that only by the motion of the lips could you
+               comprehend a person speaking. </p>
+            
+            <p> Five minutes! Why, these young creatures bear it, from seven in the morning till six
+               in the evening; week after week, month after month, with only half an hour at midday
+               to eat their dinner of a slice of bread and butter or an apple, which they usually
+               eat in the building, some of them having come a long distance. As I said, the roar of
+               machinery in that room is like the roar of Niagara. Observe them as you enter. Not
+               one lifts her head. They might as well be machines, for any interest or curiosity
+               they show, save always to know what o’clock it is. Pitiful! pitiful, you almost sob
+               to yourself, as you look at these young girls. Young? Alas! it is only in years that
+               they are young. </p>
+            
+            <p> <q>Only three dollars a week do they earn</q>, said I to a brawny woman in a tenement
+               house near where some of them boarded. <q>Only three dollars a week, and all of that goes for their board. How, then, do they clothe themselves?</q> Hell has nothing more
+               horrible than the cold, sneering indifference of her reply: <q>Ask the dry-goods men</q>.</p>
+            
+            <p> Perhaps you ask, why do not these girls go out to service? Surely it were better to
+               live in a clean, nice house, in a healthy atmosphere, with respectable people, who
+               might take other interest in them than to wring out the last particle of their
+               available bodily strength. It were better surely to live in a house cheerful and
+               bright, where merry voices were sometimes heard, and clean, wholesome food was given
+               them. Why do they not? First, because, unhappily, they look down upon the position of
+               a servant, even from their miserable stand-point. But chiefly, and mainly, because
+               when six o’clock in the evening comes they are their own mistresses, without
+               hinderance or questioning, till another day of labor begins. They do not sit in an
+               under-ground kitchen, watching the bell-wire, and longing to see what is going on out
+               of doors. More’s the pity, that the street is their only refuge from the squalor and
+               quarrelling and confusion of their tenement-house home. More’s the pity, that as yet
+               there are no sufficiently decent, cleanly boarding-houses, within their means, where
+               their self-respect would not inevitably wither and die. </p>
+            
+            <p> As it is, they stroll the streets; and who can blame them? There are gay lights, and
+               fine shop-windows. It costs nothing to wish they could have all those fine things.
+               They look longingly into the theatres, through whose doors happier girls of their own
+               age pass, radiant and smiling, with their lovers. Glimpses of Paradise come through
+               those doors as they gaze. Back comes the old torturing question: Must my young life
+               always be toil? nothing but toil? They stroll on. Music and bright lights from the
+               underground <soCalled>Concert Saloons</soCalled>, where girls like themselves get fine dresses and good
+               wages, and flattering words and smiles beside. Alas! the future is far away; the
+               present only is tangible. Is it a wonder if they never go back to the dark, cheerless
+               tenement-house, or to the <soCalled>manufactory</soCalled> which sets their poor, weary bodies aching,
+               till they feel forsaken of God and man? Talk of virtue! Live this life of toil, and
+               starvation, and friendlessness, and <soCalled>unwomanly rags</soCalled>, and learn charity. Sometimes
+               they rush for escape into ill-sorted marriages, with coarse rough fellows, and go
+               back to the old tenement-house life again, with this difference, that their toil does
+               not end at six o’clock, and that from this bargain there is no release but death. </p>
+            
+            <p> But there are other establishments than those factories where working-girls are
+               employed. There is <soCalled>Madame ——, Modiste</soCalled>. Surely the girls working there must fare
+               better. Madame pays six thousand dollars rent for the elegant mansion in that
+               fashionable street, in the basement or attic of which they work. Madame cuts and
+               makes dresses, but she takes in none of the materials for that purpose. Not she. She
+               coolly tells you that she will make you a very nice plain black silk dress, and find
+               everything, for two hundred dollars. This is modest, at a clear profit to herself of
+               one hundred dollars on every such dress, particularly as she buys all her material by
+               the wholesale, and pays her girls, at the highest rate of compensation, not more than
+               six dollars a week. At this rate of small wages and big profits, you can well
+               understand how she can afford not only to keep up this splendid establishment, but
+               another still more magnificent for her own private residence in quite as fashionable
+               a neighborhood. Another <soCalled>modiste</soCalled> who did <q>take in material for dresses</q>, and—ladies
+               also! was in the habit of telling the latter that thirty-two yards of any material
+               was required where sixteen would have answered. The remaining yards were then in all
+               cases thrown into a rag-pen; from which, through contract with a man in her employ,
+               she furnished herself with all the crockery, china, glass, tin and iron ware needed
+               in her household. This same modiste employed twenty-five girls at the starvation
+               price of three dollars and a half a week. The room in which they worked was about
+               nine feet square, with only one window in it, and whoso came early enough to secure a
+               seat by that window saved her eyesight by the process. Three sewing-machines whirred
+               constantly by day in this little room, which at night was used as a sleeping
+               apartment. As the twenty-five working-girls were ushered in to their day’s labor in
+               the morning before that room was ventilated, you would not wonder that by four in the
+               afternoon dark circles appeared under their eyes, and they stopped occasionally to
+               press their hands upon their aching temples. Not often, but sometimes, when the pain
+               and exhaustion became intolerable. </p>
+            
+            <p> One of the twenty-five was an orphan girl named Lizzy, only fifteen years of age.
+               Not even this daily martyrdom had quenched her abounding spirits, in that room where
+               never a smile was seen on another face—where never a jest was ventured on, not even
+               when Madame’s back was turned. Always Lizzie’s hair was nicely smoothed, and though
+               the clean little creature went without her breakfast—for a deduction of wages was the
+               penalty of being late—yet had she always on a clean dark calico dress, smoothed by
+               her own deft little fingers. In that dismal, smileless room she was the only sunbeam.
+               But one day the twenty-five were startled; their needles dropped from their fingers.
+               Lizzie was worn out at last! Her pretty face blanched, and with a low baby cry she
+               threw her arms over her face and sobbed: <q>Oh, I cannot bear this life—I cannot bear
+               it any longer. George must come and take me away from this.</q> That night she was
+               privately married to <soCalled>George</soCalled>, who was an employee on the railroad. The next day
+               while on the train attending to his duties, he broke his arm, and neither of the
+               bridal pair having any money, George was taken to the hospital. The little bride,
+               with starvation before her, went back that day to Madame, and concealing the fact of
+               her marriage, begged humbly to be taken back, apologizing for her conduct on the day
+               before, on the plea that she had such a violent pain in her temples that she knew not
+               what she said. As she was a handy little workwoman, her request was granted, and she
+               worked there for several weeks, during her honeymoon, at the old rate of pay. The day
+               George was pronounced well, she threw down her work, clapped her little palms
+               together, and announced to the astonished twenty-five that they had a married woman
+               among them, and that she should not return the next morning. Being the middle of the
+               week, and not the end, she had to go without her wages for that week. Romance was not
+               part or parcel of Madame’s establishment. Her law was as the Medes and Persians,
+               which changed not. Little Lizzie’s future was no more to her than her past had
+               been—no more than that of another young thing in that work-room, who begged a friend,
+               each day, to bring her ever so little ardent spirits, at the half hour allotted to
+               their miserable dinner, lest she should fail in strength to finish the day’s work,
+               upon which so much depended. </p>
+            
+            <p> Oh! if the ladies who wore the gay robes manufactured in that room knew the tragedy
+               of those young lives, would they not be to them like the penance robes of which we
+               read, piercing, burning, torturing? </p>
+            
+            <p> There is still another class of girls, who tend in the large shops in New York. Are
+               they not better remunerated and lodged? We shall see. The additional dollar or two
+               added to their wages is offset by the necessity of their being always nicely
+               apparelled, and the necessity of a better lodging-house, and consequently a higher
+               price for board, so that unless they are fortunate enough to have a parent’s roof
+               over their heads, they will not, except in rare cases, where there is a special gift
+               as an accountant, or an artist-touch in the fingers, to twist a ribbon or frill a
+               lace, be able to save any more than the class of which I have been speaking. They are
+               allowed, however, by their employers, to purchase any article in the store at first
+               cost, which is something in their favor. </p>
+            
+            <p> But, you say, is there no bright side to this dark picture? Are there no cases in
+               which these girls battle bravely with penury? I have one in my mind now; a girl, I
+               should say a lady; one of nature’s ladies, with a face as refined and delicate as
+               that of any lady who bends over these pages; who has been through this harrowing
+               experience of the working-girl, and after years of patience, virtuous toil, has no
+               more at this day than when she began, i. e., her wages day by day. Of the wretched
+               places she has called <soCalled>home</soCalled>, I will not pain you by speaking. Of the rough words she
+               has borne, that she was powerless, through her poverty, to resent. Of the long walks
+               she has taken to obtain wages due, and failed to secure them at last. Of the weary,
+               wakeful nights, and heart-breaking days, borne with a heroism and trust in God, that
+               was truly sublime. Of the little remittances from time to time forwarded to old age
+               and penury, in <soCalled>the old country</soCalled>, when she herself was in want of comfortable
+               clothing; when she herself had no shelter in case of sickness, save the hospital or
+               the almshouse. Surely, such virtue and integrity, will have more enduring record than
+               in these pages. </p>
+            
+            <p> Humanity has not slept on this subject, though it has as yet accomplished little. A
+               boarding-house has been established in New York for working-girls, excellent in its
+               way, but intended mainly for those who <soCalled>have seen better days</soCalled>, and not for the most
+               needy class of which I have spoken. A noble institution, however, called <soCalled>The Working Woman’s Protective Union</soCalled>, has sprung up, for the benefit of this latter class, their
+               object being to find places in the country, for such of these girls as will leave the
+               overcrowded city, not as servants, but as operatives on sewing-machines, and to other
+               similar revenues of employment. Their places are secured before they are sent. The
+               person who engages them pays their expenses on leaving, and the consent of parents,
+               or guardians, or friends, is always obtained before they leave. A room is to be
+               connected with this institution, containing several sewing-machines, where gratuitous
+               instruction will be furnished to those who desire it. A lawyer of New York has
+               generously volunteered his services also, to collect the too tardy wages of these
+               girls, due from flinty-hearted employers. Many of the girls who have applied here are
+               under fifteen. At first, they utterly refused to go into the country, which to them
+               was only another name for dullness; even preferring to wander up and down the streets
+               of the city, half-fed and half-clothed, in search of employment, than to leave its
+               dear kaleidoscope delights. But after a little, when letters came from some who had
+               gone, describing in glowing terms, their pleasant homes; the wages that one could
+               live and save money on; their kind treatment; the good, wholesome food and fresh air;
+               their hearty, jolly country fun; and more than all, when it was announced that one of
+               their number had actually married an ex-governor, the matter took another aspect.
+               And, though all may not marry governors, and some may not marry at all; it still
+               remains, that inducing them to go to the country is striking a brave blow at the root
+               of the evil; for we all know, that human strength and human virtue have their limits;
+               and the dreadful pressure of temptations and present ease, upon the discouragement,
+               poverty and friendlessness of the working-girls of New York, must be gratifying to
+               the devil. I do not hesitate to say, that there is no institution of the present day,
+               more worthy to be sustained, or that more imperatively challenges the good works and
+               good wishes of the benevolent, than <soCalled>The New York Working Woman’s Protective Union</soCalled>.
+               May God speed it! </p>
+            <note><bibl><title level="j">New York Ledger</title><date when="1867-01-26"/></bibl> and
+                     <bibl><title level="m">Folly As It Flies</title><date when="1868"/></bibl>. Presented here in the lengthier version as published in <title level="m">Folly As It Flies</title>.</note>
+         </div>
+         <div type="article">
+         <head>Lady Lecturers</head>
+            <p>As I have always declined all requests to to lecture, or to speak in public, I may be allowed to make a few remarks on the treatment of those who do.</p>
+            <p>To begin with, can anybody tell me why reporters, in making mention of lady speakers, always consider it to be necessary to report, fully and <emph>firstly</emph> the dresses worn by them? When John Jones or Senator Rouser frees his mind in public, we are left in painful ignorance of the color and fit of his pants, coat, necktie, and vest—and worse still, the shape of his boots. This seems to me a great omission. How can we possibly judge of his oratorical powers, of the strength or weakness of his logic, or of his fitness in any way to mount the platform, when these important points are left unsolved to our feeble feminine imaginations? For one, I respectfully request reporters to ease my mind on these subjects—to tell me decidedly whether a dress, or a frock-coat, or a bob-tailed jacket was worn by these masculine orators; whether their pants had a stripe down the side, and whether the dress lapels of their coats were faced with silk, or disappointed the anxious and inquiring eye of the public by presenting only a broadcloth surface. I have looked in vain for any satisfaction on these points.</p>
+            <p>I propose that the present staff of male reporters should be remodelled, and that some enterprising journal should send to Paris for the man-milliner Worth, in order that this necessary branch of reportorial business be more minutely and correctly attended to.</p>
+            <p>Speaking of reporters, I was present the other night at a female-suffrage meeting, where many distinguished men made eloquent speeches in favor thereof. At the reporters’ table sat two young lady reporters side by side with the brethren of the same craft. Truly, remarked I to my companion, it is very well to plead for women’s rights, but more delicious to me is the sight of those two girls <emph>taking</emph> them! But, rejoined my cautious male friend, you see, Fanny, a woman couldn’t go to report a rat-fight, or a prize-fight, or a dog-fight. <emph>But</emph>, replied I, just let the women go <soCalled>marching on</soCalled> as they have begun, and there will soon <emph>be</emph> no rat-fights, dog-fights, or prize-fights to report. It will appear from this, that I believe in the woman <emph>that is to be</emph>. I do—although she has as yet had to struggle with both hands tied, and then had her ears boxed for not doing more execution. Cut the string, gentlemen, and see what you shall see! <q>Pooh! you are afraid</q> to knock that chip off our shoulder.</p>
+            <p>How strange it all seems to me, the more I ponder it, that men can’t, or don’t, or won’t see that woman’s enlightenment is a man’s millenium. <q>My wife don’t understand so and so, and it’s no use talking to her.</q>—<q>My wife will have just so many dresses, and don’t care for anything else.</q>—<q>My wife won’t look after my children, but leaves them to nurses, she is so fond of pleasure</q>. So it would seem that these Adams and the <soCalled>wife thou gavest to be with me</soCalled>, even now find their respective and flowery Edens full of thorns, even <emph>without</emph> that serpent, female suffrage, whose slimy tale is so deprecated.</p>
+            <p>Put <emph>this</emph> in the crown of your hats, gentlemen! <emph>A fool of either sex is the hardest animal to drive that ever required a bit. Better one who jumps a fence now and then, than your sulky, stupid donkey, whose rhinoceros back feels neither pat or goad.</emph></p>
+            <note><bibl><title level="j">New York Ledger</title><date when="1870-06-18"/></bibl></note>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

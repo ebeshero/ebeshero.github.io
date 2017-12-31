@@ -1,0 +1,79 @@
+
+head {
+    background-color:#E2D308;
+    color:black}
+    
+body {background-color:#EFEAAD; 
+      color:black}
+
+div#list {background-color:#E2D308; color:black; max-width:50%; margin:auto;}
+div#contact {background-color:#EFEAAD; color:black; margin:auto}
+
+hr {color:black}
+
+img.displayed {display:block; margin-left:auto; margin-right:auto}
+
+img.CMPhoto {height: 60%; width: 60%;}
+img.LHPhoto {height: 60%; width: 60%;}
+img.ASPhoto{height: 60%; width: 60%;}
+img.JWJPhoto{height: 60%; width: 60%;}
+img.ABPhoto{height: 60%; width: 60%;}
+img.ELNPhoto{height: 60%; width: 60%;}
+img.EPPhoto{height: 60%; width: 60%;}
+
+div#McKayFlex{display:flex; justify-content:space-between; align-items:center; flex:2}
+div#McKayPhoto {flex:1}
+div#McKayBio {flex:1;}
+
+div#HughesFlex{display:flex; justify-content:space-between; align-items:center; flex:2}
+div#HughesPhoto {flex:1}
+div#HughesBio {flex:1;}
+
+div#SpencerFlex{display:flex; justify-content:space-between; align-items:center; flex:2}
+div#SpencerPhoto {flex:1}
+div#SpencerBio {flex:1;}
+
+div#JohnsonFlex{display:flex; justify-content:space-between; align-items:center; flex:2}
+div#JohnsonPhoto {flex:1}
+div#JohnsonBio {flex:1;}
+
+div#BontempsFlex{display:flex; justify-content:space-between; align-items:center; flex:2}
+div#BontempsPhoto {flex:1}
+div#BontempsBio {flex:1;}
+
+div#NewsomeFlex{display:flex; justify-content:space-between; align-items:center; flex:2}
+div#NewsomePhoto {flex:1}
+div#NewsomeBio {flex:1;}
+
+
+div#PopelFlex{display:flex; justify-content:space-between; align-items:center; flex:2}
+div#PopelPhoto {flex:1}
+div#PopelBio {flex:1;}
+
+span.comma.on {background-color:purple}
+span.period.on {background-color:yellow}
+span.semicolon.on {background-color:green}
+span.colon.on {background-color:blue}
+span.open_parenthesis.on {background-color:pink}
+span.closed_parenthesis.on {background-color:pink}
+span.exclamation_point.on {background-color:red}
+span.question_mark.on {background-color:orange}
+span.dash.on {background-color:white}
+
+span.CommasToggle {background-color:purple}
+span.PeriodsToggle {background-color:yellow}
+span.SemicolonsToggle  {background-color:green}
+span.ColonsToggle {background-color:blue}
+span.Open_PsToggle {background-color:pink}
+span.Closed_PsToggle  {background-color:pink}
+span.Exclamation_PointsToggle {background-color:red}
+span.Question_MarksToggle {background-color:orange}
+span.DashesToggle {background-color:white}
+
+span.metaphor.on {color:green}
+span.simile.on {color:blue}
+span.personification.on {color:red}
+
+span.MetaphorsToggle {color:green}
+span.SimilesToggle {color:blue}
+span.PersonToggle {color:red}

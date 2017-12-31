@@ -1,0 +1,895 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="explain.css" />
+        <title>Explain Git Shell</title>
+    </head>
+
+
+
+    <body>
+        <!--#include virtual="topAuthorRJP43.html" -->
+        <h1><span class="banner">Guide to Git Shell:</span></h1>
+        <h2>Git and GitHub at command line</h2>
+        <div id="quickRef">
+            <h3>Quick Reference:</h3> The Basics:<ul>
+                <li><a href="#terms">Key Terms</a></li>
+                <li><a href="#account">Getting Started</a></li>
+                <li><a href="#repo">Repositories: Creating, Cloning, Adding Collaborators</a></li>
+                <li><a href="#nav">Working With Directories</a></li>
+                <li><a href="#issue">GitHub as Social Media: Issues and Wikis</a></li>
+                <li><a href="#cheatSheet">Common Git Commands</a></li>
+            </ul> Advanced Project Management: <ul>
+                <li><a href="#trouble">Troubleshooting: Merge Conflicts and Bad Commits</a></li>
+                <li><a href="#branch">Branches: Creating and Deleting</a></li>
+                <li><a href="#fork">Forks: Creating and Maintaining</a></li>
+            </ul>
+        </div>
+        <h3>What is Git? And why do we use it?</h3>
+        <p><!--ebb: Adding before Day 2 of class, 2016-01-06-->When we work together on a computer file, we need a way to save it that helps to keep track of each change made to it,
+        so our work is stored safely and so we do not create many different copies of the same file and get confused trying to figure out
+        which is the most current or the best one to keep. When we are working on coding projects, alone or in groups, we need to share our files in <q><strong>the cloud</strong></q>, or a shared internet directory, and we also need to keep track of each stage of the coding process, the changes we made on our own <q><strong>local</strong></q> computers before sharing with the group. Sometimes we have to go back and restore something we did in an early stage that we deleted later. Each saved stage of a file’s existence is a <dfn>version</dfn>, and there are a number of software tools available to store safely all those versions that we care about. Some of these tools are more thorough and reliable, safer to use than others, and Git is probably the most reliable and very widely used in the coding community, because of its distinctive way of storing all local changes ever made to a file.</p>
+        <p>Git is a <dfn>version control system</dfn>, or a system designed to manage changes to
+            computer files by storing a memory of each version they have taken over time. Some version control systems
+            (like Dropbox) do this in a <dfn>centralized</dfn> way by keeping one master copy of a
+            file and storing all history of its changes in a single location in the cloud
+            (remotely). In Dropbox, if two users share a file directory, and each person attempts to change the same file, they each make a change locally, but run into a problem if they try to save their file in the same shared file location in the Dropbox cloud. 
+            If they save changes at around the same time, the centralized system creates a copy of one of the files
+            with an altered file name (usually by putting a (1) or a (2) at the end of the original
+            filename in Dropbox), and the owners of the directory must then decide which version to
+            keep or how best to reconcile the two versions. Git, by contrast, would record the
+            differences between the files as a new state of the file’s existence, and that is
+            because it is a <dfn>distributed</dfn> or <dfn>decentralized</dfn> version control
+            system, a system in which each storage repository carries its own distinct history.
+            People who collaborate on a project upload and download shared versions of files from a
+            web-based storage space called a <dfn>remote origin repository</dfn>, but when they work
+            with those remote files they create copies of them on their own computers in a location
+            known as a <dfn>master repository</dfn>, and Git manages information about their local
+            version history as well as their remote history.</p>
+        <p>Git basically tracks each change you have deliberately <dfn>committed</dfn> to a
+            directory, like taking a set of snapshots to record the condition of each significant
+            state change that you record every time you <dfn>make a commit</dfn>. Every time you
+                <dfn>commit</dfn> (or save) the state of your project with Git, it basically takes a
+            picture of what all your files look like at that moment and stores a reference to that
+            snapshot. To be efficient, if files have not changed, Git doesn’t store the file again,
+            just a link to the previous identical file it has already stored. Advanced Git users may
+                <em>quite deliberately</em> try to keep their local working repository different
+            from the shared remote repository because they are working on something unstable that
+            may not be usable by their team yet. When such an advanced user is finally ready to
+            commit a change to the remote repository, their team members may review and reject the
+            commit if they find something wrong with it. Git connects multiple local repositories
+            but preserves each one’s distinct version history, and when GitHub users push their
+            local repository files to a remote repository, they make it possible for other GitHub
+            users to <dfn>pull in</dfn> those files and continue to work with them, giving them new
+            homes and local histories. The way in which Git users interact with each other and make
+            files available through remote repositories is sometimes described as a <dfn>web of
+                trust</dfn>, in which files can be developed in multiple locations and shared with
+            others based on their merit, and can be denied or rejected when they cause problems.</p>
+        <p>So let’s say you and a team member are both updating the same XML document inside of your
+            shared repository. You make your changes, save them, and upload them back to the shared
+            repository. The problem, for most VCSs, comes when your team member is working on the
+            same document as you at the same time. One of you is about to have your work
+            overwritten; however, Git keeps that from happening. You and your fellow team member can
+            each upload your revisions to the same document, and Git will save two versions of the
+            file. If you both were working on different parts of the same document Git will
+            automatically <dfn>merge</dfn> your changes together without losing any work along the
+            way. If you both happen to edit the exact same segment of code Git will issue a
+                <dfn>merge conflict</dfn> to point out where the two files differ allowing you and
+            your team to decide what version to keep. You can even revert to an earlier version at
+            any time, relying on the <q>snapshot</q> that Git preserved of every change ever
+            committed by all project collaborators.</p>
+        <p>One of the most important aspects of Git is its emphasis on local operation. Git doesn’t
+            need to go out to the server to get the history of a project and display it for you – it
+            simply reads it directly from your local computer. This means you see the project
+            history almost instantly, without having to wait for server network lag. This also means
+            that there is very little you can’t do if you’re offline. When you manage a project
+            using Git, you keep copies of all the project files on both your local machine and the
+            online GitHub server. You work on your local machine, periodically <dfn>pushing</dfn>
+            your changes onto the server so they’ll be accessible to your project partners, and
+            periodically <dfn>pulling</dfn> changes made by your project team from the server to
+            your local machine. So as long as you have recently pulled in any changes you can work
+            offline until you are ready to push your changes. For more information regarding what
+            Git is and the benefits of using Git please visit the online version of <a
+                href="http://git-scm.com/" target="_blank">Pro Git</a>, a Git how-to guide.</p>
+        <h4>Why use Git Shell (command line)?</h4>
+        <p>Unlike the Graphical User Interfaces (GUIs), the command line (sometimes called the
+                <dfn>shell</dfn> or <dfn>terminal</dfn>) is the only place you can take advantage of
+            all the functions Git has to offer. The GUIs only implement the simplistic functionality
+            of Git as a means to use Git at the most basic level. For many of us the command line is
+            strange and unfamiliar, but it used to be the main way that people interacted with
+            computers before GUIs came to dominate the computer experience. The command line is a
+            place where people can work more freely and have many powers to process files, powers
+            that are usually not available or far more difficult to access in software GUI
+            interfaces. Think of the command line as a way to navigate and work with your computer’s
+            files and systems by typing commands (strings of text) at prompts, instead of using the
+            mouse. GitHub offers a helpful, <a href="http://try.github.io/levels/1/challenges/1"
+                target="_blank">interactive tutorial</a> on using the Git command-line interface. To
+            learn more about the power tools you can work with at command line, see Lifehacker’s <a
+                href="http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything"
+                    ><q>A Command Line Primer for Beginners</q></a>. </p>
+        <h3 id="terms">Basic Terms for Understanding Git and GitHub</h3>
+        <!-- RJP:2016-08-26: Needs edited to correspond with edits made in first few paragraphs -->
+        <p>Below is a list of key terms you will need to understand while using Git and GitHub. Each
+            of these terms will be discussed in greater detail throughout this tutorial, but think
+            of this as your quick reference guide to the basics.</p>
+        <ul style="list-style-type:none">
+            <li><dfn><strong>Repository</strong></dfn> (repo): a project’s folder. A repository
+                contains all of the project files (including documentation), and stores each file’s
+                revision history. Repositories can have multiple collaborators and can be either
+                public or private.</li>
+            <li><dfn><strong>GitHub</strong></dfn>: web-based Git repository hosting service. It
+                offers all of the distributed revision control and source code management (SCM)
+                functionality of Git as well as its own social network features. This is the web
+                interface for the remote, shared version of your project(s). Think of this as your
+                projects’ central hub where project collaborators are able to discuss development
+                and share project files. <a href="https://github.com/" target="_blank"
+                    >GitHub.com</a></li>
+            <li><dfn><strong>Clone</strong></dfn>: a copy of a repository that lives on your
+                computer instead of on GitHub’s server, or the act of making that copy. With your
+                clone you can edit the files in &lt;oXygen/&gt; and use Git to keep track of your
+                changes without having to be online. It is, however, connected to the remote version
+                so that changes can be synced between the two. You can push your local changes to
+                the remote to keep them synced when you’re online.</li>
+            <li><dfn><strong>Remote</strong></dfn>: this is the version of a repo that is hosted on
+                GitHub’s server. It can be connected to local clones so that changes can be
+                synced.</li>
+            <li><dfn><strong>Working Directory</strong></dfn>: your local version of files on your
+                computer, where you make changes. All Git files have a three part working directory:
+                    <dfn>unstaged</dfn>, <dfn>staged</dfn>, <dfn>committed</dfn>. If you make edits
+                to a repo those changes sit unstaged until you have consciously added those changes
+                to the staging area. Staging changes allows you to review before committing.</li>
+            <li><dfn><strong>Commit</strong></dfn>: a.k.a. <q>revision</q>, this is an individual
+                change to a file (or set of files). It’s like when you save a file, except with Git,
+                every time you save it creates a unique ID <span class="smaller">(the <q>SHA</q> or
+                        <q>hash</q>)</span> that allows you to keep record of what changes were made
+                when and by who. Commits usually contain a commit message which is a brief
+                description of what changes were made.</li>
+            <li><dfn><strong>Pushing</strong></dfn>: refers to sending your committed changes to a
+                remote repository such as GitHub.com. For instance, if you change something locally,
+                you’d want to then push those changes so that others may access them.</li>
+            <li><dfn><strong>Pulling</strong></dfn>: is the combined process of
+                        <dfn><strong>fetching</strong></dfn> (getting the latest changes from a
+                remote repo without merging them in order to compare them to the code residing on
+                your local machine) and <dfn><strong>merging</strong></dfn> (applying the changes
+                from one file to another). For instance, if someone has edited the remote file
+                you’re both working on, you’ll want to pull in those changes to your local copy so
+                that it’s up to date.</li>
+            <!--<li><dfn><strong></strong></dfn>:</li>-->
+            <!--RJP:2016-08-24: We should add more as we see necessary. I didn’t want to overload with terms especially since each of these terms comes up in greater detail throughout the rest of the tutorial, but we could add more to this list as we see necessary. -->
+        </ul>
+        <p><span class="smaller">The above definitions are compiled from the following three sites,
+                which can be visited for definitions of even more Git terms: <a
+                    href="https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html"
+                    target="_blank">kernel.org</a>, <a
+                    href="https://betterexplained.com/articles/aha-moments-when-learning-git/"
+                    target="_blank">betterexplained.com</a>, and <a
+                    href="https://help.github.com/articles/github-glossary/" target="_blank"
+                    >help.github.com</a></span></p>
+        <br />
+        <h1 id="account">Let’s get started!</h1>
+        <h3>How to create a GitHub account:</h3>
+        <p>Because GitHub is a social networking site, where people post their code so that it will
+            be accessible to others, using it requires creating an account. You can create a free
+            account by navigating to <a href="https://www.github.com" target="_blank"
+            >github.com</a>. You are not required to create an account using your pitt.edu address;
+            however, associating an educational email address with your account may give you
+            additional benefits <span class="smaller">(including five free private repos)</span>. To
+            create your account, enter a user name, email address, and password and then click the
+            green button that says <q>Sign up for GitHub</q>. Be sure to select the free option, and
+            then click the green button that says <q>Finish sign up</q>. After creating your
+            account, GitHub will prompt you to verify your email address and decide on the frequency
+            of GitHub email notifications. Make sure to follow the link in the verification email.
+            It is important while you are enrolled in this coding course that you regularly checking
+            GitHub so you may decide to allow all notifications <span class="smaller">(knowing you
+                can change this later)</span>. You will then be directed back to your account.</p>
+        <p><img src="git_shell/creatingAccount_05.jpg" alt="Creating An Account" /></p>
+        <p><strong>Note: We have highlighted some recommended features of your GitHub account that
+                you should take some time exploring further.</strong></p>
+        <p><img src="git_shell/creatingAccount_07.jpg" alt="Creating An Account" /></p>
+        <h3 id="setup">Downloading Git Shell</h3>
+        <p>Git is available for <a
+                href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank"
+                >download</a> on all three of these platforms: Linux, Mac, and Windows. To download
+            Git on your local machine follow the instructions available on the <a
+                href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank"
+                >git-scm.com</a> site. Since platform downloads differ we are not going to go
+            through a step-by-step installation process.</p>
+        <p id="windows">Our suggested settings for a Windows installation are as follows:</p>
+        <ul>
+            <li>When the download asks about <q>Adjusting your PATH environment</q>, we recommend
+                selecting <q>Use Git Bash only</q> as it provides an unmodified PATH.</li>
+            <li>If the download asks about <q>Configuring the line ending conversations</q>, we
+                recommend choosing the option to <q>Checkout Windows-style, commit Unix-style line
+                    endings</q>.</li>
+            <li>For ALL other settings choose the default selection.</li>
+            <li>Once installation is complete you will be asked if you want a desktop shortcut for
+                    <q>Git Bash</q>; make sure the box to create this shortcut is checked.</li>
+        </ul>
+        <p id="mac">Installation on a Mac is much simpler. For a detailed installation guide, we
+            suggest following <a
+                href="http://burnedpixel.com/blog/setting-up-git-and-github-on-your-mac/"
+                target="_blank">this tutorial</a> for assistance while setting up Git on a Mac.</p>
+        <h4>After installation:</h4>
+        <p>Now that you have Git on your computer you can access it through command line. On a
+            Windows installation you will be using the <q>Git Bash command shell</q> and on a Mac
+            installation you will be using <q>Terminal</q>.</p>
+        <p>The key thing to working with Git is always knowing where to find your files in the
+            Finder (on Mac) / File Explorer (on Windows) and in the Terminal/Git Bash Shell. So you
+            need to save directories in a place where you can easily see them. In your Finder/File
+            Explorer, make yourself a <q>GitHub</q> directory that lives inside <q>Documents</q> (or
+            on your desktop if that is a more logical place for you). Inside the <q>GitHub</q>
+            directory you will clone each of your project repositories. In the Terminal/Git Bash
+            Shell), you can navigate to your <q>GitHub</q> directory from the computer's root by
+            typing: <code>cd Documents/GitHub/</code> if stored in documents or <code>cd
+                Desktop/GitHub/</code> if stored on your desktop <code>cd</code> means "change
+            directories" and in the above command you are stepping down into Documents (or Desktop)
+            and into the <q>GitHub</q> folder. Use <code>ls</code> to list out the contents of the
+            directory you have stepped down into.</p>
+        <p>When you first use your command shell you will need to configure Git to recognize you
+            local computer as a correspondent to your remote GitHub account. Use the following
+            commands to configure your local Git installation (these command can be done in
+            Terminal/Git Bash Shell without needing to specify a directory):</p>
+        <span class="code">git config --global user.name "YOUR NAME"</span>
+        <br />
+        <span class="code">git config --global user.email "YOUR EMAIL ADDRESS"</span>
+        <p>Be sure to use the same email address you used when signing up for your GitHub account.
+            This will add your name and email to a file named <dfn>.gitconfig</dfn> in your home
+            directory. To verify that you entered your information correctly use the command:</p>
+        <span class="code">git config --list</span>. <p>For more information on the <code>git
+                config</code> command visit <a href="https://git-scm.com/docs/git-config"
+                target="_blank">the Pro Git guide on configuration</a>. Note: in order to cache your
+            username and password, you may need to follow further directions found on <a
+                href=" https://help.github.com/articles/caching-your-github-password-in-git/#platform-all"
+                target="_blank">help.github.com</a>. To test if your information has been cached try
+            pushing to remote repositories that you have been added as a collaborator to on
+            GitHub.</p>
+        <h3 id="repo">Creating a Repository</h3>
+        <h4>What is a repo?</h4>
+        <p>Projects on GitHub are stored in repos (short for repositories), which you can think of
+            as equivalent to folders or directories on your computer. Repos can contain plain files
+            and subdirectories, so you can use the subdirectories to organize your project files
+            according to whatever hierarchy makes sense to you. Initially you may want to put all of
+            your project files into the main repo directory, and as you add additional files and
+            your project becomes more complex, you can think about creating subdirectories and
+            distributing the files among them according to file type or other criteria. Your project
+            mentor will advise you about how to structure the directory space for your project.</p>
+        <p>Your remote project repo will reside on the GitHub server, which is the remote server
+            that is accessible to others. It is possible to edit files directly on the server using
+            the GitHub interface, but the typical interaction with GitHub is to work on copies of
+            the project files <span class="smaller">a.k.a. repo clone</span> on your own machine and
+            then, when you are satisfied with the state of your work, to push (upload) your new or
+            modified files to the remote server so that your project partners will have access to
+            them. Similarly, when your project partners push their changes to the server, those
+            won’t be reflected in the copies on your local machine until you pull (download) them.
+            The process of uploading files you have modified from your local machine to the GitHub
+            server, and of downloading from the GitHub server files that your project partners may
+            have developed or modified and uploaded, is called syncing (short for synchronization).
+            Syncing with command line requires two basic commands: <code>git pull</code> and
+                <code>git push</code>. The command <code>git pull</code> can be broken down into
+                <code>git fetch</code> and <code>git merge</code>, but we will discuss the
+            distinction later in this tutorial. When you begin a work session, you should start by
+            syncing your local project space with the server using <code>git pull</code>, so that
+            you’ll catch up on any changes other project contributors have made. When you reach a
+            stopping point in your work <span class="smaller">(when you have new or updated files
+                that your project partners need to see)</span>, you should commit (<code>git
+                commit</code>) and sync again, but this time using <code>git push</code>. You don’t
+            have to push after every keystroke, but you should commit regularly and push whenever
+            you reach a reasonably stable intermediate point to which your project partners should
+            have access.</p>
+        <h4>How to create a repo:</h4>
+        <p>The best way to initiate a new repo, for our group projects, will be to create it through
+            the online web interface. Easy to follow instructions on how to do this can be found <a
+                href="https://help.github.com/articles/create-a-repo/" target="_blank">on
+                help.github.com</a>. If a repo is created through the web interface it will need to
+            be <a href="#cloning">cloned</a> in order for you to access it and begin working on your
+            local computer. Only one member of your project team will need to create the project
+            repo, and all other team members will <a href="#cloning">clone</a> from that repo.</p>
+        <!-- rjp:2016-1-15: we need to test how to link local repos created with "git init" to the remote GitHub server. git remote add [shortname] [url] seems to be what all of the documentation point to; however, when I attempted to do this it didn’t work (for the url I copy and pasted in the HTTP for my GitHub profile) -->
+        <h3 id="collaborators">Adding and Deleting project collaborators</h3>
+        <p>Alongside version control, one of GitHub’s most useful features is that it supports
+            collaboration. Forget the days of emailing a file back and forth between group members
+            as it is updated, or waiting to edit a document for fear of losing simultaneous edits.
+            GitHub allows multiple collaborators to manage a repository. The only way to handle
+            collaborators is through the web interface:</p>
+        <ol>
+            <li>Go to <a href="https://www.github.com">https://www.github.com</a></li>
+            <li>Sign in and navigate to your profile. <p><img src="git_shell/addCollaborator_00.jpg"
+                        alt="Adding a Collaborator" /></p>
+            </li>
+            <li>Choose the repositories tab from your profile.</li>
+            <li>Select the repo to which you want to add a collaborator.</li>
+            <li>Select <q>Settings</q> at the top of the screen.</li>
+            <li>On the Settings page, move to the menu on the left side of the page, and select
+                    <q>Collaborators</q>. <p><img src="git_shell/addCollaborator_03.jpg"
+                        alt="Adding a Collaborator" /></p></li>
+            <li>Type the user name of the collaborator you want to add. (This means that you’ll need
+                to ask your collaborators to tell you their GitHub user names in advance.) As you
+                type, a drop down list will be generated matching what you have typed. Select the
+                user you would like to add from the list. Then click Add collaborator.</li>
+        </ol>
+        <p>In the future, if collaborators need to be removed simply navigate this same path and
+            there will be an option beside each collaborator to remove them.</p>
+        <h3 id="cloning">Cloning</h3>
+        <p>As we explain above, the way you work on your project (create files, edit files, delete
+            files) is to work on them on your local machine and then sync any modifications to the
+            GitHub server, so that they will be accessible to your project partners. The Git term
+            for copying a project from the GitHub server to your computer initially so that you can
+            begin to work on it locally is called <dfn>cloning</dfn>. You only have to clone a
+            project once, when you first begin to work on it. <dfn>Cloning</dfn> is the copying of a
+            project already in existence on the GitHub server to your local computer so that you can
+            begin to work on it; whereas, syncing is exchanging updates between your local computer
+            and the GitHub server after you’ve already cloned the repo and established a local copy
+            in which you can work. This working model separates saving your work to your local
+            computer <span class="smaller">(which you should do <strong>frequently</strong>)</span>
+            and syncing your local clone of the repo with the master copy on the GitHub server, a
+            design that protects you from uploading mistakes to the server. That is, you do your
+            development on your local machine, where only you have access to the files, and when
+            you’re ready to share your work with your project partners, you sync (upload) it
+            explicitly to the server.</p>
+        <h4 id="nav">Navigating Directories</h4>
+        <p>Before you clone a repo, you need to understand how to navigate between directories using
+            Git Shell. To begin you will open your Git Shell (command line / terminal interface with
+            Git). We explain in detail how to open this <a href="#openGit">above</a>. When opening
+            Git Shell from a shortcut link you will be placed in the main configuration folder you
+            set up when installing Git. The following image explains how you navigate between
+            directories:</p>
+        <div class="commandImg">
+            <img src="git_shell/navDirectory.jpg" alt="navigating through directories" />
+        </div>
+        <h4>How to clone an existing repo:</h4>
+        <p>Again, to begin, open your Git Shell (command line / terminal interface). We explain in
+            detail how to open this <a href="#openGit">above</a>.</p>
+        <p>To clone a repo from the remote online server using command line you use one easy
+            command: <code>git clone</code>. After <code>git clone</code> you copy the URL of the
+            repo you wish to clone, a space, and then a name for the folder where the cloned repo
+            will exist.</p>
+        <div class="commandImg">
+            <img src="git_shell/cloningArepo.jpg" alt="cloning a repo" />
+        </div>
+        <p>This creates a copy of the entire repository on your local machine and adds the original
+            location as a remote so you can pull from it again and push to it if you have
+            permissions. Note: you will only be able to directly push changes to the GitHub server
+            if you have been added as a project collaborator. Later in this tutorial we will discuss
+            how you can contribute to other GitHub projects that you are not a collaborator on via
+                    <dfn><a href="#fork">forking</a></dfn> and a <dfn>pull request</dfn>.</p>
+        <h3 id="working">Basic Git workflow:</h3>
+        <p>When making changes to a repo it is important to remember the three parts or your Git
+            repo on your local machine: <dfn>unstaged</dfn>, <dfn>staged</dfn>,
+            <dfn>committed</dfn>. If you make edits to a repo those changes sit unstaged until you
+            have consciously added those changes to the staging area. This mean you could modify a
+            file multiple times without documenting every single keystroke before asking Git to
+            track those changes. Once you have added changes to the staging area Git will monitor if
+            any new changes differ from what was added and mark those changes as unstaged. Staging
+            changes allows you to review before committing.</p>
+        <p><img src="git_shell/gitWorkflow.jpg" alt="git workflow" /></p>
+        <ol>
+            <li>Before you begin working you <strong>ALWAYS</strong> need to be sure your local repo
+                is up-to-date with the remote GitHub repo. To do this we can either use the commands
+                    <code>git fetch</code> and <code>git merge</code> or the single command
+                    <code>git pull</code>. By using <code>git fetch</code> and <code>git
+                    merge</code> you can first see the changes that are being brought into your
+                local repo (or <dfn>fetched</dfn>) from the remote repo. This allows for you to,
+                upon review, make the decision to <dfn>merge</dfn> those remote changes with your
+                local repo. The command <code>git pull</code> combines the two previously mentioned
+                commands into one step, which can be convenient yet dangerous if there is a
+                possibility of the changes coming in to conflict with files you may have edited
+                without committing. <p><img src="git_shell/gitFetchANDgitMerge.jpg"
+                        alt="git fetch and git merge" />
+                    <span class="smaller">Some believe it is best practice to review all of the
+                        remote files you are bringing into your local repo before merging. A <a
+                            href="http://longair.net/blog/2009/04/16/git-fetch-and-merge/"
+                            target="_blank">detailed argument</a> for always using <code>git
+                            fetch</code> and <code>git merge</code> over <code>git pull</code> has
+                        been made.</span></p>
+            </li>
+            <li>Begin working by modifying files in your <dfn>working directory</dfn>. When you want
+                to change a file, edit your local copy. You can do this by accessing the files on
+                your local machine, like you would any file stored normally on your computer, and
+                making changes. Be sure new files get saved in the file location configured with
+                Git.</li>
+            <li>After you have files created in your <dfn>working directory</dfn> you need to inform
+                Git that you saved the files in the git configured directory with purpose and tell
+                git to take a snapshot of the changes. Unlike other VCSs, Git has something called
+                the <q>staging area</q> or <q>index</q>. This is an intermediate area where commits
+                can be formatted and reviewed before completing the commit. To stage a file, use the
+                command <code>git add</code>. If you want to stage all of the changed or newly
+                created and deleted files stored in the working directory you can type <code>git add
+                    -A</code>. To specify that you only want to stage a certain type of file you use
+                an asterisk. For example: to stage all of the .html files you type <code>git add
+                    *.html</code>. If there is only a single file you want to stage you can type the
+                filename after the command. For example: <code>git add index.html</code>. <p><img
+                        src="git_shell/gitAdd.jpg" alt="staging files" /></p> As you are working on
+                files it is important to always remember that although you are working locally you
+                will need to check frequently with your project team to be sure new changes they may
+                have made will not cause the files you are editing a merge conflict. For example:
+                you are editing an XML transcription and one of your team members is going through
+                all of the XML documents and replacing hyphens with the Unicode. Your partner edits
+                many portions of the same document you are working in and pushes those changes to
+                the GitHub repo. Since you’re not sure if those changes will cause a merge conflict
+                or not you need to store your changes without adding them to the staging area so you
+                can pull your partner’s changes in first. Git allows you to do this very simply with
+                the command <code>git stash</code>. This command stashes your changes outside of
+                your working directory while you pull in your partner’s remote changes. You then can
+                return your stashed files to your working directory and continue by adding your
+                changes to the staging area. For more information on <code>git stash</code> visit <a
+                    href="https://git-scm.com/docs/git-stash" target="_blank">the Pro Git guide on
+                    stashing</a></li>
+            <li>When you reach a point where you want to sum up the progress of your work in
+                preparation for sharing, you do a commit. This takes the files as they are in the
+                staging area and stores the staged snapshot permanently to your local Git directory.
+                This is done with the command <code>git commit</code>. To write a commit message
+                right inside of Git Shell type <code>git commit -m</code> followed by the commit
+                message in quotes. Git requires a commit message when committing. Think of commit
+                messages as the breadcrumbs of your project for yourself and your team members;
+                every commit message documents changes to the project with an author and time stamp.
+                        <p><img src="git_shell/gitCommit.jpg" alt="git commit" /></p> Writing good
+                commit messages matters when you work on a team, or even when you're working on your
+                own because each commit you make to your repository helps to generate a log of your
+                activities. Think about this as you're writing your commits, and check out <a
+                    href="http://chris.beams.io/posts/git-commit" target="_blank">this helpful
+                    guide</a> on how to write good commit messages!</li>
+            <li>Once you are ready to share your changes with the rest of your project team you need
+                to push your local changes to the remote GitHub server. This is done with the
+                command <code>git push</code>. <p><img src="git_shell/gitPush.jpg" alt="git push"
+                     /></p></li>
+        </ol>
+        <h3 id="issue">GitHub as Social Media: Issues and Wikis</h3>
+        <p>As discussed above, GitHub serves as a social media network that stores and talks to Git
+            repositories. The GitHub interface is useful for many aspects of project management. The
+            key parts of GitHub’s interface besides the remote storage of project files are the
+            issues boards, wikis, and data visualizations. <a target="_blank"
+                href="https://help.github.com/articles/about-github-wikis/">Wikis</a> and <a
+                href="https://guides.github.com/features/issues/" target="_blank">issues</a> are
+            often used in projects to manage tasks and communicate between project team members and
+            the GitHub community with project problems and updates. The data visualizations are
+            helpful in mining a project’s information on collaborators and development.</p>
+        <p>To create or comment on an issue navigate to the desired repo and click on the
+                <q>Issues</q> tab near the top of the page; notice there is also a tab for Wikis.
+            Issues and Wikis on GitHub are written in <dfn>Markdown Language</dfn>. In fact,
+                <dfn>markdown</dfn> is used for styling all forms of writing on the GitHub platform.
+            GitHub offers a <a href="https://guides.github.com/features/mastering-markdown/"
+                target="_blank">comprehensive guide to writing markdown</a> that we recommend you
+            review; however, when writing on the GitHub interface there are options similar to
+            Microsoft Word that can be toggled to have a specific styling applied to your text.</p>
+        <!--RJP:2016-09-29: Should add something here about GitHub pages and ability to host repos as websites. More info for further investigation https://help.github.com/categories/github-pages-basics/-->
+        <p>Besides project team communication, another important aspect of project management is
+            data preservation. Long-term preservation can be defined as the ability to provide
+            continued access to digital materials, or at least to the information contained in them,
+            indefinitely. A sustainable preservation program should address organizational issues,
+            technological concerns and the digital curation/data management process. Using Git and
+            GitHub already provides one means of data preservation; however, it is important to
+            realize that all of the data collected through the use of Git / GitHub is also important
+            to preserve alongside the literal files of your project. One option we have researched
+            to be viable for creating a backup of your Git and GitHub data is <a
+                href="https://backhub.co/" target="_blank">backhub.co</a>. Another nifty tool that
+            we recommend you update frequently is the <a href="https://archive.org/web/"
+                target="_blank">online digital archive of websites</a>. By adding updates to this
+            site you can go back and review previous saved versions of how your website(s) looked.
+            Besides data preservation it is important to also be able to mine your GitHub data. The
+            GitHub interface makes this really simple. In any repo, at the top of the page, there
+            are two tabs that are particularly useful for mining your GitHub data: <q>Pulse</q> and
+                <q>Graphs</q>. A repo’s <dfn>Pulse</dfn> visualizes the activity of the GitHub repo,
+            while <dfn>Graphs</dfn> visualize everything from specific user contributions to the
+            types of files stored in the repo. These visualizations can be useful when trying to
+            determine details about how the repo (and therefore project) grows and changes over
+            time.</p>
+        <h1 id="cheatSheet">Common Git Commands:</h1>
+        <p>We recommend our <a
+                href="https://github.com/ebeshero/DHClass-Hub/blob/master/Git_BasicCommands.md"
+                target="_blank">DHClass-Hub Quick Reference Guide</a>.</p>
+        <p>Here is a list of commands used most frequently, and some options to modify the results
+            of each command. Some of the commands listed here are associated with <a
+                href="#advanced">advanced project management</a> while others are more basic. For
+            commands to correct merge conflicts and bad commits please refer to our <a
+                href="#trouble">troubleshooting section</a>. We have not listed every possible
+            command; however we can recommend these sites to review more commands: <a
+                href="https://git-scm.com/docs" target="_blank">the Pro Git Guide</a>, <a
+                href="https://www.siteground.com/tutorials/git/commands.htm" target="_blank"
+                >siteground.com</a>, <a href="https://www.atlassian.com/git" target="_blank"
+                >atlassian.com</a>, and <a href="https://orga.cat/posts/most-useful-git-commands"
+                target="_blank">orga.cat</a>. Another really great thing about Git is that it has
+            been in existence since 2005 and is used widely among computer programers; therefore,
+            the resources on Git and Git commands are vast!</p>
+        <ul style="list-style-type:none">
+            <li><a href="https://git-scm.com/docs/git-help" target="_blank"><code>git
+                    help</code></a>: possibly the most useful Git command, this command allows you
+                to search the most common Git commands in the command/terminal shell. If you follow
+                this command with another command or concept <span class="smaller">(i.e.. <code>git
+                        help push</code>)</span> Git generates a html page detailing the command or
+                concept as well as possible options for its use.</li>
+            <li><a href="https://git-scm.com/docs/git-init" target="_blank"><code>git
+                    init</code></a>: initializes a git repository by creating the initial .git
+                directory in a new or in an existing project.</li>
+            <li><a href="https://git-scm.com/docs/git-clone" target="_blank"><code>git
+                    clone</code></a>: copies an existing GitHub repo to local machine.</li>
+            <li><a href="https://git-scm.com/docs/git-status" target="_blank"><code>git
+                        status</code></a>: checks the working directory to see if up-to-date with
+                the remote repo.</li>
+            <li><a href="https://git-scm.com/docs/git-add" target="_blank"><code>git add</code></a>:
+                a.k.a. staging changes, adds changes to staging area of the working directory. This
+                command is the first step in committing changes to your local version of the repo
+                before pushing them to the remote GitHub version of the repo. By adding
+                    <code>-A</code>
+                <span class="smaller">(<code>git add -A</code>)</span> Git adds, modifies, and
+                removes ALL entries to match the working directory. To specify that you only want to
+                stage a certain type of file you use an asterisk. <span class="smaller">For example:
+                    to stage all of the .html files you type <code>git add *.html</code>.</span> If
+                there is only a single file you want to stage you can type the filename after the
+                command. <span class="smaller">For example: <code>git add
+                index.html</code></span></li>
+            <li><a href="https://git-scm.com/docs/git-commit" target="_blank"><code>git
+                        commit</code></a>: tells Git to record the changes made to your version of
+                the repo. Every commit needs to have a message that explains what files have been
+                edited/added. After the command add <code>-m</code> and then the commit message in
+                quotes <span class="smaller">(<code>git commit -m "This is where your message
+                        goes"</code>)</span>. You can skip the command <code>git add</code> by using
+                    <code>git commit -a -m</code> followed by your commit message. However, best
+                practice is to add and commit in separate steps so you are aware of the files being
+                added before making the commit. If you ever find yourself annoyed with your own
+                commit message, before you push you can actually amend your commit using: <code>git
+                    commit --amend</code>. Don't use this after you've pushed (it's like revising
+                history then--it would tangle up everyone's repo histories to amend once you've
+                pushed).</li>
+            <li><a href="https://git-scm.com/docs/git-stash" target="_blank"><code>git
+                    stash</code></a>: used when you want to record the current changes to the
+                working directory, but want to go back to a clean working directory without forever
+                losing those changes and without adding them to the staging area. This command saves
+                your local modifications temporarily outside of your working directory and reverts
+                the working directory to match the last commit <span class="smaller">(typically used
+                    so you can pull in remote changes to a clean directory while avoiding possible
+                    merge conflicts and keeping your changes available)</span>. The modifications
+                stashed away by this command can be listed with <code>git stash list</code>,
+                inspected with <code>git stash show</code>, and restored (potentially on top of a
+                different commit) with <code>git stash apply</code>. </li>
+            <li><a href="https://git-scm.com/docs/git-pull" target="_blank"><code>git
+                    pull</code></a>: this command is made up of two other commands (<code>git
+                    fetch</code> and <code>git merge</code>) and is used to fetch the data from a
+                remote repository and merge it into your local computer’s version of the repository.
+                If working in a fork it is important to remember that changes are pulled from the
+                original remote repo the fork is made from: <code>git pull upstream master</code>.
+                When pulling from the original repo of a fork it is necessary to set that original
+                repo as a remote origin (called <q>upstream</q> in the previous example).
+                    <q>Master</q> refers to the branch of the original repo of which the changes are
+                being pulled from, and can be changed to any branch name of that original repo that
+                the desired changes reside in.</li>
+            <li><a href="https://git-scm.com/docs/git-remote" target="_blank"><code>git
+                        remote</code></a>: used to retrieve a list of remote repositories associated
+                with local repository. To create a new remote association use <code>git remote
+                    add</code> followed by a name for the remote branch (i.e. upstream) and then the
+                URL of the remote repo on GitHub. <code>git remote -v</code> displays a verbose list
+                of the associated remote repos with the remote URL after the repo name.</li>
+            <li><a href="https://git-scm.com/docs/git-push" target="_blank"><code>git
+                    push</code></a>: updates remote repos to match commits made on local machine. If
+                working in specific branches you can designate the branch name (that you wish to
+                push) after the command, or use <code>git push -all</code> to add commits from all
+                local branches.</li>
+            <li><a href="https://git-scm.com/docs/git-branch" target="_blank"><code>git
+                        branch</code></a>: used to work inside of branches. This command followed by
+                a branch name creates a new branch. For a list of both remote-tracking branches and
+                local branches use <code>git branch --list</code>. Frequently branches are used for
+                experimental development that may or may not be incorporated into the master branch
+                of the repo. Having these changes in a branch prevents the master branch from bad
+                commits and uncertain files.</li>
+            <li><a href="https://git-scm.com/docs/git-checkout" target="_blank"><code>git
+                        checkout</code></a>: followed by a branch name allows you to switch into the
+                working directory of a specific branch. </li>
+            <li><a href="https://git-scm.com/docs/git-diff" target="_blank"><code>git
+                    diff</code></a>: followed by the names of two branches allows you to compare the
+                differences between the two branches. For example: <code>git diff master
+                    development</code> will show the differences between the master branch and the
+                development branch. If you want to just get a list of the files changed between the
+                two branches you can change the command to <code>git diff --name-only</code> again
+                followed by the names of the two branches you wish to compare.</li>
+        </ul>
+        <h1 id="advanced">Advanced Project Management</h1>
+        <h3 id="trouble">Troubleshooting: Merge Conflicts and Bad Commits</h3>
+        <p>If you are reading this section you probably are at a fearful state of emergency with
+            your project repo due to a <dfn>merge conflict</dfn>. The first thing that you should
+            keep in mind however is that you can always undo the changes causing a conflict and go
+            back to the state before the conflict occurred. Another benefit of using Git over many
+            other VCSs is that a merge conflict will not bring your complete team to a halt or
+            cripple your remote project repository. This is because, in Git, conflicts can only
+            occur on a single user’s local machine. In Git, <dfn>merging</dfn> is the act of
+            integrating another branch into your current working branch: most often taking changes
+            from a remote branch and combining them with your current working directory on your
+            local machine. Typically Git can seamlessly integrate multiple changes from multiple
+            collaborators; yet, occasionally Git runs into a scenario where the changes overlap thus
+            causing a <dfn>merge conflict</dfn>.</p>
+        <p>When faced with a merge conflict, the first step is to understand what happened. Did one
+            of your team partners edit the same file on the same lines as you? Did they delete a
+            file that you modified? Did you both add a file with the same name? Using the command
+                <code>git status</code> will tell you where you have <q>unmerged paths</q> or
+            conflicts. The most common conflict occurs when one partner makes a change on a
+            particular line in a file, and a fellow team member makes a change on the exact same
+            line. Git does not automatically assume the last person to push changes is correct and
+            should over-write the other’s changes. When this sort of conflict occurs, Git writes a
+            special block into the file that contains the contents of both versions where the
+            conflict occurred. To complete this type of merge, use &lt;oXygen&gt; <span
+                class="smalelr">(or other text editor)</span> to resolve the conflict, then add the
+            file and commit it to complete the merge. In the file, Git automatically adds conflict
+            markers to the affected areas. A conflict-marked area begins with
+                <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> and ends with
+                <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>. The two conflicting blocks themselves are
+            divided by a <code>=======</code>. You have several options here. You can either keep
+            your changes, take your partner’s changes, or make a brand new change. Whatever you do,
+            you need to make sure to resolve the conflict such that the file makes sense, and
+            everyone is happy. The goal is to get the file to look exactly how you want it. You’ll
+            delete the conflict markers, and just type out a new change or remove the unwanted/wrong
+            lines. Once you have made those changes you can use <code>git add</code> and follow
+            through with making a new commit to push to the remote. Opening the file in your editor
+            and cleaning it up there is perfectly valid, but can be jarring and difficult to
+            distinguish the changes. Using a dedicated merge tool <span class="smaller">(like <a
+                    href="http://meldmerge.org/" target="_blank">Meld</a> or <a
+                    href="http://www.kaleidoscopeapp.com/" target="_blank">Kaleidoscope</a>)</span>
+            can make this easier <span class="smaller">(if you have one installed)</span>. You can
+            configure your tool of choice using the <code>git config</code> command. Consult your
+            tool’s documentation for detailed instructions. Then, in case of a conflict, you can
+            later invoke it by simply typing <code>git mergetool</code>.</p>
+        <p>Outside of the above solution there are a few other ways of fixing possible merge
+            conflicts and getting rid of bad commits. The need-to-know Git commands for merge
+            conflicts and bad commits based on the conflict and state of the local repo are:</p>
+        <ul>
+            <li><dfn><code><a target="_blank"
+                            href="https://www.git-tower.com/learn/git/ebook/en/command-line/branching-merging/stashing#start"
+                            >git stash</a></code></dfn>: this takes all the changes in your working
+                directory and saves them on a new clipboard. Leaves the local working directory
+                clean; you have no more local changes. Later, at any time, you can restore the
+                changes from that clipboard in your working directory and continue working where you
+                left off. To get a list of all your <q>stashes</q> use the command <code>git stash
+                    list</code>. When you’re ready to restore a saved Stash, you have two options:
+                use <code>git stash pop</code> to apply the latest <q>stash</q> and clear it from
+                your stash clipboard or use <code>git stash apply</code> followed by the stash name
+                to apply that specified <q>stash</q>. The second option keeps the stash on the
+                clipboard, and it can be deleted later via <code>git stash drop</code> followed by
+                the stash name. </li>
+            <li><dfn><code><a href="https://git-scm.com/docs/git-revert" target="_blank">git
+                            revert</a></code></dfn>: is used to undo a previous commit(s) by
+                introducing a new commit that reverses an earlier one. This doesn’t change the
+                project history, which makes it a <q>safe</q> operation for commits that have
+                already been published to a shared repository (i.e. the GitHub remote repo).</li>
+            <li><dfn><code><a href="https://git-scm.com/docs/git-reset" target="_blank">git
+                            reset</a></code></dfn>: is used to undo changes in your working
+                directory that haven’t been committed yet. If you do not want to loose your local
+                changes or the changes from the commits being rolled back use <code>git reset
+                    --keep</code> followed by <code>HEAD</code> or the commit hash ID. If you have
+                decided you want to be rid of all current local changes use <code>git reset
+                    --hard</code>. This will cause you to loose all current local changes. If you
+                are unsure that you want those files best bet is to be safe and use <code>git
+                    stash</code> before this command.</li>
+            <li><dfn><code><a href="https://git-scm.com/docs/git-clean" target="_blank">git
+                            clean</a></code></dfn>: removes untracked files from your working
+                directory. This command is often executed in conjunction with <code>git reset
+                    --hard</code>. Remember that resetting only affects tracked files, so a separate
+                command is required for cleaning up untracked ones. Combined, these two commands let
+                you return the working directory to the exact state of a particular commit.</li>
+        </ul>
+        <p>Note: When resetting or reverting a repo you can chose the commit to reset/revert back to
+            by grabbing the commit hash ID from that commit. A simple way to find commit hash IDs is
+            to use the GitHub interface by viewing all of the commits in a repo. If you simply want
+            to go back to the last commit use <code>HEAD</code> after the command instead of the
+            commit hash ID.</p>
+        <p><img src="git_shell/findCommit.jpg" alt="locating repo commits" /></p>
+        <p><img src="git_shell/commitHash.jpg" alt="copying commit hasd ID" /></p>
+        <p><span class="smaller">The <a
+                    href="https://www.atlassian.com/git/tutorials/undoing-changes/" target="_blank"
+                    >atlassian.com tutorial on undoing changes</a>, the <a
+                    href="https://git-scm.com/blog" target="_blank">Pro Git blog titled <em>Reset
+                        Demystified</em></a>, <a
+                    href="https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/"
+                    target="_blank">GitHub help guide to merge conflicts</a>, and the <a
+                    href="https://www.git-tower.com/learn/git/ebook/en/command-line/introduction#start"
+                    target="_blank">git-tower.com ebook</a> are our go-to sources for fixing and
+                preventing merge conflicts and bad commits.</span></p>
+        <h3 id="branch">Branching: what is it, and why do we do it?</h3>
+        <p>Branching means you diverge from the main line of development and continue to do work
+            without messing with that main line. The master branch is the main branch of a project.
+            When working in projects with multiple collaborators it may be important that the master
+            branch not have errors, and always be in good working order. If everyone is writing new
+            code into the master branch, it’s possible for the master branch to enter an unstable
+            state temporarily. To avoid that, projects may require that all developers work on
+            different parts of the project separately, in their own branches, and merge their
+            individual development branches into the master branch only once they are confident that
+            it won’t have a destabilizing effect. This can be useful even in single-developer
+            projects if you need to maintain multiple versions, such as a stable branch that people
+            should be able to download and use and a development branch that will eventually become
+            the new stable branch, but that isn’t yet stable. Branches can be merged and deleted
+            because a branch is an inalienable part of the repo in which it is created in; thus,
+            working in a branch requires you to already have a cloned repo. Just to be clear, when
+            you clone a repo that has existing branches the entire repo gets cloned including all of
+            the repo’s existing branches.</p>
+        <p>To really understand the way Git does branching, we need to take a step back and examine
+            how Git stores its data. As stated above, Git doesn’t store data as a series of
+            changesets or differences, but instead as a series of snapshots. When you make a commit,
+            Git stores a commit object that contains a pointer to the snapshot of the content you
+            staged. This object also contains the author’s name and email, the message that you
+            typed, and pointers to the commit or commits that directly came before this commit (its
+            parent or parents). A branch, in Git, is simply a lightweight movable pointer to one of
+            these commits. The default branch name in Git is master. As you start making commits,
+            you’re given a master branch that points to the last commit you made. Every time you
+            commit, it moves forward automatically. </p>
+        <h4>How to create a branch:</h4>
+        <p>Before creating a branch it is important to note what branches are already a part of your
+            local repo. To do this we use the command <code>git branch</code>. This command lists
+            all the branches only in the local repo. The master branch came automatically from the
+            source repo upon cloning as the main branch of the repo. To see all of the local
+            branches, including the master branch, and the remote branches that can be pushed to we
+            use the command <code>git branch --all</code>. Now to create a new local branch use the
+            command <code>git branch</code> followed by what you wish to call the branch. For
+            example: <code>git branch development</code> will create a branch called
+                <q>development</q>. To verify that a new branch was added, re-run the <code>git
+                branch</code> command. You should now see the new branch. The star to the left of a
+            branch name indicates where you are working, and this can be verified with <code>git
+                status</code>. When you run <code>git status</code> Git Shell should return a line
+            listing what branch you are on. For example: if you are working on the master branch Git
+            will return the line <q>On branch master</q>.</p><p>
+            <img src="git_shell/createBranch.jpg" alt="creating a branch" />
+        </p>
+        <h4>How to switch between branches:</h4>
+        <p>If you want work to appear under a specific branch you will need to switch to the desired
+            branch before committing changes. To switch branches use the command <code>git
+                checkout</code> followed by the name of the branch you wish to switch to. For
+            example: <code>git checkout development</code> will switch you over to the
+                <q>development</q> branch.</p>
+        <p><img src="git_shell/switchBranch_01.jpg" alt="switching branches to change files" /></p>
+        <p>You can verify that you have successfully switched branches by using either of the
+            previously explained commands: <code>git branch</code> or <code>git status</code>.</p><p>
+            <img src="git_shell/switchBranch_02.jpg" alt="switching between branches" />
+        </p>
+        <h4>How to merge branches and push changes to remote:</h4>
+        <p>Once there have been changes made via a branch and you wish to combine those changes with
+            the main (master) branch, you will need to do the following:</p>
+        <ol>
+            <li>Use the command <code>git diff</code> followed by the names of the two branches you
+                want to compare. For example: <code>git diff master development</code> will show the
+                differences between the master branch and the development branch. If you want to
+                just get a list of the files changed between the two branches you can change the
+                command to <code>git diff --name-only</code> again followed by the names of the two
+                branches you wish to compare.</li>
+            <li>Then use <code>git status</code> or <code>git branch</code> to verify what branch
+                you are currently working in. If you are not on the master branch you should switch
+                to it using <code>git checkout master</code>.</li>
+            <li>Once you have reviewed the differences you will want to merge the two branches. This
+                is done with the <code>git merge</code> command followed by the name of the branch
+                being merged into the master branch. For example: <code>git merge
+                development</code>.</li>
+            <li>To verify the merge was successful you can run <code>git diff</code> again with the
+                two branch names, and if Git does not return anything that means there are no
+                differences between the two branches.</li>
+            <li>Now when you run <code>git status</code> it will show that local master is ahead of
+                the remote origin. To fix this and bring the remote origin repo up to date with your
+                local master, run the <code>git push</code> command.</li>
+        </ol>
+        <p>
+            <img src="git_shell/mergeBranch.jpg" alt="merging branches" />
+        </p>
+        <p>If you have done work in a branch, and you do not want to merge the changes into the
+            master branch until others on your team have reviewed it you can push the branch and its
+            changes before merging. As long as you have the branch selected in Git Shell, you can
+            use the command <code>git push origin</code> followed by the name of the branch to
+            update the remote repo with the new branch. For example: <code>git push origin
+                development</code> will push the development branch and its changes to the remote
+            origin. Now if another collaborator wishes to clone the repo, and bring in your branch
+            to their local repo they will be able to do so.</p>
+        <h4>How to delete a branch:</h4>
+        <p>Some branches are created only temporarily; therefore, you may desire to delete a branch
+            before or after merging. The command <code>git branch -d</code> followed by the branch
+            name will delete the specified branch; if the branch is not fully merged in its upstream
+            branch or contained in the current branch, this command will fail with a warning.
+            Otherwise if the branch has been successfully merged with another branch then the
+            command will go through and the branch will be removed. Use <code>git branch</code> to
+            verify deletion. If you wish to remove the branch whether it has been merged or not the
+            command is altered slightly: <code>git branch -D</code> followed by the branch name.</p>
+        <p>
+            <img src="git_shell/deleteBranch.jpg" alt="deleting a branch" />
+        </p>
+        <h3 id="fork">Forking: what is it and why do we do it?</h3>
+        <p>Part of the open-source etiquette of GitHub is that developers are encouraged to copy and
+            then improve code originally created by others in a separate <dfn>forked repo</dfn>.
+            GitHub supports the creation of derived projects through forking. When you fork a repo,
+            you create a copy of it under your own account, where it acquires an independent
+            identity. You can do anything with a repo you created by forking someone else’s project
+            that you can with a repo you created from scratch. The moment that you create the fork,
+            your new repo is no longer synchronized with changes in the repo from which you copied
+            it originally. If you fork a repo and make changes that you would then like to
+            contribute to the original source, you can issue a <dfn>pull request</dfn>, inviting the
+            developers of the original repo to merge your forked repo’s changes into their original
+            project.</p>
+        <h4>How to fork and how to work in a fork:</h4>
+        <p>To begin forking you need to navigate to the repo you wish to fork, and select the
+                <q>fork</q> button in the top right of the page.</p>
+        <p>
+            <img src="git_shell/forking_01.jpg" alt="forking a repo" />
+        </p>
+        <p>Next, you will need to navigate to the new forked repo created on your account. From
+            here, follow the steps above on <a href="#cloning">cloning</a>, and clone the repo using
+                <code>git clone</code> and the HTTPS of the forked repo. Make sure you are cloning
+            the repo that is located on your account and not the source repo you forked from.</p>
+        <p>
+            <img src="git_shell/forking_02.jpg" alt="forking a repo" />
+        </p>
+        <p>In order for the forked repo to reference the source repo, you will need to set up the
+            remote upstream. Do this with the following command: <code>git remote add
+                upstream</code> followed by the HTTPS of the source repo. Use the command <code>git
+                remote</code> or <code>git remote -v</code> to show all of the remote versions of
+            your repository. You should see <q>origin</q> (the direct remote version of the forked
+            repo) and the upstream you just created. When you want to bring any new changes made on
+            the source repo’s master branch into your forked repo, you can use the following
+            commands to do so: <code>git fetch upstream master</code> will show the changes able to
+            be brought in and <code>git pull upstream master</code> will bring the changes in. These
+            commands function the same way in a fork as they do in any cloned repo.</p>
+        <p>
+            <img src="git_shell/forking_03.jpg" alt="forking a repo" />
+        </p>
+        <p>In the <a href="#branch">branching section</a> of this tutorial we discussed why using a
+            branch is good practice. When working in a forked repo, branching becomes even more
+            important and practical. The master branch is better to be left free of
+            developmental/experimental changes so that it can be used to sync with the upstream
+            (source repo). Therefore, it is best to add and change files in branches of your fork.
+            After you have created a branch, modified files, and committed said changes use the
+            command <code>git log --pretty=short</code> to see a listing of commits. Finally, to
+            push all the local branches and change to the forked remote use the command <code>git
+                push --all</code>.</p>
+        <p>
+            <img src="git_shell/forking_04.jpg" alt="forking a repo" />
+        </p>
+        <h4>How to issue a pull request:</h4>
+        <p>Now if you go back to your fork on GitHub, you can see that GitHub noticed that we pushed
+            a new branch with changes to the source repo’s code. GitHub presents us with a big green
+            button to compare our changes and open a <dfn>Pull Request</dfn> to the original
+            project. You can alternatively go to the <q>Branches</q> page at
+            https://github.com/[username]/[repo name]/branches to locate your branch and open a new
+            Pull Request from there.</p>
+        <p>
+            <img src="git_shell/pullRequest_01.jpg" alt="creating a pull request" />
+        </p>
+        <p>If you click that green <q>Pull Request</q> button, you’ll see a screen that asks you to
+            give your Pull Request a title and description. It is always worthwhile to put some
+            effort into this, since a good description helps the owner of the original project
+            determine what you were trying to do, whether your proposed changes are correct, and
+            whether accepting the changes would improve the original project or not. You can also
+            see a list of the commits in your forked repo’s branch that are <q>ahead</q> of the
+            master branch. Should this branch get merged by the project owner, a unified <q>diff</q>
+            of all the changes will be made.</p>
+        <p>
+            <img src="git_shell/pullRequest_02.jpg" alt="creating a pull request" />
+        </p>
+        <p>When you hit the create pull request button, the owner of the project you forked from
+            will get a notification that someone is suggesting a change with a link to a page that
+            has all of the information you provided. At this point, the project owner can look at
+            the suggested changes and merge it, reject it or comment on it. It is possible that the
+            owner will ask you to <q>rebase from master</q> and resubmit a pull request. This might
+            happen if a series of changes were made on the source repo’s master branch that you had
+            failed to fetch or if such changes were made after you submitted your request. This is
+            not a problem! Use this very thorough <a
+                href="https://www.youtube.com/watch?v=M7ZYkjOWr6g" target="_blank">YouTube video</a>
+            to guide you through how to do this.</p>
+        <h3>In conclusion...</h3>
+        <p>Git and GitHub can be a bit confusing for new users, but it makes project management much
+            more robust than the available alternatives, and learning to use it is worth the effort.
+            This tutorial is designed to get you started, and your instructors and mentors are
+            available to advise and help if you get stuck or confused. There are a number of
+            resources online to further your knowledge, some of which can be found at the following
+            links:</p>
+        <ul>
+            <li><a href="https://git-scm.com/">Pro Book (online version)</a></li>
+            <li><a href="http://gitref.org/">Git Reference</a></li>
+            <li><a href="https://www.atlassian.com/git" target="_blank"><q>Getting Git Right</q> @
+                    atlassian.com</a></li>
+            <li><a href="https://www.kernel.org/pub/software/scm/git/docs/user-manual.html">Git User
+                    Manual</a></li>
+            <li><a href="https://www.siteground.com/tutorials/git/commands.htm">Git: Tutorial
+                    Commands</a></li>
+            <li>Lifehacker's <a
+                    href="http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything"
+                    >A Command Line Primer for Beginners</a></li>
+            <li><a href="http://rogerdudler.github.io/git-guide/"><q>Git - the simple
+                guide</q></a></li>
+            <li><a href="https://gist.github.com/hofmannsven/6814451">A simple Git cheat-sheet</a> (hosted on GitHub Gist)</li>
+            <li><a href="http://blog.wuwon.id.au/2010/09/painless-merge-conflict-resolution-in.html">Painless Merge Conflict Resolution in Git</a>: explains merging issues as well as how to optimize a merge tool to help resolve conflicts.</li>
+        </ul>
+    </body>
+</html>
