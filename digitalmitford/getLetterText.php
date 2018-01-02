@@ -9,8 +9,7 @@
 <body>
 <div id="title">
     <h1>Digital Mitford: Letter View</h1>
-    <hr />
-</head>
+    
 <body>
 <?php
     require_once("config.php");
@@ -19,5 +18,7 @@
     $result = file_get_contents($contents);
     echo $result;
 ?>
+<?php include("licenseSoftware.html"); ?>
+<?php include("mitfordMainMenu.html"); ?>
 </body>
 </html>
