@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>The Code</title>
+        <link rel="stylesheet" type="text/css" href="styling.css" />
+        <script type="text/javascript" src="bannerJS.js"></script>
+    </head>
+    <body>
+        <!--#include virtual="SSIbanner.html" -->
+        <br />
+        <div class="bodycontainer">
+            <div class="body">
+                
+                <br />
+                <h2>Coding and Structure</h2>
+                <p>For the Rick and Morty project, we used several coding languages in building the
+                    website, marking up text, and structuring the data.</p>
+                <h2>XML</h2>
+                <p>Short for <span style="color: #5ec049;">eXtensible Markup Language</span>. It's
+                    used for storing and accessing information, providing an excellent method for
+                    marking up our documents. It's also cross-platform and used freely around the
+                    world.</p>
+                <div class="code" id="grad1">
+                    <pre>
+    &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-model href="../../ODD/out/RickandMortyODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?&gt;
+&lt;?xml-model href="../../ODD/out/RickandMortyODD.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?&gt;
+&lt;TEI xmlns="http://www.tei-c.org/ns/1.0"&gt;
+    &lt;teiHeader&gt;
+        &lt;fileDesc&gt;
+            &lt;titleStmt&gt;
+                &lt;title&gt;Rick Potion #9&lt;/title&gt;
+                &lt;author&gt;Justin Roiland&lt;/author&gt;
+                &lt;editor&gt;A. Hall&lt;/editor&gt;
+            &lt;/titleStmt&gt;
+            &lt;publicationStmt&gt;
+                &lt;p&gt;Digital edition hosted on &lt;ref target="http://rickandmorty.newtfire.org"
+                    &gt;http://rickandmorty.newtfire.org&lt;/ref&gt; and GitHub: &lt;ref
+                        target="https://github.com/dorothealint/Rick-and-Morty"
+                        &gt;https://github.com/dorothealint/Rick-and-Morty&lt;/ref&gt;&lt;/p&gt;
+            &lt;/publicationStmt&gt;
+            &lt;sourceDesc&gt;
+                &lt;bibl&gt;
+                    &lt;title&gt;Rick Potion #9&lt;/title&gt;
+                    &lt;date when="2015-09-07"/&gt;
+                &lt;/bibl&gt;
+            &lt;/sourceDesc&gt;
+        &lt;/fileDesc&gt;
+        &lt;encodingDesc&gt;
+            &lt;p&gt;Some small changes to the original transcriptions were made including fixed spelling errors and getting rid 
+            of parentheses, brackes, and colons.&lt;/p&gt;
+        &lt;/encodingDesc&gt;
+    &lt;/teiHeader&gt;
+    &lt;text&gt;
+        &lt;body&gt;
+            &lt;stage&gt;Open ext. Harry Herpson High School&lt;/stage&gt;
+            &lt;stage&gt;Trans. int. Harry Herpson High School hallway&lt;/stage&gt;
+            &lt;stage&gt;Morty is standing at his locker.&lt;/stage&gt;
+            &lt;sp&gt;&lt;speaker&gt;Principal Vagina&lt;/speaker&gt;&lt;p&gt; &lt;stage&gt;over the intercom, while the 
+            students talk&lt;/stage&gt; Principal Vagina here, don't let the name fool you, I'm very much in charge, 
+            reminding you that tonight is our annual flu season dance. I don't know how many times I have to say this but 
+            if you have the flu, stay home, the flu season dance is about awareness, not celebration. You don't bring dead 
+            babies to Passover.&lt;/p&gt;&lt;/sp&gt;
+            &lt;stage&gt;Morty watches Jessica with her friends at a nearby locker&lt;/stage&gt;
+            &lt;sp&gt;&lt;speaker&gt;Jessica's friend&lt;/speaker&gt;&lt;p&gt; &lt;stage&gt;to Jessica&lt;/stage&gt; 
+            Hey.&lt;/p&gt;&lt;/sp&gt;
+            &lt;sp&gt;&lt;speaker&gt;Morty&lt;/speaker&gt;&lt;p&gt; Ohhh. Okay, here we go. &lt;stage&gt;walks over to 
+            Jessica and her friends&lt;/stage&gt; &lt;stage&gt;Nervously&lt;/stage&gt; H-Heyy Jessica, 
+            ughh.&lt;/p&gt;&lt;/sp&gt;
+            &lt;sp&gt;&lt;speaker&gt;Jessica&lt;/speaker&gt;&lt;p&gt; What's up Morty? &lt;stage&gt;sneezes&lt;/stage&gt;
+            &lt;/p&gt;&lt;/sp&gt;
+            &lt;sp&gt;&lt;speaker&gt;Morty&lt;/speaker&gt;&lt;p&gt; Ugghh&lt;/p&gt;&lt;/sp&gt;
+            &lt;sp&gt;&lt;speaker&gt;Brad&lt;/speaker&gt;&lt;p&gt; &lt;stage&gt;butts in&lt;/stage&gt; What are you 
+            doing?&lt;/p&gt;&lt;/sp&gt;
+            &lt;sp&gt;&lt;speaker&gt;Morty&lt;/speaker&gt;&lt;p&gt; Ummm&lt;/p&gt;&lt;/sp&gt;
+            </pre>
+                </div>
+                <h2>RelaxNG</h2>
+                <p>An acronym for <span style="color: #5ec049;">REgular LAnguage description for XML
+                        Next Generation</span>. RelaxNG is used for creating template rules to write
+                    XML in, allowing us to code multiple documents without human error. Here is our
+                    schema for this project:</p>
+                <div class="code" id="grad2">
+                    <pre>
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = script
+script = element script {title, description, body}
+title = element title {text}
+description = element description {season, episode, airdate*}
+season = element season {text, xsd:integer}
+episode = element episode {text, xsd:integer}
+airdate = element airdate {xsd:date}
+body = element body {speech, direction}
+speech = element speech {designation, character?, guestStar?, text, burp*, catchPhrase*}
+designation = attribute designation {"main" | "extra"}
+character = attribute character {"rick" | "morty" | "summer" | "beth" | "jerry" | "other"}
+guestStar = attribute guestStar {text}
+burp = element burp {text}
+catchphrase = element catchPhrase {text}
+                    </pre>
+                </div>
+                <h2>HTML</h2>
+                <p>Short for <span style="color: #5ec049;">HyperText Markup Language</span>. HTML
+                    and XML are similar languages, but HTML is used for presentation and display
+                    while XML is used for the storage of information. We used HTML in conjunction
+                    with CSS to build and style our website.</p>
+                <h2>CSS</h2>
+                <p>Short for <span style="color: #5ec049;">Cascading Stylesheets</span>. CSS is used
+                    to style code and display it on websites.</p>
+                <h2>JS</h2>
+                <p>Short for <span style="color: #5ec049;">JavaScript</span>. JS was used to create
+                    our menu bar, making it dynamic and more functional than a menu might be without
+                    using a language other than HTML.</p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <!--#include virtual="SSIlicense.html" -->
+    </body>
+</html>

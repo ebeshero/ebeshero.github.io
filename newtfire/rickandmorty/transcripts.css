@@ -1,0 +1,84 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+div.body.h2 {flex:1;}
+/* 2018-04-12 ebb: You had .bodycontainer in the line above, but it contains ONLY the div of class body inside, so making that flex wasn't doing anything. div.bodycontainer is the one that contains your div.flexbox and div.transcript-viewer, and as soon as I changed that you were okay! I made a few other edits with justify-content in some of your boxes (was experimenting with centering, for example). Alter those back if you like. the main issue you were trying to solve was just identifying which element contained the stuff you needed to flex.  */ 
+.flexbox{flex:3;
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content:space-around; 
+}
+#season-1{display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   flex-wrap: wrap; 
+}
+#season-2{display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#season-3{display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.season-1 button{
+    background: radial-gradient(limegreen, green, black);
+    padding: 0px 0px 0px 8px;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 18px;
+    padding: 7px;
+    border: 2px solid green;
+}
+.season-2 button{
+    background: radial-gradient(purple, purple, black);
+    padding: 0px 0px 0px 8px;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 18px;
+    padding: 7px;
+    border: 2px solid purple;
+}
+.season-3 button{
+    background: radial-gradient(red, red, black);
+    padding: 0px 0px 0px 8px;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 18px;
+    padding: 7px;
+    border: 2px solid red;
+}
+p{
+    -webkit-text-fill-color: limegreen;
+    -webkit-text-stroke: 1px limegreen;
+}
+.transcript-viewer{
+    flex:3;
+    background-color: black;
+    padding: 5% 5% 5% 5%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #5ec049;
+}
+.zoom{
+    transition: transform .2s;
+}
+.zoom:hover {
+    transform: scale(1.2);
+    }
+h3{
+    font-family: 'Courier', monospace;
+    color:  #00b0c7;
+    line-height: 80%;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+}

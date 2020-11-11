@@ -1,0 +1,29 @@
+span.speaker.on{
+    color: red;
+    font-weight: 800;
+}
+
+span.speakerToggle{
+    color: inherit;
+}
+
+span.stage.on{
+    color: yellow;
+    font-weight: 800;
+}
+
+span.stageToggle{
+    color: inherit;
+}
+
+div.toggle{
+    color: #00b0c7;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20pt;
+    width: 50%;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    flex: 3;
+    background-color: black;
+}

@@ -1,0 +1,363 @@
+html, body{padding: 0; margin: 0}
+body {
+    background-color: #333333;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    overflow-x: hidden;
+}
+.content{
+    padding-left: 20px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+h4{
+    color: white;
+}
+h3{
+    color: white;
+}
+li{
+    color: white;
+}
+h2{
+    color: white;
+}
+
+.center{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  padding-top: 5%;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+img.header{
+    width: auto;
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    background-color: black;
+}
+.navbar a{
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn{
+background-color: gray;
+    color: #00e600;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+p{
+    color: white;
+}
+
+i{
+    color: white;
+}
+spkr{
+    color: white;
+    font-size: 18px;
+}
+span.robin.on{
+    color: #ff3333;
+}
+span.cyborg.on{
+    color: #3399ff;
+}
+
+span.beastBoy.on{
+    color: #1aff1a;
+}
+span.starfire.on{
+    color: #ffff4d;
+}
+span.raven.on{
+    color: #aa00ff;
+}
+#fieldset {
+    text-align: left;
+    background-color: #333333;
+    padding: 3px 3px 3px 3px;
+}
+
+.aboutContain{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-top: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+    justify-content: space-around;
+    color: white;
+}
+#project{
+max-width: 100%;
+color: white;
+padding-top: 20px;
+
+}
+.imageContainer{
+    width: 20%;
+    justify-content: space-around;
+    float: left;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+.charsContain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+}
+.banners img{
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+#banners{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.textContain{
+    max-width:100%;
+    flex:1;
+    justify-content: space-around;
+    flex-direction: column;
+    padding:20px;
+    font-size:18px;
+    margin:20px;
+    margin-top:30px;
+}
+.svgText{
+    margin-top: 40px;
+    text-align: center;
+}
+.svgContainer{
+    display: flex;
+    color: white;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.svgContainer img{
+    width: 600px;
+    height: 435px;
+}
+
+#svgLeft{
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#svgRight{
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.svgContainer2 img{
+    width: 650px;
+    height: 435px;
+    float: right;
+    margin-right: 75px;
+}
+#svg2{
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    float: right;
+}
+.seasonContainerTop{
+    display:flex;
+    flex-direction:row;
+    height:40%;
+}
+.seasonContainerBottom{
+    display:flex;
+    flex-direction:row;
+    height:40%
+}
+.seasonSVG{
+    flex:1;
+    flex-direction:column;
+    margin-right:20px;
+    justify-content: space-around;
+}
+.seasonText{
+    flex:1;
+    flex-direction: column;
+    margin-top:10%;
+    margin-right:15%;
+    justify-content: space-around;
+}
+.seasonSVG img{
+    width: 800px;
+    height: 750px;
+    align-items: center;
+}
+.fitting img{
+     width: 650px;
+    height: 435px;
+}
+.container{
+    display:flex;
+    max-width: 100%;
+    margin-top: 40px;
+}
+#episode{
+    flex: 1;
+    border: 1px solid #00e600;
+    flex-direction: column;
+    margin: 2px;
+    padding: 10px;
+}
+#issue{
+    flex:1;
+    border: 1px solid #00e600;
+    flex-direction: column;
+    margin: 2px;
+    padding: 10px;
+}
+
+#episodes, #issues{
+    flex:1;
+    padding:20px;
+    font-size:18px;
+    margin:20px;
+}
+.license{
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.license a{
+    text-decoration: none;
+}
+
+a:link {color: orange;} /* unvisited link */
+a:visited {color:#1aa3ff
+;}  /* visited link */
+a:hover {color:#00e600
+;}  /* mouse over link */
+
+.network{
+    display: flex;
+    flex-direction: column;
+}
+.networkbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.top{
+    padding: 8px 8px 8px 8px;
+}
+.middle{
+    padding: 10px 25px;
+}
+.s-button{
+    background: BlueViolet;
+    padding: 10px 25px;
+    
+}
+a.s-button{
+    color: white;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8px 8px;
+}
+img.network{
+    width: 60vw;
+    height: auto;
+}
+h3.network {
+    text-align: center;
+}
+div.maps{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vw;
+}
+div.location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div.loc {
+    width: 50vw;
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+}
+div.locdesc{
+    width: 50vw;
+    height: auto;
+    padding-right: 10vw;
+}
