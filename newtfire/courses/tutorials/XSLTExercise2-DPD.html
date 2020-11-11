@@ -1,0 +1,101 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   
+   	
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="explain.css" />
+      <title>XSLT Exercise 2</title>
+   </head>
+   
+   
+   
+   <body>
+      <!--#include virtual="top.html" -->
+      		
+      			
+      <h1><span class="banner">XSLT Exercise 2</span></h1>
+    <section id="overview">  <h3>Overview of the Assignment</h3>
+      <p>The <a href="http://kpop.newtfire.org">Fall 2020 KPop project team</a> has coded Korean pop music group membership information in XML that we will be outputting in HTML using XSLT. This exercise will help orient you to the way we set up XSLT to output HTML, and to write XSLT template rules that follow the source document’s nested hierarchy. The XML file, which profiles the Korean pop group Seventeen, is available here: <a href="https://newtfire.org/courses/tutorials/Seventeen_Profile.xml">https://newtfire.org/courses/tutorials/Seventeen_Profile.xml</a>. You should right-click on this link, download the file, and open it in &lt;oXygen/&gt; (or you can pull it in locally from the digitProjectDesign-Hub where it is in Class Examples > XSLT > KPop).</p>
+      <p>Open the XML file in &lt;oXygen/&gt; and study its structure. Our goal in this assignment is to extract information about the group and its members from XML elements into HTML in a way that shows you how XSLT template rules work over all the elements they match on the source XML tree. Here is <a href="Seventeen.html">a view of the HTML output</a> we want to produce with XSLT. And here is a code view <a href="https://github.com/newtfire/digitProjectDesign-Hub/blob/master/Class-Examples/XSLT/KPop/Seventeen.html">of the page source on GitHub</a>.</p>
+
+      <p>Now study our sample output HTML code. We used HTML unordered and ordered lists to output data about the group's discography and about each of the members. Each list is wrapped in either an <code>&lt;ul&gt;</code> (unordered list) or <code>&lt;ol&gt;</code> (ordered list), and the only elements permitted inside are list items or <code>&lt;li&gt;</code> elements. We also used <code>&lt;section&gt;</code> elements together wtih <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, and <code>&lt;h3&gt;</code> elements for distinct levels of headings and subheadings following the structure of information: <code>&lt;h1&gt;</code> (heading 1) for the group name at the top of the page, <code>&lt;h2&gt;</code> for the sections on the page. And we used <code>&lt;img&gt;</code> elements with their required attributes to pull in image data coded in the source XML. We set a somewhat arbitrary <code>@width</code> attribute value of 200 to prevent the images from overwhelming the page.</p>
+    </section>
+      <section id="preparing">
+         <h3>Before You Begin: Set up the XSLT Stylesheet to Output HTML</h3>	 
+         
+         <p>To ensure that the output will be in the XHTML namespace, we
+            need to add a default namespace declaration (in <span style="color: purple;">purple</span>
+            below). To output the required DOCTYPE declaration, we also need to set the
+            <code>&lt;xsl:output&gt;</code> element as a child of our root
+            <code>&lt;xsl:stylesheet&gt;</code> element (in <span style="color: #006400;"
+               >blue</span> below), and we needed to include an attribute there to omit the default XML declaration because if the XML line shows up in our XHTML output, it will not produce valid HTML with the w3C and might produce quirky problems with rendering in various web browsers. 
+            So, our modified stylesheet template and xsl:output line is this, and you should copy this into your stylesheet:</p>
+         
+         <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+         &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0"
+    <span style="color:purple;">xmlns="http://www.w3.org/1999/xhtml"</span>&gt;
+    
+   <span style="color:blue;"> &lt;xsl:output method="xhtml" encoding="utf-8" doctype-system="about:legacy-compat"
+        omit-xml-declaration="yes"/&gt;</span>
+    
+    &lt;/xsl:stylesheet&gt;</pre>        
+      </section>
+     <section id="guidance">
+        <h3>Guide to writing the XSLT</h3>
+      <p>Our XSLT transformation has four template rules:</p>
+      <ol>
+         <li>We have a template rule for the <strong>document node</strong> (<code>&lt;xsl:template
+            match="/"&gt;</code>), in which we create the basic HTML file structure: the
+            <code>&lt;html&gt;</code> element, <code>&lt;head&gt;</code> and its contents,
+            and <code>&lt;body&gt;</code>—anything that appears just once in the HTML document (in a one-to-one relationship with the root node). <ol><li>Inside the <code>&lt;body&gt;</code> element that
+            we’re creating, we use <code>&lt;xsl:apply-templates&gt;</code> and use the <code>@select</code> attribute to identify an element on the tree that we want to process at this point. Here we use a literal XPath expression as the value of the <code>@select</code> attribute. We set our wrapper <code>&lt;ul&gt;</code> tags to set up the unordered list of the group’s discography around this <code>xsl:apply-templates</code> code.</li>
+               <li>We also set up a new <code>&lt;section&gt;</code> to hold process the information coded in the <code>&lt;memberList&gt;</code> element. We actually opted not to process the <code>&lt;memberList&gt;</code> in a list, but rather we will be setting new heading elements and img elements and starting new lists in the template rule we will write later to process the member information. So for now we just indicate with a literal XPath what part of the source XML tree we want to process. (This process of selecting just the part of the tree you need is sometimes called <em>pruning</em> or <em>trimming</em> the tree. If you do not select something, the default template rule will apply to output the whole document’s text nodes.</li>
+            </ol>
+         </li>
+         <li>We wrote a new, separate template rule that matches the <code>&lt;album&gt;</code> elements (holding the album titles), and it will be invoked as a result of the preceding <code>&lt;xsl:apply-templates&gt;</code> instruction which selects the discography portion of the document, and
+            will fire once for each <code>&lt;album&gt;</code> element in the XML file. Inside that template rule we create a new list item
+            (<code>&lt;li&gt;</code>) for the particular <code>&lt;album&gt;</code> being processed and use <code>&lt;xsl:apply-templates&gt; to process whatever it inside (here, just the text nodes of the <code>&lt;album&gt;</code> elements.</code></li>
+         <li>We have a separate template rule that matches the <code>&lt;member&gt;</code> elements, and this rule is designed to create a set of HTML elements every time XSLT parsing engine encounters a <code>&lt;member&gt;</code> element in the XML it is processing.
+            <ol><li>Our code sets a self-closing <code>&lt;img/&gt;</code> element in place as the first element to output inside this template rule, and we used <a href="https://dh.obdurodon.org/avt.xhtml">ATVs (attribute value templates)</a> to supply a value for its all-important <code>@src</code> attribute as well as for its <code>@alt</code> attribute.</li>
+               <li>We created an HTML <code>&lt;h3&gt;</code> element and an unordered list (together with list items) for the Korean name and Stage name of each member.</li>
+               <li>And we created an HTML <code>&lt;h3&gt;</code> element and set up an ordered list, and selected the &lt;role&gt; element to process. We will write a new template rule to process the elements inside <code>&lt;role&gt;</code> since the number of positions each band member takes varies considerably.</li>   
+         </ol>
+         </li>
+         <li>Finally, our last template rule matches on <code>&lt;position&gt;</code> elements and outputs these as list items to populate the ordered list we created of roles for a band member.</li>
+      </ol>
+     
+      <h3>Important</h3>
+      <ul>
+         <li>Those who like to read ahead or already have some programming experience with other
+            languages may have noticed that XSLT includes an <code>&lt;xsl:for-each&gt;</code>
+            instruction that <em>could</em> be used to process this XML. <em>We are
+               prohibiting its use for now;</em> your solution must use
+            <code>&lt;xsl:template&gt;</code> and <code>&lt;xsl:apply-templates&gt;</code>
+            rules instead. There’s a Good Reason for this, which we’ll explain later, when we
+            talk about situations where you <em>should</em> use
+            <code>&lt;xsl:for-each&gt;</code>.</li>
+         <li>It is a good idea to run your transformation every time you write some new XSLT code so you can see what you are doing. You will be looking at your results in the Output window as you write and test your template rules each time you press the blue <q>Run-to-End</q> button. Eye-balling those results is not really enough because the Output window does not check for well-formedness or validation against a schema. Be sure to save those results, either by setting an output location in the appropriate place in the selection boxes, or by right-clicking on the output window and selecting <q>Save as</q>. <strong><em>Always, always</em> open the saved output file in &lt;oXygen/&gt; and check to make sure that it checks out as valid and well-formed.</strong> Your new output should open up as well-formed and valid HTML, with a green square in &lt;oXygen&gt;.</li>
+         
+         <li>If you don’t get
+            the results you expect and can’t figure out what you’re doing wrong, remember that you can post a query to our <a href="https://github.com/newtfire/digitProjectDesign-Hub/issues">digitProjectDesign-Hub Issues board</a>. You can’t just ask for the answer,
+            though; you need to describe what you tried, what you expected, what you got, and
+            what you think the problem is. You may also wish to practice the We often find, just as we’re preparing to post our
+            own queries to coding discussion boards, that having to write up a description
+            of the problem helps us think it through and solve it ourselves, and the technical term for this is <a href="https://rubberduckdebugging.com/">rubber duck debugging</a>. Beyond just being patient rubber ducks, though, we’re also
+            encouraging you to discuss the homework on the discussion boards because that’s also
+            helpful for the person who responds. Answering someone else’s
+            inquiry and troubleshooting someone else’s problem often helps us clarify matters for
+            ourselves!</li>
+         <li>When you complete this assignment, submit your XSLT file and your output HTML file to Canvas. You can bundle these in a zip file, following our usual homework file-naming conventions for the zip directory.</li>
+      </ul>
+      
+     				
+     </section> 
+   </body>
+   
+   
+   
+   
+</html>

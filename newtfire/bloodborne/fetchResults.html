@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <script src="saxon/SaxonJS.min.js"></script>
+        <script src="functions.js"></script>
+        <script type="text/javascript">
+
+           /*function getTitle()
+           {
+           
+           var raw = window.location.href;
+           
+           var url = raw.replace("%27","\'")
+           
+           document.getElementById("queryString").innerHTML = url;
+           
+           var queryString = url.split("=")[1];
+           
+           var newTitle = queryString.replace("_"," ");
+           
+           document.title = newTitle;
+           
+           SaxonJS.transform({
+                                stylesheetLocation: "XSLT/locationPaneSJS.sef",
+                                sourceLocation: "XML/mainXML.xml",
+                                stylesheetParams: pQString = window.location.href
+                                });
+           
+           }*/
+        </script>
+        <title></title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link rel="icon" type="image/png" href="images/favicon.jpg"/>
+        <style>
+                            * {
+                            box-sizing: border-box;
+                            }
+                        </style>
+    </head>
+    <body id="bodyDiv" onload="getTitle()">
+        
+        <div class="dataLoc">Loading...</div>
+        <div id="queryString"></div>
+        
+    </body>
+
+</html>

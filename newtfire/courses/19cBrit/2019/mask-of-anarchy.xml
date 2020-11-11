@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>The Mask of Anarchy:</title>
+				<title type="sub">Written on the Occasion of the Massacre at Manchester</title>
+				<author>Percy Bysshe Shelley</author>
+				<editor>Elisa Beshero-Bondar</editor>
+			</titleStmt>
+			<publicationStmt>
+				<p>prepared for Elisa Beshero-Bondar's course materials on <ref target="http://newtfire.org">newtFire</ref>.</p>
+				<p>Shared under a Free Culture Creative Commons Attribution 4.0 International
+					License</p>
+			</publicationStmt>
+			<sourceDesc>
+				<p>This is a text prepared for teaching purposes, derived from the edition published
+					digitally in <bibl><editor>Stuart Curran</editor> and <editor>Jack
+							Lynch</editor>, <title level="m">Frankenstein: or the Modern
+							Prometheus</title>: <title level="m">Works Included in this
+							edition</title>, <date>1994</date>: <ptr target="http://knarf.english.upenn.edu/PShelley/anarchy.html"/>.</bibl></p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+
+		<body>
+			<lg n="1">
+				<label>1</label>
+				<l n="1">As I lay asleep in Italy</l>
+				<l n="2">There came a voice from over the Sea,</l>
+				<l n="3">And with great power it forth led me</l>
+				<l n="4">To walk in the visions of Poesy.</l>
+
+			</lg>
+			<lg n="2">
+				<label>2</label>
+				<l n="5">I met Murder on the way—</l>
+				<l n="6">He had a mask like Castlereagh—</l>
+				<l n="7">Very smooth he looked, yet grim;</l>
+				<l n="8">Seven blood-hounds followed him:</l>
+
+			</lg>
+			<lg n="3">
+				<label>3</label>
+				<l n="9">All were fat; and well they might</l>
+				<l n="10">Be in admirable plight,</l>
+				<l n="11">For one by one, and two by two,</l>
+				<l n="12">He tossed them human hearts to chew</l>
+
+			</lg>
+			<lg n="4">
+				<label>4</label>
+				<l n="13">Which from his wide cloak he drew.</l>
+				<l n="14">Next came Fraud, and he had on,</l>
+				<l n="15">Like Eldon, an ermined gown;</l>
+				<l n="16">His big tears, for he wept well,</l>
+				<l n="17">Turned to mill-stones as they fell.</l>
+
+			</lg>
+			<lg n="5">
+				<label>5</label>
+				<l n="18">And the little children, who</l>
+				<l n="19">Round his feet played to and fro,</l>
+				<l n="20">Thinking every tear a gem,</l>
+				<l n="21">Had their brains knocked out by them.</l>
+
+			</lg>
+			<lg n="6">
+				<label>6</label>
+				<l n="22">Clothed with the Bible, as with light,</l>
+				<l n="23">And the shadows of the night,</l>
+				<l n="24">Like Sidmouth, next, Hypocrisy</l>
+				<l n="25">On a crocodile rode by.</l>
+
+			</lg>
+			<lg n="7">
+				<label>7</label>
+				<l n="26">And many more Destructions played</l>
+				<l n="27">In this ghastly masquerade,</l>
+				<l n="28">All disguised, even to the eyes,</l>
+				<l n="29">Like Bishops, lawyers, peers, or spies.</l>
+
+			</lg>
+			<lg n="8">
+				<label>8</label>
+				<l n="30">Last came Anarchy: he rode</l>
+				<l n="31">On a white horse, splashed with blood;</l>
+				<l n="32">He was pale even to the lips,</l>
+				<l n="33">Like Death in the Apocalypse.</l>
+
+			</lg>
+			<lg n="9">
+				<label>9</label>
+				<l n="34">And he wore a kingly crown;</l>
+				<l n="35">And in his grasp a sceptre shone;</l>
+				<l n="36">On his brow this mark I saw—</l>
+				<l n="37">
+					<q>I AM GOD, AND KING, AND LAW!</q>
+				</l>
+
+			</lg>
+			<lg n="10">
+				<label>10</label>
+				<l n="38">With a pace stately and fast,</l>
+				<l n="39">Over English land he passed,</l>
+				<l n="40">Trampling to a mire of blood</l>
+				<l n="41">The adoring multitude.</l>
+
+			</lg>
+			<lg n="11">
+				<label>11</label>
+				<l n="42">And a mighty troop around,</l>
+				<l n="43">With their trampling shook the ground,</l>
+				<l n="44">Waving each a bloody sword,</l>
+				<l n="45">For the service of their Lord.</l>
+
+			</lg>
+			<lg n="12">
+				<label>12</label>
+				<l n="46">And with glorious triumph, they</l>
+				<l n="47">Rode through England proud and gay,</l>
+				<l n="48">Drunk as with intoxication</l>
+				<l n="49">Of the wine of desolation.</l>
+
+			</lg>
+			<lg n="13">
+				<label>13</label>
+				<l n="50">O’er fields and towns, from sea to sea,</l>
+				<l n="51">Passed the Pageant swift and free,</l>
+				<l n="52">Tearing up, and trampling down;</l>
+				<l n="53">Till they came to London town.</l>
+
+			</lg>
+			<lg n="14">
+				<label>14</label>
+				<l n="54">And each dweller, panic-stricken,</l>
+				<l n="55">Felt his heart with terror sicken</l>
+				<l n="56">Hearing the tempestuous cry</l>
+				<l n="57">Of the triumph of Anarchy.</l>
+
+			</lg>
+			<lg n="15">
+				<label>15</label>
+				<l n="58">For with pomp to meet him came,</l>
+				<l n="59">Clothed in arms like blood and flame,</l>
+				<l n="60">The hired murderers, who did sing</l>
+				<l n="61">“Thou art God, and Law, and King.</l>
+
+			</lg>
+			<lg n="16">
+				<label>16</label>
+				<l n="62">We have waited, weak and lone</l>
+				<l n="63">For thy coming, Mighty One!</l>
+				<l n="64">Our purses are empty, our swords are cold,</l>
+				<l n="65">Give us glory, and blood, and gold.”</l>
+
+			</lg>
+			<lg n="17">
+				<label>17</label>
+				<l n="66">Lawyers and priests, a motley crowd,</l>
+				<l n="67">To the earth their pale brows bowed;</l>
+				<l n="68">Like a bad prayer not over loud,</l>
+				<l n="69">Whispering — <q>Thou art Law and God.</q> —</l>
+
+			</lg>
+			<lg n="18">
+				<label>18</label>
+				<l n="70">Then all cried with one accord,</l>
+				<l n="71">“Thou art King, and God, and Lord;</l>
+				<l n="72">Anarchy, to thee we bow,</l>
+				<l n="73">Be thy name made holy now!”</l>
+
+			</lg>
+			<lg n="19">
+				<label>19</label>
+				<l n="74">And Anarchy, the Skeleton,</l>
+				<l n="75">Bowed and grinned to every one,</l>
+				<l n="76">As well as if his education</l>
+				<l n="77">Had cost ten millions to the nation.</l>
+
+			</lg>
+			<lg n="20">
+				<label>20</label>
+				<l n="78">For he knew the Palaces</l>
+				<l n="79">Of our Kings were rightly his;</l>
+				<l n="80">His the sceptre, crown, and globe,</l>
+				<l n="81">And the gold-inwoven robe.</l>
+
+			</lg>
+			<lg n="21">
+				<label>21</label>
+				<l n="82">So he sent his slaves before</l>
+				<l n="83">To seize upon the Bank and Tower,</l>
+				<l n="84">And was proceeding with intent</l>
+				<l n="85">To meet his pensioned Parliament</l>
+
+			</lg>
+			<lg n="22">
+				<label>22</label>
+				<l n="86">When one fled past, a maniac maid,</l>
+				<l n="87">And her name was Hope, she said:</l>
+				<l n="88">But she looked more like Despair,</l>
+				<l n="89">And she cried out in the air:</l>
+
+			</lg>
+			<lg n="23">
+				<label>23</label>
+				<l n="90">“My father Time is weak and gray</l>
+				<l n="91">With waiting for a better day;</l>
+				<l n="92">See how idiot-like he stands,</l>
+				<l n="93">Fumbling with his palsied hands!</l>
+
+			</lg>
+			<lg n="24">
+				<label>24</label>
+				<l n="94">“He has had child after child,</l>
+				<l n="95">And the dust of death is piled</l>
+				<l n="96">Over every one but me—</l>
+				<l n="97">Misery, oh, Misery!”</l>
+
+			</lg>
+			<lg n="25">
+				<label>25</label>
+				<l n="98">Then she lay down in the street,</l>
+				<l n="99">Right before the horses’ feet,</l>
+				<l n="100">Expecting, with a patient eye,</l>
+				<l n="101">Murder, Fraud, and Anarchy.</l>
+
+			</lg>
+			<lg n="26">
+				<label>26</label>
+				<l n="102">When between her and her foes</l>
+				<l n="103">A mist, a light, an image rose,</l>
+				<l n="104">Small at first, and weak, and frail</l>
+				<l n="105">Like the vapour of a vale:</l>
+
+			</lg>
+			<lg n="27">
+				<label>27</label>
+				<l n="106">Till as clouds grow on the blast,</l>
+				<l n="107">Like tower-crowned giants striding fast,</l>
+				<l n="108">And glare with lightnings as they fly,</l>
+				<l n="109">And speak in thunder to the sky,</l>
+
+			</lg>
+			<lg n="28">
+				<label>28</label>
+				<l n="110">It grew — a Shape arrayed in mail</l>
+				<l n="111">Brighter than the viper’s scale,</l>
+				<l n="112">And upborne on wings whose grain</l>
+				<l n="113">Was as the light of sunny rain.</l>
+
+			</lg>
+			<lg n="29">
+				<label>29</label>
+				<l n="114">On its helm, seen far away,</l>
+				<l n="115">A planet, like the Morning’s, lay;</l>
+				<l n="116">And those plumes its light rained through</l>
+				<l n="117">Like a shower of crimson dew.</l>
+
+			</lg>
+			<lg n="30">
+				<label>30</label>
+				<l n="118">With step as soft as wind it passed</l>
+				<l n="119">O’er the heads of men — so fast</l>
+				<l n="120">That they knew the presence there,</l>
+				<l n="121">And looked, — but all was empty air.</l>
+
+			</lg>
+			<lg n="31">
+				<label>31</label>
+				<l n="122">As flowers beneath May’s footstep waken,</l>
+				<l n="123">As stars from Night’s loose hair are shaken,</l>
+				<l n="124">As waves arise when loud winds call,</l>
+				<l n="125">Thoughts sprung where’er that step did fall.</l>
+
+			</lg>
+			<lg n="32">
+				<label>32</label>
+				<l n="126">And the prostrate multitude</l>
+				<l n="127">Looked — and ankle-deep in blood,</l>
+				<l n="128">Hope, that maiden most serene,</l>
+				<l n="129">Was walking with a quiet mien:</l>
+
+			</lg>
+			<lg n="33">
+				<label>33</label>
+				<l n="130">And Anarchy, the ghastly birth,</l>
+				<l n="131">Lay dead earth upon the earth;</l>
+				<l n="132">The Horse of Death tameless as wind</l>
+				<l n="133">Fled, and with his hoofs did grind</l>
+				<l n="134">To dust the murderers thronged behind.</l>
+
+			</lg>
+			<lg n="34">
+				<label>34</label>
+				<l n="135">A rushing light of clouds and splendour,</l>
+				<l n="136">A sense awakening and yet tender</l>
+				<l n="137">Was heard and felt — and at its close</l>
+				<l n="138">These words of joy and fear arose</l>
+
+			</lg>
+			<lg n="35">
+				<label>35</label>
+				<l n="139">As if their own indignant Earth</l>
+				<l n="140">Which gave the sons of England birth</l>
+				<l n="141">Had felt their blood upon her brow,</l>
+				<l n="142">And shuddering with a mother’s throe</l>
+
+			</lg>
+			<lg n="36">
+				<label>36</label>
+				<l n="143">Had turnè;d every drop of blood</l>
+				<l n="144">By which her face had been bedewed</l>
+				<l n="145">To an accent unwithstood,—</l>
+				<l n="146">As if her heart had cried aloud:</l>
+
+			</lg>
+			<lg n="37">
+				<label>37</label>
+				<l n="147">“Men of England, heirs of Glory,</l>
+				<l n="148">Heroes of unwritten story,</l>
+				<l n="149">Nurslings of one mighty Mother,</l>
+				<l n="150">Hopes of her, and one another;</l>
+			</lg>
+			<lg n="38">
+				<label>38</label>
+				<l n="151">“Rise like Lions after slumber</l>
+				<l n="152">In unvanquishable number,</l>
+				<l n="153">Shake your chains to earth like dew</l>
+				<l n="154">Which in sleep had fallen on you —</l>
+				<l n="155">Ye are many — they are few.</l>
+
+			</lg>
+			<lg n="39">
+				<label>39</label>
+				<l n="156">“What is Freedom? — ye can tell</l>
+				<l n="157">That which slavery is, too well —</l>
+				<l n="158">For its very name has grown</l>
+				<l n="159">To an echo of your own.</l>
+
+			</lg>
+			<lg n="40">
+				<label>40</label>
+				<l n="160">“’Tis to work and have such pay</l>
+				<l n="161">As just keeps life from day to day</l>
+				<l n="162">In your limbs, as in a cell</l>
+				<l n="163">For the tyrants’ use to dwell,</l>
+
+			</lg>
+			<lg n="41">
+				<label>41</label>
+				<l n="164">“So that ye for them are made</l>
+				<l n="165">Loom, and plough, and sword, and spade,</l>
+				<l n="166">With or without your own will bent</l>
+				<l n="167">To their defence and nourishment.</l>
+
+			</lg>
+			<lg n="42">
+				<label>42</label>
+				<l n="168">“’Tis to see your children weak</l>
+				<l n="169">With their mothers pine and peak,</l>
+				<l n="170">When the winter winds are bleak,—</l>
+				<l n="171">They are dying whilst I speak.</l>
+
+			</lg>
+			<lg n="43">
+				<label>43</label>
+				<l n="172">“’Tis to hunger for such diet</l>
+				<l n="173">As the rich man in his riot</l>
+				<l n="174">Casts to the fat dogs that lie</l>
+				<l n="175">Surfeiting beneath his eye;</l>
+
+			</lg>
+			<lg n="44">
+				<label>44</label>
+				<l n="176">“’Tis to let the Ghost of Gold</l>
+				<l n="177">Take from Toil a thousandfold</l>
+				<l n="178">More than e’er its substance could</l>
+				<l n="179">In the tyrannies of old.</l>
+
+			</lg>
+			<lg n="45">
+				<label>45</label>
+				<l n="180">“Paper coin — that forgery</l>
+				<l n="181">Of the title-deeds, which ye</l>
+				<l n="182">Hold to something of the worth</l>
+				<l n="183">Of the inheritance of Earth.</l>
+
+			</lg>
+			<lg n="46">
+				<label>46</label>
+				<l n="184">“’Tis to be a slave in soul</l>
+				<l n="185">And to hold no strong control</l>
+				<l n="186">Over your own wills, but be</l>
+				<l n="187">All that others make of ye.</l>
+
+			</lg>
+			<lg n="47">
+				<label>47</label>
+				<l n="188">“And at length when ye complain</l>
+				<l n="189">With a murmur weak and vain</l>
+				<l n="190">’Tis to see the Tyrant’s crew</l>
+				<l n="191">Ride over your wives and you—</l>
+				<l n="192">Blood is on the grass like dew.</l>
+
+			</lg>
+			<lg n="48">
+				<label>48</label>
+				<l n="193">“Then it is to feel revenge</l>
+				<l n="194">Fiercely thirsting to exchange</l>
+				<l n="195">Blood for blood — and wrong for wrong —</l>
+				<l n="196">Do not thus when ye are strong.</l>
+
+			</lg>
+			<lg n="49">
+				<label>49</label>
+				<l n="197">“Birds find rest, in narrow nest</l>
+				<l n="198">When weary of their wingè;d quest;</l>
+				<l n="199">Beasts find fare, in woody lair</l>
+				<l n="200">When storm and snow are in the air,<note n="1">The following stanza is found in the Wise MS and in Mary Shelley's edition
+					of 1839, but is wanting in the Hunt MS and&#x2028; in the first edition of 1832:
+					<lg><l>“Horses, oxen, have a home,</l>
+						<l>When from daily toil they come;</l>
+						<l>Household dogs, when the wind roars,&#x2028;</l>
+						<l>Find a home within warm doors.”</l></lg>
+				</note></l>
+			</lg>
+			
+			<lg n="50">
+				<label>50</label>
+				<l n="201">“Asses, swine, have litter spread</l>
+				<l n="202">And with fitting food are fed;</l>
+				<l n="203">All things have a home but one—</l>
+				<l n="204">Thou, Oh, Englishman, hast none!</l>
+
+			</lg>
+			<lg n="51">
+				<label>51</label>
+				<l n="205">“This is Slavery — savage men,</l>
+				<l n="206">Or wild beasts within a den</l>
+				<l n="207">Would endure not as ye do—</l>
+				<l n="208">But such ills they never knew.</l>
+
+			</lg>
+			<lg n="52">
+				<label>52</label>
+				<l n="209">“What art thou Freedom? O! could slaves</l>
+				<l n="210">Answer from their living graves</l>
+				<l n="211">This demand — tyrants would flee</l>
+				<l n="212">Like a dream’s dim imagery:</l>
+
+			</lg>
+			<lg n="53">
+				<label>53</label>
+				<l n="213">“Thou art not, as impostors say,</l>
+				<l n="214">A shadow soon to pass away,</l>
+				<l n="215">A superstition, and a name</l>
+				<l n="216">Echoing from the cave of Fame.</l>
+
+			</lg>
+			<lg n="54">
+				<label>54</label>
+				<l n="217">“For the labourer thou art bread,</l>
+				<l n="218">And a comely table spread</l>
+				<l n="219">From his daily labour come</l>
+				<l n="220">In a neat and happy home.</l>
+			</lg>
+			<lg n="55">
+				<label>55</label>
+				<l n="221">“Thou art clothes, and fire, and food</l>
+				<l n="222">For the trampled multitude—</l>
+				<l n="223">No — in countries that are free</l>
+				<l n="224">Such starvation cannot be</l>
+				<l n="225">As in England now we see.</l>
+
+			</lg>
+			<lg n="56">
+				<label>56</label>
+				<l n="226">“To the rich thou art a check,</l>
+				<l n="227">When his foot is on the neck</l>
+				<l n="228">Of his victim, thou dost make</l>
+				<l n="229">That he treads upon a snake.</l>
+
+			</lg>
+			<lg n="57">
+				<label>57</label>
+				<l n="230">“Thou art Justice — ne’er for gold</l>
+				<l n="231">May thy righteous laws be sold</l>
+				<l n="232">As laws are in England — thou</l>
+				<l n="233">Shield’st alike the high and low.</l>
+
+			</lg>
+			<lg n="58">
+				<label>58</label>
+				<l n="234">“Thou art Wisdom — Freemen never</l>
+				<l n="235">Dream that God will damn for ever</l>
+				<l n="236">All who think those things untrue</l>
+				<l n="237">Of which Priests make such ado.</l>
+
+			</lg>
+			<lg n="59">
+				<label>59</label>
+				<l n="238">“Thou art Peace — never by thee</l>
+				<l n="239">Would blood and treasure wasted be</l>
+				<l n="240">As tyrants wasted them, when all</l>
+				<l n="241">Leagued to quench thy flame in Gaul.</l>
+
+			</lg>
+			<lg n="60">
+				<label>60</label>
+				<l n="242">“What if English toil and blood</l>
+				<l n="243">Was poured forth, even as a flood?</l>
+				<l n="244">It availed, Oh, Liberty,</l>
+				<l n="245">To dim, but not extinguish thee.</l>
+
+			</lg>
+			<lg n="61">
+				<label>61</label>
+				<l n="246">“Thou art Love — the rich have kissed</l>
+				<l n="247">Thy feet, and like him following Christ,</l>
+				<l n="248">Give their substance to the free</l>
+				<l n="249">And through the rough world follow thee,</l>
+
+			</lg>
+			<lg n="62">
+				<label>62</label>
+				<l n="250">“Or turn their wealth to arms, and make</l>
+				<l n="251">War for thy belovè;d sake</l>
+				<l n="252">On wealth, and war, and fraud—whence they</l>
+				<l n="253"> Drew the power which is their prey.</l>
+
+			</lg>
+			<lg n="63">
+				<label>63</label>
+				<l n="254">“Science, Poetry, and Thought</l>
+				<l n="255">Are thy lamps; they make the lot</l>
+				<l n="256">Of the dwellers in a cot</l>
+				<l n="257">So serene, they curse it not.</l>
+
+			</lg>
+			<lg n="64">
+				<label>64</label>
+				<l n="258">“Spirit, Patience, Gentleness,</l>
+				<l n="259">All that can adorn and bless</l>
+				<l n="260">Art thou — let deeds, not words, express </l>
+				<l n="261">Thine exceeding loveliness.</l>
+
+			</lg>
+			<lg n="65">
+				<label>65</label>
+				<l n="262">“Let a great Assembly be</l>
+				<l n="263">Of the fearless and the free</l>
+				<l n="264">On some spot of English ground</l>
+				<l n="265">Where the plains stretch wide around.</l>
+
+			</lg>
+			<lg n="66">
+				<label>66</label>
+				<l n="266">“Let the blue sky overhead,</l>
+				<l n="267">The green earth on which ye tread,</l>
+				<l n="268">All that must eternal be</l>
+				<l n="269">Witness the solemnity.</l>
+
+			</lg>
+			<lg n="67">
+				<label>67</label>
+				<l n="270">“From the corners uttermost</l>
+				<l n="271">Of the bonds of English coast;</l>
+				<l n="272">From every hut, village, and town</l>
+				<l n="273">Where those who live and suffer moan</l>
+				<l n="274">For others’ misery or their own.<note n="2">The following stanza is found (cancelled) at this&#x2028; place in the Wise MS.:
+					<lg><l>“From the cities where from caves,</l>
+						<l>Like the dead from putrid graves,</l>
+						<l>Troops of starvelings gliding come,</l>
+						<l>Living Tenants of a tomb.”</l></lg>
+				</note></l>
+			</lg>
+			
+			<lg n="68">
+				<label>68</label>
+				<l n="275">“From the workhouse and the prison</l>
+				<l n="276">Where pale as corpses newly risen,</l>
+				<l n="277">Women, children, young and old</l>
+				<l n="278">Groan for pain, and weep for cold—</l>
+
+			</lg>
+			<lg n="69">
+				<label>69</label>
+				<l n="279">“From the haunts of daily life</l>
+				<l n="280">Where is waged the daily strife</l>
+				<l n="281">With common wants and common cares</l>
+				<l n="282">Which sows the human heart with tares—</l>
+
+			</lg>
+			<lg n="70">
+				<label>70</label>
+				<l n="283">“Lastly from the palaces</l>
+				<l n="284">Where the murmur of distress</l>
+				<l n="285">Echoes, like the distant sound</l>
+				<l n="286">Of a wind alive around</l>
+
+			</lg>
+			<lg n="71">
+				<label>71</label>
+				<l n="287">“Those prison halls of wealth and fashion,</l>
+				<l n="288">Where some few feel such compassion</l>
+				<l n="289">For those who groan, and toil, and wail</l>
+				<l n="290">As must make their brethren pale—</l>
+			</lg>
+			<lg n="72">
+				<label>72</label>
+				<l n="291">“Ye who suffer woes untold,</l>
+				<l n="292">Or to feel, or to behold</l>
+				<l n="293">Your lost country bought and sold</l>
+				<l n="294">With a price of blood and gold—</l>
+
+			</lg>
+			<lg n="73">
+				<label>73</label>
+				<l n="295">“Let a vast assembly be,</l>
+				<l n="296">And with great solemnity</l>
+				<l n="297">Declare with measured words that ye</l>
+				<l n="298">Are, as God has made ye, free—</l>
+
+			</lg>
+			<lg n="74">
+				<label>74</label>
+				<l n="299">“Be your strong and simple words</l>
+				<l n="300">Keen to wound as sharpened swords,</l>
+				<l n="301">And wide as targes let them be,</l>
+				<l n="302">With their shade to cover ye.</l>
+
+			</lg>
+			<lg n="75">
+				<label>75</label>
+				<l n="303">“Let the tyrants pour around</l>
+				<l n="304">With a quick and startling sound,</l>
+				<l n="305">Like the loosening of a sea,</l>
+				<l n="306">Troops of armed emblazonry.</l>
+
+			</lg>
+			<lg n="76">
+				<label>76</label>
+				<l n="307">“Let the charged artillery drive</l>
+				<l n="308">Till the dead air seems alive</l>
+				<l n="309">With the clash of clanging wheels,</l>
+				<l n="310">And the tramp of horses’ heels.</l>
+			</lg>
+			<lg n="77">
+				<label>77</label>
+				<l n="311">“Let the fixè;d bayonet</l>
+				<l n="312">Gleam with sharp desire to wet</l>
+				<l n="313">Its bright point in English blood</l>
+				<l n="314">Looking keen as one for food.</l>
+
+			</lg>
+			<lg n="78">
+				<label>78</label>
+				<l n="315">“Let the horsemen’s scimitars</l>
+				<l n="316">Wheel and flash, like sphereless stars</l>
+				<l n="317">Thirsting to eclipse their burning</l>
+				<l n="318">In a sea of death and mourning.</l>
+
+			</lg>
+			<lg n="79">
+				<label>79</label>
+				<l n="319">“Stand ye calm and resolute,</l>
+				<l n="320">Like a forest close and mute,</l>
+				<l n="321">With folded arms and looks which are</l>
+				<l n="322">Weapons of unvanquished war,</l>
+
+			</lg>
+			<lg n="80">
+				<label>80</label>
+				<l n="323">“And let Panic, who outspeeds</l>
+				<l n="324">The career of armè;d steeds</l>
+				<l n="325">Pass, a disregarded shade</l>
+				<l n="326">Through your phalanx undismayed.</l>
+
+			</lg>
+			<lg n="81">
+				<label>81</label>
+				<l n="327">“Let the laws of your own land,</l>
+				<l n="328">Good or ill, between ye stand</l>
+				<l n="329">Hand to hand, and foot to foot,</l>
+				<l n="330">Arbiters of the dispute,</l>
+			</lg>
+			<lg n="82">
+				<label>82</label>
+				<l n="331">“The old laws of England — they</l>
+				<l n="332">Whose reverend heads with age are gray,</l>
+				<l n="333">Children of a wiser day;</l>
+				<l n="334">And whose solemn voice must be</l>
+				<l n="335">Thine own echo — Liberty!</l>
+
+			</lg>
+			<lg n="83">
+				<label>83</label>
+				<l n="336">“On those who first should violate</l>
+				<l n="337">Such sacred heralds in their state</l>
+				<l n="338">Rest the blood that must ensue,</l>
+				<l n="339">And it will not rest on you.</l>
+
+			</lg>
+			<lg n="84">
+				<label>84</label>
+				<l n="340">“And if then the tyrants dare</l>
+				<l n="341">Let them ride among you there,</l>
+				<l n="342">Slash, and stab, and maim, and hew,—</l>
+				<l n="343">What they like, that let them do.</l>
+			</lg>
+			<lg n="85">
+				<label>85</label>
+				<l n="344">“With folded arms and steady eyes,</l>
+				<l n="345">And little fear, and less surprise,</l>
+				<l n="346">Look upon them as they slay</l>
+				<l n="347">Till their rage has died away.</l>
+
+			</lg>
+			<lg n="86">
+				<label>86</label>
+				<l n="348">“Then they will return with shame</l>
+				<l n="349">To the place from which they came,</l>
+				<l n="350">And the blood thus shed will speak</l>
+				<l n="351">In hot blushes on their cheek.</l>
+
+			</lg>
+			<lg n="87">
+				<label>87</label>
+				<l n="352"> “Every woman in the land</l>
+				<l n="353">Will point at them as they stand—</l>
+				<l n="354">They will hardly dare to greet</l>
+				<l n="355">Their acquaintance in the street.</l>
+
+			</lg>
+			<lg n="88">
+				<label>88</label>
+				<l n="356">“And the bold, true warriors</l>
+				<l n="357">Who have hugged Danger in wars</l>
+				<l n="358">Will turn to those who would be free,</l>
+				<l n="359">Ashamed of such base company.</l>
+
+			</lg>
+			<lg n="89">
+				<label>89</label>
+				<l n="360">“And that slaughter to the Nation</l>
+				<l n="361">Shall steam up like inspiration,</l>
+				<l n="362">Eloquent, oracular;</l>
+				<l n="363">A volcano heard afar.</l>
+
+			</lg>
+			<lg n="90">
+				<label>90</label>
+				<l n="364">“And these words shall then become</l>
+				<l n="365">Like Oppression’s thundered doom</l>
+				<l n="366">Ringing through each heart and brain,</l>
+				<l n="367">Heard again — again — again—</l>
+
+			</lg>
+			<lg n="91">
+				<label>91</label>
+				<l n="368">“Rise like Lions after slumber</l>
+				<l n="369">In unvanquishable number—</l>
+				<l n="370">Shake your chains to earth like dew</l>
+				<l n="371">Which in sleep had fallen on you—</l>
+				<l n="372">Ye are many — they are few.”</l>
+			</lg>
+
+
+
+		</body>
+
+	</text>
+</TEI>

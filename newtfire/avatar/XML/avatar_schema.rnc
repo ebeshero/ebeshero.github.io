@@ -1,0 +1,9 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = avatarEpisode
+avatarEpisode = element avatarEpisode {n, transcript*}
+transcript = element transcript {scene*}
+scene = element scene {n, sd*, speaker*}
+n = attribute n {xsd:integer}
+sd = element sd {text}
+speaker = element speaker {text}

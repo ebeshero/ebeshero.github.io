@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atla>
+    <transcript>
+        <head>
+            <episode n="05">Avatar Day</episode>
+            <book n="2">Earth</book>
+            <source link="https://avatar.fandom.com/wiki/Transcript:Avatar_Day"/>
+        </head>
+        
+        <charlist>
+            <charList type="recurring" id="Zuko">Zuko</charList>
+            <charList type="recurring" id="Iroh">Iroh</charList>
+        </charlist>
+        <body>
+            <scene n="1">
+<sd>Cut to Zuko's and Iroh's hideout in the forest. Zuko sits next to the campfire as Iroh walks into the cave to inspect a new tea set.</sd>
+<sp><speaker ref="Iroh">Iroh</speaker>	Looks like you did some serious shopping. <sd>[He picks up a big, gold-colored teapot.]</sd> But where did you get the money?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Lazily resting against a tree trunk.]</sd> Do you like your new teapot?</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	To be honest with you <sd>[He puts the pot down.]</sd>, the best tea tastes delicious whether it comes in a porcelain pot or a tin cup. <sd>[Iroh walks over to Zuko and squats down beside him.]</sd> I know we've had some difficult times lately. We've had to struggle just to get by. <sd>[Places a hand on Zuko's shoulder who closes his eyes as if he was holding something back.]</sd> But it's nothing to be ashamed of. There is a simple honor in poverty.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	There's no honor for me without the Avatar.</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	Zuko ... <sd>[Sighs.]</sd> Even if you did capture the Avatar, I'm not so sure it would solve our problems. Not now.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Turns away from his uncle.]</sd> Then there is no hope at all.</sp>
+<sd>Zuko wants to stand up and leave the cave, but Iroh grabs him by the shoulders and sits him down.</sd>
+<sp><speaker ref="Iroh">Iroh</speaker>	No, Zuko! You must never give in to despair. Allow yourself to slip down that road and you surrender to your lowest instincts. <sd>[Zuko bows his head as he listens to his uncle's wisdom.]</sd> In the darkest times, hope is something you give yourself. That is the meaning of inner strength.</sp>
+<sd>Zuko turns to face his uncle, who looks back at him with a sad look upon his face. Abruptly, Zuko pulls free from Iroh's grasp and heads out into the forest.</sd></scene>
+             
+            <scene n="2">
+<sp><speaker ref="Zuko">Zuko</speaker>	<char ref="Iroh">Uncle</char> ... <sd>[Switch to a close-up of Iroh with Zuko on the background.]</sd> I thought a lot about what you said.</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	<sd>[Iroh's sad expression clears up as he hears Zuko talk.]</sd> You did? Good, good.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	It's helped me realize something. We no longer have anything to gain by traveling together. <sd>[Iroh's brightened expression quickly disappears again.]</sd> I need to find my own way.</sp>
+<sd>Iroh bows his head in sorrow. Zuko looks at his uncle for a moment before grabbing his backpack and walking away. The camera zooms in on Iroh's face.</sd>
+<sp><speaker ref="Iroh">Iroh</speaker>	<sd>[Calling after Zuko.]</sd> Wait!</sp>
+<sd>Iroh hands Zuko the reins of the ostrich horse. Zuko mounts it, looks at his uncle one last time and heads off, leaving a broken Iroh.</sd></scene>
+        </body>
+    </transcript>
+</atla>

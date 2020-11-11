@@ -287,16 +287,16 @@ q.double {
 }
 .df16 {
     display: inline;
-    background-color: #FF0000;
-    color: #FFFFFF;
+    background-color: #e51d1d;
+    color: #000000;
 }
 .df16text {
     display: inline;
 }
 .df6 {
     display: inline;
-    background-color: #FF0000;
-    color: #FFFFFF;
+    background-color: #e51d1d;
+    color: #000000;
 }
 .df6text {
     display: inline;
@@ -307,6 +307,7 @@ q.double {
 .poems1 {
     display: inline;
     background-color: #FF9900;
+    color: #000000;
 }
 .poems1text {
     display: inline;
@@ -317,6 +318,7 @@ q.double {
 .poems2 {
     display: inline;
     background-color: #FFFF00;
+    color: #000000;
 }
 .poems2text {
     display: inline;
@@ -327,6 +329,7 @@ q.double {
 .poems3 {
     display: inline;
     background-color: #ACE500;
+    color: #000000;
 }
 .poems3text {
     display: inline;
@@ -337,6 +340,7 @@ q.double {
 .fp {
     display: inline;
     background-color: #00CC00;
+    color: #000000;
 }
 .fptext {
     display: inline;
@@ -346,7 +350,8 @@ q.double {
 }
 .ce {
     display: inline;
-    background-color: #0099CC;
+    background-color: #067ea6;
+    color: #000000;
 }
 .cetext {
     display: inline;
@@ -356,8 +361,8 @@ q.double {
 }
 .fh {
     display: inline;
-    background-color: #2200CC;
-    color: #FFFFFF;
+    background-color: #7459f9;
+    color: #000000;
 }
 .fhtext {
     display: inline;
@@ -367,8 +372,8 @@ q.double {
 }
 .bm {
     display: inline;
-    background-color: #8800CC;
-    color: #FFFFFF;
+    background-color: #ab40e0;
+    color: #000000;
 }
 .bmtext {
     display: inline;
@@ -379,6 +384,7 @@ q.double {
 .am {
     display: inline;
     background-color: #ff4dff;
+    color: #000000;
 }
 .amtext {
     display: inline;
@@ -388,7 +394,8 @@ q.double {
 }
 .lSD {
     display: inline;
-    background-color: #EC008C;
+    background-color: #ff0099;
+    color: #000000;
 }
 .lSDtext {
     display: inline;
@@ -399,6 +406,7 @@ q.double {
 .LETTER {
     display: inline;
     background-color: #008080;
+    color: #000000;
 }
 .LETTERtext {
     display: inline;
@@ -408,8 +416,8 @@ q.double {
 }
 .D {
     display: inline;
-    background-color: #006622;
-    color: #FFFFFF;
+    background-color: #208642;
+    color: #000000;
 }
 .Dtext {
     display: inline;
@@ -419,7 +427,8 @@ q.double {
 }
 .CP {
     display: inline;
-    background-color: #e64d00;
+    background-color: #c64f13;
+    color: #000000;
 }
 .CPtext {
     display: inline;
@@ -480,7 +489,7 @@ button {
     font-size: 15px;
 }
 .origXML, .regButton {
-    color:#FFFFFF;
+    color:#000000;
     text-decoration: none;
     width: 150px;
     height: 60px;
@@ -496,38 +505,45 @@ button {
 }
 .origXML:hover, .regButton:hover {
     color:#000000;
+    background-color: #a6a6a6;
 }
-.origImg:hover {
+.origImg {
     color:#000000;
 }
 .df16Key {
-    background-color: #C80000;
+    color: #000000;
+    background-color: #e51d1d;
     -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     box-shadow: inset 0 0 10px rgba(0,0,0,.3);
 }
 .df16Key:hover, .df16KeyON {
-    background-color: #FF0000;
+    color: #000000;
+    background-color: #e61a1a;
     -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 0 rgba(0,0,0,.3); 
     box-shadow: inset 0 0 0 rgba(0,0,0,.3);
 }
 .df6Key {
-    background-color: #C80000;
+    color: #000000;
+    background-color: #e51d1d;
     -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     box-shadow: inset 0 0 10px rgba(0,0,0,.3);
 }
 .df6Key:hover, .df6KeyON {
-    background-color: #FF0000;
+    color: #000000;
+    background-color: #e61a1a;
     -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 0 rgba(0,0,0,.3); 
     box-shadow: inset 0 0 0 rgba(0,0,0,.3);
 }
 .poems1Key {
+    color: #000000;
     background-color: #FF9900;
 }
 .poems1Key:hover, .poems1KeyON {
+    color: #000000;
     background-color: #C87800;
     -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
@@ -549,94 +565,113 @@ button {
     color: #000000;
 }
 .poems3Key:hover, .poems3KeyON {
+    color: #000000;
     background-color: #87B400;
     -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     box-shadow: inset 0 0 10px rgba(0,0,0,.3);
 }
 .fpKey {
+    color: #000000;
     background-color: #00CC00;
 }
 .fpKey:hover, .fpKeyON {
+    color: #000000;
     background-color: #00A000;
     -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     box-shadow: inset 0 0 10px rgba(0,0,0,.3);
 }
 .ceKey {
+    color: #000000;
     background-color: #0099CC;
 }
 .ceKey:hover, .ceKeyON {
-    background-color: #0078A0;
+    color: #000000;
+    background-color: #067ea6;
     -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     box-shadow: inset 0 0 10px rgba(0,0,0,.3);
 }
 .fhKey {
-    background-color: #2200CC;
+    color: #000000;
+    background-color: #7357ff;
 }
 .fhKey:hover, .fhKeyON {
-    background-color: #1B00A0;
+    color: #000000;
+    background-color: #7459f9;
     -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     box-shadow: inset 0 0 10px rgba(0,0,0,.3);
 }
 .bmKey {
-    background-color: #8800CC;
+    color: #000000;
+    background-color: #ab40e0;
 }
 .bmKey:hover, .bmKeyON {
-    background-color: #6B00A0;
+    color: #000000;
+    background-color: #b129f5;
     -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     box-shadow: inset 0 0 10px rgba(0,0,0,.3);
 }
 .amKey {
+    color: #000000;
     background-color: #ff4dff;
 }
 .amKey:hover, .amKeyON {
-    background-color: #AA0063;
+    color: #000000;
+    background-color: #e60086;
     -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     box-shadow: inset 0 0 10px rgba(0,0,0,.3);
 }
 .lSDKey {
-    background-color: #EC008C;
+    color: #000000;
+    background-color: #ff0099;
 }
 .lSDKey:hover, .lSDKeyON {
-    background-color: #B20069;
+    color: #000000;
+    background-color: #EC008C;
     -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     box-shadow: inset 0 0 10px rgba(0,0,0,.3);
 }
 .LETTERKey {
+    color: #000000;
     background-color: #008080;
 }
 .LETTERKey:hover, .LETTERKeyON {
+    color: #000000;
     background-color: #004d4d;
     -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     box-shadow: inset 0 0 10px rgba(0,0,0,.3);
 }
 .DKey {
-    background-color: #006622;
+    color: #000000;
+    background-color: #208642;
 }
 .DKey:hover, .DKeyON {
-    background-color: #004d1a;
+    color: #000000;
+    background-color: #368350;
     -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     box-shadow: inset 0 0 10px rgba(0,0,0,.3);
 }
 .CPKey {
+    color: #000000;
     background-color: #e64d00;
 }
 .CPKey:hover, .CPKeyON {
-    background-color: #b33c00;
+    color: #000000;
+    background-color: #c64f13;
     -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.3); 
     box-shadow: inset 0 0 10px rgba(0,0,0,.3);
 }
 .var {
-    background-color: #999999;
+    background-color: #767676;
     color: #FFFFFF;
 }
 .modal {

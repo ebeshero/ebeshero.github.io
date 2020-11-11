@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="../ODD/out/GeoWash.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter to the Justicesof the Supreme Court</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Written By Greoge Washington</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>From the Library of Congress</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+        <p> <placeName>Philadelphia,</placeName> <date>July 23, 1793.</date></p>
+           <p> Gentlemen: The circumstances which had induced me to ask your counsel on certain legal questions
+            interesting to the public, exist now as they did then; but I by no means press a decision whereon
+            you wish the advice and participation of your absent brethren. Whenever, therefore, their presence
+            shall enable you to give it with more satisfaction to yourselves, I shall accept it with pleasure. With
+            sentiments of high respect, I am </p>
+      </body>
+  </text>
+</TEI>

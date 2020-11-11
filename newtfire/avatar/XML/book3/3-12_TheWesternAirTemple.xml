@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atla>
+    <transcript>
+        <head>
+            <episode n="12">The Western Air Temple</episode>
+            <book n="3">Fire</book>
+            <source link="https://avatar.fandom.com/wiki/Transcript:The_Western_Air_Temple"/>
+        </head>
+        
+        <charlist>
+            <charList type="recurring" id="Zuko">Zuko</charList>
+            <charList type="recurring" id="Aang">Aang</charList>
+            <charList type="recurring" id="Katara">Katara</charList>
+            <charList type="recurring" id="Sokka">Sokka</charList>
+            <charList type="recurring" id="Toph">Toph</charList>
+            <charList type="recurring" id="Ozai">Fire Lord</charList>
+        </charlist>
+        <body>
+            <scene n="1">
+<sp><speaker ref="Zuko">Zuko</speaker>	Listen, I know I didn't explain myself very well yesterday, I've been through a lot in the last few years, and it's been hard. But I'm realizing that I had to go through all those things to learn the truth. I thought I had lost my honor, and that somehow my <char ref="Ozai">father</char> could return it to me. But I know now that no one can give you your honor. It's something you earn for yourself, by choosing to do what's right. All I want to do now is play my part in ending this war, and I know my destiny is to help you restore balance to the world. <sd>[To Toph.]</sd> I'm sorry for what I did to you. <sd>[Bows to her.]</sd> It was an accident. Fire can be dangerous and wild, so as a firebender, I need to be more careful and control my bending, so I don't hurt people unintentionally.</sp>
+<sp><speaker ref="Aang">Aang</speaker>	<sd>[Looks at Zuko shocked, hearing these words, and thinks for a moment.]</sd> I think you are supposed to be my firebending teacher. When I first tried to learn firebending, I burned <char ref="Katara">Katara</char>, and after that, I never wanted to firebend again. But now I know you understand how easy it is to hurt the people you love. I'd like you to teach me. <sd>[Bows before Zuko.]</sd></sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Bows.]</sd> Thank you. I'm so happy you've accepted me into your group.</sp>
+<sp><speaker ref="Aang">Aang</speaker>	Not so fast. I still have to ask my friends if it's okay with them. <sd>[To Toph.]</sd> <char ref="Toph">Toph</char>, you're the one that <char ref="Zuko">Zuko</char> burned. What do you think?</sp>
+<sp><speaker ref="Toph">Toph</speaker>	Go ahead and let him join. <sd>[Pounds her fist into her palm jokingly.]</sd> It'll give me plenty of time to get back at him for burning my feet.</sp>
+<sp><speaker ref="Aang">Aang</speaker>	<sd>[Turning to Sokka.]</sd> <char ref="Sokka">Sokka</char>?</sp>
+<sp><speaker ref="Sokka">Sokka</speaker>	<sd>[Shrugging.]</sd> Hey, all I want is to defeat the <char ref="Ozai">Fire Lord</char>. If you think this is the way to do it, then, I'm all for it.</sp>
+<sp><speaker ref="Aang">Aang</speaker>	<sd>[Approaching Katara.]</sd> <char ref="Katara">Katara</char>?</sp>
+<sp><speaker ref="Katara">Katara</speaker>	<sd>[Glares at Zuko for a moment and Zuko starts to sweat; reluctantly.]</sd> I'll go along with whatever you think is right. <sd>[Aang smiles.]</sd></sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Excitedly approaching the group.]</sd> I won't let you down! I promise!</sp></scene>
+    
+        </body>
+    </transcript>
+</atla>

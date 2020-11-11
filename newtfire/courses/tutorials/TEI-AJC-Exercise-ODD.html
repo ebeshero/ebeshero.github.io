@@ -1,0 +1,59 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="../explain.css" />
+        <title>TEI Exercise: ODD work with AJC</title>
+    </head>
+    <body>
+        <!--#include virtual="top.html" -->
+        <h1><span class="banner">TEI Exercise: Work with an ODD file</span></h1>
+        <section title="objectives">
+            <h3>Optimizing work with the TEI for a project</h3>
+            <p>This is part of a series of assignments to introduce you to the XML-based language of the Text Encoding Initiative (TEI). We are continuing to work with <a href="https://dh.howard.edu/cgi/viewcontent.cgi?article=1001&amp;context=ajc_bio">Anna Julia Cooper’s handwritten response to a survey of black college graduates in 1930</a>. This time, we are exploring how a customization of the TEI, selecting and limiting the TEI elements we need for a project, can change the way we work with the TEI. We are also going to build on the experimental code we started with, but try to shape the markup to help address specific research questions or interests.</p>
+          
+        </section>
+        <section title="resources">
+            <h3>Resources to study and work with</h3>
+           <p>It may help you to find a way to divide your computer screen or to look at two screens. You need to be working with three resources:</p>
+            
+               <ul>
+                   <li>Anna Julia Cooper’s survey response form</li>
+                   <li>A starter TEI document compiled from the class, connected with an ODD schema</li>
+                   <li>A customized TEI ODD schema, custom made for the AJC Survey</li>
+                   <li>The oXygen XML Editor</li>
+
+               </ul>
+          
+        </section>
+        <section title="coding">
+            <h3>Coding with help from a TEI ODD customization</h3>
+        <h4>Preparing the workspace: </h4>
+            <ul><li>This time, begin with a TEI starter file posted on the textEncoding-Hub. You should update your local clone of the textEncoding-Hub with <code>git pull</code>, and open up Class Examples &gt; TEI-ODD-AJC. Open in your oXygen XML Editor the file titled <code>AJCSurvey-TEI.xml</code>. The schema lines on this file are pointing to the schema generated from our class's ODD customization for the AJC Survey.
+            </li>
+            <li>Open a web browser to have ready access to our HTML view of theUse control + O (on Windows) or Command+ O)  on a Mac: Browse to the same file directory to open the <code>AJCSurvey-ODD.html</code>. This gives you a view of the TEI elements we selected for this project, and you can search on the page to link to the TEI guidelines to find out more information about any particular element and its use.</li>
+                <li>If you wish, open the AJCSurvey-ODD.odd to view the decisions we have made in selecting modules and elements from the TEI.</li>
+           <li><strong>Save the whole file directory containing the TEI-ODD-AJC files</strong> to work with it in <strong>your own local space OUTSIDE the textEncoding-Hub</strong>. 
+               You are editing the TEI XML file named <code>AJCSurvey-TEI.xml</code>. Apply our usual homework filenaming conventions, so you can submit it on Canvas. (You may zip the whole directory to keep the schema association lines intact.)</li>
+           </ul>
+ <h4>Build on the TEI XML with help from the Class ODD</h4>
+            <p>Study the markup already in the document, review the comments, and begin adding code by adding your name as an editor adding your own name in an <code>&lt;editor&gt;</code> element in the <code>teiHeader</code>.</p>
+            <p>Now try to add your markup to fit the structure and rules supplied here. Try fitting in the portions of the document you have transcribed in earlier assignments in the structure provided here. Or find a place to add new markup to represent a different section of the document that is not already represented. 
+              With your new markup applied here, see if you can address one of the research questions discussed in the XML comment following the <code>body</code> element. Or try collecting some information in markup that seems of interest about AJC’s life or writing.
+                Work with elements and attributes to begin organizing and marking data of interest.</p>
+            <p>You do not need to completely encode the entire survey, but try to contribute significantly more than is already present in the document. 
+                Try adding a new question not represented here, or filling out and correcting something. 
+                You can mark off any new material you add with an XML comment, like I did here:
+                <code>&lt;!-- ebb: Make a comment introduced with your name or initials to mark where you add new material to this file --&gt;</code>
+            </p>
+            
+        </section>
+        
+        
+        <section title="how_to_submit">
+            <h3>Submitting your work</h3>
+            <p>Be sure to give your file a name that meets our <a href="explainFileNames.html">homework file submission rules</a>. Zip the whole file directory and submit it in the appropriate place on Canvas for this TEI Exercise. Or you may simply submit the TEI XML file by itself.</p>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+.checkbox1{
+    color:lime;
+}
+.checkbox2{
+    color:red;
+}
+.checkbox3{
+    color:magenta;
+}
+.checkbox4{
+    color:cyan;
+}
+.checkbox5{
+    color:navajowhite;
+}
+.checkbox6{
+    color:yellow;
+}
+h2:hover{
+        color:#FFBB4A;
+}
+section.conversation > div {
+    display: none;
+}
+#left {
+    width: 20%;
+    top: 55%;
+    position: fixed;
+    outline: 1px solid;
+    background: #FFBB4A;
+}
+#right {
+    width: 75%;
+    height: auto;
+    position: absolute;
+    right: 0;
+}
+#top {
+    width: 100%;
+    height: auto;
+}
+ul {
+  list-style-type: none;
+}

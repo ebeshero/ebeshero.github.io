@@ -1,0 +1,2044 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml">
+   
+   
+   
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      
+      
+      
+      
+      
+      
+      
+      
+      <title>Syllabus: Text Encoding</title>
+      
+      
+      
+      
+      <meta name="Description" content="Supported by DIGIT at Penn State Erie, The Behrend College" />
+      
+      
+      
+      
+      <meta name="keywords" content="Digital Humanities, Syllabus, XML, TEI, XSLT, XQuery, Schematron, Relax NG, SVG, digital scholarship, digital edition, electronic edition, electronic text, humanities computing, electronic editing, Beshero-Bondar" />
+      
+      
+      
+      
+      <link rel="stylesheet" type="text/css" href="../syllsched.css" /><script type="text/javascript" src="../jumpingDateLinks.js">/**/</script></head>
+   
+   
+   
+   
+   <body>
+      <!--#include virtual="../top.html" -->
+      
+      
+      
+      
+      <h1><span class="banner">DIGIT 110: Text Encoding</span></h1>
+      
+      
+      
+      
+      
+      <div id="main">
+         
+         
+         
+         
+         <div id="courseInfo">
+            
+            
+            
+            
+            
+            <p><strong>Fall 2020 Syllabus (Schedule)</strong>
+               Classes meet M W F 12:20 - 1:10pm over Zoom and in Kochel 77. Zoom attendance is required
+               for all students. The classroom is optional, but even in the classroom you will be
+               connecting to Zoom to team up with your classmates.
+               We may need to divide into groups to rotate attendance in the physical classroom.
+               Group assignments will be made in <a href="http://canvas.psu.edu" target="_blank">Canvas</a>.
+               For in-class meetings, we must all wear masks and maintain a safe social distance.
+               Remember: <em>Your mask protects me, my mask protects you</em>.
+               </p>
+            
+            
+            
+            
+            <h2>Read the <a href="index.html" target="_blank">Course Description</a></h2>
+            
+            <p>This contains a detailed explanation of course policies and the basis for grades.</p>
+            
+            
+            <h2><a id="dateRef">Jump Down to the Schedule</a></h2>
+            
+            <p>This link jumps to the closest day to today's date. Review the schedule as we get
+               started to get a sense of how this course will work on a daily basis.</p>
+            
+            
+            
+            
+            <h2>All the Tools You Need As We Begin:</h2>
+            
+            
+            
+            
+            
+            
+            <p>Download and install the following software on your own personal computer(s) on or
+               before the first day of class. These software tools are available in our campus computing
+               labs, too.
+               </p>
+            
+            
+            
+            
+            
+            <ol>
+               
+               
+               
+               <li><a href="https://www.oxygenxml.com/xml_editor.html" target="_blank">&lt;oXygen/&gt;</a>. 
+                  The DIGIT program has purchased a site license for this software, which
+                  is installed in Kochel 77 and the Lilley Library computers. The license also permits
+                  students enrolled in the
+                  course to install the software on their home computers (for course-related use
+                  only). When installing this on your own computers, <strong>you will need the
+                     license key</strong>, which we have posted on our course Announcements section of
+                  <a href="https://canvas.psu.edu" target="_blank">Canvas</a>.</li>
+               
+               <li>Zoom: <a href="https://support.zoom.us/hc/en-us/articles/201362233-Upgrade-update-to-the-latest-version" target="_blank">Make sure your Zoom installation is up-to-date</a>, and you are ready to
+                  connect. The Zoom link for our regularly scheduled class meetings is posted in
+                  Canvas: Look for the Zoom menu option. </li>
+               
+               
+               
+               <li>All students require a good means of secure file transfer (SFTP) for homework
+                  assignments and projects (also available in the campus computer labs). There are
+                  several good options available. We recommend you download and install on your own
+                  computers one (or more) of the following, depending on your platform: (Feel free
+                  to experiment with these and others!) 
+                  
+                  
+                  
+                  
+                  <ul>
+                     
+                     
+                     
+                     <li><strong>Windows users:</strong> one of the following FTP clients—the functionality is
+                        similar: 
+                        
+                        
+                        
+                        
+                        <ul>
+                           
+                           
+                           
+                           <li><a href="https://filezilla-project.org/download.php?show_all=1" target="_blank">FileZilla</a>
+                              (This is our favorite client because it behaves the same way across platforms.)
+                              
+                              </li>
+                           
+                           
+                           
+                           <li><a href="http://winscp.net/eng/download.php" target="_blank">WinSCP</a> (This is one we used for a long time, since the 1990s, but we now use SSH and Filezilla
+                              more frequently.)
+                              </li>
+                           
+                           
+                           
+                           <li><a href="http://www.wm.edu/offices/it/services/software/licensedsoftware/webeditingsftp/sshsecureshell/index.php" target="_blank">SSH Secure Shell Client</a></li>
+                           </ul>
+                        </li>
+                     
+                     
+                     
+                     <li><strong>Mac users:</strong><ul>
+                           
+                           
+                           
+                           <li><a href="https://filezilla-project.org/download.php?show_all=1" target="_blank">FileZilla</a>
+                              (This is our favorite client because it behaves the same way across platforms.)
+                              
+                              </li>
+                           
+                           
+                           
+                           <li>or <a href="http://fetchsoftworks.com/fetch/" target="_blank">Fetch</a> (students
+                              may obtain free licenses at <a href="http://fetchsoftworks.com/fetch/free" target="_blank">http://fetchsoftworks.com/fetch/free</a>)
+                              
+                              </li>
+                           </ul>
+                        </li>
+                     
+                     
+                     
+                     <li><strong>Linux users:</strong> You probably don’t need to install anything,
+                        but look at how your system handles secure file transfer (SFTP).
+                        <span class="smaller">(FileZilla or other clients designed for Linux
+                           environments.)</span></li>
+                     </ul>
+                  </li>
+               
+               
+               
+               
+               
+               
+               <li>No coding experience? Don’t worry! Past students
+                  in this course
+                  who never saw anything like markup or XML code have designed projects (<a href="https://newtfire.org/courses/studentProjects.html" target="_blank">like these</a>) and even spoken about them at undergraduate conferences! You will learn to develop
+                  your own digital tools and how to manage digital projects as teamwork.
+                  </li>
+               </ol>
+            
+            Class Web Resources:
+            
+            
+            
+            
+            
+            <ul>
+               
+               
+               
+               <li><a href="https://newtfire.org" target="_blank">newtFire:</a> Our project development site, where you will be publishing your projects. 
+                  </li>
+               
+               
+               
+               <li><a href="https://github.com/newtfire/textEncoding-Hub" target="_blank">textEncoding-Hub:
+                     https://github.com/newtfire/textEncoding-Hub</a> Class GitHub Repository and Issues Board
+                  </li>
+               
+               
+               
+               <li><a href="http://canvas.psu.edu" target="_blank">Canvas:
+                     http://canvas.psu.edu</a> To submit homework assignments and exams, read private course announcements, access
+                  Zoom class meetings and video recordings. 
+                  </li>
+               
+               
+               
+               <li><a href="explainFileNames.html" target="_blank">File Conventions for Canvas Homework Assignments</a></li>
+               
+               
+               
+               <li><a href="https://newtfire.org/courses/tutorials/" target="_blank">Explanatory Guides and Exercises: Complete List</a></li>
+               </ul>
+            
+            </div>
+         
+         
+         
+         
+         <div id="schedule">
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 1</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-08-24">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 08-24</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Welcome! Introduction to the course. Intro to XML and "plain"
+                     text in the oXygen XML Editor. </td>
+                  
+                  
+                  <td class="doBeforeClass">Respond to Dr. B's Poll (see Canvas / Penn State email).
+                     Find the Zoom link for class (on Canvas / Penn State email).</td>
+                  
+                  
+                  <td class="GroupA zoom">Zoom remotely</td>
+                  
+                  
+                  <td class="GroupB">Kochel 77 + Zoom (audio muted)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-08-26">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 08-26</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">XML coding: <a href="http://cookit.e2bn.org/historycookbook/1492-whipt-syllabub.html">a
+                        recipe for Whipt Syllabub</a>. Elements, attributes, comments, escape
+                     characters, and "pretty-printing" in &lt;oXygen/&gt;. How file systems recognize XML documents
+                     (File extension, and XML declaration line). Introduce <a href="../tutorials/XMLExercise1-Letter.html" target="_blank">XML Exercise
+                        1 (Historic Letter)</a></td>
+                  
+                  
+                  <td class="doBeforeClass">Install oXygen XML Editor and add our license key so we
+                     can all use this during our meeting today. Read my <a href="https://newtfire.org/courses/tutorials/explainXML.html">Introduction to XML</a> and experiment with the code in the
+                     tutorial: Can you tell what makes markup <b>well-formed</b> or not?</td>
+                  
+                  
+                  <td class="GroupA">Kochel 77 + Zoom (audio muted)</td>
+                  
+                  
+                  <td class="GroupB zoom">Zoom remotely</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-08-28">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 08-28</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Discussion of Pierazzo introduction of XML. Discussion of homework, XML
+                     data and metadata. Document sources. Self-closing elements. Distinct identifiers:
+                     @xml:id attributes and pointer attributes (#): 
+                     Example with <a href="https://mapoflondon.uvic.ca/" target="_blank">Map of Early Modern London Project</a>
+                     Introduce XML Exercise 2 (see Do before class for M 8/31)
+                     </td>
+                  
+                  
+                  <td class="doBeforeClass">
+                     <ul>
+                        <li>Watch Elena Pierazzo's short video <a href="https://teach.dariah.eu/mod/page/view.php?id=438">"Why do we encode?
+                              Advantages of encoding texts with XML"</a>.</li> 
+                        <li>Complete <a href="../tutorials/XMLExercise1-Letter.html" target="_blank">XML Exercise 1 (Historic Letter)</a> and submit to Canvas.</li>
+                     </ul>
+                  </td>
+                  
+                  
+                  <td class="GroupA zoom">Zoom remotely</td>
+                  
+                  
+                  <td class="GroupB">Kochel 77 + Zoom (audio muted)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 2</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-08-31">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 08-31</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Discussion of XML homework. More explanation of how to work with
+                     distinct identifiers: @xml:id attributes and pointer attributes (#):
+                     Prosopography lists. Self-closing elements.</td>
+                  
+                  
+                  <td class="doBeforeClass">Complete XML Exercise 2:  
+                     
+                     <ul>
+                        <li>First, revise the code in your XML Exercise 1: Try adding tags and attributes to help
+                           track more specific pieces of information than you marked at first. Try marking people
+                           and places, for example.</li>
+                        
+                        <li>Look for <q>pseudomarkup</q> to convert into markup</li>
+                        
+                        <li>Choose another letter in the collection from XML Exercise 1 and try to encode it the
+                           same way.</li>
+                        
+                        <li><b>Optional:</b> Try making a <q>personography</q> or a <q>placeography</q> list (even a partial one)  of distinct people or places mentioned in the two letters.
+                           This can be a third file, or embedded as a section in each letter. Code the entries
+                           in this list to hold distinct names and any other information you wish, and give each
+                           entry an <code>@xml:id</code> attribute to hold a short distinct identifier you can use in your code. Then, apply
+                           pointer attributes (maybe <code>@who</code>, or <code>@where</code> or <code>@ptr</code> or  <code>@ref</code>) in the markup of people or places in the body of the letters to point to entries
+                           to the personography or placeography using hashtags so you do not duplicate the <code>xml:id</code>. Where the <code>xml:id</code> would be coded only once on a page or in a project like so: <code>identifier</code>, the values of pointers can be used as many times as you like, and are just preceded
+                           with a hashmark like this: <code>#identifier</code>. </li>
+                        
+                        <li>Submit your revised letter XML and new letter XML (and optional personography/placeography)
+                           on Canvas for XML Exercise 2.</li>
+                        </ul>
+                  </td>
+                  
+                  
+                  <td class="GroupA">Kochel 77 + Zoom (audio muted)</td>
+                  
+                  
+                  <td class="GroupB zoom">Zoom remotely</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-09-02">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 09-02</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Discussion of <q>The Ballad of Booker T.</q>: Multiple ways to encode a poem and manuscript information. Overlapping hierarchies.</td>
+                  
+                  
+                  <td class="doBeforeClass"><a href="../tutorials/XMLExercise3-Hughes.html" target="_blank">XML Exercise 3: Mark up <q>The Ballad of Booker T.</q></a> </td>
+                  
+                  
+                  <td class="GroupA zoom">Zoom remotely</td>
+                  
+                  
+                  <td class="GroupB">Kochel 77 + Zoom (audio muted)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-09-04">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 09-04</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Introduce class GitHub and how we will interact with it. Students join <a href="https://github.com/newtfire/textEncoding-Hub" target="_blank">the class textEncoding-Hub</a>. Intro
+                     to GitHub markdown.Markup vs. markdown. Explore GitHub markdown for writing issues,
+                     including code-blocks. Command line hands-on navigation, and introduction to git commands:
+                     Clone the <a href="https://github.com/newtfire/textEncoding-Hub" target="_blank">textEncoding-Hub</a> to your local computer.  </td>
+                  
+                  
+                  <td class="doBeforeClass">Complete <a href="../tutorials/GitExercise1-te.html" target="_blank">Git Exercise 1</a>. Watch <a href="https://psu.mediaspace.kaltura.com/media/Introduction+to+the+Bash+Command+LineA++Always+find+your+way+%22home%22+in+the+dark/1_ke1k1pxm" target="_blank">my video introducing
+                     the Bash shell and "home" on your computers</a> and practice the shell commands I am introducing.
+                     </td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 3</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-09-07">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 09-07 <span class="smaller">Labor Day, PSU classes in session anyway!</span></h4>
+                     </td>
+                  
+                  
+                  <td class="topic">GitHub file management: pulling, adding, committing, and pushing to your repo.
+                     
+                     When XML gets in the way: Overlapping hierarchies problem:
+                     exhibited with <q>Ozymandias</q>. Emily Dickinson projects and reading interfaces
+                     for encoded documents: Introduce discussion on <a href="https://github.com/newtfire/textEncoding-Hub/issues" target="_blank">textEncoding-Hub</a>.</td>
+                  
+                  
+                  <td class="doBeforeClass"><ul>
+                     
+                     <li>(To help with Git Ex 2): Watch <a href="https://psu.mediaspace.kaltura.com/media/Git+and+GitHubA+Basic+Steps+for+Changing+a+Repo/0_06urxysq">my short (15 minute) video</a> showing how to <code>git pull</code> in changes, and the three-step of <code>git add</code>, <code>git commit</code>, and <code>git push</code>.</li>
+                     <li>(To help with Git Ex 2): Work with <a href="https://github.com/newtfire/digitProjectDesign-Hub/blob/master/GitCommands.md">our short list of Git Commands</a> to pull, commit, and push changes to your personal GitHub repo and/or to the digitProjectDesign-Hub.</li>
+                     <li><strong>Complete <a href="../tutorials/GitExercise2-te.html">Git Exercise 2</a>.</strong> Send a link to your personal GitHub repo to me on Canvas (Assignments)</li>
+                     <li>(Optional: good to try:): Watch / work with <a href="https://psu.mediaspace.kaltura.com/media/Editing+your+Bash+Profile+and+Setting+an+Alias+for+%22GitHub%22/1_2iryc3x1">Set up a Git Bash Profile (short video how-to)</a>: (this is convenient for you, and more command line knowledge).</li>
+                  </ul></td>
+                  
+                  
+                  <td class="GroupA zoom">Zoom remotely</td>
+                  
+                  
+                  <td class="GroupB">Kochel 77 + Zoom (audio muted)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-09-09">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 09-09</h4>
+                     </td>
+                  
+                  
+                  <td class="topic"><ul><li>Seven Days of Git/GitHub. Start by (carefully) cleaning up our textEncoding-Hub? ALWAYS PULL BEFORE YOU PUSH!</li> 
+                     <li>Prepare for XM Test 1: Pre-Test Class Exercise: 
+                          <ol>
+                             <li><code>git pull</code> from textEncoding-Hub.</li>
+                             <li>Open oXygen XML Editor. Open a file from textEncoding-Hub &gt; Class-Examples &gt; xmlPreTest</li>
+                             <li>Open the file inside: ozyMeta.xml in oXygen. (If trouble with git pull, copy and paste the file into a new XML document <a href="https://raw.githubusercontent.com/newtfire/textEncoding-Hub/master/Class-Examples/xmlPreTest/xml-PreTest-Dickinson.xml">from here</a>.)</li>
+                             <li><b>IMPORTANT!</b> Save this file OUTSIDE of our textEncoding-Hub, so you don't save over my Class Examples as you are working. Save to your personal repo or to your Desktop or elsewhere on your computer!</li>
+                             <li>Work in oXygen on finding and correcting errors that break XML form. With each error, document your correction: write an XML comment explaining what you did to correct the problem. </li>
+                             <li>Keep making corrections until XML is well formed (and oXygen is green). Do your best! This is like the exam you will be taking over the weekend.</li>
+                             
+                          </ol>
+                     </li> 
+                     <li>Emily Dickinson Projects: Exploration</li></ul></td>
+                  
+                  
+                  <td class="doBeforeClass"><ul><li>Git Shell Practice (starting today for seven days): Make
+                     sure your personal repo and the class repo are properly set up and cloned to
+                     your computer. Using your Bash shell, practice some basic git commands to build
+                     a habit. On alternating days, push to the other repo (if you pushed to your
+                     personal repo today, tomorrow you will pull and push a file to our class repo). Remember: ALWAYS PULL BEFORE YOU PUSH!</li>
+                     
+                     <li>Start exploring/responding to the <a href="https://github.com/newtfire/textEncoding-Hub/issues/11">Comparison of Emily Dickinson Projects on the textEncoding-Hub</a>.</li> </ul></td>
+                  
+                  
+                  <td class="GroupA">Kochel 77 + Zoom (audio muted)</td>
+                  
+                  
+                  <td class="GroupB zoom">Zoom remotely</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-09-11">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 09-11</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Validity vs. Well-formedness. Introduce the TEI community and
+                     shared schema. Designing your own schema. Issue <b>Take-Home Test 1</b>.</td>
+                  
+                  
+                  
+                  <td class="doBeforeClass">Complete discussion posts on <a href="https://github.com/newtfire/textEncoding-Hub/issues/11">Emily Dickinson comparison exercise</a>. <!--Shelley-Godwin Archive ms markup exercise: what can you
+                     see, how does it the fit the code? --></td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 4</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-09-14">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 09-14</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Validity for a project: what is a schema? How to write a Relax NG schema</td>
+                  
+                  
+                  <td class="doBeforeClass">Complete <b>Take-Home Test 1</b>. Read <a href="../tutorials/explainRNG.html">Intro to Relax NG</a></td>
+                  
+                  
+                  <td class="GroupA">Kochel 77 + Zoom (audio muted)</td>
+                  
+                  
+                  <td class="GroupB zoom">Zoom remotely</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-09-16">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 09-16</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Writing schemas: technical details and big picture issues.
+                     Introducing datatypes. The interesting "tag soup" of "mixed content". </td>
+                  
+                  
+                  <td class="doBeforeClass">Watch <a href="https://psu.mediaspace.kaltura.com/media/Coding+a+Schema+in+Relax+NG+Compact+Syntax/1_dwk3hl2k">my video on Relax NG and how to write it in oXygen</a>, and
+                     complete <b>Relax NG Exercise 1</b>: <ul><li>Make a folder to hold this homework, since it will contain two files. Save the folder using our homework filenaming conventions.</li>
+                        <li>Open <a href="https://raw.githubusercontent.com/newtfire/textEncoding-Hub/master/Class-Examples/Relax-NG/goodMorning/goodMorning.xml">this goodMorning.xml file</a> (open the link, and right-click to save on your computer with your homework, then open in oXygen).</li>
+                        <li>Open a new Relax-NG Compact syntax file in oXygen, and set your editor in tile view so you can see the goodMorning.xml file next to your schema file. Delete the code in the Relax NG file so you have a blank slate to start with.</li>
+                        <li>Write a Relax NG Schema in Compact Syntax that models the content of this XML file as you study it. (Save the schema in the same directory with your XML file so you can easily find it.)</li>
+                        <li>Associate the schema with the XML file (in oXygen go to Document &gt; Schema &gt; Associate Schema, and browse to locate the schema. Click OK and note the new schema line at the top of your XML file.</li>
+                        <li>Zip (compress) the file directory holding your XML file and the Relax NG schema file, and submit this on Canvas at the upload point for this assignment. </li>
+                     </ul> 
+                     Review XML syntax and consult the <a
+                        href="../tutorials/explainRNG.html">Intro to Relax NG</a> as you work on
+                     this, and ask for help on out <a href="https://github.com/newtfire/textEncoding-Hub/issues">textEncoding-Hub by opening an issue</a> if you get stuck. Continue GitHub
+                     practice!</td>
+                  
+                  
+                  <td class="GroupA zoom">Zoom remotely</td>
+                  
+                  
+                  <td class="GroupB">Kochel 77 + Zoom (audio muted)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-09-18">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 09-18</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Trioubleshooting and debugging Relax NG issues.</td>
+                  
+                  
+                  <td class="doBeforeClass">Relax NG Exercise 2: Write a Relax NG schema for one of the XML documents you created for a previous homework assignment (making changes to the XML if you wish or as recommended). Upload both your XML and your schema file in a zipped (compressed) directory on Canvas.
+                     
+                   </td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 5</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-09-21">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 09-21</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Ongoing manuscript / document transcription projects. Crowdsourcing transcription, pseudomarkup vs. markup. Examples:<ul>
+                        <li><a
+                              href="https://wyascatablogue.wordpress.com/exhibitions/anne-lister/anne-lister-diary-transcription-project/"
+                              >Anne Lister diary transcription project</a>
+                           <ul>
+                              <li><a href="https://wyascatablogue.files.wordpress.com/2020/09/anne-lister-transcription-guidelines_v5-sep2020-1.pdf">Transcription guidelines: Notice the pseudomarkup</a></li>
+                              <li><a href="https://wyascatablogue.wordpress.com/exhibitions/anne-lister/anne-lister-reading-annes-diaries/">Key to Anne Lister’s secret code (scroll down)</a></li>
+                           </ul>
+                        
+                        </li>
+                     <li><a href="https://transcription.si.edu/">Smithsonian Digital Volunteers: Transcription Center</a> 
+                     <ul>
+                        <li><a href="https://transcription.si.edu/project/28707">Audio transcription work in progress</a></li>
+                        <li><a href="https://transcription.si.edu/instructions-freedmens-bureau">Instructions: Freedmen Bureau's Papers</a></li>
+                     </ul>
+                     </li>
+                     </ul>  </td>
+                  
+                  
+                  <td class="doBeforeClass">Relax NG Exercise 3:  
+                     Choose a new document (any genre,
+                     any language, manageable size for homework, interesting to model): Try writing
+                     a schema first, and then coding to fit the schema. (Edit both the XML structure
+                     and the Relax NG rules as you go.)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (I need to teach from off campus today.)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (I need to teach from off campus today.)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-09-23">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 09-23</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Introducing the Text Encoding Initiative (TEI): <a href="https://slides.com/elisabeshero-bondar/dh-and-tei/fullscreen">Ways of Knowing in Digital Humanities and TEI (web slides)</a>. </td>
+                  
+                  
+                  <td class="doBeforeClass"><ul>
+                     <li>Repair any broken Relax NG syntax and/or XML validation issues on previous homework submissions.</li>
+                     <li>Get started on the <b><a href="../tutorials/crowdsourcing.html">Crowdsourcing Transcription exercise</a></b>: Choose a resource from one of the options on the assignment and begin transcribing.</li>
+                        </ul></td>
+                  
+                  
+                  <td class="GroupA">Kochel 77 + Zoom (audio muted)</td>
+                  
+                  
+                  <td class="GroupB zoom">Zoom remotely</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-09-25">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 09-25</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Review of major concepts about XML and document data modeling.
+                     Relax NG Debugging Class Exercise: <a href="https://github.com/newtfire/textEncoding-Hub/tree/master/Class-Examples/Relax-NG/Pre-Test-Exercise">Pre-Test on textEncoding-Hub</a>. <span class="smaller">(Please do not push your files to the textEncoding-Hub but save them somewhere else on your computer, like your personal GitHub or where you do homework.)</span></td>
+                  
+                  
+                  <td class="doBeforeClass">Complete the <b><a href="../tutorials/crowdsourcing.html">Crowdsourcing Transcription exercise</a></b>. </td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 6</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-09-28">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 09-28</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Presentation info vs. Semantics in Markup. Text encoding initiative: introducing the Guidelines and structure of a TEI document. Introduce <a href="../tutorials/TEI-AJC-Exercise1.html">the Anna Julia Cooper survey exercise</a>: task oriented investigation of the TEI Guidelines.
+                    
+                     </td>
+                  
+                  
+                  <td class="doBeforeClass">
+                    
+                     <ul>
+                        <li>Read about the TEI in <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/AB.html"><q>About These Guidelines</q></a> and look for uses of the word <strong>interchange</strong>. Come to class with some ideas about interchange and the TEI: What do you think 
+                        <strong>interchange</strong> means and why might it be important? </li>
+                        <li>Complete the <a href="../tutorials/crowdsourcing.html">Crowdsourcing Transcription exercise</a> if you did not do so last
+                           time. </li>
+                     
+                        <li>Repair any broken Relax NG syntax and/or XML validation issues on
+                           previous homework submissions.</li>
+                     </ul>
+                  </td>
+                  
+                  
+                  <td class="GroupA">Kochel 77 + Zoom (audio muted)</td>
+                  
+                  
+                  <td class="GroupB zoom">Zoom remotely</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-09-30">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 09-30</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Compare notes on TEI discoveries. <a href="https://drive.google.com/drive/folders/180luyr78mM8-y_pS7GRHpBVje1WElURy">TEI intro slides surveying modules</a>. Introduce TEI code in oXygen, working with TEI-All. Issue
+                        <b>Take-home test 2: Relax NG</b>. </td>
+                  
+                  
+                  <td class="doBeforeClass"><b><a href="https://github.com/newtfire/textEncoding-Hub/issues/19">Post to the textEncoding-Hub</a> to complete <a href="../tutorials/TEI-AJC-Exercise1.html">TEI Exercise 1: an historic survey document</a></b></td>
+                  
+                  
+                  <td class="GroupA zoom">Zoom remotely</td>
+                  
+                  
+                  <td class="GroupB">Kochel 77 + Zoom (audio muted)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-10-02">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 10-02</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Discussion / comparison of class TEI encoding. TEI Header and prosopography data. </td>
+                  
+                  
+                  <td class="doBeforeClass"><strong><a href="../tutorials/TEI-AJC-Exercise2.html">TEI Exercise 2: Create a start on a TEI document</a>.</strong></td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 7</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-10-05">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 10-05</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Introducing a TEI ODD Schema for Anna Julia Cooper TEI.
+                  <ul>
+                     <li><a href="https://github.com/newtfire/textEncoding-Hub/wiki/TEI-ODD:-Schema-Prep-Resources-for-TEI-in-Projects">TEI ODD resources on textEncoding-Hub wiki</a></li>
+  
+                  </ul>
+                  </td>
+                  
+                  
+                  <td class="doBeforeClass"> <ul>
+                     <li><b>TEI Exercise 3:</b> Continue coding the AJC survey in TEI. Suggestions/options: <ul><li>Revise your code from TEI Exercise 2 to make it valid if you need to</li>
+                        <li>Try changing your approach, or adding some new elements from the TEI that you did not introduce before</li>
+                        <li>Look into how to develop the <code>msDesc</code> in the <code>teiHeader</code></li>
+                        <li>Try coding a little more of the survey and responses</li>
+                         </ul> </li>
+                     <li>Complete <b>Take-home Test 2: Relax NG (by 11:59pm)</b></li>
+                  
+                  </ul></td>
+                  
+                  
+                  <td class="GroupA zoom">Zoom remotely</td>
+                  
+                  
+                  <td class="GroupB">Kochel 77 + Zoom (audio muted)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-10-07">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 10-07</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Working with a TEI ODD customization for the AJC Survey.</td>
+                  
+                  
+                  <td class="doBeforeClass">No homework to submit, for once! Before class, <a href="https://github.com/newtfire/textEncoding-Hub/wiki/TEI-ODD:-Schema-Prep-Resources-for-TEI-in-Projects">review the slides and resources on TEI ODDs</a> that we discussed in class on Monday.</td>
+                  
+                  
+                  <td class="GroupA">Kochel 77 + Zoom (audio muted)</td>
+                  
+                  
+                  <td class="GroupB zoom">Zoom remotely</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-10-09">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 10-09</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Review discussion of document data modeling of the AJC survey. Preview of <a href="http://bit.ly/AJC-csData">aggregate crowd-sourced data</a>
+                     and <a href="https://www.amazon.com/Voice-Anna-Julia-Cooper-Including/dp/0847684083">alternative published view of the AJC essay (see item 17)</a>. 
+                     Introduce Text Encoding Projects: possibilities. </td>
+                  
+                  
+                  <td class="doBeforeClass">	<b><a href="../tutorials/TEI-AJC-Exercise-ODD.html">TEI Exercise 4</a></b></td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 8</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-10-12">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 10-12</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Introducing Regular Expressions and autotagging. Regular patterns in documents. How to start? 
+                     Text Encoding Projects.</td>
+                  
+                  
+                  <td class="doBeforeClass"><ul>
+                     <li>Read <a href="../tutorials/explainRegex.html">Intro to Regular Expressions</a></li>
+                     <li>Watch ~20+ min. video: <a href="https://psu.mediaspace.kaltura.com/media/Introducing+Regular+Expressions+in+the+oXygen+XML+Editor/1_9pkq11co">Introducing Regular Expressions in the oXygen XML Editor</a></li>
+                     
+                  </ul>
+                     </td>
+                  
+                  
+                  <td class="GroupA">Kochel 77 + Zoom (audio muted)</td>
+                  
+                  
+                  <td class="GroupB zoom">Zoom remotely</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-10-14">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 10-14</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Regular Expressions: thinking algorithmically. Inside-out or outside in. 
+                     "close-open" strategy.</td>
+                  
+                  
+                  <td class="doBeforeClass"><ul>
+                     <li>Watch followup ~20 min. video: <a href="https://psu.mediaspace.kaltura.com/media/How+to+do+your+Regex+Homework+in+oXygen+and+keep+a+record+of+your+Regex+expressions/1_ubu4ma9s">How to do your Regex Homework in oXygen and keep a record of your Regex expressions</a></li>
+                     <li><strong><a href="../tutorials/RegexExerciseDates.html">Regex Exercise 1</a></strong></li></ul></td>
+                  
+                  
+                  <td class="GroupA zoom">Zoom remotely</td>
+                  
+                  
+                  <td class="GroupB">Kochel 77 + Zoom (audio muted)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-10-16">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 10-16</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Regex review of Dracula. Introduce <a href="projectOptions-2020.html">Semester Project Assignment</a>.
+                     
+                     </td>
+                  
+                  
+                  <td class="doBeforeClass"><b><a href="../tutorials/RegexExerciseDracula.html">Regex Exercise 2</a></b></td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 9</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-10-19">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 10-19</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">How does HTML relate to TEI and XML? HTML and file management. 
+                     Introduce <a href="https://newtfire.github.io/textEncoding-Hub/htmlGpEx1.html">HTML Exercise 1 for GitHub Pages in your GitHub repo</a>.
+                   </td>
+                  
+                  
+                  <td class="doBeforeClass"><ul>
+                     <li>Finish up <a href="../tutorials/RegexExerciseDracula.html">the Dracula Regex</a> and post (or re-post) to Regex Ex 2 on Canvas</li>
+                     <li>Read <a href="../tutorials/explainHTML.html">introduction to HTML </a> and review GitHub and git at command line</li>
+                     <li>Carefully review the <a href="https://newtfire.org/courses/textEncoding/projectOptions-2020.html">Semester Project Assignment</a> and <a href="https://docs.google.com/document/d/1n8zgyLjCIbqDSQ6_-qBov3n46V2YWrRV-GzHDescINA/edit?usp=sharing">sign up for a project option</a>.  </li>
+                  </ul>
+
+                     </td>
+                  
+                  
+                  <td class="GroupA zoom">Zoom remotely</td>
+                  
+                  
+                  <td class="GroupB">Kochel 77 + Zoom (audio muted)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-10-21">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 10-21</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Creating links, associations: absolute vs. relative. Building web pages in your GitHub repo. </td>
+                  
+                  
+                  <td class="doBeforeClass">
+                     
+                     <ul> 
+                        <li>Complete <a href="https://newtfire.github.io/textEncoding-Hub/htmlGpEx1.html">HTML Exercise 1 for GitHub Pages in your GitHub repo</a></li>
+                        <li>Read <a href="../tutorials/explainCSS.html">introduction to CSS</a> (and begin editing the CSS file for your GitHub website if you feel ready.)</li>
+                     <li>Project cluster document data modeling: identify a
+                     research question or questions of interest</li></ul></td>
+                  
+                  
+                  <td class="GroupA">Kochel 77 + Zoom (audio muted)</td>
+                  
+                  
+                  <td class="GroupB zoom">Zoom remotely</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-10-23">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 10-23</h4>
+                     </td>
+                  
+                  
+                  <td class="topic"><ul><li>Take stock of website issues, look ahead at HTML development from XML.</li> 
+                     <li>Introduce XPath: Set XPath 3.1 in oXygen XML Editor. </li></ul> 
+                
+                    </td>
+                  
+                  
+                  <td class="doBeforeClass">Complete <a href="https://newtfire.github.io/textEncoding-Hub/htmlGpEx2.html">HTML Ex 2: Building and Styling a Site with Linked Pages</a>
+                     </td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 10</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-10-26">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 10-26</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Querying XML with XPath. Working with XPath arithmetic operations, searching for nodes on axes, and setting predicates. 
+                  </td>
+                  
+                  
+                  <td class="doBeforeClass"><ul>
+                     
+                     <li>Read our <a href="../tutorials/explainXPath.html">Introduction to XPath</a>.</li>
+                     
+                     <li>Start working on <a href="../tutorials/XPathExercise1-TE.html">XPath exercise 1</a></li>
+                     
+                     <li>Finish up the HTML exercises from last week if you need to do that and continue tinkering with HTML and CSS on your GitHub Pages site.</li>
+                  </ul>
+                     </td>
+                  
+                  
+                  <td class="GroupA">Kochel 77 + Zoom (audio muted)</td>
+                  
+                  
+                  <td class="GroupB zoom">Zoom remotely</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-10-28">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 10-28</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">XPath Predicates as boolean filters (using <code>and</code>, <code>or</code> and the <code>not()</code> function)
+                     
+                     Revisiting XML markup decisions, based on what XPath can
+                     show.  </td>
+                  
+                  
+                  <td class="doBeforeClass"> <ul><li>Re-read and consult our <a href="../tutorials/explainXPath.html">Introduction to XPath</a>, and recorded class video from Monday as you complete XPath Exercise 1.</li>
+                     
+                     <li>Complete <b><a href="../tutorials/XPathExercise1-TE.html">XPath exercise 1</a></b></li></ul>
+                     
+                     </td>
+                  
+                  
+                  <td class="GroupA zoom">Zoom remotely</td>
+                  
+                  
+                  <td class="GroupB">Kochel 77 + Zoom (audio muted)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-10-30">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 10-30</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Discuss <a href="projectOptions-2020.html">Semester Project</a> milestones. Review XPath Exercise 2 together.</td>
+                  
+                  
+                  <td class="doBeforeClass">
+                     <ul><li>Complete <b><a href="../tutorials/XPathExercise2-TE.html">XPath Exercise 2 (complex predicates and functions)</a></b></li>
+                        <li>Work on markup and a schema for your semester project, and push updated files to your repo.</li>
+                        
+                       
+                   </ul></td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 11</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-11-02">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 11-02</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Introducing XPath string functions: <ul><li>Handling only one node at a time: <code>contains()</code>, <code>matches()</code>, <code>translate()</code>, <code>replace()</code>, <code>string-length()</code>. Cutting a string in parts: <code>tokenize()</code>; taking <code>substring-before()</code> or <code>substring-after()</code></li>
+                     <li>Bundling up a sequences of strings: <code>string-join()</code></li>
+                     <li>More math XPath: <code>min</code>, <code>max()</code>, <code>sum()</code>. Issue <strong><a href="../tutorials/XPathExercise3-TE.html">XPath Exercise 3</a></strong> (due Friday this week).</li>
+                  </ul></td>
+                  <td class="doBeforeClass"><strong><a href="projectOptions-2020.html">Semester Project Milestone:</a></strong> Prepare and refine a schema for your project markup, and complete some significant markup toward the project.
+                    </td>
+                  
+                  
+                  <td class="GroupA zoom">Zoom remotely</td>
+                  
+                  
+                  <td class="GroupB">Kochel 77 + Zoom (audio muted)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-11-04">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 11-04</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Share your project code so far with your graoup: Breakout groups to get acquainted to review code, organize future meetings. <a href="https://github.com/newtfire/textEncoding-Hub/issues/27">Guidelines for Breakout Discussions</a>.
+                     
+                     Introducing XSLT (eXtensible Stylesheets Language Transformations). XML to XML, XML to HTML. Namespaces. Setting up oXygen to write XSLT and saving as <code>.xsl</code>. Writing your first XSLT stylesheet transformation.</td>
+                 
+                  
+                  
+                  <td class="doBeforeClass"><ul><li>Refine semester project schema and XML</li>
+                     <li>work on <strong><a href="../tutorials/XPathExercise3-TE.html">XPath Exercise 3 (String functions)</a></strong>, due by Friday.</li></ul></td>
+
+                  
+                  
+                  <td class="GroupA">Kochel 77 + Zoom (audio muted)</td>
+                  
+                  
+                  <td class="GroupB zoom">Zoom remotely</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-11-06">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 11-06</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Go over XPath Exercise 3 together. Introduce XSLT.</td>
+                  
+                  
+                  <td class="doBeforeClass">  <ul><li>Finish <strong><a href="../tutorials/XPathExercise3-TE.html">XPath Exercise 3</a></strong>.</li>
+                     <li>Read <a href="https://newtfire.org/courses/tutorials/explainXSLT.html">Introduction to XSLT</a>, and watch one (or both) of the following orientation videos on how to set up oXygen to write XSLT: <ul>
+                        <li><a href="https://psu.mediaspace.kaltura.com/media/Configuring+oXygen+to+write+and+run+XSLT+3.0+%28Mac+version%29/1_mw78kkuz">orientation video (version for Mac)</a></li>
+                        <li><a href="https://psu.mediaspace.kaltura.com/media/Configuring+oXygen+to+write+and+run+XSLT+3.0+/1_hzpeibnb">orientation video (version for Windows)</a></li></ul>
+                     </li>
+                  </ul>
+                     
+                    </td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 12</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-11-09">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 11-09</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">How XSLT template matches work. XSLT to create HTML, <q>trimming the tree</q>.</td>
+                  
+                  
+                  <td class="doBeforeClass"><ul><li><strong><a href="../tutorials/XSLTExercise1.html">XSLT Exercise 1</a></strong>: an identity transformation</li>
+                     <li>Review <a href="https://newtfire.org/courses/tutorials/explainXSLT.html">Introduction to XSLT</a>, and (re)watch one (or both) of the following orientation videos on how to set up oXygen to write XSLT: <ul>
+                        <li><a href="https://psu.mediaspace.kaltura.com/media/Configuring+oXygen+to+write+and+run+XSLT+3.0+%28Mac+version%29/1_mw78kkuz">orientation video (version for Mac)</a></li>
+                        <li><a href="https://psu.mediaspace.kaltura.com/media/Configuring+oXygen+to+write+and+run+XSLT+3.0+/1_hzpeibnb">orientation video (version for Windows)</a></li></ul>
+                     </li>
+                  
+                  </ul></td>
+                  
+                  
+                  <td class="GroupA">Kochel 77 + Zoom (audio muted)</td>
+                  
+                  
+                  <td class="GroupB zoom">Zoom remotely</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-11-11">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 11-11</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">XSLT to HTML: Making an HTML reading view for semester projects. 
+                     </td>
+                  
+                  
+                  <td class="doBeforeClass"><strong>Semester Project Milestone 2</strong>: Complete a significant amount of XML markup on your project, following your project team’s schema, and push it to your repo or a shared repo for the team. Post a link to your code on Canvas.</td>
+                  
+                  
+                  <td class="GroupA zoom">Zoom remotely</td>
+                  
+                  
+                  <td class="GroupB">Kochel 77 + Zoom (audio muted)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-11-13">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 11-13</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Putting the pieces together: Workshopping XSLT, HTML, CSS;
+                     Documenting code in a GitHub repo. </td>
+                  
+                  
+                  <td class="doBeforeClass"><strong><a href="../tutorials/XSLTExercise2.html">XSLT Exercise 2</a></strong></td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 13</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-11-16">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 11-16</h4>
+                     </td>
+                  
+                  
+                  <td class="topic"> Modal XSLT; producing a table of contents. Internal links on an
+                     HTML page, from XSLT. </td>
+                  
+                  
+                  <td class="doBeforeClass">XSLT Exercise 3</td>
+                  
+                  
+                  <td class="GroupA zoom">Zoom remotely</td>
+                  
+                  
+                  <td class="GroupB">Kochel 77 + Zoom (audio muted)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-11-18">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 11-18</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">SVG? Network Analysis? Mapping? [TBD]</td>
+                  
+                  
+                  <td class="doBeforeClass">XSLT Exercise 5</td>
+                  
+                  
+                  <td class="GroupA">Kochel 77 + Zoom (audio muted)</td>
+                  
+                  
+                  <td class="GroupB zoom">Zoom remotely</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-11-20">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 11-20</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">SVG? Network Analysis? Mapping? [TBD]</td>
+                  
+                  
+                  <td class="doBeforeClass">XSLT Exercise 6</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom Friday)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th></th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-11-23">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 11-23 - F 11-27</h4>
+                     </td>
+                  
+                  
+                  <td class="topic"><strong>Thanksgiving Holiday</strong></td>
+                  
+                  
+                  <td class="doBeforeClass">Have a peaceful and productive week! See you online.</td>
+                  
+                  
+                  <td class="GroupA"></td>
+                  
+                  
+                  <td class="GroupB"></td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 14</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-11-30">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>M 11-30</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Revisiting the Data Model, spotting errors to clean up. Schema
+                     workshop. Introducing Schematron.</td>
+                  
+                  
+                  <td class="doBeforeClass">Read <a href="../tutorials/explainSchematron.html">Introducing Schematron</a></td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-12-02">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 12-02</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Schema Workshop</td>
+                  
+                  
+                  <td class="doBeforeClass">Schematron Exercise 1</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-12-04">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 12-04</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Schema Workshop</td>
+                  
+                  
+                  <td class="doBeforeClass">Schematron Exercise 2</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th>Week 15</th>
+                  
+                  
+                  <th><span class="h4">Topics</span></th>
+                  
+                  
+                  <th><span class="h4">Do before class</span></th>
+                  
+                  
+                  <th><span class="h4">Group A</span></th>
+                  
+                  
+                  <th><span class="h4">Group B</span></th>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-12-07">
+                  
+                  
+                  <td>
+                     
+                     <h4>M 12-07</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Presentation vs. Semantics: What do we share? What do we
+                     miss?</td>
+                  
+                  
+                  <td class="doBeforeClass">HTML work with project cluster</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-12-09">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>W 12-09</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Documentation and reflection work: writing about what isn't
+                     there, assessing what could come next.</td>
+                  
+                  
+                  <td class="doBeforeClass">Documentation work</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom)</td>
+                  </tr>
+               
+               
+               
+               <tr id="d2020-12-11">
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>F 12-11</h4>
+                     </td>
+                  
+                  
+                  <td class="topic">Last day. Discuss project clusters, what we have  learned.</td>
+                  
+                  
+                  <td class="doBeforeClass">Prepare to share a view of your project cluster
+                     work</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom)</td>
+                  
+                  
+                  <td class="zoom">Fully Remote (Zoom)</td>
+                  </tr>
+               </table>
+            
+            
+            
+            <table>
+               
+               
+               <tr>
+                  
+                  
+                  <th id="Week17">Finals Week: M 12/14 - F 12/18</th>
+                  
+                  
+                  <th><span class="h4"><em>Due</em></span></th>
+                  </tr>
+               
+               
+               
+               
+               <tr id="d2020-12-17">
+                  
+                  
+                  
+                  <td>
+                     
+                     
+                     
+                     <h4>H 12-17</h4>
+                     </td>
+                  
+                  
+                  
+                  <td class="developing"><strong>Last project cluster work due by
+                        11:59pm</strong><p>Finish developing projects, and send a post to me on
+                        GitHub to indicate your team is finished.</p>
+                  </td>
+                  </tr>
+               
+               </table>
+            </div>
+         </div>
+      
+      
+      
+      
+      <hr />
+      </body>
+   </html>

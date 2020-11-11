@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title level="a">The Witch of Atlas</title>
+				<author>Percy Bysshe Shelley</author>
+				<editor>Elisa Beshero-Bondar</editor>
+			</titleStmt>
+			<publicationStmt>
+				<p>prepared for Elisa Beshero-Bondar’s course materials on <ref target="http://newtfire.org">newtFire</ref>.</p>
+				<p>Shared under a Free Culture Creative Commons Attribution 4.0 International
+					License</p>
+			</publicationStmt>
+			<sourceDesc>
+				<p>This is a text prepared for teaching purposes, derived from the edition published
+					digitally in <bibl><editor>Stuart Curran</editor> and <editor>Jack
+							Lynch</editor>, <title level="m">Frankenstein: or the Modern
+							Prometheus</title>: <title level="m">Works Included in this
+							edition</title>, <date>1994</date>: <ptr target="http://knarf.english.upenn.edu/PShelley/witch.html"/></bibl></p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div type="prologue">
+				<head>To Mary (On Her Objecting to the Following Poem, <lb/>Upon the Score of its
+					Containing No Human Interest)</head>
+
+				<lg>
+					<label>I.</label>
+					<l n="1">How, my dear Mary, — are you critic-bitten</l>
+					<l n="2">(For vipers kill, though dead) by some review,</l>
+					<l n="3">That you condemn these verses I have written,</l>
+					<l n="4">Because they tell no story, false or true?</l>
+					<l n="5">What, though no mice are caught by a young kitten,</l>
+					<l n="6">May it not leap and play as grown cats do,</l>
+					<l n="7">Till its claws come? Prithee, for this one time,</l>
+					<l n="8">Content thee with a visionary rhyme.</l>
+
+				</lg>
+				<lg>
+					<label>II.</label>
+					<l n="9">What hand would crush the silken-wingèd fly,</l>
+					<l n="10">The youngest of inconstant April’s minions,</l>
+					<l n="11">Because it cannot climb the purest sky,</l>
+					<l n="12">Where the swan sings, amid the sun’s dominions?</l>
+					<l n="13">Not thine. Thou knowest ’tis its doom to die,</l>
+					<l n="14">When Day shall hide within her twilight pinions</l>
+					<l n="15">The lucent eyes, and the eternal smile,</l>
+					<l n="16">Serene as thine, which lent it life awhile.</l>
+
+				</lg>
+				<lg>
+					<label>III.</label>
+					<l n="17">To thy fair feet a wingèd Vision came,</l>
+					<l n="18">Whose date should have been longer than a day,</l>
+					<l n="19">And o’er thy head did beat its wings for fame,</l>
+					<l n="20">And in thy sight its fading plumes display;</l>
+					<l n="21">The watery bow burned in the evening flame,</l>
+					<l n="22">But the shower fell, the swift Sun went his way —</l>
+					<l n="23">And that is dead. — O, let me not believe</l>
+					<l n="24">That anything of mine is fit to live!</l>
+
+				</lg>
+				<lg>
+					<label>IV.</label>
+					<l n="25">Wordsworth informs us he was nineteen years</l>
+					<l n="26">Considering and retouching Peter Bell;</l>
+					<l n="27">Watering his laurels with the killing tears</l>
+					<l n="28">Of slow, dull care, so that their roots to Hell</l>
+					<l n="29">Might pierce, and their wide branches blot the spheres</l>
+					<l n="30">Of Heaven, with dewy leaves and flowers; this well</l>
+					<l n="31">May be, for Heaven and Earth conspire to foil</l>
+					<l n="32">The over-busy gardener’s blundering toil.</l>
+
+				</lg>
+				<lg>
+					<label>V.</label>
+					<l n="33">My Witch indeed is not so sweet a creature</l>
+					<l n="34">As Ruth or Lucy, whom his graceful praise</l>
+					<l n="35">Clothes for our grandsons — but she matches Peter,</l>
+					<l n="36">Though he took nineteen years, and she three days</l>
+					<l n="37">In dressing. Light the vest of flowing metre</l>
+					<l n="38">She wears; he, proud as dandy with his stays,</l>
+					<l n="39">Has hung upon his wiry limbs a dress</l>
+					<l n="40">Like King Lear’s "looped and windowed raggedness."</l>
+				</lg>
+				<lg>
+					<label>VI.</label>
+					<l n="41">If you strip Peter, you will see a fellow</l>
+					<l n="42">Scorched by Hell’s hyperequatorial climate</l>
+					<l n="43">Into a kind of a sulphureous yellow:</l>
+					<l n="44">A lean mark, hardly fit to fling a rhyme at;</l>
+					<l n="45">In shape a Scaramouch, in hue Othello.</l>
+					<l n="46">If you unveil my Witch, no priest nor primate</l>
+					<l n="47">Can shrive you of that sin, — if sin there be</l>
+					<l n="48">In love, when it becomes idolatry.</l>
+				</lg>
+			</div>
+
+			<div type="poem">
+				<head>The Witch of Atlas</head>
+
+
+				<lg>
+					<label>I.</label>
+					<l n="49">BEFORE those cruel Twins, whom at one birth</l>
+					<l n="50">Incestuous Change bore to her father Time,</l>
+					<l n="51">Error and Truth, had hunted from the Earth</l>
+					<l n="52">All those bright natures which adorned its prime,</l>
+					<l n="53">And left us nothing to believe in, worth</l>
+					<l n="54">The pains of putting into learnèd rhyme,</l>
+					<l n="55">A lady-witch there lived on Atlas’ mountain</l>
+					<l n="56">Within a cavern, by a secret fountain.</l>
+
+				</lg>
+				<lg>
+					<label>II.</label>
+					<l n="57">Her mother was one of the Atlantides:</l>
+					<l n="58">The all-beholding Sun had ne’er beholden</l>
+					<l n="59">In his wide voyage o’er continents and seas</l>
+					<l n="60">So fair a creature, as she lay enfolden</l>
+					<l n="61">In the warm shadow of her loveliness; —</l>
+					<l n="62">He kissed her with his beams, and made all golden</l>
+					<l n="63">The chamber of gray rock in which she lay —</l>
+					<l n="64">She, in that dream of joy, dissolved away.</l>
+
+				</lg>
+				<lg>
+					<label>III.</label>
+					<l n="65">’Tis said, she first was changed into a vapour,</l>
+					<l n="66">And then into a cloud, such clouds as flit,</l>
+					<l n="67">Like splendour-wingèd moths about a taper,</l>
+					<l n="68">Round the red west when the sun dies in it:</l>
+					<l n="69">And then into a meteor, such as caper</l>
+					<l n="70">On hill-tops when the moon is in a fit:</l>
+					<l n="71">Then, into one of those mysterious stars</l>
+					<l n="72">Which hide themselves between the Earth and Mars.</l>
+
+				</lg>
+				<lg>
+					<label>IV.</label>
+					<l n="73">Ten times the Mother of the Months had bent</l>
+					<l n="74">Her bow beside the folding-star, and bidden</l>
+					<l n="75">With that bright sign the billows to indent</l>
+					<l n="76">The sea-deserted sand — like children chidden,</l>
+					<l n="77">At her command they ever came and went —</l>
+					<l n="78">Since in that cave a dewy splendour hidden</l>
+					<l n="79">Took shape and motion: with the living form</l>
+					<l n="80">Of this embodied Power, the cave grew warm.</l>
+				</lg>
+				<lg>
+					<label>V.</label>
+					<l n="81">A lovely lady garmented in light</l>
+					<l n="82">From her own beauty — deep her eyes, as are</l>
+					<l n="83">Two openings of unfathomable night</l>
+					<l n="84">Seen through a Temple’s cloven roof — her hair</l>
+					<l n="85">Dark — the dim brain whirls dizzy with delight,</l>
+					<l n="86">Picturing her form; her soft smiles shone afar,</l>
+					<l n="87">And her low voice was heard like love, and drew</l>
+					<l n="88">All living things towards this wonder new.</l>
+
+				</lg>
+				<lg>
+					<label>VI.</label>
+					<l n="89">And first the spotted cameleopard came,</l>
+					<l n="90">And then the wise and fearless elephant;</l>
+					<l n="91">Then the sly serpent, in the golden flame</l>
+					<l n="92">Of his own volumes intervolved; — all gaunt</l>
+					<l n="93">And sanguine beasts her gentle looks made tame.</l>
+					<l n="94">They drank before her at her sacred fount;</l>
+					<l n="95">And every beast of beating heart grew bold,</l>
+					<l n="96">Such gentleness and power even to behold.</l>
+
+				</lg>
+				<lg>
+					<label>VII.</label>
+					<l n="97">The brinded lioness led forth her young,</l>
+					<l n="98">That she might teach them how they should forego</l>
+					<l n="99">Their inborn thirst of death; the pard unstrung</l>
+					<l n="100">His sinews at her feet, and sought to know</l>
+					<l n="101">With looks whose motions spoke without a tongue</l>
+					<l n="102">How he might be as gentle as the doe.</l>
+					<l n="103">The magic circle of her voice and eyes</l>
+					<l n="104">All savage natures did imparadise.</l>
+
+				</lg>
+				<lg>
+					<label>VIII.</label>
+					<l n="105">And old Silenus, shaking a green stick</l>
+					<l n="106">Of lilies, and the wood-gods in a crew</l>
+					<l n="107">Came, blithe, as in the olive copses thick</l>
+					<l n="108">Cicadae are, drunk with the noonday dew:</l>
+					<l n="109">And Dryope and Faunus followed quick,</l>
+					<l n="110">Teasing the God to sing them something new;</l>
+					<l n="111">Till in this cave they found the lady lone,</l>
+					<l n="112">Sitting upon a seat of emerald stone.</l>
+
+				</lg>
+				<lg>
+					<label>IX.</label>
+					<l n="113">And universal Pan, ’tis said, was there,</l>
+					<l n="114">And though none saw him, — through the adamant</l>
+					<l n="115">Of the deep mountains, through the trackless air,</l>
+					<l n="116">And through those living spirits, like a want,</l>
+					<l n="117">He passed out of his everlasting lair</l>
+					<l n="118">Where the quick heart of the great world doth pant,</l>
+					<l n="119">And felt that wondrous lady all alone, —</l>
+					<l n="120">And she felt him, upon her emerald throne.</l>
+				</lg>
+				<lg>
+					<label>X.</label>
+					<l n="121">And every nymph of stream and spreading tree,</l>
+					<l n="122">And every shepherdess of Ocean’s flocks,</l>
+					<l n="123">Who drives her white waves over the green sea,</l>
+					<l n="124">And Ocean with the brine on his gray locks,</l>
+					<l n="125">And quaint Priapus with his company,</l>
+					<l n="126">All came, much wondering how the enwombèd rocks</l>
+					<l n="127">Could have brought forth so beautiful a birth; —</l>
+					<l n="128">Her love subdued their wonder and their mirth.</l>
+
+				</lg>
+				<lg>
+					<label>XI.</label>
+					<l n="129">The herdsmen and the mountain maidens came,</l>
+					<l n="130">And the rude kings of pastoral Garamant —</l>
+					<l n="131">Their spirits shook within them, as a flame</l>
+					<l n="132">Stirred by the air under a cavern gaunt:</l>
+					<l n="133">Pigmies, and Polyphemes, by many a name,</l>
+					<l n="134">Centaurs, and Satyrs, and such shapes as haunt</l>
+					<l n="135">Wet clefts, — and lumps neither alive nor dead,</l>
+					<l n="136">Dog-headed, bosom-eyed, and bird-footed.</l>
+
+				</lg>
+				<lg>
+					<label>XII.</label>
+					<l n="137">For she was beautiful — her beauty made</l>
+					<l n="138">The bright world dim, and everything beside</l>
+					<l n="139">Seemed like the fleeting image of a shade:</l>
+					<l n="140">No thought of living spirit could abide,</l>
+					<l n="141">Which to her looks had ever been betrayed,</l>
+					<l n="142">On any object in the world so wide,</l>
+					<l n="143">On any hope within the circling skies,</l>
+					<l n="144">But on her form, and in her inmost eyes.</l>
+
+				</lg>
+				<lg>
+					<label>XIII.</label>
+					<l n="145">Which when the lady knew, she took her spindle</l>
+					<l n="146">And twined three threads of fleecy mist, and three</l>
+					<l n="147">Long lines of light, such as the dawn may kindle</l>
+					<l n="148">The clouds and waves and mountains with; and she</l>
+					<l n="149">As many star-beams, ere their lamps could dwindle</l>
+					<l n="150">In the belated moon, wound skilfully;</l>
+					<l n="151">And with these threads a subtle veil she wove —</l>
+					<l n="152">A shadow for the splendour of her love.</l>
+
+				</lg>
+				<lg>
+					<label>XIV.</label>
+					<l n="153">The deep recesses of her odorous dwelling</l>
+					<l n="154">Were stored with magic treasures — sounds of air,</l>
+					<l n="155">Which had the power all spirits of compelling,</l>
+					<l n="156">Folded in cells of crystal silence there;</l>
+					<l n="157">Such as we hear in youth, and think the feeling</l>
+					<l n="158">Will never die — yet ere we are aware,</l>
+					<l n="159">The feeling and the sound are fled and gone,</l>
+					<l n="160">And the regret they leave remains alone.</l>
+				</lg>
+				<lg>
+					<label>XV.</label>
+					<l n="161">And there lay Visions swift, and sweet, and quaint,</l>
+					<l n="162">Each in its thin sheath, like a chrysalis,</l>
+					<l n="163">Some eager to burst forth, some weak and faint</l>
+					<l n="164">With the soft burthen of intensest bliss</l>
+					<l n="165">It was its work to bear to many a saint</l>
+					<l n="166">Whose heart adores the shrine which holiest is,</l>
+					<l n="167">Even Love’s: — and others white, green, gray, and black,</l>
+					<l n="168">And of all shapes — and each was at her beck.</l>
+
+				</lg>
+				<lg>
+					<label>XVI.</label>
+					<l n="169">And odours in a kind of aviary</l>
+					<l n="170">Of ever-blooming Eden-trees she kept,</l>
+					<l n="171">Clipped in a floating net, a love-sick Fairy</l>
+					<l n="172">Had woven from dew-beams while the moon yet slept;</l>
+					<l n="173">As bats at the wired window of a dairy.</l>
+					<l n="174">They beat their vans; and each was an adept,</l>
+					<l n="175">When loosed and missioned, making wings of winds,</l>
+					<l n="176">To stir sweet thoughts or sad, in destined minds.</l>
+
+				</lg>
+				<lg>
+					<label>XVII.</label>
+					<l n="177">And liquors clear and sweet, whose healthful might</l>
+					<l n="178">Could medicine the sick soul to happy sleep,</l>
+					<l n="179">And change eternal death into a night</l>
+					<l n="180">Of glorious dreams — or if eyes needs must weep,</l>
+					<l n="181">Could make their tears all wonder and delight,</l>
+					<l n="182">She in her crystal vials did closely keep:</l>
+					<l n="183">If men could drink of those clear vials, ’tis said</l>
+					<l n="184">The living were not envied of the dead.</l>
+
+				</lg>
+				<lg>
+					<label>XVIII.</label>
+					<l n="185">Her cave was stored with scrolls of strange device,</l>
+					<l n="186">The works of some Saturnian Archimage,</l>
+					<l n="187">Which taught the expiations at whose price</l>
+					<l n="188">Men from the Gods might win that happy age</l>
+					<l n="189">Too lightly lost, redeeming native vice;</l>
+					<l n="190">And which might quench the Earth-consuming rage</l>
+					<l n="191">Of gold and blood — till men should live and move</l>
+					<l n="192">Harmonious as the sacred stars above;</l>
+
+				</lg>
+				<lg>
+					<label>XIX.</label>
+					<l n="193">And how all things that seem untameable,</l>
+					<l n="194">Not to be checked and not to be confined,</l>
+					<l n="195">Obey the spells of Wisdom’s wizard skill;</l>
+					<l n="196">Time, earth, and fire — the ocean and the wind,</l>
+					<l n="197">And all their shapes — and man’s imperial will;</l>
+					<l n="198">And other scrolls whose writings did unbind</l>
+					<l n="199">The inmost lore of Love — let the profane</l>
+					<l n="200">Tremble to ask what secrets they contain.</l>
+				</lg>
+				<lg>
+					<label>XX.</label>
+					<l n="201">And wondrous works of substances unknown,</l>
+					<l n="202">To which the enchantment of her father’s power</l>
+					<l n="203">Had changed those ragged blocks of savage stone,</l>
+					<l n="204">Were heaped in the recesses of her bower;</l>
+					<l n="205">Carved lamps and chalices, and vials which shone</l>
+					<l n="206">In their own golden beams — each like a flower,</l>
+					<l n="207">Out of whose depth a fire-fly shakes his light</l>
+					<l n="208">Under a cypress in a starless night.</l>
+
+				</lg>
+				<lg>
+					<label>XXI.</label>
+					<l n="209">At first she lived alone in this wild home,</l>
+					<l n="210">And her own thoughts were each a minister,</l>
+					<l n="211">Clothing themselves, or with the ocean foam,</l>
+					<l n="212">Or with the wind, or with the speed of fire,</l>
+					<l n="213">To work whatever purposes might come</l>
+					<l n="214">Into her mind; such power her mighty Sire</l>
+					<l n="215">Had girt them with, whether to fly or run,</l>
+					<l n="216">Through all the regions which he shines upon.</l>
+
+				</lg>
+				<lg>
+					<label>XXII.</label>
+					<l n="217">The Ocean-nymphs and Hamadryades,</l>
+					<l n="218">Oreads and Naiads, with long weedy locks,</l>
+					<l n="219">Offered to do her bidding through the seas,</l>
+					<l n="220">Under the earth, and in the hollow rocks,</l>
+					<l n="221">And far beneath the matted roots of trees,</l>
+					<l n="222">And in the gnarlèd heart of stubborn oaks,</l>
+					<l n="223">So they might live for ever in the light</l>
+					<l n="224">Of her sweet presence — each a satellite.</l>
+
+				</lg>
+				<lg>
+					<label>XXIII.</label>
+					<l n="225">"This may not be," the wizard maid replied;</l>
+					<l n="226">"The fountains where the Naiades bedew</l>
+					<l n="227">Their shining hair, at length are drained and dried;</l>
+					<l n="228">The solid oaks forget their strength, and strew</l>
+					<l n="229">Their latest leaf upon the mountains wide;</l>
+					<l n="230">The boundless ocean like a drop of dew</l>
+					<l n="231">Will be consumed — the stubborn centre must</l>
+					<l n="232">Be scattered, like a cloud of summer dust.</l>
+
+				</lg>
+				<lg>
+					<label>XXIV.</label>
+					<l n="233">"And ye with them will perish, one by one; —</l>
+					<l n="234">If I must sigh to think that this shall be,</l>
+					<l n="235">If I must weep when the surviving Sun</l>
+					<l n="236">Shall smile on your decay — oh, ask not me</l>
+					<l n="237">To love you till your little race is run;</l>
+					<l n="238">I cannot die as ye must — over me</l>
+					<l n="239">Your leaves shall glance — the streams in which ye dwell</l>
+					<l n="240">Shall be my paths henceforth, and so — farewell!" —</l>
+				</lg>
+				<lg>
+					<label>XXV.</label>
+					<l n="241">She spoke and wept: — the dark and azure well</l>
+					<l n="242">Sparkled beneath the shower of her bright tears,</l>
+					<l n="243">And every little circlet where they fell</l>
+					<l n="244">Flung to the cavern-roof inconstant spheres</l>
+					<l n="245">And intertangled lines of light: — a knell</l>
+					<l n="246">Of sobbing voices came upon her ears</l>
+					<l n="247">From those departing Forms, o’er the serene</l>
+					<l n="248">Of the white streams and of the forest green.</l>
+
+				</lg>
+				<lg>
+					<label>XXVI.</label>
+					<l n="249">All day the wizard lady sate aloof,</l>
+					<l n="250">Spelling out scrolls of dread antiquity,</l>
+					<l n="251">Under the cavern’s fountain-lighted roof;</l>
+					<l n="252">Or broidering the pictured poesy</l>
+					<l n="253">Of some high tale upon her growing woof,</l>
+					<l n="254">Which the sweet splendour of her smiles could dye</l>
+					<l n="255">In hues outshining heaven — and ever she</l>
+					<l n="256">Added some grace to the wrought poesy.</l>
+				</lg>
+				<lg>
+					<label>XXVII.</label>
+					<l n="257">While on her hearth lay blazing many a piece</l>
+					<l n="258">Of sandal wood, rare gums, and cinnamon;</l>
+					<l n="259">Men scarcely know how beautiful fire is —</l>
+					<l n="260">Each flame of it is as a precious stone</l>
+					<l n="261">Dissolved in ever-moving light, and this</l>
+					<l n="262">Belongs to each and all who gaze upon.</l>
+					<l n="263">The Witch beheld it not, for in her hand</l>
+					<l n="264">She held a woof that dimmed the burning brand.</l>
+
+				</lg>
+				<lg>
+					<label>XXVIII.</label>
+					<l n="265">This lady never slept, but lay in trance</l>
+					<l n="266">All night within the fountain — as in sleep.</l>
+					<l n="267">Its emerald crags glowed in her beauty’s glance;</l>
+					<l n="268">Through the green splendour of the water deep</l>
+					<l n="269">She saw the constellations reel and dance</l>
+					<l n="270">Like fire-flies — and withal did ever keep</l>
+					<l n="271">The tenour of her contemplations calm,</l>
+					<l n="272">With open eyes, closed feet, and folded palm.</l>
+
+				</lg>
+				<lg>
+					<label>XXIX.</label>
+					<l n="273">And when the whirlwinds and the clouds descended</l>
+					<l n="274">From the white pinnacles of that cold hill,</l>
+					<l n="275">She passed at dewfall to a space extended,</l>
+					<l n="276">Where in a lawn of flowering asphodel</l>
+					<l n="277">Amid a wood of pines and cedars blended,</l>
+					<l n="278">There yawned an inextinguishable well</l>
+					<l n="279">Of crimson fire — full even to the brim,</l>
+					<l n="280">And overflowing all the margin trim.</l>
+				</lg>
+				<lg>
+					<label>XXX.</label>
+					<l n="281">Within the which she lay when the fierce war</l>
+					<l n="282">Of wintry winds shook that innocuous liquor</l>
+					<l n="283">In many a mimic moon and bearded star</l>
+					<l n="284">O’er woods and lawns; — the serpent heard it flicker</l>
+					<l n="285">In sleep, and dreaming still, he crept afar —</l>
+					<l n="286">And when the windless snow descended thicker</l>
+					<l n="287">Than autumn leaves, she watched it as it came</l>
+					<l n="288">Melt on the surface of the level flame.</l>
+
+				</lg>
+				<lg>
+					<label>XXXI.</label>
+					<l n="289">She had a boat, which some say Vulcan wrought</l>
+					<l n="290">For Venus, as the chariot of her star;</l>
+					<l n="291">But it was found too feeble to be fraught</l>
+					<l n="292">With all the ardours in that sphere which are,</l>
+					<l n="293">And so she sold it, and Apollo bought</l>
+					<l n="294">And gave it to this daughter: from a car</l>
+					<l n="295">Changed to the fairest and the lightest boat</l>
+					<l n="296">Which ever upon mortal stream did float.</l>
+
+				</lg>
+				<lg>
+					<label>XXXII.</label>
+					<l n="297">And others say, that, when but three hours old,</l>
+					<l n="298">The first-born Love out of his cradle lept,</l>
+					<l n="299">And clove dun Chaos with his wings of gold,</l>
+					<l n="300">And like an horticultural adept,</l>
+					<l n="301">Stole a strange seed, and wrapped it up in mould,</l>
+					<l n="302">And sowed it in his mother’s star, and kept</l>
+					<l n="303">Watering it all the summer with sweet dew,</l>
+					<l n="304">And with his wings fanning it as it grew.</l>
+
+				</lg>
+				<lg>
+					<label>XXXIII.</label>
+					<l n="305">The plant grew strong and green, the snowy flower</l>
+					<l n="306">Fell, and the long and gourd-like fruit began</l>
+					<l n="307">To turn the light and dew by inward power</l>
+					<l n="308">To its own substance; woven tracery ran</l>
+					<l n="309">Of light firm texture, ribbed and branching, o’er</l>
+					<l n="310">The solid rind, like a leaf’s veinèd fan —</l>
+					<l n="311">Of which Love scooped this boat — and with soft motion</l>
+					<l n="312">Piloted it round the circumfluous ocean.</l>
+
+				</lg>
+				<lg>
+					<label>XXXIV.</label>
+					<l n="313">This boat she moored upon her fount, and lit</l>
+					<l n="314">A living spirit within all its frame,</l>
+					<l n="315">Breathing the soul of swiftness into it.</l>
+					<l n="316">Couched on the fountain like a panther tame,</l>
+					<l n="317">One of the twain at Evan’s feet that sit —</l>
+					<l n="318">Or as on Vesta’s sceptre a swift flame —</l>
+					<l n="319">Or on blind Homer’s heart a wingèd thought, —</l>
+					<l n="320">In joyous expectation lay the boat.</l>
+				</lg>
+				<lg>
+					<label>XXXV.</label>
+					<l n="321">Then by strange art she kneaded fire and snow</l>
+					<l n="322">Together, tempering the repugnant mass</l>
+					<l n="323">With liquid love — all things together grow</l>
+					<l n="324">Through which the harmony of love can pass;</l>
+					<l n="325">And a fair Shape out of her hands did flow —</l>
+					<l n="326">A living Image, which did far surpass</l>
+					<l n="327">In beauty that bright shape of vital stone</l>
+					<l n="328">Which drew the heart out of Pygmalion.</l>
+
+				</lg>
+				<lg>
+					<label>XXXVI.</label>
+					<l n="329">A sexless thing it was, and in its growth</l>
+					<l n="330">It seemed to have developed no defect</l>
+					<l n="331">Of either sex, yet all the grace of both, —</l>
+					<l n="332">In gentleness and strength its limbs were decked;</l>
+					<l n="333">The bosom swelled lightly with its full youth,</l>
+					<l n="334">The countenance was such as might select</l>
+					<l n="335">Some artist that his skill should never die,</l>
+					<l n="336">Imaging forth such perfect purity.</l>
+
+				</lg>
+				<lg>
+					<label>XXXVII.</label>
+					<l n="337">From its smooth shoulders hung two rapid wings,</l>
+					<l n="338">Fit to have borne it to the seventh sphere,</l>
+					<l n="339">Tipped with the speed of liquid lightenings,</l>
+					<l n="340">Dyed in the ardours of the atmosphere:</l>
+					<l n="341">She led her creature to the boiling springs</l>
+					<l n="342">Where the light boat was moored, and said: "Sit here!"</l>
+					<l n="343">And pointed to the prow, and took her seat</l>
+					<l n="344">Beside the rudder, with opposing feet.</l>
+
+				</lg>
+				<lg>
+					<label>XXXVIII.</label>
+					<l n="345">And down the streams which clove those mountains vast,</l>
+					<l n="346">Around their inland islets, and amid</l>
+					<l n="347">The panther-peopled forests, whose shade cast</l>
+					<l n="348">Darkness and odours, and a pleasure hid</l>
+					<l n="349">In melancholy gloom, the pinnace passed;</l>
+					<l n="350">By many a star-surrounded pyramid</l>
+					<l n="351">Of icy crag cleaving the purple sky,</l>
+					<l n="352">And caverns yawning round unfathomably.</l>
+
+				</lg>
+				<lg>
+					<label>XXXIX.</label>
+					<l n="353">The silver noon into that winding dell,</l>
+					<l n="354">With slanted gleam athwart the forest tops,</l>
+					<l n="355">Tempered like golden evening, feebly fell;</l>
+					<l n="356">A green and glowing light, like that which drops</l>
+					<l n="357">From folded lilies in which glow-worms dwell,</l>
+					<l n="358">When Earth over her face Night’s mantle wraps;</l>
+					<l n="359">Between the severed mountains lay on high,</l>
+					<l n="360">Over the stream, a narrow rift of sky.</l>
+				</lg>
+				<lg>
+					<label>XL.</label>
+					<l n="361">And ever as she went, the Image lay</l>
+					<l n="362">With folded wings and unawakened eyes;</l>
+					<l n="363">And o’er its gentle countenance did play</l>
+					<l n="364">The busy dreams, as thick as summer flies,</l>
+					<l n="365">Chasing the rapid smiles that would not stay,</l>
+					<l n="366">And drinking the warm tears, and the sweet sighs</l>
+					<l n="367">Inhaling, which, with busy murmur vain,</l>
+					<l n="368">They had aroused from that full heart and brain.</l>
+
+				</lg>
+				<lg>
+					<label>XLI.</label>
+					<l n="369">And ever down the prone vale, like a cloud</l>
+					<l n="370">Upon a stream of wind, the pinnace went:</l>
+					<l n="371">Now lingering on the pools, in which abode</l>
+					<l n="372">The calm and darkness of the deep content</l>
+					<l n="373">In which they paused; now o’er the shallow road</l>
+					<l n="374">Of white and dancing waters, all besprent</l>
+					<l n="375">With sand and polished pebbles: — mortal boat</l>
+					<l n="376">In such a shallow rapid could not float.</l>
+
+				</lg>
+				<lg>
+					<label>XLII.</label>
+					<l n="377">And down the earthquaking cataracts which shiver</l>
+					<l n="378">Their snow-like waters into golden air,</l>
+					<l n="379">Or under chasms unfathomable ever</l>
+					<l n="380">Sepulchre them, till in their rage they tear</l>
+					<l n="381">A subterranean portal for the river,</l>
+					<l n="382">It fled — the circling sunbows did upbear</l>
+					<l n="383">Its fall down the hoar precipice of spray,</l>
+					<l n="384">Lighting it far upon its lampless way.</l>
+
+				</lg>
+				<lg>
+					<label>XLIII.</label>
+					<l n="385">And when the wizard lady would ascend</l>
+					<l n="386">The labyrinths of some many-winding vale,</l>
+					<l n="387">Which to the inmost mountain upward tend —</l>
+					<l n="388">She called "Hermaphroditus!" — and the pale</l>
+					<l n="389">And heavy hue which slumber could extend</l>
+					<l n="390">Over its lips and eyes, as on the gale</l>
+					<l n="391">A rapid shadow from a slope of grass,</l>
+					<l n="392">Into the darkness of the stream did pass.</l>
+
+				</lg>
+				<lg>
+					<label>XLIV.</label>
+					<l n="393">And it unfurled its heaven-coloured pinions,</l>
+					<l n="394">With stars of fire spotting the stream below;</l>
+					<l n="395">And from above into the Sun’s dominions</l>
+					<l n="396">Flinging a glory, like the golden glow</l>
+					<l n="397">In which Spring clothes her emerald-wingèd minions,</l>
+					<l n="398">All interwoven with fine feathery snow</l>
+					<l n="399">And moonlight splendour of intensest rime,</l>
+					<l n="400">With which frost paints the pines in winter time.</l>
+				</lg>
+				<lg>
+					<label>XLV.</label>
+					<l n="401">And then it winnowed the Elysian air</l>
+					<l n="402">Which ever hung about that lady bright,</l>
+					<l n="403">With its aetherial vans — and speeding there,</l>
+					<l n="404">Like a star up the torrent of the night,</l>
+					<l n="405">Or a swift eagle in the morning glare</l>
+					<l n="406">Breasting the whirlwind with impetuous flight,</l>
+					<l n="407">The pinnace, oared by those enchanted wings,</l>
+					<l n="408">Clove the fierce streams towards their upper springs.</l>
+
+				</lg>
+				<lg>
+					<label>XLVI.</label>
+					<l n="409">The water flashed, like sunlight by the prow</l>
+					<l n="410">Of a noon-wandering meteor flung to Heaven;</l>
+					<l n="411">The still air seemed as if its waves did flow</l>
+					<l n="412">In tempest down the mountains; loosely driven</l>
+					<l n="413">The lady’s radiant hair streamed to and fro:</l>
+					<l n="414">Beneath, the billows having vainly striven</l>
+					<l n="415">Indignant and impetuous, roared to feel</l>
+					<l n="416">The swift and steady motion of the keel.</l>
+
+				</lg>
+				<lg>
+					<label>XLVII.</label>
+					<l n="417">Or, when the weary moon was in the wane,</l>
+					<l n="418">Or in the noon of interlunar night,</l>
+					<l n="419">The lady-witch in visions could not chain</l>
+					<l n="420">Her spirit; but sailed forth under the light</l>
+					<l n="421">Of shooting stars, and bade extend amain</l>
+					<l n="422">Its storm-outspeeding wings, the Hermaphrodite;</l>
+					<l n="423">She to the Austral waters took her way,</l>
+					<l n="424">Beyond the fabulous Thamondocana, —</l>
+
+				</lg>
+				<lg>
+					<label>XLVIII.</label>
+					<l n="425">Where, like a meadow which no scythe has shaven,</l>
+					<l n="426">Which rain could never bend, or whirl-blast shake,</l>
+					<l n="427">With the Antarctic constellations paven,</l>
+					<l n="428">Canopus and his crew, lay the Austral lake —</l>
+					<l n="429">There she would build herself a windless haven</l>
+					<l n="430">Out of the clouds whose moving turrets make</l>
+					<l n="431">The bastions of the storm, when through the sky</l>
+					<l n="432">The spirits of the tempest thundered by:</l>
+
+				</lg>
+				<lg>
+					<label>XLIX.</label>
+					<l n="433">A haven beneath whose translucent floor</l>
+					<l n="434">The tremulous stars sparkled unfathomably,</l>
+					<l n="435">And around which the solid vapours hoar,</l>
+					<l n="436">Based on the level waters, to the sky</l>
+					<l n="437">Lifted their dreadful crags, and like a shore</l>
+					<l n="438">Of wintry mountains, inaccessibly</l>
+					<l n="439">Hemmed in with rifts and precipices gray,</l>
+					<l n="440">And hanging crags, many a cove and bay.</l>
+				</lg>
+				<lg>
+					<label>L.</label>
+					<l n="441">And whilst the outer lake beneath the lash</l>
+					<l n="442">Of the wind’s scourge, foamed like a wounded thing,</l>
+					<l n="443">And the incessant hail with stony clash</l>
+					<l n="444">Ploughed up the waters, and the flagging wing</l>
+					<l n="445">Of the roused cormorant in the lightning flash</l>
+					<l n="446">Looked like the wreck of some wind-wandering</l>
+					<l n="447">Fragment of inky thunder-smoke — this haven</l>
+					<l n="448">Was as a gem to copy Heaven engraven, —</l>
+
+				</lg>
+				<lg>
+					<label>LI.</label>
+					<l n="449">On which that lady played her many pranks,</l>
+					<l n="450">Circling the image of a shooting star,</l>
+					<l n="451">Even as a tiger on Hydaspes’ banks</l>
+					<l n="452">Outspeeds the antelopes which speediest are,</l>
+					<l n="453">In her light boat; and many quips and cranks</l>
+					<l n="454">She played upon the water, till the car</l>
+					<l n="455">Of the late moon, like a sick matron wan,</l>
+					<l n="456">To journey from the misty east began.</l>
+
+				</lg>
+				<lg>
+					<label>LII.</label>
+					<l n="457">And then she called out of the hollow turrets</l>
+					<l n="458">Of those high clouds, white, golden and vermilion,</l>
+					<l n="459">The armies of her ministering spirits —</l>
+					<l n="460">In mighty legions, million after million,</l>
+					<l n="461">They came, each troop emblazoning its merits</l>
+					<l n="462">On meteor flags; and many a proud pavilion</l>
+					<l n="463">Of the intertexture of the atmosphere</l>
+					<l n="464">They pitched upon the plain of the calm mere.</l>
+
+				</lg>
+				<lg>
+					<label>LIII.</label>
+					<l n="465">They framed the imperial tent of their great Queen</l>
+					<l n="466">Of woven exhalations, underlaid</l>
+					<l n="467">With lambent lightning-fire, as may be seen</l>
+					<l n="468">A dome of thin and open ivory inlaid</l>
+					<l n="469">With crimson silk — cressets from the serene</l>
+					<l n="470">Hung there, and on the water for her tread</l>
+					<l n="471">A tapestry of fleece-like mist was strewn,</l>
+					<l n="472">Dyed in the beams of the ascending moon.</l>
+
+				</lg>
+				<lg>
+					<label>LIV.</label>
+					<l n="473">And on a throne o’erlaid with starlight, caught</l>
+					<l n="474">Upon those wandering isles of aëry dew,</l>
+					<l n="475">Which highest shoals of mountain shipwreck not,</l>
+					<l n="476">She sate, and heard all that had happened new</l>
+					<l n="477">Between the earth and moon, since they had brought</l>
+					<l n="478">The last intelligence — and now she grew</l>
+					<l n="479">Pale as that moon, lost in the watery night —</l>
+					<l n="480">And now she wept, and now she laughed outright.</l>
+				</lg>
+				<lg>
+					<label>LV.</label>
+					<l n="481">These were tame pleasures; she would often climb</l>
+					<l n="482">The steepest ladder of the crudded rack</l>
+					<l n="483">Up to some beakèd cape of cloud sublime,</l>
+					<l n="484">And like Arion on the dolphin’s back</l>
+					<l n="485">Ride singing through the shoreless air; — oft-time</l>
+					<l n="486">Following the serpent lightning’s winding track,</l>
+					<l n="487">She ran upon the platforms of the wind,</l>
+					<l n="488">And laughed to hear the fire-balls roar behind.</l>
+
+				</lg>
+				<lg>
+					<label>LVI.</label>
+					<l n="489">And sometimes to those streams of upper air</l>
+					<l n="490">Which whirl the earth in its diurnal round,</l>
+					<l n="491">She would ascend, and win the spirits there</l>
+					<l n="492">To let her join their chorus. Mortals found</l>
+					<l n="493">That on those days the sky was calm and fair,</l>
+					<l n="494">And mystic snatches of harmonious sound</l>
+					<l n="495">Wandered upon the earth where’er she passed,</l>
+					<l n="496">And happy thoughts of hope, too sweet to last.</l>
+
+				</lg>
+				<lg>
+					<label>LVII.</label>
+					<l n="497">But her choice sport was, in the hours of sleep,</l>
+					<l n="498">To glide adown old Nilus, where he threads</l>
+					<l n="499">Egypt and AEthiopia, from the steep</l>
+					<l n="500">Of utmost Axumè, until he spreads,</l>
+					<l n="501">Like a calm flock of silver-fleecèd sheep,</l>
+					<l n="502">His waters on the plain: and crested heads</l>
+					<l n="503">Of cities and proud temples gleam amid,</l>
+					<l n="504">And many a vapour-belted pyramid.</l>
+
+				</lg>
+				<lg>
+					<label>LVIII.</label>
+					<l n="505">By Moeris and the Mareotid lakes,</l>
+					<l n="506">Strewn with faint blooms like bridal chamber floors,</l>
+					<l n="507">Where naked boys bridling tame water-snakes,</l>
+					<l n="508">Or charioteering ghastly alligators,</l>
+					<l n="509">Had left on the sweet waters mighty wakes</l>
+					<l n="510">Of those huge forms — within the brazen doors</l>
+					<l n="511">Of the great Labyrinth slept both boy and beast,</l>
+					<l n="512">Tired with the pomp of their Osirian feast.</l>
+
+				</lg>
+				<lg>
+					<label>LIX.</label>
+					<l n="513">And where within the surface of the river</l>
+					<l n="514">The shadows of the massy temples lie,</l>
+					<l n="515">And never are erased — but tremble ever</l>
+					<l n="516">Like things which every cloud can doom to die,</l>
+					<l n="517">Through lotus-paven canals, and wheresoever</l>
+					<l n="518">The works of man pierced that serenest sky</l>
+					<l n="519">With tombs, and towers, and fanes, ’twas her delight</l>
+					<l n="520">To wander in the shadow of the night.</l>
+				</lg>
+				<lg>
+					<label>LX.</label>
+					<l n="521">With motion like the spirit of that wind</l>
+					<l n="522">Whose soft step deepens slumber, her light feet</l>
+					<l n="523">Passed through the peopled haunts of humankind,</l>
+					<l n="524">Scattering sweet visions from her presence sweet,</l>
+					<l n="525">Through fane, and palace-court, and labyrinth mined</l>
+					<l n="526">With many a dark and subterranean street</l>
+					<l n="527">Under the Nile, through chambers high and deep</l>
+					<l n="528">She passed, observing mortals in their sleep.</l>
+
+				</lg>
+				<lg>
+					<label>LXI.</label>
+					<l n="529">A pleasure sweet doubtless it was to see</l>
+					<l n="530">Mortals subdued in all the shapes of sleep.</l>
+					<l n="531">Here lay two sister twins in infancy;</l>
+					<l n="532">There, a lone youth who in his dreams did weep;</l>
+					<l n="533">Within, two lovers linkèd innocently</l>
+					<l n="534">In their loose locks which over both did creep</l>
+					<l n="535">Like ivy from one stem; — and there lay calm</l>
+					<l n="536">Old age with snow-bright hair and folded palm.</l>
+
+				</lg>
+				<lg>
+					<label>LXII.</label>
+					<l n="537">But other troubled forms of sleep she saw,</l>
+					<l n="538">Not to be mirrored in a holy song —</l>
+					<l n="539">Distortions foul of supernatural awe,</l>
+					<l n="540">And pale imaginings of visioned wrong;</l>
+					<l n="541">And all the code of Custom’s lawless law</l>
+					<l n="542">Written upon the brows of old and young:</l>
+					<l n="543">"This," said the wizard maiden, "is the strife</l>
+					<l n="544">Which stirs the liquid surface of man’s life."</l>
+
+				</lg>
+				<lg>
+					<label>LXIII.</label>
+					<l n="545">And little did the sight disturb her soul. —</l>
+					<l n="546">We, the weak mariners of that wide lake</l>
+					<l n="547">Where’er its shores extend or billows roll,</l>
+					<l n="548">Our course unpiloted and starless make</l>
+					<l n="549">O’er its wild surface to an unknown goal: —</l>
+					<l n="550">But she in the calm depths her way could take,</l>
+					<l n="551">Where in bright bowers immortal forms abide</l>
+					<l n="552">Beneath the weltering of the restless tide.</l>
+
+				</lg>
+				<lg>
+					<label>LXIV.</label>
+					<l n="553">And she saw princes couched under the glow</l>
+					<l n="554">Of sunlike gems; and round each temple-court</l>
+					<l n="555">In dormitories ranged, row after row,</l>
+					<l n="556">She saw the priests asleep — all of one sort —</l>
+					<l n="557">For all were educated to be so. —</l>
+					<l n="558">The peasants in their huts, and in the port</l>
+					<l n="559">The sailors she saw cradled on the waves,</l>
+					<l n="560">And the dead lulled within their dreamless graves.</l>
+				</lg>
+				<lg>
+					<label>LXV.</label>
+					<l n="561">And all the forms in which those spirits lay</l>
+					<l n="562">Were to her sight like the diaphanous</l>
+					<l n="563">Veils, in which those sweet ladies oft array</l>
+					<l n="564">Their delicate limbs, who would conceal from us</l>
+					<l n="565">Only their scorn of all concealment: they</l>
+					<l n="566">Move in the light of their own beauty thus.</l>
+					<l n="567">But these and all now lay with sleep upon them,</l>
+					<l n="568">And little thought a Witch was looking on them.</l>
+
+				</lg>
+				<lg>
+					<label>LXVI.</label>
+					<l n="569">She, all those human figures breathing there,</l>
+					<l n="570">Beheld as living spirits — to her eyes</l>
+					<l n="571">The naked beauty of the soul lay bare,</l>
+					<l n="572">And often through a rude and worn disguise</l>
+					<l n="573">She saw the inner form most bright and fair —</l>
+					<l n="574">And then she had a charm of strange device,</l>
+					<l n="575">Which, murmured on mute lips with tender tone,</l>
+					<l n="576">Could make that spirit mingle with her own.</l>
+
+				</lg>
+				<lg>
+					<label>LXVII.</label>
+					<l n="577">Alas! Aurora, what wouldst thou have given</l>
+					<l n="578">For such a charm when Tithon became gray?</l>
+					<l n="579">Or how much, Venus, of thy silver heaven</l>
+					<l n="580">Wouldst thou have yielded, ere Proserpina</l>
+					<l n="581">Had half (oh! why not all?) the debt forgiven</l>
+					<l n="582">Which dear Adonis had been doomed to pay,</l>
+					<l n="583">To any witch who would have taught you it?</l>
+					<l n="584">The Heliad doth not know its value yet.</l>
+
+				</lg>
+				<lg>
+					<label>LXVIII.</label>
+					<l n="585">’Tis said in after times her spirit free</l>
+					<l n="586">Knew what love was, and felt itself alone —</l>
+					<l n="587">But holy Dian could not chaster be</l>
+					<l n="588">Before she stooped to kiss Endymion,</l>
+					<l n="589">Than now this lady — like a sexless bee</l>
+					<l n="590">Tasting all blossoms, and confined to none,</l>
+					<l n="591">Among those mortal forms, the wizard-maiden</l>
+					<l n="592">Passed with an eye serene and heart unladen.</l>
+
+				</lg>
+				<lg>
+					<label>LXIX.</label>
+					<l n="593">To those she saw most beautiful, she gave</l>
+					<l n="594">Strange panacea in a crystal bowl: —</l>
+					<l n="595">They drank in their deep sleep of that sweet wave,</l>
+					<l n="596">And lived thenceforward as if some control,</l>
+					<l n="597">Mightier than life, were in them; and the grave</l>
+					<l n="598">Of such, when death oppressed the weary soul,</l>
+					<l n="599">Was as a green and overarching bower</l>
+					<l n="600">Lit by the gems of many a starry flower.</l>
+				</lg>
+				<lg>
+					<label>LXX.</label>
+					<l n="601">For on the night when they were buried, she</l>
+					<l n="602">Restored the embalmers’ ruining, and shook</l>
+					<l n="603">The light out of the funeral lamps, to be</l>
+					<l n="604">A mimic day within that deathly nook;</l>
+					<l n="605">And she unwound the woven imagery</l>
+					<l n="606">Of second childhood’s swaddling bands, and took</l>
+					<l n="607">The coffin, its last cradle, from its niche,</l>
+					<l n="608">And threw it with contempt into a ditch.</l>
+
+				</lg>
+				<lg>
+					<label>LXXI.</label>
+					<l n="609">And there the body lay, age after age,</l>
+					<l n="610">Mute, breathing, beating, warm, and undecaying,</l>
+					<l n="611">Like one asleep in a green hermitage,</l>
+					<l n="612">With gentle smiles about its eyelids playing,</l>
+					<l n="613">And living in its dreams beyond the rage</l>
+					<l n="614">Of death or life; while they were still arraying</l>
+					<l n="615">In liveries ever new, the rapid, blind</l>
+					<l n="616">And fleeting generations of mankind.</l>
+
+				</lg>
+				<lg>
+					<label>LXXII.</label>
+					<l n="617">And she would write strange dreams upon the brain</l>
+					<l n="618">Of those who were less beautiful, and make</l>
+					<l n="619">All harsh and crooked purposes more vain</l>
+					<l n="620">Than in the desert is the serpent’s wake</l>
+					<l n="621">Which the sand covers — all his evil gain</l>
+					<l n="622">The miser in such dreams would rise and shake</l>
+					<l n="623">Into a beggar’s lap; — the lying scribe</l>
+					<l n="624">Would his own lies betray without a bribe.</l>
+
+				</lg>
+				<lg>
+					<label>LXXIII.</label>
+					<l n="625">The priests would write an explanation full,</l>
+					<l n="626">Translating hieroglyphics into Greek,</l>
+					<l n="627">How the God Apis really was a bull,</l>
+					<l n="628">And nothing more; and bid the herald stick</l>
+					<l n="629">The same against the temple doors, and pull</l>
+					<l n="630">The old cant down; they licensed all to speak</l>
+					<l n="631">What’er they thought of hawks, and cats, and geese,</l>
+					<l n="632">By pastoral letters to each diocese.</l>
+
+				</lg>
+				<lg>
+					<label>LXXIV.</label>
+					<l n="633">The king would dress an ape up in his crown</l>
+					<l n="634">And robes, and seat him on his glorious seat,</l>
+					<l n="635">And on the right hand of the sunlike throne</l>
+					<l n="636">Would place a gaudy mock-bird to repeat</l>
+					<l n="637">The chatterings of the monkey. — Every one</l>
+					<l n="638">Of the prone courtiers crawled to kiss the feet</l>
+					<l n="639">Of their great Emperor, when the morning came,</l>
+					<l n="640">And kissed — alas, how many kiss the same!</l>
+				</lg>
+				<lg>
+					<label>LXXV.</label>
+					<l n="641">The soldiers dreamed that they were blacksmiths, and</l>
+					<l n="642">Walked out of quarters in somnambulism;</l>
+					<l n="643">Round the red anvils you might see them stand</l>
+					<l n="644">Like Cyclopses in Vulcan’s sooty abysm,</l>
+					<l n="645">Beating their swords to ploughshares; — in a band</l>
+					<l n="646">The jailors sent those of the liberal schism</l>
+					<l n="647">Free through the streets of Memphis, much, I wis,</l>
+					<l n="648">To the annoyance of king Amasis.</l>
+
+				</lg>
+				<lg>
+					<label>LXXVI.</label>
+					<l n="649">And timid lovers who had been so coy,</l>
+					<l n="650">They hardly knew whether they loved or not,</l>
+					<l n="651">Would rise out of their rest, and take sweet joy,</l>
+					<l n="652">To the fulfillment of their inmost thought;</l>
+					<l n="653">And when next day the maiden and the boy</l>
+					<l n="654">Met one another, both, like sinners caught,</l>
+					<l n="655">Blushed at the thing which each believed was done</l>
+					<l n="656">Only in fancy — till the tenth moon shone;</l>
+
+				</lg>
+				<lg>
+					<label>LXXVII.</label>
+					<l n="657">And then the Witch would let them take no ill:</l>
+					<l n="658">Of many thousand schemes which lovers find,</l>
+					<l n="659">The Witch found one, — and so they took their fill</l>
+					<l n="660">Of happiness in marriage warm and kind.</l>
+					<l n="661">Friends who, by practice of some envious skill,</l>
+					<l n="662">Were torn apart — a wide wound, mind from mind! —</l>
+					<l n="663">She did unite again with visions clear</l>
+					<l n="664">Of deep affection and of truth sincere.</l>
+
+				</lg>
+				<lg>
+					<label>LXXVIII.</label>
+					<l n="665">These were the pranks she played among the cities</l>
+					<l n="666">Of mortal men, and what she did to Sprites</l>
+					<l n="667">And Gods, entangling them in her sweet ditties</l>
+					<l n="668">To do her will, and show their subtle sleights,</l>
+					<l n="669">I will declare another time; for it is</l>
+					<l n="670">A tale more fit for the weird winter nights</l>
+					<l n="671">Than for these garish summer days, when we</l>
+					<l n="672">Scarcely believe much more than we can see.</l>
+				</lg>
+			</div>
+		</body>
+	</text>
+
+</TEI>

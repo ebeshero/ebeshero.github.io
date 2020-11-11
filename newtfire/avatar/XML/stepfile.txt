@@ -1,0 +1,33 @@
+Avatar Step File
+
+1. Search for reserved characters
+Find: `&|<|>`
+If any are present, perform separate find and replace and replace the ampersand first
+
+2. Remove white space at beginning of lines 
+Find: \s{2,}
+Replace: \n\n
+
+2.5 OR if the white space is already gone from the beginning, 
+Find: \n
+Replace: \n\n
+
+3. Wrap speakers and speeches
+Find: (^\w.+?)\t(.+?)(\n\n)
+Replace: <sp><spkr ref="\1">\1</spkr>\2</sp>\3
+**Note that you'll have to go back through the ref attributes to check if any of the names have a white space in them. You'll want to change the attribute value either by smushing the names together, or including an underscore. Talk with eachother about how you'd want to go about this. 
+
+4. Wrap stage directions WITHIN speeches:
+Find: \[(.+?)\]
+Replace: <sd>\1</sd>
+
+5. Wrap stage directions NOT in speeches
+Find: (^\w.+?).+
+Replace: <sd>\0</sd>
+
+6. 1. Add `<header>` and `<body>` tags
+
+Optional 7 if you want to include a character list:
+Find distinct-values for the `<spkr>` tags to allow for easier creation of `<characterList>`
+XPath: `//spkr => distinct-values()`
+    **This also shows you if any characters are speaking in unison**

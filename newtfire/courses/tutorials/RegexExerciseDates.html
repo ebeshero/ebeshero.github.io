@@ -1,0 +1,137 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   
+   	
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="explain.css" />
+      <title>Regex Exercise: Semester Dates</title>
+   </head>
+   
+   
+   
+   <body>
+      <!--#include virtual="top.html" -->
+      		
+      		
+      		
+       <h1><span class="banner">Regex Exercise: Convert a Text File of Semester Dates to XML</span></h1>
+      			
+    <p>Consult the following resources as you work with Regular Expressions:</p> 
+   	<ul>
+         			  
+      	<li><a href="explainRegex.html">Our newtFire tutorial
+                  			    on Autotagging with Regular Expressions (Regex)</a> 
+         </li>
+   		<li><a href="http://www.regular-expressions.info/tutorial.html">Regular-Expressions.info Tutorial</a>: a mine of helpful detail on regular expression matching,</li>
+         			  
+      </ul>
+   	  <h3>Get the source text ready in &lt;oXygen/&gt;</h3>
+       <p>We calculated a list of the Fall 2020 semester dates in a spreadsheet program, and copied the results into a plain-text file, which you can download from our site here: <a
+               href="fa2020semesterDates.txt">fa2020semesterDates.txt</a>.</p>
+           
+           <ul><li>To download the file,  go to File and Save as in your web browser, and choose a useful name and location on your computer to save the file.
+           We typically keep the <code>.txt</code> extension, and you might rename this as <code>YourName_RegexDates.txt</code>.)
+           </li>
+           <li>Then open &lt;oXygen/&gt;, and open the file you saved.</li>
+            </ul>
+       <h3>Prepare a <q>Step File</q></h3>
+       <ul>
+               <li>Next, open a <strong>new, separate text file</strong>, in which you will record each step you take in up-converting this document to XML. This needs to be a plain text (<code>*.txt</code>) or markdown (<code>*.md</code>) file and not something you write in a word processor (<em>not</em> a Microsoft Word document) so you do not have to struggle with autocorrections of the regex patterns you are recording.</li>
+           <li>Save this file as your main homework submission for this assignment, following our <a href="http://dh.newtfire.org/explainFileNames.html">standard homework file naming conventions</a> for upload to Courseweb. We will duplicate the steps you record to make sure they work to up-convert the text file to XML.
+               <span class="smaller"><strong>Suggestions:</strong> You can open a new markdown file in &lt;oXygen/&gt; by going to open a New document (the folded piece of paper icon) and typing in <q>markdown</q> in the search bar. (Or type in <q>text</q> to open a new plain text file.)<strong> On Windows</strong>, you can find and open Notepad and record your steps in plain text form here outside of oXygen, which may be convenient, so you don’t accidentally try your find-and-replace operations on your step file instead of the main text. <strong>On Mac</strong>, you might try TextEdit, or stick with &lt;oXygen/&gt; and open your window in Tile View as we did with your Relax NG Schema files.</span>
+               </li>
+       </ul>
+       <h3>The task</h3>
+       <p>Your goal is to produce an XML version of the semester dates file by using the search-and-replace techniques we discussed in class, <strong>and</strong> record each step you take in a plain text or markdown file so others can reproduce exactly what you did. <span class="smaller">(You may, in a real-life project situation, need to share the steps you take in up-converting plain text documents to XML, and share that on your GitHub repo in GitHub’s markdown (the same that we write on the GitHub Issues board), and in that case you would save the file with a <code>.md</code> extension, like <a href="https://github.com/newtfire/textEncoding-Hub/blob/master/Class-Examples/Regex/elderScrolls/regexToMarkdownList.md">this sample regex instructions file.</a>).</span></p>
+       
+       <p>Your up-converted XML output should look something like <strong><a
+           href="../tutorials/fa2020semesterDates.xml">fa2020semesterDates.xml</a></strong>.
+           This involves putting each class period date in its own element and reformatting it to hold the full date information in an attribute. It also involves wrapping the three (M W and F) class period dates for each week in an element to wrap the weeks.
+       </p>
+       <p>Your <q>Steps file</q> needs to be detailed enough to indicate each step of your process: what regular expression patterns you attempted to find, and what expressions you used to replace them. You might record the number finds you get and even how you fine-tuned your steps when you were not finding everything you wanted to at first. <strong>Note:</strong> we strongly recommend <strong>copying and pasting your find and replace expressions</strong> into your Steps file instead of retyping them (since it is easy to introduce errors that way).</p>
+       <h3>How to proceed</h3>
+       <p>There are several ways to get to the target output, but the starting points are standard:</p>
+       <h4>Starting work:</h4>
+       <p>First of all, for any up-conversion of plain text, you must check for the special reserve characters: the ampersand <code>&amp;</code> and the angle brackets <code>&lt;</code> and <code>&gt;</code>. You need to search for those and, if they turn up,
+           replace them with their corresponding XML entities, so that these will not interfere with well-formed XML markup.</p>
+       <table>
+           <tr><th>Search for:</th><th>Replace with:</th></tr>
+           <tr><td><code>&amp;</code></td><td><code>&amp;amp;</code></td></tr>
+           <tr><td><code>&lt;</code></td><td><code>&amp;lt;</code></td></tr>
+           <tr><td><code>&gt;</code></td><td><code>&amp;gt;</code></td></tr>
+       </table>
+ 
+       <p>Note that you need to process the special XML reserve characters in the correct order. Why is it important that you search and replace the <code>&amp;</code> first?</p>
+       <p>To perform regex searching, you need to check the box labeled <q>Regular expression</q>
+           at the bottom of the &lt;oXygen/&gt; find-and-replace dialog box, which you open with
+           Control-f (Windows) or Command-f (Mac). If you don’t check this box, &lt;oXygen/&gt;
+           will just search for what you type literally, and it won’t recognize that some
+           characters in regex have special meaning. You don’t have to check anything else yet. Be
+           sure that <q>Dot matches all</q> is unchecked, though; we’ll explain why below.</p>
+       <h4>Inside out or outside in?</h4>
+       <p>We can create our markup either from the <em>outside in</em> (wrap the whole document in a root element, then week wrappers, then date lines) or from the <em>inside out</em> (first the date lines , then wrap those in a week, and lastly set the document root element).
+           Either strategy can be made to work, but we generally find it easier to work from the
+           inside out.</p>
+       <h4>Dates (as table rows)</h4>
+       <p>Our markup is eventually going to be a table, so in our planning we used <code>&lt;tr&lt;</code> tags (standing for <q>table row</q> to wrap around each date. We’ll start by tagging every date as a <code>&lt;tr&gt;</code>, and we want to go from this format in the text file:
+
+       </p>
+       <pre>2020-08-24	M</pre>
+       <p>to this format in our XML conversion:</p>
+       <pre>&lt;tr id="2020-08-24"&gt;M 08-24&lt;/tr&gt;</pre>
+       
+      
+       <p>The way regex really thinks of this process is, <q>match every date line, delete it, and replace it with remixed pieces of itself
+               wrapped in <code>&lt;tr&gt;</code> tags</q>. That is, regex doesn’t think about
+           leaving the date in place and inserting something before and after it; it thinks about
+           matching each date line, deleting it, and then putting pieces of it back, with the tags that you desire. 
+           You start by writing a regex to match the date lines, but how do we remix the date information to put part of it in an attribute value, and part of it as element contents?</p>
+       <p>The answer is to set <strong>capturing groups</strong> by setting parentheses in the regular expression you use in the Find. Your Find expression needs to hold (in parentheses) the portions of the  match that you want to using in your Replace. We divided the date information into three parts using capturing groups: The first set of parentheses holds just the year, the next wraps the rest of the numerical date, and the last wraps around the capital letter designating the weekday. Then in the Replace, we need to refer to the capturing groups using a special regular expression. The sequence <code>\1</code> points to the first capturing group, ordered from left to right. <code>\2</code> refers to the second capturing group, and <code>\3</code> to the third. The expression <code>\0</code> refers to the entire match regardless of the capturing groups. Try experimenting with Find and Replace using capturing groups in various ways until you set down the tagging you want. (The Undo button in oXygen is under the Edit menu, and we use it frequently when we are experimenting like this!)</p>
+       <h4>Finding and wrapping the weeks</h4>
+      <p>Finding the weeks means understanding how each week begins (with an M for Monday). If we can locate every Monday in the file, we have found a pattern that we can use to wrap each week. What is tricky for Find and Replace of the weeks is that you want to create an element structure to <em>wrap around</em> each week, like this:</p>
+       <pre>
+           &lt;table class="week"&gt;
+               &lt;tr id="2020-08-24"&gt;M 08-24&lt;/tr&gt;
+               &lt;tr id="2020-08-26"&gt;W 08-26&lt;/tr&gt;
+               &lt;tr id="2020-08-28"&gt;F 08-28&lt;/tr&gt;
+           &lt;/table&gt;   
+       </pre>
+<p>We recommend not working too hard to accomplish this. You do <em>not</em> need to search for the three lines that constitute a full week to wrap a <code>table</code> element around them. Intead, we recommend a <strong><q>close-open</q></strong> strategy: That is, once you have found all of the Mondays, set down a closing tag for each <code>table</code> element before presenting the opening tag: <code>&lt;/table&gt;\n&lt;table class="week"&gt;</code>. Try this and see what it does. You will have an extra close tag for `<code>&lt;/table&gt;</code> at the top of the document, and you will just need to manually move it to the end to complete a series of table elements wrapping each week.</p>
+       
+       <h4>Cleaning up and checking your results</h4>
+       <p>Save your text file now as an XML file by saving as <code>.xml</code>. You will now need to <strong>reopen the document</strong> to see if it is well-formed so that oXygen actually recognizes and reads the file as an XML document.
+           <strong>It probably is not well-formed</strong>, because you need to wrap the document in a root element. Do that and inspect the document for well-formedness. To check for well-formedness in the XML file, you can use Control+Shift+W on Windows,
+           Command+Shift+W on Mac, or click on the arrow next to the red check mark in the icon bar
+           at the top and choose <q>Check well-formedness</q>. If you see regular patterns of something that you can fix with regular expressions, use them and document your steps.</p>
+       
+       <h4>General</h4>
+       <p>As we mention above, there are several ways to get to the target output, and whatever
+           works is legitimate, as long as you make meaningful use of computational tools,
+           including regular expressions (where appropriate), and don’t just tag everything
+           manually. As you saw in class, there are ways to build your own regular expressions to
+           match whatever patterns you need to identify, and the regex languages is complex and
+           often difficult to read. The way we would approach this task is by figuring out what we
+           need to match and then looking up how to match it. In addition to the mini-tutorial
+           above, there is a more comprehensive tutorial information at <a
+               href="http://www.regular-expressions.info/tutorialcnt.html"
+               >http://www.regular-expressions.info/tutorialcnt.html</a>.
+          If you decide to look around for alternative reference
+           sites and find something that seems especially useful, please post the URL on the
+           discussion boards, so that your classmates can also consult it.</p>
+       
+     
+        <h3>What to submit</h3>
+        <p>On Canvas, upload two things (or a zip directory containing the following):</p>
+     <ol>
+         <li>a step file in markdown or txt (a step-by-step description of what you did), and</li>
+         <li>your results file (the XML document)</li>
+     </ol>
+    
+        <p>If you don’t get all the way to a solution, just upload the description of what you did,
+            what the output looked like, and why you were not able to proceed any further. As you are working on this,
+            post any questions on our class GitHub Issues board!</p>
+    </body>
+</html>

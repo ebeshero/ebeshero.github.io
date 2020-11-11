@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atla>
+    <transcript>
+        <head>
+            <episode n="20">Siege of the North: Part 2</episode>
+            <book n="1">Water</book>
+            <source link="https://avatar.fandom.com/wiki/Transcript:The_Siege_of_the_North,_Part_2"/>
+        </head>
+        <charlist>
+            <charList type="recurring" id="Zuko">Zuko</charList>
+            <charList type="recurring" id="Aang">Aang</charList>
+            <charList type="recurring" id="Katara">Katara</charList>
+            <charList type="recurring" id="Sokka">Sokka</charList>
+            <charList type="recurring" id="Zhao">Zhao</charList>
+            <charList type="recurring" id="Iroh">Iroh</charList>
+        </charlist>
+        <body>
+            <scene n="1">
+<sd>In the cave, Zuko is keeping warm with Breath of Fire while Aang, now tied up, remains in the Spirit World.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	I finally have you, but I can't get you home because of this blizzard. <sd>[Stands up and looks outside the cave.]</sd> There's always something. Not that you would understand. You're like my sister. Everything always came easy to her. She's a firebending prodigy, and everyone adores her. My father says she was born lucky. He says I was lucky to be born. I don't need luck, though. I don't want it. I've always had to struggle and fight and that's made me strong. It's made me who I am.</sp></scene>
+            
+            <scene n="2">
+<sd>Cut to Aang entering the cave, filling it with light. Cut to Aang waking up, attempting to get out of his restraints and noticing Zuko.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	Welcome back.</sp>
+<sp><speaker ref="Aang">Aang</speaker>	<sd>[Cut to close-up of Aang as he narrows his eyes.]</sd> It's good to be back.</sp>
+<sd>Aang airbends Zuko into a wall and propelling himself backward out of the cave. Cut to cave exterior. Close-up of Aang wriggling like a worm in an attempt to get away, only to be caught by Zuko.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Zuko pulls Aang up by his collar as seen from behind Aang.]</sd> That won't be enough to escape.</sp>
+<sp><speaker ref="Aang">Aang</speaker>	<sd>[On seeing Appa.]</sd> Appa!</sp>
+<sd>Appa lands. Katara slides off. Close-up of Zuko.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Throwing the tied-up Aang aside who yelps.]</sd> Here for a rematch?</sp>
+<sp><speaker ref="Katara">Katara</speaker>	<sd>[Confidently while countering his fire blasts.]</sd> Trust me Zuko, it's not going to be much of a match.</sp>
+<sd>Katara uses waterbending to launch Zuko into the air before plummeting him down to the ground, knocking him out. Close-up shot of Sokka running toward Aang to untie him with Zuko lying unconscious.</sd>
+<sp><speaker ref="Sokka">Sokka</speaker>	Hey, this is some quality rope!</sp>
+<sp><speaker ref="Aang">Aang</speaker>	We need to get to the oasis; the spirits are in trouble!</sp>
+<sd>Switch to a wide-view of the area with Aang airbending himself atop Appa. Close-up shot of Aang landing on Appa.</sd>
+<sp><speaker ref="Aang">Aang</speaker>	Wait, we can't just leave him here.</sp>
+<sp><speaker ref="Sokka">Sokka</speaker>	Sure we can. Let's go.</sp>
+<sp><speaker ref="Aang">Aang</speaker>	No, if we leave him he'll die.</sp>
+<sd>Aang airbends himself off Appa and retrieves Zuko, bringing him to Appa.</sd>
+<sp><speaker ref="Sokka">Sokka</speaker>	<sd>[Sarcastically.]</sd> Yeah, this makes a lot of sense. Let's bring the guy who's constantly trying to kill us.</sp></scene>
+            
+            <scene n='3'>
+<sd>Cut back to Zhao who continues to flee only to be attacked by Zuko.</sd>
+<sp><speaker ref="Zhao">Zhao</speaker>	You're alive?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Angrily.]</sd> You tried to have me killed! <sd>[Zuko attacks Zhao.]</sd></sp>
+<sp><speaker ref="Zhao">Zhao</speaker>	<sd>[Close-up of Zhao's face.]</sd> Yes I did. <sd>[Zuko approaches Zhao as we see the giant energy form make its way toward the ocean.]</sd> You're the <char ref="B.S.Zuko">Blue Spirit</char>, an enemy of the Fire Nation! You freed the <char ref="Aang">Avatar.</char></sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	I had no choice. <sd>[Zuko continues his attacks, but they are blocked by Zhao.]</sd></sp>
+<sp><speaker ref="Zhao">Zhao</speaker>	You should have chosen to accept your failure; you're a disgrace. Then, at least, you could have lived! <sd>[Zuko and Zhao begin to fight.]</sd></sp>
+<sd>Cut to Zuko and Zhao fighting on a bridge. Zuko gains the upper hand and Zhao notices the moon has returned.</sd>
+<sp><speaker ref="Zhao">Zhao</speaker>	<sd>[Shot of the moon over Zhao's shoulder.]</sd> It can't be!</sp>
+<sd>Zhao is consumed by the energy in the shape of a hand and dragged toward the water.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>Zuko extends his hand to Zhao, offering help to his adversary</sd>Take my hand!</sp>
+<sd>Zhao considers it for a moment before retracting his hand and looking at Zuko in disgust. The energy plummets into the water, Zhao dragged along with it, and dissipates.</sd></scene>
+            
+            <scene n="4">
+<sd>Cut to Zuko and Iroh on a raft floating away from the city.</sd>
+<sp><speaker ref="">Iroh</speaker>	I'm surprised <char ref="Zuko">Prince Zuko</char>, surprised that you are not at this moment trying to capture the <char ref="Aang">Avatar</char>.</sp>
+<sp><speaker ref="">Zuko</speaker>	I'm tired.</sp></scene>
+        </body>
+    </transcript>
+</atla>

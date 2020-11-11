@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atla>
+    <transcript>
+        <head>
+            <episode n="19">Sozin's Comet, Part 2: The Old Masters</episode>
+            <book n="3">Fire</book>
+            <source link="https://avatar.fandom.com/wiki/Transcript:The_Avatar_and_the_Fire_Lord"/>
+        </head>
+        
+        <charlist>
+            <charList type="recurring" id="Zuko">Zuko</charList>
+            <charList type="recurring" id="Iroh">Iroh</charList>
+            <charList type="recurring" id="Katara">Katara</charList>
+        </charlist>
+        <body>
+            <scene n="1">
+<sd>Cut back to Zuko, who becomes worried and ashamed before walking toward the tent. Cut to Zuko from behind as he approaches the tent before stopping. Close-up of Zuko. Side-view as he sits down. Katara walks up to him.</sd>
+<sp><speaker ref="Katara">Katara</speaker>	Are you okay?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Frontal view.]</sd> No, I'm not okay. <char ref="Iroh">My uncle</char> hates me, I know it. <sd>[Katara sits down next to him.]</sd> He loved and supported me in every way he could, and I still turned against him. How can I even face him?</sp>
+<sp><speaker ref="Katara">Katara</speaker>	<sd>[Close-up side-view of Zuko.]</sd> <char ref="Zuko">Zuko</char>, you're sorry for what you did, right?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	More sorry than I've been about anything in my entire life.</sp>
+<sp><speaker ref="Katara">Katara</speaker>	Then he'll forgive you. He will.</sp>
+<sd>Zuko stands up. Cut to side-view of him standing at the tents entrance and he exhales deeply. He walks into the tent. Cut to an aerial view inside the tent.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	<char ref="Iroh">Uncle</char>?</sp>
+<sd>Close-up of Zuko as he hears snoring. Frontal view of Iroh, asleep with Zuko standing at the entrance. Close-up of Zuko as he smiles and sits down next to him.</sd>
+<sd>The scene changes to an aerial view of the White Lotus camp. Cut to aerial view inside Iroh's tent. Zuko sits nearby as Iroh wakes up. Cut to frontal view of Iroh as he stretches. He glances back slightly and sees Zuko, but says nothing. Frontal view of Zuko.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Cut to view of Iroh from behind.]</sd> <char ref="Iroh">Uncle</char>, <sd>[Cut to view of Zuko over Iroh's shoulder.]</sd> I know you must have mixed feelings about seeing me. <sd>[Cut briefly to view of Iroh from behind before back to a frontal view of Zuko.]</sd> But I want you to know, <sd>[Starts to cry.]</sd> I am so, so, sorry, <char ref="Iroh">Uncle</char>. I am so sorry and ashamed of what I did. I don't know how I can ever make it up to you. But I'll- <sd>[He is cut off. Cut to side-view as Iroh pulls him into a hug, while starting to cry as well. Close-up of Iroh who starts to smile. Close-up of Zuko who becomes shocked and confused.]</sd> How can you forgive me so easily? I thought you would be furious with me.</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	<sd>[Close-up.]</sd> I was never angry with you. I was sad because I was afraid you lost your way.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Side-view of the two.]</sd> I did lose my way.</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	<sd>[Releases him.]</sd> But you found it again. <sd>[Frontal view.]</sd> And you did it by yourself. <sd>[Frontal view of Zuko over Iroh's shoulder.]</sd> And I am so happy you found your way here. <sd>[Side-view. Hugs him again.]</sd></sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	It wasn't that hard, <char ref="Iroh">Uncle</char>. You have a pretty strong scent.</sp></scene>
+        </body>
+    </transcript>
+</atla>
+    

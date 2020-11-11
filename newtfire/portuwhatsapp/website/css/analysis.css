@@ -1,0 +1,241 @@
+body{
+    background-color: #3E6FB1;
+}
+.header{
+    text-align: center;
+}
+body{
+    color: #1C233E;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+svg{
+    display: block;
+    width: auto;
+    height: auto;
+}
+a:link{
+    color: #D8D5CC;
+}
+a:visited{
+    color: #B3BCC0;
+}
+a:hover{
+    color: #D6D5D0;
+}
+h1{
+    color: black;
+    font-family: arial, helvetica, sans-serif;
+}
+h2{
+    text-align: center;
+}
+.description{
+    background: #3eb180;
+    color: black;
+    font-family: Century;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 4cm;
+    margin-right: 4cm;
+
+}
+.main{
+    background-color: #5F8AC6;
+    color: black;
+    font-family: Century;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+.data{
+    width: 20%;
+    height: 400px;
+    margin: 1%;
+}
+ul.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFBB4A;
+    border: double black 2px;
+}
+li.menu{
+    float: left;
+    font-family: Dotum, Century, Arial;
+}
+a.menu{
+    display: block;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #3E6FB1;
+}
+a.internal:hover{
+    color: #FFBB4A;
+}
+#dataToC{
+    text-align: center;
+}
+#abbreviations{
+    display: flex;
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+}
+#abbr1{
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+}
+#abbr2{
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+}
+#abbrDesc{
+    padding-top: 0px
+}
+#laugh{
+    display: flex;
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+}
+#laugh1{
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+}
+#laugh2{
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+}
+#emojiUse{
+    display: flex;
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+
+
+}
+#emoji1{
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+
+
+}
+#emoji2{
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+
+
+}
+#corrections{
+    display: flex;
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+}
+#corrections1{
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+
+}
+#corrections2{
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+}
+#expanForms{
+    display: flex;
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+}
+#expanded1{
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+}
+#textese{
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+}
+#textTable tr:nth-child(even){
+    background-color: #8CAFDE;
+}
+#textTable tr:nth-child(odd){
+    background-color: #3eb180;
+}
+
+#textTable tr:hover{
+    background-color: #FFBB4A;
+}
+#textTable th{
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: #3E6FB1;
+    color: white;
+}
+table,
+th,
+td{
+    border: 2px solid black;
+}
+
+#expanded2{
+    justify-content: center;
+    flex: auto;
+    height: auto;
+    width: auto;
+    padding-bottom: 0px;
+}

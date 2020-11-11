@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="historicRecipes.rnc" type="application/relax-ng-compact-syntax"?>
+<recipe name = "Phyllo Bundles"> <title>Phyllo Bundles with Saffron Flavored Chickpeas</title>
+    
+    <about>
+        About this Recipe
+        Servings: 8 Phyllo Bundles
+        Serving Size: 1 Phyllo Bundle
+    </about>
+    
+    <credit>With thanks to Canola Info</credit>
+    
+    <list type= "ingredients">
+        <label> Ingredients </label>
+       <item type="wet" quant="4" unit="Tbsp" xml:id="canolaO"> 4 Tbsp canola oil 30 mL, divided</item>
+        <item type="veggies" quant="1" unit="whole" xml:id="bellpepp">1 large red bell pepper, ribs and seeds discarded, finely chopped</item>
+       <item type="spice" quant=".5" unit="tsp" xml:id="saffthreads"> 1/2 tsp saffron threads 2 mL</item>
+       <item type="dry" quant="1" unit="can" xml:id="chxpea"> 1 can (15 oz/425 g) chickpeas (garbanzo beans), drained and rinsed</item>
+       <item type="veggies" quant="1" unit="package" xml:id=" chopspin"> 1 package (10 oz/283 g) frozen chopped spinach, thawed and squeezed of all excess liquid</item>
+        <item type="dairy" quant="1" unit="package" xml:id="fetachz">1 package (8 oz/227 g) feta cheese, crumbled</item>
+       <item type="veggies" quant="6" unit="whole" xml:id="scallion"> 6 scallions, green tops and white bulbs thinly sliced</item>
+       <item type="spice" quant="1" unit="Tbsp" xml:id="chopdill"> 1 Tbsp finely chopped fresh dill 15 mL</item>
+       <item type="animalByproduct" quant="2" unit="whole" xml:id="lgeggs"> 2 large eggs, lightly beaten</item>
+        <item type="fruit" quant="1" unit="whole" xml:id="lemon">1 large lemon, zested and juiced</item>
+       <item type="spice" quant="1" unit="tsp" xml:id="gratnutmeg"> 1 tsp freshly grated nutmeg 5 mL</item>
+        <item type="spice" quant=".5" unit="tsp" xml:id="blpepp">1/2 tsp coarsely ground black pepper 2 mL</item>
+       <item type="spice" quant=".5" unit="tsp" xml:id="salt"> 1/2 tsp coarse sea or kosher salt 2 mL</item>
+        <item type="dough" quant="1" unit="package" xml:id="phyllo">1 package (1 lb/454 g) frozen phyllo sheets, thawed, unwrapped and covered with a damp kitchen towel </item>
+        
+    </list>
+    <list type="equip">
+        <item> Parchment Paper </item>
+        <item> Cookie Sheet </item>
+        <item> Medium Skillet </item>
+        <item> Stove </item>
+        <item> Small Bowl </item>
+        <item> Spatula </item>
+        <item> Basting Brush </item>
+        <item> Baking Sheet </item>
+        <item> Kitchen Towel </item>
+    </list>   
+    
+    <list type= "Instructions">
+        <listName>Making and Cooking It</listName>
+<item type ="1">Line cookie sheet with parchment paper. Place oven rack in center of oven and preheat oven to 375 °F (190 °C). </item>
+        <item type ="2">In medium skillet, heat 2 Tbsp (30 mL) <ingred ptr="#canolaO">canola oil</ingred> over medium-high heat. Once oil appears to shimmer, add <ingred ptr="#bellpepp">pepper</ingred> and <ingred ptr="#saffthreads">saffron</ingred> and stir-fry until <ingred ptr="#bellpepp">pepper</ingred> is softened, about 5 minutes. Scrape this orange-hued medley into medium bowl, leaving any remaining oil in skillet. Add remaining 2 Tbsp (30 mL) <ingred ptr="#canolaO">canola oil</ingred> in skillet, mix and set aside.</item>
+<item type ="3">In small bowl, add <ingred ptr="#chxpea">chickpeas</ingred>, <ingred ptr="#chopspin">spinach</ingred>, <ingred ptr="#fetachz">feta</ingred>, <ingred ptr="#scallion">scallions</ingred>, <ingred ptr="#chopdill">dill</ingred>, <ingred ptr="#lgeggs">eggs</ingred>, <ingred ptr="#lemon">lemon</ingred>, <ingred ptr="#gratnutmeg">nutmeg</ingred>, <ingred ptr="#blpepper">pepper</ingred> and <ingred ptr="#salt">salt</ingred>. Mix well. </item>
+        <item>Working on clean and dry cutting board, carefully peel apart one <ingred ptr="#phyllo">phyllo sheet</ingred> and place on board. Brush with saffron-hued oil from skillet. Peel second <ingred ptr="#phyllo">phyllo sheet</ingred> and place on brushed surface. Repeat twice more for stack of four sheets.</item>
+        <item type ="4">Place 1/2 cup (125 mL) filling alongside lower third part of shorter side of <ingred ptr="#phyllo">phyllo sheet</ingred>. Fold longer edges over filling and roll sheets, burrito-style, to reach top third of other short sides. Brush edges with <ingred ptr="#saffthreads">saffron</ingred> <ingred ptr="#canolaO">canola oil</ingred> and fold over to form a snug packet. Brush all sides with more <ingred ptr="#canolaO">oil</ingred> and place on cookie sheet. Repeat with remaining <ingred ptr="#phyllo">phyllo sheet</ingred> (you may have some leftover) and use up all filling until you have about eight bundles. </item>
+<item type ="5">Bake bundles until sunny brown and crispy, about 45 minutes. Let cool for 5 minutes and serve with colorful side dishes as desired.</item>
+
+</list>
+</recipe>

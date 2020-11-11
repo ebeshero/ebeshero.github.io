@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atla>
+    <transcript>
+        <head>
+            <episode n="5">The Beach</episode>
+            <book n="3">Fire</book>
+            <source link="https://avatar.fandom.com/wiki/Transcript:The_Beach"/>
+        </head>
+        
+        <charlist>
+            <charList type="recurring" id="Zuko">Zuko</charList>
+            <charList type="recurring" id="Azula">Azula</charList>
+            <charList type="recurring" id="Ty Lee">Ty Lee</charList>
+            <charList type="recurring" id="Mai">Mai</charList>
+            <charList type="recurring" id="Ozai">Dad</charList>
+            <charList type="recurring" id="Iroh">Uncle</charList>
+        </charlist>
+        <body>
+            <scene n="1">
+<sp><speaker ref="Ty Lee">Ty Lee</speaker>	<sd>[Frontal view of Azula and Ty Lee from behind Zuko. Apologetically.]</sd> Sorry, <char ref="Zuko">Zuko</char>, I ...</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Turning around.]</sd> For so long I thought that if my <char ref="Ozai">dad</char> accepted me, I'd be happy. I'm back home now, my <char ref="Ozai">dad</char> talks to me. Ha! He even thinks I'm a hero. <sd>[Close-up of Azula, who smiles.]</sd> Everything should be perfect, right? <sd>[Aerial view of campsite.]</sd> I should be happy now, but I'm not. <sd>[Turning back to the others.]</sd> I'm angrier than ever and I don't know why!</sp>
+<sp><speaker ref="Azula">Azula</speaker>	<sd>[Frontal view.]</sd> There's a simple question you need to answer, then. Who are you angry at?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Close-up.]</sd> No one. I'm just angry.</sp>
+<sp><speaker ref="Mai">Mai</speaker>	<sd>[Side-view of the three girls.]</sd> Yeah, who are you angry at, <char ref="Zuko">Zuko</char>?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Close-up.]</sd> Everyone. I don't know. <sd>[Becoming frustrated.]</sd></sp>
+<sp><speaker ref="Azula">Azula</speaker>	<sd>[Frontal view.]</sd> Is it <char ref="Ozai">Dad</char>?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Close-up.]</sd> No, no.</sp>
+<sp><speaker ref="Ty Lee">Ty Lee</speaker>	<sd>[Frontal view.]</sd> Your <char ref="Iroh">uncle</char>?</sp>
+<sp><speaker ref="Azula">Azula</speaker>	Me?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Close-up.]</sd> No, no, n-no, no!</sp>
+<sp><speaker ref="Mai">Mai</speaker>	<sd>[Close-up.]</sd> Then who? Who are you angry at?</sp>
+<sp><speaker ref="Azula">Azula</speaker>	<sd>[Camera pans left, past Ty Lee, to Azula.]</sd> Answer the question, <char ref="Zuko">Zuko</char>.</sp>
+<sp><speaker ref="Ty Lee">Ty Lee</speaker>	<sd>[Close-up.]</sd> Talk to us.</sp>
+<sp><speaker ref="Mai">Mai</speaker>	<sd>[Extreme close-up.]</sd> Come on, answer the question.</sp>
+<sp><speaker ref="Azula">Azula</speaker>	Come on, answer it.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Frontal view from behind the girls. Losing it now; furiously.]</sd> I'm angry at myself!</sp>
+<sd>Slamming down with his clenched fists he causes the camp fire to turn into a pillar of fire, the girls recoil from the flames. Cut to close-up view from above of Zuko. Cut to a wide-view of the entire campsite as the flame dies down. Zuko turns away.</sd>
+<sp><speaker ref="Azula">Azula</speaker>	Why?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Close-up.]</sd> Because I'm confused. Because I'm not sure I know the difference between right and wrong anymore.</sp>
+<sp><speaker ref="Azula">Azula</speaker>	You're pathetic.</sp>
+<sp><speaker ref="Mai">Mai</speaker>	<sd>[View from behind Zuko.]</sd> I know one thing I care about. <sd>[Walks up to Zuko. Frontal view.]</sd> I care about you. <sd>[They kiss.]</sd></sp>
+            </scene>
+        </body>
+    </transcript>
+</atla>

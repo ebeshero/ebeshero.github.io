@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang = "en">
+    <head>
+        <title>The Ulysses Project</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="ulyssesCSS.css" />
+        <script src = "imageZoom.js"></script>
+    </head>
+    <body>
+        <h1>The Ulysses Project</h1>
+        <!--#include virtual="menu.html" -->
+        <div class="sidenav">
+            <!--#include virtual="locationsInUlysses.html" -->
+        </div>
+        <div class = "main"><h1>The Coombe</h1>
+            <p>This is a historic street that is located in the south inner city of Dublin. It was the homes of a weavers' hall built by the Weavers' Guild in 1682 and was known for being the working and living area of weavers in Dublin.</p>
+            <h2>Map</h2>
+            <p>The following is a map of The Coombe: </p>
+            <img src = "TheCoombeMap.png" alt = "Map of the Coombe"/>
+            <h2>Network Graph</h2>
+            <div id="center"><a href="TheCoombe.svg"><div class="img-magnifier-container">
+                <img id="coombezoom" src="TheCoombe.svg" width="600" height="400" alt="The Coombe"/></div></a></div>
+            <h2>Most Common References</h2>
+            <p>At the Coombe, references to Christianity, corruption, Edward Cecil Guinness, and Sir Arthur Guinness were made.</p>
+            <p><a href = "https://www.britannica.com/topic/Christianity">Christianity </a> is one of the major world religions, and it is based on the life and teachings of Jesus.</p>
+            <p>Corruption refers to dishonest or fraudulent conduct or the process by which something or someone becomes corrupted.</p>
+            <p><a href = "https://en.wikipedia.org/wiki/Edward_Guinness,_1st_Earl_of_Iveagh">Edward Cecil Guinness </a> (1847-1927) was an Irish buisinessman and philanthropist, probably most well-known for being part of the Guinness family that established the famous Guinness brewery.</p>
+            <p><a href = "https://en.wikipedia.org/wiki/Arthur_Guinness">Sir Arthur Guinness </a> (1725-1803) was the man who established the famous Guinness brewery in Ireland.</p>
+            <h2>This Location in <i>Ulysses</i></h2>
+            <p>In this section, references to a major world religion, corruption, and two men who helped establish and run arguably the most famous Irish brewery are made. However, we also know from historical context that this was also the living and working area of many Irish weavers. Sir Arthur Guinness and Edward Guinness were also noted philathropists who were known to make contributions to the housing of the Irish poor and working class. One of the major themes in Christianity is that one should give to the poor and destitute. Corruption, however, is one perversion of this theme if it means that wealth is not distributed to the poor. Perhaps this area reminded Joyce of the need to give to the poor, philanthropy, and corruption.</p>
+        </div>
+        <script>
+/* Execute the magnify function: */
+magnify("coombezoom", 20);
+/* Specify the id of the image, and the strength of the magnifier glass: */
+</script>
+    </body>
+</html>

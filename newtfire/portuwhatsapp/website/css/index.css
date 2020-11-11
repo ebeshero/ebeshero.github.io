@@ -1,0 +1,145 @@
+body {
+    background-color: #3E6FB1;
+}
+.header {
+    text-align: center;
+}
+body {
+    color: #1C233E
+}
+img { 
+    max-width: 100%; 
+    height: auto; 
+}
+svg{
+display: block;
+    width: 100%;
+    height: auto;
+}
+.sideXside{
+    display:flex;
+    padding-top:10px;
+}
+
+#leftSide{
+   width: 55%;
+    display:flex;
+    justify-content:center;
+    border-style: solid;
+    border-width: 15px;
+    flex-wrap:wrap;
+    padding-top:10px;
+}
+#contactInfo{
+    flex-grow:1;
+    
+}
+ #rightSide{
+    width: 35%;
+    display:flex;
+    flex-grow:1;
+    padding-left: 15px;
+    
+} 
+#flagPic{;
+    height:500px;;
+}
+a:link {
+    color: #D8D5CC;
+}
+a:visited {
+    color: #B3BCC0;
+}
+a:hover {
+    color: #D6D5D0;
+}
+#homeAbout:visited{
+    color:black;
+}
+h1{
+    color:black;
+    font-family:arial, helvetica, sans-serif;
+}
+h2{
+    text-align:center;
+}
+
+.aboutProj{
+    background:#8CAFDE;
+    color:black;
+    font-family:Century;
+    text-align:justify;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    margin-right:700px;    
+}
+.aboutTeam{
+    background-color:#5F8AC6;
+    color: black;
+    font-family:Century;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:15px;
+    margin-top:15px;
+    margin-left:700px;
+}
+.description{
+    background:#8CAFDE;
+    color:black;
+    font-family:Century;
+    text-align:justify;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.main{
+    background-color:#5F8AC6;
+    color: black;
+    font-family:Century;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:10px;
+    
+}
+.data{
+    width: 20%;
+    height: 400px;
+    margin:1%;
+}
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+      display: flex;
+  justify-content: space-around;
+    background-color: #FFBB4A;
+    border: double black 2px;
+}
+li.menu {
+    float: left;
+    font-family: Dotum, Century, Arial;
+}
+a.menu {
+    display: block;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #3E6FB1;
+}
+a.internal:hover{
+    color:#FFBB4A;
+}
+#dataToC{
+    text-align:center;
+}
+
+code{
+    color:#FFBB4A;
+    font-size:12pt;
+}

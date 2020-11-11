@@ -1,0 +1,1487 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Syllabus: Coding and Digital Archives</title>
+      <meta name="Description" content="Supported by the University of Pittsburgh at Greensburg" />
+      <meta name="keywords" content="Digital Humanities, Syllabus, XML, TEI, XSLT, XQuery, Schematron, Relax NG, SVG, digital scholarship, digital edition, electronic edition, electronic text, humanities computing, electronic editing, Beshero-Bondar" />
+      <link rel="stylesheet" type="text/css" href="syllsched.css" /><script type="text/javascript" src="jumpingDateLinks.js">/**/</script></head>
+   <body>
+      <!--#include virtual="top-indexCDA19.html" -->
+      <h1><span class="banner">Digital Humanities | Digital Studies: Coding and Digital Archives</span></h1>
+      <h2><span class="banner"></span></h2>
+      <div id="main">
+         <div id="courseInfo">
+            
+            <p>
+               <strong>Autumn 2019:</strong>
+               Classes meet M W F 3 - 3:50 PM, 136 McKenna Hall.
+            </p>
+            
+            
+            <p><a id="dateRef">Jump Down to the Schedule</a></p>
+            
+            <h2>All the Tools You Need As We Begin:</h2>
+            
+            
+            <p>Download and install the following software on your own personal computer(s) on or
+               before the first day of class. These software tools are available in our campus computing
+               labs, too.
+            </p>
+            
+            <ol>
+               
+               <li>
+                  <strong>All students:</strong>
+                  <a href="http://www.oxygenxml.com/" target="_blank">&lt;oXygen/&gt;</a>. The University of Pittsburgh has purchased a site license for this software, which
+                  is installed in
+                  the Pitt computer labs on multiple campuses, and it’s in use in courses here at
+                  Greensburg and at Oakland. The license also permits students enrolled in the
+                  course to install the software on their home computers (for course-related use
+                  only). When installing this on your own computers, <strong>you will need the
+                     license key</strong>, which we have posted on our course Announcements section of
+                  <a href="https://courseweb.pitt.edu" target="_blank">Courseweb</a>.
+               </li>
+               
+               <li>All students require a good means of secure file transfer (SFTP) for homework
+                  assignments and projects (also available in the campus computer labs). There are
+                  several good options available. We recommend you download and install on your own
+                  computers one (or more) of the following, depending on your platform: (Feel free
+                  to experiment with these and others!) 
+                  <ul>
+                     
+                     <li>
+                        <strong>Windows users:</strong> one of the following FTP clients—the functionality is
+                        similar: 
+                        <ul>
+                           
+                           
+                           <li><a href="https://filezilla-project.org/download.php?show_all=1" target="_blank">FileZilla</a>
+                              (This is our favorite client because it behaves the same way across platforms.)
+                              
+                           </li>
+                           
+                           <li><a href="http://winscp.net/eng/download.php" target="_blank">WinSCP</a> (This is one we used for a long time, since the 1990s, but we now use SSH and Filezilla
+                              more frequently.)
+                           </li>
+                           
+                           
+                           <li>
+                              <a href="http://www.wm.edu/offices/it/services/software/licensedsoftware/webeditingsftp/sshsecureshell/index.php" target="_blank">SSH Secure Shell Client</a>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </li>
+                     
+                     <li>
+                        <strong>Mac users:</strong>
+                        
+                        <ul>
+                           
+                           <li><a href="https://filezilla-project.org/download.php?show_all=1" target="_blank">FileZilla</a>
+                              (This is our favorite client because it behaves the same way across platforms.)
+                              
+                           </li>
+                           
+                           <li>or <a href="http://fetchsoftworks.com/fetch/" target="_blank">Fetch</a> (students
+                              may obtain free licenses at <a href="http://fetchsoftworks.com/fetch/free" target="_blank">http://fetchsoftworks.com/fetch/free</a>)
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                     </li>
+                     
+                     <li>
+                        <strong>Linux users:</strong> You probably don’t need to install anything,
+                        but look at how your system handles secure file transfer (SFTP).
+                         <span class="smaller">(FileZilla or other clients designed for Linux
+                           environments.)</span>
+                        
+                     </li>
+                     
+                  </ul>
+                  
+               </li>
+               
+               
+               <li><strong>Read the <a href="CDA.html" target="_blank">Course Description</a></strong> and this Syllabus page to see how this course works on a day-to-day basis.
+               </li>
+               
+               <li>This course fulfills general education requirements in Q2, SS, and HM, and it fulfills
+                  a core requirement for <a href="http://greensburg.pitt.edu/academics/info/digital-studies" target="_blank">the Digital Studies Certificate at Pitt-Greensburg</a>. Think about where this course might fit in your academic career, and how you might
+                  apply the skills you learn here.
+               </li>
+               
+               <li>No coding experience? Don’t worry! You are in very good company. We don’t expect any
+                  of you to have written a line of computer code before now. Past students in this course
+                  who never saw anything like markup or XML code have designed projects (<a href="studentProjects.html" target="_blank">like these</a>) and even spoken about them at an undergraduate conference! You’ll help continue
+                  some of these projects we’ve started, and you’ll learn to build and create digital
+                  tools for yourself with skills we hope you will keep developing.
+               </li> 
+               
+               
+               
+            </ol>
+            
+            Class Web Resources:
+            
+            <ul>
+               
+               <li>
+                  <a href="CDA.html" target="_blank">Course Home Website:
+                     CDA.html</a> Home of our syllabus and
+                  schedule.
+               </li>
+               
+               
+               <li><a href="https://github.com/ebeshero/DHClass-Hub" target="_blank">DHClass-Hub:
+                     https://github.com/ebeshero/DHClass-Hub</a> Class GitHub Repository and
+                  Issues Board
+               </li>
+               
+               
+               
+               <li>
+                  <a href="https://courseweb.pitt.edu" target="_blank">CourseWeb:
+                     https://courseweb.pitt.edu</a> To submit homework assignments and exams
+                  and read private course announcements
+               </li>
+               
+               <li>
+                  <a href="explainFileNames.html" target="_blank">File Conventions for CourseWeb Assignments</a>
+                  
+                  
+               </li>
+               
+               
+               <li>Server Access Instructions for Web Project Development on newtFire: [To Be
+                  Announced]
+               </li>
+               
+               
+            </ul>
+            
+            
+            <a href="index.html" target="_blank">Explanatory Guides and Exercises: Complete List</a>
+            
+         </div>
+         <div id="schedule">
+            <table>
+               <tr>
+                  <th id="Week1"><span class="h4"><em>Week 1</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-08-26">
+                  <td>
+                     <h4>M 08-26</h4>
+                  </td>
+                  <td>
+                     <p>Welcome! Intro to the course, and Intro to XML and working in
+                        &lt;oXygen/&gt;: Write your first XML. <strong>Mindful File Management</strong>
+                        (<a href="explainFileNames.html" target="_blank">how
+                           to name</a>, store, share, and submit files in this course). Setting up
+                        accounts for web server and for GitHub. <a href="https://www.washingtonpost.com/recipes/country-loaf-pain-de-campagne/14237/?utm_term=.f2369869e1e5" target="_blank">Bread recipe</a></p>
+                  </td>
+                  <td>
+                     <ul>
+                        
+                        <li>By Fri 8-30: Install &lt;oXygen/&gt; software on your own computers.
+                           <a href="https://courseweb.pitt.edu" target="_blank">Instructions and license key
+                              posted on Courseweb</a>.
+                        </li>
+                        
+                        <li>Read our <cite class="sub"><a href="explainXML.html" target="_blank">Introduction
+                                 to XML</a></cite>, and read <cite class="sub"><a href="explainFileNames.html" target="_blank">File-Naming Conventions for Courseweb Homework
+                                 Submissions</a></cite>.
+                        </li>
+                        
+                        <li>Complete <strong><a href="XMLExercise1.html" target="_blank">XML Exercise 1</a></strong> 
+                        </li>
+                        
+                        <li><strong>Returning Students Only:</strong>
+                           
+                           <ul>
+                              
+                              <li>Work on project code or your choice of an interesting XML coding
+                                 challenge.
+                              </li>
+                              
+                              <li>Meet with instructors to plan peer mentoring roles.</li>
+                              
+                           </ul>
+                        </li>
+                        
+                     </ul> 
+                  </td>
+               </tr>
+               <tr id="d2019-08-28">
+                  <td>
+                     <h4>W 08-28</h4>
+                  </td>
+                  <td>
+                     <p>Getting started with GitHub and our <a href="https://github.com/ebeshero/DHClass-Hub" target="_blank">DHClass-Hub</a>. Discussion of the XML recipe homework: XML Comments and Well-formedness, and how
+                        to work with &lt;oXygen/&gt;. Introduce <a href="studentProjects.html" target="_blank"> student projects from this class</a>.
+                     </p>
+                  </td>
+                  <td>
+                     <ul> 
+                        <li><strong><a href="GitExercise1.html" target="_blank">Git Exercise 1</a></strong>: Read and consult our <a href="explainGitShell.html" target="_blank">Guide to Git Shell</a> as you complete this exercise.
+                        </li>
+                        
+                        <li><strong><a href="XMLExercise2.html" target="_blank">XML Exercise 2</a></strong></li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr id="d2019-08-30">
+                  <td>
+                     <h4>F 08-30</h4>
+                  </td>
+                  <td>
+                     <p>Discussion of homework, and XML: Well-formedness vs. Validity. XML projects
+                        in digital humanities.
+                     </p>
+                     
+                     <p>Hands-on GitHub: Working with our <a href="https://github.com/ebeshero/DHClass-Hub" target="_blank">DHClass-Hub</a>: Open and close Issues, write markdown in Issues "help tickets" and discussions,
+                        access our class examples of code. Command line: pull and push files in Troubleshooting
+                        directory.
+                     </p>
+                  </td>
+                  <td>
+                     <ul>
+                        <li><strong><a href="GitExercise2.html" target="_blank">Git Exercise 2</a></strong></li>
+                        
+                        <li><strong>XML exercise 3:</strong> Review our feedback on your coding
+                           exercises so far and submit revisions if we asked you to. Mark up a text of
+                           your choice (any genre; manageable but reasonable size; foreign languages
+                           welcome). Work on applying attributes with your elements, and doing so in a
+                           careful and systematic way. 
+                        </li>
+                        
+                        <li><strong><a href="https://github.com/ebeshero/DHClass-Hub/issues/" target="_blank">Reading and Discussion Post on GitHub</a></strong>: Locate the class discussion exercise on our Issues board, which will ask you to
+                           read and discuss an article by Gabrielle
+                           Kirilloff, <a href="Kirilloff_TraversingTree/" target="_blank">“&lt;Traversing_the_Tree/&gt;”</a>, the short article, <a href="http://www.idsnews.com/article/2015/04/frankenstein-novel-analyzed" target="_blank">“Frankenstein novel analyzed”</a> and scroll through <a href="http://balisage.net/Proceedings/vol13/html/Piez01/BalisageVol13-Piez01.html" target="_blank">Wendell Piez’s conference talk and images for the Balisage Markup
+                              Conference 2014</a>. For full credit, your posts should make specific reference to passages in
+                           Kirilloff’s essay, and reflect on those passages. Please raise questions and respond
+                           to each other!
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week2"><span class="h4"><em>Week 2</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-09-02">
+                  <td>
+                     <h4>M 09-02</h4>
+                  </td>
+                  <td><strong>Labor Day Holiday: No classes.</strong></td>
+                  <td></td>
+               </tr>
+               <tr id="d2019-09-04">
+                  <td>
+                     <h4>W 09-04</h4>
+                  </td>
+                  <td>
+                     <p>Overlapping hierarchies. Document Analysis and Coding: Group Exercise with <a href="https://github.com/ebeshero/DHClass-Hub/tree/master/Class-Examples/XML/OHCO_ozymandias" target="_blank">Ozymandias</a></p>
+                     
+                     <p>The concept of “UX.” or User Experience, and discussion of projects.</p>
+                  </td>
+                  <td>
+                     <p><strong>GitHub Practice (starting today for seven days):</strong> Make sure your personal repo is properly set up and cloned to your local computer.
+                        Using your Git Bash Shell, practice some basic Git commands to build a habit: Always
+                        pull before you push! Then push one file per day either to your personal repo or the
+                        DHClass-Hub. On alternating days, push to the other repo (if you pushed to your personal
+                        repo today, tomorrow you will push to the DHClass-Hub). Try cloning repos on multiple
+                        computers that you may be using through the semester (including computer lab machines
+                        on campus). Pull up our quick guide <a href="https://github.com/ebeshero/DHClass-Hub/blob/master/Git_BasicCommands.md" target="_blank">Using Git Through Command Line</a> for a ready reference of commands and look up details in our <a href="explainGitShell.html" target="_blank">Guide to Git Shell</a>.
+                     </p>
+                     
+                     <p><strong><a href="https://github.com/ebeshero/DHClass-Hub/issues/668" target="_blank">UX Discussion on DHClass-Hub</a></strong>  Choose one of the following digital archives to explore, and write a post on the
+                        DHClass-Hub addressing 
+                        1) something interesting the site is inviting us to explore about centuries-old texts,
+                        and 2) the
+                        effectiveness of the user experience (“UX”).
+                     </p>
+                     
+                     <ul>
+                        
+                        <li><a href="http://shelleygodwinarchive.org/contents/frankenstein" target="_blank">Shelley-Godwin Archive: Frankenstein Notebooks</a></li>
+                        
+                        <li>
+                           <a href="http://mapoflondon.uvic.ca/index.htm" target="_blank">Map of Early Modern
+                              London</a></li>
+                        
+                        <li><a href="http://dickinson16.newtfire.org/" target="_blank">Emily Dickinson Project</a>: prepared by Pitt-Greensburg students last in 2015-2016
+                        </li>
+                        
+                        <li><a href="http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman" target="_blank">any documents in the Greco-Roman section of the Perseus project</a>, and
+                           explore the features here.
+                        </li>
+                        
+                     </ul>
+                     
+                     <p>Read <cite class="sub"><a href="explainRNG.html" target="_blank">Intro to Relax NG</a></cite>.
+                     </p>    
+                     
+                     
+                     
+                  </td>
+               </tr>
+               <tr id="d2019-09-06">
+                  <td>
+                     <h4>F 09-06 </h4>
+                  </td>
+                  <td>
+                     <p>Hands-on introduction to schemas with Relax NG: How to write the rules for an XML
+                        project
+                     </p>
+                  </td>
+                  <td>
+                     <ul>
+                        <li><strong>Relax NG exercise 1:</strong> Write a Relax NG schema for one of the XML documents you created for an earlier assignment
+                           (XML exercise 2 or 3), and upload it and your XML file to Courseweb. Be sure to consult
+                           <cite class="sub"><a href="explainRNG.html" target="_blank">Intro to Relax NG</a></cite> as you work.
+                        </li>
+                        
+                        <li><a href="explainXML.html" target="_blank">Review XML syntax</a> and read and work with the <cite class="sub"><a href="explainRNG.html" target="_blank">Intro to Relax NG</a></cite> tutorial as you work on Relax NG Ex 1.
+                        </li>
+                        
+                        <li>Continue <strong>GitHub Practice</strong> (see W 9-04 assignment above).
+                        </li>
+                        
+                        
+                     </ul>
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week3"><span class="h4"><em>Week 3</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-09-09">
+                  <td>
+                     <h4>M 09-09</h4>
+                  </td>
+                  <td>
+                     <p>Relax NG: mixed content, data types.</p>
+                     
+                     <p>Review and discussion of XML rules, Relax NG and modeling XML</p>
+                     
+                  </td>
+                  <td>
+                     <ul>
+                        <li><strong>Relax NG exercise 2: </strong>This time, choose a small text
+                           (maybe one of the letters from the first week's assignment that you did NOT mark up
+                           before, or anything you like). Perform document analysis, write a schema,
+                           and mark up the text according to the schema. Be sure to consult <cite class="sub"><a href="explainRNG.html" target="_blank">Intro to Relax NG</a></cite> as you work.
+                        </li>
+                        
+                        <li><a href="explainXML.html" target="_blank">Review XML syntax</a> for test on Wednesday.
+                        </li>
+                        
+                        <li>Install FileZilla (or other SFTP client) on your own computer if you have not done
+                           so already.
+                        </li>
+                        
+                        <li><strong>Assignment for Dr. B</strong>: Set up and test student web space on NewtFire now.
+                        </li>
+                        
+                     </ul>
+                  </td>
+               </tr>
+               <tr id="d2019-09-11">
+                  <td>
+                     <h4>W 09-11</h4>
+                  </td>
+                  <td>
+                     <p><strong>Test 1 (in class: 15-20 minutes): XML markup.</strong></p>
+                     
+                     <p>Course projects: Introduction, discussion and tour: digital projects with strong research
+                        questions by Pitt students in recent years:
+                     </p>
+                     
+                     <ul>
+                        
+                        <li><a href="https://nelson.newtfire.org/" target="_blank">The Restoration of Nell Nelson</a></li>
+                        
+                        <li><a href="http://banksy.newtfire.org/" target="_blank">Banksy project</a></li>
+                        
+                        <li><a href="http://ulysses.newtfire.org/" target="_blank">Ulysses project</a></li>
+                        
+                        <li><a href="http://graveyard.newtfire.org" target="_blank">The Graveyard Project</a></li>
+                        
+                        <li><a href="http://hamilton.newtfire.org" target="_blank">The Hamilton Project</a></li>     
+                        
+                        <li><a href="http://dickinson16.newtfire.org/" target="_blank">Emily Dickinson</a></li> 
+                        
+                     </ul>
+                     
+                  </td>
+                  <td>
+                     <ul>
+                        
+                        <li><strong>Relax NG exercise 3:</strong> Choose a small text of a different
+                           type or genre than last time, perform document analysis, write a schema, and
+                           mark up the text according to the schema. Work with attributes, datatypes, and mixed
+                           content in your schema.
+                        </li>
+                        
+                        <li><strong>DHClass-Hub Post and Discussion on Project
+                              Proposals:</strong><ul>
+                              
+                              <li>Beginning from <strong>today through M 9-16</strong>: Post proposal
+                                 ideas for team projects to work on this semester. Each student
+                                 should post an idea for the class to consider: a project involving
+                                 XML markup to be managed within a team of 2-4 students to
+                                 investigate something we could study and visualize from our markup
+                                 more effectively with computers than with human reading and
+                                 description alone. All projects must involve a team of at least two
+                                 persons, but this first exploratory proposal is an individual
+                                 assignment.
+                              </li>
+                              
+                              <li>Each student must respond to at least one of the proposed ideas
+                                 from another student and indicate suggestions or further ideas. You
+                                 may respond to more than one if you like, and indicate which
+                                 proposals interest you to work on. 
+                              </li>
+                              
+                              <li>Proposal discussions will run until class time on W 9/18 when we will form project
+                                 teams.
+                              </li>
+                           </ul>
+                        </li>
+                        
+                        <li>Install FileZilla (or other SFTP client) if you have not done so already: we'll use
+                           it next class!
+                           Follow instructions posted on <a href="https://courseweb.pitt.edu" target="_blank">Courseweb</a> for setting up SSH keys to access your personal webspace on Newtfire.
+                        </li>
+                        
+                        
+                        <li>Read our <cite class="sub"><a href="explainHTML.html" target="_blank">Introduction to HTML</a></cite> in preparation for next class.
+                        </li>
+                        
+                        
+                     </ul>
+                     
+                     
+                  </td>
+               </tr>
+               <tr id="d2019-09-13">
+                  <td>
+                     <h4>F 09-13</h4>
+                  </td>
+                  <td>
+                     <p>Building on the Web: Introducing HTML and CSS: Make a simple index.html page. Make
+                        a  simple CSS page. CSS resemblance and difference from Relax NG (those curly braces)
+                     </p>
+                     
+                     <p>What is "index.html" to a web server? Website addresses and file directories on a
+                        remote web server
+                     </p>
+                     
+                     <p>Hands-on: Work with FileZilla (or other SFTP client) to connect to the Apache Server
+                        for newtFire. SSH keys.
+                     </p>
+                     
+                     <p>File directories and their association with web URLs.</p>
+                     
+                     <p>How to customize SFTP (Filezilla) to work with your GitHub repo.</p>
+                     
+                  </td>
+                  <td>
+                     <ul>
+                        
+                        <li>Review our comments on Relax NG homework and make revisions as needed.</li>
+                        
+                        <li>Consult our <cite class="sub"><a href="explainHTML.html" target="_blank">Introduction to HTML</a></cite>, and our <cite class="sub"><a href="explainCSS.html" target="_blank">Introduction to Cascading Stylesheets (CSS)</a></cite> as you work on the homework exercise: <strong><a href="HTMLExercise1.html" target="_blank">HTML/CSS Exercise 1</a></strong>. NOTE: <strong>Do not submit this assignment on Courseweb.</strong> Instead, submit this homework by using SFTP to post to our newtFire web server.
+                        </li>
+                        
+                        <li><strong>DHClass-Hub Project Proposal Posting and Discussion</strong>: 
+                           <ul>
+                              
+                              <li>Post your project proposal if you have not done so already, in the designated DHClass-Hub
+                                 Issue.
+                              </li>
+                              
+                              <li>Through next W 9/18 before 3pm: Each of you must respond on DHClass-Hub to at least
+                                 two of the proposed ideas from another student and indicate suggestions or further
+                                 ideas. You may respond to more than two if you wish. Indicate which project ideas
+                                 you would like to work on as a team member.
+                              </li>
+                              
+                              <li>Proposal discussions will run through next week, until class time on W 9/18, when
+                                 we will meet to form project teams.
+                              </li>
+                              
+                           </ul>
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week4"><span class="h4"><em>Week 4</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-09-16">
+                  <td>
+                     <h4>M 09-16</h4>
+                  </td>
+                  <td>
+                     <p>HTML and CSS</p>
+                     <ul>
+                        
+                        <li>Mindful file management: mirroring directory structures on GitHub and the web server</li>
+                        
+                        <li>Web browsers and display variations</li>
+                        
+                        <li>CSS Box Model</li>
+                        
+                        <li>Controlling page layouts: <a href="https://medium.com/@js_tut/the-complete-css-flex-box-tutorial-d17971950bdc" target="_blank">Flexboxes tutorial</a>, with simple examples.
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  <td>
+                     <ul>
+                        
+                        <li>Write and respond to project proposals on DHClass-Hub. Project teams form in our next
+                           class!
+                        </li> 
+                        
+                        <li>Consult <cite class="sub"><a href="http://learnlayout.com/" target="_blank">Learn CSS
+                                 Layout</a></cite>, <a href="https://medium.com/@js_tut/the-complete-css-flex-box-tutorial-d17971950bdc" target="_blank">Flexbox tutorial</a>, and <a href="http://www.w3schools.com/css/" target="_blank">w3 Schools CSS Reference</a>
+                           as you code. (Also, check out <a href="http://paletton.com" target="_blank">Paletton</a> (or hunt for other color scheme generators on the web) to help think about choosing
+                           a balanced color scheme for your website.
+                           Experiment with writing CSS to control font, layout, color, backgrounds. 
+                        </li>
+                        
+                        <li><strong><a href="HTMLExercise2.html" target="_blank">HTML/CSS Exercise 2</a></strong> (As with HTML Exercise 1, submit this
+                           homework by using FTP to post to our newtFire web server, and do NOT use standard
+                           filename conventions, but rather simple filenames for your own website.)
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+               </tr>
+               <tr id="d2019-09-18">
+                  <td>
+                     <h4>W 09-18</h4>
+                  </td>
+                  <td>
+                     <p>Form project teams! </p>
+                     
+                     <p>Review Relax NG issues in preparation for test</p>
+                     
+                     <p>HTML and CSS continued: Image editing, more on flexboxes and page layouts.</p>
+                     
+                  </td>
+                  <td>
+                     <ul> 
+                        <li><strong>Project checkpoint 1</strong>: 
+                           <ul>
+                              <li>Launch the project GitHub repo and post an issue. </li> 
+                              <li>Post in the Issues board of your new Project Github your available meeting times to
+                                 help determine a regular meeting time for your group.
+                              </li>
+                           </ul>
+                        </li>
+                        
+                        <li>Revise Relax-NG exercise(s) if we have asked you to do that.</li>
+                        
+                     </ul>
+                  </td>
+               </tr>
+               <tr id="d2019-09-20">
+                  <td>
+                     <h4>F 09-20</h4>
+                  </td>
+                  <td>
+                     <p>Project customizations and boilerplate with Server Side Includes</p>
+                     
+                     <ul>
+                        
+                        <li>Relax NG questions / review</li>
+                        
+                        <li>How to customize SFTP (Filezilla) to work with your GitHub repo (if we didn’t cover
+                           this before).
+                        </li>
+                        
+                        <li>Decide on project website directory names and URLs.</li>
+                        
+                        <li>Server Side Includes for boilerplate content: Examples: 
+                           
+                           <ul>
+                              
+                              <li>Include file for newtFire assignment pages: <a href="https://github.com/ebeshero/newtFire-webDev/blob/master/courses/dh-courses-Common/top.html" target="_blank">a fragment of HTML</a></li>
+                              
+                              <li>Indicating where an include goes on a page: <a href="https://github.com/ebeshero/newtFire-webDev/blob/master/courses/dh-courses-Common/explainCSS.html" target="_blank">Example</a></li>
+                              
+                              <li>Full page <a href="http://dh.newtfire.org/explainCSS.html" target="_blank">on the web</a>: and <a href="view-source:http://dh.newtfire.org/explainCSS.html" target="_blank">page source</a></li>  
+                              
+                           </ul>
+                        </li>
+                        
+                        <li>Hands on: Add SSI’s to your personal website and test to make sure they are working
+                           on the server.
+                        </li>
+                        
+                        
+                     </ul>
+                     
+                  </td>
+                  <td>Work on your HTML and website development over the weekend if you did not finish the
+                     HTML exercises.
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week5"><span class="h4"><em>Week 5</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-09-23">
+                  <td>
+                     <h4>M 09-23</h4>
+                  </td>
+                  <td>
+                     
+                     <p>Review of tech so far. File dependencies (XML and Relax NG; HTML and CSS). Sharing
+                        over the web (GitHub, SFTP with SSH keys) 
+                     </p>
+                     
+                     <p>Project web directories on NewtFire</p>
+                     
+                     <p>Document Analysis of Manuscripts: Hands-on Workshop</p>
+                     
+                     <p>Project schemas and community schemas: controlled markup vocabularies. Introduction
+                        to the <a href="http://www.tei-c.org/index.xml" target="_blank">The Text Encoding Initiative (TEI)</a>Text Encoding Initiative (TEI)
+                     </p>         
+                     
+                  </td>
+                  <td>
+                     <ul>
+                        <li><strong><a href="TEIExercise1.html" target="_blank">Document Analysis and TEI Exercise, Part 1</a></strong></li>
+                        
+                        <li>Correct Relax NG assignments if asked to revise; review Relax NG</li>
+                        
+                        
+                     </ul> 
+                  </td>
+               </tr>
+               <tr id="d2019-09-25">
+                  <td>
+                     <h4>W 09-25</h4>
+                  </td>
+                  <td> 
+                     <p>Review Relax NG for take-home test.</p> 
+                     
+                     <p>Document Analysis and TEI Exercise continued: review code developed so far.</p>
+                     
+                     <p>Data and metadata in the TEI document model: exploring the TEI Header</p>
+                  </td>
+                  <td>
+                     <ul>
+                        <li><strong>Test 2 (take-home): Relax NG</strong></li>
+                        
+                        <li>Resolve SSH key and SFTP issues if you are having issues with accessing NewtFire.</li>
+                        
+                     </ul>
+                     
+                  </td>
+               </tr>
+               <tr id="d2019-09-27">
+                  <td>
+                     <h4>F 09-27</h4>
+                  </td>
+                  <td> 
+                     <ul>
+                        
+                        
+                        <li>The TEI Header and organizing a TEI document</li>
+                        
+                        <li>TEI ODD customizations: choosing only the elements and attributes you need. 
+                           Introduce <a href="https://romabeta.tei-c.org/" target="_blank">Roma JS</a>.
+                        </li>
+                        
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        
+                        <li><strong><a href="TEIExercise2.html" target="_blank">Document Analysis and TEI Exercise, Part 2</a></strong></li>
+                        
+                        <li>Work on Project Checkpoint 2 (see below).</li>
+                        
+                     </ul>
+                     
+                     
+                     
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week6"><span class="h4"><em>Week 6</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-09-30">
+                  <td>
+                     <h4>M 09-30</h4>
+                  </td>
+                  <td>
+                     <ul> 
+                        
+                        <li>Project management tools for improving communication, completing tasks: GitHub projects,
+                           Slack.
+                        </li>
+                        
+                        <li>How to write a TEI ODD. Explore <a href="https://romabeta.tei-c.org/" target="_blank">Roma JS</a> and work on developing a TEI ODD.
+                           
+                        </li>
+                        
+                        <li>Generate a Relax NG schema from the ODD file in &lt;oXygen/&gt;.</li>
+                        
+                        <li>TEI ODD-schemas versus hand-coded Relax-NG: Which is better for your project?</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        
+                        <li>Finish TEI ODD exercise.</li>
+                        
+                        <li><strong>Project Checkpoint 2:</strong> 
+                           <ul>
+                              <li>Locate all sources for project XML markup.</li>
+                              <li>Establish a clear file directory structure on your project GitHub, including a distinct
+                                 directory for website files.
+                              </li>
+                              <li>Ensure all project team members are working consistently with the GitHub directory
+                                 structure (all agree on it, and no one changes without notice).
+                              </li> 
+                              <li>Start work on a project schema (Relax NG or TEI): planning stage.</li> 
+                              <li>A significant quantity of project documentation and/or markup is present in the GitHub
+                                 repo.
+                              </li>
+                           </ul>
+                        </li>
+                        
+                        <li>Read our <cite class="sub"><a href="explainRegex.html" target="_blank">Intro to Regular Expressions</a></cite> and start reading
+                           <a href="http://www.regular-expressions.info/quickstart.html" target="_blank">the
+                              Regular Expressions Quick Start</a> in prep for next class.
+                        </li>
+                        
+                     </ul>
+                  </td>
+               </tr>
+               <tr id="d2019-10-02">
+                  <td>
+                     <h4>W 10-02</h4>
+                  </td>
+                  <td>
+                     <p>Readme and other Markdown Files for your project GitHub</p>
+                     
+                     <p>Introducing up-conversion with Regular Expressions:</p>
+                     
+                     <ul>
+                        <li> Using Find &amp; Replace in &lt;oXygen/&gt;: hands-on exercise with <a href="https://github.com/ebeshero/DHClass-Hub/tree/master/Class-Examples/Regex/chocChipCookies" target="_blank">Chocolate Chip Cookies recipe on DHClass-Hub</a> and <a href="RegexExerciseSonnets.html" target="_blank"><strong>Regex Exercise 1: Shakespeare's Sonnets</strong></a></li>
+                        
+                        <li>How to start: inside-out, or outside-in?</li>
+                        
+                        <li>The <q>close-open</q> strategy: The beginning of a thing comes at the <strong>end</strong> of the previous thing!
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+                  <td><a href="RegexExerciseSonnets.html" target="_blank">Preview <strong>Regex Exercise 1: Shakespeare’s Sonnets</strong></a>. Consult our <cite class="sub"><a href="explainRegex.html" target="_blank">Intro to
+                           Regular Expressions</a></cite> and <a href="http://www.regular-expressions.info/quickstart.html" target="_blank">the
+                        Regular Expressions Quick Start</a> as you work on the regex exercises.
+                  </td>
+               </tr>
+               <tr id="d2019-10-04">
+                  <td>
+                     <h4>F 10-04</h4>
+                  </td>
+                  <td>
+                     <p>Regular Expressions: thinking algorithmically. Greedy Matching. Start / finish(?)
+                        <a href="RegexExerciseSonnets.html" target="_blank">Regex Exercise 1</a> together in class
+                     </p>
+                  </td>
+                  <td> 
+                     <ul>
+                        
+                        <li>If we do not finish <a href="RegexExerciseSonnets.html" target="_blank">Regex Exercise 1</a> in class, finish it over the weekend, and go on to <a href="RegexExerciseBlithedale.html" target="_blank"><strong>Regex Exercise 2:</strong> Blithedale</a>
+                           Consult our <cite class="sub"><a href="explainRegex.html" target="_blank">Intro to
+                                 Regular Expressions</a></cite> and <a href="http://www.regular-expressions.info/quickstart.html" target="_blank">the
+                              Regular Expressions Quick Start</a> as you work on the regex exercises.
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week7"><span class="h4"><em>Week 7</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-10-07">
+                  <td>
+                     <h4>M 10-07</h4>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>Regular Expressions: Selecting for what’s not there, simplifying over-complicated
+                           patterns
+                        </li>
+                        
+                        <li>Regex searching over highlighted portions of a document</li>   
+                        
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li><a href="RegexExercisePlay.html" target="_blank"><strong>Regex Exercise 3:</strong> <strong>Pygmalion</strong></a></li>
+                        
+                     </ul>
+                  </td>
+               </tr>
+               <tr id="d2019-10-09">
+                  <td>
+                     <h4>W 10-09</h4>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>Review, work through issues with Regex exercise 3. Prep for Regex test.</li>
+                        
+                        <li>Revisit Project Management tools (Markdown files, Slack, GitHub Projects)</li>
+                        
+                     </ul>
+                     
+                  </td>
+                  <td>Start <strong>Test 3 (take-home): Regular Expressions</strong></td>
+               </tr>
+               <tr id="d2019-10-11">
+                  <td>
+                     <h4>F 10-11</h4>
+                  </td>
+                  <td>Hands-on Project Team work together in class on Project Checkpoint 3</td>
+                  <td>
+                     <ul>
+                        
+                        <li><strong>Test 3 (take-home): Regular Expressions</strong></li>
+                        
+                        <li><strong>Project Checkpoint 3: </strong><ul>
+                              <li> Some team members work on developing page(s) for the project website, creating a
+                                 navigation menu (using a SSI), and working with section, div, and span elements. Try
+                                 using CSS flex to control your horizontal layout. Make a file directory in the GitHub
+                                 repo to separate project website files from XML markup.
+                              </li>
+                              
+                              <li>Others concentrate on completing XML markup and refining the project schema to ensure
+                                 a clear, well-developed XML hierarchy.
+                              </li>
+                              <li>The schema is documented and everyone can find and review it.</li>
+                              <li>All XML markup for the project features a correct schema association line pointing
+                                 to the project schema.
+                              </li>
+                              <li>Significantly more XML markup and/or improved XML markup is prepared by this time
+                                 by comparison with Project Checkpoint 2
+                              </li>
+                           </ul> 
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week8"><span class="h4"><em>Week 8</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-10-14">
+                  <td>
+                     <h4>M 10-14</h4>
+                  </td>
+                  <td> 
+                     <p>Navigating XML with XPath: Introducing the XPath window in &lt;oXygen/&gt;,  functions,
+                        axes, path steps <strong>/</strong>, and predicate filters <strong>[ ]</strong>.  Hands-on: navigating <a href="http://dh.newtfire.org/bad-hamlet.xml" target="_blank">Hamlet</a>. 
+                     </p>
+                  </td>
+                  <td>
+                     <ul>
+                        
+                        <li>First, carefully read our <a href="explainXPath.html" target="_blank">Introduction
+                              to XPath: <cite class="sub">Follow the XPath!</cite></a> As you
+                           read, try experimenting with the XPath expressions on our page, by
+                           downloading the explainXPath.html file, opening it in oXygen, and
+                           experimenting in the XPath window with some of our expressions. Then,
+                           move on to XPath Exercise 1.
+                        </li>
+                        
+                        <li><a href="XPathExercise1.html" target="_blank"><strong>XPath Exercise 1</strong></a>
+                           
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+               </tr>
+               <tr id="d2019-10-16">
+                  <td>
+                     <h4>W 10-16</h4>
+                  </td>
+                  <td>
+                     <p>Using XPath to climb trees—up and down and side to side. Predicate
+                        expressions: <strong>[ ]</strong>. <strong>(Grouping)</strong> and <strong>[Position()]</strong>. XPath syntax: some tricks.
+                     </p>
+                     
+                  </td>
+                  <td> 
+                     <ul>
+                        
+                        <li><a href="XPathExercise2.html" target="_blank"><strong>XPath Exercise
+                                 2</strong></a></li>
+                        
+                        <li>Read and experiment with <cite class="sub"><a href="http://dh.obdurodon.org/functions.xhtml" target="_blank">The XPath
+                                 Functions We Use Most</a></cite> to learn more about XPath functions.
+                        </li>
+                        
+                     </ul>
+                     
+                  </td>
+               </tr>
+               <tr id="d2019-10-18">
+                  <td>
+                     <h4>F 10-18</h4>
+                  </td>
+                  <td>
+                     <p>XPath Functions: some common functions we use and how to write them: <strong>count(), not(), distinct-values()</strong>. Preview string functions.
+                     </p>
+                     
+                     <p>How to combine functions: when to use simple map vs. the arrow operator.</p>
+                     
+                     <p>How to put functions in a predicate filter to return XML nodes that have qualities
+                        that you test for with functions. 
+                     </p>
+                     
+                  </td>
+                  <td><a href="XPathExercise3.html" target="_blank"><strong>XPath Exercise 3:</strong> experimenting with functions</a>
+                     
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week9"><span class="h4"><em>Week 9</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-10-21">
+                  <td>
+                     <h4>M 10-21</h4>
+                  </td>
+                  <td>
+                     <p>Work on XPath and manipulating text strings. Using Regular Expressions in XPath. Preview
+                        Schematron if time.
+                     </p>
+                  </td>
+                  <td>
+                     <ul>
+                        <li><a href="XPathExercise4.html" target="_blank"><strong>XPath Exercise 4:</strong> finding and remixing strings</a></li>
+                        
+                        <li>Preview our <a href="explainSchematron.html" target="_blank">Guide
+                              to Schema Writing with Schematron</a> in preparation for next class.
+                        </li>
+                        
+                     </ul>
+                  </td>
+               </tr>
+               <tr id="d2019-10-23">
+                  <td>
+                     <h4>W 10-23</h4>
+                  </td>
+                  <td>
+                     <p>writing an XPath-based Schema language: Schematron, and how we use it with
+                        Relax-NG
+                     </p>
+                     
+                     <p>How we use Schematron in project management.</p>
+                  </td>
+                  <td>Consult our <a href="explainSchematron.html" target="_blank">Guide to Schema Writing with Schematron</a> as you complete <a href="SchematronExercise-Banksy.html" target="_blank"><strong>Schematron Exercise 1</strong></a>.
+                  </td>
+               </tr>
+               <tr id="d2019-10-25">
+                  <td>
+                     <h4>F 10-25</h4>
+                  </td>
+                  <td>More applications of Schematron to your ongoing project. Schemas to work with Personographies,
+                     Placeographies, Prosopographies (Relax NG, ODD with Relax NG, Schematron: <a href="explainSchematronIdRefs.html" target="_blank">Keeping track of xml:ids with Schematron</a>).
+                  </td>
+                  <td>
+                     <ul>
+                        
+                        <li><strong>Schematron Exercise 2</strong>: Write Schematron to refine and correct messy or problematic code for your project
+                           team. Submit two things: 1) your Schematron file, and 2) a sample of project XML code
+                           to show how you are capturing errors. 
+                        </li>
+                        
+                        <li>Preview our <a href="explainXSLT.html" target="_blank">Introduction to XSLT</a> in preparation for the next class.
+                        </li>
+                        
+                     </ul>
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week10"><span class="h4"><em>Week 10</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-10-28">
+                  <td>
+                     <h4>M 10-28</h4>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>Introducing XSLT (eXtensible Stylesheet Language Transformations). XSL Transformations
+                           from XML to XML, and from XML to HTML. Namespaces
+                        </li>
+                        
+                        <li>Start hands on together in class: <a href="XSLTExercise1.html" target="_blank">XSLT Exercise 1</a></li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        
+                        <li><strong>Project Checkpoint 4</strong>: 
+                           <ul>
+                              <li>Complete most XML markup for your project according to a refined project schema.</li> 
+                              
+                              <li>Start checking and revising XML code with Schematron.</li>
+                              
+                              <li>Review/refine project research question.</li>
+                              <li>Make some significant content for the website.</li>
+                           </ul>
+                        </li>
+                        
+                        <li><strong><a href="XSLTExercise1.html" target="_blank">XSLT Exercise 1: an Identity Transformation</a></strong>.
+                        </li>
+                        
+                        <li>Read more about XSLT: 
+                           <ul>
+                              <li>See our <a href="explainXSLT.html" target="_blank">Intro to XSLT</a>.
+                              </li>
+                              
+                              <li><a href="http://dh.obdurodon.org/identity.xhtml" target="_blank">The XSLT Identity Transformation (examples: our method is <q>The XSLT 3.0 way</q>.)</a></li>
+                              
+                              <li><a href="http://dh.obdurodon.org/avt.xhtml" target="_blank">XSLT Attribute Value
+                                    Templates</a>.
+                              </li>
+                              
+                           </ul>
+                        </li>
+                        
+                        <li>What kinds of things can you do with XSLT? Skim a little background in the Michael
+                           Kay book: <a href="http://media.wiley.com/product_data/excerpt/47/04701927/0470192747.pdf" target="_blank">Michael Kay’s Chapter 1</a> and read pages 3-7, <cite class="sub">A Simple XSLT Stylesheet</cite>: pp. 10-12, <cite class="sub">How it Works</cite>: pp. 17-18, and <cite class="sub">Example: Displaying a Poem,</cite> pp. 35-38 (to review a sample XSLT stylesheet). 
+                        </li>
+                        
+                     </ul>
+                  </td>
+               </tr>
+               <tr id="d2019-10-30">
+                  <td>
+                     <h4>W 10-30</h4>
+                  </td>
+                  <td>
+                     <p>XSLT to HTML: How it works.</p>
+                  </td>
+                  <td>
+                     <ul>
+                        <li><strong><a href="XSLTExercise2.html" target="_blank">XSLT Exercise 2</a></strong> To read as you work on this series of XSLT exercises: 
+                           
+                           <ul>
+                              
+                              <li><cite class="sub"><a href="http://dh.obdurodon.org/algorithms.xhtml" target="_blank">Thinking in algorithms</a></cite></li>
+                              
+                              <li><cite class="sub"><a href="http://dh.obdurodon.org/developing-xslt.xhtml" target="_blank">Developing an XSLT Stylesheet</a></cite></li>
+                              
+                           </ul>
+                           
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr id="d2019-11-01">
+                  <td>
+                     <h4>F 11-01</h4>
+                  </td>
+                  <td>XPath and XPath Patterns. XPath review: axes, functions, and predicates in prep for
+                     XPath test. Using XPath functions to make counts and do calculations for charts and
+                     graphs.
+                  </td>
+                  <td><strong>Test 4 (take-home): XPath</strong> 
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week11"><span class="h4"><em>Week 11</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-11-04">
+                  <td>
+                     <h4>M 11-04</h4>
+                  </td>
+                  <td>
+                     <p>XSLT: What template rules are doing. Push and Pull processing. Attribute value templates
+                        (review). XSLT to HTML Table transformation in class. 
+                     </p>
+                  </td>
+                  <td>
+                     <ul>
+                        
+                        <li><strong><a href="XSLTExercise3.html" target="_blank">XSLT Exercise 3</a></strong></li>
+                        
+                        <li>In prep for next class, read about / review:
+                           
+                           <ul>
+                              
+                              <li><a href="http://dh.obdurodon.org/xslt-basics-2.xhtml" target="_blank">XSLT Conditionals, and Push and Pull</a></li>
+                              
+                              <li><a href="http://dh.obdurodon.org/avt.xhtml" target="_blank">XSLT Attribute Value
+                                    Templates</a>.
+                              </li>
+                           </ul>
+                        </li>
+                        
+                     </ul>
+                  </td>
+               </tr>
+               <tr id="d2019-11-06">
+                  <td>
+                     <h4>W 11-06</h4>
+                  </td>
+                  <td>XSLT templates, <strong>push</strong> processing, and preparing/styling HTML for editions. Putting it all together with
+                     CSS.
+                  </td>
+                  <td>
+                     <ul>
+                        
+                        <li><strong><a href="XSLTExercise4.html" target="_blank">XSLT Exercise 4</a></strong>. (Consult <a href="http://dh.obdurodon.org/avt.xhtml" target="_blank">XSLT Attribute Value
+                              Templates</a> as you work on the coding exercise.)
+                        </li>
+                        
+                        <li>In prep for the next XSLT exercise, read <a href="http://dh.obdurodon.org/modal-xslt.html" target="_blank">Modal XSLT</a>.
+                        </li>
+                        
+                     </ul>
+                  </td>
+               </tr>
+               <tr id="d2019-11-08">
+                  <td>
+                     <h4>F 11-08</h4>
+                  </td>
+                  <td>
+                     <p>How Modal XSLT works.</p>
+                     
+                     <p>Processing collections of files</p>
+                  </td>
+                  <td><strong><a href="XSLTExercise5.html" target="_blank">XSLT Exercise 5</a> (due before next W 11/13)</strong>. Consult <a href="http://dh.obdurodon.org/modal-xslt.html" target="_blank">Modal
+                        XSLT</a> page as you work on the coding exercise.
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week12"><span class="h4"><em>Week 12</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-11-11">
+                  <td>
+                     <h4>M 11-11</h4>
+                  </td>
+                  <td>
+                     <p>(Dr. B is away at a digital project consultation meeting in Texas.) Semester Project
+                        workday: Review <a href="projectGuide.html" target="_blank">Project Guidelines</a></p>
+                     
+                     <p>Work on developing HTML, CSS, and XSLT for projects. Also work on recording project
+                        documentation and decisions in markdown on your GitHub repo (GitHub issues and Readmes).
+                     </p> 
+                     
+                     
+                  </td>
+                  <td>Finish <strong><a href="XSLTExercise5.html" target="_blank">XSLT Exercise 5</a></strong>. Consult <a href="http://dh.obdurodon.org/modal-xslt.html" target="_blank">Modal XSLT</a> page as you work on the coding exercise.
+                  </td>
+               </tr>
+               <tr id="d2019-11-13">
+                  <td>
+                     <h4>W 11-13</h4>
+                  </td>
+                  <td>
+                     <p>Sorting with XSLT</p>
+                     
+                     <p>HTML with internal links: how it works and how to create internal links with XSLT</p>
+                     
+                     
+                  </td>
+                  <td><strong><a href="XSLTExercise6.html" target="_blank">XSLT Exercise 6</a></strong></td>
+               </tr>
+               <tr id="d2019-11-15">
+                  <td>
+                     <h4>F 11-15</h4>
+                  </td>
+                  <td> 
+                     <p>Writing XSLT for your projects. Review of metadata and TEI, and using XSLT to extract
+                        metadata: Example: <a href="http://digitalmitford.org/getLetterText.php?uri=1821-01-29_Webb.xml" target="_blank">Digital Mitford letter</a>.
+                     </p>
+                     
+                     
+                     <p>Checking your HTML with the <a href="https://validator.w3.org/" target="_blank">w3c Markup Validation Service</a>.
+                     </p>
+                  </td>
+                  <td><strong><a href="XSLTExercise7.html" target="_blank">XSLT Exercise 7</a> (also part of Project Checkpoint 5).</strong>
+                     <strong>Project Checkpoint 5</strong>: 
+                     
+                     <ul>
+                        
+                        <li>Goal: complete and refine the project’s XML markup, and be actively processing it
+                           with XSLT for this stage.
+                        </li>
+                        
+                        <li>Work on XSLT to HTML transformations that help present your texts as a web archive.</li>
+                        
+                        <li>Work on improving the project website, updating its organization and navigation, describing
+                           and introducing the project and its team members.
+                        </li>
+                        
+                        <li>(Other goals: specific to project teams)</li>
+                        
+                     </ul>
+                     
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week13"><span class="h4"><em>Week 13</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-11-18">
+                  <td>
+                     <h4>M 11-18</h4>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>XML that makes graphics: SVG (Scalable Vector Graphics). Drawing elements,
+                           and screen grid coordinates.
+                        </li>
+                        
+                        <li><a href="https://www.slideshare.net/ebbondar/svg-81556046" target="_blank">Introductory slideshow</a></li>
+                        
+                        <li>Play with <a href="http://www.w3schools.com/graphics/svg_intro.asp" target="_blank">w3Schools SVG Tutorial</a>.
+                        </li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>Work through <a href="https://www.w3schools.com/graphics/svg_intro.asp" target="_blank">the w3schools SVG tutorial</a> to complete the SVG basic and SVG shapes pages. 
+                           Filters, gradients, examples, and reference are optional.
+                        </li>
+                        
+                        <li><strong><a href="SVGExercise1.html" target="_blank">SVG Exercise 1</a></strong></li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr id="d2019-11-20">
+                  <td>
+                     <h4>W 11-20</h4>
+                  </td>
+                  <td>
+                     <p>SVG from XSLT, working with variables to plot coordinate space</p>
+                  </td>
+                  <td><strong><a href="SVGExercise2_Alice.html" target="_blank">SVG Exercise 2: XSLT to SVG to make a graph</a></strong></td>
+               </tr>
+               <tr id="d2019-11-22">
+                  <td>
+                     <h4>F 11-22</h4>
+                  </td>
+                  <td>
+                     
+                     <p>User experience (UX): Setting SVG in a webpage and providing explanation. Project
+                        applications of SVG.
+                     </p>
+                     <p>Introducing JavaScript and <q>client side</q> interaction with users
+                     </p>
+                  </td>
+                  <td>
+                     
+                     <ul>
+                        
+                        <li><strong>SVG Exercise 3</strong> Options: 
+                           
+                           <ul>
+                              
+                              <li>Plot a Timeline with SVG</li>
+                              
+                              <li>Plot a Graph from your project data</li>
+                              
+                           </ul>
+                           
+                        </li>
+                        
+                        <li><strong><a href="JavaScriptExercise1.html" target="_blank">Javascript Exercise 1</a></strong></li>
+                        
+                        
+                     </ul>
+                     
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week14"><span class="h4"><em>Week 14</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-11-25">
+                  <td>
+                     <h4>M 11-25 to F 11-29</h4>
+                  </td>
+                  <td><strong>Thanksgiving Recess: no classes</strong></td>
+                  <td>Work on project websites, SVG, JavaScript Exercise 1.</td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <th id="Week15"><span class="h4"><em>Week 15</em></span></th>
+                  <th><span class="h4"><em>In Class</em></span></th>
+                  <th><span class="h4"><em>Due Next Time</em></span></th>
+               </tr>
+               <tr id="d2019-12-02">
+                  <td>
+                     <h4>M 12-02</h4>
+                  </td>
+                  <td>
+                     
+                     <p>Introduction to JavaScript, and writing and associating JavaScript files with HTML.
+                        Working with variables and for loops in JavaScript. Coordinating JavaScript with CSS
+                        on project HTML.
+                     </p>
+                     
+                  </td>
+                  <td>Start by doing <strong><a href="JavaScriptExercise1.html" target="_blank">Javascript Exercise 1</a></strong> (due by W 12/04). As soon as you are ready, choose one of the <strong>JavaScript Exercise 2</strong> options (due by F 12/06): 
+                     
+                     <ul>
+                        <li><a href="JavaScriptExercise2.html" target="_blank">Toggling @class attributes in your HTML with the JavaScript classList() function</a>, and integrating with CSS
+                        </li>
+                        
+                        <li><a href="https://github.com/ebeshero/DHClass-Hub/blob/master/Assignments/JavaScriptEx2.md" target="_blank">JavaScript to make SVG and HTML respond to each other on click</a></li>
+                        
+                        
+                     </ul>
+                  </td>
+               </tr>
+               <tr id="d2019-12-04">
+                  <td>
+                     <h4>W 12-04</h4>
+                  </td>
+                  <td>
+                     <p>Putting it all together: JavaScript with CSS to interact with SVG; project needs for
+                        SVG and JavaScript. Review of creative commons licensing, project guidelines.
+                     </p>
+                     
+                     <p>Work on <strong>Project Checkpoint 6</strong>: preparing material for project presentations, final project code sprint.
+                     </p>
+                  </td>
+                  <td>Project development. Complete JavaScript homework exercises (and apply to projects):
+                     
+                     <ul>
+                        <li><a href="JavaScriptExercise2.html" target="_blank">Toggling @class attributes in your HTML with the JavaScript classList() function</a>, and integrating with CSS
+                        </li>
+                        
+                        <li><a href="https://github.com/ebeshero/DHClass-Hub/blob/master/Assignments/JavaScriptEx2.md" target="_blank">JavaScript to make SVG and HTML respond to each other on click</a></li>
+                        
+                        
+                     </ul> 
+                  </td>
+               </tr>
+               <tr id="d2019-12-06">
+                  <td>
+                     <h4>F 12-06</h4>
+                  </td>
+                  <td>Project coding consultation and development, review of project guidelines.</td>
+                  <td>
+                     <ul>
+                        <li>Teams prepare for <strong>Project Checkpoint 6.</strong></li> 
+                        <li>Classmates (from other teams) ask questions, offer commentary on project GitHub repos.</li>
+                     </ul>
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <td>
+                     <h4>Mon. 12/09: 10:45am - 12:45pm</h4>
+                  </td>
+                  <td>
+                     <p>
+                        Team presentations in our classroom (McKenna 136) during our Final Exam session. Teams
+                        present their projects to the class, invite comments and feedback. Classmates (from
+                        other teams) continue to ask questions, offer commentary on project GitHub repos:
+                        commentary due by the end of the day.
+                        
+                     </p>
+                  </td>
+               </tr>
+            </table>
+            <table>
+               <tr>
+                  <td>
+                     <h4>Thurs. 12/12 by 11:59pm</h4>
+                  </td>
+                  <td>
+                     <p>
+                        <strong>Projects due. Submit projects with a post to the instructors from  your project GitHub
+                           repo.</strong>
+                        
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <hr />
+   </body>
+</html>

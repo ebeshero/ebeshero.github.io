@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../out/GeoWash.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Site Index for George Washington Papers project</title>
+            <author>Kiara DeVore</author>
+            <respStmt>
+               <resp>With assistance from</resp>
+               <name>Elisa Beshero-Bondar</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Prepared in TEI P5 for the Washington Project team on newtFire.org. GitHub repository: <ref target="https://github.com/KSD32/George-Washington-Diaries-"/>. Date last worked on: <date when="2018-11-02">02 November 2018</date>
+            </authority>
+            <availability>
+               <licence/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person>
+               <persName>Captain Bell</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Captain Harrison</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Captain Lewis</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Captain McKenzie</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Captain Peachy</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Captain Smith</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Captain Spotswood</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Colonel Chas Carter</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Colonel Mason</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Colonel Nicholson</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Doctor Tappen</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Ensign Alexandria</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Ensign Dean</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Ensign Edward Hubard</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Ensign Garter</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Ensign John Dean</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Ensign Leonard Price</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Ensign Millner</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Ensign Nathaniel Thompson</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person> 
+            <person> 
+               <persName>Ensign Weedon</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Ensign William Dangerfield</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Ensign William Fleming</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Fœderalist</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>General Braddock</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>General Lincoln</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>George Washington</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Govenor. Shirley</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            
+            <person>
+               <persName>Lieutenant Brockenbrough</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Lieutenant James Baker</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Lieutenant John Campbell</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Lieutenant John. Hall</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName> Lieutenant John King</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Lieutenant John Williams</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Lieutenant Lomax </persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Lieutenant Lowry</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Lieutenant Peter Steenbergen</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Major Rensselaer</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Major Shaw</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Mr. James Greenleaf</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Mr. Jones</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Patriots</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Prince William</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Publius</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Sir Jno. St. Clair</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>Sir Peter</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>St Johns</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            <person>
+               <persName>St Penobscott</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+            
+            <person>
+               <persName>Winchester</persName>
+               <birth/>
+               <death/>
+               <note/>
+            </person>
+         </listPerson>
+         <listOrg>
+            <org>
+               <orgName>England</orgName>
+               <note/>
+            </org>
+            <org>
+               <orgName>France</orgName>
+               <note/>
+            </org>
+            <org>
+               <orgName>Holland</orgName>
+               <note/>
+            </org>
+            <org>
+               <orgName>Massachusetts</orgName>
+               <note/>
+            </org>
+            <org>
+               <orgName>New York</orgName>
+               <note/>
+            </org>
+         </listOrg>
+         <listPlace>
+            <place>
+               <placeName>Boston</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Bucks County, Pa</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Cambridge</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Camp Cambridge</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Camp at Will's Creek</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Canada</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Culpeper</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Eastern Shore Countys</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Fairfax Officers 31st 1st.</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Fort Duquisne</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Fredericksburg</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Great Britain</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Head Quarters, New York</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Holland</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>House of Burgesses</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>King George</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>King and Nantasket Roads.</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Lancaster</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Massachusetts Bay</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Militia Prince Wm</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Mount Vernon</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Niagara</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Northumberland</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Philadelphia</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Portsmouth</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Richmond</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>River Delaware</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>South Carolina</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Southern Colony</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Stafford</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Town of Boston</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Town of Falmouth</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Towns on the Coast</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Westmoreland</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Winchester</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>[Williamsburg]</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+            <place>
+               <placeName>Federal City</placeName>
+               <location>
+                  <geo/>
+               </location>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

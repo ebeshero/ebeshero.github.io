@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="../ODD/out/GeoWash.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter to Samuel Chase</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Written By Greoge Washington</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>From the Library of Congress</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p><placeName>Head Quarters, New York,</placeName> <date>June 13, 1776.</date></p>
+           <p> Sir: I am to inform you that <persName>Colonel Nicholson,</persName> of whose Character and Conduct you have received
+            an unfavorable Impression, is in Town; he comes for the purpose of raising Recruits for a <location><settlement>New York</settlement></location>
+            Battalion, to the Command of which he has been nominated. When I intimated to him, that from
+            certain representations I had received, I judged him very unfit for the Employment, he insisted upon
+            a Court of Enquiry to manifest his Innocence, and clear his reputation. Now Sir, as I am not well
+            apprized of any particular charge to be exhibited against him, I must request you to acquaint me
+            with what you know of the matter, and what persons it will be proper to call in as Witnesses; he may
+            otherwise be acquited by the Court (when there are just Grounds of Accusation) merely for want of
+            Testimony. I am, etc.</p>
+      </body>
+  </text>
+</TEI>

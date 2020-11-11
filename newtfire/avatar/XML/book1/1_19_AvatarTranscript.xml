@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atla>
+    <episode>
+        <transcript>
+            <head>
+                <episode n="19">Siege of the North: Part 1</episode>
+                <book n="1">Water</book>
+                <source link="https://avatar.fandom.com/wiki/Transcript:The_Siege_of_the_North,_Part_1"/>
+            </head>
+            <charlist>
+                
+            </charlist>
+            <body>
+<scene><sd>Cuts inside a room where Zuko prepares a boat, winding up some rope. Iroh enters.</sd>
+<speaker ref="">Iroh</speaker>	If you're fishing for an octopus <char ref="Zuko">my nephew</char>, you need a tightly woven net, or he will squeeze through the tiniest hole and escape.
+<speaker ref="">Zuko</speaker>	I don't need your wisdom right now, <char ref="Iroh">Uncle</char>.
+<speaker ref="">Iroh</speaker>	I'm sorry. I just nag you, because ... well, <sd>[Voice breaking slightly.]</sd> ever since I lost my son ...
+<speaker ref="">Zuko</speaker>	<char ref="Iroh">Uncle</char>, you don't have to say it.
+<speaker ref="">Iroh</speaker>	... I think of you as my own.
+    <speaker ref="">Zuko</speaker>	<sd>[Faces his uncle, a softer expression on his face.]</sd> I know, <char ref="Iroh">Uncle</char>. We'll meet again. <sd>[Iroh hugs him.]</sd> After I have the <char ref="Aang">Avatar</char>. <sd>[He turns away and gets on the boat.]</sd>
+<speaker ref="">Iroh</speaker>	Remember your breath of fire. It could save your life out there.
+<speaker ref="">Zuko</speaker>	I will. <sd>[Lowers the boat, suspended by ropes, down the side of the ship into the water.]</sd>
+<speaker ref="">Iroh</speaker>	And put your hood up. Keep your ears warm!
+<speaker ref="">Zuko</speaker>	I'll be fine!</scene>
+
+                </body>
+        </transcript>
+    </episode>
+</atla>

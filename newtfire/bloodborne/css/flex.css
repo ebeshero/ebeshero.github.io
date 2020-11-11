@@ -1,0 +1,16 @@
+.mapContainer {display:flex; 
+flex-direction: row;
+justify-content: space-between;
+width: 80%;
+ flex-wrap: nowrap;
+ position: relative;
+ top: -15px;
+ 
+
+}
+svg {flex:3; flex-shrink: 10; width: 80%;}
+#altPlace {flex:1; flex-shrink: 10;}
+.iFrameContainer {position: relative;
+top: -30px;
+}
+

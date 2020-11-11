@@ -1,0 +1,78 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   
+   	
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="explain.css" />
+      <title>XSLT Exercise 1</title>
+   </head>
+   
+   
+   
+   <body>
+      <!--#include virtual="top.html" -->
+      		
+      			
+      <h1><span class="banner">XSLT Exercise 1</span></h1>
+      			
+      			
+      			
+  <section id="gettingStarted">
+     <h2>Getting started</h2>
+      <p>Our very first XSLT assignment is an Identity Transformation, a kind of transformation we have to do frequently in our projects when we need to make specific changes to our encoding. For this exercise, we will write XSLT to make some repairs to an XML document from the Fall 2020 Elder Scrolls Morrowind project. </p>
+     <p>Begin with a directory of files posted on the <a href="https://github.com/newtfire/digitProjectDesign-Hub">digitProjectDesign-Hub</a>. Using your Terminal (on Mac) or your Git Bash Shell (on Windows), update your local clone of the digitProjectDesign-Hub with <code>git pull</code>. We will work with files in the <code>Class Examples > XSLT > identityTransform</code> directory. Open your &lt;oXygen/&gt; XML Editor, and open the XML file named <code>STARTguide2Balmore.xml</code> in that directory. (There is a Relax NG chema saved along with the files, and you will see that it is firing many validation errors on this document. That is because we made changes to the schema after this document was encoded, and we need to bring the XML document up to date with the new schema.</p>
+      <p>Our task is to deal with the validation errors in the document using an XSLT identity transformation. We do not want to change much of contents of this file, but we do want alter its tagging a little so the document will be valid according to its schema. That is a good occasion to write an Identity Transformation XSLT, converting our XML to XML that is meant to be (for the most part!) <em>identical</em> to the original.</p>
+     <p>Open a new XSLT file (version 3.0) and toggle the XSLT Debugger view so you can work on your XSLT transformation code in between the source XML and an output panel.(Or you may begin with the starter XSLT document provided in the same GitHub directory.)</p>
+      </section>
+      <section id="surveyProblem">
+         <h2>The problems we need to fix</h2>
+         <p>Looking through the file, we can see the following tagging issues that are raising errors:</p>
+         <ul><li><code>&lt;who xmlid="Value with spaces"&gt;Name Of Someone&lt;/who&gt;</code></li>
+            <li><code>&lt;location xmlid="Value with spaces" visitable="yes"&gt;Name Of Place&lt;/who&gt;</code></li>
+            <li><code>&lt;NPC who="Value with spaces"&gt;Name of someone&lt;/who&gt;</code></li>
+         </ul>
+         
+         <p>Here is what we want to do to repair the file.</p> 
+            <ul><li>We need to change the name of the <code>@xmlid</code> attributes to <code>@ref</code>, and we do not want to keep spaces in the attribute values.</li>
+               <li>We will change the value of the <code>@xmlid</code> on the <code>who</code> elements so that we keep only the first name (the substring before the first space) as the value, and put a <code>#</code> in front of it. For example, we will change: <code>&lt;who xmlid="Codus Callonus"&gt;Codus Callonus&lt;/who&gt;</code> into <code>&lt;who ref="#Codus"&gt;Codus Callonus&lt;/who&gt;</code></li>
+               <li>We will change the value of the <code>@xmlid</code> on the <code>location</code> elements so that separate the parts of the name using hyphens, and put a <code>#</code> in front of it. For example, we will change: <code>&lt;location
+                  xmlid = "Vivec City" visitable="yes"&gt;Vivec City&lt;/location&gt;</code> into <code>&lt;location
+                     xmlid = "#Vivec-City" visitable="yes"&gt;Vivec City&lt;/location&gt;</code></li>
+               <li>Finally we want to deal with the <code>@who</code> attributes on the <code>NPC</code> elements. We don’t really want to have an attribute with the same name as an element in the document, and the values of <code>@who</code> are overcomplicated, sometimes containing apostrophes and quotation marks, and the attribute is simply unhelpful. For our purposes with this exercise, we will just remove this attribute entirely without replacing it.</li>
+            </ul>
+         <p>You may already be calculating how to do these tasks with regular expression using Find and Replace, and while we know you could do that, our purpose is to make the changes using an XSLT transformation, and we hope you will learn some things about how XSLT works through this exercise.</p>   
+      </section>
+ 
+ <section> 
+      <h3>Writing the Identity Transformation!</h3>
+      
+      
+     <ol> <li>We will give you your first transformation code, to set the mode of this XSLT to be an <em>identity transformation</em>. We’re going to use a new form for this in version XSLT 3.0, so that is why we have set <code>version="3.0"</code> in our stylesheet template above. <span class="smaller">(You can see an old form here in the first template rule of our Identity transformation of Shakespeare’s sonnets, which you can download, save and open from <a href="SonnetIDTransformOld.xsl">here</a>. That old first rule matches on all nodes, elements and attributes throughout the document and simply copies them. It’s perfectly fine to use that older template rule in place of the one we show you below, but we like the simplicity of this new form even better!)</span>.
+      <div class="code">
+         &lt;xsl:mode on-no-match="shallow-copy"/&gt; 
+      </div>
+      <p> This XSLT statement is the <em>opposite</em> of the <span class="code">xsl:template match</span> we have been showing you in <a href="explainXSLT.html">our XSLT tutorial</a>. You basically say, if I do not write a template rule to <em>match</em> an element, attribute, or comment node, really of any part of the document that I do not mention in a template match rule, XSLT should simply make a copy of that element and output it. Try running this and look at your output: it will look exactly <em>identical</em> to the current XML document. Obviously we do not need to do this <em>unless</em> we want to make changes with template match rules! 
+      <span class="smaller">There is another way to copy, called "deep copy" in XSLT, but we do not want use it here. When you use "deep copy" in XSLT, you reproduce the full directory tree underneath a given element, so the understanding is that we would match on the root element <em>only</em>, and reproduce all the descendents of that one node just as they are. We like the "on-no-match-shallow-copy" approach because we need to step through the document tree just one step at a time. We only want to copy a node if we do not want to write a new template rule that will change it. </span></p>
+     </li>
+        <li>Next, we will simply write our template rules to match on the particular elements we wish to change. You may wish to start with the simplest of the changes, to match the <code>&lt;NPC&gt;</code> elements and simply remove all the <code>@who</code> attributes from them in the output XML. Review our <a href="explainXSLT.html">Introduction to XSLT</a> to see how to write a template match on any particular element, and how to output an altered element in its place, and continuing to process its descendants using <span class="code">&lt;xsl:apply-templates/&gt;</span>.</li>
+        <li>When we write XSLT, we often work with <strong>Attribute Value Templates</strong> (or <strong>AVT</strong>), a handy special format in XSLT that helps us to pull information from our source document and position it exactly where we want to inside an attribute value. You need to look at some examples of AVTs in order to write one yourself, so for the next tasks, go and look at the examples in Obdurodon’s <a href="https://dh.obdurodon.org/avt.xhtml">Attribute Value Templates (AVT) tutorial</a>. After reading the AVT tutorial, write <strong>two more template rules</strong>.
+        <ul><li>Write a template rule to match the <code>&lt;who&gt;</code> elements that have <code>@xmlid</code> attributes in the source document. In your template rule, reconstruct the <code>&lt;who&gt;</code> element so that you rename the attribute, and write an AVT to return the value you want. Ideally, you want to do a little <q>string surgery</q> on the original value: You want to output only the first part of it, the portion before the first space. Hint: There is a convenient XPath function for this: <code>tokenize()</code>. You could use the <code>tokenize()</code> function to break the value into tokens using its spaces, and indicate with a position predicate (<code>[1]</code>)that you just want to output the first token.</li>
+         <li>Write another template rule to match the <code>&lt;location&gt;</code> elements that have <code>@xmlid</code> attributes. Set a new attribute, <code>@ref</code>, and again, set an ATV to pull its value, and again try a little <q>string surgery</q>: This time, try the <code>translate()</code> or <code>replace()</code> function to convert the spaces in the original values into hyphens.</li>  
+           <li>Finally, this time, notice there is another attribute present on the <code>&lt;location&gt;</code> elements, <code>@visitable</code>, that we definitely need to preserve in the output! Be careful not to lose it. As you remodel the <code>location</code> element, you can simply set the original attribute in place and use an ATV to set its value.</li>
+           <li>You will be looking at your results in the Output window as you write and test your template rules each time you press the blue <q>Run-to-End</q> button. Eye-balling those results is not really enough because the Output window does not check for well-formedness or validation against a schema. Be sure to save those results, either by setting an output location in the appropriate place in the selection boxes, or by right-clicking on the output window and selecting <q>Save as</q>. <strong><em>Always, always</em> open the saved output file in &lt;oXygen/&gt; and check to make sure that it checks out as valid and well-formed.</strong> Your new output should address all of the schema validation errors and return a green square.</li>
+        </ul>
+        
+        </li>
+     </ol>
+     <section><h3>Submitting your work</h3>
+        <p>When you are finished, save your XSLT file and your XML output of the Elder Scrolls Morrowind file, following our usual <a href="../tutorials/explainFileNames.html">homework file naming conventions</a>, and upload these to the appropriate place in Canvas.</p></section>					
+ </section> 
+   </body>
+   
+   
+   
+   
+</html>

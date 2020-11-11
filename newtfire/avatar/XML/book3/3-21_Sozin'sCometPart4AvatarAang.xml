@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atla>
+    <transcript>
+        <head>
+            <episode n="21">Sozin's Comet Part 4: Avatar Aang</episode>
+            <book n="3">Fire</book>
+            <source link="https://avatar.fandom.com/wiki/Transcript:Sozin%27s_Comet,_Part_4:_Avatar_Aang"/>
+        </head>
+        
+        <charlist>
+            <charList type="recurring" id="Zuko">Zuko</charList>
+            <charList type="recurring" id="Aang">Aang</charList>
+            <charList type="recurring" id="Iroh">Iroh</charList>
+            <charList type="nonrecurring" id="FSage">Fire Sage</charList>
+            
+        </charlist>
+        <body>
+            <scene n="1">
+<sd>Cut to inside the Royal Palace, where Aang, now wearing the robes and necklace of an airbending master, opens his eyes from his meditation as Zuko approaches, still wearing the Fire Lord attire.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	I can't believe a year ago my purpose in life was hunting you down. And now ...</sp>
+<sp><speaker ref="Aang">Aang</speaker>	And now we're friends.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	Yeah, we are friends.</sp>
+<sp><speaker ref="Aang">Aang</speaker>	I can't believe a year ago I was still frozen in a block of ice. The world's so different now.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Puts a hand on Aang's shoulder.]</sd> And it's gonna be even more different... when we build it together. <sd>[They hug warmly and go outside.]</sd></sp>
+<sd>Cut to outside the palace with people from the Fire Nation, the Water Tribe, the Earth Kingdom and the Foggy Swamp Tribe all outside. Cut to a side-view as Zuko walks past while a gong is struck. Cut to a overhead view of the crowd with Zuko approaching. The crowd cheers. Front view of Zuko as he raises his hand.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	Please. The real hero is the <char ref="Aang">Avatar</char>. <sd>[Aang walks next to Zuko. Crowd cheers again. Aang turns his head slightly. Cut to side-view of Katara. The camera rotates as she smiles up at Aang proudly. Cut to overhead view of Aang and Zuko, their backs to the camera, looking out at the crowd.]</sd> Today this war is finally over! <sd>[Cut briefly to Haru, Tyro, Mechanist and Teo as the crowd cheers. Cut to front view of Zuko.]</sd> I promised <char ref="Iroh">my uncle</char> that I would restore the honor of the Fire Nation. And I will. <sd>[Panning front view of Zuko and Aang, as seen from the crowd's perspective.]</sd> The road ahead of us is challenging. A hundred years of fighting has left the world scarred and divided. <sd>[Cut to side shot of Aang, rotating around, as he turns to see Zuko smile at him, before turning back to the crowd.]</sd> But with the <char ref="Aang">Avatar's</char> help, we can get it back on the right path and begin a new era of love and peace.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker> kneels down, preparing to be crowned Fire Lord. Cut to a Fire Sage approaching with the headpiece.</sp>
+<sp><speaker ref="FSage">Fire Sage</speaker>	<sd>[Puts the Fire Lord headpiece into Zuko's top knot.]</sd> All hail <char ref="Zuko">Fire Lord Zuko</char>! <sd>[Everyone cheers again. Zuko rises.]</sd></sp>
+<sd>Cut to Zuko walking toward the cheering crowd, gesturing Aang to follow him. Aang approaches and they look briefly at each other before looking out at the crowd.</sd></scene>
+        </body>
+    </transcript>
+</atla>

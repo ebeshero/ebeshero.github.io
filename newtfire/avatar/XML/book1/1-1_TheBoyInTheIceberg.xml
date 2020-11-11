@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../XSLT/Avatar_CSS_7.css"?>
+<?xml-stylesheet type="text/xsl" href="../XSLT/Avatar_XSLT_07.xsl"?>
+<atla>
+    <transcript>
+            <head>
+                <episode n="1">The Boy In The Iceberg</episode>
+                <book n="1">Water</book>
+                <source link="https://avatar.fandom.com/wiki/Transcript:The_Boy_in_the_Iceberg"/>
+            </head>
+        
+        <charlist>
+            <charList type="recurring" id="Zuko">Zuko</charList>
+            <charList type="recurring" id="Iroh">Iroh</charList>
+            <charList type="recurring" id="Aang">Avatar</charList>
+            <charList type="recurring" id="Helms">Helmsman</charList>
+        </charlist>
+        <body>
+            <scene n="1">
+<sd>Cut to a Fire Nation ship, where a boy in a Fire Nation military uniform stands on the deck, gazing at the light. His ponytail flutters in the wind.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	Finally! <sd>[He turns around to face another person in uniform, who sits at a small table.]</sd> <char ref="Iroh">Uncle</char>, do you realize what this means?!</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	<sd>[He is playing some sort of card game. He answers calmly while looking over the tile he's holding toward his nephew.]</sd> I won't get to finish my game?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Turning around again to face the light.]</sd> It means my search is about to come to an end.</sp>
+<sd>Iroh sighs uninterestedly and places his tile on the table.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Gestures at the light while facing his uncle again.]</sd> That light came from an incredibly powerful source! <sd>[The light dwindles and disappears.]</sd> It has to be him!</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	<sd>[With continuing disinterest and an air of skepticism.]</sd> Or it's just the celestial lights. We've been down this road before, <char ref="Zuko">Prince Zuko</char>. <sd>[He looks at the tile in his hand, depicting the symbol of airbending.]</sd> I don't want you to get too excited over nothing. <sd>[He places it on a tile carrying the symbol of firebending and gestures toward the open place at the other side of the table while continuing in a relaxed voice.]</sd> Please, sit. Why don't you enjoy a cup of calming Jasmine tea?</sp>
+<sp><speaker ref="Zuko" >Zuko</speaker>	<sd>[Furiously, still facing Iroh.]</sd> I don't need any calming tea! I need to capture the <char ref="Aang">Avatar</char>! <char ref="Helms">Helmsman</char>, head a course for the light!</sp>
+<sd>Zuko points in the direction of where the light once was. Iroh calmly continues with his game, placing another tile bearing the airbending symbol on the previous one. As he does, a gust of wind washes over him, shaking his tiles.</sd></scene>
+
+        </body>
+    </transcript>
+</atla>

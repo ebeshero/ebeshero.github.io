@@ -1,0 +1,69 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="../explain.css" />
+      <title>XPath Exercise 2 (TE)</title>
+   </head>
+
+
+
+   <body>
+      <!--#include virtual="top.html" -->
+      <h1><span class="banner">XPath Exercise 2</span></h1>
+      <p>Work with the same XML document you investigated in <a href="../tutorials/XPathExercise1-TE.html">XPath Exercise 1</a>: <a href="si-2020-10.xml"
+            >si-2020-10.xml</a>. (This is the file containing a Site Index of Named Entities in the Digital Mitford Archive). Open
+         the file in oXygen (and again, don’t be concerned about the schema warnings on the file). 
+         Work with the XPath Window set to version 3.1. Respond to the XPath
+         questions below in a text or markdown file, and <a href="https://canvas.psu.edu">upload to Canvas</a>
+         for this assignment when you’re finished. (Please use an attachment! If you paste your
+         answer into the text box, canvas may munch the code formatting.) Some of these tasks are
+         thought-provoking, and even difficult. If you get stuck, do the best you can, and if you
+         can’t get a working answer, give the answers you tried and explain where they failed to get
+         the results you wanted. Sometimes doing that will help you figure out what’s wrong, and
+         even when it doesn’t, it will help us identify the difficult moments. These tasks involve
+         the use of path expressions and predicates, as well as the XPath function,
+            <code>count()</code>, and there may be more than one possible answer. Consult our
+         introductory guide <cite class="sub"><a href="explainXPath.html">Follow the
+            XPath!</a></cite> for help with constructing your expressions.</p>
+      <p>With the Site Index XML file open in oXygen and using the XPath 3.1 browser window in
+         oXygen, construct XPath expressions that will do the following. <strong>Be sure to give the
+            XPath expression you used in your answer, and don’t just report your results.</strong>
+         This way, if the answer is incorrect, we can help explain what went wrong. </p>
+      <hr/>
+      <p>When representing historical people in this document, we have worked on encoding their occupations in a <code>&lt;occupation&gt;</code> element, and we defined a limited set of <code>@type</code> and <code>@subtype</code> attribute values to help associate people with related work. The following questions explore with XPath what we can learn from our occupation markup:</p>
+            <ol>
+               <li>What XPath returns all the values of the <code>@type</code> attribute on the <code>&lt;occupation&gt;</code> elements?</li>
+               <li>Let's see if we can read that list of occupation <code>@type</code> values without duplicates. Apply the <code>distinct-values()</code> function to your XPath, and record your expression.</li>
+               <li>Now let’s chain two functions together! How can you return a <code>count()</code> of those <code>distinct-values()</code>? Record your XPath expression.</li>
+               <li>We can write XPath to identify people (pull records of <code>&lt;person&gt;</code> elements) based on their nested <code>&lt;occupation&gt;</code> elements and the attributes marked on those elements. You will need to write XPath expressions with predicates, and sometimes <em>nested</em> predicates to answer the following questions:
+                  <ol>
+                     <li>Let’s first find all the occupations marked with the attribute name-value pair: <code>type="artist"</code>. Write an XPath expression that returns all the <code>&lt;occupation type="artist"&gt;.</code></li>
+                     <li>Now, let’s find the full listings of the artists themselves: How would you return the <code>&lt;person&gt;</code> elements that contain nested <code>&lt;occupation type="artist"&gt;</code> markup? </li>
+                     <li>Who are the women artists listed in our site index? The <code>@sex</code> attribute on the <code>&lt;person&gt;</code> records <code>"m"</code>, <code>"f"</code>, or <code>"u"</code> recording conventional gender associations of the nineteenth century for <q>male</q>, <q>female</q>, or <q>undetermined</q>. Write an XPath expression that returns <code>&lt;person&gt;</code> elements when the <code>@sex</code> value is <code>"f"</code> and the nested <code>&lt;occupation&gt;</code> is the <code>@type</code> value of "artist".</li>
+                     <li>The <code>@subtype</code> attribute on the <code>&lt;occupation&gt;</code> element holds more specific occupation information. Write an XPath expression that finds all of the <code>&lt;person&gt;</code> elements with an occupation <code>@subtype</code> of "engraver".</li>
+                    <li>Study how the birth and death dates are stored in the person entries. Sometimes when the specific birth or death date is unknown, we have simply encoded a year value. Build on your previous XPath expression to locate the one person in the site index who was an engraver born in the year 1787. Who was it?</li>
+                     <li>What XPath would return the birth dates of all the persons with occupation <code>@subtype</code> of "engraver" in the file?</li>
+                     <li>Use the simple map <code>!</code> operator to return the string value of the birth dates you located. Now, send all those dates through the XPath <code>sort()</code> function to sort them from earliest to latest. And let's add one more function to the chain: What happens when you add <code>min()</code> to the end? What is the earliest year in which an engraver listed in our file was born?</li>
+                  </ol>
+               </li>
+               <li>Explain why the following two XPath expressions return different results. Run each XPath expression, review the results, and explain what you think each expression is returning.
+                  <ul><li><code>//person/occupation[1]</code></li>
+                     <li><code>(//person/occupation)[1]</code></li>
+                  </ul>
+               
+               </li>
+            </ol>
+            
+             
+       
+   </body>
+
+
+
+
+</html>

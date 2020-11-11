@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atla>
+    <transcript>
+        <head>
+            <episode n="01">The Avatar State</episode>
+            <book n="2">Earth</book>
+            <source link="https://avatar.fandom.com/wiki/Transcript:The_Avatar_State"/>
+        </head>
+        
+            <charlist>
+                <charList type="recurring" id="Zuko">Zuko</charList>
+                <charList type="recurring" id="Iroh">Iroh</charList>
+            </charlist>
+            <body>
+                <scene n="1">
+<sd>The scene changes to a riverside. The shadowy reflections of two figures on the run can be seen in the water. Cuts to view of the river bank and the area nearby as Zuko and Iroh run frantically. Cuts to riverbank as the two stop and fall to the ground, catching their breath.</sd>
+<sp><speaker ref="Iroh">Iroh</speaker>	I think we're safe here.</sp>
+<sd>Cuts to shot from Zuko's perspective as he pulls out a small dagger. Cuts to close-up of Zuko holding the dagger, its blade reflecting the sunlight. Cuts briefly to Iroh, who closes his eyes, seemingly aware of his nephew's actions. He casts a look at Zuko, who holds the knife under his ponytail. Cuts to close-up of his ponytail, as he slices it off with the knife. He holds it in his hand and looks at it for a moment before passing the knife to Iroh, who cuts off his topknot. Cuts to Zuko's hand, as he releases his ponytail. Cuts to the surface of the river, as the two topknots are released and float down the river. The camera zooms out to where Zuko and Iroh stand quietly on the bank of the river.</sd></scene>
+            </body>
+        </transcript>
+</atla>

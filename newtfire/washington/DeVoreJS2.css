@@ -1,0 +1,13 @@
+span.persName.on{color:green}
+span.date.on{color:purple}
+span.USmilitary.on{color:brown}
+span.city.on{color:navy}
+
+
+div{
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}

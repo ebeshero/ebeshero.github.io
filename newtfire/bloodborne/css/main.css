@@ -1,0 +1,279 @@
+/*----------------- MAIN -----------------*/
+
+/* Header/logo Title */
+.header {
+	text-align: right;
+	background-color: gray;
+	margin: 0 auto;
+	border-bottom: 1em solid #333;
+}
+
+img.header-img {
+	width: 100%;
+	height: 20em;
+	border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
+}
+
+h2 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
+}
+
+p {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
+}
+
+/* Body */
+body{
+    background-image: url("../images/backgroundIMG.jpg");
+	margin: 0;
+	height: 100%; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Navbar */
+
+ul#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+li.navButton {
+  float: left;
+  width: 20%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+.active {
+
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 100%;
+  background-color: white;
+  padding: 20px;
+}
+
+.linkImg {
+	background-color: #333;
+    width: 100%;
+}
+
+.linkImg:hover {
+	opacity: 0.9;
+}
+/*----------------- INDEX -----------------*/
+
+/* Main text */
+.main-index {
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  width: 60%;
+}
+
+.main-index h1 {
+	text-align: center;
+}
+
+/* Image link container */
+.flex-container-index {
+  display: flex;
+  background-color: #333;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flex-container-index > div {
+  background-color: #f1f1f1;
+  color: black;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* Image links */
+img.aboutLink {
+	height:100%;
+	width:100%;
+	display: inline-block;
+}
+img.resultsLink {
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+}
+
+/*----------------- ABOUT GAME -----------------*/
+ 
+ #left {
+	float: left;
+	display: flex;
+	margin: auto;
+	width: 50%;
+	height: 50%;
+	padding: 1em;
+ }
+ #right {
+	float: right;
+	display: flex;
+	margin: auto;
+	width: 50%;
+	height: 50%;
+	padding: 1em;
+ }
+ 
+/*----------------- TEAM -----------------*/
+
+.teamContainer {
+	background-color: #333;
+	text-align: center;
+	height: 100%;
+	padding: 2em;
+	border-radius: 25px;
+}
+.team {
+	background-color: white;
+	width: 33%;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 32em;
+	float: left;
+}
+.team:hover {
+	background-color: #f1f1f1;
+	border: solid;
+}
+img.pictureLink {
+	height:100%;
+	width:100%;
+	display: inline-block;
+}
+
+/*----------------- MAP -----------------*/
+
+.mapContainer {
+	display: flex;
+	background-color: #333;
+	justify-content: center;
+	flex-direction: row;
+	border-radius: 25px;
+	margin-left: 2em;
+	margin-right: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-bottom: 2em;
+}
+.iFrameContainer {
+	background-color: white;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	padding: 1em;
+	
+}
+
+
+/*----------------- XSLT HTML -----------------*/
+
+.dataDataContainer {
+	display: flex;
+	background-color: #333;
+	justify-content: center;
+	flex-direction: row;
+	border-radius: 25px;
+	margin-left: 2em;
+	margin-right: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-bottom: 2em;
+}
+.d {
+	background-color: #f1f1f1;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	padding-left: 1em;
+	padding-right: 1em;
+	float: left;
+}
+
+.loreType {
+	text-align: center;
+	font-size: 2em; 
+	color: white;
+	padding: .1em;
+	background-color: #333;
+	width:100%;	
+}
+
+.dataLoc{
+	text-align: center;
+	font-size: 4em; 
+	background-color: #f1f1f1;
+}
+
+.dataCont{
+	background-color: #333;
+	height: 100%;
+	padding: 1em;
+	margin-bottom: 1em;
+	display: flex;
+}
+
+.data{
+	background-color: white;
+	width: 33%;
+	padding-left: 1em;
+	padding-right: 1em;
+	float: left;
+}
+
+/*----------------- TSV -----------------*/
+
+.tsvImage {
+	display: flex;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?xml-model href="../ODD/out/GeoWash.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>To all County Lieutenants in the Northern District</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Written By Greoge Washington</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>From the Library of Congress</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+       <p> <location><settlement> Mount Vernon,</settlement></location> <date>August 2, 1755.</date></p>
+           <p> Sir: I intend myself the honour of waitg. upon your County, in order to exercise the Militia; and
+            shou'd be glad if you wou'd appoint your Officer's to meet me at the Court Ho., or some other
+            convenient place with a Firelock, Ammunition. on the of <date>September</date> next, and the Militia properly
+            accoutre'd, the day following. I am Sir, etc.</p>
+            <p><orgName type="#military">Fairfax Officers</orgName> <date>31st 1st.</date>
+            <orgName type="#USmilitary">Militia Prince Wm</orgName><date> 4 5 </date>
+            <location><settlement>Culpeper</settlement></location><date> 8 9 </date>
+            <location><settlement>Stafford</settlement></location> <date>12 13</date> 
+            <location><settlement>King George</settlement></location> <date>15 16</date> 
+            <location><settlement>Westmoreland</settlement></location> <date> 19 20 </date>
+            <location><settlement>Richmond</settlement></location> <date>22 23</date> 
+            <location><settlement>Northumberland</settlement></location> <date>26 27 </date>
+            <location><settlement>Lancaster</settlement></location> <date>29 30 September</date> </p>
+      </body>
+  </text>
+</TEI>

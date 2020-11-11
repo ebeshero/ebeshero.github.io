@@ -1,0 +1,132 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   
+   	
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="explain.css" />
+      <title>SVG Exercise 2 (CDV)</title>
+   </head>
+   
+   
+   
+   <body>
+      <!--#include virtual="top.html" -->
+      	
+      	
+      <h1><span class="banner">SVG Exercise 2: Plotting a Timeline Infographic from the Banksy Project</span></h1>
+
+      <p>In this exercise, we will write XQuery to output SVG in the form of a timeline infographic, working with the Banksy project files. Your SVG timeline might look something like ours: <a href="banksyTimeline.svg">something like this</a> (with the colors, text positioning, fonts, and styling up to you). Our timeline plots the range of years in which Banksy has been known to be producing artwork, using the area of geometric shapes (circles) to indicate which years seem to feature the most intensive activity based on the Banksy XML database. We have also plotted in side-by-side aqua and lavender bars the relative proportion of spray-paint to canvas media productions by Banksy for each  year. (Our SVG should really include a legend documenting this shape and color-coded information, and we encourage you to create one on your own graph as you work on this exercise.) </p> 
+      <iframe src="banksyTimeline.svg" height="150" width="500"></iframe>
+      
+      <p>You should work in <a href="http://newtfire.org:8338/">our newtFire eXist-db</a> to complete this exercise, since it is easier to view SVG <q>live</q> as you are constructing it in its Direct Output view. Start an XQuery with the following <dfn>global variable</dfn> defining the location of our banksy collection: </p>
+         <pre>declare variable $banksyColl := collection('/db/Assignments/banksyForSVG/');</pre>
+    <p>Open one or two of the files in the collection in eXist-db in order to familiarize yourself with its contents. All of the information we will be working with for this infographic is stored in the <code>sourceDesc</code> element. You may want to write some more global variables to help familiarize yourself with how to find the title, medium, and date information coded in the collection. The structure of our work in XQuery to generate an SVG file will require us to start with global variables, and then work with FLWOR statements when we begin encoding the SVG document.       
+          .</p>
+      <h3>Goals</h3>
+      <p>Our tasks are:</p> 
+        <ul> <li>To plot in SVG a line that represents the earliest to the latest year in which Banksy was active.</li> 
+           <li>To plot at regular intervals along that line an SVG circle marking each year, and an SVG text elements alongside the circle to label the year, (and, if you like having this information handy, to output a string-joined list of the year’s artwork titles).</li>  
+        <li>To alter the radius of the circle based on the count of the number of Banksy artworks produced in a given year, so we see circles of varying sizes.</li>
+           <li>To output some rectangles and text labels inside the interval for each year that indicate the proportion of spray-painted graffiti to canvas artworks in that year.</li>
+        </ul>
+      <h3>Structuring the Code</h3>
+      <p>To help get you started, here is how we are organizing our code. We will start by defining a series of global variables that pull year values from the Banksy collection, converting those years to integers, and make some calculations. We declare a global variable to hold an SVG file, and then we begin writing SVG. The structure is something like this: </p>
+      <pre>
+  declare variable $banksyColl := collection('/db/Assignments/banksyForSVG/');
+ (: declare more global variables to pull data from the Banks collection. :)
+  declare variable $timelineSpacer := 100;
+ declare variable $ThisFileContent := 
+&lt;svg&gt;
+   &lt;g&gt;
+      &lt;line x1="??" y1="??" x2="??" y2="??" style="??;??;"/&gt;  
+      
+         {
+         &lt;!--ebb: FLWOR statements will go here when we are ready to make a for-loop over each year value one by one, inside a pair of curly braces--&gt;
+         }
+      
+   &lt;/g&gt;
+&lt;/svg&gt;
+      </pre>
+      <p>Notice that unlike FLWOR statements, global variables are always followed by a semicolon <code>;</code>.</p>
+      <h3>Plotting the timeline</h3>
+      <p>In plotting a vertical line that runs from top to bottom in chronological order, we can take advantage of the y-coordinate space that increases as we move <em>down</em> the screen with SVG. (You may, if you like, opt to plot your timeline horizontally instead, if you prefer to think of time scrolling from left to right.) First of all, we need to know how long our line should be. To measure it, remember that we want to mark a small set of years separated from each other by a regular interval (large enough to give us room to plot some information). We need to write variables to determine how many years we need to plot, and then separate them by regular space. We could do this by hand, and pound this out point by point, but since the Banksy collection will certainly change with new XML added as Banksy produces more work, it would be better to write code that searches for the <strong>maximum</strong> and <strong>minimum</strong> year represented in the collection at any given time. (That means you could run your XQuery whenever the XML collection is updated and easily update your infographic with new data.)</p> <p>For this exercise we are <em>only</em> working with year data, you should use the <code>tokenize()</code> function and isolate the portion of the ISO-formatted date you need (some files have complex yyyy-mm-dd dates and some only yyyy, but the yyyy portion will always be the first piece or the only piece, so this should work). Isolate the years. Then you should to use the XPath <code>min()</code> and <code>max()</code> functions to define variables identifying the earliest and latest years in our series. </p>
+      <p>How will you determine the length of the line? Define variables to determine the number of years to plot (a simple subtraction). Try plotting the line just like that and decide for yourself how much to expand it. In our plot, we defined a  global variable just for spacing, and it contains the number we use to multiply the length of the line to stretch it out. We set it to 100, but you could use any value you like.</p>
+         <p>Note: An XQuery variable can hold the results of a simple arithmetic calculation. The operators <code>+</code>, <code>-</code>, <code>*</code>, and <code>div</code> are used for addition, subtraction, multiplication, and division. We can’t use a forward slash for division because that has an XPath meaning.) At some point in this process, you will need to convert the year strings into integers in order to do basic calculations. In XQuery, you must do this by wrapping <code>xs:integer()</code> around your code holding a year to make sure it is recognized as an integer datatype.</p>
+      <p>Now that you have defined the variables you need to measure the line, we can begin plotting SVG elements! Think about how to plot a line in SVG, and which variables you have defined that will help you plot the start of the line at x1 and y1 and the end of it at x2 and y2. Remember to use curly braces <code>{ }</code> to activate an XQuery variable to fill SVG attributes values. </p>
+      <h4>Viewing your output</h4>
+      <p>You should be able to plot the timeline now! Run your results with the <q>Eval</q> button, and view them as <q>Adaptive Output</q> in the results window to look at your code. You should see SVG generated with its namespace in the root node, and your should see a simple SVG file containing a line element. You can view the SVG as a graphic in XQuery by toggling the <q>XML Output</q> option to <q>Direct Output</q>, but you will probably need to scroll to see you entire line. That is because we need to set the width and height attributes on our SVG and set up the long vertical line to be viewable in a browser window on scrolling down. </p>
+
+      <h4>Setting the <code>viewport</code> and shifting things with <code>transform="translate(x, y)"</code> so you can see the full line:</h4>
+      <p>To make your long line visible, you want to estimate something wider than its widest x value and something a little longer than its largest y value so that you program a viewable area for your SVG. When generating SVG with calculated values as we are doing, this can be tricky, so we usually output our code first and read its maximum values before plugging in what is known as <dfn>the viewport</dfn>. To create a viewport, you need to add <code>@height</code> and <code>@width</code> attributes to your <code>&lt;svg&gt;</code> element. We did this in our SVG timeline by using raw numbers without units, estimating a bit beyond our largest y value and our widest x value, thinking about how wide we will eventually want to make our file.</p>
+      <p>We also decided to shift our SVG over a little bit so that if we use <code>0, 0</code> coordinates, the timeline won’t be flush against the top and side of the screen. To do this, we work with the <code>&lt;g&gt;</code> element, which bundles the SVG elements into a group. Within the viewport we have defined on the <code>&lt;svg&gt;</code> element, we shift the <code>&lt;g&gt;</code> to adjust the x and y values of the plotted elements inside over by x units and up or down by y units. Here is how we did it, but you may decide you would like to position your plot a little differently:</p>
+      <pre>
+  <code>&lt;svg width="2000" height="3000"&gt;</code>
+   <code>&lt;g transform="translate(30, 30)"&gt;</code>
+          &lt;line x1="??" y1="??" x2="??" y2="??" style="??;??;"/&gt;  
+          
+         {
+         &lt;!--ebb: FLWOR statements will go here, inside a pair of curly braces--&gt;
+         }      
+   &lt;/g&gt; 
+&lt;/svg&gt;      
+      </pre>
+      <p>You have lots of options for scaling here, and we encourage you to experiment with various ways to shrink, expand, rotate, or skew your timeline. Here are some excellent resources on the viewbox and transform and scaling properties in SVG:</p>
+      <ul>
+         <li><a href="https://sarasoueidan.com/blog/svg-coordinate-systems/">Understanding SVG coordinate systems and transformations: the viewport, viewBox, and @preserveAspectRatio</a></li>
+         <li><a href="https://sarasoueidan.com/blog/svg-transformations/">Understanding SVG coordinate systems and transformations: the @transform attribute (translating, rotating, and more)</a></li>
+      </ul>
+      <p>After browsing these pages, see if you can shrink your timeline a little or alter its angle on the screen!</p>
+
+      <h3>Marking the years on the timeline</h3>
+      <p>We want to see years marked on our timeline, so we need to mark these at those regular 365 day intervals aross our line. You could do this by hand, but there is a better way that we will show you here. To set a series of marks along a line at regular intervals, you need to break a number into regular units. This is a special application of the <q>for loop</q>, to generate a series of integers within the span of years represented in our timeline. In your global variables, you should have a calculation of the number of years in your timeline, and this is what we want to work with to create regular hashmarks for each year. The syntax for the <q>for loop</q> that breaks the number 10 down into the integers that lead up to it (0, 1, 2, 3, etc up to 10), is this:  </p>
+<pre><code>for $i in (0 to 10)</code></pre>
+      Here, $i is a range variable that we can use to loop over the numbers 0 to 10 in sequence. That is really handy for us with our span of a number of years, and you can use your XQuery variable for the measure of years in place of the number 10 in our model sequence above. 
+      
+      <ul><li>To set the circles (or create hashmarks, or however you wish to mark years with shapes) along the line, you want to work with that range variable so that on each cycle of the loop, it will plot a new regularly spaced line from the zero starting point of the line to the end point. (You only need to code one SVG element in the return of your <q>for loop</q> for XQuery to work its magic.) You know that the dates are spaced apart by a spacing factor we defined, so you will want to multiply <code>$i</code> by that factor as well to generate y positions for each hash mark.</li> 
+         <li>Define a variable inside your <q>for loop</q> so that you can output the text of the date next to your hash mark. <strong>Hint:</strong> You can do this by adding the minimum year for the collection to <code>$i</code>.</li>
+         <li>You want to label your years, so you will want to return an SVG circle element together with a <code>text</code> element positioned nearby in a legible spot. You will notice that XQuery generates an error when you try to output multiple SVG elements in a return statement! That is because XQuery requires you to output just <strong>one thing</strong> in a FLWOR <code>return</code>, and you are giving it multiple things to output. With SVG you deal with this by wrapping all the elements together in an SVG <code>&lt;g&gt;</code> element (which literally creates a <em>single group</em> of elements). Any positioning values you set in the root <code>&lt;SVG&gt;</code> or ancestor <code>&lt;g&gt;</code> elements will be inherited by this new <code>&lt;g&gt;</code> you place here.</li>            
+            <li>You want to experiment a bit to figure out distances that make sense and look good to you for plotting hashmarks and text labels. (How many pixels to the left or right of your hashmark should the text sit?)</li>
+      </ul>
+
+      <h3>Plotting proportions of Banksy artwork for each year</h3>
+      <p>Our last SVG drawing tasks involve setting a variable size on the circles marking the years, so we can see at a glance which years feature the most artwork in the collection. You can choose the plot the relative quantities of artwork in other ways, as you wish, perhaps with rectangles or other SVG shapes, and perhaps centered on the line or set off to the right or left. However you choose to plot this, you should also output a text label to indicate the actual number of letters in the collection written in a given year. </p>
+      <p>You should have created a variable in the previous step that would automatically generate the four digit year values to label each hashmark. Work with that variable now, together with a helpful global variable we defined for you at the start of this assignment, so that you:</p>
+         <ul>
+            <li>Define a variable that looks up <em>the XML files in the Banksy collection whose date matches the four-digit date at each instance of <code>$i</code></em>, This should locate all of the letters in a given year.</li>
+            <li>Define another variable holding the <code>count()</code> of that artwork. We will need this to plot our circles (or rectangles or other shapes as you wish)</li>
+            <li>Return your SVG shape for a year, to be output and spaced on the timeline regularly with every turn of the <code>for loop</code>. Experiment with setting its dimensions, its fill, and style. Add an SVG text element to label each of these with a literal count of the artwork in the year indicated at <code>$i</code>.</li>
+            <li>Finally, see if you can output some rectangles associated with each year to show the proportion of Banksy work by medium. In the collection there are two kinds of media encoded, either <code>"spray_paint"</code> or <code>"canvas"</code>. </li>
+         </ul>
+<h3>What to do with the output, and what to submit on Courseweb: </h3>
+      <p>Use Eval to run your code and view your SVG. Copy your XQuery into a text file, save it following our standard homework naming conventions. You will need to add an SVG namespace to it for this to be viewed in a web browser! Add it to the SVG root element after you have generated the file (trying to do it in XQuery is complicated; we’ll explain if you ask): <code>&lt;svg xmlns="http://www.w3.org/2000/svg" width="2000" height="3000"&gt;</code>  
+         Then upload it to Courseweb with a copy of your XQuery file for this exercise. </p>
+
+    <h3>Saving your XQuery and your Output files in eXist, and accessing them on the web</h3>  
+      <!--2016-03-20 ebb: ADD TO OUR XQUERY TUTORIAL: -->
+   
+      <p>To save your output file in your new directory, you will need to do define <em>one more global variable</em>, the biggest of them all: a variable that contains the entire SVG document you coded within your eXist script. You will declare a variable whose value equals <strong>the entire contents</strong> of the <code>&lt;svg&gt;</code> element, and you can do that with the handy semicolon that always concludes a global variable in XQuery:</p>
+      <pre>
+<code>declare variable $ThisFileContent := </code>
+&lt;svg width="2000" height="3000"&gt;
+&lt;g transform="translate(30, 30)"&gt;
+          &lt;line x1="??" y1="??" x2="??" y2="??" style="??;??;"/&gt;  
+          
+         {
+         &lt;!--ebb: FLWOR statements here, inside a pair of curly braces--&gt;
+         }      
+   &lt;/g&gt; 
+&lt;/svg&gt; <code>;</code>
+
+<code>let $filename := "timeline.svg"
+let $doc-db-uri := xmldb:store("/db/yourFolder", $filename, $ThisFileContent)
+return $doc-db-uri</code>
+(: Output at http://newtfire.org:8338/exist/rest/db/yourFolder/timeline.svg :)     
+      </pre>
+<p>This works by creating a variable that actually stores an entire output file, and then, with one last FLWOR, encodes it with a special function, <code>xmldb:store()</code>, which takes three arguments to give it a filepath in eXist, a filename that you can define, and finally the file content that you encoded in SVG. </p>    
+      	
+   </body>
+
+</html>

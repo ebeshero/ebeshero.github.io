@@ -1,0 +1,142 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   
+   	
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="explain.css" />
+      <title>XSLT Exercise 3</title>
+   </head>
+   
+   
+   
+   <body>
+      <!--#include virtual="top.html" -->
+      		
+      			
+      <h1><span class="banner">XSLT Exercise 3</span></h1>
+    <section id="overview">  <h3>Overview of the Assignment</h3>
+       <p>The <a href="http://recipe.newtfire.org/">Fall 2020 Historic Recipes project team</a> is coding recipes to investigate spice trade ingredients, and their code gives us a good opportunity to experiment with pulling ingredient data with XSLT to output in the format of an HTML table. 
+This exercise will help orient you to the code for an HTML table to organize project data.</p>
+       <ul><li>Here is the <strong>source XML file</strong>, a recipe for Phyllo Bundles: <a href="PhylloBundles.xml">PhylloBundles.xml</a>. You should right-click on this link, download the file, and open it in &lt;oXygen/&gt;. <span class="smaller">Don’t be concerned about the red schema warning on the file: you are just missing the Relax NG schema. If you want the file with its schema, you can pull them in locally from the digitProjectDesign-Hub where it is in <a href="https://github.com/newtfire/digitProjectDesign-Hub/tree/master/Class-Examples/XSLT/historicRecipes">Class Examples > XSLT > historicRecipes</a>.</span> </li>
+          <li>Here is a view of our unstyled target output in HTML: <a href="recipeTable.html">recipeTable.html</a>. (You may wish to add some CSS styling to improve the appearance of your own output.)</li> 
+          <li>Here is <a href="https://github.com/newtfire/digitProjectDesign-Hub/blob/master/Class-Examples/XSLT/historicRecipes/recipeTable.html">a view of the HTML code for our target output</a> as posted on the digitProjectDesign-Hub.</li>
+       </ul>
+
+<p>Open the XML file in &lt;oXygen/&gt; and study its code, and take some notes about where you can find the information destined for the target output in HTML. While we think most of the XPath involved will be pretty straightforward, there be at least one challenging step: to try to locate with XPath the steps in the recipe that mention a given ingredient.</p>
+       <p>It may also help to orient yourself to HTML table coding. HTML tables are organized in rows, using <code>&lt;tr&gt;</code> elements, which contain <code>&lt;td&gt;</code> elements (which means <q>table data</q>). You control the columns in an HTML table by the setting the <code>&lt;td&gt;</code> cells in an ordered sequence. Inside a <code>&lt;tr&gt;</code>, the first <code>&lt;td&gt;</code> is set in column 1, the second <code>&lt;td&gt;</code> in column 2, the third in column 3, and so on. The top row conventionally contains headings in <code>&lt;th&gt;</code> cells, which HTML will emphasize by default. Here is a simple HTML table (styled following our newtfire CSS, in which I’ve outlined the borders and given a background color to the table heading cells). Next to it is a view of the HTML code that creates the table structure: </p>
+       
+<div class="codeContainFlex">
+   <table>
+          <tr>
+             <th>Heading 1</th>
+             <th>Heading 2</th>
+             <th>Heading 3</th>
+          </tr>
+          <tr>
+             <td>Row 1, cell 1</td>
+             <td>Row 1, cell 2</td>
+             <td>Row 1, cell 3</td>
+          </tr>
+          <tr>
+             <td>Row 2, cell 1</td>
+             <td>Row 2, cell 2</td>
+             <td>Row 2, cell 3</td>
+          </tr>
+       </table>
+      <pre>
+         &lt;table&gt;
+          &lt;tr&gt;
+             &lt;th&gt;Heading 1&lt;/th&gt;
+             &lt;th&gt;Heading 2&lt;/th&gt;
+             &lt;th&gt;Heading 3&lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+             &lt;td&gt;Row 1, cell 1&lt;/td&gt;
+             &lt;td&gt;Row 1, cell 2&lt;/td&gt;
+             &lt;td&gt;Row 1, cell 3&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+             &lt;td&gt;Row 2, cell 1&lt;/td&gt;
+             &lt;td&gt;Row 2, cell 2&lt;/td&gt;
+             &lt;td&gt;Row 2, cell 3&lt;/td&gt;
+          &lt;/tr&gt;
+       &lt;/table&gt;</pre>
+</div>
+
+       
+
+    </section>
+      <section id="preparing">
+         <h3>Before You Begin: Set up the XSLT Stylesheet to Output HTML</h3>	 
+         
+         <p>To ensure that the output will be in the XHTML namespace, we
+            need to add a default namespace declaration (in <span style="color: purple;">purple</span>
+            below). To output the required DOCTYPE declaration, we also need to set the
+            <code>&lt;xsl:output&gt;</code> element as a child of our root
+            <code>&lt;xsl:stylesheet&gt;</code> element (in <span style="color: #006400;"
+               >blue</span> below), and we needed to include an attribute there to omit the default XML declaration because if the XML line shows up in our XHTML output, it will not produce valid HTML with the w3C and might produce quirky problems with rendering in various web browsers. 
+            So, our modified stylesheet template and xsl:output line is this, and you should copy this into your stylesheet:</p>    
+         <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+         &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0"
+    <span style="color:purple;">xmlns="http://www.w3.org/1999/xhtml"</span>&gt;
+    
+   <span style="color:blue;"> &lt;xsl:output method="xhtml" encoding="utf-8" doctype-system="about:legacy-compat"
+        omit-xml-declaration="yes"/&gt;</span>
+    
+    &lt;/xsl:stylesheet&gt;</pre>        
+      </section>
+     <section id="guidance">
+        <h3>Guide to writing the XSLT</h3>
+      <p>Our XSLT transformation has multiple template rules (<code>xsl:template</code> elements).</p>
+      <ol>
+         <li>As usual when preparing HTML from XML, we set a template rule for the <strong>document node</strong> (<code>&lt;xsl:template
+            match="/"&gt;</code>), in which we create the basic HTML file structure: the
+            <code>&lt;html&gt;</code> element, <code>&lt;head&gt;</code> and its contents,
+            and <code>&lt;body&gt;</code>—anything structure that appears just once in the HTML document (in a one-to-one relationship with the root node). 
+            <ol><li>Inside the <code>&lt;body&gt;</code> element that
+               we’re creating, we use <code>&lt;xsl:apply-templates&gt;</code> and use the <code>@select</code> attribute to identify an element on the tree that we want to process at this point. Here we use a literal XPath expression as the value of the <code>@select</code> attribute. To start building the first HTML table, we set up the outermost <code>&lt;table&gt;</code> element here and set an <code>xsl:apply-templates</code> with <code>@select</code> to direct XSLT to the part of the XML document holding the ingredients. We also added the special row (<code>&lt;tr&gt;</code>) of the table containing the table headings, using the special <code>th</code> elements: holding the text: <q>Ingredient id</q>,	<q>Type</q>,	<q>Quantity</q>,	<q>Unit</q>,	<q>Step(s) used in recipe</q>.</li>
+               <li>In the same template matching on the document node, we also wrote more HTML outer-level structural elements to hold other parts of the recipe, and used <code>xsl:apply-templates</code> with <code>@select</code> to process the appropriate portion of the source XML file for the equipment information and the recipe instructions. We opted to output the equipment information as an unordered list with the HTML <code>ul</code> element, and to number the instructions steps, we output an HTML ordered list with <code>ol</code>.</li>
+            </ol>
+         </li>
+         <li>We created a new <code>xsl:template</code> elements to match on the <code>&lt;item&gt;</code> elements inside the Ingredients list in the source XML. Inside that template rule, we set a table row to contain table data cells holding the output we want, to hold the Ingredient xml:id, its type, quantity needed, unit, and finally (the most challenging part): the corresponding steps that reference it in the recipe instructions.
+         <ul>
+            <li>To do this last challenging part, think about how to retrieve the information you need. You want to set <code>xsl:apply-templates</code> to select the a step in the instructions list, so start by reaching for that from the point of view of the <em>current context node</em> (which is the value of your <code>xsl:template @match</code> attribute). Step to the instructions list  (how do you get there from here?) </li>
+            <li>Now, think about what you want to find: a step number (how is that coded?). You don't want any step: you need to filter the steps by whether they contain the ingredient listed. How is that coded?</li>
+            <li>Construct an XPath expression that travels from where you are in the template rule, to isolate the step that holds mention of the ingredient, such that the <code>substring-after()</code> the <code>#</code> on the <code>@ptr</code> attribute value equals the <code>@xml:id</code> of the node you are currently processing. <strong>NOTE: </strong> To access the exact, specific node you are currently processing, you need a special XSLT function: <code>current()</code>. You can reference the <code>@xml:id</code> on the current item in the ingredients list like this: <code>current()/@xml:id</code>. <span class="smaller">You might want to just set this to check the <code>./@xml:id</code>, and not see any results because XSLT doesn't actually know which of all the ingredients list items to be checking. That is why we have the <code>current()</code> function, to identify the precise node being processed.</span>  </li>
+           
+         </ul>
+         </li>
+         <li>Finally, we created new <code>xsl:template</code> elements to match on the other kinds of items in the recipe: those in the Equipment list and those in the Instructions. And we set their contents to output HTML list items (<code>&lt;li&gt;</code>) to output their contents.</li>
+         <li>You could take this one step further, as we did, to write a template rule to process the ingredients references in the recipe, and wrap them in an HTML <code>&lt;span&gt;</code> element with a <code>@class</code> referencing the <em>type</em> of ingredient mentioned (which you can find with an XPath reaching the corresponding member of the ingredients list. If you write CSS over this file, you can use this to color code the ingredients by their type. (Read more about it <a href="explainHTMLSpanClass.html">on our short tutorial for using span and class for styling your HTML</a>.</li>
+         
+      </ol>
+     </section>
+      <section>
+     
+      <h3>Important</h3>
+      <ul>
+         <li>It is a good idea to run your transformation every time you write some new XSLT code so you can see what you are doing. You will be looking at your results in the Output window as you write and test your template rules each time you press the blue <q>Run-to-End</q> button. Eye-balling those results is not really enough because the Output window does not check for well-formedness or validation against a schema. Be sure to save those results, either by setting an output location in the appropriate place in the selection boxes, or by right-clicking on the output window and selecting <q>Save as</q>. <strong><em>Always, always</em> open the saved output file in &lt;oXygen/&gt; and check to make sure that it checks out as valid and well-formed.</strong> Your new output should open up as well-formed and valid HTML, with a green square in &lt;oXygen&gt;.</li>
+         
+         <li>If you don’t get
+            the results you expect and can’t figure out what you’re doing wrong, remember that you can post a query to our <a href="https://github.com/newtfire/digitProjectDesign-Hub/issues">digitProjectDesign-Hub Issues board</a>. You can’t just ask for the answer,
+            though; you need to describe what you tried, what you expected, what you got, and
+            what you think the problem is. You may also wish to practice the We often find, just as we’re preparing to post our
+            own queries to coding discussion boards, that having to write up a description
+            of the problem helps us think it through and solve it ourselves, and the technical term for this is <a href="https://rubberduckdebugging.com/">rubber duck debugging</a>. Beyond just being patient rubber ducks, though, we’re also
+            encouraging you to discuss the homework on the discussion boards because that’s also
+            helpful for the person who responds. Answering someone else’s
+            inquiry and troubleshooting someone else’s problem often helps us clarify matters for
+            ourselves!</li>
+         <li>When you complete this assignment, submit your XSLT file and your output HTML file to Canvas. You can bundle these in a zip file, following our usual homework file-naming conventions for the zip directory.</li>
+      </ul>
+      
+     </section>   				
+    
+   </body>
+   
+   
+   
+   
+</html>

@@ -1,0 +1,88 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="../explain.css" />
+      <title>XPath Exercise 1 (TE)</title>
+   </head>
+
+
+
+   <body>
+      <!--#include virtual="top.html" -->
+      <h1><span class="banner">XPath Exercise 1</span></h1>
+      <p>First of all, download the XML file I have linked here: <a href="si-2020-10.xml"
+            >si-2020-10.xml</a>. (This is a file containing a Site Index of Named Entities in the Digital Mitford Archive). Open
+         the file in oXygen (and don’t be concerned about the schema warnings on the file). 
+         Work with the XPath Window set to version 3.1. Respond to the XPath
+         questions below in a text or markdown file, and <a href="https://canvas.psu.edu">upload to Canvas</a>
+         for this assignment when you’re finished. (Please use an attachment! If you paste your
+         answer into the text box, canvas may munch the code formatting.) Some of these tasks are
+         thought-provoking, and even difficult. If you get stuck, do the best you can, and if you
+         can’t get a working answer, give the answers you tried and explain where they failed to get
+         the results you wanted. Sometimes doing that will help you figure out what’s wrong, and
+         even when it doesn’t, it will help us identify the difficult moments. These tasks involve
+         the use of path expressions and predicates, as well as the XPath function,
+            <code>count()</code>, and there may be more than one possible answer. Consult our
+         introductory guide <cite class="sub"><a href="explainXPath.html">Follow the
+            XPath!</a></cite> for help with constructing your expressions.</p>
+      <p>With the Site Index XML file open in oXygen and using the XPath 3.1 browser window in
+         oXygen, construct XPath expressions that will do the following. <strong>Be sure to give the
+            XPath expression you used in your answer, and don’t just report your results.</strong>
+         This way, if the answer is incorrect, we can help explain what went wrong. </p>
+      <ol>
+         <li>This Site Index file organizes lists of proper names of various kinds. Take a look at
+            the outline view of the document before you begin to familiarize yourself with the
+            structure of this file, and then work with XPath to answer the following: 
+            
+            
+          <ol>
+               <li>What XPath expression helps you to see all of the <code>&lt;div&gt;</code> elements in the document? (How many are there?)</li>
+
+             <li>Lists of persons are coded in <code>&lt;listPerson&gt;</code> elements. What XPath expression shows you all the <code>&lt;listPerson&gt;</code> elements in the document?</li>
+                 
+             <li>What XPath expression shows you which <code>&lt;div&gt;</code> elements contain child <code>&lt;listPerson&gt;</code> elements? (Use a predicate filter with square brackets <code>[ ]</code> to help you.) 
+                How many <code>&lt;div&gt;</code> elements contain <code>&lt;listPerson&gt;</code> elements inside?</li>
+             <li>How can you change your XPath expression to return <code>&lt;div&gt;</code> elements that contain <code>&lt;listPlace&gt;</code> elements inside?</li>
+             <li>Now, write an XPath to return all the <code>&lt;place&gt;</code> children of the <code>&lt;listPlace&gt;</code> elements. How many are there?</li>
+             <li>What is the difference between these two XPath expressions?
+                <pre><code>//place/placeName</code></pre>
+                <pre><code>//place//placeName</code></pre>
+                Enter the two and inspect the results. Why does the second expression return a larger number of results than the first?</li>
+            </ol>
+         </li>
+  
+         <li>When exploring a document with XPath, sometimes we are trying to find out what elements have a certain value or property.
+            If we want to return an element in a certain position without knowing its name, we can just designate any element with  <code>element()</code> or <code>*</code>.
+            So, for example, <code>//*</code> returns all 32,711 elements in this document. (Try it and see.) Using this information, answer the following:
+          <ol>
+             <li>What XPath shows you all of the immediate children (whatever they are) of <code>&lt;div&gt;</code> elements?</li>
+             <li>There is a list of animals in this document coded in <code>&lt;list sortKey="animals"&gt;</code>. How can you return all the child elements of this particular list to each of the animals? (How many are there?)</li>
+             <li>Write a single XPath expression that returns all the different elements that hold a <code>@sortKey</code> attribute. (Our answer uses a predicate filter <code>[ ]</code>.) </li>
+             
+          
+          </ol>
+         </li>
+         <li>This set of questions explores the <code>&lt;person&gt;</code> elements in the file.
+            <ol><li>First, write an XPath expression that returns all the <code>&lt;person&gt;</code> elements. How many are there? </li>
+               <li>Are all of the <code>&lt;person&gt;</code> elements coded with an <code>@sex</code> attribute? Use a predicate filter with <code>[ ]</code> to find out and record your expression here. How many results do you see? </li>
+               <li>Apply a <code>count()</code> function to your previous expressions to return just a number in the XPath window</li>
+               <li>XPath can work like a calculator: It can handle simple arithmetic operations like add, subtract, multiply (with an <code>*</code>) , and divide (with the word <code>div</code>). 
+                  Try writing an expression that returns the <code>count()</code> of person elements coded with <code>@sex</code> attributes divided by the <code>count()</code> of all the person elements. Multiply that by 100 to see a percentage: About what percentage of person elements are coded with <code>@sex</code> attributes in this document?
+               </li>
+               <li>Write an XPath expression to find the number of <code>&lt;person&gt;</code> elements coded as female with <code>@sex="f"</code>.</li>
+               <li>Use the <code>count()</code> function and division in XPath once again to find out the proportion of persons coded female among all the persons coded with <code>@sex</code> attributes.</li>
+            </ol>
+            
+         </li>
+      </ol>
+   </body>
+
+
+
+
+</html>

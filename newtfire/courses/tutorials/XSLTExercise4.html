@@ -1,0 +1,213 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="explain.css" />
+        <title>XSLT Exercise 4: Styling Skyrim</title>
+    </head>
+
+
+
+    <body>
+        <!--#include virtual="topAuthorDJB.html" -->
+        <h1><span class="banner">XSLT Exercise 4: Styling Skyrim</span></h1>
+        <section id="input_text">
+            <h3>The input text</h3>
+            <p>In this exercise, we work with an XML file originally coded by a Pitt student for a
+                project on the Skyrim legends based on the video game. The XML code is available at
+                    <a href="skyrim.xml">http://newtfire.org/courses/tutorials/skyrim.xml</a>. You
+                should right-click on this link, download the file, and open it in &lt;oXygen/&gt;.
+                (You don’t need the Relax NG schema, but if you’d like to look at it and associate
+                it with the file, it’s available at <a href="skyrim.rnc"
+                    >https://newtfire.org/courses/tutorials/skyrim.rnc</a>).</p>
+        </section>
+        <section id="xslt_root">
+            <h3>The usual housekeeping:</h3>
+            <p>Because this document is not in a namespace, we do not need the
+                    <code>@xpath-default-namespace</code> attribute, and the only thing we need to
+                add to &lt;oXygen&gt;’s default XSLT stylesheet template is the <code>@xmlns</code>
+                attribute pointing to the HTML namespace. We also add our usual
+                    <code>&lt;xsl:output&gt;</code> line that we use when producing HTML (for making
+                sure we produce valid HTML 5 in XHTML format). Here’s what we need:</p>
+            <pre>
+          &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:math="http://www.w3.org/2005/xpath-functions/math" exclude-result-prefixes="xs math"
+    <span style="color:blue;">xmlns="http://www.w3.org/1999/xhtml" version="3.0"</span>&gt;
+    <span style="color:purple;">&lt;xsl:output method="xhtml" encoding="utf-8" doctype-system="about:legacy-compat"
+        omit-xml-declaration="yes"/&gt;</span>
+            
+        </pre>
+        </section>
+        <section id="overview">
+            <h3>Overview of the assignment</h3>
+            <p>We will be preparing HTML reading view styled for the web, based on the original XML
+                document. We’re going to work with the <code>&lt;body&gt;</code> element,
+                concentrating on processing the in-line elements to style the text. You can use some
+                of the basic HTML in-line elements, like <code>&lt;em&gt;</code> for emphasis or
+                    <code>&lt;strong&gt;</code> for strong emphasis, but you’ll also want to use CSS
+                to set some elements to different colors or background colors or borders or fonts or
+                font sizes or font styles (e.g., italic) or font weights (e.g., bold) or text
+                decoration (e.g., underlining) or text transformation (e.g., convert to all upper
+                case) … well … anything else. We describe below how to do that.</p>
+            <p>There are six types of in-line elements in the input XML document:</p>
+            <ul>
+                <li><code>&lt;QuestEvent&gt;</code></li>
+                <li><code>&lt;QuestItem&gt;</code></li>
+                <li><code>&lt;character&gt;</code></li>
+                <li><code>&lt;epithet&gt;</code></li>
+                <li><code>&lt;faction&gt;</code></li>
+                <li><code>&lt;location&gt;</code></li>
+            </ul>
+            <p>Some are immediately inside a <code>&lt;paragraph&gt;</code> and some are inside
+                other elements that are inside paragraphs. You may not know at the outset which ones
+                can be inside which other ones, or how deeply they can nest. Happily, with XSLT,
+                unlike with many other programming languages, you don’t need to care about those
+                questions!</p>
+        </section>
+        <section id="processMixedContent">
+            <h3>How to process richly mixed content</h3>
+            <p>Prose paragraphs with in-line elements that might contain other in-line elements are
+                richly mixed content, with varied and unpredictable combinations of elements and
+                plain text. This is the problem that XSLT was designed to solve. With a traditional
+                procedural programming language, you’d have to write rules like <q>inside this
+                    paragraph, if there’s a <code>&lt;QuestEvent&gt;</code> do X, and, oh, by the
+                    way, check whether there’s a <code>&lt;QuestItem&gt;</code> or a
+                        <code>&lt;location&gt;</code> inside the <code>&lt;QuestEvent&gt;</code>,
+                    etc.</q> That is, most programming languages have to tell you what to look for
+                at every step. The elegance of XSLT when dealing with this type of data is that all
+                you have to say inside paragraphs and other elements is, <q>I’m not worried about
+                    what I'll find here; just process (apply templates to) all my children, whatever
+                    they might be.</q></p>
+            <p>The way to deal with mixed content in XSLT is to have a template rule for every
+                element and use it to output whatever HTML markup you want for that element and
+                then, inside that markup, to include a general
+                    <code>&lt;xsl:apply-templates/&gt;</code>, not specifying a <code>@select</code>
+                attribute. For example, if you want your <code>&lt;QuestEvent&gt;</code> to be
+                tagged with the HTML <code>&lt;strong&gt;</code> tags, which means <q>strong
+                    emphasis</q> and which is usually rendered in bold, you could have a template
+                rule like:</p>
+            <pre>&lt;xsl:template match="QuestEvent"&gt;
+  &lt;strong&gt;
+      &lt;xsl:apply-templates/&gt;
+  &lt;/strong&gt;
+&lt;/xsl:template&gt;</pre>
+            <p>You don’t know or care whether <code>&lt;QuestEvent&gt;</code> has any child nodes
+                or, if it does, what they are. Whatever they are, this rule tells the system to try
+                to process them, and as long as there’s a template rule for them, they’ll get taken
+                care of properly somewhere else in the stylesheet. If there are no child nodes, the
+                    <code>&lt;xsl:apply-templates/&gt;</code> will apply harmlessly (as there will
+                be nothing to process). As long as every element tells you to process its children,
+                you’ll work your way down through the hierarchy of the paragraph without having to
+                know which elements can contain which other elements or text nodes.</p>
+        </section>
+        <section id="select_att">
+            <h3>Taking stock: when to use <code>@select</code></h3>
+            <p>In the previous XSLT assignment, where you built HTML tables from XML-coded survey
+                data, you used <code>&lt;xsl:apply-templates select="…"/&gt;</code>, specifying
+                exactly what you wanted to process where. That makes sense when your input (those
+                    <code>&lt;fs&gt;</code> and <code>&lt;f&gt;</code> elements and their special
+                attributes) and your output (an HTML table) are very regular in structure. <em>Use
+                    the <code>@select</code> attribute when you know exactly what you’re looking for
+                    and where you want to put it.</em></p>
+            <p>In this assignment, on the other hand, you don’t know (and don’t need to know) the
+                order and nesting hierarchy of whatever <q>tossed salad</q> of elements and plain
+                text you might find inside a paragraph or its subelements. You just want to process
+                whatever comes up whenever it comes up. <code>&lt;xsl:apply-templates/&gt;</code>
+                without the <code>@select</code> attribute says <q>apply templates to whatever you
+                    find.</q>
+                <em>The upshot: Omit the <code>@select</code> attribute when you are processing lots
+                    of different mixed up alternatives and you do not need to rearrange them.</em>
+                (You can still treat them all differently because you’ll have different template
+                rules to <q>match</q> them, but when you assert that they should be processed, you
+                don’t have to know which ones they actually are.)</p>
+        </section>
+        <section id="stylingOutput">
+            <h3>Styling your output: HTML and CSS</h3>
+            <p>HTML provides a limited number of elements for styling in-line text, which you can
+                read about at <a href="http://www.w3schools.com/html/html_formatting.asp"
+                    >http://www.w3schools.com/html/html_formatting.asp</a>. You can use any of these
+                in your output, but note that presentational elements, the kind that describe how
+                text looks (e.g., <code>&lt;i&gt;</code> for <q>italic</q>), are generally regarded
+                as less useful than descriptive tags, which describe what text means (e.g.,
+                    <code>&lt;em&gt;</code> for <q>emphasis</q>). Both of the preceding are normally
+                rendered in italics in the browser, but the semantic tag is more consistent with the
+                spirit of XML than the presentational one.</p>
+            <p>The web would be a dull world if the only styling available were the handful of
+                presentational tags available in vanilla HTML. In addition to those options, there
+                are also ways to assign arbitrary style to a snippet of in-line text, changing fonts
+                or colors or other features in mid-stream. To do that:</p>
+            <ol>
+                <li><p>Before you read any further in this page, read our <a
+                            href="explainHTMLSpanClass.html">Using <code>&lt;span&gt;</code> and
+                                <code>@class</code> to style your HTML</a> page.</p></li>
+                <li><p>To use the strategies described at that page, create an XSLT template rule
+                        that transforms the element you want to style to an HTML
+                            <code>&lt;span&gt;</code> element with a <code>@class</code> attribute.
+                        For example, you might transform <code>&lt;faction
+                            ref="MythicDawn"&gt;assassins&lt;/faction&gt;</code> in the input XML to
+                            <code>&lt;span class="MythicDawn"&gt;assassins&lt;/span&gt;</code> in
+                        the output HTML. You can then specify CSS styling by reference to the
+                            <code>@class</code> attribute, as described in the page we link to
+                        above.</p>
+                    <ul>
+                        <li>Note that you can make your transformations very specific. For example,
+                            instead of setting all <code>&lt;faction&gt;</code> elements to the same
+                            HTML <code>@class</code>, you can create separate template rules to
+                            match on factions according to their attribute values. For example,
+                                <code>&lt;xsl:template match="faction[@ref='MythicDawn']"&gt;</code>
+                            is a normal XPath expression to match <code>&lt;faction&gt;</code>
+                            elements only if they have a <code>@ref</code> attribute with the value
+                                <q>MythicDawn</q>.</li>
+                        <li>If you really want to exercise your XPath skills, note that in the
+                            header some factions are described (with an <code>@alignment</code>
+                            attribute) as <q>evil</q>, <q>good</q>, or <q>neutral</q>. You can write
+                            a matching rule that will <dfn>dereference</dfn> the <code>@ref</code>
+                            attribute on, say, <code>&lt;faction
+                                ref="MythicDawn"&gt;assassins&lt;/faction&gt;</code>, look up
+                            whether this is an evil, good, or neutral faction, and set the
+                                <code>@class</code> value accordingly. You could make all good
+                            factions one color and all evil factions a different color, letting
+                            XPath look up the moral alignment of a faction for you. <strong>Note:
+                            </strong> This will require the XSLT <code>current()</code> function, to
+                            read a specific value from the source node at the time it is being
+                            processed.</li>
+                    </ul></li>
+                <li><p>Setting the <code>@class</code> attributes in the output HTML makes it
+                        possible to style the various <code>&lt;span&gt;</code> elements differently
+                        according to the value of those attributes, but you need to create a CSS
+                        stylesheet to do that. Create the stylesheet (just as you‘ve created CSS in
+                        the past), and specify how you want to style your <code>&lt;span&gt;</code>
+                        elements. Link the CSS stylesheet to the HTML you are outputting by creating
+                        the appropriate <code>&lt;link&gt;</code> element in your output HTML (you
+                        can remind yourself how to do that here <a
+                            href="http://dh.newtfire.org/explainCSS.html#link_CSS">in this section
+                            of our Intro to CSS</a>). You should set that <code>&lt;link&gt;</code>
+                        element in your XSLT so it is always output every time you update your
+                        code.</p></li>
+            </ol>
+        </section>
+        <section id="finishingUp">
+            <h3>When the smoke clears</h3>
+            <p>What you should produce, then, is:</p>
+            <ul>
+                <li>An XSLT stylesheet that transforms the <code>&lt;body&gt;</code> element and its
+                    contents into HTML.</li>
+                <li>The resulting HTML should style the six types of in-line elements listed above.
+                    At least some of those styles should be set using <code>&lt;span&gt;</code>
+                    elements with the <code>@class</code> attribute.</li>
+                <li>You need to create a CSS file, linked to your output HTML, that specifies how to
+                    style the output document. You can look up the most useful of the available CSS
+                    properties at <a href="http://www.w3schools.com/css/"
+                        >http://www.w3schools.com/css/</a>. We’d suggesting following the links on
+                    the left under <q>CSS styling</q> for styling backgrounds, text, and fonts, as
+                    well as the link for borders under <q>CSS box model</q>.</li>
+            </ul>
+            <p>Please upload your XSLT, HTML, and CSS files to Canvas. Remember to link your CSS to
+                the HTML file!</p>
+        </section>
+    </body>
+</html>

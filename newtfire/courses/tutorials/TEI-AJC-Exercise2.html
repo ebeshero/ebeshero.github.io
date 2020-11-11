@@ -1,0 +1,66 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="../explain.css" />
+        <title>TEI Exercise 2 with AJC</title>
+    </head>
+    <body>
+        <!--#include virtual="top.html" -->
+        <h1><span class="banner">TEI Exercise 2: Trying out TEI code</span></h1>
+        <section title="objectives">
+            <h3>Trying out the TEI</h3>
+            <p>This is the second of a series of assignments to introduce you to the XML-based language of the Text Encoding Initiative (TEI). We are continuing to work with <a href="https://dh.howard.edu/cgi/viewcontent.cgi?article=1001&amp;context=ajc_bio">Anna Julia Cooper’s handwritten response to a survey of black college graduates in 1930</a>. </p>
+          
+            <p>With this exercise, experiment with writing some TEI code in oXygen to represent any one portion of the survey that you choose to attempt representing in markup. </p>
+          
+        </section>
+        <section title="resources">
+            <h3>Resources to study and work with</h3>
+           <p>It may help you to find a way to divide your computer screen or to look at two screens. You need to be working with three resources:</p>
+            
+               <ul>
+                   <li>Anna Julia Cooper’s survey response form</li>
+                   <li>The oXygen XML Editor</li>
+                   <li>The TEI Guidelines</li>
+                   
+               </ul>
+            <p>It may also help to look at some example TEI documents from other projects before you begin. Here are a pair of sample TEI files to help give you an idea of how these are structured:</p>
+            <ul><li><a href="https://raw.githubusercontent.com/newtfire/textEncoding-Hub/master/Class-Examples/TEI_Samples/1601variant.xml">Simple TEI file</a> from the Emily Dickinson Fascicle 16 project (This helps to see the basic structural parts of a TEI file all together at a glance, connected with line-groups and lines of a poem. This coding also is designed to hold data about how different versions of the same poem were recorded or printed differently.)</li>
+                <li><a href="https://raw.githubusercontent.com/newtfire/textEncoding-Hub/master/Class-Examples/TEI_Samples/1818-01-12_WElford.xml">Letter file</a> from the Digital Mitford project (skim past the detailed header here and concentrate on how we organized the text portion of the document). This is an example of coding a document from a handwritten manuscript.</li>
+                <li><a href="http://shelleygodwinarchive.org/sc/oxford/frankenstein/volume/i/#/p23/mode/xml">A page from the <i>Frankenstein</i> draft notebooks</a> from the Shelley-Godwin Archive. This shows a <dfn>diplomatic</dfn> encoding (attentive to line-by-line representation of the text as laid out on a manuscript page).</li>
+            </ul>
+        </section>
+        <section title="coding">
+            <h3>Coding in TEI</h3>
+        
+            <p>Open the oXygen XML Editor to a new TEI document by selecting TEI P5 and All in the new file selection. To begin, open a new TEI file in &lt;oXygen/&gt; by clicking on the top left icon that looks like a corner-folded piece of paper (or going to File → New) and typing <strong>TEI</strong> in the search box. In the results, look for the <strong>TEI P5</strong> options and choose the first one: <strong>All</strong>. This opens a file with a simple starter template and the TEI-All schema lines that we want for now as we begin coding. Here is a screen capture to show how to open a TEI-All file in &lt;oXygen/&gt;: </p>
+            <img src="opening-teiAll-oxygen.png" alt="screen capture showing how to open a TEI-ALL file in the oXygen XML Editor" width="700"/>
+            <p>Look at the TEI file you opened and notice its characteristic two-part structure, with the <code>teiHeader</code> and <code>text</code> elements that are the children of the root element <code>TEI</code>. For this assignment we will be working in the <code>&lt;text&gt;</code> portion of the document. </p>
+            <p>Choose a portion of Anna Julia Cooper’s survey to try to represent in TEI encoding. That could be a portion of the form, with a selection of form questions and Cooper’s responses, or even just a portion of the form itself. Work with the TEI Guidelines to try a strategy with markup that makes sense to you, perhaps with resources we identified in our responses to <a href="../tutorials/TEI-AJC-Exercise1.html">TEI Exercise 1</a>. Try to represent structure and content of some portion of this document. You may simply want to begin with a tag like <code>p</code> or <code>line</code> (looking these up in the Guidelines) to hold your transcription, and then investigate the Guidelines to try applying more descriptive and meaningful markup to separate typescript from handwriting.</p>
+            <p>Find a way to represent your selection of data and metadata from the survey document in the <code>text</code> portion of the TEI document. &lt;oXygen/&gt; comes with the current, very extensive schema rules for the TEI P5 installed, so that when you opened the TEI document it came with its own schema lines. As you code, notice that &lt;oXygen/&gt; will fire errors when XML is not well-formed, as well as when TEI validity is broken. You may also notice, as you apply tags, that the schema offers you suggestions of attributes or attribute values, helping to inform you about what the TEI makes available given a particular parent element. Do not worry too much about whether your tagging selections are correct or not, but try to make sure they are valid with the TEI and you maintain a green square in oXygen. Even if you do not, do your best with this and get as far as you can, and submit your very first attempt with TEI encoding before our next class.</p>
+            
+            
+            
+          
+            <p>Again (from our previous exercise) these portions of <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html">the TEI Guidelines</a> may be helpful as you begin trying out TEI encoding: </p>
+            
+                <ul>
+                    <li><a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CONAen/html/">Chapter 3: Elements Available in All TEI Documents</a></li>
+                    <li><a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/DS.html">Chapter 4: Default Text Structure</a></li>
+                    <li>How would you encode the handwriting of Anna Julia Cooper as distinct from the printed typescript on the form? Consider what sections and markup might be relevant in <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/MS.html">Chapter 10: Manuscript Description</a>. Suggestion: Take a look at <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/MS.html#msphla">sections 10.7.1.6 (Layout Description)</a> through <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/MS.html#msphwr">10.7.2.1 (Writing)</a>.</li>
+                    <li>Skim through <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/PH.html">Chapter 11: Representation of Primary Sources</a> and take a look at <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHCO">section 11.3.1.1 (Core Elements for Transcriptional Work)</a> in particular.</li>
+                    
+                </ul>
+ 
+            
+        </section>
+        
+        
+        <section title="how_to_submit">
+            <h3>Submitting your work</h3>
+            <p>When you have found a way to represent a portion of the survey’s document data and metadata in TEI, be sure to give your file a name that meets our <a href="http://dh.newtfire.org/explainFileNames.html">homework file submission rules</a>, and submit it in the appropriate place on Canvas for TEI Exercise 2.</p>
+        </section>
+    </body>
+</html>

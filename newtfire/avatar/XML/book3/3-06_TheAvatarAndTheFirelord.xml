@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atla>
+    <transcript>
+        <head>
+            <episode n="6">The Avatar and the Firelord</episode>
+            <book n="3">Fire</book>
+            <source link="https://avatar.fandom.com/wiki/Transcript:The_Avatar_and_the_Fire_Lord"/>
+        </head>
+        
+        <charlist>
+            <charList type="recurring" id="Zuko">Zuko</charList>
+            <charList type="recurring" id="Iroh">Iroh</charList>
+            <charList type="recurring" id="Ozai">Ozai</charList>
+            <charList type="recurring" id="Ursa">Ursa</charList>
+            <charList type="recurring" id="Sozin">Sozin</charList>
+            <charList type="recurring" id="Roku">Avatar Roku</charList>
+        </charlist>
+        <body>
+            <scene n="1"> 
+                <sd>Fade to a close-up of the scroll Zuko is reading.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	That can't be it! Where's the rest of it? <sd>[He searches the scroll to find more information.]</sd></sp>
+<sd>Zuko puts the scroll down and stands up, as the camera pans out. Scene changes to the Fire Nation prison, where Iroh is imprisoned. Cut to Zuko from the behind, slamming the door to the cell behind him as he enters. Cut to Iroh sitting with his head down.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Angrily.]</sd> You sent this, didn't you? I found the secret history, which by the way should be renamed history most people already know! The note said that I needed to know about my great-grandfather's death, but he was still alive in the end.</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	<sd>[Looking up at Zuko.]</sd> No, he wasn't.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Confused.]</sd> What are you talking about?</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	You have more than one great-grandfather, <char ref="Zuko">Prince Zuko</char>. <char ref="Sozin">Sozin</char> was <char ref="Ozai">your father's</char> grandfather. <sd>[Cut to a bewildered Zuko.]</sd> <char ref="Ursa">Your mother's</char> grandfather was <char ref="Roku">Avatar Roku</char>.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Shocked.]</sd> Why are you telling me this?</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	Because understanding the struggle between your two great-grandfathers can help you better understand the battle within yourself. <sd>[Zuko sits down, with his head facing down.]</sd> Evil and good are always at war inside you, <char ref="Zuko">Zuko</char>. It is your nature, your legacy. But, there is a bright side. <sd>[Zuko looks up.]</sd> What happened generations ago can be resolved now, by you. Because of your legacy, you alone can cleanse the sins of our family and the Fire Nation. Born in you, along with all the strife, is the power to restore balance to the world.</sp>
+<sd>Cut to a bundle inside of a brick wall. Iroh removes a brick and reaches for the bundle. Cut to Iroh slowly unwrapping the bundle, revealing the once-lost headdress, while he walks toward Zuko.</sd>
+<sp><speaker ref="Iroh">Iroh</speaker>	This is a royal artifact. It's supposed to be worn <sd>[Zuko stands.]</sd> by the Crown Prince.</sp>
+<sd>Zuko takes the headdress from Iroh's hand, and holds the artifact, as the shot cuts to Zuko from the behind, standing outside of Iroh's cell. Iroh stands quietly, looking at his nephew. Cut to a shot of the hardened lava wave the gang had been sitting on. </sd></scene>
+        </body>
+    </transcript>
+</atla>

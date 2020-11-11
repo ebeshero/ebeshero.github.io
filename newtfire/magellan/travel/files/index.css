@@ -1,0 +1,75 @@
+/* Rachel */
+html{
+   margin: 0px;
+    padding: 0px;
+    background-image:url("fwaves.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    }
+body {
+
+    }
+h1 {
+    font-family: 'Tangerine', serif;
+    color: white;
+    padding-top: 5%;
+    font-size: 300%;
+    text-align: center
+}
+h2 {
+    font-variant: small-caps;
+    font-family: georgia, serif;
+}
+div.about {
+    
+    text-align: left;
+    color: black;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    width: 30%;
+    margin-left: 13%;
+    margin-top: 8%;
+    margin-bottom: 1%;
+    float: left;
+    background: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    line-height: 150%
+}
+div.descript {
+    font-family: courier, monospace, serif;
+    color: black;
+    line-height: 150%;
+    font-size: 100%
+}
+img {
+    float: right;
+    max-width: 37%;
+    margin-right: 12%;
+    margin-top: 8%;
+    margin-bottom: 5%
+}
+ul
+{
+    margin-top: 2%;
+    margin-right: 1%;
+    overflow: hidden;
+    text-align: center
+}
+span.li
+{
+    display: inline-block;
+    text-align: center
+}
+a
+{
+    background-color: #465871;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}

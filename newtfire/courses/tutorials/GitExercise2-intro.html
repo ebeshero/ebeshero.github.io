@@ -1,0 +1,105 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="explain.css" />
+        <title>Git Exercise 2</title>
+    </head>
+    <body>
+        <!--#include virtual="top.html" -->
+        <h1><span class="banner">GitHub Exercise 2: Start your own repo and launch GitHub
+                Pages</span></h1>
+        <section title="preliminaries">
+            <h3>Preliminaries</h3>
+            <p>First complete <a href="GitExercise1-intro.html">Git Exercise 1</a>. </p>
+            <p>Then, experiment with writing <a href="https://guides.github.com/features/mastering-markdown/">GitHub markdown</a> on the <a
+                href="https://github.com/newtfire/introDH-Hub/issues">introDH-Hub Issues</a>. </p>
+        </section>
+        <section title="analysis_of_task">
+            <h3>Analysis of the task</h3>
+            <p>The goals of this assignment are:</p>
+            <ol>
+                <li>Create a personal remote repository on GitHub via website</li>
+                <li>Set up GitHub Pages to run a website on your personal GitHub repo</li>
+                <li>Make a starter page on your new GitHub Pages site.</li>
+            </ol>
+            <p>Upon completion of this assignment you should feel confident about interacting on GitHub and working with files on your web repo. Our DIGIT courses
+                require regular GitHub activity, so if you still feel uncertain on
+                how to use Git or GitHub after completing this assignment please meet with an
+                instructor. We will gladly assist you so you feel comfortable using GitHub on a regular basis.</p>
+        </section>
+        <section title="step_by_step">
+            <h3>Step By Step</h3>
+           
+            <p>To create a new repo, go to your GitHub profile on the web: Go to https://github.com and login, then find your personal profile. 
+                Select the <q>Repositories</q> tab, and click <q>New</q>.</p>
+            <p><img src="NewRepo_GitEx1.jpg" alt="GitHub Create Repo" /></p>
+            <p>Give your repo a logical name (i.e. my_site), a brief description, and select
+                    <q>public</q>. During this course we ask you to keep this repo public so we can
+                view each other’s site development without everyone in the course having to be added
+                as a collaborator; however, you can switch this to private in the future.</p>
+           
+            <p>Next, navigate on GitHub to your personal page repo, and follow our
+                    <a href="explainGitShell.html#collaborators" target="_blank">tutorial steps to
+                    add a collaborator</a>. Add your instructor(s) to your repo: You can invite Dr. B as <code>@ebeshero</code>. After the
+                completion of this course you can remove any unwanted collaborators; however, for
+                this assignment we want you to practice adding at least one collaborator. Also when
+                creating your own repo you may need to change the settings to include an issues
+                board; follow these <a target="_blank"
+                    href="https://help.github.com/articles/managing-projects-with-issues/"
+                    >help.github.com directions</a> to do so if the <q>Issues</q> tab is not automatically there.</p>
+            
+           <p>Now, configure your repository to support a GitHub Pages website. To do this:</p>
+            <ol>
+                <li>Find the Settings tab on your repo. (This is a tab like Issues, only all the way on the right.)
+                <img src="git_shell/RepoSettings.png" alt="find the Settings tab on your GitHub repository" width="1000"/>
+                </li>
+                <li>Inside Settings, select Options and scroll down until you see GitHub Pages.</li>
+                <li>Under GitHub Pages look for Source. 
+                <ul>
+                    <li>Select the drop-down menu under source, and select the <b>Master</b> branch.</li>
+                    <li>As soon as you do that, a second drop-down menu appears. On this select <b>/docs</b>. This creates a special directory in your repo for developing your website. (In future classes you will want to use this repo for more than developing a website, so by setting up a docs/ directory, you give yourself more options for later.)</li>
+                </ul>
+                </li>
+                 <li>When satisfied with your settings (so that they look like the image below), click the Save button.
+                     <img src="git_shell/SetupGitHubPages.png" alt="How to configure GitHub Pages" width="1000"/>
+                  
+                </li>
+                <li>Now you have a decision to make. <ul><li><strong>If you already know how to code with HTML and CSS</strong> and want to use them here, you may wish to code an <code>index.html</code> page and save it in the <code>docs/</code> directory.
+                You can write this code directly in the web browser. Go to the Code tab of your repo and click the <q>Add File</q> button. Then, create a docs directory and start your new file by typing in:
+                <code>docs/index.html</code>. Start typing in a basic HTML page.
+                    <img src="git_shell/startIndexhtml.png" alt="create a docs directory and an index.html page" width="1200"/>
+                
+                </li>
+                <li><strong>If you do not know HTML or prefer to use Markdown</strong> and a custom Jekyll theme, do the following:
+                     <ol><li>Under Settings, select <q>Choose a theme</q>. Browse the themes and select one to use for your site.</li>
+                         
+                         <li>Then, go to the Code tab of your repo and click the <q>Add File</q> button. Create a docs directory and a new Markdown file named index.md by typing in <code>docs/index.md</code>. Write some markdown to initiate your GitHub pages site.  
+                     
+                         </li>
+                     </ol>
+                    <img src="git_shell/startIndexmd.png" alt="create a docs directory and an index.md page in Markdown" width="1200"/>
+                </li>
+                </ul>
+                </li>
+                <li>Finally, go back to Settings on your GitHub repo. Scroll down to GitHub Pages where you configured its settings. 
+                If you configured your <code>docs/</code> directory and a new index file in it, you should now see the github.io website address where you can view the site with your Jekyll theme.
+                    The site we configured for the introDH-Hub is published at <a href="https://newtfire.github.io/introDH-Hub/">https://newtfire.github.io/introDH-Hub/</a>. Follow your link to see what your new site looks like!</li>
+                <li>As you begin constructing your site, and changing the theme, you will notice
+                    some lag time in publishing your updates. Be patient. Your website ujpdates will
+                    post ! </li>
+                
+            </ol>
+        </section>
+        <section title="conclusion">
+            <h3>Congratulations!</h3>
+            <p>Welcome to the Git community! You have successfully completed the basic tasks of
+                setting up a GitHub repository on your personal account and generating GitHub Pages! If you do not like the theme, you can change it in your repo’s settings. Or you can customize it, which we will work on later. 
+                For now, you are ready to submit Git Exercise 2 by going to Canvas, finding the appropriate Assignment link, and entering the URL (web address) for your new GitHub Pages site.
+            </p>
+        </section>
+    </body>
+</html>

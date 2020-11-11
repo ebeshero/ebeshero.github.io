@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atla>
+    <transcript>
+        <head>
+            <episode n="17">The Earth King</episode>
+            <book n="2">Earth</book>
+            <source link="https://avatar.fandom.com/wiki/Transcript:The_Earth_King"/>
+        </head>
+        
+        <charlist>
+            <charList type="recurring" id="Zuko">Zuko</charList>
+            <charList type="recurring" id="Iroh">Iroh</charList>
+            <charList type="recurring" id="Aang">Avatar</charList>
+        </charlist>
+        <body>
+            <scene n="1">
+<sd>Meanwhile, Zuko and Iroh return from Lake Laogai. The former seems ill.</sd>
+<sp><speaker ref="Iroh">Iroh</speaker>	You did the right thing. Letting the <char ref="Aang">Avatar</char>'s bison go free.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	I don't feel right. <sd>[Gets dizzy and passes out.]</sd></sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	<char ref="Zuko">Zuko</char>! <sd>[Rushes to him.]</sd></sp></scene>
+            
+            <scene n="2">
+<sd>Meanwhile at the apartment, Iroh is pouring tea.</sd>
+<sp><speaker ref="Iroh">Iroh</speaker>	You should know that this is not a natural sickness, but that shouldn't stop you from enjoying tea. <sd>[Feeds Zuko the tea.]</sd></sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	What's happening?</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	Your critical decision. What you did beneath that lake. It was in such conflict with your image of yourself that you are now at war within your own mind and body. <sd>[Feeds Zuko more tea.]</sd></sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	What's that mean? <sd>[Coughs continuously and lies down.]</sd></sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	You are going through a metamorphosis, <char ref="Zuko">my nephew</char>. It will not be a pleasant experience, but when you come out of it, <sd>[Takes a cloth and wipes Zuko's head.]</sd> you will be the beautiful prince you were always meant to be.</sp></scene>
+            
+            <scene n="3">
+<sd>Back at the apartment, Iroh and Zuko are asleep. Zuko wakes up and walks into the bathroom. He washes his face with water. When he looks in the mirror, he sees himself with no scar, no hair and an arrow tattoo on his head, resembling Aang. He looks horrified. He screams himself awake and breathes heavily. He touches the scar on his face and closes his eyes.</sd></scene>
+        </body>
+    </transcript>
+</atla>
+            

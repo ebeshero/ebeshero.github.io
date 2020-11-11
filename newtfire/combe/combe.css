@@ -1,0 +1,191 @@
+html {
+    background: url(Pictures/staticTextBackground.png);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    height: 100%;
+    font-style: normal;
+}
+.links-container{
+    width: 100%;
+    height: 7.3%;
+    background-color: #6EC4DB;
+    left: 0%;
+    position: fixed;
+    top: 0%;
+}
+.links{
+    position: fixed;
+    left: 30%;
+    top: 0%;
+}
+.body-container{
+    background-color: #ffffff;
+    width: 75%;
+    margin: auto;
+    height: 100%;
+    color: #2e9ab8;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-style: normal;
+    text-decoration: none;
+    min-height: 70vh;
+}
+.menu-container{
+    color: #FFF7C0;
+    top: 0%;
+    width: 100%;
+    font-size: 16px;
+    background-color: #6EC4DB;
+    padding: 10px;
+}
+.combeText{
+    position: relative;
+    left: 20%;
+    top: 22px;
+}
+.picture-box{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.combeSource{font-size: 12px;}
+.footer-container{
+    position: fixed;
+    left: 12.5%;
+    bottom: 0%;
+    width: 75%;
+    background-color: #6EC4DB;
+    color: white;
+    text-align: center;
+    padding: 3px;
+}
+.msDirectory {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: #6EC4DB;
+    font-size: 16px;
+    width: 12.5%;
+    text-align: center;
+    color: white;
+}
+.toggleSidebar{
+    position: fixed;
+    width: 12.5%;
+    background-color: #6EC4DB;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    left: 87.5%;
+}
+.fieldset, .syntax-directory{
+    position: fixed;
+    left: 87.5%;
+    width: 12.5%;
+    background-color: #6EC4DB;
+}
+.fieldset{top: 0.75%;}
+.syntax-directory{top: 0%;}
+.license{font-size: 15px}
+span.persName.on{color: #dac292; font-weight: bold;}
+span.emph.on{font-style: italic; font-weight: bold;}
+span.placeName.on{color: #ffcc5c; font-weight: bold;}
+span.signature.on{color: #ff6f69; font-weight: bold;}
+span.closer.on{color: #b8a9c9}
+span.poem.on{color: #eeac99}
+span.longdash.on{color: #667292; font-weight: bold;}
+span.opener.on{color: #b2b2b2}
+span.epigraph.on{color: #6b5b95}
+span.letter.on{color: #82b74b}
+span.byline.on{color: #feb236}
+.navbar {
+    overflow: hidden;
+    background-color: #6EC4DB;
+    align-items: center;
+    width: 100%;
+    left: 30%;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #2e9ab8;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: #2e9ab8;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #2e9ab8;
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.accordion {
+    background-color: #6EC4DB;
+    color: white;
+    cursor: pointer;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: #2e9ab8;
+}
+.panel, .panelSyntaxTOC {
+    color: white;
+    padding: 0 18px;
+    background-color: #6EC4DB;
+    display: none;
+    overflow: hidden;
+}
+.panelSyntaxTOC {
+    text-align: left;
+    line-height: 60%;
+    font-size: 12px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="explain.css" />
+        <title>HTML/CSS Exercise 1</title>
+    </head>
+    <body>
+        <!--#include virtual="topAuthorRJP43.html" --> 
+        <h1><span class="banner">HTML and CSS Exercise 1</span></h1>
+        <section title="preliminaries">
+            <h3>Preliminaries</h3>
+            <p>Before beginning this assignment please thoroughly read our tutorials: "<a
+                    href="explainHTML.html">Introduction to XHTML (and HTML)</a>" and "<a
+                    href="explainCSS.html">Introduction to Cascading Stylesheets (CSS)</a>". It will
+                benefit you to keep these tutorials open while you work on this assignment. To
+                begin, open a new HTML file in &lt;oXygen/&gt; by clicking on the icon that looks like a piece of paper in the top left (or going to <strong>File → New</strong>, entering <code>HTML</code> in the search bar, and clicking on the HTML result. Paste in the highlighted meta elements below at the appropriate place in the <code>head</code> element at the start of your file:</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en"&gt;
+            &lt;head&gt;
+                  &lt;title&gt;&lt;!--title of your page here--&gt;&lt;/title&gt;
+                 <code>&lt;meta charset="UTF-8" /&gt;
+                  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</code>
+                &lt;!--Add your &lt;link&gt; element to associate your CSS file here once you have created it.-->
+             &lt;/head&gt;
+                 &lt;body&gt;
+                 &lt;!--Code the viewable portion of your page here.--&gt;
+                 &lt;/body&gt;
+                  </pre>
+            <p>You will also need to open a new CSS file in &lt;oXygen/&gt; under <strong>File → New
+                    → New Document → CSS</strong>.</p>
+        </section>
+        <section title="analysis_of_task">
+            <h3>Analysis of the task</h3>
+            <p>The goal of this assignment is to create a very basic personal webpage. If you
+                    <em>view page source</em> on this page you can see examples of how we used
+                headings, paragraphs, lists, an image, and links to other pages within the same
+                directory. You can also view the corresponding CSS and <strong>take note of how we linked
+                our CSS with this page</strong>. Mac users to view page source we recommend that you use
+                Firefox or Chrome because Safari will require you to change browser preferences to
+                see the page source. In Firefox or Chrome simply <em>right-click</em> and select
+                    <em>view page source</em>.</p>
+            <p>The key components of your first basic webpage that we will be looking for are:</p>
+            <ul>
+                <li>Heading elements (with any variation of heading levels)</li>
+                <li>Paragraph element(s)</li>
+                <li>Linking at least one image</li>
+                <li>Corresponding styling for the entire content of the page</li>
+            </ul>
+            <p>We encourage you to go above and beyond these very basic requirements, and indeed in
+                    <a href="HTMLExercise2.html">Exercise 2</a> we will expect to see a more
+                completed web site.</p>
+            <h3>Viewing your webpage locally</h3>
+            <p>While developing your webpage it is important to consistently check your changes.
+                Follow these three simple steps to open your webpage locally in your web
+                browser:</p>
+            <ol>
+                <li>open your browser</li>
+                <li>on Windows: <code>control + o</code>
+                    <br /> on Mac: <code>command + o</code>
+                </li>
+                <li>browse your local file explorer for your webpage.</li>
+            </ol>
+            <p>By convention, the first page you place in your website folder is designated your
+                <code>index.html</code> page. You don’t have to have an index.html, but if you do, the main page
+                of your site can be abbreviated to the name of the site directory holding the web
+                files, like this one for Dr. Beshero-Bondar’s homepage:
+                <code>https://newtfire.org/~elisa/</code> . By default, when given that address, the web browser
+                retrieves the <code>index.html</code> file placed in her account’s space, and if it doesn’t find
+                one it generates an error. (The site address leads to exactly the same place as
+                <code>https://newtfire.org/index.html</code> .) By assigning any other name to your homepage
+                someone visiting your site is required to call on that specific file/file path to
+                get to your homepage. <strong>For this assignment please name your homepage
+                    <code>index.html</code>.</strong></p>
+            <p>Access your personal web space accounts at newtFire.org using your preferred file transfer program (FTP client). Move
+                all of your developed HTML pages and your CSS file into the <code>public_html</code>
+                folder. Be sure the file permissions on your main folder allow the group and others
+                to <q>Read</q> and <q>Execute</q>. You (the owner) should be the only one able to
+                write to this directory. The following image shows how to access file permissions
+                and our recommended settings using WinSCP on a Windows machine; however, the setup
+                should be similar on other platforms and in other file transfer programs.</p>
+            <img src="filePermissions.jpg" alt="WinScp Changing File Permissions" />
+        </section>
+        <section title="how_to_submit">
+            <h3>Submitting your work</h3>
+            <p>For the HTML unit, you will NOT be submitting your homework on Canvas! Instead,
+            you will be posting it to your web server space on Newtfire and backing it up on your personal GitHub repository.
+            This means your HTML page(s) and CSS file need to be posted in two places:</p>
+                <ul>
+                    <li>your personal web space accounts at
+                        newtfire.org using the SFTP client (probably FileZilla) that we showed you how to configure. (See Canvas for configuration instructions if you need to configure your SFTP client).</li> 
+                    <li>Your personal GitHub repo, which should <em>always</em> contain your web files. We recommend making
+                a <code>web</code> directory in your GitHub repo, and make its file structure the same as what 
+                    you want in your <code>public_html</code> directory on Newtfire. You will need to <em>add</em>, <em>commit</em>, and <em>push</em> your files from your local Git
+                    repository to your remote GitHub repository.</li>
+                   
+                    </ul>
+         
+            <p>Finally, let us know that your site is “live” and ready for the class to view! Submit your 
+                homework by posting a link to your website on the digitProjectDesign-Hub Issue that we will set up to collect these.
+            Your link will look like this, replacing <code>username</code> with your own username on Newtfire:
+               <code>https://newtfire.org/~username/</code>. 
+                That link will point to your <code>index.html</code> page, understood to be your home page for your personal website on Newtfire.
+
+            </p>
+        </section>
+    </body>
+</html>

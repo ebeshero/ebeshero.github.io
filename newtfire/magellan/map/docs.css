@@ -1,0 +1,100 @@
+/* Rachel */
+html{
+   margin: 0px;
+    padding: 0px;
+    background-image:url("fwaves.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    }
+h2 {
+    font-variant: small-caps;
+    font-family: georgia, serif;
+}
+h1 {
+    font-family: georgia, serif;
+    font-variant: small-caps;
+    color: white;
+    padding-top: 5%;
+    font-size: 300%;
+    text-align: center
+}
+div.aboutUs {
+    text-align: left
+}
+body{
+    }
+div.javascript {
+    font-family: courier, monospace, serif;
+}
+div.main {
+    font-size: 100%;
+    text-align: center;
+    color: black;
+    line-height: 150%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 63%;
+    margin-left: 13%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    background: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    }
+p {
+    font-family: courier, monospace, serif;
+}
+
+span.ref {
+    font-size: 70%
+}
+span.source {
+    font-style: italic
+}
+span.license {
+    font-style: italic;
+    font-family: courier, monospace, serif;
+    text-align: left;
+    font-size: 80%
+}
+div.files {
+    text-align: left;
+}
+a {
+    color: #405A79
+}
+
+/* menu */
+ul
+{
+    margin-top: 2%;
+    margin-right: 2%;
+    overflow: hidden;
+    text-align: center
+}
+li
+{
+    display: inline-block;
+    text-align: center; }
+a.top {
+    font-family: courier, monospace, serif;
+    background-color: #465871;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* java */
+span.persName.on {background-color:#E0C5FE}
+span.placeName.on {background-color:#C5E9FE}
+span.date.on {background-color:#AAFEB3}
+span.ethnicGroup.on {background-color:#FEE2AA}
+span.rank.on {background-color:#A1B6EF}
+span.term.on {background-color:#CDCCCC}
+
+

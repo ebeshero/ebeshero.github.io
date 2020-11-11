@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atla>
+    <transcript>
+        <head>
+            <episode n="18">The Crossroads of Destiny</episode>
+            <book n="2">Earth</book>
+            <source link="https://avatar.fandom.com/wiki/Transcript:The_Crossroads_of_Destiny"/>
+        </head>
+        
+        <charlist>
+            <charList type="recurring" id="Zuko">Zuko</charList>
+            <charList type="recurring" id="Iroh">Iroh</charList>
+            <charList type="recurring" id="Aang">Aang</charList>
+            <charList type="recurring" id="Katara">Katara</charList>
+            <charList type="recurring" id="Azula">Azula</charList>
+        </charlist>
+        <body>
+            <scene n="1">The scene changes to Zuko and Katara in the Crystal Catacombs.
+<sp><speaker ref="Katara">Katara</speaker>	<sd>[Apologetic.]</sd> I'm sorry I yelled at you before.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	It doesn't matter.</sp>
+<sp><speaker ref="Katara">Katara</speaker>	It's just that for so long now, whenever I would imagine the face of the enemy, it was your face.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	My face? I see. <sd>[He touches his scar.]</sd></sp>
+<sp><speaker ref="Katara">Katara</speaker>	No, no, that's-that's not what I mean. <sd>[Approaches Zuko.]</sd></sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	It's okay. I used to think this scar marked me. The mark of the banished prince, cursed to chase the <char ref="Aang">Avatar</char> forever. But lately, I've realized I'm free to determine my own destiny, even if I'll never be free of my mark.</sp>
+<sp><speaker ref="Katara">Katara</speaker>	Maybe you could be free of it.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	What?</sp>
+<sp><speaker ref="Katara">Katara</speaker>	I have healing abilities.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	It's a scar, it can't be healed.</sp>
+<sp><speaker ref="Katara">Katara</speaker>	<sd>[Holds up a vial.]</sd> This is water from the Spirit Oasis at the North Pole. It has special properties, so I've been saving it for something important. <sd>[Moves in front of Zuko.]</sd> I don't know if it would work, but ...</sp>
+<sd>Katara puts one hand on Zuko's scar. Zuko closes his eyes, only to be interrupted by Aang and Iroh.</sd>
+<sp><speaker ref="Katara">Katara</speaker>	<char ref="Aang">Aang</char>!</sp>
+<sd>Aang looks surprised at seeing Zuko alone with Katara. As Katara hugs him, he briefly smiles at her, then looks over Katara's shoulder to glare at Zuko. Cut to Zuko, who gets a hug from Iroh, and glares back.</sd>
+<sp><speaker ref="Katara">Katara</speaker>	<char ref="Aang">Aang</char>, I knew you would come. <sd>[She hugs Aang again.]</sd></sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<char ref="Iroh">Uncle</char>, I don't understand. What are you doing with the <char ref="Aang">Avatar</char>? <sd>[Points to Aang.]</sd></sp>
+<sp><speaker ref="Aang">Aang</speaker>	Saving you, that's what.</sp>
+<sd>Zuko growls and takes one confrontational step in Aang's direction, but Iroh stops him.</sd>
+<sp><speaker ref="Iroh">Iroh</speaker>	<char ref="Zuko">Zuko</char>, it's time we talked. <sd>[To Aang and Katara.]</sd> Go help your other friends. We'll catch up with you. <sd>[They walk away, Katara looks back at Zuko, who is looking sadly to the side, before moving on.]</sd></sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Hurt.]</sd> Why, <char ref="Iroh">Uncle</char>?</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	You're not the man you used to be, <char ref="Zuko">Zuko</char>. <sd>[Smiles.]</sd> You are stronger and wiser and freer than you have ever been. And now you have come to the crossroads of your destiny. <sd>[Close-up to Zuko's face.]</sd> It's time for you to choose. It's time for you to choose good.</sp>
+<sd>As Zuko contemplates what his uncle is telling him, he yells as crystals grow to encase Iroh. He assumes a fighting position to prepare for the intruders. A different shot shows Azula along with two Dai Li agents sliding down from the sides of the chamber.</sd>
+<sp><speaker ref="Azula">Azula</speaker>	I expected this kind of treachery from <char ref="Iroh">Uncle</char>. <sd>[Cut to Iroh, still trapped in crystals. Cut to a side shot, where Zuko protects his uncle.]</sd> But <char ref="Zuko">Zuko</char>, <char ref="Zuko">Prince Zuko</char>, you're a lot of things, but you're not a traitor, are you?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	Release him immediately.</sp>
+<sp><speaker ref="Azula">Azula</speaker>	It's not too late for you, <char ref="Zuko">Zuko</char>. You can still redeem yourself.</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	<sd>[To Zuko.]</sd> The kind of redemption she offers is not for you.</sp>
+<sp><speaker ref="Azula">Azula</speaker>	Why don't you let him decide, <char ref="Iroh">Uncle</char>? <sd>[To Zuko.]</sd> I need you, <char ref="Zuko">Zuko</char>. I've plotted every move of this day, <sd>[Makes a fist.]</sd> this glorious day in Fire Nation history, and the only way we win is together. At the end of this day, you will have your honor back. You will have <char ref="Ozai">Father's</char> love. You will have everything you want.</sp>
+<sp><speaker ref="Iroh">Iroh</speaker>	<char ref="Zuko">Zuko</char>, I am begging you. <sd>[Close-up of Zuko's face as he focuses from Azula back to Iroh.]</sd> Look into your heart and see what it is that you truly want. <sd>[Zuko resumes contemplating.]</sd></sp>
+<sp><speaker ref="Azula">Azula</speaker>	You are free to choose.</sp>
+<sd>She gestures at the two Dai Li agents to leave, who earthbend themselves out. Azula leaves to follow Aang and Katara. The camera cuts to Zuko multiple times as he contemplates his choice. He drops his head.</sd></scene>
+
+            <scene n="2">
+                <sd>An intense shot of blue fire attacks them from behind. Aang stops it using earthbending, but the impact forces him backward a few steps. The camera zooms back toward Azula, the source of the blast, with smoke trailing from her fingertips. Katara uses waterbending to stop another attack, then sends a wave crashing toward Azula, who vaporizes the water with firebending. The mist from the vaporized water allows Azula to jump onto a crystal and firebend two blasts of blue fire. Together, Aang and Katara use waterbending to stop the blasts. Azula finishes her jump by landing on a rock pillar. Aang uses earthbending on the pillar, and Azula gasps once she notices the pillar crumbling. She jumps off and lands between Katara and Aang. She points at both of them, preparing to attack or defend herself.</sd>
+<sd>An orange fire blast lands in the middle of the standoff, and they look to see the source of the fire blast to be Zuko. Zuko looks from Azula to Katara and Aang, choosing who to attack. When he looks at Azula, she is glaring back at him. He then looks at Aang, who gasps once he realizes Zuko will attack him. Zuko firebends at him, and Aang uses airbending to jump away from the blast. Azula smiles at this and starts dueling with Katara, and Zuko furiously throws multiple fire blasts at Aang.</sd>
+
+<sd>Aang airbends the air currents around him to make a human-shaped gust of air at Zuko, knocking him down. Aang attacks Zuko with more airbending, but Zuko maneuvers around the attacks and gets back up on his feet. He fires more blasts at Aang who is clinging on to a rock pillar. Aang jumps onto a clump of crystals to avoid the attack. Furious, Zuko summons a greater blast of fire. Aang earthbends some crystals to protect him, but the crystals shatter, sending Aang flying to another clump of crystals. Zuko uses fire whips to attack Aang once again, but Aang jumps to another patch of crystals and Zuko keeps attacking.</sd>
+<sd>Cut to Azula landing on a puddle of water running toward Katara, who sends a aharp wave of water at Azula that very nearly hits her face, but cuts her hair instead, startling her. Cut back to Zuko, who is still using his fire whips to attack Aang, who is now jumping along the cave's ceiling. Aang kicks down a stalactite and follows it, using earthbending to increase its impact and sending Zuko flying, bouncing off the ground into a small wall of crystals. The scene focuses on Azula and Katara. Katara waterbends at Azula, knocking her down. Azula slowly gets back up into a fighting stance as Katara encases herself in water. One water tentacle captures Azula's hand as she struggles to attack her, and another one captures her foot after another failed attack. Katara then lifts Azula up, who yells in fear. Zuko frees his sister using firebending to break the tentacles. Azula gets up and briefly smiles at Zuko in gratitude, then looks toward the crater Aang had created with the stalactite. Aang crawls out, exhausted. Azula runs toward Aang. Cut to Zuko and Katara fighting. Katara still has water whips on her hands and Zuko starts using his fire whips.</sd>
+
+<sp><speaker ref="Katara">Katara</speaker>	I thought you had changed! <sd>[She grunts.]</sd></sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	I have changed.</sp>
+<sd>Zuko fires another blast.</sd></scene> 
+           
+            <scene n="3">
+<sd>The scene changes back to Zuko and Azula both fighting Katara. Hopelessly outnumbered, Katara gets knocked down. Aang jumps from the old building and earth surfs toward Zuko and Azula to stop them from attacking Katara, with a fiercely determined look on his face. However, a Dai Li agent appears and jumps in front of Aang's surf, sending him flying off. Aang yells as he falls. More Dai Li agents gather behind Zuko and Azula. Katara starts regaining her focus and Dai Li agents surround her. Katara uses the octopus form to defend herself. Aang stands up in a fighting stance, but his determined face quickly turns into one of despair.</sd>
+<sp><speaker ref="Aang">Aang</speaker>	There's too many. <sd>[He looks at Katara.]</sd></sp>
+<sp><speaker ref="Pathik">Pathik</speaker>	<sd>[From Aang's memory.]</sd> The only way is to let her go.</sp>
+<sp><speaker ref="Aang">Aang</speaker>	I'm sorry, <char ref="Katara">Katara</char>.</sp>
+<sd>Closing his eyes, he turns away from Azula and Zuko and earthbends a crystal shelter tent. Aang starts meditating. Inside Aang's mind, a giant version of himself in the Avatar State, the Avatar Spirit, holds an airbending sphere with a normal-sized version of himself in the Avatar State. Back in the crystal shelter, Aang enters the <char ref="Aang">Avatar</char> State and the crystal shelter starts glowing, alerting those outside. Inside the shelter, Aang opens his glowing eyes and breaks the crystal above him. The camera shows Katara looking up to Aang, now rising in to the air, with hope. But before Aang can let Katara go and control the Avatar State, a bolt of lightning strikes him in the back. Cut to Azula's eyeball watching Aang getting struck, before it zooms out to show her smiling menacingly in a lightning summoning position with her fingers smoking. The <char ref="Aang">Avatar</char> Spirit lets go of Aang and falls out of the plane of existence. As Aang falls down, Katara, tears now falling down her face, creates a wave to catch Aang. The wave knocks down the Dai Li agents and Zuko. She looks down at Aang's lifeless body and back up with tears in her eyes. Zuko and Azula prepare to attack Katara, but a blast of fire stops them. Iroh, the source of the blast, jumps down from the wall of the cave and shields Aang and Katara from Zuko and Azula.</sd>
+<sp><speaker ref="Iroh">Iroh</speaker>	You've got to get out of here! I'll hold them off as long as I can! <sd>[Fires some blasts at Zuko and Azula.]</sd></sp>
+<sd>Katara walks away slowly with Aang's body to a waterfall, and she uses waterbending to lift herself and Aang's body up its path. Iroh holds off the Dai Li agents, taking blows of earthbending, until after Aang and Katara leave. He submits to the Dai Li, who use earthbending to encase him in crystals. Azula is triumphantly smirking next to Zuko, both looking at Iroh. Iroh is looking back at Zuko, then closes his eyes and turns away. Cut to Bosco, Kuei, Toph, Sokka, Aang, and Katara riding on Appa. Appa moans sadly. Cut to a closer shot of Katara placing Aang's body on Appa. Katara opens the vial around her neck and uses water healing on Aang's wounded back. The rest of Team <char ref="Aang">Avatar</char>, Kuei, and Bosco all look sadly and in anticipation. The glowing from the spirit water stops, and Katara starts crying, assuming that it was not enough to save Aang. Aang's tattoos glow for a second and Aang groans. Katara, overcome with joy that Aang is alive, looks at him, who smiles a little, and she holds him closer. Cut to the Earth King's throne room with Azula sitting down at the throne with Zuko at her left.</sd>
+<sp><speaker ref="Azula">Azula</speaker>	We've done it, <char ref="Zuko">Zuko</char>. It's taken a hundred years, but the Fire Nation has conquered Ba Sing Se.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	I betrayed <char ref="Iroh">Uncle</char>.</sp>
+<sp><speaker ref="Azula">Azula</speaker>	No, he betrayed you. <sd>[She stands up from the throne.]</sd> <char ref="Zuko">Zuko</char>, when you return home, <char ref="Ozai">Father</char> will welcome you as a war hero.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	But I don't have the <char ref="Aang">Avatar</char>. What if <char ref="Ozai">Father</char> doesn't restore my honor?</sp>
+<sp><speaker ref="Azula">Azula</speaker>	He doesn't need to, <char ref="Zuko">Zuko</char>. <sd>[She puts a hand on Zuko's shoulder.]</sd> Today, you restored your own honor.</sp>
+<sd>Zuko looks turns away, uncertain of himself.</sd></scene> 
+        </body>
+    </transcript>
+</atla>

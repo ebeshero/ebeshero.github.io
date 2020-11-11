@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://ns.saxonica.com/xslt/export" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vv="http://saxon.sf.net/generated-variable" xmlns:java-type="http://saxon.sf.net/java-type" id="0" version="20" packageVersion="1" saxonVersion="9.9.0.1" target="JS" targetVersion="1" relocatable="false">
+ <co id="0" binds="1 2 1 3 4 1 2 1 3 4 5 1 2 1 3 1 5 1 2 1 3 1 5 1 2 1 1 3 1 5 1 2 1 1 3 1">
+  <mode name="Q{}dataBlock" onNo="TC" flags="W" patternSlots="0">
+   <templateRule prec="0" prio="0.0" seq="5" rank="0" minImp="0" slots="0" flags="s" line="220" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl">
+    <p.nodeTest role="match" test="element(Q{}boss)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='boss';"/>
+    <elem role="action" baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="221" name="div" nsuri="">
+     <sequence>
+      <att name="class" flags="l">
+       <str val="dataCont"/>
+      </att>
+      <elem line="222" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem name="p" nsuri="" flags="l">
+         <elem name="strong" nsuri="" flags="l">
+          <applyT bSlot="0">
+           <fn role="select" name="translate">
+            <check card="?" diag="0|0||fn:translate">
+             <cvUntyped to="xs:string">
+              <data>
+               <slash simple="2">
+                <axis name="child" nodeTest="element(Q{}bossName)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='bossName';"/>
+                <axis name="attribute" nodeTest="attribute(Q{}bossList)" jsTest="return item.name==='bossList'"/>
+               </slash>
+              </data>
+             </cvUntyped>
+            </check>
+            <str val="_"/>
+            <str val=" "/>
+           </fn>
+          </applyT>
+         </elem>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="223" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem line="224" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="l">
+            <str val="Location: "/>
+           </valueOf>
+          </elem>
+          <valueOf flags="l">
+           <gVarRef name="Q{}locationTitle" bSlot="1"/>
+          </valueOf>
+         </sequence>
+        </elem>
+        <elem line="225" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Description:"/>
+           </valueOf>
+          </elem>
+          <applyT bSlot="2">
+           <axis role="select" name="child" nodeTest="element(Q{}description)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='description';"/>
+          </applyT>
+         </sequence>
+        </elem>
+        <elem line="228" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Notes:"/>
+           </valueOf>
+          </elem>
+          <applyT mode="Q{}notes" bSlot="3">
+           <axis role="select" name="child" nodeTest="element(Q{}notes)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='notes';"/>
+          </applyT>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="231" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem line="233" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Dialogue:"/>
+           </valueOf>
+          </elem>
+          <applyT mode="Q{}quotations" bSlot="4">
+           <axis role="select" name="child" nodeTest="element(Q{}dialogue)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='dialogue';"/>
+          </applyT>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </templateRule>
+   <templateRule prec="0" prio="0.0" seq="4" rank="0" minImp="0" slots="0" flags="s" line="200" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl">
+    <p.nodeTest role="match" test="element(Q{}npc)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='npc';"/>
+    <elem role="action" baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="201" name="div" nsuri="">
+     <sequence>
+      <att name="class" flags="l">
+       <str val="dataCont"/>
+      </att>
+      <elem line="202" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem name="p" nsuri="" flags="l">
+         <elem name="strong" nsuri="" flags="l">
+          <applyT bSlot="5">
+           <fn role="select" name="translate">
+            <check card="?" diag="0|0||fn:translate">
+             <cvUntyped to="xs:string">
+              <data>
+               <slash simple="2">
+                <axis name="child" nodeTest="element(Q{}npcName)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='npcName';"/>
+                <axis name="attribute" nodeTest="attribute(Q{}npcList)" jsTest="return item.name==='npcList'"/>
+               </slash>
+              </data>
+             </cvUntyped>
+            </check>
+            <str val="_"/>
+            <str val=" "/>
+           </fn>
+          </applyT>
+         </elem>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="203" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem line="204" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="l">
+            <str val="Location: "/>
+           </valueOf>
+          </elem>
+          <valueOf flags="l">
+           <gVarRef name="Q{}locationTitle" bSlot="6"/>
+          </valueOf>
+         </sequence>
+        </elem>
+        <elem line="205" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Description:"/>
+           </valueOf>
+          </elem>
+          <applyT bSlot="7">
+           <axis role="select" name="child" nodeTest="element(Q{}description)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='description';"/>
+          </applyT>
+         </sequence>
+        </elem>
+        <elem line="208" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Notes:"/>
+           </valueOf>
+          </elem>
+          <applyT mode="Q{}notes" bSlot="8">
+           <axis role="select" name="child" nodeTest="element(Q{}notes)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='notes';"/>
+          </applyT>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="211" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem line="213" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Dialogue:"/>
+           </valueOf>
+          </elem>
+          <applyT mode="Q{}quotations" bSlot="9">
+           <axis role="select" name="child" nodeTest="element(Q{}dialogue)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='dialogue';"/>
+          </applyT>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </templateRule>
+   <templateRule prec="0" prio="0.5" seq="3" rank="1" minImp="0" slots="0" flags="s" line="178" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl">
+    <p.nodeSet role="match" type="node()">
+     <fn baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="178" name="key">
+      <str val="currentFirearm"/>
+      <gVarRef name="Q{}locationID" bSlot="10"/>
+     </fn>
+    </p.nodeSet>
+    <elem role="action" baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="179" name="div" nsuri="">
+     <sequence>
+      <att name="class" flags="l">
+       <str val="dataCont"/>
+      </att>
+      <elem line="180" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem name="p" nsuri="" flags="l">
+         <elem name="strong" nsuri="" flags="l">
+          <applyT bSlot="11">
+           <fn role="select" name="translate">
+            <check card="?" diag="0|0||fn:translate">
+             <cvUntyped to="xs:string">
+              <data>
+               <slash simple="2">
+                <axis name="child" nodeTest="element(Q{}firearmName)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='firearmName';"/>
+                <axis name="attribute" nodeTest="attribute(Q{}firearmList)" jsTest="return item.name==='firearmList'"/>
+               </slash>
+              </data>
+             </cvUntyped>
+            </check>
+            <str val="_"/>
+            <str val=" "/>
+           </fn>
+          </applyT>
+         </elem>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="181" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem line="182" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="l">
+            <str val="Location: "/>
+           </valueOf>
+          </elem>
+          <valueOf flags="l">
+           <gVarRef name="Q{}locationTitle" bSlot="12"/>
+          </valueOf>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="185" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem line="186" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Description:"/>
+           </valueOf>
+          </elem>
+          <applyT bSlot="13">
+           <axis role="select" name="child" nodeTest="element(Q{}description)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='description';"/>
+          </applyT>
+         </sequence>
+        </elem>
+        <elem line="188" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Notes:"/>
+           </valueOf>
+          </elem>
+          <applyT mode="Q{}notes" bSlot="14">
+           <axis role="select" name="child" nodeTest="element(Q{}notes)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='notes';"/>
+          </applyT>
+         </sequence>
+        </elem>
+        <elem line="189" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Trivia:"/>
+           </valueOf>
+          </elem>
+          <applyT bSlot="15">
+           <axis role="select" name="child" nodeTest="element(Q{}trivia)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='trivia';"/>
+          </applyT>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </templateRule>
+   <templateRule prec="0" prio="0.5" seq="2" rank="1" minImp="0" slots="0" flags="s" line="161" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl">
+    <p.nodeSet role="match" type="node()">
+     <fn baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="161" name="key">
+      <str val="currentWeapon"/>
+      <gVarRef name="Q{}locationID" bSlot="16"/>
+     </fn>
+    </p.nodeSet>
+    <elem role="action" baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="162" name="div" nsuri="">
+     <sequence>
+      <att name="class" flags="l">
+       <str val="dataCont"/>
+      </att>
+      <elem line="163" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem name="p" nsuri="" flags="l">
+         <elem name="strong" nsuri="" flags="l">
+          <applyT bSlot="17">
+           <fn role="select" name="translate">
+            <check card="?" diag="0|0||fn:translate">
+             <cvUntyped to="xs:string">
+              <data>
+               <slash simple="2">
+                <axis name="child" nodeTest="element(Q{}weaponName)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='weaponName';"/>
+                <axis name="attribute" nodeTest="attribute(Q{}weaponList)" jsTest="return item.name==='weaponList'"/>
+               </slash>
+              </data>
+             </cvUntyped>
+            </check>
+            <str val="_"/>
+            <str val=" "/>
+           </fn>
+          </applyT>
+         </elem>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="164" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem line="165" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="l">
+            <str val="Location: "/>
+           </valueOf>
+          </elem>
+          <valueOf flags="l">
+           <gVarRef name="Q{}locationTitle" bSlot="18"/>
+          </valueOf>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="168" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem line="169" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Description:"/>
+           </valueOf>
+          </elem>
+          <applyT bSlot="19">
+           <axis role="select" name="child" nodeTest="element(Q{}description)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='description';"/>
+          </applyT>
+         </sequence>
+        </elem>
+        <elem line="171" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Notes:"/>
+           </valueOf>
+          </elem>
+          <applyT mode="Q{}notes" bSlot="20">
+           <axis role="select" name="child" nodeTest="element(Q{}notes)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='notes';"/>
+          </applyT>
+         </sequence>
+        </elem>
+        <elem line="172" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Trivia:"/>
+           </valueOf>
+          </elem>
+          <applyT bSlot="21">
+           <axis role="select" name="child" nodeTest="element(Q{}trivia)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='trivia';"/>
+          </applyT>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </templateRule>
+   <templateRule prec="0" prio="0.5" seq="1" rank="1" minImp="0" slots="0" flags="s" line="142" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl">
+    <p.nodeSet role="match" type="node()">
+     <fn baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="142" name="key">
+      <str val="currentAttire"/>
+      <gVarRef name="Q{}locationID" bSlot="22"/>
+     </fn>
+    </p.nodeSet>
+    <elem role="action" baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="143" name="div" nsuri="">
+     <sequence>
+      <att name="class" flags="l">
+       <str val="dataCont"/>
+      </att>
+      <elem line="144" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem name="p" nsuri="" flags="l">
+         <elem name="strong" nsuri="" flags="l">
+          <applyT bSlot="23">
+           <fn role="select" name="translate">
+            <check card="?" diag="0|0||fn:translate">
+             <cvUntyped to="xs:string">
+              <data>
+               <slash simple="2">
+                <axis name="child" nodeTest="element(Q{}attireName)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='attireName';"/>
+                <axis name="attribute" nodeTest="attribute(Q{}attireList)" jsTest="return item.name==='attireList'"/>
+               </slash>
+              </data>
+             </cvUntyped>
+            </check>
+            <str val="_"/>
+            <str val=" "/>
+           </fn>
+          </applyT>
+         </elem>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="145" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem line="146" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="l">
+            <str val="Location: "/>
+           </valueOf>
+          </elem>
+          <valueOf flags="l">
+           <gVarRef name="Q{}locationTitle" bSlot="24"/>
+          </valueOf>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="149" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem line="150" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Set:"/>
+           </valueOf>
+          </elem>
+          <applyT bSlot="25">
+           <slash role="select" simple="2">
+            <axis name="child" nodeTest="element(Q{}attireName)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='attireName';"/>
+            <axis name="attribute" nodeTest="attribute(Q{}attireSet)" jsTest="return item.name==='attireSet'"/>
+           </slash>
+          </applyT>
+         </sequence>
+        </elem>
+        <elem line="152" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Description:"/>
+           </valueOf>
+          </elem>
+          <applyT bSlot="26">
+           <axis role="select" name="child" nodeTest="element(Q{}description)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='description';"/>
+          </applyT>
+         </sequence>
+        </elem>
+        <elem line="154" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Notes:"/>
+           </valueOf>
+          </elem>
+          <applyT mode="Q{}notes" bSlot="27">
+           <axis role="select" name="child" nodeTest="element(Q{}notes)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='notes';"/>
+          </applyT>
+         </sequence>
+        </elem>
+        <elem line="155" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Trivia:"/>
+           </valueOf>
+          </elem>
+          <applyT bSlot="28">
+           <axis role="select" name="child" nodeTest="element(Q{}trivia)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='trivia';"/>
+          </applyT>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </templateRule>
+   <templateRule prec="0" prio="0.5" seq="0" rank="1" minImp="0" slots="0" flags="s" line="123" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl">
+    <p.nodeSet role="match" type="node()">
+     <fn baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="123" name="key">
+      <str val="currentRune"/>
+      <gVarRef name="Q{}locationID" bSlot="29"/>
+     </fn>
+    </p.nodeSet>
+    <elem role="action" baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="124" name="div" nsuri="">
+     <sequence>
+      <att name="class" flags="l">
+       <str val="dataCont"/>
+      </att>
+      <elem line="125" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem name="p" nsuri="" flags="l">
+         <elem name="strong" nsuri="" flags="l">
+          <applyT bSlot="30">
+           <fn role="select" name="translate">
+            <check card="?" diag="0|0||fn:translate">
+             <cvUntyped to="xs:string">
+              <data>
+               <slash simple="2">
+                <axis name="child" nodeTest="element(Q{}runeName)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='runeName';"/>
+                <axis name="attribute" nodeTest="attribute(Q{}runeList)" jsTest="return item.name==='runeList'"/>
+               </slash>
+              </data>
+             </cvUntyped>
+            </check>
+            <str val="_"/>
+            <str val=" "/>
+           </fn>
+          </applyT>
+         </elem>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="126" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem line="127" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="l">
+            <str val="Location: "/>
+           </valueOf>
+          </elem>
+          <valueOf flags="l">
+           <gVarRef name="Q{}locationTitle" bSlot="31"/>
+          </valueOf>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="130" name="div" nsuri="" flags="l">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="data"/>
+        </att>
+        <elem line="131" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Description:"/>
+           </valueOf>
+          </elem>
+          <applyT bSlot="32">
+           <axis role="select" name="child" nodeTest="element(Q{}description)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='description';"/>
+          </applyT>
+         </sequence>
+        </elem>
+        <elem line="133" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Effect:"/>
+           </valueOf>
+          </elem>
+          <applyT bSlot="33">
+           <axis role="select" name="child" nodeTest="element(Q{}effect)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='effect';"/>
+          </applyT>
+         </sequence>
+        </elem>
+        <elem line="135" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Notes:"/>
+           </valueOf>
+          </elem>
+          <applyT mode="Q{}notes" bSlot="34">
+           <axis role="select" name="child" nodeTest="element(Q{}notes)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='notes';"/>
+          </applyT>
+         </sequence>
+        </elem>
+        <elem line="136" name="p" nsuri="" flags="l">
+         <sequence>
+          <elem name="strong" nsuri="" flags="l">
+           <valueOf flags="Sl">
+            <str val="Trivia:"/>
+           </valueOf>
+          </elem>
+          <applyT bSlot="35">
+           <axis role="select" name="child" nodeTest="element(Q{}trivia)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='trivia';"/>
+          </applyT>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+     </sequence>
+    </elem>
+   </templateRule>
+  </mode>
+ </co>
+ <co id="6" vis="PUBLIC" binds="">
+  <globalParam name="Q{}pQString" type="xs:string" line="13" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" visibility="PUBLIC" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <check baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="13" card="1" diag="8|0|XTTE0590|pQString">
+    <cvUntyped to="xs:string" diag="8|0|XTTE0590|pQString">
+     <data>
+      <docOrder intra="1">
+       <slash simple="2">
+        <filter flags="b">
+         <slash simple="1">
+          <ifCall name="Q{http://saxonica.com/ns/interactiveXSLT}page" type="document-node()?"/>
+          <axis name="descendant" nodeTest="element(Q{}div)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='div';"/>
+         </slash>
+         <fn name="contains">
+          <cvUntyped to="xs:string">
+           <attVal name="Q{}id" chk="0"/>
+          </cvUntyped>
+          <str val="queryString"/>
+         </fn>
+        </filter>
+        <axis name="child" nodeTest="text()" jsTest="return item.nodeType===3;"/>
+       </slash>
+      </docOrder>
+     </data>
+    </cvUntyped>
+   </check>
+  </globalParam>
+ </co>
+ <co id="3" binds="">
+  <mode name="Q{}notes" onNo="TC" flags="W" patternSlots="0">
+   <templateRule prec="0" prio="0.0" seq="0" rank="0" minImp="0" slots="0" flags="s" line="256" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl">
+    <p.nodeTest role="match" test="element(Q{}notes)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='notes';"/>
+    <forEach role="action" baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="260">
+     <fn line="258" name="tokenize">
+      <check card="?" diag="0|0||fn:tokenize">
+       <cvUntyped to="xs:string">
+        <data>
+         <axis name="child" nodeTest="text()" jsTest="return item.nodeType===3;"/>
+        </data>
+       </cvUntyped>
+      </check>
+      <str val="\n\r?"/>
+      <str val=""/>
+     </fn>
+     <elem line="262" name="p" nsuri="">
+      <valueOf line="264" flags="l">
+       <dot type="xs:string"/>
+      </valueOf>
+     </elem>
+    </forEach>
+   </templateRule>
+  </mode>
+ </co>
+ <co id="4" binds="">
+  <mode name="Q{}quotations" onNo="TC" flags="W" patternSlots="0">
+   <templateRule prec="0" prio="0.5" seq="0" rank="0" minImp="0" slots="0" flags="s" line="239" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl">
+    <p.withUpper role="match" axis="parent" upFirst="false">
+     <p.nodeTest test="element(Q{}line)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='line';"/>
+     <p.nodeTest test="element(Q{}dialogue)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='dialogue';"/>
+    </p.withUpper>
+    <forEach role="action" baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="243">
+     <fn line="241" name="tokenize">
+      <check card="?" diag="0|0||fn:tokenize">
+       <cvUntyped to="xs:string">
+        <data>
+         <axis name="child" nodeTest="text()" jsTest="return item.nodeType===3;"/>
+        </data>
+       </cvUntyped>
+      </check>
+      <str val="\n\r?"/>
+      <str val=""/>
+     </fn>
+     <elem line="245" name="p" nsuri="">
+      <elem line="247" name="i" nsuri="" flags="l">
+       <valueOf flags="l">
+        <dot type="xs:string"/>
+       </valueOf>
+      </elem>
+     </elem>
+    </forEach>
+   </templateRule>
+  </mode>
+ </co>
+ <co id="5" binds="6">
+  <globalVariable name="Q{}locationID" type="xs:string" line="20" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <fn baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="20" name="substring-after">
+    <gVarRef name="Q{}pQString" bSlot="0"/>
+    <str val="="/>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="2" binds="5">
+  <globalVariable name="Q{}locationTitle" type="xs:string" line="24" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <fn baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="24" name="translate">
+    <gVarRef name="Q{}locationID" bSlot="0"/>
+    <str val="_"/>
+    <str val=" "/>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="1" binds="2 0 5 0 5 0 5 0 5 0 5 0 5">
+  <mode onNo="TC" flags="dW" patternSlots="0">
+   <templateRule prec="0" prio="-0.5" seq="0" rank="0" minImp="0" slots="0" flags="s" line="42" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl">
+    <p.nodeTest role="match" test="document-node()" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType===9||item.nodeType===11);"/>
+    <resultDoc role="action" baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="59" global="#&#xD;&#xA;#Fri Apr 12 18:41:05 EDT 2019&#xD;&#xA;" local="#&#xD;&#xA;#Fri Apr 12 18:41:05 EDT 2019&#xD;&#xA;method={http\://saxonica.com/ns/interactiveXSLT}replace-content&#xD;&#xA;">
+     <str role="href" val="#bodyDiv"/>
+     <sequence role="content" line="61">
+      <elem name="link" nsuri="">
+       <sequence>
+        <att name="rel" flags="l">
+         <str val="stylesheet"/>
+        </att>
+        <att name="type" flags="l">
+         <str val="text/css"/>
+        </att>
+        <att name="href" flags="l">
+         <str val="css/main.css"/>
+        </att>
+       </sequence>
+      </elem>
+      <elem line="62" name="link" nsuri="">
+       <sequence>
+        <att name="rel" flags="l">
+         <str val="icon"/>
+        </att>
+        <att name="type" flags="l">
+         <str val="image/png"/>
+        </att>
+        <att name="href" flags="l">
+         <str val="images/favicon.jpg"/>
+        </att>
+       </sequence>
+      </elem>
+      <elem line="64" name="ul" nsuri="">
+       <sequence>
+        <att name="id" flags="l">
+         <str val="nav"/>
+        </att>
+        <elem line="65" name="li" nsuri="" flags="l">
+         <sequence>
+          <att name="class" flags="l">
+           <str val="navButton"/>
+          </att>
+          <elem name="a" nsuri="" flags="l">
+           <sequence>
+            <att name="href" flags="l">
+             <str val="index.html"/>
+            </att>
+            <att name="class" flags="l">
+             <str val="active"/>
+            </att>
+            <valueOf flags="Sl">
+             <str val="Home"/>
+            </valueOf>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="66" name="li" nsuri="" flags="l">
+         <sequence>
+          <att name="class" flags="l">
+           <str val="navButton"/>
+          </att>
+          <elem name="a" nsuri="" flags="l">
+           <sequence>
+            <att name="href" flags="l">
+             <str val="aboutGame.html"/>
+            </att>
+            <valueOf flags="l">
+             <str val="About Game"/>
+            </valueOf>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="67" name="li" nsuri="" flags="l">
+         <sequence>
+          <att name="class" flags="l">
+           <str val="navButton"/>
+          </att>
+          <elem name="a" nsuri="" flags="l">
+           <sequence>
+            <att name="href" flags="l">
+             <str val="team.html"/>
+            </att>
+            <valueOf flags="l">
+             <str val="The Team"/>
+            </valueOf>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+        <elem line="68" name="li" nsuri="" flags="l">
+         <sequence>
+          <att name="class" flags="l">
+           <str val="navButton"/>
+          </att>
+          <elem name="a" nsuri="" flags="l">
+           <sequence>
+            <att name="href" flags="l">
+             <str val="results.html"/>
+            </att>
+            <valueOf flags="Sl">
+             <str val="Results"/>
+            </valueOf>
+           </sequence>
+          </elem>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="70" name="div" nsuri="">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="header"/>
+        </att>
+        <elem line="71" name="img" nsuri="" flags="l">
+         <sequence>
+          <att name="class" flags="l">
+           <str val="header-img"/>
+          </att>
+          <att name="src" flags="l">
+           <str val="images/banner.jpg"/>
+          </att>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+      <elem line="75" name="div" nsuri="">
+       <sequence>
+        <att name="class" flags="l">
+         <str val="dataDataContainer"/>
+        </att>
+        <att name="style" flags="l">
+         <str val="margin-top: 2em;"/>
+        </att>
+        <elem line="76" name="div" nsuri="" flags="l">
+         <sequence>
+          <att name="class" flags="l">
+           <str val="d"/>
+          </att>
+          <elem line="78" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="dataLoc"/>
+            </att>
+            <valueOf flags="l">
+             <gVarRef name="Q{}locationTitle" bSlot="0"/>
+            </valueOf>
+           </sequence>
+          </elem>
+          <elem line="80" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="loreType"/>
+            </att>
+            <elem name="p" nsuri="" flags="l">
+             <valueOf flags="l">
+              <str val=" Caryll Rune"/>
+             </valueOf>
+            </elem>
+           </sequence>
+          </elem>
+          <applyT line="82" mode="Q{}dataBlock" bSlot="1">
+           <fn role="select" name="key">
+            <str val="currentRune"/>
+            <gVarRef name="Q{}locationID" bSlot="2"/>
+           </fn>
+          </applyT>
+          <elem line="84" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="loreType"/>
+            </att>
+            <elem name="p" nsuri="" flags="l">
+             <valueOf flags="Sl">
+              <str val="Attire"/>
+             </valueOf>
+            </elem>
+           </sequence>
+          </elem>
+          <applyT line="86" mode="Q{}dataBlock" bSlot="3">
+           <fn role="select" name="key">
+            <str val="currentAttire"/>
+            <gVarRef name="Q{}locationID" bSlot="4"/>
+           </fn>
+          </applyT>
+          <elem line="88" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="loreType"/>
+            </att>
+            <elem name="p" nsuri="" flags="l">
+             <valueOf flags="Sl">
+              <str val="Weapon"/>
+             </valueOf>
+            </elem>
+           </sequence>
+          </elem>
+          <applyT line="90" mode="Q{}dataBlock" bSlot="5">
+           <fn role="select" name="key">
+            <str val="currentWeapon"/>
+            <gVarRef name="Q{}locationID" bSlot="6"/>
+           </fn>
+          </applyT>
+          <elem line="92" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="loreType"/>
+            </att>
+            <elem name="p" nsuri="" flags="l">
+             <valueOf flags="Sl">
+              <str val="Firearm"/>
+             </valueOf>
+            </elem>
+           </sequence>
+          </elem>
+          <applyT line="94" mode="Q{}dataBlock" bSlot="7">
+           <fn role="select" name="key">
+            <str val="currentFirearm"/>
+            <gVarRef name="Q{}locationID" bSlot="8"/>
+           </fn>
+          </applyT>
+          <elem line="104" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="loreType"/>
+            </att>
+            <elem name="p" nsuri="" flags="l">
+             <valueOf flags="Sl">
+              <str val="NPC"/>
+             </valueOf>
+            </elem>
+           </sequence>
+          </elem>
+          <applyT line="106" mode="Q{}dataBlock" bSlot="9">
+           <fn role="select" name="key">
+            <str val="currentNPC"/>
+            <gVarRef name="Q{}locationID" bSlot="10"/>
+           </fn>
+          </applyT>
+          <elem line="108" name="div" nsuri="" flags="l">
+           <sequence>
+            <att name="class" flags="l">
+             <str val="loreType"/>
+            </att>
+            <elem name="p" nsuri="" flags="l">
+             <valueOf flags="Sl">
+              <str val="Boss"/>
+             </valueOf>
+            </elem>
+           </sequence>
+          </elem>
+          <applyT line="110" mode="Q{}dataBlock" bSlot="11">
+           <fn role="select" name="key">
+            <str val="currentBoss"/>
+            <gVarRef name="Q{}locationID" bSlot="12"/>
+           </fn>
+          </applyT>
+         </sequence>
+        </elem>
+       </sequence>
+      </elem>
+     </sequence>
+    </resultDoc>
+   </templateRule>
+  </mode>
+ </co>
+ <overridden/>
+ <key name="Q{}currentRune" line="32" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" binds="" flags="u">
+  <p.nodeTest test="element(Q{}caryllRune)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='caryllRune';"/>
+  <data baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="32">
+   <slash simple="2">
+    <slash simple="2">
+     <axis name="child" nodeTest="element(Q{}locationArea)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='locationArea';"/>
+     <axis name="child" nodeTest="element(Q{}location)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='location';"/>
+    </slash>
+    <axis name="attribute" nodeTest="attribute(Q{}place)" jsTest="return item.name==='place'"/>
+   </slash>
+  </data>
+ </key>
+ <key name="Q{}currentBoss" line="30" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" binds="" flags="u">
+  <p.nodeTest test="element(Q{}boss)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='boss';"/>
+  <data baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="30">
+   <slash simple="2">
+    <slash simple="2">
+     <axis name="child" nodeTest="element(Q{}locationArea)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='locationArea';"/>
+     <axis name="child" nodeTest="element(Q{}location)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='location';"/>
+    </slash>
+    <axis name="attribute" nodeTest="attribute(Q{}place)" jsTest="return item.name==='place'"/>
+   </slash>
+  </data>
+ </key>
+ <key name="Q{}currentNPC" line="28" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" binds="" flags="u">
+  <p.nodeTest test="element(Q{}npc)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='npc';"/>
+  <data baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="28">
+   <slash simple="2">
+    <slash simple="2">
+     <axis name="child" nodeTest="element(Q{}locationArea)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='locationArea';"/>
+     <axis name="child" nodeTest="element(Q{}location)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='location';"/>
+    </slash>
+    <axis name="attribute" nodeTest="attribute(Q{}place)" jsTest="return item.name==='place'"/>
+   </slash>
+  </data>
+ </key>
+ <key name="Q{}currentWeapon" line="36" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" binds="" flags="u">
+  <p.nodeTest test="element(Q{}weapon)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='weapon';"/>
+  <data baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="36">
+   <slash simple="2">
+    <slash simple="2">
+     <axis name="child" nodeTest="element(Q{}locationArea)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='locationArea';"/>
+     <axis name="child" nodeTest="element(Q{}location)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='location';"/>
+    </slash>
+    <axis name="attribute" nodeTest="attribute(Q{}place)" jsTest="return item.name==='place'"/>
+   </slash>
+  </data>
+ </key>
+ <key name="Q{}currentAttire" line="34" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" binds="" flags="u">
+  <p.nodeTest test="element(Q{}attire)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='attire';"/>
+  <data baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="34">
+   <slash simple="2">
+    <slash simple="2">
+     <axis name="child" nodeTest="element(Q{}locationArea)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='locationArea';"/>
+     <axis name="child" nodeTest="element(Q{}location)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='location';"/>
+    </slash>
+    <axis name="attribute" nodeTest="attribute(Q{}place)" jsTest="return item.name==='place'"/>
+   </slash>
+  </data>
+ </key>
+ <key name="Q{}currentFirearm" line="38" module="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" binds="" flags="u">
+  <p.nodeTest test="element(Q{}firearm)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='firearm';"/>
+  <data baseUri="file:/C:/Users/Nathan/Documents/Flash/Drive/Digital%20humanities/BloodborneHTML/XSLT/locationOverviewSJS.xsl" ns="xsl=~ ixsl=~ xs=~" line="38">
+   <slash simple="2">
+    <slash simple="2">
+     <axis name="child" nodeTest="element(Q{}locationArea)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='locationArea';"/>
+     <axis name="child" nodeTest="element(Q{}location)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType===1 &amp;&amp; q.uri===''&amp;&amp;q.local==='location';"/>
+    </slash>
+    <axis name="attribute" nodeTest="attribute(Q{}place)" jsTest="return item.name==='place'"/>
+   </slash>
+  </data>
+ </key>
+ <output>
+  <property name="{http://saxon.sf.net/}stylesheet-version" value="20"/>
+ </output>
+ <decimalFormat/>
+</package>
+<?Σ 2dd0e157?>

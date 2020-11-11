@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atla>
+    <transcript>
+        <head>
+            <episode n="11">The Day of Black Sun, Part 2: The Eclipse</episode>
+            <book n="3">Fire</book>
+            <source link="https://avatar.fandom.com/wiki/Transcript:The_Day_of_Black_Sun,_Part_2:_The_Eclipse"/>
+        </head>
+        
+        <charlist>
+            <charList type="recurring" id="Zuko">Zuko</charList>
+            <charList type="recurring" id="Aang">Avatar</charList>
+            <charList type="recurring" id="Azula">Azula</charList>
+            <charList type="recurring" id="Ozai">Ozai</charList>
+            <charList type="recurring" id="Ursa">Ursa</charList>
+        </charlist>
+        <body>
+            <scene n="1">
+                <sd>The scene changes to where Zuko is confronting Ozai.</sd>
+<sp><speaker ref="Ozai">Ozai</speaker>	Why are you here?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	I'm here to tell the truth.</sp>
+<sp><speaker ref="Ozai">Ozai</speaker>	<sd>[Off-camera.]</sd> Telling the truth during the middle of an eclipse. <sd>[Cuts to shot of him.]</sd> This should be interesting.</sp>
+<sd>He sends the guards out of the room. One by one the guards file out, closing the doors behind them.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	First of all, in Ba Sing Se, it was <char ref="Azula">Azula</char> who took down the <char ref="Aang">Avatar</char>, not me.</sp>
+<sp><speaker ref="Ozai">Ozai</speaker>	Why would she lie to me about that?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	Because the <char ref="Aang">Avatar's</char> not dead. He survived.</sp>
+<sp><speaker ref="Ozai">Ozai</speaker>	<sd>[Shocked and horrified.]</sd> What?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	In fact, he's probably leading this invasion. He could be on his way here right now.</sp>
+<sp><speaker ref="Ozai">Ozai</speaker>	<sd>[Rises from his seat and points toward the door.]</sd> Get out! Get out of my sight right now if you know what's good for you!</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	That's another thing. I'm not taking orders from you anymore.</sp>
+<sp><speaker ref="Ozai">Ozai</speaker>	<sd>[Angrily.]</sd> You will obey me, or this defiant breath will be your last!</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Pulls out his swords.]</sd> Think again. I am going to speak my mind, and you are going to listen.</sp>
+<sd>Ozai sits down, dismayed at the turn of events.</sd> 
+    <sd>The scene changes to where Zuko is confronting Ozai.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	For so long, all I wanted was for you to love me, to accept me. I thought it was my honor I wanted, but really, I was just trying to please you. You, my father, who banished me just for talking out of turn. <sd>[Points a broadsword at his father.]</sd> My father, who challenged me, a thirteen-year-old boy, to an Agni Kai. <sd>[Cuts to shot of Ozai, looking angered.]</sd> How could you possibly justify a duel with a child?</sp>
+<sp><speaker ref="Ozai">Ozai</speaker>	<sd>[Scornful.]</sd> It was to teach you respect!</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	It was cruel! And it was wrong.</sp>
+<sp><speaker ref="Ozai">Ozai</speaker>	<sd>[Angrily.]</sd> Then you have learned nothing!</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	No, I've learned everything! And I've had to learn it on my own! Growing up, we were taught that the Fire Nation was the greatest civilization in history. And somehow, the War was our way of sharing our greatness with the rest of the world. What an amazing lie that was. The people of the world are terrified by the Fire Nation. They don't see our greatness. They hate us! And we deserve it! <sd>[Camera view shows top profile of Zuko and Ozai through an overhead grate.]</sd> We've created an era of fear in the world. And if we don't want the world to destroy itself <sd>[Cuts to shot of Zuko.]</sd>, we need to replace it with an era of peace and kindness.</sp>
+<sp><speaker ref="Ozai">Ozai</speaker>	<sd>[Laughs.]</sd> Your uncle has gotten to you, hasn't he?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	Yes. <sd>[Smiles proudly.]</sd> He has.</sp>
+<sd>Ozai only grows more furious.</sd> 
+    <sd>The scene changes to Zuko and Ozai.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	After I leave here today, I'm gonna free Uncle Iroh from his prison and I'm gonna beg for his forgiveness. <sd>[Cuts to shot of Ozai.]</sd> He's the one who's been a real father to me.</sp>
+<sp><speaker ref="Ozai">Ozai</speaker>	<sd>[Laughs.]</sd> Oh, that's just beautiful. And maybe he can pass down to you the ways of tea and failure.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	But I've come to an even more important decision. <sd>[Closes eyes and momentarily pauses.]</sd> I'm going to join the <char ref="Aang">Avatar</char> and I'm going to help him defeat you.</sp>
+<sp><speaker ref="Ozai">Ozai</speaker>	<sd>[Smugly.]</sd> Really? Since you're a full-blown traitor now and you want me gone, why wait? I'm powerless. You've got your swords. Why don't you just do it now?</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	Because I know my own destiny. Taking you down is the <char ref="Aang">Avatar's</char> destiny. <sd>[Puts his swords away.]</sd> Goodbye.</sp>
+<sp><speaker ref="Ozai">Ozai</speaker>	<sd>[Camera focuses on Zuko walking away, the Fire Lord in the background, now on his feet.]</sd> Coward! You think you're brave enough to face me, but you'll only do it during the eclipse. If you have any real courage, you'll stick around until the sun comes out. Don't you want to know what happened to <char ref="Ursa">your mother</char>?</sp>
+<sd>Zuko abruptly stops and turns to face his father. Ozai smiles. The camera cuts to a shot of outside where the solar eclipse continues. Cut back to Zuko confronting Ozai.</sd>
+<sp><speaker ref="Zuko">Zuko</speaker>	What happened that night?</sp>
+<sp><speaker ref="Ozai">Ozai</speaker> <char ref="Azulon"> My father, Fire Lord Azulon</char>, had commanded me to do the unthinkable to you, my own son, and I was going to do it. <sd>[Cuts to side-view of Zuko.]</sd><char ref="Ursa">Your mother</char> found out and swore she would protect you at any cost. <sd>[Camera focuses on Ozai.]</sd> She knew I wanted the throne and she proposed a plan, a plan in which I would become Fire Lord and your life would be spared.</sp>
+    <sd>The shot fades to Ozai who continues his account of the night Ursa disappeared.</sd>
+<sp><speaker ref="Ozai">Ozai</speaker>	<char ref="Ursa">Your mother</char> did vicious, treasonous things that night. She knew the consequences and accepted them. For her treason, she was banished.</sp>
+<sp><speaker ref="Zuko">Zuko</speaker>	<sd>[Grows teary-eyed.]</sd> So she's alive?</sp>
+<sp><speaker ref="Ozai">Ozai</speaker>	<sd>[Calmly.]</sd> Perhaps. Now I realize that banishment is far too merciful a penalty for treason. <sd>[Ozai closes his eyes. Shot fades to outside where the solar eclipse begins to end.]</sd> Your penalty will be far steeper.</sp>
+<sd>Fade briefly to show the eclipse ending. Fade to Ozai as he opens his eyes and, in split seconds, generates lightning, firing the bolt at Zuko. Zuko slides back several feet from the impact of the bolt, yet manages to redirect it, sending it back to right in front of his father. The resulting explosion causes the Fire Lord to slam into the back wall, where he falls over and raises his head, his face distorted in rage as flames from the lightning attack surround him. The flag behind him falls and the camera cuts to a shot of the room, revealing that Zuko had made his escape.</sd></scene>
+        </body>
+    </transcript>
+</atla>

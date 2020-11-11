@@ -1,0 +1,34 @@
+body{
+    background-image:url("../Images/Kanto-background.png");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    color:#000000;
+    font-family:verdana, courier, times;
+    text-align:center;
+}
+h1{
+    color:#ffffff;
+    text-align:center;
+}
+.pokemon{
+    background-color:#ffffff;
+    width: 25%;
+    margin-top:60px;
+    margin-left:37%;
+}
+.pokemon h1{
+    color:#000000;
+    text-align:center;
+}
+area a:hover{
+    background-color:#ffffff;
+}
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.flex > kanto {
+    flex-shrink: 10;
+}

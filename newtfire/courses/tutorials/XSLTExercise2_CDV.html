@@ -1,0 +1,270 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="explain.css" />
+        <title>XSLT Exercise 2 (CDV)</title>
+    </head>
+
+<!-- 2019-03-26 ebb: Add some stuff here and/or in the Explain XSLT Tutorial specific to MATCHING XML and OUTPUTTING HTML with a template match on the document node. And add stuff specific to PRUNING THE XML tree.  -->
+
+    <body>
+        <!--#include virtual="top.html" -->
+        <h1><span class="banner">XSLT Exercise 2</span></h1>
+        <h3>The input text</h3>
+        <p>For this assignment we’ll be producing HTML from a TEI XML file developed by the <a href="http://akira.newtfire.org">Akira project</a> team in the spring of 2018. The XML file, which represents the script in English translation of the anime movie <i>Akira</i>, is available here: <strong><a href="Akira_tei.xml">http://dh.newtfire.org/Akira_tei.xml</a></strong>. You should right-click on
+            this link, download the file, and open it in &lt;oXygen/&gt; (or you can pull it in locally from the DHClass-Hub where it is in Class Examples --> XSLT).</p>
+ <h3>Housekeeping: Setting Up a TEI to HTML Transformation</h3> 
+       <p>When you create an new XSLT document in &lt;oXygen/&gt; it won’t be able to read namespaced TEI input by default, so whenever you are working with TEI you need to add a special xpath-default-namespace for reading the input (see the text in blue below). To ensure that the output will be in the HTML namespace, we also need to add an XHTML namespace declaration (in <span style="color: purple;">purple</span>
+        below). To output the required DOCTYPE declaration for our HTML, we also created
+        <code>&lt;xsl:output&gt;</code> element as the first child of our root
+        <code>&lt;xsl:stylesheet&gt;</code> element (in <span style="color:firebrick;">red</span> below), and we needed to include an attribute there to omit the default XML declaration because if we output that XML line in our XHTML output, it will not produce valid HTML with the w3C and might produce quirky problems with rendering in various web browsers. So, you should copy our modified stylesheet template and xsl:output line here into your XSLT file: </p>
+        
+        <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    <span style="color:blue;">xpath-default-namespace="http://www.tei-c.org/ns/1.0"</span>
+         xmlns:math="http://www.w3.org/2005/xpath-functions/math"
+    exclude-result-prefixes="xs math"
+    <span style="color:purple;">xmlns="http://www.w3.org/1999/xhtml"</span>
+         version="3.0"&gt;
+    
+         <span style="color:firebrick;">&lt;xsl:output method="xhtml" encoding="utf-8" doctype-system="about:legacy-compat"
+        omit-xml-declaration="yes"/&gt;</span>
+    
+&lt;/xsl:stylesheet&gt;</pre>  
+        
+        
+        <h3>Overview of the assignment</h3>
+        <p>For this assignment, we aim to produce an HTML reading view of the <i>Akira</i> script, to help orient readers to the cast of characters, and to help visualize some special markup the team applied to help locate special scenes. The exercise will help orient you to styling and layout decisions connected with transforming XML to HTML, and it will also give you a chance to <q>remix</q> the XML creatively into something designed for display in a web browser. For reference, here is <a href="akiraSample.html">an example of HTML output</a> that is something like what we want to make with this assignment.</p> 
+        <p>Begin by surveying the source TEI document, and notice that it has a TEI header (a <code>teiHeader</code> element) to hold information <em>about</em> the <i>Akira</i> anime, its source, its cast, and the work of the project team. We will pick and choose which portions of this to process and output in the body of our HTML document (remembering that the <code>body</code> element in HTML is the part that is visible in a web browser), and we may want to change the order it appears in the new document. From this TEI header are <em>only</em> going to output the list of characters that appears in the TEI <code>profileDesc</code> in the HTML <code>body</code> element as our first output in the file.</p>
+        <p>The following portions of the input document are especially important to us to display in HTML:</p>
+        <ul>
+          <li>The <code>profileDesc</code> in the <code>teiHeader</code> contains a list of characters we will want to sort alphabetically. We will want to output make a cast list in an HTML table with two columns to help us quickly read names and abbreviations.</li> 
+            <li>We will want to process the script itself in the TEI <code>body</code> element, with its <code>sp</code> elements as well as the information coded in the attributes, including the speaker id, the number, and, where available, the time segment.</li>
+                <li>Within those <code>sp</code> elements we want to process the <code>l</code> elements to hold them on separate lines.</li>
+            <li>When <code>sp</code> elements are inside special sections coded as <code>spGrp</code>, we want to hold these in their own HTML <code>div</code> elements to distinguish them from other parts of the script.</li>
+      
+        </ul>
+        
+        <p>Some of these elements are located inside the  <code>&lt;teiHeader&gt;</code>. Some are nested unevenly at different levels of the XML tree hierarchy, like some of the <code>&lt;sp&gt;</code> elements nested inside <code>&lt;spGrp&gt;</code> elements, and the <code>&lt;l&gt;</code> elements sitting inside of <code>&lt;sp&gt;</code> elements. You may not be sure at the outset
+            which elements can be inside which other ones, or how deeply they can nest. Happily, with
+            XSLT, unlike with many other programming languages, you don’t need to care about those
+            questions! What <em>does</em> matter is that you <strong>prune</strong> the XML tree to adapt it to a new structure for your HTML, when you write your template match on the document node. In pruning, we select only the portions of the XML file we intend to process. Once we have pruned, we can process whatever descendants we wish in the portions of the tree we have chosen to work with.</p>
+        <p>Our XSLT will match on TEI elements and transform them into the HTML’s limited tagset for presentation on the web. You may want to review HTML code to survey your options, but we will suggest some HTML code to try below. Prepare HTML code for the purposes of styling with CSS, so you can set some elements to have different colors or background colors or to alter borders or fonts or font sizes or font styles (e.g.,
+            italic) or font weights (e.g., bold) or add text decoration (e.g., underlining) or text
+            transformation (e.g., convert to all upper case), really anything stylistically
+            possible for web display.</p>   
+        
+        <p>An example of possible desired output can be found here <a
+                href="akiraSample.html"
+                >http://dh.newtfire.org/akiraSample.html</a>, though we did not style the body paragraphs in this output file and we have complicated the table beyond what we are requiring in this assignment. (Bonus: Producing tables like ours will earn you extra credit on our assignment. We output an additional table cell in the cast list holding the <code>count()</code> of the times a speaker appears in the body of the script, and we used that value for sorting.)</p> 
+        <p>Most of the styling on the web display is controlled by our CSS file. Your last challenge in this assignment is to write your own CSS and make sure that your XSLT outputs the <code>&lt;link/&gt;</code> element to associate it the output HTML files. (Here is <a href="explainCSS.html#link_CSS">how to do this with an example code block</a>.) Your stylistic choices might vary greatly from ours so your output may look completely different. What should
+            look relatively similar is the underlying raw HTML, which is generated by running the
+            XSLT. By viewing the page source of our output you can review the underlying raw HTML.</p>
+        <h3>Approaching the Problem</h3>
+        <p>In XSLT, processing something normally happens in two parts. You normally have an
+                <code>&lt;xsl:apply-templates&gt;</code> element that tells the system what elements
+            (or other nodes) you want to process, and you then have an
+                <code>&lt;xsl:template&gt;</code> element that tells the system exactly how you want
+            to process those elements, that is, what you want to do with them. If you find the image
+            helpful, you can think of this as a situation where the
+                <code>&lt;xsl:apply-templates&gt;</code> elements <em>throw some nodes out into
+                space and say <q>would someone please process these?</q>
+            </em>and the various <code>&lt;xsl:template&gt;</code> elements sit around watching
+            nodes fly by, and when they <strong>match</strong> something, they <em>grab it and process it</em>.</p>
+        <p>Therefore, for this assignment, your XSLT transformation (after all the housekeeping)
+            should have several template rules:</p>
+        <ol>
+            <li>Begin with <strong>a special template rule for the document node</strong> (<code>&lt;xsl:template
+                    match="/"&gt;</code>), in which you set up the basic HTML structure: the
+                    <code>&lt;html&gt;</code> element, <code>&lt;head&gt;</code> and its contents,
+                and <code>&lt;body&gt;</code>.</li>
+            <li>Inside the <code>&lt;body&gt;</code> element that
+                just created, write an HTML <code>h1</code> element to hold the title you want viewers to see on the web page, and use <code>xsl:apply-templates select="??"</code> to select the part of the input TEI that will give you the title. When you need to set the value of the <code>@select</code> attribute on <code>xsl:apply-templates</code>, you are being choosy or <em>pruning the tree</em> to pull <em>just</em> what you need into position where you want it.</li>
+            <li>Beneath the main title, create a secondary header in HTML (an <code>h2</code> element), just type the words <q>Cast List</q> into it. You are basically writing some HTML code within the XSLT document to construct your page headings and layout.</li>
+            <li>Now, set up an HTML <code>table</code>, and give it a row of two <code>th</code> (table header) cells to help start a table of abbreviated IDs and values. (Here is <a href="https://www.w3schools.com/html/html_tables.asp">a w3schools page with HTML table code</a>.)  After the table header, you will want to simply apply-templates to select each TEI <code>person</code> element to process in a new template rule. Anything that is going to have to be processed multiple times needs to be handled with apply-templates to select those elements for processing to output your table rows. </li>
+            <li>Write a new template rule to match on the TEI <code>person</code> element and output (each time it finds <code>person</code>) an HTML table row (<code>tr</code>) containing two cells (<code>td</code>). Inside each cell, pull the relevant information from the person element that you wish to present. (We recommend selecting to output the <code>@xml:id</code> in one table cell, and then just the <em>first</em> <code>persName</code> element inside the other table cell.)</li>
+            <li>To output the script of <i>Akira</i>, you need to indicate where you want it to be set in your template on the document node that maps out your HTML document. Write an <code>&lt;xsl:apply-templates select="??"/&gt;</code> and select the portion of the TEI document that contains the script. Then you will need to write separate template rules that match on each of the inline elements we planned above to match and style. Each rule will be <q>called</q> or <q>fired</q> as a result of the preceding
+                    <code>&lt;xsl:apply-templates&gt;</code> selection from our first template
+                rule.</li>
+        </ol>
+        <p>Remember to run your XSLT and inspect your output <strong>with every change you make</strong>. This will help you to correct your template rules. Save your output as an HTML file, and reopen it in oXygen to make sure it is well-formed and valid (since the XSLT output window will not tell you that). A good moment to save and re-open to check your work is when you have generated a table with the cast list. If you get stuck on the cast table, write some XML comments explaining what you tried and what isn’t working (and go on the DHClass-Hub to ask for help). You can go on and try the next part to output the script. (XSLT template rules do not need to be written in a strict order, so you can go on and come back to the cast table later.)</p>
+      
+        <h3>Processing the <cite>Akira</cite> script: The elegant simplicity of &lt;xsl:apply-templates&gt;</h3>
+
+        <p>When you are processing the script of <cite>Akira</cite>, you are working with <q>mixed content</q>. The <code>spGrp</code> elements wrap around clusters of speeches (<code>sp</code>) elements as well as self-closing <code>milestone</code> elements and stage directions in <code>stage</code> elements, any of which could appear in any order. We don’t have to worry about setting an order of processing, because declarative XSLT is designed to deal with it for us. With a traditional <em>procedural</em> programming language, you’d have to write rules like <q>inside the body, if 
+            there’s a <code>&lt;spGrp&gt;</code> do X, but if there isn’t do Y, and, oh, by the way, check whether
+                there’s a <code>&lt;l&gt;</code> or a <code>&lt;p&gt;</code> inside
+                the <code>&lt;sp&gt;</code> elements, etc.</q> That is, most programming languages have
+            to tell you what to look for at every step. The elegance of XSLT is that all you have to say inside paragraphs and other elements is <q>I’m
+                not worried about what I’ll find here; just process (apply templates
+                    to) <em>all</em> my children, <em>whatever they might be</em>.</q></p>
+        <p>The way to deal with mixed content or unpredictable combinations of elements in XSLT is to create a template rule for every element you care about, and use it to output whatever HTML markup you want for that element. Then, inside
+            that markup, you can include a general <code>&lt;xsl:apply-templates/&gt;</code>, not
+            specifying a <code>@select</code> attribute. For example, if you want your
+                <code>&lt;persName&gt;</code> elements to be tagged with the HTML
+                <code>&lt;strong&gt;</code> tags, which means <q>strong emphasis</q> and which is
+            usually rendered in bold, you could have a template rule like:</p>
+        <pre>&lt;xsl:template match="persName"&gt;
+  &lt;strong&gt;
+      &lt;xsl:apply-templates/&gt;
+  &lt;/strong&gt;
+&lt;/xsl:template&gt;</pre>
+        <p>You don’t know or care whether <code>&lt;persName&gt;</code> has any children nodes or,
+            if it does, what they are. Whatever they are, this rule tells the system to try to
+            process them, and as long as there’s a template rule for them, they’ll be taken care of
+            properly somewhere else in the stylesheet. If there are no children nodes, the
+                <code>&lt;xsl:apply-templates/&gt;</code> will apply vacuously and harmlessly. As
+            long as every element tells you to process its children, you’ll work your way down
+            through the hierarchy of the document without having to know which elements can contain which other elements or text nodes.</p>
+        <h4>Taking stock: when to use <code>@select</code></h4>
+        <p>In our <a href="explainXSLT.html">XSLT tutorial</a> we describe the use of
+                <code>&lt;xsl:apply-templates select="…"/&gt;</code> which specifies exactly what
+            you want to process and where. That makes sense when your input and output are very regular in structure. <em>Use the <code>@select</code> attribute when you know exactly
+                what you’re looking for and where you want to put it.</em> We will want to use
+                <code>&lt;xsl:apply-templates select="…"/&gt;</code> in order to grab all of the
+                <code>&lt;person&gt;</code> elements sitting inside of the
+                <code>&lt;particDesc&gt;</code> element so we can output them up in a Cast List near the top of our HTML file, 
+            separate from the Akira script that we want to come out below, selected from the TEI  <code>&lt;body&gt;</code> element. We will also want to use the
+                <code>&lt;xsl:apply-templates select="…"/&gt;</code> in order to reach for attribute values like the <code>@xml:id</code> on <code>person</code> to output them inside HTML table cell (<code>td</code>) elements. By setting up these very
+            specific selections of these elements and attributes, we are paring down or <q>trimming</q> the XML tree of the input document to designate exactly and only what we want.  <span class="smaller">Remember, what is represented in the <code>&lt;html&gt;</code>
+                element of your XSLT is the basic structure of your whole output HTML document, and you need the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>. 
+                The <code>&lt;head&gt;</code> element and <code>&lt;title&gt;</code> and <code>&lt;link&gt;</code> need to be present to identify the page, but these will not appear in the main web browser window unless someone is reading your HTML source code. So if you want your page to have a visible title and section headings you need to use the appropriate HTML elements (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc).</span></p>
+        <p>After you have selected the portions of the document to process for your Cast of Characters table, and to output the script, for the rest of this assignment you don’t need to write the template rules in any particular order. Those template matches will fire as elements in the document turn up to be processed, whenever it comes up.
+                Basically, <code>&lt;xsl:apply-templates/&gt;</code> without the <code>@select</code> attribute
+            says <q>apply templates to whatever you find.</q>
+            <em>Omit the <code>@select</code> attribute where you don’t want to have to think about
+                and cater to every alternative individually.</em> (You can still treat them all
+            differently because you’ll have different template rules to <q>catch</q> them, but when
+            you assert that they should be processed, you don’t have to know what they actually
+            are.)</p>
+        <h3>Sorting</h3>
+        <p>An alphabetically sorted Cast of Characters may be useful for humans who want to look up more information about a speaker they see in the script. We want to make an alphabetized list sorted by the abbreviated name given in the <code>person/@xml:id</code>. Start by looking up <code>&lt;xsl:sort&gt;</code> in the Michael Kay book or at <a
+                href="https://www.w3schools.com/xml/xsl_sort.asp"
+                >https://www.w3schools.com/xml/xsl_sort.asp</a>. So far, if we want to output our cast in the order in which they occur <cite>Akira</cite> script, we’ve used a self-closing empty <code>&lt;xsl:apply-templates/&gt;</code> to select them with something like
+            <code>&lt;xsl:apply-templates select="descending::particDesc//person"/&gt;</code>. But the self-closing empty element tag is informationally identical to writing the start and end tags separately with nothing between them, that is:</p>
+            <pre>
+                &lt;xsl:apply-templates select="descendant::particDesc//person&gt;
+                &lt;/xsl:apply-templates&gt;</pre>
+        
+        <p>To cause the elements being
+            processed to be sorted first, you need to use this alternative notation, with separate
+            start and end tags, because you need to put the <code>&lt;xsl:sort&gt;</code> element
+            between the start and end tags. If you use the first notation, the one with a single
+            self-closing tag, there’s no <q>between</q> in which to put the
+            <code>&lt;xsl:sort&gt;</code> element. In other words, you want something like:</p>
+        <pre>&lt;xsl:apply-templates select="descendant::particDesc//person"&gt;
+  &lt;xsl:sort select="<code>what specific aspect of the person element you want to sort on, such as an attribute or child element</code>"/&gt;
+&lt;/xsl:apply-templates/&gt;</pre>
+        <p>Without an <code>@select</code> attribute on <code>&lt;xsl:sort&gt;</code> this would sort on child text content of the <code>&lt;person&gt;</code> elements
+            alphabetically by their text value (and if there is no text, there won’t be anything to sort, so the sort will fail). Since our <code>person</code> elements only contain other elements, we need to use the <code>@select</code> attribute on
+            <code>&lt;xsl:sort&gt;</code>. Note that you can set an <code>@order</code> attribute to sort in ascending or descending order. Also you do not have to sort alphabetically. You can sort by numerical counts of something, for example, how often a particular character appears in the script. (We sorted our Cast Table in both ways.) <strong>Bonus challenge: </strong> Can you figure out how to sort based on a count of the number of appearances, or the number of times the character speaks in the production? 
+        <strong>Hint:</strong> To do this requires searching the XML tree for the <code>sp</code> elements whose <code>@who</code> attribute values match up with the current person element. You will need a string-matching function, because the <code>@who</code> attributes have a <code>#</code> in front of the id. Typically we strip that off using the <code>substring-after()</code> function, so we look for the <code>substring-after(@who, '#")</code> to see where that substring <code>=</code> the <code>current()</code> xml:id. We need to use <code>current()</code> to designate the specific person element being processed (it's a little like processing $i in a for-loop). </p>
+        <h4>What should the output look like?</h4>
+        <p>We are sure you can do better than <a href="akiraSample.html">our sample output</a>. HTML provides a limited number of elements for styling in-line text, which you can read
+            about at <a href="http://www.w3schools.com/html/html_formatting.asp"
+                >http://www.w3schools.com/html/html_formatting.asp</a>. You can use any of these in
+            your output, but think about your decisions. For layout purposes, <dfn>block elements</dfn> like <code>div</code> or <code>h1</code> or <code>p</code> literally take up a rectangular <q>block</q> on the page and can be styled accordingly (given padding, etc. <dfn>Inline elements</dfn>, like  <code>span</code> or <code>em</code> or <code>strong</code> are meant to run within blocks (inside paragraphs, for example), and are good for highlighting within the line, for example to style speaker names or speech numbers to introduce each speech.  Finally, presentational elements, the kind that describe how text
+            looks (e.g., <code>&lt;i&gt;</code> for <q>italic</q>), are generally regarded as less
+            useful than descriptive tags, which describe what text means (e.g.,
+                <code>&lt;em&gt;</code> for <q>emphasis</q>). Both of the preceding are normally
+            rendered in italics in the browser, but the semantic tag is more consistent with the
+            spirit of XML than the presentational one. </p>
+        <p>The web would be a dull world if the only styling available were the handful of
+            presentational tags available in vanilla HTML. In addition to those options, there are
+            also ways to assign arbitrary style to a snippet of in-line text, changing fonts or
+            colors or other features in mid-stream. To do that:</p>
+        <ol>
+            <li>Before you read any further in this page, read Obdurodon’s <a
+                        href="http://dh.obdurodon.org/class-and-span.html">Using
+                            <code>&lt;span&gt;</code> and <code>@class</code> to style your HTML</a>
+                    page.</li>
+
+            <li><p>To use the strategies described on that page, create an XSLT template rule that
+                    transforms the element you want to style to an HTML <code>div</code> or <code>&lt;span&gt;</code>
+                    element with a <code>@class</code> attribute. For example, you might transform
+                        <code>&lt;spGrp&gt;</code> in the input XML to <code>&lt;div
+                        class="spGrp"&gt;</code>...child nodes (processed in XSLT with
+                        <code>&lt;xsl:apply-templates/&gt;</code>) ...<code>&lt;/span&gt;</code> in
+                    the output HTML. You can then specify CSS styling by reference to the
+                        <code>@class</code> attribute, as described in the page we link to
+                    above.</p>
+                <p>Note that you can make your transformations very specific. For example, instead
+                    of setting all <code>&lt;sp&gt;</code> elements to the same HTML
+                        <code>@class</code>, you can create separate template rules to
+                        <strong>match</strong> on special <code>sp[@who="#colonel"]</code> and <code>sp[@who="#doctor"]</code> according to their attribute values. (You can even use the pipe (<code>|</code>) to unify these as two options for a template match:</p>
+                    <pre>
+  &lt;xsl:template match="<code>sp[@who='#doctor'] | sp[@who='#colonel']</code>"&gt;
+            <span style="color:Indigo;">&lt;span class="commanders"&gt;</span>
+            <span style="color:Indigo;">&lt;strong&gt;</span>&lt;xsl:apply-templates select="@who"&gt;<span style="color:Indigo;">&lt;/strong&gt;</span>                  
+            &lt;xsl:apply-templates/&gt;
+            <span style="color:Indigo;">&lt;/span class="commanders"&gt;</span>
+  &lt;/xsl:template>&gt;
+                    </pre>
+    
+ <p>Notice how we used two <code>&lt;xsl:apply-templates/&gt;</code> statements here, one which selected an attribute value to output, and the other just to process whatever child contents of the &lt;sp&gt; elements turn up. Around both of them, we set a special <code>&lt;span&gt;</code>
+                    element with a logical <code>@class</code> (we used the value "commanders" to help associate these two controlling figures in <cite>Akira</cite>). In our CSS we make reference to the <code>@class</code>, again as described in the
+                    page we link to above.</p></li>
+            
+            
+            <li>Setting <code>@class</code> attributes in the output HTML makes it possible
+                    to style the various <code>&lt;span&gt;</code> elements differently according to
+                    the value of those attributes, but you need to create a CSS stylesheet to do
+                    that. Create the stylesheet (just as you’ve created CSS in the past), and
+                    specify how you want to style your <code>&lt;span&gt;</code> elements. Link the
+                    CSS stylesheet to the XSLT by creating the appropriate <code>&lt;link&gt;</code>
+                    element inside of the HTML <code>&lt;head&gt;</code> element of your XSLT (you
+                    can remind yourself of the <code>&lt;link&gt;</code> element format by
+                    referencing our <a href="explainCSS.html">CSS Tutorial</a>).</li>
+            <li>Besides wrapping your <code>&lt;xsl:apply-templates/&gt;</code> in
+                        <code>&lt;span&gt;</code> elements and other HTML elements, you might
+                    consider adding extra spaces or text outside some of these as well. To do this, experiment with inserting <code>&lt;xsl:text&gt;...&lt;/xsl:text&gt;</code> where you would like spaces or characters (say a colon and some white space to follow a speaker name in the script). </li>
+       
+            <li>You may want to style your table so you can see the outlines of the table cells, and add colors and styling. For some guidance, see <a href="https://www.w3schools.com/css/css_table.asp">the w3schools CSS tutorial on tables</a>, which shows you some nifty tricks like how to style every other row to shade it differently.</li> 
+
+        </ol>
+            
+          
+        <h3>Your Final Results</h3>
+        <p>What you should produce, then, is:</p>
+        <ul>
+            <li>An XSLT stylesheet that transforms the contents of the source document into HTML, giving us at least one sorted Cast List and a reading view of the <cite>Akira</cite> script.
+               </li>
+
+            <li>The resulting HTML should also style and at least some of those styles should be set
+                using block <code>&lt;div&gt;</code> and inline <code>&lt;span&gt;</code> elements with the <code>@class</code>
+                attribute to group related kinds of elements visually.</li>
+
+            <li>You need to create a CSS file, <strong>linked to your output HTML</strong>, that
+                specifies how to style the output document. You can look up the most useful of the
+                available CSS properties at <a href="http://www.w3schools.com/css/">http://www.w3schools.com/css/</a>. We’d suggesting following the links on the
+                left under <q>CSS styling</q> for styling backgrounds, text, and fonts, as well as
+                the link for borders under <q>CSS box model</q>.</li> 
+
+        </ul>
+        <h3>Important</h3>
+        <ul>
+            <li><em>Before submitting your homework, you must run the transformation, save the results as an HTML, and open it as a new file in &lt;oXygen/&gt;</em> to
+                make sure the results are what you expect them to be. (Here is <a href="explainXSLT.html#runTransform" title="How to run a transformation in oXygen">a labelled screen capture from oXygen</a> to show you how to run
+                XSLT transformations inside &lt;oXygen/&gt;.)</li>
+                <li>If you don’t get
+                the results you expect and can’t figure out what you’re doing wrong, remember that
+                you can post a query to our <a href="https://github.com/ebeshero/DHClass-Hub/issues"
+                    >DHClass-Hub Issues board</a>. Describe what you tried, what you expected, what you got, and what you think
+                the problem is. We often find, just as we’re preparing to post our own queries to
+                coding discussion boards, that having to write up a description of the problem helps
+                us think it through and solve it ourselves.</li>
+
+            <li>When you complete this assignment, submit your XSLT file and CSS file to
+                Courseweb, following our usual homework file-naming conventions. We will run your
+                XSLT transformation to see what output it generates, so you do not need to submit
+                your output file. However, it is important that you include your CSS so we can
+                locally associate it to your XSLT (keeping them in the same folder space) and see
+                your final output. <strong>Link the CSS in the XSLT for us, so that when we run the XSLT it generates the <code>&lt;link&gt;</code> element automatically.</strong></li>
+        </ul>
+    </body>
+</html>

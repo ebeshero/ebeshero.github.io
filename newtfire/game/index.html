@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Mason Gossy" />
+		<title>Game Pitch Doc Analysis</title>
+		<style type="text/css">
+			body {
+			    min-width: 500px;
+			}
+			
+			#container {
+			    padding-left: 200px;
+			    padding-right: 190px;
+			}
+			
+			#container .column {
+			    position: relative;
+			    float: left;
+			}
+			
+			#center {
+			    padding: 10px 20px;
+			    width: 100%;
+			}
+			
+			#left {
+			    width: 180px;
+			    padding: 0 10px;
+			    right: 240px;
+			    margin-left: -100%;
+			}
+			
+			#right {
+			    width: 130px;
+			    padding: 0 10px;
+			    margin-right: -100%;
+			}
+			
+			#footer {
+			    clear: both;
+			}
+			
+			
+			* html #left {
+			    left: 150px;
+			}
+			
+			
+			#container {
+			    overflow: hidden;
+			}
+			
+			#container .column {
+			    padding-bottom: 1001em;
+			    margin-bottom: -1000em;
+			}
+			
+			
+			* html body {
+			    overflow: hidden;
+			}
+			
+			* html #footer-wrapper {
+			    float: left;
+			    position: relative;
+			    width: 100%;
+			    padding-bottom: 10010px;
+			    margin-bottom: -10000px;
+			    background: #fff;
+			}
+			
+			
+			body {
+			    margin: 0;
+			    padding: 0;
+			    font-family: Sans-serif;
+			    line-height: 1.5em;
+			}
+			
+			p {
+			    color: #060C0D;
+			}
+			
+			nav ul {
+			    list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			}
+			
+			nav ul a {
+			    color: lightblue;
+			    text-decoration: none;
+			}
+			
+			#header,
+			#footer {
+			    font-size: large;
+			    padding: 0.3em;
+			    background: #43646B;
+			}
+			
+			#left {
+			    background: #52ACBD;
+			}
+			
+			#right {
+			    background: #52ACBD;
+			}
+			
+			#center {
+			    background: #FEFFFF;
+			}
+			
+			#container .column {
+			    padding-top: 1em;
+			}</style>
+
+
+	</head>
+
+	<body>
+		<header id="header">
+			<p>Game Pitch Documents Analysis Project</p>
+		</header>
+		<div id="container">
+
+			<main id="center" class="column">
+				<article>
+					<h1>Introduction</h1>
+					<p> For this project we want to give a go at comparing different game design
+						pitch documents in order to highlight key differences and similarities such
+						as detailed inclusion on character design vs sound design or if a pitch from
+						10 years ago includes more images than modern documents. There is tons of
+						diversity in these documents so it will be interesting to present some of
+						them in a different way by markup through xml. We are hoping that the end
+						result will aid us in the future for creating a game pitch document.
+						A video game pitch document is something developer teams use to
+						present a game to a publisher to help them create, fund and sell their game.
+						Developers and publishers are most often completely different companies but
+						work together to sell a finished product. To simplify it, developers create
+						the game and bring it to life, while publishers use marketing, management
+						and PR to make sure the game is a success and profitable. A key element with
+						pitch documents is there is no set way or structure on how to create them.
+						They are a dynamic document that often revolve around the style of game
+						being created. For example, if the game is very strong on the aesthetic of
+						art then they should include lots of concept art and color, just like the
+						Flame in the Flood which we included in our research. However there are
+						completely different documents that are paragraph heavy like Wasteland 2
+						that just are focused on explaining mechanics, new elements and interesting
+						story lore. </p>
+					<p>For our research question, we want to explore how the structures and material
+						presented in the pitch documents differentiate and what developers highlight
+						the most in these documents?</p>
+					<p>-The whole point to creating a pitch document is to sell your game.</p>
+					<p>-Differences due to the date they were created.</p>
+					<p>-Some pitches revolve around art style to sell their game.</p>
+					<p>-Some structures are paragraph oriented, others contain bulleted lists and
+						some include tons of images. </p> There are a couple things to note about
+					what is “expected” when it comes to a pitch document. <p><b>Know your
+							audience</b></p>
+					<p><b>Know your product </b></p>
+					<p><b>Prepare something special </b></p>
+					<p><b>Don’t focus on minor details</b></p>
+					<p><b>Provide support material </b></p>
+					<p><b>Establish a timeline</b></p>
+					
+					<h1>Project Update 1</h1>
+					<p>For the first update we gathered some information and will begin our project on the original bioshock game. 
+					After some conversion we got a raw text file and edited slightly to include bullet points and other symbol recognition.</p>
+					<img src="images/BioshockPitch.PNG"
+						alt="Pitch document from the original Bioshock Game" />
+					
+					<h1>Project Update 2</h1>
+					<p>For our second update we began to form a schema around the bioshock game. It is going to be changing as we continue to work though because we plan to include 3 other pitch documents in this project.</p>
+					<p>We began to form a research question surrounding the other pitch documents we were thinking of adding to the project.</p>
+					<p>Added the following pitch documents: The Flame in the Flood as well as the original Diablo game.
+					We saw these as great additions as FITF has diversity with lots of images and art while Diablo is a very old document that uses lots of paragraph style.</p>
+					<img src="images/FITF.PNG"
+						alt="Pitch document from Flame in the Flood" />
+					<img src="images/Diablo.PNG"
+						alt="Pitch document from the original diablo game" />
+					
+					<h1>Project Update 3</h1>
+					<p>We began to reform the schema in order to be more compatible with multiple pitch documents that vary in structure.</p>
+					<img src="images/Schema.PNG"
+						alt="This is our schema doc for our project" />
+					<p>We added another pitch document to our research, Wasteland 2.</p>
+					<img src="images/Wasteland2.PNG"
+						alt="Pitch document for Wasteland 2" />
+					
+					<h1>Project Update 4</h1>
+					<p>We made significant progress on xml markup for the bioshock document.</p>
+					<img src="images/BioshockMarkup.PNG"
+						alt="Bioshock markup screenshot" />
+					<p>We also made great progress on the schema, making some adjustments as we progressed through the bioshock document.</p>
+					<img src="images/SchemaUpdate1.PNG"
+						alt="First major update for our schema" />
+					<p>Added lots of content to the website. Continueing to think of different ideas for the final layout in order to keep things accessible and organized.</p>
+				</article>
+			</main>
+
+			<nav id="left" class="column">
+				<h3>Updates</h3>
+				<ul>
+					<li><a href="#">Update 1</a></li>
+					<li><a href="#">Update 2</a></li>
+					<li><a href="#">Update 3</a></li>
+					<li><a href="#">Update 4</a></li>
+					<li><a href="#">Update 5</a></li>
+				</ul>
+				<h3>Left heading</h3>
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+					<li><a href="#">Link 5</a></li>
+				</ul>
+			</nav>
+
+			<div id="right" class="column">
+				<h3>The Team </h3>
+				<p>We are a team of students at <a href="https://behrend.psu.edu/"></a>Penn State
+					Erie, The Behrend College.</p>
+				<p>Mason Gossy</p>
+				<p>Cody Carlson</p>
+				<p>Elizabeth Wheeler</p>
+			</div>
+
+		</div>
+		<div id="footer-wrapper">
+			<footer id="footer">
+				<p>This is the footer</p>
+			</footer>
+		</div>
+	</body>
+
+</html>

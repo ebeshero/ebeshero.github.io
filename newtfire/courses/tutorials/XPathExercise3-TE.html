@@ -1,0 +1,80 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="../explain.css" />
+      <title>XPath Exercise 3 (TE)</title>
+   </head>
+
+
+
+   <body>
+      <!--#include virtual="top.html" -->
+      <h1><span class="banner">XPath Exercise 3</span></h1>
+      <p>The <a href="https://github.com/zteyssier/JamesBondMCI">Fall 2020 DIGIT 400 James Bond</a> project team has prepared XML for the screenplay <i>Goldeneye</i>, which you can access by right-clicking on the file and downloading it from here: <a href="Goldeneye.xml">Goldeneye.xml</a>. Open
+         the file in oXygen and work with the XPath Window set to version 3.1. Respond to the XPath
+         questions below in a text or markdown file, and <a href="https://canvas.psu.edu">upload to Canvas</a>
+         for this assignment when you’re finished. (Please use an attachment! If you paste your
+         answer into the text box, canvas may munch the code formatting.) Some of these tasks are
+         thought-provoking, and even difficult. If you get stuck, do the best you can, and if you
+         can’t get a working answer, give the answers you tried and explain where they failed to get
+         the results you wanted. Sometimes doing that will help you figure out what’s wrong, and
+         even when it doesn’t, it will help us identify the difficult moments.</p><p>You should consult <strong><a href="https://dh.obdurodon.org/functions.xhtml"><cite class="sub">The XPath Functions We Use Most</cite> page and especially its section 4
+            on Strings</a></strong>. As
+            always, consult our class notes and our introductory guide <cite class="sub"><a
+               href="explainXPath.html">Follow the XPath!</a></cite>. <strong>Be sure to give the
+            XPath expression you used in your answer, and don’t just report your results.</strong>
+         This way, if the answer is incorrect, we can help explain what went wrong. </p>
+      <hr/>
+      <p>First of all, skim through the document to get a sense of how it is coded. Write some XPath to see if you can write XPath expressions to find all the scenes, stage directions, speeches, and speakers just to warm up and familiarize yourself with the file.</p>
+            <ol>
+               <li>Let’s start by exploring the <code>sd</code> elements. These contain the stage directions.
+                  <ol>
+                     <li>What XPath expression returns all the stage directions that contain the word "Russian"? How many are there?</li>
+                     <li>Some of the stage directions contain words emphasized in block caps. Write an XPath expression using the <code>matches()</code> function to locate the stage directions that hold a regular expression pattern of <em>three or more</em> capital letters in a row.</li>
+                     <li>There is usually a pretty important stage direction after a scene change. Every scene change comes with a <code>Heading</code> element. How can you reliably find the first stage direction immediately following that Heading element? (Hint: our solution uses the <code>following-sibling::</code> axis and a position predicate to indicate the first in a sequence.) </li>
+                     <li>Of these these stage directions that come immediately following <code>Heading</code> elements, how can you find out which ones contain reference to the character "Q"? (Hint: add a predicate).</li>
+    
+                  </ol>
+               
+               </li>
+               
+               
+               
+               <li>This set of questions explores what you can find out with the XPath <code>string-length()</code> function, which indicates the number of characters in the XML node that you visit.
+           <ol>
+              <li>Write an XPath expression that returns the <code>string-length()</code> of all the stage directions coded in <code>sd</code> elements.</li>
+              <li>Now, send those results to the <code>max()</code> function to find out the longest length of a stage direction in the <i>Goldeneye</i> script.</li>  
+              <li>The <code>string-length()</code> and <code>max()</code> functions took us off the XML tree to yield calculated results. How can we write XPath to return the XML element <code>sd</code> that has the maximum <code>string-length()</code>? Hint: Try searching for <code>sp</code> elements with a predicate that checks to see if the <code>string-length()</code> <em>is equal to</em> the maximum string-length you found in the previous step.</li>
+              <li>Carefully rewrite your previous expressions to return speech elements this time. What XPath expression returns the <em>shortest speech</em> in the screenplay, and what is said in that speech?</li>     
+           </ol>    
+               </li>
+               <li>
+                  <ol>
+                     <li>Notice how <code>spk</code> elements are nested as children inside the <code>sp</code> elements. Write an XPath expression to return all the speakers (<code>spk</code>) who deliver speeches that contain the word "Iraq". </li>
+                     <li>All the <code>spk</code> elements are entered in block caps. Use the XPath <code>lower-case()</code> function to return all the spk elements lower-cased instead and record your expression.</li>
+                     
+                     <li>We don’t really want to make the speakers names all lower-case. We just want to lower-case the letters after the first one, to change BOND to Bond. We can do that kind of <q>string-surgery</q> in XPath by working with substrings. <a href="https://developer.mozilla.org/en-US/docs/Web/XPath/Functions/substring">Consult this page to learn about the XPath <code>substring()</code> function and see how to write it out</a>. Now, see if you can apply the <code>substring()</code> function to isolate the 2nd letter onward in the <code>spk</code> elements. Then, <code>lower-case()</code> that substring!</li> 
+                     
+                     <li>Now, if you could apply the  <code>substring()</code> to isolate letters 2 to the end, you should be able to change it to return only the very first letter. Try it and record your expression.</li>
+                     
+                     <li>One last challenge. If we can isolate part of the speakers' names to lower-case the 2nd letter to the end, we should be able to connect the first (capital) letter to the rest of the lower-cased letters. For this we want to use the XPath <code>concat()</code> function, and there is a convenient shorthand for it in XPath 3.1 which sets two vertical bars <code>||</code> between the expressions you want to connect. However, we need to be careful because concatenation requires joining <em>exactly one</em> thing to <em>exactly one</em> other thing. (XPath can't figure out on its own how to concat (or tie together) the whole sequence of substrings of the first letter to the whole sequence of the substrings of the rest.) To help XPath to work one at a time over sequences of <code>spk</code> substrings, look up the <code>for $i in (sequence) return ...</code> XPath sequence. (This is a <dfn>for-loop</dfn> in XPath, and <code>$i</code> is known as a range variable that isolates each member of the series, one by one.) With the for-loop, you can go one step at a time through the series of <code>//spk</code> nodes and return a concatenation of the substring functions you figured out, using <code>$i</code> as the first argument of your substring functions. See if you can work out how to write this XPath.</li>
+                     
+                  </ol>
+                  
+                  
+               </li>
+            </ol>
+            
+             
+       
+   </body>
+
+
+
+
+</html>
