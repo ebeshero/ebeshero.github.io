@@ -1,0 +1,199 @@
+html{
+   margin: 0px;
+    padding: 0px;
+    background-image:url("back2.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+    }
+    
+body{
+    font-family: georgia, serif;
+    color: white;
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*Menu at top of every page*/
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    font-family: "Courier New";
+    color:black;
+}
+
+div.topnav{
+    font-size: 20px;
+    font-family: "Courier New";
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+img.CCL{
+    width: 55px;
+    height: 15px;
+}
+
+hr {
+    border-color: black;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav a{
+    float: none;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover{
+    background-color: #705410;
+    color: black;
+}
+
+.topnav a.active{
+    background-color: #f2dca6;
+    color: black;
+}
+
+/*LINKS*/
+a{
+    color: black;
+}
+
+/* mouse over link */
+a:hover{
+    color: #705410;
+}
+/* selected link */
+a:active{
+    color: white;
+}
+
+h2{
+    font-size: 25px;
+    text-align: left;
+}
+
+p{
+    font-size: 16px;
+}
+
+div.img{
+    width: 90%;
+    padding-left:5%;
+    padding-right:5%;
+    margin-top:2%;
+    margin-bottom: 2%;
+}
+img.vis{
+    width: 100%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    background:white;
+    }
+
+img.vis2{
+    width: 60%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    background:white;}
+    
+img.vis3{
+    width: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    background:white;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+    
+div.main{font-family: georgia, serif;
+    font-family: georgia, serif;
+    color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    float: left;
+    background: #f2dca6;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+div.main2{
+   text-align: left;
+   letter-spacing: 2px;
+   line-height: 1.5;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: #f2dca6;
+}
+
+div#svg{
+    background: #f9f9ef;
+    width: 96%;
+    margin-left:2%;
+    margin-right:2%;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+svg{
+    width:103%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align:center;
+}
+
+div.personography{
+    text-align: left;
+   letter-spacing: 1.8px;
+   line-height: 1.5;
+   padding-right:2%;
+   padding-left:2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background: #f2dca6;
+    
+}
+
+h2.personography, h3.personography{
+
+    text-align:center;
+}
+
+table#personography{
+    font-size:14px;
+    background:#f2dca6;
+}
+
+ul{
+    list-style-type:none;
+    padding:0.3px;
+    margin:0;
+}
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="WarLettersSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<letter>
+    <title>Troop ship- five weeks on board</title>
+    <abstract>This is one of many letters sent by staff of the Great Western Railway Audit office at Paddington who had enlisted to fight in the First World War.
+        (RAIL 253/516)</abstract>
+    
+    <heading><persName>H. Beaumont</persName>, <date when="1914-11-29"></date>, SS Grantully Castle (Beaumont was travelling on a troop ship sailing in convey out to India). Born: 17 October 1873,
+        Regiment: 1/6 East Surrey Regiment, Regiment number: 2297, Rank: Quarter Master Sergeant, Died: 1952
+        Note: He was a member of volunteer army as a young man. He was a life governor of Richmond Hospital, London and held an MBE (Military Division)</heading>
+    
+    <body>
+        <p>Dear <persName>Mr Wheeler</persName></p>
+        
+        <p>Just a few lines to let you know of my whereabouts. This is our fifth Sunday at sea. We left <placeName location="Southampton"></placeName> on Thursday October 29th shortly before
+            midnight and our convoy of ten huge liners each with about 1700 to 2000 territorial troops on board assembled in the <placeName location="English Channel"></placeName> early next
+            morning.</p>
+        
+        <p>We were escorted by British warships as far as our first port of call- Malta the French warships to Port Said. After staying one night there we
+            proceeded through the <placeName location="Suez Canal"></placeName>. We lay off the Port of <placeName location="Suez"></placeName> six days waiting for another escort then on through the <placeName location="Red Sea"></placeName> to <placeName location="Aden"></placeName> where we
+            stayed four days waiting for our Japanese escort. When it arrived it brought with it an immense convoy of over 80 huge liners transports filled
+            with <placeName location="New Zealand"></placeName> and Indian troops. This in addition to a convoy of thirty five vessels that came into <placeName location="Suez"></placeName> whilst we lay there. So it may
+            truly be sung that “Britannia rules the waves.”
+            <emotion morale="high">It has been a most delightful and interesting voyage and the weather is now so hot that hundreds of troops are compelled to sleep on deck</emotion>
+            nightly as the heat is much too great below. We landed two cases of fever at <placeName location="Aden"></placeName>. Fortunately it does not appear to have spread any further
+            so far.</p>
+        
+        <p>We expect to reach <placeName location="Bombay"></placeName> on Wednesday next, December 2nd then three or four days’ train journey to <placeName location="Fyzabad"></placeName>, some distance north of <placeName location="Lucknow"></placeName>.
+            <emotion morale="low">Shall be very glad to get there, as five weeks on board a crowded troop ship with very little opportunity for exercise is getting rather
+                irksome</emotion>, especially, when we get no ‘Daily Paper’, only a little wireless war news, occasionally.
+            <emotion morale="high">I am glad to say that I am wonderfully fit and well</emotion>. Our food has been wholesome and plentiful. Trusting you are well, with my best wishes
+            for as Happy a Christmas as is possible under prevailing war conditions, and a Prosperous New Year in due course. Also please convey same to
+            <persName>Messrs Wood</persName>, <persName>Welsh</persName>, <persName>Davis</persName> and others. Hoping to see you again on the termination of our successful conclusion of the war.
+            Believe me, yours faithfully,</p>
+    </body>
+    
+    <closing><persName>H. Beaumont</persName>
+        Will you also convey my respects to <persName>Mr Price</persName> please?</closing>
+</letter>

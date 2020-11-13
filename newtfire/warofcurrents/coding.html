@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <!--#include virtual="menuSSI.html" -->
+    <div style="background-color: #F2DC9A;">
+        <h2 style="text-align: center;">Coding and Structure</h2>
+        <p>For the War of Currents project, we used several coding languages in building the
+            website, marking up text, and structuring the data.</p>
+        <h3>XML</h3>
+        <p>Short for <span style="color: #123C56;">eXtensible Markup Language</span>. It's used for
+            storing and accessing information, providing an excellent method for marking up our
+            documents. It's also cross-platform and used freely around the world.</p>
+        <div class="code" id="grad1">
+            <pre>
+    &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-model href="../../resources/schema.rnc" type="application/relax-ng-compact-syntax"?&gt;
+&lt;document&gt;
+    &lt;head&gt;
+        &lt;fileDesc&gt;
+            &lt;titleStmt&gt;
+                &lt;title&gt;A MAGIC BEYOND THE MAGICIAN'S.&lt;/title&gt;
+                &lt;subtitle n="1"&gt;WONDER-MOVING FEATS THAT SCIENTISTS PERFORM.&lt;/subtitle&gt;
+                &lt;subtitle n="2"&gt;Plates and Nails that Dance -- A Lamp that Burns Under Water.
+                    Nikola Tesla's Fiery Hand.&lt;/subtitle&gt;
+                &lt;author&gt;THEODORE WATERS&lt;/author&gt;
+                &lt;encodingHistory&gt;
+                    &lt;work role="encoder"&gt;Allyson Hall and Aaron Newton&lt;/work&gt;
+                    &lt;work role="transcriber"&gt;Allyson Hall&lt;/work&gt;
+                    &lt;work role="copyEditor"&gt;Aaron Newton&lt;/work&gt;
+                &lt;/encodingHistory&gt;
+            &lt;/titleStmt&gt;
+            &lt;publicationStmt&gt;
+                &lt;publisher&gt;Unknown&lt;/publisher&gt;
+                &lt;pubDate&gt;1894-12-09&lt;/pubDate&gt;
+            &lt;/publicationStmt&gt;
+        &lt;/fileDesc&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Any one of our modern electrical scientists could, by departing from the dignity of his
+            calling, launch out as a professional magician and make a fortune on the stage.
+            &lt;persName ref="#Tesla"&gt;Nikola Tesla&lt;/persName&gt;, &lt;persName ref="#Edison" 
+            &gt;Edison&lt;/persName&gt;,&lt;persName ref="#Thomson"&gt;Prof. Ellihu Thomson&lt;/persName&gt;, and
+            many other earnest workers surpass in their laboratory experiments anything done behind
+            the footlights. No Hindoo juggler can do more in the gentle art of mystifying than the
+            electrician. His apparatus is simple and his results are amusing enough to sound a
+            recall. &lt;persName ref="#Edison"&gt;Thomas A. Edison&lt;/persName&gt; several years ago had a
+            small motor which ran without any apparent electrical. connection. It stood upon a table
+            and whirled rapidly. It was very mystifying in the then stage of electrical science and
+            savored of perpetual motion. The real secret lay in the fact that projecting from the
+            base of the motor were two sharp metal pins which, when the motor was laid upon the
+            table, penetrated the thin veneer of the table top and made connection with wires
+            underneath. An electrician would disdain such a device now. Recent progress has shown
+            that it is not necessary to have even the connecting wires. Motors now run and depend
+            for their driving power on the electrical excitement of the atmosphere. They may bo far
+            removed from the appliance generating the power and yet work away merrily. &lt;persName 
+            ref="#Tesla"&gt;Tesla&lt;/persName&gt; will hold a lamp in his band, stand in the middle 
+            of a large room away from all wires or metallic connections, and the lamp will glow and 
+            send forth a radiance not to be equalled. What could be more magical than this?&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/document&gt;
+            </pre>
+        </div>
+        <h3>RelaxNG</h3>
+        <p>An acronym for <span style="color: #123C56;">REgular LAnguage description for XML Next
+                Generation</span>. RelaxNG is used for creating template rules to write XML in,
+            allowing us to code multiple documents without human error. Here is our schema for this
+            project:</p>
+        <div class="code" id="grad2">
+            <pre>
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+start = document
+document = element document {head, body}
+head = element head {fileDesc, publicationStmt*,url?}
+fileDesc = element fileDesc {titleStmt, publicationStmt}
+titleStmt = element titleStmt {author &amp; title &amp; pubSource? &amp; subtitle* &amp; encodingHistory &amp; text?}
+publicationStmt = element publicationStmt {(publisher | pubDate)*}
+publisher = element publisher {text}
+pubDate = element pubDate {xsd:date}
+pubSource = element pubSource {text}
+title = element title {text}
+subtitle = element subtitle {mixed{n}}
+n = attribute n {xsd:integer}
+author = element author {text}
+encodingHistory = element encodingHistory {work*}
+work = element work {(role | text)*}
+role = attribute role {"transcriber" | "encoder" | "copyEditor"}
+url = element url {text}
+
+body = element body {(p | heading)*}
+p = element p {mixed{(event | loc | date | xsd | persName | current | company | name | event)*} | heading*}
+heading = element heading {mixed{persName*}}
+loc = element loc {text}
+date = element date {xsd, text}
+xsd = attribute xsd {xsd:date}
+persName = element persName {ref* &amp; text}
+ref = attribute ref {"#Tesla" | "#Westinghouse" | "#Edison" | "#Thomson" | "#Rau" | "#Other"}
+current = element current {type, text}
+type = attribute type {"AC" | "DC"}
+company = element company {name, text}
+name = attribute name {"Edison" | "Westinghouse" | "Thomson-Houston" | "Siemens" | "Other"}
+event = element event {loc* | text}</pre>
+        </div>
+        <h3>HTML</h3>
+        <p>Short for <span style="color: #123C56;">HyperText Markup Language</span>. HTML and XML
+            are similar languages, but HTML is used for presentation and display while XML is used
+            for the storage of information. We used HTML in conjunction with CSS to build and style
+            our website.</p>
+        <h3>CSS</h3>
+        <p>Short for <span style="color: #123C56;">Cascading Stylesheets</span>. CSS is used to
+            style code and display it on websites.</p>
+        <h3>JS</h3>
+        <p>Short for <span style="color: #123C56;">JavaScript</span>. JS was used to create our menu
+            bar, making it dynamic and more functional than a menu might be without using a language
+            other than HTML. Here is the code we used for the JS portion of our menu.</p>
+        <div class="code" id="grad3">
+            <pre>
+window.onload = init;
+
+function init() {
+    scroll();
+}
+
+function scroll() {
+    var y = window.scrollY;
+    if (y >= 130) {
+        document.getElementById("id").className = "show"
+    } else {
+        document.getElementById("id").className = "title"
+    }
+};
+
+window.addEventListener("scroll", scroll);
+            </pre>
+        </div>
+    </div>
+    <br />
+    <br />
+    <!--#include virtual="licenseSSI.html" -->
+</html>

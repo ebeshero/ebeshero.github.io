@@ -1,0 +1,165 @@
+body{
+    width:100%;
+}
+div#main{
+    display:inline-block;
+    width:50%;
+}
+
+fieldset {
+    font-size: 18px;
+    line-height: 1.5;
+    width: 15%;
+    float:right;
+    padding: 10px;
+    position:fixed;
+    right:20%;
+}
+
+
+html{
+	background-color: white;
+	font-family: 'Avenir';
+}
+
+h1{
+	color: steelblue;
+	padding-left: 40px;
+    font-size: 56px;
+    font-family: 'Century Gothic';
+}
+
+
+
+h2{
+    color: steelblue;
+    padding-left: 40px;
+    font-family: 'Century Gothic';
+    padding-bottom: 20px;
+}
+
+
+h3{
+    color: white;
+    padding-left: 40px;
+    font-family: 'Verdana';
+}
+p.menuPage {
+    
+    font-size: 16px;
+	line-height: 1.5;
+	padding-left: 20px;
+}
+
+img{
+	padding: 15px;
+	float: left;
+	width: 200px;
+}
+
+img.cc {
+    width: 100px;
+    margin: auto;
+    display: block;
+}
+
+
+
+p{
+	color:black;
+    font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Avenir';
+    padding-left: 0px;
+    
+}
+
+span.femaleCharacter { 
+    color: maroon;
+    font-family: 'Avenir'; 
+    font-size: 16px;
+    position: absolute;
+    left: 65px;
+}
+
+table{
+    padding-top: 20px;
+}
+
+table.td {
+    color: blue;
+    font-family: 'Avenir';
+    font-size: 16px;
+    
+}
+
+span.ln{
+    color: dimgray;
+    font-family: 'Avenir';
+    font-size: 12px;
+    float: left;
+    padding-left: 10px;
+}
+span.line{
+    color:black;
+    font-size: 16px;
+    line-height: 1.5;
+    position: absolute;
+    left: 250px;
+    
+    font-family: 'Avenir';
+    
+
+}
+span.maleCharacter { 
+    color: steelblue; 
+    font-family: 'Avenir';
+    font-size: 16px;
+    position: absolute;
+    left: 65px;
+}
+span.stage {
+    color: dimgray;
+    font-family: 'Avenir';
+    font-size: 16px;
+}
+span.act {
+    font-family: 'Avenir';
+    font-size: 24px;
+    color: maroon;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 2;
+
+}
+span.aside {
+    color: dimgray;
+    font-family: 'Avenir';
+    font-size: 16px;
+    position: absolute;
+    left: 550px;
+
+}
+
+span.emotion.on {background-color:#E69980}
+
+span.body.on {background-color:#D1B2F0}
+
+th {
+    color: steelblue; 
+    font-family: 'Avenir';
+    font-size: 16px;
+    padding-right: 10px;
+
+}
+
+tr {}
+
+td {
+    padding-right: 30px;
+}
+
+table {
+    border-width: 2px;
+}
+

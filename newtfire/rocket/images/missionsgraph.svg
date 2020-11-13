@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="1550" height="650">
+    <desc></desc>
+    <g alignment-baseline="baseline"></g>
+    <line x1="100" y1="100" x2="100" y2="550" style="stroke:rgb(0,0,0);stroke-width:2"/> <!-- Y Axis -->
+    <line x1="100" y1="550" x2="1500" y2="550" style="stroke:rgb(0,0,0);stroke-width:2"/> <!-- X Axis -->
+    <rect width="75" height="50" x="175" y="500" style="fill:rgb(0,100,255);stroke-width:1;stroke:rgb(0,0,0)" /> <!-- test 5 -->
+    <rect width="75" height="70" x="325" y="480" style="fill:rgb(100,100,255);stroke-width:1;stroke:rgb(0,0,0)" /> <!-- crewTransfer 7 -->
+    <rect width="75" height="70" x="475" y="480" style="fill:rgb(0,100,255);stroke-width:1;stroke:rgb(0,0,0)" /> <!-- satRepair 7 -->
+    <rect width="75" height="80" x="625" y="470" style="fill:rgb(100,100,255);stroke-width:1;stroke:rgb(0,0,0)" /> <!-- spacelabCon 8 -->
+    <rect width="75" height="80" x="775" y="470" style="fill:rgb(0,100,255);stroke-width:1;stroke:rgb(0,0,0)" /> <!-- OHHH SPOOKY D.O.D. MISSION 8 -->
+    <rect width="75" height="90" x="925" y="460" style="fill:rgb(100,100,255);stroke-width:1;stroke:rgb(0,0,0)" /> <!-- issResupply 9 -->
+    <rect width="75" height="210" x="1075" y="340" style="fill:rgb(0,100,255);stroke-width:1;stroke:rgb(0,0,0)" /> <!-- science 21 -->
+    <rect width="75" height="280" x="1225" y="270" style="fill:rgb(100,100,255);stroke-width:1;stroke:rgb(0,0,0)" /> <!-- issCon 28 -->
+    <rect width="75" height="420" x="1375" y="130" style="fill:rgb(0,100,255);stroke-width:1;stroke:rgb(0,0,0)" /> <!-- satLaunch 42 -->
+    
+    <!-- Labels -->
+    <text x="750" y="75" style="text-anchor: middle">Number of Shuttle Flights per Mission Description</text> <!-- Title -->
+    <text x="25" y="350" style="writing-mode: tb; text-anchor: middle">Number of Flown Missions</text> <!-- X Axis Label -->
+    <!-- Bar Labels -->
+    <text x="212" y="480" style="text-anchor: middle">5</text>
+    <text x="367" y="460" style="text-anchor: middle">7</text>
+    <text x="512" y="460" style="text-anchor: middle">7</text>
+    <text x="667" y="450" style="text-anchor: middle">8</text>
+    <text x="814" y="450" style="text-anchor: middle">8</text>
+    <text x="964" y="440" style="text-anchor: middle">9</text>
+    <text x="1114" y="320" style="text-anchor: middle">21</text>
+    <text x="1264" y="250" style="text-anchor: middle">28</text>
+    <text x="1414" y="110" style="text-anchor: middle">42</text>
+    <!-- Labels -->
+    <text x="212" y="600" style="text-anchor: middle">Test</text>
+    <text x="367" y="600" style="text-anchor: middle">Crew Transfer</text>
+    <text x="512" y="600" style="text-anchor: middle">Satalite Repair</text>
+    <text x="667" y="600" style="text-anchor: middle">Spacelab Construction</text>
+    <text x="814" y="600" style="text-anchor: middle">Classified</text>
+    <text x="964" y="600" style="text-anchor: middle">ISS Resupply</text>
+    <text x="1114" y="600" style="text-anchor: middle">Science</text>
+    <text x="1264" y="600" style="text-anchor: middle">ISS Construction</text>
+    <text x="1414" y="600" style="text-anchor: middle">Satalite Launch</text>
+    
+    
+    <!-- Y axis Increments -->
+    <text x="65" y="550" style="text-anchor: bottom">0</text>
+    <text x="65" y="500" style="text-anchor: bottom">5</text>
+    <text x="65" y="450" style="text-anchor: bottom">10</text>
+    <text x="65" y="400" style="text-anchor: bottom">15</text>
+    <text x="65" y="350" style="text-anchor: bottom">20</text>
+    <text x="65" y="300" style="text-anchor: bottom">25</text>
+    <text x="65" y="250" style="text-anchor: bottom">30</text>
+    <text x="65" y="200" style="text-anchor: bottom">35</text>
+    <text x="65" y="150" style="text-anchor: bottom">40</text>
+    <text x="65" y="100" style="text-anchor: bottom">45</text>
+</svg>

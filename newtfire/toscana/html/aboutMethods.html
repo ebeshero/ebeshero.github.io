@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>The Methods</title>
+        <link type="text/css" rel="stylesheet" href="../css/lega.css" />
+        <link type="text/css" rel="stylesheet" href="../css/about.css" />
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <!--#include virtual="ssi/ssi_menu.html"  -->
+        <!--#include virtual="ssi/ssi_about-menu.html" -->
+        <div class="intro">
+            <h3>About our Approaches</h3>
+            <h4 class="about">Volume Transcription</h4>
+            <p>The purpose for the transcription of the notebooks is to reproduce the original in a
+                word document in order to facilitate its electronic ease of use. This involved both
+                the reproduction of the general organization and structure of each page as well as
+                preservation of all spelling (misspellings), punctuation, extraneous
+                capitalizations, and any other characteristics of the page in order to render the
+                word document as similar as possible to the source text. We followed certain <a
+                    target="_blank"
+                    href="http://files.archivists.org/groups/museum/standards/10-MMA_Archives_Transcription_guide.pdf"
+                    >transcription guidelines</a> published online by the Metropolitan Museum of
+                Art, the Smithsonian Institution, and various university library resources, which
+                all stressed the importance of reproducing the original document as closely as
+                possible in electronic form. We made extensive use of bracketed [tags] to mark parts
+                of the text that were either illegible, crossed out, signed, underlined, or appeared
+                in between or written over top of the other lines of text, in part to aid with the
+                digitization of the texts.</p>
+            <h4 class="about">Volume Translation</h4>
+            <p>Roughly the first 75 pages of both the transcription and translation were completed
+                by students taking an Italian Translation Workshop during the semester of Fall 2017.
+                During Spring 2018 that transcription was gone over and corrected, and the existing
+                translation, which had been a conglomerate of the different translations of various
+                students, was revised and standardized in order to render it more uniformly.
+                Continuing the work of last semester, the transcription and translation were
+                completed through the end of the first volume of meeting minutes, which span from
+                1919 through 1925. Work on the second volume of minutes, spanning 1933 through 1940,
+                is currently underway for potential study in the fall of 2018.</p>
+            <p>The use of a formal and repetitive language and tone in each meeting throughout the
+                entire first notebook prompted the use of a similarly formulaic language within the
+                English translation. We felt that the use of meeting-specific phraseology (e.g.
+                    <q>the meeting was adjourned</q> rather than <q>the meeting is ended</q>) was
+                appropriate in this situation. Apart from these instances, the translation aimed at
+                maintaining wording and general sentence structure except in places where doing so
+                would threaten the clarity of the translation, in which case the English analogues
+                of certain figurative phrases were employed.</p>
+            <p>Beyond the translation alone, the process involved the standardization of many
+                commonly used words and phrases to ensure that they were translated in a codified
+                manner throughout the entire volume of minutes. In order to maximize the
+                comprehensibility of the translation, corrected spelling, capitalization, and
+                punctuation were used for instances where they were incorrect or confusing in the
+                source text. We also felt it would be helpful to have the lines in the translation
+                correspond, if somewhat loosely at points, to those in the transcription, to help
+                with navigation or comparison between the two documents, thus increasing their ease
+                of use as a tandem resource as well as increasing their accessibility to those
+                beyond the Italian-speaking community.</p>
+            <p>We found it especially helpful to create supplementary documents to help us keep
+                track of certain things throughout this entire process. This includes a list of
+                commonly used words and phrases, as previously mentioned, an index of names, which
+                can be used to find instances where people were mentioned within the minutes, and an
+                index of places encountered in the documents with their corresponding addresses when
+                available.</p>
+            <h3 class="about">Text digitization and encoding</h3>
+            <p>The first of the two digital pillars of the Lega Toscana research project seeked to
+                explore the first volume of minutes in its entirety and explore different
+                interpersonal and role-based relationships between the members of the Tuscan League
+                throughout the minute log. The expression of these relationships in the minutes was
+                mostly gathered in a specific series of contexts. Originally, the motivation behind
+                this exploring this specific document was to identify relationships and rapport
+                established and reinforced by organizational members in the form of meeting
+                proposals (i.e. who were the members who made motions during the meeting, and who
+                were the people who supported them?), but as the encoding persisted, an interest in
+                committee formations, dissemination of funds from the Lega, and activity of members
+                across the organization began to surface. By the end of the semester, the research
+                touched on each of those subjects, with the use of a handful of different analytical
+                programs.</p>
+            <h4 class="about">Text Encoding Initiative</h4>
+            <p>The entirety of the Tuscan League's first volume of minutes were uploaded and
+                analyzed in a software program called &lt;oXygen/>, which is a textual analysis
+                program that implements an extensible markup language to allow for encoded
+                annotations or supplemental biographical information on Tuscan League participants
+                for analysis. The markup is written to descriptively flag different objects of
+                interest within the text, to allow for computational analysis at a later point.</p>
+            <p>The specific schema used for development on this project was written in compliance
+                with the <a target="_blank" href="http://www.tei-c.org">Text Encoding
+                Initiative</a>, which is an open-source collection of different elements, tagging
+                conventions, and document types that are optimized for use in the humanities domain,
+                and whose specialty is in manuscript digitization. One of the project mentors for
+                this portion of research, <a target="_blank"
+                    href="http://greensburg.pitt.edu/people/elisa-eileen-beshero-bondar-phd">Elisa
+                    Beshero-Bondar</a>, is a member of the TEI Technical Council, the team tasked
+                with maintenance and development of the TEI ecosystem. Elements were selected from
+                the master list of TEI elements from the TEI All schema set, and customized for
+                integration into the minute logs. Specific items that were encoded in the minutes
+                included any list of member acceptances or departures, presiding officers, proposals
+                of any kind, or grants of funds from the Tuscan League to individual members.
+                Additionally, every iterance of an individual's name was tracked throughout the
+                minutes as well, which assisted in the codification of individual names in spite of
+                a lack of complete documentation on affiliates of the League. A sample portion of
+                code below shows how proposals were tagged throughout the volume:</p>
+            <pre>
+  <code>&lt;seg type="proposal" subtype="evento">Fu proposto da &lt;persName ref="#zinim"
+     role="proposer">Modesto Zini&lt;/persName> e assecondato da&lt;lb/>
+          &lt;persName ref="#marconic" role="supporter">Carlo Marconi&lt;/persName> di dare
+          un ballo ma non fu definita&lt;lb/> la data&lt;/seg>
+       &lt;list type="committee" subtype="investigazione">
+          &lt;date when="1924-10"/>
+          &lt;note>Allora &lt;rs ref="#pellegrinic">il presidente&lt;/rs> scielse il seguente
+             comitato&lt;lb/> per trovare il locale.&lt;/note>
+          &lt;item>&lt;persName ref="#pasquinellis">Santino Pasquinelli&lt;/persName>&lt;roleName
+                type="committee" role="investigatore"/>.&lt;/item>
+          &lt;item>&lt;persName ref="#marconic">Carlo Marconi&lt;/persName>&lt;roleName
+                type="committee" role="investigatore"/>&lt;/item>
+          &lt;lb/>
+          &lt;item>e &lt;persName ref="#borellim">Martino Borelli&lt;/persName>&lt;roleName
+                type="committee" role="investigatore"/>.&lt;/item>
+       &lt;/list></code>
+            </pre>
+            <p>In the code sample above, we show an example of how both <em>proposals</em> and
+                    <em>lists</em> are formulated. The participants in proposals were given
+                key-value pairs that described the role they had in the proposal, whether it was he
+                who made the motion, or he who seconded it. Additionally, the volume contains
+                written proposals -- which were always proposed by at least three members -- and
+                rejected proposals, which were processed differently than passed proposals (since
+                they were not typically met with support by another member). The majority of
+                information that was used to process the analyses of member activity and
+                relationships in the Lega were mined primarily from different lists that appeared in
+                the minutes and proposals. Lists were used to provide information on committee
+                formations, officer elections and absences, member acceptances or departures, and
+                sometimes even member compensation.</p>
+            <p>As noted earlier, the TEI All schema contains about 570 total elements, of which only
+                20 to 25 typically should appear in a DH project like this. As such, a customized
+                    <em>ODD</em>, or <q>One Document Does it all</q> file, was drafted to generate
+                and enforce customized rules that applied specifically to this project.
+                Additionally, another technology named <em>Schematron</em> was employed in the same
+                document, which is another schema language that permits further constraint of
+                possible values, patterns, and element hierarchies within the encoded document that
+                are more difficult to express exclusively with an ODD file. Both the ODD file and
+                the encoded transcription of the minutes are available in full at <a target="_blank"
+                    href="http://www.github.com/zme1/toscana">our GitHub repository</a>, along with
+                an introductory reading on our <a target="_blank"
+                    href="https://github.com/zme1/toscana/wiki/Coding-in-TEI">Wiki page</a>.</p>
+            <h4 class="about">Transformations with XSLT</h4>
+            <p>When encoding texts with XML, there are other flavors of the XML language that can be
+                used for a number of different purposes, from identity or text transformation to
+                file conversion to visualization design. The central transformation language that
+                was used in this project is XSLT, which can effectively process files a number of
+                ways. XSLT is a file that receives an input file and performs transformations
+                according to templates that are written into the program, and it can output the
+                information into a host of different file types. In this specific research project,
+                XSLT was used to transform the volume of minutes into other XML files that were used
+                for the generation of a personography and data compilation; into HTML webpages that
+                contained the Lega minute scans, transcriptions, and translations; and into graphic
+                visualizations that help to narrate the different trends and traits expressed at the
+                individual and group level in the organization. An example of some XSLT code is
+                below.</p>
+            <pre><code>
+      &lt;xsl:template match="*" mode="flatten">
+        &lt;xsl:element name="{name()}">
+            &lt;xsl:attribute name="tagType" select="'startTag'"/>
+            &lt;xsl:attribute name="tagId" select="generate-id()"/>
+            &lt;xsl:copy-of select="@*"/>
+            &lt;xsl:choose>
+                &lt;xsl:when test="self::pb[ancestor::div[@type = 'transcription']]">
+                    &lt;xsl:attribute name="lang" select="'it'"/>
+                &lt;/xsl:when>
+                &lt;xsl:when test="self::pb[ancestor::div[@type = 'translation']]">
+                    &lt;xsl:attribute name="lang" select="'eng'"/>
+                &lt;/xsl:when>
+            &lt;/xsl:choose>
+        &lt;/xsl:element>
+        &lt;xsl:apply-templates mode="flatten"/>
+        &lt;xsl:if test="not(self::lb | self::pb | self::date)">
+            &lt;xsl:element name="{name()}">
+                &lt;xsl:attribute name="tagType" select="'endTag'"/>
+                &lt;xsl:attribute name="tagId" select="generate-id()"/>
+                &lt;xsl:copy-of select="@*"/>
+            &lt;/xsl:element>
+        &lt;/xsl:if>
+    &lt;/xsl:template></code>
+            </pre>
+            <p>The code snippet above is an example from the XSLT file that tranformed the volume of
+                minutes into an HTML reading view of the three different versions that we produced
+                for this project -- the scanned images, transcription, and translation. This entire
+                file, along with all other XSLT files, is availab on our GitHub page for study.</p>
+            <h4 class="about">Social Network Analysis</h4>
+            <p>In addition to the XML flavors that were used to analyze the volume of minutes
+                quantitatively, the social network analysis program <em>Cytoscape</em> was used as a
+                supplemental technology to generate social network graphs that plotted shared
+                activity of members, specifically of those who were co-participants in a proposal
+                during a meeting. The social networks generated for this research were primarily
+                focused on identifying individuals who contributed or supported proposals during the
+                meetings, and seeing if there were any notable trends or patterns among those
+                members.</p>
+            <p>Social network analysis can potentially evoke three separate forms of netowrk
+                importance, or centrality, with these computations: Degree centrality, betweenness
+                centrality, and closeness centrality. Those three concepts, among other modes of
+                network analysis, are explained in more depth in our <a
+                    href="keyMembers.html#social">Key Members</a> webpage.</p>
+
+            <h3>Spatial Mapping</h3>
+            <p>The Tuscan League community was mapped using the software ArcMap and the experience
+                afforded in pursuit of the Geographic Information Systems (GIS) certificate at the
+                University of Pittsburgh. The primary objective of these maps is to highlight where
+                Tuscan League community members lived and worked, and how that changed over
+                time.</p>
+            <p>First, we assembled a database of about 400 street addresses, people and business
+                names, and notes mentioned in the League's meeting minutes, applications to the
+                Women's Auxiliary of the League, and our biographical research. We then created a
+                geocoder which matched addresses in the database to spatial locations using street
+                and address boundary data available on the Allegheny County GIS Database. The
+                geocoder matched about 80% of the addresses. The remaining addresses had to be
+                manually corrected for reasons like the spelling of the street had changed over time
+                or the street address no longer existed. This was especially true for many addresses
+                in the Hill District as it nears Downtown, where Wylie and Webster Avenues were
+                truncated in the 1960s in order to build I-579. Those addresses were matched based
+                on 1903 maps of Downtown Pittsburgh published on <a target="_blank"
+                    href="http://historicpittsburgh.org/">Historic Pittsburgh</a>.</p>
+            <p>With all of the data points imported, we symbolized the residential locations by
+                color and decade to see temporal patterns in residence location. A neighborhood
+                layer was also added from the Allegheny County GIS Database to the map and labeled
+                only neighborhoods within 0.2 miles of a residential or commercial point, to see
+                which neighborhoods were most important to the community. Lastly, we analyzed the
+                map using the ArcMap Spatial Analyst Point Density tool to visualize where
+                residential points were most tightly clustered.</p>
+            <p>This map could be expanded upon by adding data from earlier time points that may show
+                more of a migration from Downtown and the Hill District to the South Hills. There
+                are historic reports of Italian - American communities Downtown and on the Hill, but
+                location data is not yet available.</p>
+            <h3>Lega Family Research</h3>
+            <p>Biographies on the most influential members of the Tuscan League were drafted to
+                highlight the lives of specific men, and how their lives were influenced by
+                membership in the Tuscan League. Initially, an index created in the Fall of 2017
+                provided an inventory of members and their general relative importance. As men were
+                mentioned in the volume, the page was noted in the member index. Some of the most
+                active members throughout the volume included Casimiro Pellegrini, Muzio Frediani,
+                Stefano Maffei, Emilio Marchetti, Michele Simonetti, Santino and Americo
+                Pasquinelli, and Modesto Zini.Online databases like Historic Pittsburgh, Ancestry,
+                Newspapers, and Family Search provided articles and more personal details through
+                cencuses, draft registrations, death certificates, and biographical profiles.</p>
+            <p>The evidence compiled through this initial research helped to inform outlines of
+                biographical information on the members. Some people, like Emilio Marchetti and
+                Michele Simonetti, were very active in the Lega Toscana but not in the Pittsburgh
+                community, according to the primary sources. The biographical summaries of each of
+                the League's important families is the end-result of this more individually-oriented
+                biographical research. Including information like immigration dates and occupations
+                held, the biographies also touched on the member's social lives, both in the context
+                of members of the Pittsburgh community and as members of the Tuscan Protection
+                League, the last of which can be explored more extensively in tandem with the social
+                network analyses. </p>
+        </div>
+        <!--#include virtual="ssi/ssi_footer.html"  -->
+    </body>
+</html>

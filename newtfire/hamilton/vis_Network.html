@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+   <head>
+      <title>Visualizations: Network Graph</title>
+      <link rel="stylesheet" type="text/css" href="vis.css" />
+      <meta charset="UTF-8" />
+   </head>
+   <body>
+      <!--#include virtual="menu.html"-->
+      <div class="img">
+         <h2>Network Graph Representing Frequency of Character References and Speech:</h2>
+         
+         <h3>Click to zoom in on network.</h3>
+         
+         <a href="wholeMusical_Ref_updated.svg"
+            title="Network Graph Representing Speakers and References from the musical Hamilton"
+            target="_blank">
+            <img alt="svg_ref" src="wholeMusical_Ref_updated.svg" class="vis" />
+         </a>
+         <a href="Frequency%20of%20Character%20References%20and%20Speech%20Key.png" title="Key for Network Graph" target="blank"><img alt="svg_ref" src="Frequency%20of%20Character%20References%20and%20Speech%20Key.png" class="vis2"/></a>
+      </div>
+      <div class="main">
+         <div class="main2">
+            <h2>Description</h2>
+            <p> This network graph analyzes the speakers of <i>Hamilton</i> and the characters being
+               referenced. The graph indicates who speaks the most throughout the whole musical and
+               who references who within every song. </p>
+            <p> The size of the source node square represents the amount of time that character was
+               referenced by other characters and/or themselves. A larger square indicates that the
+               character was referenced frequently while a smaller square indicates the character
+               was referenced minimally or not at all. The color of the source node square
+               represents how often the speaker speaks throughout the whole musical. A gold or
+               darker colored square indicates that the character spoke often throughout the
+               musical. A white or lighter colored square indicates that the character did not speak
+               often or did not speak at all throughout the musical. The arrows on the interactions
+               between the nodes represents the references and the direction of the arrows indicate
+               who was referencing who. Arrows pointing out from the source node show that
+               particular character is doing the referencing of the character/source node that the
+               arrows are pointing in toward. </p>
+            
+            <p> To see more clear network graphs showing which characters reference who in each
+               song, refer to the Song Index page and click on the link in a particular song that
+               pulls up that song's network graph. </p>
+            <p><i><b>NOTE:</b> The spoken scene titled "Tomorrow There'll Be More Of Us" in the Song Index is not included.</i></p>
+            
+         </div>
+         <div class="personography">
+            <h2 class="personography">Personography Table</h2>
+            <h3 class="personography">Character Information, XML:ID, and References</h3>
+            <table id="personography">
+               <tr>
+                  <th>Name</th>
+                  <th>xml:id</th>
+                  <th>No. of Times Referenced</th>
+                  <th>People Referenced</th>
+                  <th>Referenced By</th>
+               </tr>
+               <tr>
+                  <td>Alexander Hamilton</td>
+                  <td>hamilton</td>
+                  <td>124</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>hamilton</li>
+                        <li>burr</li>
+                        <li>kingGeorge</li>
+                        <li>lafayette</li>
+                        <li>laurens</li>
+                        <li>mulligan</li>
+                        <li>eliza</li>
+                        <li>peggy</li>
+                        <li>angelica</li>
+                        <li>washington</li>
+                        <li>lee</li>
+                        <li>conway</li>
+                        <li>philipH</li>
+                        <li>jefferson</li>
+                        <li>madison</li>
+                        <li>schuylerSis</li>
+                        <li>jAdams</li>
+                        <li>maria</li>
+                        <li>reynolds</li>
+                        <li>kingLouis</li>
+                        <li>eacker</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>hamilton</li>
+                        <li>eliza</li>
+                        <li>company</li>
+                        <li>mulligan</li>
+                        <li>lafayette</li>
+                        <li>laurens</li>
+                        <li>burr</li>
+                        <li>washington</li>
+                        <li>angelica</li>
+                        <li>women</li>
+                        <li>men</li>
+                        <li>madison</li>
+                        <li>jefferson</li>
+                        <li>doctor</li>
+                        <li>ensemble</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Aaron Burr</td>
+                  <td>burr</td>
+                  <td>68</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>philipS</li>
+                        <li>peggy</li>
+                        <li>angelica</li>
+                        <li>eliza</li>
+                        <li>hamilton</li>
+                        <li>washington</li>
+                        <li>burr</li>
+                        <li>generalMontgomery</li>
+                        <li>marthaWashington</li>
+                        <li>schuylerSis</li>
+                        <li>theodosiaMother</li>
+                        <li>betsy</li>
+                        <li>theodosiaDaughter</li>
+                        <li>weeks</li>
+                        <li>madison</li>
+                        <li>jay</li>
+                        <li>jefferson</li>
+                        <li>generalMercer</li>
+                        <li>jAdams</li>
+                        <li>reynolds</li>
+                        <li>ness</li>
+                        <li>pendleton</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>hamilton</li>
+                        <li>mulligan</li>
+                        <li>laurens</li>
+                        <li>angelica</li>
+                        <li>burr</li>
+                        <li>washington</li>
+                        <li>lafayette</li>
+                        <li>jefferson</li>
+                        <li>madison</li>
+                        <li>company</li>
+                        <li>philipH</li>
+                        <li>ensemble</li>
+                        <li>women</li>
+                        <li>men</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>George Washington - Other names/titles: General, Mr. President</td>
+                  <td>washington</td>
+                  <td>47</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>hamilton</li>
+                        <li>burr</li>
+                        <li>green</li>
+                        <li>knox</li>
+                        <li>lee</li>
+                        <li>lafayette</li>
+                        <li>rochambeau</li>
+                        <li>jefferson</li>
+                        <li>madison</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>ensemble</li>
+                        <li>burr</li>
+                        <li>company</li>
+                        <li>hamilton</li>
+                        <li>lee</li>
+                        <li>eliza</li>
+                        <li>jefferson</li>
+                        <li>madison</li>
+                        <li>women</li>
+                        <li>kingGeorge</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Hercules Mulligan</td>
+                  <td>mulligan</td>
+                  <td>4</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>mulligan</li>
+                        <li>burr</li>
+                        <li>hamilton</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>mulligan</li>
+                        <li>hamilton</li>
+                        <li>company</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Marie-Joseph Paul Yves Roch Gilbert du Motier de Lafayette - Other
+                     names/titles: Marquis de Lafayette</td>
+                  <td>lafayette</td>
+                  <td>14</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>lafayette</li>
+                        <li>hamilton</li>
+                        <li>burr</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>lafayette</li>
+                        <li>hamilton</li>
+                        <li>washington</li>
+                        <li>company</li>
+                        <li>jefferson</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>John Laurens</td>
+                  <td>laurens</td>
+                  <td>7</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>laurens</li>
+                        <li>sAdams</li>
+                        <li>burr</li>
+                        <li>hamilton</li>
+                        <li>angelica</li>
+                        <li>lee</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>laurens</li>
+                        <li>hamilton</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>George William Frederick III - Other names/titles: King</td>
+                  <td>kingGeorge</td>
+                  <td>6</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>washington</li>
+                        <li>jAdams</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>hamilton</li>
+                        <li>seabury</li>
+                        <li>ensemble</li>
+                        <li>company</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Samuel Seabury</td>
+                  <td>seabury</td>
+                  <td>1</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>seabury</li>
+                        <li>kingGeorge</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>seabury</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Charles Lee</td>
+                  <td>lee</td>
+                  <td>10</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>lee</li>
+                        <li>washington</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>hamilton</li>
+                        <li>lee</li>
+                        <li>washington</li>
+                        <li>laurens</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Elizabeth Schuyler Hamilton</td>
+                  <td>eliza</td>
+                  <td>31</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>hamilton</li>
+                        <li>eliza</li>
+                        <li>angelica</li>
+                        <li>schuylerSis</li>
+                        <li>washington</li>
+                        <li>philipH</li>
+                        <li>jAdams</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                        <li>eliza</li>
+                        <li>angelica</li>
+                        <li>hamilton</li>
+                        <li>jefferson</li>
+                        <li>women</li>
+                        <li>company</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Angelica Schuyler Church</td>
+                  <td>angelica</td>
+                  <td>32</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>angelica</li>
+                        <li>eliza</li>
+                        <li>burr</li>
+                        <li>paine</li>
+                        <li>jefferson</li>
+                        <li>schuylerSis</li>
+                        <li>hamilton</li>
+                        <li>franklin</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                        <li>angelica</li>
+                        <li>company</li>
+                        <li>eliza</li>
+                        <li>hamilton</li>
+                        <li>laurens</li>
+                        <li>men</li>
+                        <li>women</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Margarita Schuyler Van Rensselaer</td>
+                  <td>peggy</td>
+                  <td>5</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>peggy</li>
+                        <li>schuylerSis</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                        <li>peggy</li>
+                        <li>hamilton</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Thomas Jefferson</td>
+                  <td>jefferson</td>
+                  <td>50</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>lafayette</li>
+                        <li>washington</li>
+                        <li>sally</li>
+                        <li>madison</li>
+                        <li>hamilton</li>
+                        <li>burr</li>
+                        <li>reynolds</li>
+                        <li>eliza</li>
+                        <li>jAdams</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>angelica</li>
+                        <li>burr</li>
+                        <li>company</li>
+                        <li>madison</li>
+                        <li>washington</li>
+                        <li>hamilton</li>
+                        <li>ensemble</li>
+                        <li>men</li>
+                        <li>women</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>James Madison</td>
+                  <td>madison</td>
+                  <td>13</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>jefferson</li>
+                        <li>hamilton</li>
+                        <li>burr</li>
+                        <li>washington</li>
+                        <li>jAdams</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                        <li>jefferson</li>
+                        <li>hamilton</li>
+                        <li>washington</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Philip Hamilton</td>
+                  <td>philipH</td>
+                  <td>8</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>philipH</li>
+                        <li>philipS</li>
+                        <li>burr</li>
+                        <li>eacker</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>hamilton</li>
+                        <li>eliza</li>
+                        <li>philipH</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Maria Lewis Reynolds</td>
+                  <td>maria</td>
+                  <td>1</td>
+                  <td>
+                     <ul></ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>hamilton</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>James Reynolds</td>
+                  <td>reynolds</td>
+                  <td>8</td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>reynolds</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>hamilton</li>
+                        <li>burr</li>
+                        <li>company</li>
+                        <li>jefferson</li>
+                        <li>reynolds</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>George Eacker</td>
+                  <td>eacker</td>
+                  <td>5</td>
+                  <td>
+                     <ul></ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>philipH</li>
+                        <li>hamilton</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td> Doctor</td>
+                  <td>doctor</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>hamilton</li>
+                     </ul>
+                  </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>Martha </td>
+                  <td>martha</td>
+                  <td></td>
+                  <td>
+                     <ul></ul>
+                  </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>Dolly </td>
+                  <td>dolly</td>
+                  <td></td>
+                  <td>
+                     <ul></ul>
+                  </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td> Ensemble</td>
+                  <td>ensemble</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>kingGeorge</li>
+                        <li>washington</li>
+                        <li>jefferson</li>
+                        <li>burr</li>
+                        <li>hamilton</li>
+                        <li>jAdams</li>
+                     </ul>
+                  </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td> Company</td>
+                  <td>company</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>hamilton</li>
+                        <li>schuylerSis</li>
+                        <li>angelica</li>
+                        <li>kingGeorge</li>
+                        <li>admiralHowe</li>
+                        <li>washington</li>
+                        <li>lafayette</li>
+                        <li>mulligan</li>
+                        <li>jefferson</li>
+                        <li>burr</li>
+                        <li>jAdams</li>
+                        <li>reynolds</li>
+                        <li>eliza</li>
+                     </ul>
+                  </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td> Men</td>
+                  <td>men</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>angelica</li>
+                        <li>hamilton</li>
+                        <li>jAdams</li>
+                        <li>jefferson</li>
+                        <li>burr</li>
+                     </ul>
+                  </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td> Women</td>
+                  <td>women</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li></li>
+                        <li>angelica</li>
+                        <li>hamilton</li>
+                        <li>washington</li>
+                        <li>burr</li>
+                        <li>jefferson</li>
+                        <li>eliza</li>
+                     </ul>
+                  </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td> Recording</td>
+                  <td>recording</td>
+                  <td></td>
+                  <td>
+                     <ul></ul>
+                  </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>William P. Van Ness</td>
+                  <td>ness</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Nathaniel Pendleton</td>
+                  <td>pendleton</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Hugh Mercer, Jr. - Other names/titles: General</td>
+                  <td>generalMercer</td>
+                  <td>2</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Louis XVI - Other names/titles: King</td>
+                  <td>kingLouis</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>hamilton</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Elizabeth Griscom Ross</td>
+                  <td>betsy</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Jean-Baptist Donatien de Vimeur, comte de Rochambeau</td>
+                  <td>rochambeau</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>washington</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Levi Weeks</td>
+                  <td>weeks</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>John Jay</td>
+                  <td>jay</td>
+                  <td>2</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Sarah Hemings</td>
+                  <td>sally</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>jefferson</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Thomas Conway</td>
+                  <td>conway</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>hamilton</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Theodosia Burr Alston</td>
+                  <td>theodosiaDaughter</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Theodosia Bartow Prevost</td>
+                  <td>theodosiaMother</td>
+                  <td>2</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Philip John Schuyler</td>
+                  <td>philipS</td>
+                  <td>3</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                        <li>philipH</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Thomas Paine</td>
+                  <td>paine</td>
+                  <td>2</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>angelica</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Samuel Adams</td>
+                  <td>sAdams</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>laurens</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>John Adams</td>
+                  <td>jAdams</td>
+                  <td>12</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>eliza</li>
+                        <li>hamilton</li>
+                        <li>kingGeorge</li>
+                        <li>burr</li>
+                        <li>company</li>
+                        <li>madison</li>
+                        <li>jefferson</li>
+                        <li>men</li>
+                        <li>ensemble</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Richard Howe - Other names/titles: Admiral</td>
+                  <td>admiralHowe</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>company</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Richard Montgomery - Other names/titles: General</td>
+                  <td>generalMontgomery</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Nathanael Greene</td>
+                  <td>green</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>washington</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Henry Knox</td>
+                  <td>knox</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>washington</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Martha Dandridge Washington</td>
+                  <td>marthaWashington</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>burr</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Angelica, Eliza and Peggy Schuyler</td>
+                  <td>schuylerSis</td>
+                  <td>5</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>company</li>
+                        <li>angelica</li>
+                        <li>eliza</li>
+                        <li>peggy</li>
+                        <li>burr</li>
+                        <li>hamilton</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Benjamin Franklin</td>
+                  <td>franklin</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>
+                     <ul>
+                        <li>angelica</li>
+                     </ul>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="main2">
+            <h2>Analysis</h2>
+            <p>This network graph allows us to determine which characters play a pivotal part in the
+               musical. From the network graph we can determine whether or not the character who
+               spoke the most in the musical is also referenced the most. So, we can see Hamilton
+               and Burr are represented as large, golden squares which indicates that they speak
+               often and they are also referenced often. As Burr and Hamilton play crucial roles in
+               the musical, Hamilton as the central character and Burr acting as the narrator often,
+               the data reflects their importance and frequency. Burr and Hamilton also reference a
+               lot of characters, Burr in particular references 10 characters who are referenced by
+               only Burr. Both characters expand the cast of characters and often make historical
+               references to Betsy Ross, John Jay, etc. As the central character of the musical,
+               Hamilton also self references himself the most through introducing himself to other
+               characters and talking about himself. Other notable characters who self reference
+               themselves are Eliza, Angelica, and Burr. Eliza and Angelica are the two most
+               prominent women in the musical and it is interesting to see that they often refer to
+               themselves while being surrounded by all the men in the musical and while both of
+               their plot points focus on their relationships with Hamilton. </p>
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,62 @@
+html {
+max-width: 100%;
+margin: 0;
+}
+body {
+line-height: 2;
+max-width: 75%;
+margin: auto;
+padding-top:0;
+font-family: "Verdana";
+color: white; 
+  background-color: #010101
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px;
+}
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+
+.x.axis path {
+  display: none;
+}
+p {
+  line-height: 2
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="700%" height="700%">
+    <desc></desc>
+    <g alignment-baseline="baseline" transform="translate(100,800)">
+        <!--<svg xmlns:xs ="https://www.weforum.org/agenda/2019/07/forest-europe-environment/"/-->
+        <desc>Deforestation by each country over the years in Thousands of hectares</desc>
+        <g alignment-baseline="baseline">
+            <text x="50" y="-200" fill="black" font-size="25px" style="writing-mode: tb">Area in hectares </text>
+            <line x1="150" y1="100" x2="150" y2="-410" stroke="black" stroke-width="3"/>
+            <!-- Y Axis -->
+            <line x1="148.5" x2="1200" y1="100" y2="100" stroke="black" stroke-width="3"/>
+            <!-- X Axis -->
+            <text x="110" y="50" fill="black" font-size="20px">500 ---</text>
+            <text x="105" y="5" fill="black" font-size="20px">1000 ---</text>
+            <text x="105" y="-50" fill="black" font-size="20px">1500 ---</text>
+            <text x="105" y="-90" fill="black" font-size="20px">2000 ---</text>
+            <text x="105" y="-130" fill="black" font-size="20px">2500 ---</text>
+            
+            <text x="105" y="-170" fill="black" font-size="20px">5000 ----</text>
+            
+            <!-- Measurements -->
+            <rect x="200" y="-200.5" width="50" height="300" stroke="yellow" fill="red" stroke-width="2"/>
+            <!-- Bar for Russia -->
+            <!-- Hectares = 5562 -->
+            <text x="200" y="150" fill="Black" font-size="25px">Russia</text>
+            <rect x="300" y="-120.5" width="50" height="220" stroke="Green" fill="rgb(255, 255, 0)"/>
+            <!-- Hectares = 2954 -->
+            <!-- Bar for Brazil -->
+            <!-- Hectares = 2094 -->
+            <!-- Bar For Canada -->
+            <rect x="400" y="-47.5" width="50" height="145" stroke="white" fill="red"/>
+            <!-- Hectares = 2094 -->
+            <!-- Bar for Murica -->
+            <rect x="500" y="-47.5" width="50" height="145" stroke="red" fill="Blue"/>
+            <!-- Hectares = 1374 -->
+            <!-- Bar for DR Congo -->
+            <rect x="600" y="7" width="50" height="90" stroke="red" fill="white"/>
+            <!-- Hectares = 1219 -->
+            <!-- Bar for Indonesia -->
+            <rect x="700" y="12" width="50" height="85" stroke="red" fill="white"/>
+            <!-- Hectares = 570 -->
+            <!-- Bar for China -->
+            <rect x="800" y="50" width="50" height="47" stroke="red" fill="yellow"/>
+            <!-- Hectares = 438 -->
+            <!-- Bar for Malaysia -->
+            <rect x="900" y="55" width="50" height="45" stroke="Blue" fill="red"/>
+            <!-- Hectares = 366 -->
+            <!-- Bar for Madagasgar -->
+            <rect x="1000" y="63" width="50" height="35" stroke="red" fill="green"/>
+            <!-- Hectares = 353 -->
+            <!-- Bar for Colombia -->
+            <rect x="1100" y="65" width="50" height="33" stroke="blue" fill="yellow"/>
+            <text x="300" y="150" stroke="Pink" font-size="25px">Brazil</text>
+ 
+            <text x="400" y="150" stroke="rgb(204, 0, 0)">Canada</text>
+
+            <text x="500" y="150" stroke="Red" font-size="25px">USA</text>  
+    
+            <text x="600" y="150" stroke="Red" font-size="25px">Congo</text>
+        
+            <text x="700" y="150" stroke="Red">Indonesia</text>
+     
+            <text x="800" y="150" stroke="black">China</text>
+    
+            <text x="900" y="150" stroke="Red">Malaysia</text>
+
+            <text x="1000" y="150" stroke="Red">Madagasgar</text>
+  
+            <text x="1100" y="150" stroke="Blue">Colombia</text>
+        </g>
+        
+        
+    </g>
+</svg>

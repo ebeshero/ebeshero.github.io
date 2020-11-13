@@ -1,0 +1,130 @@
+/* DOES THIS LOAD!!!!! */
+rect.toggle:hover {
+    cursor: pointer;
+}
+div.cancellatiContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin-bottom: 3%;
+    height: 60vh;
+}
+div.cancellatiSvg {
+    flex: 0 0 65%;
+    height: auto;
+}
+table,
+th,
+tr,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    margin: 20px 30px;
+    vertical-align: top;
+}
+div.table {
+    flex: 1 35%;
+    display: none; /* all tables are invisible initially */
+    padding-right: 40px;
+    overflow-y: auto;
+}
+table {
+    width: 100%;
+    margin-left: 0;
+}
+td.year {
+    width: 15%
+}
+td.in {
+    width: 42.5%;
+}
+td.out {
+    width: 42.5%;
+}
+td.out1925 {
+    width: 5%;
+}
+
+/* End of Cancellati and Accettati SVG properties */
+
+/* Beginning of Sick Comp SVG properties */
+div.sickCompContainer {
+
+}
+.line1919 {
+    fill: gray;
+    stroke: gray;
+    stroke-width: 1px;
+}
+.line1920 {
+    fill: #3E6E63;
+    stroke: #3E6E63;
+    stroke-width: 1px;
+}
+.line1921 {
+    fill: #BFA179;
+    stroke: #BFA179;
+    stroke-width: 1px;
+}
+.line1922 {
+    fill: #CE4B29;
+    stroke: #CE4B29;
+    stroke-width: 1px;
+}
+.line1923 {
+    fill: #AAAA00;
+    stroke: #AAAA00;
+    stroke-width: 1px;
+}
+.line1924 {
+    fill: #8F5BBA;
+    stroke: #8F5BBA;
+    stroke-width: 1px;
+}
+.line1925 {
+    fill: #F26E00;
+    stroke: #F26E00;
+    stroke-width: 1px;
+}
+
+/* End of Sick Comp SVG properties */
+
+/* Beginning of Heatmap Table SVG properties */
+rect.heatRec:hover {
+    cursor: pointer;
+}
+table.heatTable {
+    width: 50%;
+    margin-left: 14.8%;
+    margin-right: auto;
+    margin-top: 0;
+}
+table.heatTable > tbody,
+tHead,
+th,
+td {
+    border: 3px solid white;
+    max-width: 300px;
+    padding: 0 10px;
+}
+
+
+tbody.heatToggle {
+    display: none;
+}
+tbody.heatToggle > td {
+    border: 3px solid white;
+}
+thead {
+    border: 3px solid white;
+}
+
+/* End of Heatmap Table SVG properties */
+
+/* Beginning of Social Network Visualization graphs */
+
+.social {
+    width: 70%;
+    display: block;
+    margin:auto;
+}

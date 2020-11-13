@@ -1,0 +1,139 @@
+
+
+body 
+{
+ background-image: url("background.jpg");
+   color : #2E4053;
+   font-family: "Comic Sans MS";
+    text-align: center;		
+  background-color: #B2BABB  ;
+  background-attachment: fixed;
+  background-position: center;	
+
+}
+
+.legend
+{
+   background-color:grey;
+   
+    }
+
+.sectionHead
+{
+    
+      color: blue;
+    
+}
+.problem
+{
+     color: purple;
+     
+}
+.extent
+{
+     color: brown;
+     
+}
+
+.solution
+{
+     color: Green;
+     
+}
+.mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+}
+
+
+
+body 
+{
+ background-image: url("background.jpg");
+   color : #2E4053;
+   font-family: "Comic Sans MS";
+    text-align: center;		
+  background-color: #B2BABB  ;
+  background-attachment: fixed;
+  background-position: center;	
+
+}
+
+div
+{
+	
+	color: #17202A ;
+	border: 0px solid #FDFFFF ;
+	
+}
+
+p
+{
+    color : #CD5C5C;
+    font-family: "Comic Sans MS";
+    text-align: center;
+
+}
+
+.quote
+{
+    
+    color: yellow;
+     padding: 16px 16px;
+    border-style:dotted;
+  border-width: 5px;
+  border-color: #F9E79F;
+}
+
+
+h1
+{
+	color: #008080;
+	text-align: center;
+	font-family: "Comic Sans MS";
+	font-size: 60px;
+	
+}
+
+h1
+{
+	color: #000000 ;
+	text-align: center;
+	font-family: "Comic Sans MS";
+	
+}
+h2
+{
+	color: #000000 ;
+	text-align: center;
+	font-family: "Comic Sans MS";
+}
+h3
+{
+	color: #000000 ;
+	text-align: center;
+	font-family: "Comic Sans MS";
+	
+}
+h4
+{
+	color: #000000 ;
+	text-align: center;
+	font-family: "Comic Sans MS";
+}
+.topimages
+{
+    
+   opacity:0.5; 
+    
+}
+
+p
+{
+	color: #17202A ;
+	border-top: 0px solid #ddd;
+	
+}

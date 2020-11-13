@@ -1,0 +1,31 @@
+/* Other important colors: #915908 or #462B03 (Outlines) */
+body {
+    background-color: #FFD79E;
+    color: black;
+    font-family: ariel, helvetica, sans-serif;
+        background-color:rgb(0,0,0);
+        background-image: url("paper_bkgd.jpg");
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+}
+
+h1{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+h3{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding:1px;
+   border:1px solid #462B03;
+}

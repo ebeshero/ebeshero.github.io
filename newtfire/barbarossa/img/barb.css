@@ -1,0 +1,11 @@
+@font-face{
+    font-family:Oswald;
+    src:url(fonts/Oswald-Regular.ttf)
+    }
+body {
+background-image: url("img/Operation-Barbarossa-min.jpg");
+padding-top: 400px;
+font-family: Oswald;
+color: white; 
+margin: auto;
+}

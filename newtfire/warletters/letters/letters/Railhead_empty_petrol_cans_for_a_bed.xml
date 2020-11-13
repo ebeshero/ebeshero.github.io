@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="WarLettersSchema.rnc" type="application/relax-ng-compact-syntax"?>
+
+<letter>
+    <title>Railhead- empty petrol cans for a bed</title>
+    <abstract>This is one of many letters sent by staff of the <persName>Great Western Railway</persName> (GWR) Audit office at <placeName location="Paddington"/> who 
+        had enlisted to fight in the First World War. (RAIL 253/516)</abstract>
+    <heading>Montague Percy Pond, 31 July 1915, <placeName location="France"/>. Born: 13 September 1888, Joined GWR: 19 May 1904, Regiment: Railway Troop,
+        Royal Engineers, Regiment number: 87749, Rank: Sapper, Died: Killed in action on 6 May 1917</heading>
+    
+    <body>
+        <p>Dear Mr Hunt</p>
+        
+        <p>Many thanks for your long and interesting letter which I was very pleased to receive. I am sorry I have been unable to answer
+            it before but I have been constantly moving about from one place to another lately, and have had no opportunity of writing
+            letters. Well I am very pleased to say <emotion morale="high">I am feeling very fit and well, and quite enjoying the life.</emotion> When writing to you last,
+            I was attached to the 4th Division and was stationed at a small village where we were living in tents. We were stationed there
+            about six weeks. Just over a week ago I was transferred to another place about eighty miles from the other one. I travelled by
+            motor lorry with the Supply column and it took us all day from 7.30am till about 9 o’clock in the evening to do the journey. It
+            was a glorious trip, the scenery being very fine. Almost as good as our office outing, only not quite such comfortable travelling.
+            We put up for the night in a small village, sleeping in the lorry with some empty petrol cans for a bed. Next morning I was taken to
+            the railhead where I was stationed until yesterday being only in that place just a week. While there we were all still sleeping in tents,
+            but I was fortunate enough to have my meals with the Post Office Staff so have had a rest from being my own cook. Yesterday afternoon,
+            just as I was going for my tea, I was sent for and told to pack up my things and catch a train to another railhead as I had to take charge
+            as the A.M.F.O* for three Divisions there. As there is usually a man attached to each division, this was rather a large order. I only had
+            about twenty miles or so to go, but it took from 5 o’clock till after 9pm to get there. These French trains are very rapid.
+            I am now attached to the 51st (Highland) Division, the same division as <persName lastName="Williams"></persName>, a number of his lot were here
+            today, but he was not with them. We shall probably only be here for a few days and will then move to another village further on. I was very surprised to hear of
+            Mr <persName lastName="Pritchard"></persName>’s death. I also heard that Mr <persName lastName="Crossley"></persName> is also dead. We are having glorious weather here at present and very hot at times.
+            Glad to hear you are having a soft time on the old section.
+            I was very pleased to hear about the collection of letters and photos from the troops that you are sending round the office and will
+            certainly send you a photo later on. I have has some taken but have not received them yet. Have you heard from <persName>Ferdie</persName> or <persName>Gray</persName> at all?
+            We all had our photos taken at <placeName location="Longmoor"></placeName> before we came out here a group of six. Unfortunately, I only had a few copies and they have
+            all been sent away. <persName>Ferdie</persName> and <persName>Gray</persName> are still at the Base, I believe, but <persName firstName="Arthur" lastName="Smith"></persName> is at one of the railheads somewhere. Well I don’t
+            think I can tell you any more news at present. Will write again later and send photo.
+            Kindest regards to all.</p>
+    </body>
+    <closing>Yours sincerely,
+        <persName>M.P. Pond</persName>
+    </closing>
+</letter>

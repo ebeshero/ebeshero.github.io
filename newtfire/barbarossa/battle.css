@@ -1,0 +1,72 @@
+html {
+max-width: 100%;
+margin: 0;
+}
+body {
+line-height: 2;
+max-width: 100%;
+margin: auto;
+padding-top:0;
+font-family: "Verdana";
+color: white; 
+
+
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+;
+}
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; 
+}
+
+.left {
+  width: 20%;
+}
+
+.right {
+  width: 75%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+
+.x.axis path {
+  display: none;
+}
+p {
+  line-height: 2
+}

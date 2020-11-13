@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shuttle Launch History</title>
+        <link rel="stylesheet" href="rocketstyle.css"/>
+    </head>
+    <body>
+        <div class="top" id="top">
+            <!-- SSI line below -->
+            <!--#include virtual="top.html" -->
+        </div>
+        
+        <div class="bigmission">
+        <div class="mission" id="right">
+            <p>Every Shuttle is made up of 3 main parts, the Orbiter which is the main part of the rocket, it is the section that carries the crew, all control equitment and life support, and the payload and robotic arm to position said payload in space.</p>
+            <p>Attached to this is the external fuel tank, a large tank that contains two smaller tanks for the liquid oxygen and hydrogen which fuel the three main engines on the orbiter. This is seperated from the orbiter once the fuel is depeleted and the tank burns up upon re-entering the atmosphere.</p>
+            <p>Attached to the external tank are two solid rocket boosters (SRBs) which are used to provide the initail boost of thrust in combination with the orbiter's main engines to get through the dense lower atmosphere. Once these are empty of their solid fuel they are disconnected from the external fuel tank and drop into the ocean off the coast of Florida, these are recovered, checked for damage, and reused for the next mission.</p>
+            <p>Upon seperation from the external tank the shuttle uses two other enginges designed for use in a low pressure or vaccum environment to insert itself into a stable orbit. In this position the crew can unload the payload, dock to space stations, and preform science exeriments in the micro gravity environment. Since the Columbia disaster all orbiters had cameras installed on the outside to moniter parts that can't be easily check from the cabin. Once all is verified to be well the orbiter once again fires the enginges to slow itself and de-orbit. From here the carefully considered angle of re-entry ensures the black protective material on the underside of the vessle keeps it from burning up while entering the atmosphere at nearly 17,500 miles per hour and over 25 times the speed of sound. Once safe from the thermal dangers of re-entry the crew would glide the shuttle back to the landing site with no external power from the engines as they were out of fuel.</p>
+            
+        </div>
+        <div class="mission" id="left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="700px" height="150px">
+                <g alignment-baseline="baseline">
+                    <text x="350" y="45" style="text-anchor: middle">Timeline Of A Shuttle Launch</text> <!-- Title -->
+                    <line x1="100" y1="75" x2="600" y2="75" style="stroke:rgb(0,0,0);stroke-width:2"/> <!-- Base Line -->
+                    <line x1="100" y1="70" x2="100" y2="100" style="stroke:rgb(0,0,0);stroke-width:2"/> <!-- Launch -->
+                    <text x="100" y="120" style="text-anchor: middle">Launch</text>
+                    <line x1="135" y1="70" x2="135" y2="100" style="stroke:rgb(0,0,0);stroke-width:2"/> <!-- SRB Seperation -->
+                    <text x="130" y="50" style="text-anchor: middle">SRB Seperation</text>
+                    <line x1="190" y1="70" x2="190" y2="100" style="stroke:rgb(0,0,0);stroke-width:2"/> <!-- External Tank Seperation -->
+                    <text x="270" y="120" style="text-anchor: middle">External Tank Seperation</text>
+                    <line x1="470" y1="70" x2="470" y2="100" style="stroke:rgb(0,0,0);stroke-width:2"/> <!-- Re-entry -->
+                    <text x="490" y="65" style="text-anchor: middle">Re-Entry</text>
+                    <line x1="599" y1="70" x2="599" y2="100" style="stroke:rgb(0,0,0);stroke-width:2"/> <!-- Glide and Landing -->
+                    <text x="590" y="120" style="text-anchor: middle">Glide and Landing</text>
+                </g>
+            </svg>
+            <img src="images/STS_parts.gif" alt="Shuttle Main Components"/>
+        </div>
+        </div>
+    </body>
+</html>

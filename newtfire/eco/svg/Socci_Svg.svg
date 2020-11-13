@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <title id="deforestation">A chart showing deforestation yearly in Brazil</title>
+    <desc id="year">300,000 1990; 500,000 2000; 660,000 2010; 700,000 2018</desc>
+    <line x1="1990"
+          y1="300"
+          stroke-width="3"
+          stroke="yello"
+          text-anchor="100,000s"
+    <line x2="2000"
+          y2="500"
+          stroke-width="3"
+          stroke="Green"
+          text-anchor="100,000s"
+    <line x3="2010"
+          y3="660"
+          stroke-width="3"
+          stroke="yellow"
+          text-anchor="100,000s"
+    <line x4="2018"
+          y4="700"
+          stroke-width="3"
+          stroke="Green"
+          text-anchor="100,000s"
+    </line>
+</svg>

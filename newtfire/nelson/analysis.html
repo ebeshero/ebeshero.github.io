@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="NellNelson_CitySlaveGirls" />
+        <meta name="author" content="RebeccaParker"/>
+        <meta name="copyright" content="©RebeccaParker2014"/>
+
+        <title>Nell Nelson: City Slave Girls</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+        <!-- Custom CSS -->
+        <link href="css/custom.css" rel="stylesheet" />
+        <link href="http://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet" />
+
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <!--#include virtual="top.html" -->
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-header anaHead">Computational Analysis of Text</h1>
+                </div>
+            </div>
+            <!-- /.row -->
+            <!-- Portfolio Item Row -->
+            <div class="row">
+                <div class="col-md-5">
+                    <object id="svg1" data="images/sexOutput.svg" type="image/svg+xml">Your Browser
+                        Doesn't Support SVG</object>
+                </div>
+                <div class="col-md-7 svgText">
+                    <p><strong>Disclaimer: the analysis represented on this page fluctuates as
+                            additional articles are added to the pool of data used in
+                            the creation of the graphs/networks.</strong></p>
+                    <p>One of the first questions we posed after reading the series was: what gender
+                        did Nelson incorporate the most dialogue from throughout the series?
+                        Nelson's obvious focus in writing the articles is the "City Slave Girl"; so,
+                        did Nelson choose to expose the plight of working-class women by giving them
+                        a direct voice? The first time we ran the code over just a few beginning
+                        articles we found that the female voice was significantly more represented
+                        than the male voice. However, as transcriptions of articles from later in
+                        the series have been added we start to see a more even distribution of
+                        dialogue. We expect once all of the articles are transcribed and
+                        incorporated into the data that the female voice will prevail. However, even
+                        in the current state, with the male and female percentage of spoken text
+                        being almost equal, we can see that Nelson's series and approach in writing
+                        these articles provided a significant voice to people in the 19th century
+                        who otherwise were marginalized by the patriarchal society: women!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 svgText">
+                    <p>Next, we wanted to see how the dialogue was distributed among the different
+                        types of people represented in the series. Nelson spoke with many different
+                        groups of people in her exposé for which we created an archetype identifier
+                        for each categorization. Thus far, we have found that the working girl has
+                        the greatest amount of dialogue. This corresponds with our theory that
+                        Nelson provided a genuine voice for the main subjects of her series by
+                        giving the "City Slave Girls" the most time to speak. Interestingly, even
+                        when compared with Nelson's own dialogue, the working girl is represented
+                        twice as much as the author.
+                        <!--Furthermore, the voice of the employee when considered with the voice of the
+                        working girl, is over 50% of total dialogue; therefore, it is significantly
+                        more represented than that of the employer even when including the
+                        foreperson.--></p>
+                    <div class="col-md-12">
+                        <object id="svg1" data="images/whoOutput.svg" type="image/svg+xml">Your
+                            Browser Doesn't Support SVG</object>
+                       </div>
+                </div>
+                <!-- Button trigger modal -->
+                <div class="col-md-5 centerBtn"><button type="button" class="btn btn-primary btn-sm"
+                        data-toggle="modal" data-target="#archetype"> Learn More about Project
+                        Archetypes </button></div>
+                <!-- Modal -->
+                <div class="modal fade" id="archetype" tabindex="-1" role="dialog"
+                    aria-labelledby="archetype button">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-label="Close"><span aria-hidden="true">X</span></button>
+                                <h4 class="modal-title popupH" id="myModalLabel">Explanation of
+                                    Project Archetypes</h4>
+                            </div>
+                            <div class="modal-body"><p class="popupP">We started by cataloging
+                                    speakers in relation to their employment. The working girl,
+                                    because of the focus of the series, received her own archetype.
+                                    Employers were marked as owners of establishments (including
+                                    familial ties). When an employee was recognized as a foreperson
+                                    or someone with rank over other employees they were marked
+                                    foreperson. An employee was any person employed by an
+                                    establishment that could not be catergorized as a working girl
+                                    or foreperson. Nell Nelson, being the series' author, received
+                                    her own classification. Messenger became any character, without
+                                    an inherent employment classification, who spoke on behalf of an
+                                    absent person. Prominent Males and Prominent Females were
+                                    characters who were of higher social standing than the working
+                                    girls and who do not fall into any other archetype (ie.
+                                    foreperson or employer). The benefactor was a male character who
+                                    was the focus of a lengthy back and forth with Nelson in the
+                                    August 2nd article. In several articles another reporter (not
+                                    Nelson) spoke; therefore, that speaker was marked as reporter .
+                                    Also, some articles incorporated the investigations of a health
+                                    department inspector, who was marked inspector. Finally,
+                                    unidentified was used to represent speaking characters when
+                                    identity was unknown or unclear.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-5 svgText">
+                    <p>Once we had an idea of how the dialogue was distributed, we then wanted to
+                        see how the different groups of people in the text took ownership of not
+                        only the material things around them, but also other people in their lives.
+                        We hypothesized that the employer would frequently take ownership of those
+                        in his employ; however, the network analyses indicate even more interesting
+                        relationships of ownership than what was expected. We have created numerous
+                        network analyses: one for every article individually as well as one
+                        including all of the articles and one for each of the unique project
+                        archetypes. We've selected these four archetype networks that highlight
+                        interesting ownership relations, but all of the network graphs are available
+                        on our <a
+                            href="https://github.com/RJP43/CitySlaveGirls/tree/master/webDevelopment/GrammarNetworks"
+                            target="_blank">GitHub</a>. Select a network graph, on the right, to
+                        enlarge.</p>
+                </div>
+                <div class="col-md-7">
+                    <div class="col-lg-6 col-md-7 col-xs-9 thumb">
+                        <!--<h4 class="thumbnailH"></h4>-->
+                        <a class="thumbnail" href="CSGNetwork.html">
+                            <img class="img-responsive" src="images/thumbnail_networkGRAPH_csg.png"
+                                alt="City Slave Girl Network Thumbnail" />
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-xs-9 thumb">
+                        <!--<h4 class="thumbnailH"></h4>-->
+                        <a class="thumbnail" href="EmployeeNetwork.html">
+                            <img class="img-responsive"
+                                src="images/thumbnail_networkGRAPH_employee.png"
+                                alt="Employee Network Thumbnail" />
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-xs-9 thumb">
+                        <!--<h4 class="thumbnailH"></h4>-->
+                        <a class="thumbnail" href="EmployerNetwork.html">
+                            <img class="img-responsive"
+                                src="images/thumbnail_networkGRAPH_employer.png"
+                                alt="Employer Network Thumbnail" />
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-xs-9 thumb">
+                        <!--<h4 class="thumbnailH"></h4>-->
+                        <a class="thumbnail" href="NelsonNetwork.html">
+                            <img class="img-responsive"
+                                src="images/thumbnail_networkGRAPH_nelson.png"
+                                alt="Nell Nelson Network Thumbnail" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <!--#include virtual="foot.html" -->
+        </div>
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/8a3ee4eb37.js"></script>
+    </body>
+
+</html>

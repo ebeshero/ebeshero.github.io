@@ -1,0 +1,51 @@
+body {
+    background-color: #c0c0c0;
+    text-align: center;  
+}
+ul{
+    text-align: left;
+}
+h1 {
+    color: gray;
+}
+header {
+background-image: url("banner1.PNG");
+}
+p {
+    font-family: ariel, verdana;
+    font-size: 20px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}#home{
+    max-width: 70%;
+}
+#analysis{
+    max-width: 70%;
+}
+#analysis2{
+    max-width: 70%;
+}
+img {
+    width:800px;
+    height:600px;
+    
+}
+
+a:link, a:visited {
+    background-color: gray;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: maroon;
+}
+span.high.on {color: green}
+span.low.on {color: red}

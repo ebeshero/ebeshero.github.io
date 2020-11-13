@@ -1,0 +1,24 @@
+img {
+    max-width: 90%;
+    height: auto;
+}
+table.minutes{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+table.minutes > tr,th,td{
+    border: 1px solid white;
+    vertical-align: top;
+    margin: auto;
+}
+div.text{
+    margin: 5% 20% 2% 20%;
+}
+h1.minute{
+    font-size: 100%;
+    font-family: 'Maven Pro', sans-serif;
+}
+select{
+font-size: 110%;
+margin-left: 20%;
+}

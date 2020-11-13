@@ -1,0 +1,50 @@
+span.high.on {color: green}
+span.low.on {color: red}
+body {
+    background-color: #c0c0c0;
+    text-align: center;  
+    margin: 0;
+    padding: 0;
+}
+ul{
+    text-align: left;
+}
+h1 {
+    color: white;
+}
+header{
+background-image: url("flag.jpg");
+margin: 0;
+padding: 0;
+}
+p {
+    font-family: ariel, verdana;
+    font-size: 20px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+#home{
+    max-width: 50%;
+}
+img {
+    width:800px;
+    height:600px;
+    
+}
+
+a:link, a:visited {
+    background-color: gray;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: maroon;
+}

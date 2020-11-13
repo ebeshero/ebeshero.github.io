@@ -1,0 +1,30 @@
+h3.aboutMenu {
+    text-align: left;
+    text-decoration: underline;
+}
+span.name {
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+}
+div.aboutMenu {
+    width: 25%;
+    position: fixed;
+    text-align: center;
+    float: left;
+}
+div.intro {
+    width: auto;
+    height: 100%;
+    margin-left: 26%;
+    margin-right: 5%;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+div.aboutDrop {
+    padding: 10px 0;
+    font-size: 130%;
+}
+a.drpbtn {
+
+}

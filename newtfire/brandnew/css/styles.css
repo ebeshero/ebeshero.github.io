@@ -1,0 +1,410 @@
+html, body{margin:0; padding:0}
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+#nav {
+    display: flex;
+    height: 20vh;
+    flex-direction: column;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 75px;
+    padding-top: 20px;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+#navbar a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar {
+    display: flex;
+    background: grey;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    width: 100vw;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.line{
+    display: flex;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+}
+
+.aboutBand, .analysisInfo{
+    padding-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.aboutBand p, .analysisInfo p{color: black;}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+}
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    color: white;
+}
+.aboutProject{
+    display: flex;
+    background-color:  #1e1f21;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px; 
+    margin-bottom: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.logic{
+    padding: 50px;
+    height: 30%;
+    width: 80%;
+}
+
+.aboutTeam{
+    background-color: #36383b;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;  
+}
+
+.bio {
+    height: 250px;
+    width: auto;
+    border-radius: 160px;
+}
+
+.members {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4%;
+}
+
+.m-forward {
+    display: flex;
+    padding-right: 50px;
+    background-color: #1e1f21;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 5%;
+}
+
+.m-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 50px;
+    padding: 10px;
+    padding-right: 5%;
+}
+
+.t-forward {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+}
+
+.t-reverse {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    background-color: #1e1f21;
+    padding: 2%;
+}
+
+.albumContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    width: 60vw;
+}
+
+.art{
+    width: 40vw;
+    align-items: center;
+}
+
+.art, .title{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.albumContainer a{
+    text-decoration: none;
+}
+
+.yfw img:hover, .dejaEntendu img:hover, .daGarim img:hover, .daisy img:hover, .scienceFiction img:hover{
+    height: 45vh;
+    transition: .3s ease;
+}
+
+.yfw, .dejaEntendu, .daGarim, .daisy, .scienceFiction{
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+}
+
+.dejaEntendu, .daisy {
+    flex-direction: row-reverse;
+    background-color: #1e1f21;
+}
+
+.album{
+    height: 39vh;
+    width: auto;
+    border-radius: 10px;
+}
+
+.yfw p, .scienceFiction p, .dejaEntendu p, .daGarim p, .daisy p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 55px;
+}
+
+.yfw p, .scienceFiction p, .daGarim p{
+    color: black;
+}
+
+.dejaEntendu p, .daisy p{
+    color: white;
+}
+
+.songList{
+    display: flex;
+    background-color: #1e1f21;
+    flex-direction: row-reverse;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.whiteSpace{
+    background-color: white;
+    padding: 4%;
+}
+.tracks, #albumArt{
+    display: flex;
+    height: auto;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#albumArt img{
+    width: 35vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+.albumTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.albumHead{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 55px;
+    color: black;
+    margin:0;
+    padding: 1%;
+}
+.trackListHead{
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    color: black;
+    margin:0;
+    padding-bottom: 1%;
+}
+
+.songList li{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    width: 40vw;
+    color: white;
+    background-color: #36383b;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.songList li:hover{
+    font-size: 30px;
+    transition: .1s ease-in-out;
+}
+
+.songList a{
+    text-decoration: none;
+    color: white;
+}
+
+.songTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 55px;
+}
+.songAlbumArt, .lyricsContainer, .refContainer{
+    display:flex;
+    width: 33vw;
+    flex-direction: column;
+    height: auto;
+    padding-top: 1%;
+}
+
+.songAlbumArt{
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.songAlbumArt a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    align-content: center;
+}
+.songContainer{
+    background-color: #1e1f21;
+    display: flex;
+    justify-content: center;
+}
+.lyricsContainer li {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #36383b;
+    list-style-type: none;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.lyricsContainer{
+    padding: 0;
+    justify-content: center;
+}
+
+.lyricsContainer ul{
+    background-color: #36383b;
+    border-radius: 10px;
+    padding: 0;
+    padding-left: 5px;
+}
+
+.refContainer p {
+    text-decoration: none;
+    padding-left: 5px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.refContainer li {
+   text-decoration: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    list-style-type: none;
+    border-style: outset;
+    border-radius: 10px;
+    border-color: #36383b;
+    padding: 5px;
+    background-color: #36383b;
+}
+
+.wordCloud, .bpmGraphs, .referGraph, .structureGraph{
+    display: flex;
+    justify-content: center;
+    background-color: #36383b;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.wordCount {
+    display: flex;
+    justify-content:center;
+    background-color: #36383b;
+    padding-bottom: 5%;
+}
+.wordCountImg{
+    width: 70vw;
+    height: auto;
+}
+.referGraph {
+    overflow: hidden;
+}
+.referGraph img {
+    margin-bottom: -20%;
+    margin-top: -5%;
+    margin-right: -7%;
+}
+.structureGraph img{
+    height: 60vh;
+    width: auto;
+}

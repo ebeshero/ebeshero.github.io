@@ -1,0 +1,105 @@
+
+
+body 
+{
+   color : #2E4053;
+   font-family: "Verdana";";
+    text-align: center;		
+  background-color: #B2BABB  ;
+  background-attachment: fixed;
+  background-position: center;	
+	
+	
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+div
+{
+	
+	color: #17202A ;
+	border: 0px solid #FDFFFF ;
+	
+}
+
+p
+{
+    color : #CD5C5C;MB 
+    font-family: "Courier";
+    text-align: center;
+
+}
+
+
+h1
+{
+	color: #212F3C ;
+	text-align: center;
+	font-family: impact;
+	font-size: 80px;
+	
+}
+
+
+
+
+h2
+{
+	color: #212F3C ;
+	text-align: center;
+	font-family: impact;
+	
+}
+h3
+{
+	color: #2E4053 ;
+	text-align: left;
+	font-family: Trebuchet MS; 
+	font-size: 30px;
+}
+th,td
+{
+	
+	color: #2E4053 ;
+	text-align: left;
+	font-family: Trebuchet MS; 
+	font-size: 15px;
+}
+tr
+{
+	
+	color: #2E4053 ;
+	text-align: left;
+	font-family: Trebuchet MS; 
+	font-size: 15px;
+}
+
+p
+{
+	color: #17202A ;
+	border-top: 2px solid #ddd;
+	
+}

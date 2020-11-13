@@ -1,0 +1,172 @@
+
+
+body 
+{
+ background-image: url("background.jpg");
+  color : #2E4053;
+  font-family: "Comic Sans MS";
+  text-align: center;		
+  background-color: #B2BABB  ;
+  background-attachment: fixed;
+  background-position: center;	
+
+}
+
+div
+{
+	
+	color: #17202A ;
+	border: 0px solid #FDFFFF ;
+	
+}
+
+.sectionHead
+{
+    
+      color: blue;
+      }
+
+p
+{
+    color : #CD5C5C;
+    font-family: "Comic Sans MS";
+    text-align: center;
+
+}
+
+.writting
+{
+    
+    color: #17202A;
+     padding: 16px 16px;
+    border-style:dotted;
+  border-width: 5px;
+  border-color: #F9E79F;
+}
+
+
+h1
+{
+	color:#0B5345 ;
+	text-align: center;
+	font-family: "Comic Sans MS";
+	font-size: 60px;
+	
+}
+
+h2
+{
+	color: #000000 ;
+	text-align: center;
+	font-family: "Comic Sans MS";
+	
+}
+h3
+{
+	color:  #000000 ;
+	text-align: center;
+	font-family: "Comic Sans MS";
+	font-size: 15px;
+}
+.topimages
+{
+    
+   opacity:0.5; 
+    
+}
+
+p
+{
+	color: #17202A ;
+	border-top: 0px solid #ddd;
+	
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: "Comic Sans MS";
+     text-align: center;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+     text-align: center;
+}
+
+
+
+
+
+
+
+.quote
+{
+    
+    color: white;
+     padding: 16px 16px;
+    border-style:dotted;
+  border-width: 5px;
+  border-color: #F9E79F;
+
+  background-color:grey;
+}
+.legend
+{
+   background-color:white;
+    
+    
+}
+
+
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="WarLettersSchema.rnc" type="application/relax-ng-compact-syntax"?>
+
+<letter>
+    <title>India- the time of my life</title>
+    <abstract>This is one of many letters sent by staff of the Great Western Railway Audit office at <placeName location="Paddington"></placeName> who had enlisted to fight in the First World War.
+        (RAIL 253/516)</abstract>
+    <heading>
+        <persName>Harry Beaumont</persName>, May 1915, <placeName location="Rawalpindi"></placeName>, <placeName location="India"></placeName>. Born: 17 October 1873, Regiment: 1/6 East Surrey Regiment, Regiment number: 2297, Rank: Quarter Master
+        Sergeant, Died: 1952
+        Note: Beaumont was a member of volunteer army as a young man. He was a life governor of Richmond Hospital, London and held an MBE (Military Division)
+    </heading>
+    
+    <body>
+        <p>Dear <persName>Bertie</persName>,
+            Just a few lines to let you know how I am getting on. <emotion morale="high">Am having the time of my life out here</emotion>.
+            No doubt you have seen the several letters I have written to the office during the past few months, so will not go into further details, except
+            to say that I have been exceedingly fortunate in seeing so much of <placeName location="India"></placeName> in a short time. I shall never forget my trip through the <placeName location="Khyber Pass"></placeName>
+            which has since been the scene of hard fighting, one consequence of which we were hurriedly moved from <placeName location="Fyzabad"></placeName> to <placeName location="Rawalpindi"></placeName> in readiness to
+            reinforce.</p>
+        
+        <p><emotion morale="high">You would scarcely credit the feeling of disappointment that exists among the few British regular regiments left in India</emotion>, over not being ordered
+            to <placeName location="France"></placeName> to take their share in the war. The same feeling also exists in the Territorials… A dragoon then left a few weeks ago to replace heavy
+            casualties among the <placeName location="Norfolk"></placeName> regiment at the Gulf.
+            As the hot weather commenced the latter part of April, and as many British troops as possible are always sent to the hills (being almost unbearable
+            on the plains), we are fortunate enough to go, and had a three days’ march and climb to this place 8,000 feet up. Well I never in any wild stretch
+            of imagination ever dreamed that I should be soldiering in the <placeName location="Himalayan mountains"></placeName>.
+            <placeName location="Kuldana"></placeName>, although 8,000 feet up is on the lower <placeName location="Himalaya"></placeName>, and from my bungalow,which is situated on the edge of a steep precipice, I can see
+            <emotion morale="high">lovely views which words fail to describe</emotion>, a perfect mixture of <placeName location="Devonshire"></placeName>, Scotch and Alpine scenery. Although seemingly only a few miles off,
+            the higher snow clad ranges in full view are from 100 to 150 miles away. I have about 1½ miles trek to our Sergeant’s mess, through beautiful
+            scenery, lovely wild rose bushes climbing up giant pink trees, smothering them in roses, maiden hair fern and all kinds of pretty flowers in the
+            woods. <emotion morale="high">The climate is perfect, lovely English summer weather, with delightful mountain breezes. The heat in India has not distressed me in the least</emotion>,
+            not even on long arduous marches. <emotion morale="high">I am feeling splendidly fit and well</emotion>, and trust I shall continue so. We have no end of gaiety; all the married
+            families of the <placeName location="Yorkshire"></placeName> regiment are living in our barracks under our charge, (as their regiments had to remain behind at <placeName location="Pindi"></placeName>, and are being
+            bitten to death almost with mosquitoes.) So we have Cinderella dances about three times a week, whist drives, racquet and tennis parties and <emotion morale="high">have
+                most enjoyable times</emotion>.</p>
+        
+        <p>I wish <persName>May</persName> and <persName>Eileen</persName> could take an aeroplane trip of a few hours and get to me, it would be ripping for them. I should be glad to hear that you
+            had called to see them on your promised visit of months ago when I was home, they would be awfully glad to see you both. Do drop them a card old
+            boy. Fancy it is 10 months ago today since I left to go to camp, what a lot has transpired since then. I was in the 8th Middlesex 12 months ago,
+            and I see they have lost heavily in <placeName location="France"></placeName>, funny I should have left them, and joined the 6th East Surrey and to pass them at <placeName location="Gibraltar"></placeName>
+            (where they were first) on my way to <placeName location="India"></placeName>.</p>
+    </body>
+    
+    <closing><emotion morale="high">On the whole I am enjoying life in India immensely</emotion>; I am acting Company Sergeant Major now, and expect to be promoted to the rank shortly.
+        We are all ‘Tommies’ now. Trusting you are both fit and well. Remember me to <persName>Stacey</persName>. Yours sincerely,
+        <persName>H. Beaumont</persName></closing>
+</letter>
