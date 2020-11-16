@@ -1,0 +1,220 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   
+   	
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="explain.css" />
+      <title>XSLT Exercise 4 (TE)</title>
+   </head>
+   
+   
+   
+   <body>
+      <!--#include virtual="top.html" -->
+      		
+      			
+      <h1><span class="banner">XSLT Exercise 4: Modal XSLT for Dracula</span></h1>
+    <section id="overview">  <h3>Overview of the Assignment</h3>
+      <p>The Dracula team is working on tagging locations, technology, dates, times, and more in Bram Stoker’s novel <i>Dracula</i>, 
+         and we will work with their project code create a reading view that includes a reading view of the novel as well as an information-rich table of contents to summarize the contents of their tagging so far. If you are working on a different project, you may opt to adapt the code we are modeling with Dracula to your own XML for this assignment.</p>
+       <ul><li>Here is the <strong><a href="../tutorials/Dracula.xml">source XML file for <i>Dracula</i></a></strong>. You should right-click on this link, download the file, and open it in &lt;oXygen/&gt;. <span class="smaller">Don’t be concerned about the red schema warning on the file: you are just missing the Relax NG schema. If you want the file with its schema, you can pull them in locally from the textEncoding-Hub where it is in <a href="https://raw.githubusercontent.com/newtfire/textEncoding-Hub/master/Class-Examples/XSLT/Dracula/Dracula.html">Class Examples > XSLT > Dracula</a>.</span> </li>
+          <li>Here is <a href="https://raw.githubusercontent.com/newtfire/textEncoding-Hub/master/Class-Examples/XSLT/Dracula/Dracula.html">a view of the HTML code for our target output</a> as posted on the textEncoding-Hub. And here is <a href="https://newtfire.org/courses/tutorials/Dracula-output/Dracula.html">a display view of that code on the web browser</a>.</li>
+       </ul>
+       
+ 
+<p>Open the XML file in &lt;oXygen/&gt; and study its code, and take some notes about where you can find the information destined for the target output in HTML.</p>
+       <p>It may also help to orient yourself to HTML table coding. HTML tables are organized in rows, using <code>&lt;tr&gt;</code> elements, which contain <code>&lt;td&gt;</code> elements (which means <q>table data</q>). You control the columns in an HTML table by the setting the <code>&lt;td&gt;</code> cells in an ordered sequence. Inside a <code>&lt;tr&gt;</code>, the first <code>&lt;td&gt;</code> is set in column 1, the second <code>&lt;td&gt;</code> in column 2, the third in column 3, and so on. The top row conventionally contains headings in <code>&lt;th&gt;</code> cells, which HTML will emphasize by default. Here is a simple HTML table (styled following our newtfire CSS, in which I’ve outlined the borders and given a background color to the table heading cells). Next to it is a view of the HTML code that creates the table structure: </p>
+       
+<div class="codeContainFlex">
+   <table>
+          <tr>
+             <th>Heading 1</th>
+             <th>Heading 2</th>
+             <th>Heading 3</th>
+          </tr>
+          <tr>
+             <td>Row 1, cell 1</td>
+             <td>Row 1, cell 2</td>
+             <td>Row 1, cell 3</td>
+          </tr>
+          <tr>
+             <td>Row 2, cell 1</td>
+             <td>Row 2, cell 2</td>
+             <td>Row 2, cell 3</td>
+          </tr>
+       </table>
+      <pre>
+         &lt;table&gt;
+          &lt;tr&gt;
+             &lt;th&gt;Heading 1&lt;/th&gt;
+             &lt;th&gt;Heading 2&lt;/th&gt;
+             &lt;th&gt;Heading 3&lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+             &lt;td&gt;Row 1, cell 1&lt;/td&gt;
+             &lt;td&gt;Row 1, cell 2&lt;/td&gt;
+             &lt;td&gt;Row 1, cell 3&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+             &lt;td&gt;Row 2, cell 1&lt;/td&gt;
+             &lt;td&gt;Row 2, cell 2&lt;/td&gt;
+             &lt;td&gt;Row 2, cell 3&lt;/td&gt;
+          &lt;/tr&gt;
+       &lt;/table&gt;</pre>
+</div>
+
+       
+
+    </section>
+      
+     <section id="modal"> <h3>Writing modal XSLT</h3>
+      <p>To make a table of contents as well as a reading view of the whole <i>Dracula</i> novel, we are introducing <strong>modal XSLT</strong>, which lets you process the same nodes in your document in two different ways. How can you output the same element contents to sit as table cells in a table of contents at the top of an HTML page, <em>and also</em> as headers positioned throughout the body of your document, below the table of contents? Wouldn’t it be handy to be able to have two completely different template rules that match exactly the same elements: one rule to output the data as list items in the table of contents, and the other to output the same data as headers? You can write two template rules that will match the same nodes (have the same value for their <code>@match</code> attribute), but how do you make sure that the correct template rule is handling the data in the correct place?</p>
+      <p>To permit us to write multiple template rules that process the same input nodes in different ways for different purposes, we write <strong>modal XSLT</strong>, and that is what you will be learning to write with this assignment. Modal XSLT allows you to output the same parts of the input XML document in multiple locations and treat them differently each time. That is, it lets you have two different template rules for processing the same elements or other nodes in different ways, and you use the <code>@mode</code> attribute to control how the elements are processed <em>at a particular place</em> in the transformation. Please read the explanation and view the examples in <a href="http://dh.obdurodon.org/modal-xslt.html">Obdurodon’s tutorial on Modal XSLT</a> before proceeding with the assignment, so you can see where and how to set the <code>@mode</code> attribute and how it works to control processing.</p></section>
+      <section id="preparing">
+         <h3>Before You Begin: Set up the XSLT Stylesheet to Output HTML</h3>	 
+         
+         <p>To ensure that the output will be in the XHTML namespace, we
+            need to add a default namespace declaration (in <span style="color: purple;">purple</span>
+            below). To output the required DOCTYPE declaration, we also need to set the
+            <code>&lt;xsl:output&gt;</code> element as a child of our root
+            <code>&lt;xsl:stylesheet&gt;</code> element (in <span style="color: #006400;"
+               >blue</span> below), and we needed to include an attribute there to omit the default XML declaration because if the XML line shows up in our XHTML output, it will not produce valid HTML with the w3C and might produce quirky problems with rendering in various web browsers. 
+            So, our modified stylesheet template and xsl:output line is this, and you should copy this into your stylesheet:</p>    
+         <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+         &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0"
+    <span style="color:purple;">xmlns="http://www.w3.org/1999/xhtml"</span>&gt;
+    
+   <span style="color:blue;"> &lt;xsl:output method="xhtml" encoding="utf-8" doctype-system="about:legacy-compat"
+        omit-xml-declaration="yes"/&gt;</span>
+    
+    &lt;/xsl:stylesheet&gt;</pre>        
+      </section>
+    
+      <section id="guidance">
+        <h3>Guide to writing the XSLT</h3>
+         <h4>Start with the reading view</h4>
+ <p>At first, forget about the modal XSLT and just start by processing the reading view of Dracula. In many ways, for processing <i>Dracula</i>, this is easier than your previous assignments, and it involves processing richly mixed content without needing to target it selectively. Here is what we intend to capture from the Dracula team’s markup (though you may wish to adapt this to your own project markup and make yourself a checklist before you begin):</p>  
+         <ul>
+            <li>Transform the <code>&lt;title&gt;</code> element into an HTML <code>&lt;h1&gt;</code> element.</li>
+            <li>Apply templates to process the <code>&lt;chapter&gt;</code> elements, and transform the chapter <code>&lt;heading&gt;</code> elements into HTML <code>&lt;h2&gt;</code> elements.</li>
+            <li>Process the <code>&lt;p&gt;</code> elements from the XML into HTML <code>&lt;p&gt;</code> elements (which may seem odd, but the HTML version is actually different from the XML because the HTML is coded in an XHTML namespace).</li>
+            <li>Within the paragraphs, the Dracula team has marked the following, and you may wish to capture it in HTML <code>span</code> elements with <code>@class</code> attributes (remembering our little tutorial on <a href="../tutorials/explainHTMLSpanClass.html">Using &lt;span&gt; and @class to style your HTML</a>): Transform at least two of the following in your XSLT, or as many as you wish:
+            <ul>
+               <li><code>&lt;location&gt;</code></li>
+               <li><code>&lt;tech&gt;</code></li>
+               <li><code>&lt;date&gt;</code></li>
+               <li><code>&lt;time&gt;</code></li>
+               <li><code>&lt;people&gt;</code> <span class="smaller">(Dracula team: You can combine your <code>&lt;person&gt;</code> and <code>&lt;people&gt;</code> elements by combining them with an <q>or pipe</q> like this: <code>&lt;xsl:template match="person | people"&gt;</code>.</span></li>        
+            </ul> 
+            </li>
+            
+         </ul>
+         
+         
+<h4>Modal XSLT for the Table of Contents</h4>   
+         <p>The template rule for the document node in our solution, revised to output a table of
+            contents with all the information we wish to show before the text of the poems, looks like the following:</p>
+
+<pre>
+    &lt;xsl:template match="/"&gt;
+     &lt;html&gt;
+         &lt;head&gt;
+             &lt;title&gt;Dracula&lt;/title&gt;
+             &lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;
+         &lt;/head&gt;
+         &lt;body&gt;
+           &lt;h1&gt;&lt;xsl:apply-templates select="descendant::title"/&gt;&lt;/h1&gt;
+             
+            <span style="color:forestgreen;"> &lt;!--ebb: Table of contents here. --&gt;</span>
+            &lt;table&gt; 
+             &lt;tr&gt;
+                 &lt;th&gt;Chapter Number&lt;/th&gt;
+                 &lt;th&gt;Locations mentioned&lt;/th&gt;
+                 &lt;th&gt;Tech mentioned&lt;/th&gt;
+             &lt;/tr&gt;
+                <code>&lt;xsl:apply-templates select="descendant::chapter" mode="toc"/&gt;</code>
+   <span style="color:forestgreen;"> &lt;!--ebb: This xsl:apply-templates line sets up my "toc" mode for the table of contents, 
+so that in the top part of the document we’ll output a selection of the body elements 
+specially formatted for my Table of Contents, and so that in another section of my document below, 
+which I’ve put inside an HTML &lt;section&gt; element, 
+we can also output the full text of the poems with their titles again.--&gt;</span>
+                
+            &lt;/table&gt;
+             
+            <span style="color:forestgreen;"> &lt;!--ebb: Reading view of the chapters here. --&gt;</span>
+             &lt;xsl:apply-templates select="descendant::chapter"/&gt;
+        &lt;/body&gt;
+     &lt;/html&gt;
+ &lt;/xsl:template&gt;</pre>
+         <p>The highlighted code is what we added to include a table of contents, and the important
+            line is <code>&lt;xsl:apply-templates select="descendant::chapter" mode="toc"/&gt;</code>. This is
+            going to apply templates to each chapter <em>with the <code>@mode</code> attribute value
+               set to <q>toc</q>.</em> The value of the <code>@mode</code> attribute is up to you
+            (we used <q>toc</q> for <q>table of contents</q>), but whatever you call it, setting the
+            <code>@mode</code> to any value means that only template rules that also specify a
+            <code>@mode</code> with that same value will fire in response to this
+            <code>&lt;xsl:apply-templates&gt;</code> element. Now we have to go write those
+            template rules!</p>
+         <p>What this means is that when you process the <code>&lt;body&gt;</code> elements to
+            output the full text of the chapters, you use <code>&lt;xsl:apply-templates&gt;</code> and
+            <code>&lt;xsl:template&gt;</code> elements without any <code>@mode</code> attribute.
+            To create the table of contents, though, you can have
+            <code>&lt;xsl:apply-templates&gt;</code> and <code>&lt;xsl:template&gt;</code>
+            elements that select or match the same elements, but that specify a mode and apply
+            completely different rules. A template rule for <code>&lt;chapter&gt;</code> elements in
+            table-of-contents mode will start with <code>&lt;xsl:template match="chapter"
+               mode="toc"&gt;</code>, and you need to tell it to create a <code>&lt;tr&gt;</code>
+            element with some nested <code>td</code> elements to match the table heading rows you set up earlier:</p>
+   <pre>
+    &lt;xsl:template match="chapter" mode="toc"&gt;
+        &lt;tr&gt;
+            &lt;td&gt;<span style="color:purple;">&lt;!--Output the chapter heading here. 
+When we are ready we will create a link here to jump from the chapter heading to its target id coded in the chapter heading in the reading view.--&gt;</span> &lt;/td&gt;
+            &lt;td&gt;<span style="color:purple;">&lt;!--Output a string-joined list of distinct locations here?-&gt;</span>&lt;/td&gt;
+            &lt;td&gt;<span style="color:purple;">&lt;!--=Output a string-joined list of tech mentioned here?--&gt;</span>&lt;/td&gt;   
+         &lt;/tr&gt;
+    &lt;/xsl:template&gt; 
+   </pre>
+            
+
+            <p>The rule for processing those same elements not in any mode will start with
+            <code>&lt;xsl:template match="chapter"&gt;</code> (without the <code>@mode</code>
+            attribute). That rule will create the HTML <code>&lt;h2&gt;</code> to output the text of the chapter <code>&lt;heading&gt;</code> element and then apply-templates again to select the <code>&lt;p&gt;</code> elements for processing as HTML <code>&lt;p&gt;</code> elements. In this way, you can have two
+            sets of rules for this document: one for the table of contents and one to output the full text in a reading view, and we use
+            modes to ensure that each is used only in the correct place.</p>
+         <p><em>Remember: both the <code>&lt;xsl:apply-templates&gt;</code>, which tells the system
+            to process certain nodes, and the <code>&lt;xsl:template&gt;</code> that responds to
+            that call and does the processing must agree on their mode values.</em> For the main
+            output of the full text of every chapter, neither the
+            <code>&lt;xsl:apply-templates&gt;</code> nor the <code>&lt;xsl:template&gt;</code>
+            elements specifies a mode. To output the table of contents, both specify the same
+            mode.</p>
+      </section>
+      <section id="completing">
+         <h3>Completing and checking your work</h3>
+         <ul>
+            <li>It is a good idea to run your transformation every time you write some new XSLT code so you can see what you are doing. You will be looking at your results in the Output window as you write and test your template rules each time you press the blue <q>Run-to-End</q> button. Eye-balling those results is not really enough because the Output window does not check for well-formedness or validation against a schema. Be sure to save those results, either by setting an output location in the appropriate place in the selection boxes, or by right-clicking on the output window and selecting <q>Save as</q>. <strong><em>Always, always</em> open the saved output file in &lt;oXygen/&gt; and check to make sure that it checks out as valid and well-formed.</strong> Your new output should open up as well-formed and valid HTML, with a green square in &lt;oXygen&gt;.</li>
+            
+            <li>If you don’t get
+               the results you expect and can’t figure out what you’re doing wrong, remember that you can post a query to our <a href="https://github.com/newtfire/textEncoding-Hub/issues">textEncoding-Hub Issues board</a>. You can’t just ask for the answer,
+               though; you need to describe what you tried, what you expected, what you got, and
+               what you think the problem is. You may also wish to practice the We often find, just as we’re preparing to post our
+               own queries to coding discussion boards, that having to write up a description
+               of the problem helps us think it through and solve it ourselves, and the technical term for this is <a href="https://rubberduckdebugging.com/">rubber duck debugging</a>. Beyond just being patient rubber ducks, though, we’re also
+               encouraging you to discuss the homework on the discussion boards because that’s also
+               helpful for the person who responds. Answering someone else’s
+               inquiry and troubleshooting someone else’s problem often helps us clarify matters for
+               ourselves!</li>
+            <li>When you complete this assignment, submit your XSLT file and your output HTML file to Canvas. You may submit a starter CSS file if you wish, but you need not write the CSS just yet, because we will ask you to create one for a modified version of this output in the next assignment. You may bundle these files in a zip file, following our usual homework file-naming conventions for the zip directory.</li>
+         </ul>
+         
+         
+      </section>
+   </body>
+   
+   
+   
+   
+</html>
