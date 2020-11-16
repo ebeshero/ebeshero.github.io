@@ -179,7 +179,7 @@
             <code>&lt;xsl:apply-templates&gt;</code> and <code>&lt;xsl:template&gt;</code>
             elements that select or match the same elements, but that specify a mode and apply
             completely different rules. A template rule for <code>&lt;body&gt;</code> elements in
-            table-of-contents mode will start with <code>&lt;xsl:template match="$dickinsonColl//body"
+            table-of-contents mode will start with <code>&lt;xsl:template match="body"
                 mode="toc"&gt;</code>, and you need to tell it to create an <code>&lt;li&gt;</code>
             element that contains the text of the <code>&lt;title&gt;</code> element and a first line, both fetched from the poem in
             the input XML collection of files. The rule for those same elements not in any mode will start with
